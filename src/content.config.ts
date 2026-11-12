@@ -49,7 +49,7 @@ const sources = defineCollection({
   schema: z.object({
     title: text,
     publisher: text,
-    kind: z.enum(['standard', 'regulation', 'glossary', 'handbook', 'aip', 'web']),
+    kind: z.enum(['standard', 'regulation', 'glossary', 'handbook', 'aip', 'web', 'manufacturer']),
     url: z.string().url(),
     licence: z.enum(['copyright', 'public-domain-us', 'eu-reuse', 'wmo']),
   }),
@@ -121,4 +121,48 @@ const quizzes = defineCollection({
   }),
 });
 
-export const collections = { dictionary, sources, paths, courses, lessons, quizzes };
+/** Aircraft families with per-variant figures. Every figure must come from the variant's sources;
+ *  unknown values are null (shown as "—"), never estimated. */
+const num = z.number().positive().nullable();
+const aircraft = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/aircraft' }),
+  schema: z.object({
+    manufacturer: text,
+    family: bilingual,
+    category: z.enum(['commercial', 'regional', 'business', 'general-aviation', 'military']),
+    order: z.number(),
+    summary: bilingual,
+    history: bilingual,
+    facts: z.array(bilingual),
+    sources: z.array(text).min(1),
+    review,
+    variants: z
+      .array(
+        z.object({
+          id: text,
+          name: text,
+          status: z.enum(['in-production', 'out-of-production', 'certified', 'in-development']).nullable(),
+          milestones: z.object({
+            firstFlight: z.string().nullable(),
+            certified: z.string().nullable(),
+            firstDelivery: z.string().nullable(),
+            firstOperator: z.string().nullable(),
+          }),
+          lengthM: num,
+          wingspanM: num,
+          heightM: num,
+          seatsTypical: z.string().nullable(),
+          seatsMax: num,
+          rangeNm: num,
+          rangeKm: num,
+          mtowT: num,
+          engines: z.array(text).min(1),
+          note: bilingual.nullable(),
+          sources: z.array(text).min(1),
+        })
+      )
+      .min(1),
+  }),
+});
+
+export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft };

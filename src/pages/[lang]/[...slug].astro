@@ -4,6 +4,7 @@
  *  - registered pages from the route registry (src/i18n/routes.js)
  *  - one page per dictionary entry under the dictionary section
  *  - one page per course and per lesson under the academy section
+ *  - one page per aircraft family under the hangar section
  * Adding a page = register its key + create its view + add it to VIEWS.
  */
 import { getCollection } from 'astro:content';
@@ -20,6 +21,9 @@ import DictionaryEntry from '../../views/DictionaryEntry.astro';
 import Academy from '../../views/Academy.astro';
 import Course from '../../views/Course.astro';
 import Lesson from '../../views/Lesson.astro';
+import Hangar from '../../views/Hangar.astro';
+import Compare from '../../views/Compare.astro';
+import AircraftFamily from '../../views/AircraftFamily.astro';
 
 const VIEWS = {
   home: Home,
@@ -33,11 +37,15 @@ const VIEWS = {
   academy: Academy,
   course: Course,
   lesson: Lesson,
+  hangar: Hangar,
+  compare: Compare,
+  aircraftFamily: AircraftFamily,
 };
 
 export async function getStaticPaths() {
   const entries = await getCollection('dictionary');
   const courses = await getCollection('courses');
+  const aircraft = await getCollection('aircraft');
   return LOCALES.flatMap((lang) => [
     ...routeKeys().map((routeKey) => ({
       params: { lang, slug: ROUTES[routeKey].slug[lang] || undefined },
@@ -57,6 +65,10 @@ export async function getStaticPaths() {
         props: { routeKey: 'lesson', courseId: course.id, lessonId },
       })),
     ]),
+    ...aircraft.map((fam) => ({
+      params: { lang, slug: `${ROUTES.hangar.slug[lang]}/${fam.id}` },
+      props: { routeKey: 'aircraftFamily', familyId: fam.id },
+    })),
   ]);
 }
 

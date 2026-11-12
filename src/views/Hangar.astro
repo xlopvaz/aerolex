@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
+import { childHref, href, useT } from '../i18n/index.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const families = (await getCollection('aircraft')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('hangar.metaTitle')} description={tr('hangar.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.hangar') }]} />
+      <h1>{tr('hangar.title')}</h1>
+      <p class="lead">{tr('hangar.lead')}</p>
+      <div class="hangar__cta"><Button href={href('compare', lang)} icon="columns-3">{tr('hangar.compareCta')}</Button></div>
+    </div>
+  </header>
+
+  <div class="container hangar">
+    <h2>{tr('hangar.families')}</h2>
+    <div class="grid">
+      {families.map((f) => (
+        <a class="fam" href={childHref('hangar', f.id, lang)}>
+          <span class="fam__maker mono">{f.data.manufacturer}</span>
+          <span class="fam__name">{f.data.family[lang]}</span>
+          <span class="fam__summary">{f.data.summary[lang]}</span>
+          <span class="fam__variants">
+            {f.data.variants.map((v) => <Badge>{v.name.replace(/ \(.*\)$/, '')}</Badge>)}
+          </span>
+          <span class="fam__more">{tr('hangar.openFamily')} <Icon name="arrow-right" size={16} /></span>
+        </a>
+      ))}
+    </div>
+    <p class="hangar__note">{tr('hangar.dataNote')}</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .hangar__cta { margin-top: var(--space-5); }
+  .hangar { padding-top: var(--space-6); }
+  .fam {
+    display: grid; gap: var(--space-3); padding: var(--space-6);
+    border: 1px solid var(--border); border-radius: var(--radius-xl); background: var(--surface);
+    color: var(--text); text-decoration: none; box-shadow: var(--shadow-sm);
+    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .fam:hover { transform: translateY(-2px); border-color: var(--border-strong); color: var(--text); }
+  .fam__maker { font-size: var(--text-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); }
+  .fam__name { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; }
+  .fam__summary { color: var(--text-muted); }
+  .fam__variants { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .fam__more { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--primary); font-weight: 600; }
+  .hangar__note { margin-top: var(--space-6); color: var(--text-muted); font-size: var(--text-sm); }
+</style>

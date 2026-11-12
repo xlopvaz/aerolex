@@ -1,0 +1,98 @@
+{
+  "manufacturer": "Boeing",
+  "family": { "en": "Boeing 737", "es": "Boeing 737" },
+  "category": "commercial",
+  "order": 2,
+  "summary": {
+    "en": "Boeing's single-aisle family. The current generations are the 737 Next Generation (737-700, -800, -900) and the 737 MAX (737-7, -8, -9, -10) with CFM LEAP-1B engines.",
+    "es": "La familia de pasillo único de Boeing. Las generaciones actuales son el 737 Next Generation (737-700, -800, -900) y el 737 MAX (737-7, -8, -9, -10), con motores CFM LEAP-1B."
+  },
+  "history": {
+    "en": "The 737 MAX first flew on 29 January 2016 and the first aircraft, a 737-8 (MAX 8), was delivered to Malindo Air on 16 May 2017. The smallest member, the 737-7, was certified by the FAA in August 2026, and the largest, the 737-10, on 20 October 2026, completing the MAX family.",
+    "es": "El 737 MAX voló por primera vez el 29 de enero de 2016 y el primer avión, un 737-8 (MAX 8), se entregó a Malindo Air el 16 de mayo de 2017. El modelo más pequeño, el 737-7, fue certificado por la FAA en agosto de 2026, y el más grande, el 737-10, el 20 de octubre de 2026, con lo que se completó la familia MAX."
+  },
+  "facts": [
+    {
+      "en": "Boeing names the MAX models 737-7, 737-8, 737-9 and 737-10; 'MAX 8' and similar names are widely used in the industry.",
+      "es": "Boeing denomina a los modelos MAX 737-7, 737-8, 737-9 y 737-10; nombres como «MAX 8» son muy habituales en el sector."
+    },
+    {
+      "en": "The 737-8-200 is a higher-capacity version of the 737-8 for up to 210 seats.",
+      "es": "El 737-8-200 es una versión del 737-8 de mayor capacidad, de hasta 210 asientos."
+    },
+    {
+      "en": "According to Boeing, the 737-10 accounts for more than 30% of unfilled 737 MAX orders.",
+      "es": "Según Boeing, el 737-10 supone más del 30 % de los pedidos pendientes del 737 MAX."
+    }
+  ],
+  "sources": ["boeing-737max-page", "boeing-737ng-page", "boeing-737max-first-flight", "news-737max-first-delivery", "news-737-7-certified", "boeing-737-10-certified", "faa-737-10-certification"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "737-700", "name": "737-700", "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "lengthM": 33.6, "wingspanM": 35.8, "heightM": 12.5,
+      "seatsTypical": "125–145", "seatsMax": 149,
+      "rangeNm": 2900, "rangeKm": 5370, "mtowT": 70.08,
+      "engines": ["CFM56-7B"],
+      "note": null, "sources": ["boeing-737ng-page"]
+    },
+    {
+      "id": "737-800", "name": "737-800", "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "lengthM": 39.5, "wingspanM": 35.8, "heightM": 12.5,
+      "seatsTypical": "160–180", "seatsMax": 189,
+      "rangeNm": 2800, "rangeKm": 5190, "mtowT": 79.01,
+      "engines": ["CFM56-7B"],
+      "note": null, "sources": ["boeing-737ng-page"]
+    },
+    {
+      "id": "737-900", "name": "737-900", "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "lengthM": 42.1, "wingspanM": 35.8, "heightM": 12.5,
+      "seatsTypical": "175–195", "seatsMax": 220,
+      "rangeNm": 2700, "rangeKm": 5000, "mtowT": 85.13,
+      "engines": ["CFM56-7B"],
+      "note": null, "sources": ["boeing-737ng-page"]
+    },
+    {
+      "id": "737-7", "name": "737-7 (MAX 7)", "status": "certified",
+      "milestones": { "firstFlight": null, "certified": "2026-08-03", "firstDelivery": null, "firstOperator": null },
+      "lengthM": 35.6, "wingspanM": 35.9, "heightM": 12.3,
+      "seatsTypical": "135–160", "seatsMax": 172,
+      "rangeNm": 3800, "rangeKm": 7040, "mtowT": null,
+      "engines": ["CFM LEAP-1B"],
+      "note": { "en": "Certified by the FAA; first deliveries were expected in 2027.", "es": "Certificado por la FAA; las primeras entregas se esperaban para 2027." },
+      "sources": ["boeing-737max-page", "news-737-7-certified"]
+    },
+    {
+      "id": "737-8", "name": "737-8 (MAX 8)", "status": "in-production",
+      "milestones": { "firstFlight": "2016-01-29", "certified": null, "firstDelivery": "2017-05-16", "firstOperator": "Malindo Air" },
+      "lengthM": 39.5, "wingspanM": 35.9, "heightM": 12.3,
+      "seatsTypical": "160–180", "seatsMax": 210,
+      "rangeNm": 3500, "rangeKm": 6480, "mtowT": null,
+      "engines": ["CFM LEAP-1B"],
+      "note": { "en": "The 210-seat maximum applies to the 737-8-200.", "es": "El máximo de 210 asientos corresponde al 737-8-200." },
+      "sources": ["boeing-737max-page", "boeing-737max-first-flight", "news-737max-first-delivery"]
+    },
+    {
+      "id": "737-9", "name": "737-9 (MAX 9)", "status": "in-production",
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "lengthM": 42.1, "wingspanM": 35.9, "heightM": 12.3,
+      "seatsTypical": "175–195", "seatsMax": 220,
+      "rangeNm": 3300, "rangeKm": 6110, "mtowT": null,
+      "engines": ["CFM LEAP-1B"],
+      "note": null, "sources": ["boeing-737max-page"]
+    },
+    {
+      "id": "737-10", "name": "737-10 (MAX 10)", "status": "certified",
+      "milestones": { "firstFlight": null, "certified": "2026-10-20", "firstDelivery": null, "firstOperator": null },
+      "lengthM": 43.8, "wingspanM": 35.9, "heightM": 12.3,
+      "seatsTypical": "185–210", "seatsMax": 230,
+      "rangeNm": 3100, "rangeKm": 5740, "mtowT": null,
+      "engines": ["CFM LEAP-1B"],
+      "note": { "en": "The FAA approved the amended type certificate on 20 October 2026; Boeing expected deliveries to begin in the following months.", "es": "La FAA aprobó el certificado de tipo enmendado el 20 de octubre de 2026; Boeing preveía empezar las entregas en los meses siguientes." },
+      "sources": ["boeing-737max-page", "boeing-737-10-certified", "faa-737-10-certification"]
+    }
+  ]
+}

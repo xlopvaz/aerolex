@@ -22,7 +22,9 @@
     "legal": "Aviso legal y privacidad",
     "dictionary": "Diccionario",
     "acronyms": "Abreviaturas y acrónimos",
-    "academy": "Academia"
+    "academy": "Academia",
+    "hangar": "Hangar",
+    "compare": "Comparador de aeronaves"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -319,7 +321,8 @@
     "glossary": "Glosario",
     "handbook": "Manual",
     "aip": "AIP",
-    "web": "Página web"
+    "web": "Página web",
+    "manufacturer": "Fabricante"
   },
   "levels": {
     "beginner": "Beginner · Inicial",
@@ -369,5 +372,56 @@
     "incorrect": "No exactamente.",
     "score": "{correct}/{total} correctas",
     "retryWrong": "Repetir las que he fallado"
+  },
+  "hangar": {
+    "metaTitle": "Hangar · Enciclopedia de aeronaves · AeroLex",
+    "metaDescription": "Familias y variantes de aeronaves con cifras tomadas de la documentación oficial de los fabricantes, y un comparador.",
+    "title": "Hangar",
+    "lead": "Una enciclopedia de aeronaves en la que cada cifra procede de la documentación oficial del fabricante. Cada variante tiene sus propios datos, porque no existe un «A320» ni un «737» genérico.",
+    "families": "Familias de aeronaves",
+    "variantsCount": "{count} variantes",
+    "compareCta": "Comparar aeronaves",
+    "openFamily": "Ver la familia",
+    "history": "Historia",
+    "facts": "¿Sabías que…?",
+    "variants": "Variantes",
+    "specs": "Características",
+    "length": "Longitud",
+    "wingspan": "Envergadura",
+    "height": "Altura",
+    "seatsTypical": "Asientos típicos (dos clases)",
+    "seatsMax": "Asientos máximos",
+    "range": "Alcance",
+    "mtow": "Peso máximo al despegue",
+    "engines": "Motores",
+    "milestones": "Hitos",
+    "firstFlight": "Primer vuelo",
+    "certified": "Certificación",
+    "firstDelivery": "Primera entrega",
+    "notPublished": "No publicado en las fuentes citadas",
+    "status": {
+      "in-production": "En producción",
+      "out-of-production": "Fuera de producción",
+      "certified": "Certificado",
+      "in-development": "En desarrollo"
+    },
+    "dataNote": "Cifras publicadas por el fabricante en las fuentes citadas. Un guion (—) significa que la fuente citada no da ese valor; nunca lo estimamos.",
+    "sources": "Fuentes",
+    "variantSources": "Fuentes de esta variante",
+    "note": "Nota",
+    "compareTitle": "Comparador de aeronaves",
+    "compareLead": "Elige dos o tres variantes para compararlas una al lado de otra. Se resalta el valor más alto conocido de cada dato.",
+    "compareMetaTitle": "Comparador de aeronaves · Hangar · AeroLex",
+    "pick": "Aeronave {n}",
+    "none": "— Elige una variante —",
+    "metric": "Dato",
+    "units": "Unidades",
+    "unitsMetric": "Métricas",
+    "unitsImperial": "Imperiales (aprox.)",
+    "highest": "Valor más alto",
+    "approx": "≈ convertido desde el valor métrico",
+    "compareEmpty": "Elige al menos dos variantes para compararlas.",
+    "educational": "Herramienta educativa. Las cifras son datos genéricos del fabricante; cada avión real varía según el operador, la configuración y el motor. No apta para uso operacional.",
+    "statusLabel": "Estado"
   }
 }

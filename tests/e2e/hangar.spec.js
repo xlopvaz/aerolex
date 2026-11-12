@@ -1,0 +1,38 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('hangar', () => {
+  test('lists families and opens a family with its variant table', async ({ page }) => {
+    await page.goto('es/hangar/');
+    await expect(page.locator('.fam')).toHaveCount(2);
+    await page.locator('.fam', { hasText: 'Familia A320neo' }).click();
+    await expect(page).toHaveURL(/\/es\/hangar\/a320neo-family\/$/);
+    await expect(page.locator('.cmp__table thead th')).toHaveCount(6); // label + 5 variants
+    await expect(page.locator('.cmp__table')).toContainText('37,57 m');
+    // language switch keeps the same family
+    await page.locator('.site-header [data-set-lang="en"]').click();
+    await expect(page).toHaveURL(/\/en\/hangar\/a320neo-family\/$/);
+    await expect(page.locator('.cmp__table')).toContainText('37.57 m');
+  });
+
+  test('comparator: selection, highlighting, units and shareable URL', async ({ page }) => {
+    await page.goto('en/hangar/compare/');
+    const table = page.locator('[data-compare-table] .cmp__table');
+    await expect(table.locator('thead th')).toHaveCount(3); // default: A320neo vs 737-8
+    await page.locator('[data-pick="2"]').selectOption('boeing-737:737-10');
+    await expect(table.locator('thead th')).toHaveCount(4);
+    await expect(page).toHaveURL(/v=a320neo-family%3Aa320neo%2Cboeing-737%3A737-8%2Cboeing-737%3A737-10|v=a320neo-family:a320neo,boeing-737:737-8,boeing-737:737-10/);
+    // 737-10 is the longest of the three
+    const lengthRow = table.locator('tbody tr', { hasText: 'Length' });
+    await expect(lengthRow.locator('td.is-top')).toContainText('43.8 m');
+    await page.locator('label', { hasText: 'Imperial (approx.)' }).click();
+    await expect(lengthRow.locator('td.is-top')).toContainText('≈ 144 ft');
+    // Reload keeps the selection and units
+    await page.reload();
+    await expect(table.locator('thead th')).toHaveCount(4);
+    await expect(lengthRow.locator('td.is-top')).toContainText('ft');
+    // Fewer than two aircraft shows the hint
+    await page.locator('[data-pick="1"]').selectOption('');
+    await page.locator('[data-pick="2"]').selectOption('');
+    await expect(page.locator('[data-compare-empty]')).toBeVisible();
+  });
+});

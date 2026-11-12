@@ -1,0 +1,112 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import SegmentedControl from '../components/ui/SegmentedControl.astro';
+import { href, t, useT, withBase } from '../i18n/index.js';
+import { flattenVariants } from '../lib/aircraft/compare.js';
+import { compareTableHtml } from '../lib/aircraft/table.js';
+import '../styles/compare-table.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const families = (await getCollection('aircraft')).sort((a, b) => a.data.order - b.data.order).map((f) => ({ id: f.id, ...f.data }));
+const all = flattenVariants(families);
+const DEFAULT = ['a320neo-family:a320neo', 'boeing-737:737-8', ''];
+const pick = (key: string) => all.find((v) => `${v.familyId}:${v.id}` === key);
+const initial = DEFAULT.map(pick).filter(Boolean) as any[];
+const labels = t(lang, 'hangar');
+const table = compareTableHtml(initial, { lang, units: 'metric', labels });
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('hangar.compareMetaTitle')} description={tr('hangar.compareLead')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.hangar'), href: href('hangar', lang) }, { label: tr('hangar.compareTitle') }]} />
+      <h1>{tr('hangar.compareTitle')}</h1>
+      <p class="lead">{tr('hangar.compareLead')}</p>
+    </div>
+  </header>
+
+  <div class="container cmp" data-compare data-lang={lang} data-index={withBase('data/aircraft.json')} data-labels={JSON.stringify(labels)} data-default={DEFAULT.join(',')}>
+    <div class="cmp__controls">
+      {[0, 1, 2].map((i) => (
+        <label class="cmp__pick">
+          <span>{tr('hangar.pick', { n: i + 1 })}</span>
+          <select data-pick={i}>
+            <option value="">{tr('hangar.none')}</option>
+            {families.map((f) => (
+              <optgroup label={`${f.manufacturer} · ${f.family[lang]}`}>
+                {f.variants.map((v) => <option value={`${f.id}:${v.id}`} selected={DEFAULT[i] === `${f.id}:${v.id}`}>{v.name}</option>)}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+      ))}
+      <SegmentedControl
+        name="units"
+        legend={tr('hangar.units')}
+        value="metric"
+        options={[{ value: 'metric', label: tr('hangar.unitsMetric') }, { value: 'imperial', label: tr('hangar.unitsImperial') }]}
+      />
+    </div>
+
+    <p class="cmp__empty" data-compare-empty hidden>{tr('hangar.compareEmpty')}</p>
+    <div class="cmp__wrap" data-compare-table set:html={table} aria-live="polite" />
+    <p class="cmp__note">{tr('hangar.dataNote')}</p>
+    <Callout type="official-procedure" label={tr('styleguide.calloutLabels.official-procedure')}><p>{tr('hangar.educational')}</p></Callout>
+  </div>
+</BaseLayout>
+
+<script>
+  import { flattenVariants } from '../lib/aircraft/compare.js';
+  import { compareTableHtml } from '../lib/aircraft/table.js';
+
+  const root = document.querySelector<HTMLElement>('[data-compare]');
+  if (root) {
+    const lang = root.dataset.lang!;
+    const labels = JSON.parse(root.dataset.labels!);
+    const selects = [...root.querySelectorAll<HTMLSelectElement>('[data-pick]')];
+    const tableBox = root.querySelector<HTMLElement>('[data-compare-table]')!;
+    const empty = root.querySelector<HTMLElement>('[data-compare-empty]')!;
+    const params = new URLSearchParams(location.search);
+    const fromUrl = (params.get('v') || '').split(',').filter(Boolean);
+    let units = params.get('u') === 'imperial' ? 'imperial' : 'metric';
+
+    fetch(root.dataset.index!).then((r) => r.json()).then((families) => {
+      const all = flattenVariants(families);
+      const valid = new Set(all.map((v: any) => `${v.familyId}:${v.id}`));
+      if (fromUrl.length) selects.forEach((s, i) => { s.value = valid.has(fromUrl[i]) ? fromUrl[i] : ''; });
+      const unitInput = root.querySelector<HTMLInputElement>(`input[name="units"][value="${units}"]`);
+      if (unitInput) unitInput.checked = true;
+
+      const render = () => {
+        const keys = selects.map((s) => s.value).filter(Boolean);
+        const chosen = keys.map((k) => all.find((v: any) => `${v.familyId}:${v.id}` === k)).filter(Boolean);
+        const enough = chosen.length >= 2;
+        empty.hidden = enough;
+        tableBox.hidden = !enough;
+        if (enough) tableBox.innerHTML = compareTableHtml(chosen, { lang, units, labels });
+        const p = new URLSearchParams();
+        if (keys.length) p.set('v', keys.join(','));
+        if (units === 'imperial') p.set('u', 'imperial');
+        history.replaceState(null, '', `${location.pathname}${p.toString() ? `?${p}` : ''}`);
+      };
+      selects.forEach((s) => s.addEventListener('change', render));
+      root.querySelectorAll<HTMLInputElement>('input[name="units"]').forEach((i) => i.addEventListener('change', () => { units = i.value; render(); }));
+      render();
+    });
+  }
+</script>
+
+<style>
+  .cmp { padding-top: var(--space-6); }
+  .cmp__controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: var(--space-4); align-items: end; margin-bottom: var(--space-5); }
+  .cmp__pick { display: grid; gap: var(--space-2); font-weight: 600; font-size: var(--text-sm); }
+  .cmp__pick select { width: 100%; padding: 0.6rem 0.75rem; border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font-weight: 500; }
+  .cmp__empty { padding: var(--space-5); border: 1px dashed var(--border-strong); border-radius: var(--radius-lg); color: var(--text-muted); }
+  .cmp__note { color: var(--text-muted); font-size: var(--text-sm); margin: var(--space-3) 0 var(--space-5); }
+  [hidden] { display: none !important; }
+  @media (max-width: 960px) { .cmp__controls { grid-template-columns: 1fr; } }
+</style>
