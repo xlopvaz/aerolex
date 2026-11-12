@@ -30,7 +30,7 @@
   "variants": [
     {
       "id": "737-700", "name": "737-700", "status": null,
-      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
       "lengthM": 33.6, "wingspanM": 35.8, "heightM": 12.5,
       "seatsTypical": "125–145", "seatsMax": 149,
       "rangeNm": 2900, "rangeKm": 5370, "mtowT": 70.08,
@@ -39,7 +39,7 @@
     },
     {
       "id": "737-800", "name": "737-800", "status": null,
-      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
       "lengthM": 39.5, "wingspanM": 35.8, "heightM": 12.5,
       "seatsTypical": "160–180", "seatsMax": 189,
       "rangeNm": 2800, "rangeKm": 5190, "mtowT": 79.01,
@@ -48,7 +48,7 @@
     },
     {
       "id": "737-900", "name": "737-900", "status": null,
-      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
       "lengthM": 42.1, "wingspanM": 35.8, "heightM": 12.5,
       "seatsTypical": "175–195", "seatsMax": 220,
       "rangeNm": 2700, "rangeKm": 5000, "mtowT": 85.13,
@@ -57,7 +57,7 @@
     },
     {
       "id": "737-7", "name": "737-7 (MAX 7)", "status": "certified",
-      "milestones": { "firstFlight": null, "certified": "2026-08-03", "firstDelivery": null, "firstOperator": null },
+      "milestones": { "firstFlight": null, "certified": "2026-08-03", "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
       "lengthM": 35.6, "wingspanM": 35.9, "heightM": 12.3,
       "seatsTypical": "135–160", "seatsMax": 172,
       "rangeNm": 3800, "rangeKm": 7040, "mtowT": null,
@@ -67,7 +67,7 @@
     },
     {
       "id": "737-8", "name": "737-8 (MAX 8)", "status": "in-production",
-      "milestones": { "firstFlight": "2016-01-29", "certified": null, "firstDelivery": "2017-05-16", "firstOperator": "Malindo Air" },
+      "milestones": { "firstFlight": "2016-01-29", "certified": null, "firstDelivery": "2017-05-16", "entryIntoService": null, "firstOperator": "Malindo Air" },
       "lengthM": 39.5, "wingspanM": 35.9, "heightM": 12.3,
       "seatsTypical": "160–180", "seatsMax": 210,
       "rangeNm": 3500, "rangeKm": 6480, "mtowT": null,
@@ -77,7 +77,7 @@
     },
     {
       "id": "737-9", "name": "737-9 (MAX 9)", "status": "in-production",
-      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "firstOperator": null },
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
       "lengthM": 42.1, "wingspanM": 35.9, "heightM": 12.3,
       "seatsTypical": "175–195", "seatsMax": 220,
       "rangeNm": 3300, "rangeKm": 6110, "mtowT": null,
@@ -86,7 +86,7 @@
     },
     {
       "id": "737-10", "name": "737-10 (MAX 10)", "status": "certified",
-      "milestones": { "firstFlight": null, "certified": "2026-10-20", "firstDelivery": null, "firstOperator": null },
+      "milestones": { "firstFlight": null, "certified": "2026-10-20", "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
       "lengthM": 43.8, "wingspanM": 35.9, "heightM": 12.3,
       "seatsTypical": "185–210", "seatsMax": 230,
       "rangeNm": 3100, "rangeKm": 5740, "mtowT": null,

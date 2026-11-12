@@ -1,0 +1,62 @@
+{
+  "manufacturer": "Boeing",
+  "family": { "en": "Boeing 787 Dreamliner", "es": "Boeing 787 Dreamliner" },
+  "category": "commercial",
+  "order": 4,
+  "summary": {
+    "en": "Boeing's mid-size widebody family, the 787 Dreamliner, offered in three lengths (787-8, 787-9 and 787-10) with a choice of GE Aerospace GEnx-1B or Rolls-Royce Trent 1000 engines.",
+    "es": "La familia de fuselaje ancho de tamaño medio de Boeing, el 787 Dreamliner, en tres longitudes (787-8, 787-9 y 787-10) y con motores GE Aerospace GEnx-1B o Rolls-Royce Trent 1000 a elegir."
+  },
+  "history": {
+    "en": "The 787 Dreamliner flew for the first time on 15 December 2009 from Paine Field in Everett, Washington. The family later grew with the stretched 787-9 and 787-10, and the FAA has since approved a higher maximum take-off weight for the 787-9 and 787-10.",
+    "es": "El 787 Dreamliner voló por primera vez el 15 de diciembre de 2009 desde Paine Field, en Everett (Washington). La familia creció después con los alargados 787-9 y 787-10, y la FAA ha aprobado posteriormente un peso máximo al despegue mayor para el 787-9 y el 787-10."
+  },
+  "facts": [
+    {
+      "en": "Boeing reports more than 2,400 orders from 90 customers, more than 1.3 billion passengers flown and more than 550 new non-stop routes opened.",
+      "es": "Boeing informa de más de 2400 pedidos de 90 clientes, más de 1300 millones de pasajeros transportados y más de 550 nuevas rutas sin escalas abiertas."
+    },
+    {
+      "en": "All three versions share the same 60.1 m wingspan; the 787-10 is about 11.6 m longer than the 787-8.",
+      "es": "Las tres versiones comparten la misma envergadura de 60,1 m; el 787-10 es unos 11,6 m más largo que el 787-8."
+    },
+    {
+      "en": "The ranges shown are the ones Boeing currently publishes; older Boeing documents list different figures.",
+      "es": "Los alcances que se muestran son los que Boeing publica actualmente; documentos más antiguos de Boeing indican otras cifras."
+    }
+  ],
+  "sources": ["boeing-787-page", "boeing-787-first-flight"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "787-8", "name": "787-8", "status": null,
+      "milestones": { "firstFlight": "2009-12-15", "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
+      "lengthM": 56.7, "wingspanM": 60.1, "heightM": 16.9,
+      "seatsTypical": "200–275", "seatsMax": null,
+      "rangeNm": 8000, "rangeKm": 14820, "mtowT": 227.93,
+      "engines": ["GE Aerospace GEnx-1B", "Rolls-Royce Trent 1000"],
+      "note": null,
+      "sources": ["boeing-787-page", "boeing-787-first-flight"]
+    },
+    {
+      "id": "787-9", "name": "787-9", "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
+      "lengthM": 62.8, "wingspanM": 60.1, "heightM": 17.0,
+      "seatsTypical": "250–325", "seatsMax": null,
+      "rangeNm": 8300, "rangeKm": 15370, "mtowT": 259.22,
+      "engines": ["GE Aerospace GEnx-1B", "Rolls-Royce Trent 1000"],
+      "note": null,
+      "sources": ["boeing-787-page"]
+    },
+    {
+      "id": "787-10", "name": "787-10", "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
+      "lengthM": 68.3, "wingspanM": 60.1, "heightM": 17.0,
+      "seatsTypical": "300–375", "seatsMax": null,
+      "rangeNm": 7500, "rangeKm": 13890, "mtowT": 260.36,
+      "engines": ["GE Aerospace GEnx-1B", "Rolls-Royce Trent 1000"],
+      "note": null,
+      "sources": ["boeing-787-page"]
+    }
+  ]
+}

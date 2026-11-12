@@ -32,7 +32,9 @@ export function compareTableHtml(variants, { lang, units, labels }) {
     .map((v) => `<th scope="col"><span class="cmp__maker">${esc(v.manufacturer)}</span>${esc(v.name)}</th>`)
     .join('')}</tr>`;
 
-  const row = (label, cells) => `<tr><th scope="row">${esc(label)}</th>${cells.join('')}</tr>`;
+  // Rows where no selected aircraft has a value are left out (nothing to compare).
+  const row = (label, cells) => (cells.every((c) => c.includes('class="na"')) ? '' : `<tr><th scope="row">${esc(label)}</th>${cells.join('')}</tr>`);
+  const op = (v) => (v.milestones.firstOperator ? `<br /><small>${esc(v.milestones.firstOperator)}</small>` : '');
   const rows = [
     row(labels.statusLabel, variants.map((v) => `<td>${v.status ? esc(labels.status[v.status]) : dash}</td>`)),
     ...METRICS.slice(0, 3).map(({ key }) =>
@@ -42,7 +44,8 @@ export function compareTableHtml(variants, { lang, units, labels }) {
     ...METRICS.slice(3).map(({ key }) => row(labelOf[key], variants.map((v) => cell(v, key)))),
     row(labels.engines, variants.map((v) => `<td>${v.engines.map(esc).join('<br />')}</td>`)),
     row(labels.firstFlight, variants.map((v) => `<td>${fmtDate(v.milestones.firstFlight)}</td>`)),
-    row(labels.firstDelivery, variants.map((v) => `<td>${v.milestones.firstDelivery ? `${fmtDate(v.milestones.firstDelivery)}${v.milestones.firstOperator ? `<br /><small>${esc(v.milestones.firstOperator)}</small>` : ''}` : dash}</td>`)),
+    row(labels.firstDelivery, variants.map((v) => `<td>${v.milestones.firstDelivery ? `${fmtDate(v.milestones.firstDelivery)}${op(v)}` : dash}</td>`)),
+    row(labels.entryIntoService, variants.map((v) => `<td>${v.milestones.entryIntoService ? `${fmtDate(v.milestones.entryIntoService)}${v.milestones.firstDelivery ? '' : op(v)}` : dash}</td>`)),
   ];
 
   function cell(v, key) {
