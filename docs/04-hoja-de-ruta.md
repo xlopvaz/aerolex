@@ -1,0 +1,83 @@
+# 04 · Hoja de ruta
+
+> Regla del proyecto: **no se avanza de fase sin dejar la anterior funcional** (todas las comprobaciones de CI en verde).
+
+Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras de contenido son objetivos mínimos **verificados**, no textos de relleno.
+
+---
+
+## FASE 1 — Planificación ✅ (este PR)
+
+- [x] Análisis del proyecto completo
+- [x] Propuesta de nombres y recomendación → [01-identidad-de-marca.md](01-identidad-de-marca.md)
+- [x] Identidad visual: concepto, eslogan, logotipo, paleta (con contraste comprobado), tipografías, iconografía
+- [x] Arquitectura técnica y modelo de datos → [02-arquitectura-tecnica.md](02-arquitectura-tecnica.md)
+- [x] Navegación, mapa del sitio y página de inicio → [03-navegacion-y-ux.md](03-navegacion-y-ux.md)
+- [x] Política de fuentes y fiabilidad → [05-fuentes-y-fiabilidad.md](05-fuentes-y-fiabilidad.md)
+- [x] Decisiones cerradas (ver final de este documento)
+
+## FASE 2 — Diseño y esqueleto
+
+1. Proyecto Astro, GitHub Action de despliegue y Pages activado → la web vacía ya se publica.
+2. `tokens.css`, temas claro/oscuro (con recuerdo de la preferencia y respeto de `prefers-color-scheme`).
+3. Logotipo y favicon SVG; set inicial de iconos.
+4. Sistema i18n: rutas `/es/` y `/en/`, selector ES/EN que lleva a la página equivalente, `hreflang`.
+5. Layouts y biblioteca de componentes base (§4 del documento de UX), con una página interna de muestra (`/styleguide/`).
+6. Cabecera, mega-menú, barra móvil, pie con avisos legales, 404 bilingüe.
+7. `store` con LocalStorageAdapter, migraciones y exportar/importar.
+8. Portada con los bloques que ya tengan contenido real.
+9. CI: build, Vitest, comprobador de enlaces y Playwright básico (idioma + tema + navegación).
+
+**Hecho cuando:** se publica en `xlopvaz.github.io/aerolex/`, el cambio de idioma y de tema funciona en todas las páginas, no hay enlaces rotos y Lighthouse da ≥ 90.
+
+## FASE 3 — Contenido
+
+| Bloque | Objetivo mínimo de la fase |
+|---|---|
+| Diccionario | 150 términos completos y 100 acrónimos (incluidos todos los de tu lista), con fuente; buscador con autocompletado, filtros, favoritos e historial |
+| Introduction to Aviation | Itinerario completo (Beginner) |
+| Pilot Academy | Módulos 1–2 (Principles of Flight, Aerodynamics) con quizzes |
+| Cabin Crew Academy | Módulos 1–3 con aviso de "el manual del operador prevalece" |
+| Meteorología | Fundamentos y curso METAR & SPECI completo |
+| Hangar | Las 15 familias de tu lista, con variantes y fuentes |
+| Fuentes | Página de bibliografía global |
+
+El contenido se sigue ampliando de forma continua después de esta fase.
+
+## FASE 4 — Herramientas
+
+1. **METAR Decoder** completo (grupos, errores, visualizaciones, ES/EN) con batería de tests.
+2. **TAF Decoder** (FM, BECMG, TEMPO, PROB30/40, TX/TN, línea temporal visual).
+3. **METAR & TAF Practice** en 4 niveles.
+4. **Live METAR/TAF:** GitHub Action programada que publica JSON de una lista de aeropuertos configurable, con indicador de antigüedad y opción de pegar un mensaje.
+5. **Conversor de unidades** (kt↔km/h↔mph, ft↔m, nm↔km, lb↔kg, °C↔°F↔K, hPa↔inHg).
+6. **Buscador IATA/ICAO y Airport Explorer** (OurAirports).
+7. **ATC Phraseology Trainer y simulador** (rol piloto/controlador, evaluación de readback, TTS).
+8. **Aircraft Comparison e Identification Game.**
+9. **Motor de quizzes, flashcards y generador de quizzes.**
+10. **Weather Glossary, Acronym Dictionary y Aviation Timeline.**
+
+**Hecho cuando:** cada herramienta tiene tests unitarios de sus cálculos o de su parseo, el aviso "educativo, no operacional" y funciona sin conexión cuando es posible.
+
+## FASE 5 — Experiencia de usuario
+
+Panel de usuario, XP, metas diarias, rachas, insignias (*First Flight*, *METAR Master*, *ATC Communicator*…), estadísticas, favoritos, historial, revisión de errores, cabina interactiva (Airbus y Boeing por separado), diagramas de aeropuerto y optimización móvil.
+
+## FASE 6 — Publicación
+
+Auditoría completa (enlaces, JS, accesibilidad, responsive), SEO (sitemap, datos estructurados `DefinedTerm` para el diccionario, Open Graph por página), rendimiento, dominio propio opcional y versión 1.0.
+
+## Después de la 1.0
+
+Cuentas y sincronización (`RemoteSyncAdapter`), PWA instalable con modo sin conexión, contribuciones de la comunidad con revisión, y más itinerarios, términos y aeronaves.
+
+---
+
+## Decisiones de la Fase 1 (12/11/2026)
+
+| # | Tema | Decisión |
+|---|---|---|
+| 1 | Nombre | **AeroLex** (pendiente comprobar marcas y dominios antes del lanzamiento público) |
+| 2 | Stack | **Astro** + JS/JSON, compilado y desplegado con GitHub Actions |
+| 3 | Idioma inicial | **Según el idioma del navegador**; luego se recuerda la elección del usuario |
+| 4 | METAR en directo | **Solo GitHub, sin cuentas externas:** Action programada + biblioteca de práctica (ver `02` §8) |
