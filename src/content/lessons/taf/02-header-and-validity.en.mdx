@@ -1,0 +1,53 @@
+---
+lesson: header-and-validity
+course: taf
+lang: en
+title: "Header and validity period"
+summary: "Message type, aerodrome, issue time, validity period and the AMD, COR, CNL and NIL indicators."
+objectives:
+  - "Read the issue time and validity period"
+  - "Understand the 24-hour notation at the end of a day"
+  - "Recognise amended (AMD), corrected (COR) and cancelled (CNL) TAFs"
+minutes: 7
+terms: [taf, utc]
+quiz: taf-02
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## The header
+
+```
+TAF LEMD 121700Z 1218/1324
+```
+
+| Group | Meaning |
+|---|---|
+| `TAF` | Message type |
+| `LEMD` | ICAO location indicator of the aerodrome |
+| `121700Z` | Issued: day 12, 17:00 UTC (same format as in a METAR) |
+| `1218/1324` | Valid: from day 12 at 18 UTC to day 13 at 24 UTC |
+
+## The validity period: `DDHH/DDHH`
+
+Unlike the issue time, validity uses **day and hour, without minutes**. The end `1324` means "day 13 at 24 UTC", the same as day 14 at 00 UTC: it is written this way to make clear that the period ends at the end of day 13.
+
+<MetarBreakdown parts={[
+  ["1306/1406", "From day 13 at 06 UTC to day 14 at 06 UTC: 24 hours"],
+  ["1312/1418", "From day 13 at 12 UTC to day 14 at 18 UTC: 30 hours"],
+  ["1309/1318", "From day 13 at 09 UTC to day 13 at 18 UTC: 9 hours"]
+]} />
+
+## Amendments, corrections and cancellations
+
+| Code | Meaning |
+|---|---|
+| `TAF AMD` | **Amended** TAF: the forecast has changed and this one replaces the previous one |
+| `TAF COR` | **Corrected** TAF: corrects an error in the previous one |
+| `CNL` | **Cancelled** TAF |
+| `NIL` | No TAF available |
+
+<Callout type="tip" label="Tip">
+When checking a TAF, always make sure you are reading **the latest one issued** (and whether there is an `AMD`). An amended TAF completely replaces the previous one.
+</Callout>

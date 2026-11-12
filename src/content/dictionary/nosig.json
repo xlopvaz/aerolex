@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "NOSIG",
+    "es": "NOSIG"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "No significant change",
+    "es": "Sin cambios significativos"
+  },
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Trend forecast indicator, appended to a METAR or SPECI, stating that no significant change in the reported conditions is expected during the 2 hours after the observation.",
+    "es": "Indicador del pronóstico de tendencia, añadido a un METAR o un SPECI, que señala que no se esperan cambios significativos en las condiciones notificadas durante las 2 horas siguientes a la observación."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "'Nothing important is going to change in the next two hours.'",
+    "es": "«En las próximas dos horas no va a cambiar nada importante.»"
+  },
+  "example": {
+    "en": "LEMD 121830Z 24012KT 9999 SCT030 18/10 Q1013 NOSIG",
+    "es": "LEMD 121830Z 24012KT 9999 SCT030 18/10 Q1013 NOSIG"
+  },
+  "pronunciation": {
+    "en": "NO-sig",
+    "es": "nó-sig"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "metar",
+    "becmg",
+    "tempo"
+  ],
+  "regionalNote": {
+    "en": "Trend forecasts are common at European aerodromes; US METARs do not include them.",
+    "es": "Los pronósticos de tendencia son habituales en aeródromos europeos; los METAR de EE. UU. no los incluyen."
+  },
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -10,4 +10,6 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   integrations: [mdx()],
+  // Code blocks in lessons hold METAR/TAF messages, not code: plain text styled by the theme.
+  markdown: { syntaxHighlight: false },
 });

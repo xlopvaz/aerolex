@@ -1,0 +1,60 @@
+---
+lesson: change-groups
+course: taf
+lang: es
+title: "Grupos de cambio: FM, BECMG y TEMPO"
+summary: "Cómo se indican los cambios previstos y qué condiciones rigen en cada momento."
+objectives:
+  - "Distinguir un cambio rápido (FM), uno progresivo (BECMG) y uno temporal (TEMPO)"
+  - "Leer sus indicadores de tiempo"
+  - "Saber qué condiciones aplican en cada momento del periodo"
+minutes: 12
+terms: [becmg, tempo, taf]
+quiz: taf-04
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## FM: a partir de… (cambio rápido y completo)
+
+`FM` va seguido de **día, hora y minutos** (`FMDDHHMM`). Indica que a esa hora empiezan unas condiciones **completamente nuevas**: todo lo anterior deja de aplicarse.
+
+<MetarBreakdown parts={[
+  ["FM131800", "A partir del día 13 a las 18:00 UTC:"],
+  ["30010KT 9999 SCT025", "viento de 300° a 10 nudos, 10 km o más, nubes dispersas a 2500 ft"]
+]} />
+
+Como un grupo `FM` sustituye todo, incluye siempre un pronóstico completo (viento, visibilidad, nubes…).
+
+## BECMG: pasando a (cambio progresivo que se mantiene)
+
+<Term id="becmg" /> va seguido de un periodo `DDHH/DDHH`. El cambio ocurre **en algún momento** dentro de ese periodo (normalmente de hasta 2 horas, como máximo 4) y, al terminar, **las nuevas condiciones se mantienen**.
+
+Solo se escriben los elementos que cambian; el resto sigue igual.
+
+<MetarBreakdown parts={[
+  ["BECMG 1310/1312", "Entre las 10 y las 12 UTC del día 13…"],
+  ["27015KT", "…el viento pasa a ser de 270° a 15 nudos (lo demás, sin cambios)"]
+]} />
+
+## TEMPO: temporalmente (fluctuaciones breves)
+
+<Term id="tempo" /> también va seguido de un periodo. Indica **fluctuaciones temporales**: cada una dura menos de una hora y, en total, ocupan menos de la mitad del periodo. Al terminar el TEMPO, siguen rigiendo las condiciones anteriores.
+
+<MetarBreakdown parts={[
+  ["TEMPO 1303/1308", "Entre las 03 y las 08 UTC del día 13, temporalmente:"],
+  ["3000 BR BKN008", "visibilidad 3000 m con neblina y techo a 800 ft"]
+]} />
+
+## Resumen
+
+| Grupo | Tipo de cambio | ¿Qué rige después? |
+|---|---|---|
+| `FM` | Rápido y completo, a una hora exacta | Las nuevas condiciones (todo lo anterior se descarta) |
+| `BECMG` | Progresivo, dentro de un periodo | Las nuevas condiciones de los elementos que cambian |
+| `TEMPO` | Temporal, a ratos | Las condiciones que había antes del TEMPO |
+
+<Callout type="caution" label="Precaución">
+Para planificar, las condiciones de un `TEMPO` **sí cuentan**: si durante ese periodo pueden darse condiciones por debajo de tus mínimos, tenlo en cuenta aunque no sean las condiciones predominantes. Las reglas exactas para su uso en la planificación las fijan la normativa y el operador.
+</Callout>

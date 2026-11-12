@@ -49,6 +49,10 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Progreso por ID (compartido entre idiomas), visible en el curso, la academia y el panel.
 - [x] Curso METAR y SPECI: 9 lecciones ES/EN, 34 preguntas y evaluación final; ejemplos didácticos marcados como tales.
 
+**Bloque 3 — Academia TAF ✅ (13/11/2026)**
+- [x] Curso TAF (nivel Elementary): 6 lecciones ES/EN (qué es un TAF, cabecera y validez, condiciones previstas, FM/BECMG/TEMPO, PROB/TX/TN/NSW y decodificación completa con línea temporal), 23 preguntas y evaluación final.
+- [x] Diccionario: nuevas entradas BECMG, TEMPO y NOSIG (77 entradas).
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

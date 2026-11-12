@@ -37,7 +37,9 @@
   },
   "related": [
     "metar",
-    "cavok"
+    "cavok",
+    "becmg",
+    "tempo"
   ],
   "regionalNote": null,
   "sources": [

@@ -1,0 +1,56 @@
+---
+lesson: probability-and-temperature
+course: taf
+lang: en
+title: "Probability, temperatures and NSW"
+summary: "PROB30 and PROB40, maximum and minimum temperature groups (TX/TN) and the end of significant weather."
+objectives:
+  - "Interpret PROB30 and PROB40, alone or with TEMPO"
+  - "Read TX and TN groups"
+  - "Know when NSW is used"
+minutes: 8
+terms: [taf, tempo]
+quiz: taf-05
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Probability: PROB30 and PROB40
+
+When the forecaster is not sure a phenomenon will occur, its **probability** is given. Only two values are used: **30 %** and **40 %**. (Below 30 % it is not considered significant enough to include; from 50 % it is simply forecast.)
+
+`PROB` can appear:
+
+- **on its own**, with a period: `PROB30 1312/1316 TSRA BKN015CB`
+- **combined with TEMPO**: `PROB40 TEMPO 1314/1318 +SHRA`
+
+It is not combined with `BECMG` or `FM`.
+
+<MetarBreakdown parts={[
+  ["PROB30", "30 % probability…"],
+  ["TEMPO 1312/1316", "…that, temporarily between 12 and 16 UTC on day 13,"],
+  ["TSRA BKN015CB", "there will be a thunderstorm with rain and cumulonimbus at 1,500 ft"]
+]} />
+
+## Temperatures: TX and TN
+
+Some TAFs include, at the end of the base section, the forecast **maximum (`TX`)** and **minimum (`TN`)** temperatures, with their times:
+
+<MetarBreakdown parts={[
+  ["TX24/1315Z", "Maximum 24 °C, day 13 at 15 UTC"],
+  ["TN07/1306Z", "Minimum 7 °C, day 13 at 06 UTC"],
+  ["TNM02/1406Z", "Minimum −2 °C, day 14 at 06 UTC"]
+]} />
+
+They help anticipate take-off performance in hot weather or ice and frost risk in cold weather.
+
+## NSW: end of significant weather
+
+`NSW` (*no significant weather*) is used in a change group to indicate that the significant weather forecast earlier **stops**:
+
+`BECMG 1316/1318 30010KT 9999 NSW SCT025`
+
+<Callout type="regional-diff" label="ICAO / US">
+US TAFs rely mostly on `FM` groups, and probability is only expressed as `PROB30`.
+</Callout>

@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué valores de probabilidad se usan en los TAF?",
+        "en": "Which probability values are used in TAFs?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "10 % y 20 %",
+            "en": "10 % and 20 %"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 % y 40 %",
+            "en": "30 % and 40 %"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "50 % y 100 %",
+            "en": "50 % and 100 %"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Solo se usan PROB30 y PROB40.",
+        "en": "Only PROB30 and PROB40 are used."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Con qué grupo se puede combinar PROB?",
+        "en": "Which group can PROB be combined with?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "TEMPO",
+            "en": "TEMPO"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "BECMG",
+            "en": "BECMG"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "FM",
+            "en": "FM"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "PROB puede ir solo o con TEMPO, pero no con BECMG ni FM.",
+        "en": "PROB can stand alone or go with TEMPO, but not with BECMG or FM."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Decodifica:",
+        "en": "Decode:"
+      },
+      "code": "TNM02/1406Z",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Mínima de −2 °C el día 14 a las 06 UTC",
+            "en": "Minimum −2 °C on day 14 at 06 UTC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Máxima de 2 °C el día 14 a las 06 UTC",
+            "en": "Maximum 2 °C on day 14 at 06 UTC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Mínima de 2 °C a las 14:06 UTC",
+            "en": "Minimum 2 °C at 14:06 UTC"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "TN es la mínima; M indica bajo cero; 1406Z es día 14 a las 06 UTC.",
+        "en": "TN is the minimum; M means below zero; 1406Z is day 14 at 06 UTC."
+      }
+    }
+  ]
+}

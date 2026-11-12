@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué tipo de nube se indica en un TAF?",
+        "en": "Which cloud type is indicated in a TAF?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "CB y TCU",
+            "en": "CB and TCU"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo CB",
+            "en": "Only CB"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ninguno",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "En el TAF solo se pronostica el tipo cumulonimbo (CB).",
+        "en": "A TAF only forecasts the cumulonimbus (CB) type."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En un TAF de EE. UU., ¿qué significa P6SM?",
+        "en": "In a US TAF, what does P6SM mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Más de 6 millas terrestres de visibilidad",
+            "en": "Visibility more than 6 statute miles"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Probabilidad del 6 %",
+            "en": "6 % probability"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6 pulgadas de nieve",
+            "en": "6 inches of snow"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "P = más de (plus); SM = millas terrestres.",
+        "en": "P = more than (plus); SM = statute miles."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Dónde aparece NSW?",
+        "en": "Where does NSW appear?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En la parte de base, siempre",
+            "en": "In the base section, always"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "En un grupo de cambio, para indicar el fin del tiempo significativo",
+            "en": "In a change group, to indicate the end of significant weather"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En la cabecera",
+            "en": "In the header"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "NSW solo tiene sentido en un grupo de cambio: indica que termina el fenómeno previsto antes.",
+        "en": "NSW only makes sense in a change group: it marks the end of the weather forecast earlier."
+      }
+    }
+  ]
+}

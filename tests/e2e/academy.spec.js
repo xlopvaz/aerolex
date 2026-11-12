@@ -55,3 +55,27 @@ test.describe('academy', () => {
     await expect(page).toHaveURL(/\/en\/dictionary\/ceiling\/$/);
   });
 });
+
+test.describe('TAF academy', () => {
+  test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
+    await page.goto('en/academy/');
+    await expect(page.locator('.course-card')).toHaveCount(2);
+    await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
+    await expect(page.locator('.lesson-list li')).toHaveCount(6);
+    await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
+    await expect(page.locator('h1')).toHaveText('Change groups: FM, BECMG and TEMPO');
+    await page.locator('.site-header [data-set-lang="es"]').click();
+    await expect(page).toHaveURL(/\/es\/academia\/taf\/change-groups\/$/);
+    await page.locator('.prose a.term', { hasText: 'BECMG' }).first().click();
+    await expect(page).toHaveURL(/\/es\/diccionario\/becmg\/$/);
+  });
+
+  test('final assessment scores answers', async ({ page }) => {
+    await page.goto('es/academia/taf/full-decode/');
+    const quiz = page.locator('[data-quiz="taf-final"]');
+    await expect(quiz.locator('.quiz__q')).toHaveCount(8);
+    await quiz.locator('[data-q="q1"] [data-opt="a"]').click();
+    await quiz.locator('[data-q="q2"] [data-opt="a"]').click();
+    await expect(quiz.locator('[data-quiz-score]')).toHaveText('1/8 correctas');
+  });
+});

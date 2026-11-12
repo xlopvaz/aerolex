@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué grupo indica un cambio rápido y completo a una hora exacta?",
+        "en": "Which group indicates a rapid, complete change at an exact time?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "BECMG",
+            "en": "BECMG"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "TEMPO",
+            "en": "TEMPO"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "FM",
+            "en": "FM"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "FMDDHHMM: desde esa hora rige un pronóstico completamente nuevo.",
+        "en": "FMDDHHMM: from that time a completely new forecast applies."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Después de un grupo TEMPO, ¿qué condiciones rigen?",
+        "en": "After a TEMPO group, which conditions apply?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Las del TEMPO",
+            "en": "Those of the TEMPO"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Las que había antes del TEMPO",
+            "en": "Those in force before the TEMPO"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ninguna",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "TEMPO describe fluctuaciones temporales; al terminar, vuelven las condiciones anteriores.",
+        "en": "TEMPO describes temporary fluctuations; when it ends, the previous conditions return."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Decodifica:",
+        "en": "Decode:"
+      },
+      "code": "BECMG 1310/1312 27015KT",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Entre las 10 y las 12 UTC del día 13, el viento pasa a ser de 270° a 15 nudos y se mantiene",
+            "en": "Between 10 and 12 UTC on day 13, the wind becomes 270° at 15 knots and stays"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A ratos, viento de 270° a 15 nudos",
+            "en": "At times, wind 270° at 15 knots"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Desde las 13:10 UTC, viento de 270°",
+            "en": "From 13:10 UTC, wind 270°"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "BECMG es un cambio progresivo dentro del periodo que después se mantiene.",
+        "en": "BECMG is a gradual change within the period that then persists."
+      }
+    }
+  ]
+}

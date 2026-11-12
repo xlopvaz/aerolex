@@ -1,0 +1,60 @@
+---
+lesson: change-groups
+course: taf
+lang: en
+title: "Change groups: FM, BECMG and TEMPO"
+summary: "How expected changes are shown and which conditions apply at each moment."
+objectives:
+  - "Tell a rapid change (FM), a gradual change (BECMG) and a temporary change (TEMPO) apart"
+  - "Read their time indicators"
+  - "Know which conditions apply at each moment of the period"
+minutes: 12
+terms: [becmg, tempo, taf]
+quiz: taf-04
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## FM: from… (rapid, complete change)
+
+`FM` is followed by **day, hour and minutes** (`FMDDHHMM`). It means that at that time **completely new** conditions begin: everything before stops applying.
+
+<MetarBreakdown parts={[
+  ["FM131800", "From day 13 at 18:00 UTC:"],
+  ["30010KT 9999 SCT025", "wind 300° at 10 knots, 10 km or more, scattered cloud at 2,500 ft"]
+]} />
+
+Because an `FM` group replaces everything, it always contains a complete forecast (wind, visibility, cloud…).
+
+## BECMG: becoming (gradual change that persists)
+
+<Term id="becmg" /> is followed by a period `DDHH/DDHH`. The change happens **at some point** within that period (normally up to 2 hours, at most 4) and, when it ends, **the new conditions persist**.
+
+Only the elements that change are written; everything else stays the same.
+
+<MetarBreakdown parts={[
+  ["BECMG 1310/1312", "Between 10 and 12 UTC on day 13…"],
+  ["27015KT", "…the wind becomes 270° at 15 knots (everything else unchanged)"]
+]} />
+
+## TEMPO: temporarily (brief fluctuations)
+
+<Term id="tempo" /> is also followed by a period. It indicates **temporary fluctuations**: each lasts less than an hour and, together, they cover less than half of the period. When the TEMPO ends, the previous conditions still apply.
+
+<MetarBreakdown parts={[
+  ["TEMPO 1303/1308", "Between 03 and 08 UTC on day 13, temporarily:"],
+  ["3000 BR BKN008", "visibility 3,000 m in mist and a ceiling at 800 ft"]
+]} />
+
+## Summary
+
+| Group | Type of change | What applies afterwards? |
+|---|---|---|
+| `FM` | Rapid and complete, at an exact time | The new conditions (everything before is discarded) |
+| `BECMG` | Gradual, within a period | The new conditions for the elements that change |
+| `TEMPO` | Temporary, on and off | The conditions in force before the TEMPO |
+
+<Callout type="caution" label="Caution">
+For planning, `TEMPO` conditions **do count**: if conditions below your minima may occur during that period, take them into account even if they are not the prevailing conditions. The exact rules for using them in planning are set by regulations and the operator.
+</Callout>

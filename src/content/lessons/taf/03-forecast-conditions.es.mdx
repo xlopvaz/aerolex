@@ -1,0 +1,47 @@
+---
+lesson: forecast-conditions
+course: taf
+lang: es
+title: "Condiciones previstas"
+summary: "Viento, visibilidad, tiempo y nubes en el TAF: lo que es igual que en el METAR y lo que cambia."
+objectives:
+  - "Decodificar la parte de base de un TAF"
+  - "Saber qué diferencias hay con los grupos del METAR"
+  - "Reconocer CAVOK, NSC y las nubes CB en un pronóstico"
+minutes: 8
+terms: [taf, cavok, ceiling]
+quiz: taf-03
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Igual que en el METAR…
+
+Después de la cabecera viene la **parte de base**: las condiciones que se esperan al principio del periodo de validez. Se escriben con los mismos códigos que ya conoces:
+
+<MetarBreakdown parts={[
+  ["24012KT", "Viento previsto de 240° a 12 nudos"],
+  ["9999", "Visibilidad prevista de 10 km o más"],
+  ["SCT030", "Nubes dispersas previstas a 3000 ft"]
+]} />
+
+También se usan `G` (rachas), `VRB`, `CAVOK`, `NSC` y los códigos de tiempo presente (`-RA`, `TSRA`, `BR`, `FG`…).
+
+## …con algunas diferencias
+
+- **Nubes:** en el TAF solo se indica el tipo **CB** (cumulonimbo); el TCU no se pronostica.
+- **Sin RVR, sin punto de rocío y, normalmente, sin presión.**
+- **Sin tiempo presente si no se espera nada:** igual que en el METAR, el grupo se omite.
+- **NSW** (*no significant weather*) solo aparece en los grupos de cambio para indicar que el tiempo significativo **termina**.
+
+<MetarBreakdown parts={[
+  ["21015KT", "Viento de 210° a 15 nudos"],
+  ["6000", "Visibilidad 6000 m"],
+  ["-RA", "Lluvia débil"],
+  ["BKN012", "Capa nubosa a 1200 ft: techo previsto de 1200 ft"]
+]} caption="Parte de base de un TAF lluvioso." />
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+En los TAF de EE. UU. la visibilidad va en millas terrestres y `P6SM` significa **más de 6 millas**. No se usa CAVOK, y pueden aparecer grupos de cizalladura a baja altura no convectiva como `WS020/24045KT` (a 2000 ft, viento de 240° a 45 nudos).
+</Callout>

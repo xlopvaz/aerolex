@@ -1,0 +1,292 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuándo se emitió este TAF?",
+        "en": "When was this TAF issued?"
+      },
+      "code": "TAF LEMD 121700Z 1218/1324 24012KT 9999 SCT030 TX24/1315Z TN07/1306Z BECMG 1220/1222 VRB03KT TEMPO 1303/1308 3000 BR BKN008 BECMG 1310/1312 27015KT",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Día 12 a las 17:00 UTC",
+            "en": "Day 12 at 17:00 UTC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Día 12 a las 18:00 UTC",
+            "en": "Day 12 at 18:00 UTC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Día 13 a las 24 UTC",
+            "en": "Day 13 at 24 UTC"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "121700Z es la hora de emisión; 1218/1324, el periodo de validez.",
+        "en": "121700Z is the issue time; 1218/1324, the validity period."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En el mismo TAF, ¿qué viento se espera a las 23 UTC del día 12?",
+        "en": "In the same TAF, what wind is expected at 23 UTC on day 12?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "De 240° a 12 nudos",
+            "en": "240° at 12 knots"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Flojo y variable",
+            "en": "Light and variable"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De 270° a 15 nudos",
+            "en": "270° at 15 knots"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El BECMG 1220/1222 ya se ha completado a las 23 UTC: viento VRB03KT.",
+        "en": "BECMG 1220/1222 is complete by 23 UTC: wind VRB03KT."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En el mismo TAF, ¿qué puede ocurrir a ratos entre las 03 y las 08 UTC del día 13?",
+        "en": "In the same TAF, what may happen at times between 03 and 08 UTC on day 13?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tormentas",
+            "en": "Thunderstorms"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Visibilidad de 3000 m con neblina y techo a 800 ft",
+            "en": "Visibility 3,000 m in mist and a ceiling at 800 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nieve",
+            "en": "Snow"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es el grupo TEMPO 1303/1308 3000 BR BKN008.",
+        "en": "That is the group TEMPO 1303/1308 3000 BR BKN008."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué temperatura máxima se prevé?",
+        "en": "What maximum temperature is forecast?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "7 °C",
+            "en": "7 °C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "24 °C",
+            "en": "24 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "13 °C",
+            "en": "13 °C"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "TX24/1315Z: máxima de 24 °C el día 13 a las 15 UTC.",
+        "en": "TX24/1315Z: maximum 24 °C on day 13 at 15 UTC."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En este TAF de Santiago, ¿qué probabilidad hay de tormenta?",
+        "en": "In this Santiago TAF, what is the probability of a thunderstorm?"
+      },
+      "code": "TAF LEST 130500Z 1306/1406 21015KT 6000 -RA BKN012 TEMPO 1306/1312 3000 RA BKN006 PROB30 TEMPO 1312/1316 TSRA BKN015CB BECMG 1316/1318 30010KT 9999 NSW SCT025",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "30 %, temporalmente entre las 12 y las 16 UTC",
+            "en": "30 %, temporarily between 12 and 16 UTC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "100 % durante todo el periodo",
+            "en": "100 % throughout"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se prevén tormentas",
+            "en": "No thunderstorms are forecast"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "PROB30 TEMPO 1312/1316 TSRA: 30 % de tormentas temporales en ese intervalo.",
+        "en": "PROB30 TEMPO 1312/1316 TSRA: 30 % chance of temporary thunderstorms in that interval."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué indica NSW en el último grupo de ese TAF?",
+        "en": "What does NSW indicate in the last group of that TAF?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que la lluvia termina",
+            "en": "That the rain ends"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Viento del noroeste",
+            "en": "North-westerly wind"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que no hay nubes",
+            "en": "That there is no cloud"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "NSW: fin del tiempo significativo previsto antes (la lluvia).",
+        "en": "NSW: the end of the significant weather forecast earlier (the rain)."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "En un TAF de EE. UU., ¿qué significa este grupo?",
+        "en": "In a US TAF, what does this group mean?"
+      },
+      "code": "FM140600 18008KT 5SM BR OVC015",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A partir del día 14 a las 06:00 UTC: viento de 180° a 8 nudos, 5 millas con neblina, cubierto a 1500 ft",
+            "en": "From day 14 at 06:00 UTC: wind 180° at 8 kt, 5 miles in mist, overcast at 1,500 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Temporalmente, niebla",
+            "en": "Temporarily, fog"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Visibilidad de 5 km",
+            "en": "Visibility 5 km"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "FM inicia un pronóstico completamente nuevo; SM son millas terrestres.",
+        "en": "FM starts a completely new forecast; SM are statute miles."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "¿Qué diferencia hay entre BECMG y TEMPO?",
+        "en": "What is the difference between BECMG and TEMPO?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "BECMG es un cambio que se mantiene; TEMPO, fluctuaciones temporales",
+            "en": "BECMG is a change that persists; TEMPO, temporary fluctuations"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Son sinónimos",
+            "en": "They are synonyms"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "TEMPO dura más que BECMG",
+            "en": "TEMPO lasts longer than BECMG"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Tras un BECMG rigen las nuevas condiciones; tras un TEMPO vuelven las anteriores.",
+        "en": "After a BECMG the new conditions apply; after a TEMPO the previous ones return."
+      }
+    }
+  ]
+}
