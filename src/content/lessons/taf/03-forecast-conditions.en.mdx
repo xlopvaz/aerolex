@@ -1,0 +1,47 @@
+---
+lesson: forecast-conditions
+course: taf
+lang: en
+title: "Forecast conditions"
+summary: "Wind, visibility, weather and cloud in a TAF: what is the same as in a METAR and what changes."
+objectives:
+  - "Decode the base section of a TAF"
+  - "Know the differences from METAR groups"
+  - "Recognise CAVOK, NSC and CB cloud in a forecast"
+minutes: 8
+terms: [taf, cavok, ceiling]
+quiz: taf-03
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Just like a METAR…
+
+After the header comes the **base section**: the conditions expected at the start of the validity period. They are written with the codes you already know:
+
+<MetarBreakdown parts={[
+  ["24012KT", "Forecast wind 240° at 12 knots"],
+  ["9999", "Forecast visibility 10 km or more"],
+  ["SCT030", "Forecast scattered cloud at 3,000 ft"]
+]} />
+
+`G` (gusts), `VRB`, `CAVOK`, `NSC` and the weather codes (`-RA`, `TSRA`, `BR`, `FG`…) are also used.
+
+## …with some differences
+
+- **Cloud:** a TAF only indicates the **CB** (cumulonimbus) type; TCU is not forecast.
+- **No RVR, no dew point and, usually, no pressure.**
+- **No weather group if none is expected:** as in a METAR, the group is left out.
+- **NSW** (*no significant weather*) only appears in change groups, to indicate that significant weather **ends**.
+
+<MetarBreakdown parts={[
+  ["21015KT", "Wind 210° at 15 knots"],
+  ["6000", "Visibility 6,000 m"],
+  ["-RA", "Light rain"],
+  ["BKN012", "Broken layer at 1,200 ft: forecast ceiling 1,200 ft"]
+]} caption="Base section of a rainy TAF." />
+
+<Callout type="regional-diff" label="ICAO / US">
+In US TAFs visibility is in statute miles and `P6SM` means **more than 6 miles**. CAVOK is not used, and non-convective low-level wind shear groups such as `WS020/24045KT` (at 2,000 ft, wind 240° at 45 knots) may appear.
+</Callout>

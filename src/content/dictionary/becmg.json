@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "BECMG",
+    "es": "BECMG"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Becoming",
+    "es": "Pasando a (cambio progresivo)"
+  },
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Change indicator used in TAFs and trend forecasts for meteorological conditions expected to reach or pass specified values at a regular or irregular rate during the indicated period, which should normally not exceed 2 hours and in any case not 4 hours.",
+    "es": "Indicador de cambio que se usa en los TAF y en los pronósticos de tendencia para condiciones que se espera que alcancen o superen determinados valores a ritmo regular o irregular durante el periodo indicado, que normalmente no debe superar 2 horas y en ningún caso 4 horas."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A gradual change that stays: by the end of the period, the new conditions apply.",
+    "es": "Un cambio progresivo que se queda: al final del periodo, rigen las nuevas condiciones."
+  },
+  "example": {
+    "en": "BECMG 1310/1312 27015KT",
+    "es": "BECMG 1310/1312 27015KT"
+  },
+  "pronunciation": {
+    "en": "bee-KUM-ing",
+    "es": "bi-cá-ming"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tempo",
+    "taf",
+    "metar"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TEMPO",
+    "es": "TEMPO"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Temporarily",
+    "es": "Temporalmente"
+  },
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Change indicator for expected temporary fluctuations in meteorological conditions that reach or pass specified values, each lasting less than one hour and, in aggregate, covering less than half of the indicated period.",
+    "es": "Indicador de cambio para fluctuaciones temporales previstas de las condiciones meteorológicas que alcanzan o superan determinados valores, cada una de menos de una hora y, en conjunto, durante menos de la mitad del periodo indicado."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Short-lived changes that come and go; the base conditions remain the rule.",
+    "es": "Cambios breves que van y vienen; las condiciones de base siguen siendo lo habitual."
+  },
+  "example": {
+    "en": "TEMPO 1303/1308 3000 BR",
+    "es": "TEMPO 1303/1308 3000 BR"
+  },
+  "pronunciation": {
+    "en": "TEM-poh",
+    "es": "tém-po"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "becmg",
+    "taf"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

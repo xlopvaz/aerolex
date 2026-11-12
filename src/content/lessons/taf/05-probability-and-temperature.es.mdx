@@ -1,0 +1,56 @@
+---
+lesson: probability-and-temperature
+course: taf
+lang: es
+title: "Probabilidad, temperaturas y NSW"
+summary: "PROB30 y PROB40, los grupos de temperatura máxima y mínima (TX/TN) y el fin del tiempo significativo."
+objectives:
+  - "Interpretar PROB30 y PROB40, solos o con TEMPO"
+  - "Leer los grupos TX y TN"
+  - "Saber cuándo se usa NSW"
+minutes: 8
+terms: [taf, tempo]
+quiz: taf-05
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Probabilidad: PROB30 y PROB40
+
+Cuando el meteorólogo no está seguro de que un fenómeno vaya a ocurrir, indica su **probabilidad**. Solo se usan dos valores: **30 %** y **40 %**. (Por debajo de 30 % no se considera suficiente para incluirlo; a partir de 50 % se pronostica directamente.)
+
+`PROB` puede ir:
+
+- **solo**, con un periodo: `PROB30 1312/1316 TSRA BKN015CB`
+- **combinado con TEMPO**: `PROB40 TEMPO 1314/1318 +SHRA`
+
+No se combina con `BECMG` ni con `FM`.
+
+<MetarBreakdown parts={[
+  ["PROB30", "30 % de probabilidad…"],
+  ["TEMPO 1312/1316", "…de que, temporalmente entre las 12 y las 16 UTC del día 13,"],
+  ["TSRA BKN015CB", "haya tormenta con lluvia y cumulonimbos a 1500 ft"]
+]} />
+
+## Temperaturas: TX y TN
+
+Algunos TAF incluyen, al final de la parte de base, la **temperatura máxima (`TX`)** y la **mínima (`TN`)** previstas, con la hora:
+
+<MetarBreakdown parts={[
+  ["TX24/1315Z", "Máxima de 24 °C, el día 13 a las 15 UTC"],
+  ["TN07/1306Z", "Mínima de 7 °C, el día 13 a las 06 UTC"],
+  ["TNM02/1406Z", "Mínima de −2 °C, el día 14 a las 06 UTC"]
+]} />
+
+Son útiles para prever performances de despegue con calor o riesgo de hielo y escarcha con frío.
+
+## NSW: fin del tiempo significativo
+
+`NSW` (*no significant weather*) se usa en un grupo de cambio para indicar que el fenómeno significativo previsto antes **deja de producirse**:
+
+`BECMG 1316/1318 30010KT 9999 NSW SCT025`
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+En los TAF de EE. UU. predominan los grupos `FM`, y la probabilidad solo se expresa como `PROB30`.
+</Callout>

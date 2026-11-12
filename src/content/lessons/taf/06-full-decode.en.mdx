@@ -1,0 +1,81 @@
+---
+lesson: full-decode
+course: taf
+lang: en
+title: "Full TAF decode"
+summary: "A method to turn any TAF into a timeline, with three complete forecasts."
+objectives:
+  - "Build the timeline of a TAF"
+  - "Work out the forecast conditions at a given time"
+  - "Check your learning in the final assessment"
+minutes: 14
+terms: [taf, becmg, tempo, cavok, ceiling]
+quiz: taf-final
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Method: draw a timeline
+
+1. Read the **header**: aerodrome, issue time and validity period.
+2. Note the **base conditions**: they apply from the start.
+3. Go through the **change groups** in order and place them on the timeline.
+4. For a given time, ask: which `FM` or `BECMG` has already happened? Is any `TEMPO` or `PROB` active?
+
+All the TAFs in this lesson are **didactic examples**.
+
+## 1. Madrid: a quiet night with temporary mist
+
+```
+TAF LEMD 121700Z 1218/1324 24012KT 9999 SCT030 TX24/1315Z TN07/1306Z
+    BECMG 1220/1222 VRB03KT
+    TEMPO 1303/1308 3000 BR BKN008
+    BECMG 1310/1312 27015KT
+```
+
+<MetarBreakdown parts={[
+  ["1218/1324", "Valid from day 12 at 18 UTC to day 13 at 24 UTC"],
+  ["24012KT 9999 SCT030", "Base: wind 240° at 12 knots, good visibility, scattered cloud at 3,000 ft"],
+  ["TX24/1315Z TN07/1306Z", "Max 24 °C at 15 UTC on the 13th; min 7 °C at 06 UTC on the 13th"],
+  ["BECMG 1220/1222 VRB03KT", "Between 20 and 22 UTC the wind becomes light and variable"],
+  ["TEMPO 1303/1308 3000 BR BKN008", "From 03 to 08 UTC, at times: 3,000 m in mist and a ceiling at 800 ft"],
+  ["BECMG 1310/1312 27015KT", "Between 10 and 12 UTC, wind 270° at 15 knots"]
+]} />
+
+**And at 06 UTC on the 13th?** Light and variable wind (the first BECMG has happened), generally 10 km or more with scattered cloud at 3,000 ft, but **temporarily** 3,000 m in mist with a ceiling at 800 ft.
+
+## 2. Santiago: rain and a possible thunderstorm
+
+```
+TAF LEST 130500Z 1306/1406 21015KT 6000 -RA BKN012
+    TEMPO 1306/1312 3000 RA BKN006
+    PROB30 TEMPO 1312/1316 TSRA BKN015CB
+    BECMG 1316/1318 30010KT 9999 NSW SCT025
+```
+
+<MetarBreakdown parts={[
+  ["21015KT 6000 -RA BKN012", "Base: wind 210° at 15 knots, 6,000 m, light rain, ceiling 1,200 ft"],
+  ["TEMPO 1306/1312 3000 RA BKN006", "From 06 to 12 UTC, at times: moderate rain, 3,000 m and a ceiling at 600 ft"],
+  ["PROB30 TEMPO 1312/1316 TSRA BKN015CB", "30 % probability of temporary thunderstorms between 12 and 16 UTC"],
+  ["BECMG 1316/1318 30010KT 9999 NSW SCT025", "Between 16 and 18 UTC it improves: wind 300°, 10 km, rain ends, scattered cloud"]
+]} />
+
+## 3. New York JFK: US format
+
+```
+TAF KJFK 131130Z 1312/1418 31012KT P6SM FEW050
+    FM132200 VRB04KT P6SM SKC
+    FM140600 18008KT 5SM BR OVC015
+```
+
+<MetarBreakdown parts={[
+  ["1312/1418", "Valid 30 hours: from day 13 at 12 UTC to day 14 at 18 UTC"],
+  ["31012KT P6SM FEW050", "Base: wind 310° at 12 knots, more than 6 miles, few clouds at 5,000 ft"],
+  ["FM132200 VRB04KT P6SM SKC", "From 22:00 UTC on the 13th: light variable wind and clear sky"],
+  ["FM140600 18008KT 5SM BR OVC015", "From 06:00 UTC on the 14th: southerly wind, 5 miles in mist and overcast at 1,500 ft"]
+]} />
+
+<Callout type="official-procedure" label="Real-world use">
+Real planning uses current official TAFs and applies the regulatory and operator criteria for TEMPO and PROB groups. This course is educational material.
+</Callout>

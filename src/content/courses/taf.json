@@ -1,0 +1,31 @@
+{
+  "path": "aviation-meteorology",
+  "level": "elementary",
+  "title": { "en": "TAF Academy", "es": "Academia TAF" },
+  "description": {
+    "en": "Read aerodrome forecasts with confidence: validity periods, forecast conditions, change groups (FM, BECMG, TEMPO), probabilities and temperature groups, with ICAO and US differences.",
+    "es": "Lee con seguridad los pronósticos de aeródromo: periodos de validez, condiciones previstas, grupos de cambio (FM, BECMG, TEMPO), probabilidades y grupos de temperatura, con las diferencias entre ICAO y EE. UU."
+  },
+  "objectives": {
+    "en": [
+      "Explain what a TAF is and how it differs from a METAR",
+      "Decode the header, issue time and validity period",
+      "Interpret the forecast wind, visibility, weather and cloud",
+      "Apply FM, BECMG and TEMPO correctly, and PROB30/PROB40",
+      "Read TX/TN temperature groups and NSW",
+      "Turn a complete TAF into a clear timeline of expected conditions"
+    ],
+    "es": [
+      "Explicar qué es un TAF y en qué se diferencia de un METAR",
+      "Decodificar la cabecera, la hora de emisión y el periodo de validez",
+      "Interpretar el viento, la visibilidad, el tiempo y las nubes previstos",
+      "Aplicar correctamente FM, BECMG y TEMPO, y PROB30/PROB40",
+      "Leer los grupos de temperatura TX/TN y NSW",
+      "Convertir un TAF completo en una línea temporal clara de las condiciones previstas"
+    ]
+  },
+  "lessons": ["what-is-taf", "header-and-validity", "forecast-conditions", "change-groups", "probability-and-temperature", "full-decode"],
+  "finalQuiz": null,
+  "sources": ["icao-annex-3", "wmo-306", "faa-awh"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null }
+}

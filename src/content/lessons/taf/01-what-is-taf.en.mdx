@@ -1,0 +1,55 @@
+---
+lesson: what-is-taf
+course: taf
+lang: en
+title: "What a TAF is"
+summary: "What the aerodrome forecast is for, how long it lasts and how it compares with a METAR."
+objectives:
+  - "Explain what a TAF is and who uses it"
+  - "Tell observation (METAR) from forecast (TAF)"
+  - "Recognise the general structure of a TAF"
+minutes: 7
+terms: [taf, metar, utc]
+quiz: taf-01
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## A forecast for an aerodrome
+
+A <Term id="taf" /> (*terminal aerodrome forecast*) is the **weather forecast for an aerodrome**. While the <Term id="metar" /> tells you what the weather **is**, the TAF tells you what weather **is expected** during a given period within a few kilometres of the airport.
+
+It is prepared by a forecaster at the responsible meteorological office and uses almost the same codes as the METAR, which makes it much easier to learn one after the other.
+
+## What is it used for?
+
+- Deciding whether to depart for a destination and whether **extra fuel** is needed.
+- Choosing **alternate aerodromes** with suitable forecast conditions.
+- Anticipating phenomena such as fog, thunderstorms or strong wind at the expected arrival time.
+
+## Validity
+
+Each TAF is valid for a specific period which, under ICAO rules, can be **no less than 6 hours and no more than 30**. In practice, many aerodromes publish 9-hour TAFs and major international airports 24- or 30-hour TAFs, updated periodically.
+
+## What it includes and what it doesn't
+
+| Includes | Does not (usually) include |
+|---|---|
+| Wind, visibility, forecast weather and cloud | RVR |
+| Expected changes (FM, BECMG, TEMPO) | Dew point |
+| Probabilities (PROB30, PROB40) | Pressure (QNH) |
+| Maximum and minimum temperatures (TX/TN), when included | |
+
+<MetarBreakdown parts={[
+  ["TAF", "Message type: aerodrome forecast"],
+  ["LEMD", "Madrid-Barajas"],
+  ["121700Z", "Issued on day 12 at 17:00 UTC"],
+  ["1218/1324", "Valid from day 12 at 18 UTC to day 13 at 24 UTC"],
+  ["24012KT 9999 SCT030", "Base conditions: wind, visibility and cloud"],
+  ["TEMPO 1303/1308 3000 BR", "An expected temporary change"]
+]} caption="A TAF has a base section followed by the expected changes." />
+
+<Callout type="info" label="A forecast, not a certainty">
+A TAF is a professional's best estimate, not a guarantee. That's why it is always read together with the latest METARs, which tell you whether the forecast is coming true.
+</Callout>

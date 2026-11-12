@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué periodo cubre 1218/1324?",
+        "en": "What period does 1218/1324 cover?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Del día 12 a las 18 UTC al día 13 a las 24 UTC (30 horas)",
+            "en": "From day 12 at 18 UTC to day 13 at 24 UTC (30 hours)"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De las 12:18 a las 13:24 UTC",
+            "en": "From 12:18 to 13:24 UTC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Del 12 de diciembre al 13 de marzo",
+            "en": "From 12 December to 13 March"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La validez se escribe DDHH/DDHH. De las 18 del día 12 a las 24 del 13 son 30 horas.",
+        "en": "Validity is written DDHH/DDHH. From 18 on day 12 to 24 on day 13 is 30 hours."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué significa TAF AMD?",
+        "en": "What does TAF AMD mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un TAF automático",
+            "en": "An automated TAF"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un TAF enmendado que sustituye al anterior",
+            "en": "An amended TAF that replaces the previous one"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un TAF de la mañana",
+            "en": "A morning TAF"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "AMD indica que el pronóstico se ha modificado; el nuevo TAF sustituye al anterior.",
+        "en": "AMD means the forecast has been changed; the new TAF replaces the previous one."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En el periodo de validez, '1324' equivale a…",
+        "en": "In the validity period, '1324' is the same as…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "día 13 a las 00 UTC",
+            "en": "day 13 at 00 UTC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "día 14 a las 00 UTC",
+            "en": "day 14 at 00 UTC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "día 24 a las 13 UTC",
+            "en": "day 24 at 13 UTC"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Las 24 UTC del día 13 son las 00 UTC del día 14; se escribe así para cerrar el día 13.",
+        "en": "24 UTC on day 13 is 00 UTC on day 14; it is written that way to close day 13."
+      }
+    }
+  ]
+}

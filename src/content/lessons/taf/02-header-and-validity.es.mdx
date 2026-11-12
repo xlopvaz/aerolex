@@ -1,0 +1,53 @@
+---
+lesson: header-and-validity
+course: taf
+lang: es
+title: "Cabecera y periodo de validez"
+summary: "Tipo de mensaje, aeródromo, hora de emisión, periodo de validez y los indicadores AMD, COR, CNL y NIL."
+objectives:
+  - "Leer la hora de emisión y el periodo de validez"
+  - "Entender la notación de las 24 horas al final de un día"
+  - "Reconocer los TAF enmendados (AMD), corregidos (COR) y cancelados (CNL)"
+minutes: 7
+terms: [taf, utc]
+quiz: taf-02
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## La cabecera
+
+```
+TAF LEMD 121700Z 1218/1324
+```
+
+| Grupo | Significado |
+|---|---|
+| `TAF` | Tipo de mensaje |
+| `LEMD` | Indicador de lugar ICAO del aeródromo |
+| `121700Z` | Emisión: día 12, 17:00 UTC (mismo formato que en el METAR) |
+| `1218/1324` | Validez: desde el día 12 a las 18 UTC hasta el día 13 a las 24 UTC |
+
+## El periodo de validez: `DDHH/DDHH`
+
+A diferencia de la hora de emisión, la validez usa **día y hora, sin minutos**. El final `1324` significa "día 13 a las 24 UTC", que es lo mismo que el día 14 a las 00 UTC: se escribe así para dejar claro que el periodo termina al final del día 13.
+
+<MetarBreakdown parts={[
+  ["1306/1406", "Del día 13 a las 06 UTC al día 14 a las 06 UTC: 24 horas"],
+  ["1312/1418", "Del día 13 a las 12 UTC al día 14 a las 18 UTC: 30 horas"],
+  ["1309/1318", "Del día 13 a las 09 UTC al día 13 a las 18 UTC: 9 horas"]
+]} />
+
+## Enmiendas, correcciones y cancelaciones
+
+| Código | Significado |
+|---|---|
+| `TAF AMD` | TAF **enmendado**: el pronóstico ha cambiado y este sustituye al anterior |
+| `TAF COR` | TAF **corregido**: corrige un error del anterior |
+| `CNL` | TAF **cancelado** |
+| `NIL` | No hay TAF disponible |
+
+<Callout type="tip" label="Consejo">
+Cuando consultes un TAF, comprueba siempre que estás leyendo **el último emitido** (y si hay un `AMD`). Un TAF enmendado sustituye por completo al anterior.
+</Callout>

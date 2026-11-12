@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué diferencia principal hay entre un METAR y un TAF?",
+        "en": "What is the main difference between a METAR and a TAF?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El METAR es una observación; el TAF, un pronóstico",
+            "en": "A METAR is an observation; a TAF is a forecast"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El TAF solo se usa en EE. UU.",
+            "en": "The TAF is only used in the US"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No hay diferencia",
+            "en": "There is no difference"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El METAR describe el tiempo observado y el TAF, el previsto durante su periodo de validez.",
+        "en": "A METAR describes observed weather and a TAF, the weather expected during its validity period."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Según la ICAO, ¿entre qué valores está la validez de un TAF?",
+        "en": "Under ICAO rules, what is the range of a TAF's validity?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Entre 1 y 6 horas",
+            "en": "Between 1 and 6 hours"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Entre 6 y 30 horas",
+            "en": "Between 6 and 30 hours"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Siempre 48 horas",
+            "en": "Always 48 hours"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La validez no puede ser inferior a 6 horas ni superior a 30.",
+        "en": "Validity can be no less than 6 hours and no more than 30."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál de estos elementos NO suele incluir un TAF?",
+        "en": "Which of these does a TAF NOT usually include?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Viento",
+            "en": "Wind"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nubes",
+            "en": "Cloud"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "RVR",
+            "en": "RVR"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El TAF no pronostica RVR, punto de rocío ni, normalmente, presión.",
+        "en": "A TAF does not forecast RVR, dew point or, usually, pressure."
+      }
+    }
+  ]
+}

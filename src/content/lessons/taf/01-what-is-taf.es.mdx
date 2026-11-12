@@ -1,0 +1,55 @@
+---
+lesson: what-is-taf
+course: taf
+lang: es
+title: "Qué es un TAF"
+summary: "Para qué sirve el pronóstico de aeródromo, cuánto dura y en qué se parece y se diferencia de un METAR."
+objectives:
+  - "Explicar qué es un TAF y quién lo usa"
+  - "Distinguir entre observación (METAR) y pronóstico (TAF)"
+  - "Reconocer la estructura general de un TAF"
+minutes: 7
+terms: [taf, metar, utc]
+quiz: taf-01
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Un pronóstico para un aeródromo
+
+Un <Term id="taf" /> (*terminal aerodrome forecast*) es el **pronóstico meteorológico de un aeródromo**. Mientras el <Term id="metar" /> dice qué tiempo **hace**, el TAF dice qué tiempo **se espera** durante un periodo concreto en un radio de unos kilómetros alrededor del aeropuerto.
+
+Lo elabora un meteorólogo de la oficina meteorológica responsable, y usa casi los mismos códigos que el METAR, lo que facilita mucho aprender uno después del otro.
+
+## ¿Para qué se usa?
+
+- Decidir si se puede salir hacia un destino y si hace falta llevar **combustible extra**.
+- Elegir **aeródromos alternativos** cuyas condiciones previstas sean adecuadas.
+- Anticipar fenómenos como niebla, tormentas o viento fuerte a la hora prevista de llegada.
+
+## Validez
+
+Cada TAF es válido para un periodo concreto, que según la ICAO no puede ser **inferior a 6 horas ni superior a 30**. En la práctica, muchos aeródromos publican TAF de 9 horas y los grandes aeropuertos internacionales, de 24 o 30 horas, y se actualizan periódicamente.
+
+## Qué incluye y qué no
+
+| Incluye | No incluye (normalmente) |
+|---|---|
+| Viento, visibilidad, tiempo previsto y nubes | RVR |
+| Cambios previstos (FM, BECMG, TEMPO) | Punto de rocío |
+| Probabilidades (PROB30, PROB40) | Presión (QNH) |
+| Temperaturas máxima y mínima (TX/TN), cuando se incluyen | |
+
+<MetarBreakdown parts={[
+  ["TAF", "Tipo de mensaje: pronóstico de aeródromo"],
+  ["LEMD", "Madrid-Barajas"],
+  ["121700Z", "Emitido el día 12 a las 17:00 UTC"],
+  ["1218/1324", "Válido del día 12 a las 18 UTC al día 13 a las 24 UTC"],
+  ["24012KT 9999 SCT030", "Condiciones de base: viento, visibilidad y nubes"],
+  ["TEMPO 1303/1308 3000 BR", "Cambio temporal previsto"]
+]} caption="Un TAF tiene una parte de base y, después, los cambios previstos." />
+
+<Callout type="info" label="Pronóstico, no certeza">
+Un TAF es la mejor estimación de un profesional, no una garantía. Por eso se combina siempre con los METAR más recientes, que dicen si el pronóstico se está cumpliendo.
+</Callout>
