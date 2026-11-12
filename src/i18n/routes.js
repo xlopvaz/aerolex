@@ -5,9 +5,12 @@
  *
  * `nav`: where the page appears ('main' header/mobile nav, 'footer', or none).
  * Only pages that exist and have real content are registered.
+ * Child pages (e.g. one page per dictionary entry) are built with childHref().
  */
 export const ROUTES = {
   home:       { slug: { es: '',               en: '' },             nav: ['main'], icon: 'plane-takeoff' },
+  dictionary: { slug: { es: 'diccionario',    en: 'dictionary' },   nav: ['main'], icon: 'book-a' },
+  acronyms:   { slug: { es: 'diccionario/acronimos', en: 'dictionary/acronyms' }, nav: [], icon: 'case-upper' },
   dashboard:  { slug: { es: 'panel',          en: 'dashboard' },    nav: ['main'], icon: 'layout-dashboard' },
   about:      { slug: { es: 'acerca-de',      en: 'about' },        nav: ['main', 'footer'], icon: 'book-open' },
   styleguide: { slug: { es: 'guia-de-estilo', en: 'styleguide' },   nav: ['footer'], icon: 'palette' },

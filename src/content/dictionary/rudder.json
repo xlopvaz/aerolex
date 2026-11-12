@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "rudder",
+    "es": "timón de dirección"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A primary flight control surface on the vertical stabilizer that controls yaw, rotating the aircraft about its vertical axis; it is operated with the pedals.",
+    "es": "Superficie de mando primaria situada en el estabilizador vertical que controla la guiñada, haciendo girar la aeronave alrededor de su eje vertical; se acciona con los pedales."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The moving part of the fin that swings the nose left or right.",
+    "es": "La parte móvil de la deriva que mueve el morro a izquierda o derecha."
+  },
+  "example": {
+    "en": "\"Use rudder to keep the aircraft on the centreline in a crosswind.\"",
+    "es": "«Usa el timón de dirección para mantener el avión en el eje con viento cruzado.»"
+  },
+  "pronunciation": {
+    "en": "/ˈrʌdə/",
+    "es": "ráder"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "timón"
+    ]
+  },
+  "related": [
+    "aileron",
+    "elevator",
+    "crosswind"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "VFR",
+    "es": "VFR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Visual flight rules",
+    "es": "Reglas de vuelo visual"
+  },
+  "categories": [
+    "flight-operations",
+    "general-aviation",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The set of rules under which a flight is conducted with visual reference to the ground and other traffic, allowed only in visual meteorological conditions (minimum visibility and distance from cloud).",
+    "es": "Conjunto de reglas con las que se realiza un vuelo con referencia visual al terreno y al resto del tráfico, permitido solo en condiciones meteorológicas de vuelo visual (visibilidad y distancia a las nubes mínimas)."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Flying by looking outside: the pilot 'sees and avoids' other aircraft and must stay clear of cloud.",
+    "es": "Volar mirando por la ventana: el piloto «ve y evita» a otras aeronaves y debe mantenerse fuera de las nubes."
+  },
+  "example": {
+    "en": "\"EC-ABC, VFR from Cuatro Vientos to Toledo, 2,500 feet.\"",
+    "es": "«EC-ABC, VFR de Cuatro Vientos a Toledo, 2500 pies.»"
+  },
+  "pronunciation": {
+    "en": "V-F-R (vee-ef-ar)",
+    "es": "uve-efe-erre"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ifr",
+    "ceiling"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "aileron",
+    "es": "alerón"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A primary flight control surface on the outer trailing edge of each wing; the ailerons move in opposite directions to roll the aircraft about its longitudinal axis.",
+    "es": "Superficie de mando primaria en la parte exterior del borde de salida de cada ala; los alerones se mueven en sentidos opuestos para alabear la aeronave alrededor de su eje longitudinal."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The moving parts near the wing tips that tilt the aircraft left or right to turn.",
+    "es": "Las partes móviles cerca de las puntas de las alas que inclinan el avión a izquierda o derecha para girar."
+  },
+  "example": {
+    "en": "\"Full aileron into the wind during the crosswind take-off roll.\"",
+    "es": "«Alerón completo hacia el viento durante la carrera de despegue con viento cruzado.»"
+  },
+  "pronunciation": {
+    "en": "/ˈeɪlərɒn/",
+    "es": "éi-le-ron"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "elevator",
+    "rudder",
+    "wing",
+    "spoilers"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

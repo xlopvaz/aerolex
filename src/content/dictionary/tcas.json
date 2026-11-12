@@ -1,0 +1,61 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TCAS",
+    "es": "TCAS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Traffic alert and collision avoidance system",
+    "es": "Sistema de alerta de tránsito y anticolisión"
+  },
+  "categories": [
+    "aircraft-systems",
+    "safety",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An airborne system that interrogates other aircraft's transponders, displays nearby traffic and issues traffic advisories (TA) and, in TCAS II, resolution advisories (RA) with vertical manoeuvres to avoid a collision.",
+    "es": "Sistema de a bordo que interroga los transpondedores de otras aeronaves, muestra el tráfico cercano y emite avisos de tránsito (TA) y, en TCAS II, avisos de resolución (RA) con maniobras verticales para evitar una colisión."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's 'last line of defence' against mid-air collisions: it warns about nearby traffic and, if needed, orders the pilots to climb or descend.",
+    "es": "La «última línea de defensa» del avión contra colisiones en vuelo: avisa del tráfico cercano y, si hace falta, ordena a los pilotos subir o bajar."
+  },
+  "example": {
+    "en": "\"TCAS RA, climb!\" — the crew follows the RA and then informs ATC.",
+    "es": "«TCAS RA, ¡climb!» — la tripulación sigue el RA y después informa a ATC."
+  },
+  "pronunciation": {
+    "en": "TEE-kas",
+    "es": "ti-cas"
+  },
+  "synonyms": {
+    "en": [
+      "ACAS"
+    ],
+    "es": [
+      "ACAS"
+    ]
+  },
+  "related": [
+    "squawk",
+    "atc"
+  ],
+  "regionalNote": {
+    "en": "ICAO and EASA use the generic term ACAS (airborne collision avoidance system); TCAS II is the equipment that implements ACAS II. Under ICAO procedures, pilots must follow an RA even if it conflicts with an ATC instruction.",
+    "es": "La ICAO y EASA usan el término genérico ACAS (sistema anticolisión de a bordo); TCAS II es el equipo que implementa ACAS II. Según los procedimientos ICAO, los pilotos deben seguir un RA aunque contradiga una instrucción de ATC."
+  },
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-8168",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

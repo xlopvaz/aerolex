@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ATIS",
+    "es": "ATIS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Automatic terminal information service",
+    "es": "Servicio automático de información terminal"
+  },
+  "categories": [
+    "air-traffic-control",
+    "airport-operations",
+    "meteorology"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The automatic provision of current, routine information to arriving and departing aircraft, continuously or during a specified part of the day.",
+    "es": "Suministro automático de información actualizada y ordinaria a las aeronaves que llegan y salen, de forma continua o durante una parte determinada del día."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A recorded broadcast with the airport's weather, runway in use and other key information. Each update gets a letter (Information Alfa, Bravo…).",
+    "es": "Una emisión grabada con la meteorología del aeropuerto, la pista en servicio y otra información clave. Cada actualización recibe una letra (información Alfa, Bravo…)."
+  },
+  "example": {
+    "en": "\"Madrid Ground, IBE123, stand 42, with information Bravo, request start-up.\"",
+    "es": "«Madrid Rodadura, IBE123, puesto 42, con información Bravo, solicito puesta en marcha.»"
+  },
+  "pronunciation": {
+    "en": "AY-tis",
+    "es": "ei-tis"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "atc",
+    "metar",
+    "qnh"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-11",
+    "faa-pcg"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

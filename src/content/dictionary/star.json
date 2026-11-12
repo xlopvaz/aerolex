@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "STAR",
+    "es": "STAR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Standard instrument arrival",
+    "es": "Llegada normalizada por instrumentos"
+  },
+  "categories": [
+    "navigation",
+    "air-traffic-control",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A designated IFR arrival route linking a significant point, normally on an ATS route, with a point from which a published instrument approach procedure can be started.",
+    "es": "Ruta de llegada IFR designada que enlaza un punto significativo, normalmente en una ruta ATS, con un punto desde el que puede iniciarse un procedimiento publicado de aproximación por instrumentos."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The published 'entry road' from the airway down to the start of the approach.",
+    "es": "La «carretera de entrada» publicada desde la aerovía hasta el inicio de la aproximación."
+  },
+  "example": {
+    "en": "\"Expect the TERRA 2A arrival, runway 32R.\"",
+    "es": "«Prevea la llegada TERRA 2A, pista 32R.»"
+  },
+  "pronunciation": {
+    "en": "star",
+    "es": "star"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "sid",
+    "ifr",
+    "ils"
+  ],
+  "regionalNote": {
+    "en": "The FAA expands STAR as \"standard terminal arrival\".",
+    "es": "La FAA desarrolla STAR como «standard terminal arrival»."
+  },
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-8168",
+    "faa-pcg"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

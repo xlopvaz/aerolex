@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CAVOK",
+    "es": "CAVOK"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Ceiling and visibility OK",
+    "es": "Techo y visibilidad correctos"
+  },
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Replaces the visibility, weather and cloud groups when, simultaneously: visibility is 10 km or more; there is no cloud below 5,000 ft or below the highest minimum sector altitude, whichever is greater, and no cumulonimbus or towering cumulus; and there is no significant weather.",
+    "es": "Sustituye a los grupos de visibilidad, tiempo presente y nubes cuando se cumplen a la vez: visibilidad de 10 km o más; ninguna nube por debajo de 5000 ft o de la altitud mínima de sector más alta, la que sea mayor, y ningún cumulonimbo ni cúmulo en torre; y ningún fenómeno meteorológico significativo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Good weather in one word. It does not mean a cloudless sky: there can be cloud above 5,000 ft.",
+    "es": "Buen tiempo en una sola palabra. No significa cielo despejado: puede haber nubes por encima de 5000 ft."
+  },
+  "example": {
+    "en": "LEBL 121230Z 18008KT CAVOK 24/14 Q1018",
+    "es": "LEBL 121230Z 18008KT CAVOK 24/14 Q1018"
+  },
+  "pronunciation": {
+    "en": "KAV-oh-kay",
+    "es": "ca-vo-quei"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "metar",
+    "taf",
+    "ceiling"
+  ],
+  "regionalNote": {
+    "en": "CAVOK is not used in US METARs.",
+    "es": "En los METAR de EE. UU. no se usa CAVOK."
+  },
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

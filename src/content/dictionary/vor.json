@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "VOR",
+    "es": "VOR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "VHF omnidirectional radio range",
+    "es": "Radiofaro omnidireccional de VHF"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A ground radio navigation aid in the VHF band (108.00–117.95 MHz) that lets an aircraft determine its magnetic bearing (radial) from the station.",
+    "es": "Radioayuda terrestre en la banda de VHF (108,00–117,95 MHz) que permite a la aeronave determinar su marcación magnética (radial) desde la estación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A radio station that tells the aircraft in which direction it is from the station, like a compass rose painted in the sky.",
+    "es": "Una estación de radio que indica al avión en qué dirección se encuentra respecto a ella, como una rosa de los vientos dibujada en el cielo."
+  },
+  "example": {
+    "en": "\"Proceed direct to the VOR, then track outbound on the 090 radial.\"",
+    "es": "«Proceda directo al VOR y luego siga el radial 090 en alejamiento.»"
+  },
+  "pronunciation": {
+    "en": "V-O-R (vee-oh-ar)",
+    "es": "vor (uve-o-erre)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "dme",
+    "heading"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

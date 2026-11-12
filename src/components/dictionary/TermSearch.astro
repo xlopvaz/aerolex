@@ -1,0 +1,142 @@
+---
+/**
+ * Dictionary autocomplete (WAI-ARIA combobox). Searches English, Spanish, abbreviations,
+ * expansions and synonyms; Enter or click opens the entry page.
+ */
+import Icon from '../ui/Icon.astro';
+import { childHref, t, withBase } from '../../i18n/index.js';
+interface Props { lang: string; id?: string; size?: 'md' | 'lg' }
+const { lang, id = 'term-search', size = 'md' } = Astro.props;
+const entryPattern = childHref('dictionary', '__ID__', lang);
+---
+<div
+  class:list={['ts', `ts--${size}`]}
+  data-term-search
+  data-lang={lang}
+  data-index={withBase('data/dictionary.json')}
+  data-entry-pattern={entryPattern}
+  data-no-results={t(lang, 'dictionary.noResults')}
+>
+  <label class="visually-hidden" for={id}>{t(lang, 'dictionary.searchLabel')}</label>
+  <div class="ts__field">
+    <Icon name="search" size={size === 'lg' ? 22 : 18} class="ts__icon" />
+    <input
+      id={id}
+      type="search"
+      role="combobox"
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-controls={`${id}-list`}
+      aria-describedby={`${id}-help`}
+      autocomplete="off"
+      spellcheck="false"
+      placeholder={t(lang, 'dictionary.searchPlaceholder')}
+    />
+  </div>
+  <p id={`${id}-help`} class="visually-hidden">{t(lang, 'dictionary.searchHelp')}</p>
+  <ul id={`${id}-list`} class="ts__list" role="listbox" aria-label={t(lang, 'dictionary.suggestions')} hidden></ul>
+</div>
+
+<script>
+  import { loadIndex, esc } from '../../lib/dictionary/client.js';
+  import { search } from '../../lib/dictionary/search.js';
+  import { getAppStore } from '../../lib/core/app-store.js';
+  import { addRecentSearch } from '../../lib/dictionary/user.js';
+
+  document.querySelectorAll<HTMLElement>('[data-term-search]').forEach((root) => {
+    const input = root.querySelector('input')!;
+    const list = root.querySelector<HTMLUListElement>('[role="listbox"]')!;
+    const lang = root.dataset.lang as 'es' | 'en';
+    const other = lang === 'es' ? 'en' : 'es';
+    const pattern = root.dataset.entryPattern!;
+    const url = (id: string) => pattern.replace('__ID__', id);
+    let results: any[] = [];
+    let active = -1;
+
+    const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; };
+    const setActive = (i: number) => {
+      active = i;
+      list.querySelectorAll('[role="option"]').forEach((el, j) => el.setAttribute('aria-selected', String(j === i)));
+      if (i >= 0) input.setAttribute('aria-activedescendant', `${list.id}-opt-${i}`);
+      else input.removeAttribute('aria-activedescendant');
+    };
+    const go = (item: any) => {
+      addRecentSearch(getAppStore(), input.value);
+      location.href = url(item.id);
+    };
+
+    const render = async () => {
+      const q = input.value.trim();
+      if (!q) return close();
+      const { index } = await loadIndex(root.dataset.index!);
+      results = search(index, q, { limit: 8 });
+      if (!results.length) {
+        list.innerHTML = `<li class="ts__empty" role="presentation">${esc(root.dataset.noResults!.replace('{query}', q))}</li>`;
+      } else {
+        list.innerHTML = results.map((r, i) => `
+          <li id="${list.id}-opt-${i}" role="option" aria-selected="false" data-i="${i}">
+            <a href="${url(r.id)}" tabindex="-1">
+              <span class="ts__term">${esc(r[lang])}</span>
+              <span class="ts__other" lang="${other}">${esc(r[other] !== r[lang] ? r[other] : (r.exp?.[lang] ?? ''))}</span>
+            </a>
+          </li>`).join('');
+      }
+      list.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+      setActive(-1);
+    };
+
+    input.addEventListener('focus', () => loadIndex(root.dataset.index!));
+    input.addEventListener('input', render);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown' && results.length) { e.preventDefault(); if (list.hidden) render(); setActive((active + 1) % results.length); }
+      else if (e.key === 'ArrowUp' && results.length) { e.preventDefault(); setActive((active - 1 + results.length) % results.length); }
+      else if (e.key === 'Enter') {
+        const item = results[active >= 0 ? active : 0];
+        if (item && !list.hidden) { e.preventDefault(); go(item); }
+      } else if (e.key === 'Escape') close();
+    });
+    list.addEventListener('mousedown', (e) => {
+      const li = (e.target as Element).closest('[role="option"]') as HTMLElement | null;
+      if (li) { e.preventDefault(); go(results[Number(li.dataset.i)]); }
+    });
+    input.addEventListener('blur', () => setTimeout(close, 120));
+  });
+</script>
+
+<style>
+  .ts { position: relative; }
+  .ts__field { position: relative; }
+  .ts :global(.ts__icon) { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+  input {
+    width: 100%;
+    padding: 0.85rem 1rem 0.85rem 2.8rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    color: var(--text);
+    font-size: var(--text-base);
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+  }
+  input::placeholder { color: var(--text-muted); }
+  input:focus { outline: none; border-color: var(--primary); box-shadow: var(--glow); }
+  .ts--lg input { padding: 1.1rem 1.2rem 1.1rem 3.2rem; font-size: var(--text-lg); border-radius: var(--radius-xl); }
+  .ts__list {
+    position: absolute; z-index: 40; left: 0; right: 0; top: calc(100% + 6px);
+    margin: 0; padding: var(--space-2); list-style: none;
+    border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
+    background: var(--surface); box-shadow: var(--shadow-md);
+    max-height: 22rem; overflow-y: auto;
+  }
+  .ts__list :global(li) { margin: 0; }
+  .ts__list :global(a) {
+    display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-4);
+    padding: 0.6rem 0.8rem; border-radius: var(--radius-md);
+    color: var(--text); text-decoration: none;
+  }
+  .ts__list :global([aria-selected='true'] a), .ts__list :global(a:hover) { background: var(--primary-soft); }
+  .ts__list :global(.ts__term) { font-weight: 600; }
+  .ts__list :global(.ts__other) { color: var(--text-muted); font-size: var(--text-sm); text-align: right; }
+  .ts__list :global(.ts__empty) { padding: 0.6rem 0.8rem; color: var(--text-muted); font-size: var(--text-sm); }
+</style>

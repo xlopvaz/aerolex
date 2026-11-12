@@ -1,0 +1,59 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "QNH",
+    "es": "QNH"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Altimeter sub-scale setting to obtain elevation when on the ground",
+    "es": "Reglaje de la subescala del altímetro para obtener la elevación estando en tierra"
+  },
+  "categories": [
+    "meteorology",
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The altimeter setting that makes the altimeter read the aerodrome elevation when the aircraft is on the ground, and altitude above mean sea level in flight.",
+    "es": "Reglaje del altímetro con el que este indica la elevación del aeródromo cuando la aeronave está en tierra, y la altitud sobre el nivel medio del mar en vuelo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The pressure value you set on the altimeter so it shows your height above sea level. It appears in every METAR (e.g. Q1013).",
+    "es": "El valor de presión que se ajusta en el altímetro para que muestre la altura sobre el nivel del mar. Aparece en cada METAR (p. ej., Q1013)."
+  },
+  "example": {
+    "en": "ATC: \"Descend to altitude 5000 feet, QNH 1013.\"",
+    "es": "ATC: «Descienda a altitud 5000 pies, QNH 1013.»"
+  },
+  "pronunciation": {
+    "en": "Q-N-H (kyoo-en-aych)",
+    "es": "kiu-en-eich"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "qfe",
+    "altimeter",
+    "transition-altitude",
+    "flight-level",
+    "metar"
+  ],
+  "regionalNote": {
+    "en": "ICAO/Europe give QNH in hectopascals (Q1013); the US gives the altimeter setting in inches of mercury (A2992).",
+    "es": "La ICAO y Europa dan el QNH en hectopascales (Q1013); EE. UU. da el reglaje en pulgadas de mercurio (A2992)."
+  },
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

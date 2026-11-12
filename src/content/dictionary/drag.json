@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "drag",
+    "es": "resistencia aerodinámica"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The component of the total aerodynamic force acting parallel to and in the same direction as the relative airflow, opposing the aircraft's motion. It is commonly divided into parasite drag and induced drag.",
+    "es": "Componente de la fuerza aerodinámica total que actúa paralela al flujo de aire relativo y en su mismo sentido, oponiéndose al movimiento de la aeronave. Suele dividirse en resistencia parásita y resistencia inducida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The air 'pushing back' against the aircraft; the engines' thrust must overcome it.",
+    "es": "El aire que «empuja hacia atrás» al avión; el empuje de los motores debe vencerla."
+  },
+  "example": {
+    "en": "\"With gear and full flaps out, drag increases sharply.\"",
+    "es": "«Con el tren y los flaps completamente fuera, la resistencia aumenta mucho.»"
+  },
+  "pronunciation": {
+    "en": "/dræɡ/",
+    "es": "drag"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "resistencia"
+    ]
+  },
+  "related": [
+    "lift",
+    "thrust",
+    "weight",
+    "landing-gear",
+    "spoilers"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

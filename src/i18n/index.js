@@ -48,6 +48,23 @@ export function href(key, lang, base = BASE) {
 }
 
 /**
+ * Href of a child page under a registered section, e.g. a dictionary entry:
+ * childHref('dictionary', 'qnh', 'es') -> '/aerolex/es/diccionario/qnh/'
+ * @param {import('./routes.js').RouteKey} key
+ * @param {string} child
+ * @param {string} lang
+ * @param {string} [base]
+ */
+export function childHref(key, child, lang, base = BASE) {
+  return withBase(`${routePath(key, lang)}${child}/`, base);
+}
+
+/** Equivalent URL of a child page in every language. */
+export function childAlternates(key, child, base = BASE) {
+  return Object.fromEntries(LOCALES.map((l) => [l, childHref(key, child, l, base)]));
+}
+
+/**
  * Equivalent URL of a page in every language: used by the language switcher and hreflang.
  * @param {import('./routes.js').RouteKey} key
  * @param {string} [base]

@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "APU",
+    "es": "APU"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Auxiliary power unit",
+    "es": "Unidad de potencia auxiliar"
+  },
+  "categories": [
+    "aircraft-systems",
+    "aircraft"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A small turbine engine, usually in the tail, that supplies electrical power and bleed air for air conditioning and main-engine start, independently of the main engines.",
+    "es": "Pequeño motor de turbina, normalmente situado en la cola, que suministra energía eléctrica y aire sangrado para el aire acondicionado y el arranque de los motores principales, con independencia de estos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A mini-engine that keeps the lights and air conditioning on at the gate and helps start the main engines.",
+    "es": "Un «minimotor» que mantiene la luz y el aire acondicionado en el aparcamiento y ayuda a arrancar los motores principales."
+  },
+  "example": {
+    "en": "\"APU is running, we can disconnect ground power.\"",
+    "es": "«La APU está en marcha, podemos desconectar la toma de tierra.»"
+  },
+  "pronunciation": {
+    "en": "A-P-U (ay-pee-yoo)",
+    "es": "ei-pi-iu"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "grupo auxiliar de potencia"
+    ]
+  },
+  "related": [
+    "pushback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-powerplant",
+    "enaire-aip-gen-2-2"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

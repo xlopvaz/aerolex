@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "clearance",
+    "es": "autorización (ATC)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Authorization for an aircraft to proceed under conditions specified by an air traffic control unit.",
+    "es": "Autorización para que una aeronave proceda en las condiciones especificadas por una dependencia de control de tránsito aéreo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "ATC's permission to do something specific: take off, climb, follow a route… The pilot reads it back to confirm.",
+    "es": "El permiso de ATC para hacer algo concreto: despegar, ascender, seguir una ruta… El piloto lo colaciona para confirmarlo."
+  },
+  "example": {
+    "en": "\"Cleared for take-off runway 36L.\"",
+    "es": "«Autorizado a despegar pista 36L.»"
+  },
+  "pronunciation": {
+    "en": "/ˈklɪərəns/",
+    "es": "clí-rans"
+  },
+  "synonyms": {
+    "en": [
+      "ATC clearance"
+    ],
+    "es": [
+      "autorización del control de tránsito aéreo"
+    ]
+  },
+  "related": [
+    "readback",
+    "atc",
+    "sid"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

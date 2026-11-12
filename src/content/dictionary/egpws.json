@@ -1,0 +1,61 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EGPWS",
+    "es": "EGPWS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Enhanced ground proximity warning system",
+    "es": "Sistema mejorado de aviso de proximidad al terreno"
+  },
+  "categories": [
+    "aircraft-systems",
+    "safety",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A terrain awareness and warning system that combines classic ground-proximity alerts with a forward-looking function based on a terrain database and the aircraft's position, giving aural and visual alerts before a possible impact with terrain.",
+    "es": "Sistema de alerta y aviso de proximidad al terreno que combina los avisos clásicos de proximidad al suelo con una función predictiva basada en una base de datos de terreno y en la posición de la aeronave, y emite alertas sonoras y visuales antes de un posible impacto contra el terreno."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "It 'looks ahead' at the terrain and shouts \"TERRAIN, PULL UP\" if the aircraft is heading towards the ground or a mountain.",
+    "es": "«Mira» el terreno que hay delante y grita «TERRAIN, PULL UP» si el avión se dirige hacia el suelo o una montaña."
+  },
+  "example": {
+    "en": "\"TERRAIN, TERRAIN, PULL UP\" — the crew performs the escape manoeuvre immediately.",
+    "es": "«TERRAIN, TERRAIN, PULL UP» — la tripulación realiza de inmediato la maniobra de escape."
+  },
+  "pronunciation": {
+    "en": "ee-G-P-W-S",
+    "es": "i-ye-pe-dobleuve-es"
+  },
+  "synonyms": {
+    "en": [
+      "TAWS",
+      "GPWS"
+    ],
+    "es": [
+      "TAWS",
+      "GPWS"
+    ]
+  },
+  "related": [
+    "tcas"
+  ],
+  "regionalNote": {
+    "en": "EGPWS is originally a manufacturer's product name; the generic ICAO/regulatory term is TAWS (terrain awareness and warning system).",
+    "es": "EGPWS es en origen el nombre comercial de un fabricante; el término genérico de la ICAO y la normativa es TAWS (sistema de advertencia y alarma de impacto)."
+  },
+  "sources": [
+    "icao-annex-6",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

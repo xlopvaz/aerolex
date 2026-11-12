@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FOD",
+    "es": "FOD"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Foreign object debris / foreign object damage",
+    "es": "Objetos extraños / daño por objetos extraños"
+  },
+  "categories": [
+    "airport-operations",
+    "safety",
+    "maintenance",
+    "ground-handling"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Any object in a location where it can damage aircraft or equipment (debris), and the damage caused by such an object, for example when ingested by an engine.",
+    "es": "Cualquier objeto situado donde puede dañar aeronaves o equipos (residuos), y el daño causado por ese objeto, por ejemplo al ser ingerido por un motor."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Loose items like bolts, stones or luggage tags on the apron or runway that can be sucked into engines or burst tyres.",
+    "es": "Objetos sueltos como tornillos, piedras o etiquetas de equipaje en la plataforma o la pista, que pueden ser aspirados por los motores o reventar neumáticos."
+  },
+  "example": {
+    "en": "\"FOD walk at 0700: everyone checks the apron before the first departure.\"",
+    "es": "«Revisión de FOD a las 0700: todos repasan la plataforma antes de la primera salida.»"
+  },
+  "pronunciation": {
+    "en": "fod (rhymes with 'rod') or F-O-D",
+    "es": "fod"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "apron",
+    "runway",
+    "taxiway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-ac-150-5210-24",
+    "faa-amt-powerplant"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

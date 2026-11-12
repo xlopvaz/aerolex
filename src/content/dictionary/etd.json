@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ETD",
+    "es": "ETD"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Estimated time of departure",
+    "es": "Hora prevista de salida"
+  },
+  "categories": [
+    "flight-operations",
+    "commercial-aviation",
+    "ground-handling"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The time at which a flight is expected to depart. In ICAO flight plans the reference time is the estimated off-block time (EOBT), when the aircraft is expected to start moving for departure.",
+    "es": "La hora a la que se espera que salga un vuelo. En los planes de vuelo ICAO la hora de referencia es la hora estimada de fuera calzos (EOBT), cuando se prevé que la aeronave empiece a moverse para salir."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the flight is expected to leave.",
+    "es": "La hora a la que se espera que salga el vuelo."
+  },
+  "example": {
+    "en": "\"New ETD 1120 due to late inbound aircraft.\"",
+    "es": "«Nueva ETD 1120 por llegada tardía del avión.»"
+  },
+  "pronunciation": {
+    "en": "E-T-D (ee-tee-dee)",
+    "es": "i-ti-di"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "hora estimada de salida"
+    ]
+  },
+  "related": [
+    "eta",
+    "pushback",
+    "utc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

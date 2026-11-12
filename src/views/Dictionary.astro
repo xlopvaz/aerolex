@@ -1,0 +1,320 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import Callout from '../components/ui/Callout.astro';
+import { childHref, href, t, useT, withBase } from '../i18n/index.js';
+import { CATEGORIES } from '../lib/dictionary/categories.js';
+import { initial } from '../lib/dictionary/search.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const other = lang === 'es' ? 'en' : 'es';
+
+const entries = await getCollection('dictionary');
+const collator = new Intl.Collator(lang, { sensitivity: 'base' });
+const sorted = entries
+  .map((e) => ({ id: e.id, ...e.data, name: e.data.term[lang], otherName: e.data.term[other] }))
+  .sort((a, b) => collator.compare(a.name, b.name));
+
+const groups = new Map<string, typeof sorted>();
+for (const e of sorted) {
+  const letter = initial({ en: e.term.en, es: e.term.es }, lang);
+  if (!groups.has(letter)) groups.set(letter, []);
+  groups.get(letter)!.push(e);
+}
+const usedCategories = CATEGORIES.filter((c) => sorted.some((e) => e.categories.includes(c)));
+const counts = Object.fromEntries(usedCategories.map((c) => [c, sorted.filter((e) => e.categories.includes(c)).length]));
+
+const messages = {
+  results: tr('dictionary.results'),
+  oneResult: tr('dictionary.oneResult'),
+  noResults: tr('dictionary.noResults'),
+  entries: tr('dictionary.entriesCount'),
+};
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('dictionary.metaTitle')} description={tr('dictionary.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.dictionary') }]} />
+      <h1>{tr('dictionary.title')}</h1>
+      <p class="lead">{tr('dictionary.lead')}</p>
+    </div>
+  </header>
+
+  <div
+    class="container dict"
+    data-dictionary
+    data-index={withBase('data/dictionary.json')}
+    data-entry-pattern={childHref('dictionary', '__ID__', lang)}
+    data-lang={lang}
+    data-messages={JSON.stringify(messages)}
+  >
+    <div class="dict__main">
+      <div class="dict__search">
+        <label for="dict-q" class="dict__label">{tr('dictionary.searchLabel')}</label>
+        <div class="dict__field">
+          <Icon name="search" size={20} class="dict__icon" />
+          <input id="dict-q" type="search" autocomplete="off" spellcheck="false" placeholder={tr('dictionary.searchPlaceholder')} data-dict-q />
+        </div>
+      </div>
+
+      <div class="dict__filters" role="group" aria-label={tr('dictionary.filterByCategory')}>
+        <button type="button" class="chip" aria-pressed="true" data-cat="">{tr('dictionary.allCategories')} <span class="chip__n">{sorted.length}</span></button>
+        {usedCategories.map((c) => (
+          <button type="button" class="chip" aria-pressed="false" data-cat={c}>{tr(`categories.${c}`)} <span class="chip__n">{counts[c]}</span></button>
+        ))}
+      </div>
+
+      <p class="dict__status" role="status" aria-live="polite" data-dict-status>{t(lang, 'dictionary.entriesCount', { count: sorted.length })}</p>
+
+      <div data-dict-results hidden class="dict__results"></div>
+
+      <div data-dict-az>
+        <nav class="dict__letters" aria-label={tr('dictionary.jumpToLetter')}>
+          {[...groups.keys()].map((l) => <a href={`#letter-${l}`} data-letter-link={l}>{l}</a>)}
+        </nav>
+        {[...groups.entries()].map(([letter, items]) => (
+          <section class="dict__group" data-letter={letter} aria-labelledby={`letter-${letter}`}>
+            <h2 id={`letter-${letter}`} class="dict__letter">{letter}</h2>
+            <ul class="dict__list">
+              {items.map((e) => (
+                <li class="dict__item" data-id={e.id} data-cats={e.categories.join(' ')}>
+                  <a class="entry-card" href={childHref('dictionary', e.id, lang)}>
+                    <span class="entry-card__head">
+                      <span class="entry-card__name">{e.name}</span>
+                      {e.otherName !== e.name && <span class="entry-card__other" lang={other}>{e.otherName}</span>}
+                      {e.type === 'abbreviation' && <Badge tone="cyan">{tr('dictionary.typeAbbreviation')}</Badge>}
+                    </span>
+                    {e.expansion && <span class="entry-card__exp">{e.expansion[lang]}</span>}
+                    <span class="entry-card__simple">{e.simple[lang]}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
+
+    <aside class="dict__side">
+      <a class="dict__acronyms" href={href('acronyms', lang)}>
+        <Icon name="case-upper" size={22} />
+        <span>{tr('dictionary.acronymsLink')}</span>
+        <Icon name="arrow-right" size={18} />
+      </a>
+
+      <section class="side-card" aria-labelledby="fav-title">
+        <h2 id="fav-title" class="side-card__title"><Icon name="star" size={18} /> {tr('dictionary.favorites')}</h2>
+        <ul class="side-card__list" data-dict-favorites></ul>
+        <p class="side-card__empty" data-dict-favorites-empty>{tr('dictionary.favoritesEmpty')}</p>
+      </section>
+
+      <section class="side-card" aria-labelledby="recent-title" data-dict-recent-box hidden>
+        <div class="side-card__row">
+          <h2 id="recent-title" class="side-card__title"><Icon name="history" size={18} /> {tr('dictionary.recent')}</h2>
+          <button type="button" class="side-card__clear" data-dict-recent-clear>{tr('dictionary.clearRecent')}</button>
+        </div>
+        <ul class="side-card__chips" data-dict-recent></ul>
+      </section>
+
+      <Callout type="caution" label={tr('status.draft')}>
+        <p>{tr('dictionary.draftNotice')}</p>
+      </Callout>
+    </aside>
+  </div>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { loadIndex, esc } from '../lib/dictionary/client.js';
+  import { search } from '../lib/dictionary/search.js';
+  import { addRecentSearch, clearRecentSearches } from '../lib/dictionary/user.js';
+
+  const root = document.querySelector<HTMLElement>('[data-dictionary]');
+  if (root) {
+    const store = getAppStore();
+    const lang = root.dataset.lang as 'es' | 'en';
+    const msg = JSON.parse(root.dataset.messages!);
+    const pattern = root.dataset.entryPattern!;
+    const input = root.querySelector<HTMLInputElement>('[data-dict-q]')!;
+    const status = root.querySelector<HTMLElement>('[data-dict-status]')!;
+    const az = root.querySelector<HTMLElement>('[data-dict-az]')!;
+    const resultsBox = root.querySelector<HTMLElement>('[data-dict-results]')!;
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-cat]')];
+    const items = new Map([...root.querySelectorAll<HTMLElement>('.dict__item')].map((el) => [el.dataset.id!, el]));
+    const params = new URLSearchParams(location.search);
+    let category = params.get('cat') || '';
+    if (!chips.some((c) => c.dataset.cat === category)) category = '';
+
+    const say = (n: number) => { status.textContent = n === 1 ? msg.oneResult : msg.results.replace('{count}', String(n)); };
+
+    const syncUrl = () => {
+      const p = new URLSearchParams();
+      if (category) p.set('cat', category);
+      if (input.value.trim()) p.set('q', input.value.trim());
+      history.replaceState(null, '', `${location.pathname}${p.toString() ? `?${p}` : ''}`);
+    };
+
+    const applyCategory = () => {
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.cat === category)));
+      let visible = 0;
+      items.forEach((el) => {
+        const show = !category || el.dataset.cats!.split(' ').includes(category);
+        el.hidden = !show;
+        if (show) visible++;
+      });
+      root.querySelectorAll<HTMLElement>('.dict__group').forEach((g) => {
+        g.hidden = ![...g.querySelectorAll<HTMLElement>('.dict__item')].some((i) => !i.hidden);
+        const link = root.querySelector<HTMLElement>(`[data-letter-link="${g.dataset.letter}"]`);
+        if (link) link.hidden = g.hidden;
+      });
+      return visible;
+    };
+
+    const run = async () => {
+      const q = input.value.trim();
+      const visible = applyCategory();
+      if (!q) {
+        resultsBox.hidden = true;
+        az.hidden = false;
+        status.textContent = msg.entries.replace('{count}', String(visible));
+        syncUrl();
+        return;
+      }
+      const { index } = await loadIndex(root.dataset.index!);
+      const found = search(index, q, { limit: 100, category: category || null });
+      resultsBox.innerHTML = '';
+      if (!found.length) {
+        resultsBox.innerHTML = `<p class="dict__empty">${esc(msg.noResults.replace('{query}', q))}</p>`;
+      } else {
+        const ul = document.createElement('ul');
+        ul.className = 'dict__list';
+        for (const r of found) {
+          const li = items.get(r.id)?.cloneNode(true) as HTMLElement | undefined;
+          if (li) { li.hidden = false; ul.append(li); }
+        }
+        resultsBox.append(ul);
+      }
+      az.hidden = true;
+      resultsBox.hidden = false;
+      say(found.length);
+      syncUrl();
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(run, 120); });
+    input.addEventListener('change', () => addRecentSearch(store, input.value));
+    resultsBox.addEventListener('click', (e) => { if ((e.target as Element).closest('a')) addRecentSearch(store, input.value); });
+    chips.forEach((c) => c.addEventListener('click', () => { category = c.dataset.cat || ''; run(); }));
+
+    // Favourites and recent searches
+    const favList = root.querySelector<HTMLElement>('[data-dict-favorites]')!;
+    const favEmpty = root.querySelector<HTMLElement>('[data-dict-favorites-empty]')!;
+    const recentBox = root.querySelector<HTMLElement>('[data-dict-recent-box]')!;
+    const recentList = root.querySelector<HTMLElement>('[data-dict-recent]')!;
+    const renderUser = async (state: any) => {
+      const favs: string[] = state.favorites.terms;
+      favEmpty.hidden = favs.length > 0;
+      if (favs.length) {
+        const { byId } = await loadIndex(root.dataset.index!);
+        favList.innerHTML = favs.filter((id) => byId.has(id)).map((id) =>
+          `<li><a href="${pattern.replace('__ID__', id)}">${esc(byId.get(id)[lang])}</a></li>`).join('');
+      } else favList.innerHTML = '';
+      const recent: string[] = state.history.searches;
+      recentBox.hidden = recent.length === 0;
+      recentList.innerHTML = recent.map((q) => `<li><button type="button" class="chip chip--sm" data-recent="${esc(q)}">${esc(q)}</button></li>`).join('');
+    };
+    recentList.addEventListener('click', (e) => {
+      const b = (e.target as Element).closest('[data-recent]') as HTMLElement | null;
+      if (b) { input.value = b.dataset.recent!; run(); input.focus(); }
+    });
+    root.querySelector('[data-dict-recent-clear]')!.addEventListener('click', () => clearRecentSearches(store));
+    store.subscribe(renderUser);
+    renderUser(store.get());
+
+    const q0 = params.get('q');
+    if (q0) input.value = q0;
+    run();
+  }
+</script>
+
+<style>
+  .dict { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--space-7); padding-top: var(--space-6); align-items: start; }
+  .dict__label { display: block; font-weight: 600; margin-bottom: var(--space-2); }
+  .dict__field { position: relative; }
+  .dict :global(.dict__icon) { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+  .dict__field input {
+    width: 100%; padding: 0.95rem 1rem 0.95rem 3rem;
+    border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
+    background: var(--surface); font-size: var(--text-lg); box-shadow: var(--shadow-sm);
+  }
+  .dict__field input:focus { outline: none; border-color: var(--primary); box-shadow: var(--glow); }
+
+  .dict__filters { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-5) 0 var(--space-3); }
+  .dict :global(.chip) {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.35rem 0.8rem; border: 1px solid var(--border); border-radius: var(--radius-pill);
+    background: var(--surface); color: var(--text-muted); font-size: var(--text-sm); font-weight: 500; cursor: pointer;
+  }
+  .dict :global(.chip:hover) { color: var(--text); border-color: var(--border-strong); }
+  .dict :global(.chip[aria-pressed='true']) { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+  .dict :global(.chip--sm) { padding: 0.2rem 0.65rem; font-size: var(--text-xs); }
+  .chip__n { font-family: var(--font-mono); font-size: 0.72rem; }
+  .dict__status { color: var(--text-muted); font-size: var(--text-sm); margin-bottom: var(--space-4); }
+
+  .dict__letters { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: var(--space-4); }
+  .dict__letters a {
+    display: inline-grid; place-items: center; min-width: 2rem; height: 2rem;
+    border-radius: var(--radius-sm); background: var(--surface-2);
+    font-family: var(--font-mono); font-weight: 600; font-size: var(--text-sm); text-decoration: none;
+  }
+  .dict__letters a:hover { background: var(--primary-soft); }
+  .dict__letters a[hidden] { display: none; }
+  .dict__group { margin-bottom: var(--space-5); }
+  .dict__letter { font-family: var(--font-mono); font-size: var(--text-xl); color: var(--cyan); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); margin-bottom: var(--space-3); }
+  .dict :global(.dict__list) { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+  .dict :global(.dict__item) { margin: 0; }
+  .dict :global(.dict__item[hidden]) { display: none; }
+  .dict :global(.entry-card) {
+    display: grid; gap: 0.2rem; padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface);
+    color: var(--text); text-decoration: none;
+    transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+  }
+  .dict :global(.entry-card:hover) { border-color: var(--primary); background: var(--surface-2); color: var(--text); }
+  .dict :global(.entry-card__head) { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-3); }
+  .dict :global(.entry-card__name) { font-weight: 700; font-size: var(--text-lg); }
+  .dict :global(.entry-card__other) { color: var(--text-muted); font-style: italic; }
+  .dict :global(.entry-card__exp) { color: var(--cyan); font-size: var(--text-sm); font-weight: 500; }
+  .dict :global(.entry-card__simple) { color: var(--text-muted); font-size: var(--text-sm); }
+  .dict :global(.dict__empty) { padding: var(--space-5); border: 1px dashed var(--border-strong); border-radius: var(--radius-md); color: var(--text-muted); }
+
+  .dict__side { display: grid; gap: var(--space-4); position: sticky; top: calc(var(--header-h) + var(--space-4)); }
+  .dict__acronyms {
+    display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4);
+    border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface);
+    color: var(--text); font-weight: 600; text-decoration: none;
+  }
+  .dict__acronyms span { flex: 1; }
+  .dict__acronyms:hover { border-color: var(--cyan); color: var(--text); }
+  .side-card { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .side-card[hidden] { display: none; }
+  .side-card__row { display: flex; justify-content: space-between; align-items: center; }
+  .side-card__title { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-base); margin: 0 0 var(--space-3); }
+  .side-card__clear { border: 0; background: none; color: var(--primary); font-size: var(--text-sm); cursor: pointer; margin-bottom: var(--space-3); }
+  .side-card__list { list-style: none; padding: 0; margin: 0; font-size: var(--text-sm); }
+  .side-card__list :global(li + li) { margin-top: var(--space-1); }
+  .side-card__chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .side-card__chips :global(li) { margin: 0; }
+  .side-card__empty { color: var(--text-muted); font-size: var(--text-sm); margin: 0; }
+  .side-card__empty[hidden] { display: none; }
+
+  @media (max-width: 960px) {
+    .dict { grid-template-columns: 1fr; }
+    .dict__side { position: static; }
+  }
+</style>

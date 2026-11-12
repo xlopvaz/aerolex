@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PPL",
+    "es": "PPL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Private pilot licence",
+    "es": "Licencia de piloto privado"
+  },
+  "categories": [
+    "general-aviation",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A pilot licence that allows its holder to act as pilot-in-command or co-pilot without remuneration, in non-commercial operations, on the aircraft category and ratings held.",
+    "es": "Licencia de piloto que permite a su titular actuar como piloto al mando o copiloto sin remuneración, en operaciones no comerciales, en la categoría de aeronave y con las habilitaciones que posea."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The licence to fly for fun or personal travel, without being paid.",
+    "es": "La licencia para volar por ocio o viajes personales, sin cobrar."
+  },
+  "example": {
+    "en": "\"She got her PPL(A) at the local flying club.\"",
+    "es": "«Se sacó la PPL(A) en el aeroclub local.»"
+  },
+  "pronunciation": {
+    "en": "P-P-L (pee-pee-el)",
+    "es": "pe-pe-ele"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cpl",
+    "atpl"
+  ],
+  "regionalNote": {
+    "en": "In the EU it is issued under Part-FCL (e.g. PPL(A) for aeroplanes); in the US the equivalent is the private pilot certificate.",
+    "es": "En la UE se emite según la Part-FCL (p. ej., PPL(A) para aviones); en EE. UU. el equivalente es el private pilot certificate."
+  },
+  "sources": [
+    "eu-1178-2011",
+    "icao-annex-1"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

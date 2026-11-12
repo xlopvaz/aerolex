@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "altimeter",
+    "es": "altímetro"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An instrument that measures static atmospheric pressure and displays the corresponding height or altitude above the pressure reference set on its sub-scale.",
+    "es": "Instrumento que mide la presión atmosférica estática y muestra la altura o altitud correspondiente sobre la referencia de presión ajustada en su subescala."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The instrument that tells you how high you are, as long as the correct pressure is set.",
+    "es": "El instrumento que te dice a qué altura estás, siempre que tenga ajustada la presión correcta."
+  },
+  "example": {
+    "en": "\"Altimeters set QNH 1013, cross-checked.\"",
+    "es": "«Altímetros en QNH 1013, comprobados.»"
+  },
+  "pronunciation": {
+    "en": "/ˈæltɪmiːtə/",
+    "es": "al-tí-mi-ter"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "qnh",
+    "qfe",
+    "flight-level",
+    "transition-altitude"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

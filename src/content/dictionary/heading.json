@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "heading",
+    "es": "rumbo"
+  },
+  "abbreviation": "HDG",
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The direction in which the longitudinal axis of the aircraft is pointing, usually expressed in degrees from north (magnetic or true).",
+    "es": "Dirección hacia la que apunta el eje longitudinal de la aeronave, expresada normalmente en grados desde el norte (magnético o verdadero)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Where the nose is pointing. Because of wind, it is not always the direction in which the aircraft actually travels (the track).",
+    "es": "Hacia dónde apunta el morro. Por el viento, no siempre coincide con la dirección en la que el avión se desplaza realmente (la derrota)."
+  },
+  "example": {
+    "en": "\"Turn left heading 270.\"",
+    "es": "«Vire a la izquierda rumbo 270.»"
+  },
+  "pronunciation": {
+    "en": "/ˈhedɪŋ/",
+    "es": "jéding"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "rumbo de la aeronave"
+    ]
+  },
+  "related": [
+    "crosswind",
+    "vor"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

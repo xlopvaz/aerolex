@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "holding",
+    "es": "espera"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "navigation",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A predetermined manoeuvre that keeps an aircraft within a specified airspace while awaiting further clearance, usually flown as a racetrack pattern around a holding fix.",
+    "es": "Maniobra predeterminada que mantiene a una aeronave dentro de un espacio aéreo especificado mientras espera una nueva autorización; normalmente se vuela como un circuito en forma de hipódromo alrededor de un punto de espera."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Flying 'laps' in the sky while waiting for your turn to land.",
+    "es": "Dar «vueltas» en el cielo mientras esperas tu turno para aterrizar."
+  },
+  "example": {
+    "en": "\"Hold at TOBEK as published, expect further clearance at 1520.\"",
+    "es": "«Mantenga espera en TOBEK según lo publicado, prevea nueva autorización a las 1520.»"
+  },
+  "pronunciation": {
+    "en": "/ˈhəʊldɪŋ/",
+    "es": "jóulding"
+  },
+  "synonyms": {
+    "en": [
+      "holding pattern"
+    ],
+    "es": [
+      "circuito de espera"
+    ]
+  },
+  "related": [
+    "clearance",
+    "star"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8168",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

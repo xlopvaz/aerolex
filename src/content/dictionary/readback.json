@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "readback",
+    "es": "colación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The procedure in which the receiving station repeats a message, or the safety-related parts of it (clearances, runway, levels, headings, speeds, codes), back to the sender to confirm correct reception.",
+    "es": "Procedimiento en el que la estación receptora repite el mensaje, o sus partes relacionadas con la seguridad (autorizaciones, pista, niveles, rumbos, velocidades, códigos), al emisor para confirmar que se ha recibido correctamente."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Repeating ATC's instruction back so the controller can check you understood it correctly ('hearback').",
+    "es": "Repetir la instrucción de ATC para que el controlador compruebe que la has entendido bien (el control de la colación se llama 'hearback')."
+  },
+  "example": {
+    "en": "ATC: \"Descend FL120.\" — Pilot: \"Descend FL120, IBE123.\"",
+    "es": "ATC: «Descienda a FL120.» — Piloto: «Desciendo a FL120, IBE123.»"
+  },
+  "pronunciation": {
+    "en": "/ˈriːdbæk/",
+    "es": "ríd-bak"
+  },
+  "synonyms": {
+    "en": [
+      "read-back"
+    ],
+    "es": [
+      "readback"
+    ]
+  },
+  "related": [
+    "clearance",
+    "atc",
+    "squawk"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

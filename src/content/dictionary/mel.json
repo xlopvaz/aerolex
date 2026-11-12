@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MEL",
+    "es": "MEL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Minimum equipment list",
+    "es": "Lista de equipo mínimo"
+  },
+  "categories": [
+    "maintenance",
+    "flight-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A list, prepared by the operator in conformity with (or more restrictive than) the type's master minimum equipment list, that allows an aircraft to be operated under specified conditions with particular equipment inoperative.",
+    "es": "Lista elaborada por el operador, conforme a la lista maestra de equipo mínimo del tipo (o más restrictiva), que permite operar una aeronave en condiciones especificadas con determinado equipo inoperativo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "It tells the crew and engineers which items may be broken while the aircraft can still fly legally, and under which conditions.",
+    "es": "Indica a la tripulación y a mantenimiento qué elementos pueden estar averiados sin que el avión deje de poder volar legalmente, y en qué condiciones."
+  },
+  "example": {
+    "en": "\"The left pack is inoperative; it's covered by the MEL with an altitude restriction.\"",
+    "es": "«El pack izquierdo está inoperativo; está cubierto por la MEL con una restricción de altitud.»"
+  },
+  "pronunciation": {
+    "en": "M-E-L (em-ee-el)",
+    "es": "em-i-el"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cdl"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

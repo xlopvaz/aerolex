@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "spoilers",
+    "es": "spoilers (aerofrenos de ala)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Panels on the upper surface of the wing that rise to disrupt the airflow, reducing lift and increasing drag; used to descend, slow down, assist roll control and, on the ground, to dump lift after touchdown.",
+    "es": "Paneles en el extradós del ala que se elevan para perturbar el flujo de aire, reduciendo la sustentación y aumentando la resistencia; se usan para descender, frenar, ayudar al alabeo y, en tierra, para eliminar la sustentación tras la toma."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Panels that pop up on top of the wing to 'spoil' lift and slow the aircraft down.",
+    "es": "Paneles que se levantan sobre el ala para «estropear» la sustentación y frenar el avión."
+  },
+  "example": {
+    "en": "\"Spoilers!\" — called after touchdown when the ground spoilers deploy.",
+    "es": "«Spoilers!» — se canta tras la toma cuando se despliegan los spoilers de tierra."
+  },
+  "pronunciation": {
+    "en": "/ˈspɔɪləz/",
+    "es": "spóilers"
+  },
+  "synonyms": {
+    "en": [
+      "speed brakes"
+    ],
+    "es": [
+      "aerofrenos"
+    ]
+  },
+  "related": [
+    "drag",
+    "lift",
+    "aileron"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

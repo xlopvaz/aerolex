@@ -16,7 +16,7 @@ It's built for student pilots, pilots, cabin crew, aviation professionals, AvGee
 |---|---|
 | 1 · Planning | ✅ Done |
 | 2 · Design & foundation | ✅ Done |
-| 3 · Content | 🚧 Next |
+| 3 · Content | 🚧 In progress: bilingual dictionary live |
 | 4 · Tools | ⏳ Planned |
 | 5 · User experience | ⏳ Planned |
 | 6 · Launch | ⏳ Planned |

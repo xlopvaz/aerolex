@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "pushback",
+    "es": "retroceso remolcado (pushback)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The procedure in which a tug pushes an aircraft backwards from its parking stand, since most airliners cannot (or are not permitted to) move backwards under their own power at the gate.",
+    "es": "Procedimiento en el que un tractor empuja hacia atrás a una aeronave desde su puesto de estacionamiento, ya que la mayoría de los aviones de línea no pueden (o no están autorizados a) moverse hacia atrás por sus propios medios en la puerta."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The little truck that pushes the aircraft back from the gate before it can taxi.",
+    "es": "El pequeño tractor que empuja el avión hacia atrás desde la puerta antes de que pueda rodar."
+  },
+  "example": {
+    "en": "\"Pushback approved, face south.\"",
+    "es": "«Retroceso aprobado, morro al sur.»"
+  },
+  "pronunciation": {
+    "en": "/ˈpʊʃbæk/",
+    "es": "push-bak"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "remolque hacia atrás"
+    ]
+  },
+  "related": [
+    "apron",
+    "apu",
+    "etd"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

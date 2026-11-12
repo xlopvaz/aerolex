@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "weight",
+    "es": "peso"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The force of gravity acting on the aircraft, directed towards the centre of the Earth through the centre of gravity, and opposed in steady flight mainly by lift.",
+    "es": "Fuerza de la gravedad que actúa sobre la aeronave, dirigida hacia el centro de la Tierra a través del centro de gravedad, y contrarrestada en vuelo estabilizado principalmente por la sustentación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How heavy the aircraft is: structure, fuel, passengers and cargo.",
+    "es": "Lo que pesa el avión: estructura, combustible, pasajeros y carga."
+  },
+  "example": {
+    "en": "\"Our take-off weight today is close to the maximum.\"",
+    "es": "«Hoy nuestro peso al despegue está cerca del máximo.»"
+  },
+  "pronunciation": {
+    "en": "/weɪt/",
+    "es": "ueit"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "lift",
+    "thrust",
+    "drag"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

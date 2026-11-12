@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "boarding",
+    "es": "embarque"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "cabin-crew",
+    "commercial-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The process of passengers entering the aircraft, from the gate check of boarding passes to seating and stowing of hand baggage.",
+    "es": "Proceso por el que los pasajeros entran en el avión, desde la comprobación de las tarjetas de embarque en la puerta hasta que se sientan y guardan el equipaje de mano."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Getting the passengers on board.",
+    "es": "Subir a los pasajeros al avión."
+  },
+  "example": {
+    "en": "\"Boarding completed: 174 PAX on board.\"",
+    "es": "«Embarque completado: 174 PAX a bordo.»"
+  },
+  "pronunciation": {
+    "en": "/ˈbɔːdɪŋ/",
+    "es": "bór-ding"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "pax",
+    "cabin-crew",
+    "etd"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

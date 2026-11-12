@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "wind shear",
+    "es": "cizalladura del viento"
+  },
+  "abbreviation": "WS",
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A change in wind speed and/or direction over a short distance, horizontally or vertically. Near the ground (for example in microbursts) it can cause sudden losses of airspeed and altitude.",
+    "es": "Cambio de la velocidad o de la dirección del viento, o de ambas, en una distancia corta, horizontal o verticalmente. Cerca del suelo (por ejemplo, en microrráfagas) puede provocar pérdidas bruscas de velocidad y altitud."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The wind suddenly changing as you fly through it, very dangerous close to the ground.",
+    "es": "El viento que cambia de golpe mientras lo atraviesas, muy peligroso cerca del suelo."
+  },
+  "example": {
+    "en": "In a METAR: WS R36L — wind shear reported on runway 36L.",
+    "es": "En un METAR: WS R36L — cizalladura notificada en la pista 36L."
+  },
+  "pronunciation": {
+    "en": "/ˈwɪnd ʃɪə/",
+    "es": "uind shíir"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "cizalladura"
+    ]
+  },
+  "related": [
+    "metar",
+    "go-around"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh",
+    "icao-annex-3"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

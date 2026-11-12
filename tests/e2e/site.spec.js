@@ -2,7 +2,9 @@ import { test, expect } from '@playwright/test';
 
 const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
+  'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
+  'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
 ];
 
 test.describe('language', () => {

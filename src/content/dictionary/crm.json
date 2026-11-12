@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CRM",
+    "es": "CRM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Crew resource management",
+    "es": "Gestión de recursos de la tripulación"
+  },
+  "categories": [
+    "safety",
+    "flight-operations",
+    "cabin-crew"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The effective use of all available resources — crew members, equipment, procedures and information — to achieve safe and efficient operations, through skills such as communication, situational awareness, leadership, decision-making and workload management.",
+    "es": "El uso eficaz de todos los recursos disponibles —miembros de la tripulación, equipos, procedimientos e información— para lograr operaciones seguras y eficientes, mediante habilidades como la comunicación, la conciencia situacional, el liderazgo, la toma de decisiones y la gestión de la carga de trabajo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Teamwork training for crews: speaking up, listening and deciding together, so that one person's mistake is caught by the others.",
+    "es": "Formación en trabajo en equipo para tripulaciones: hablar claro, escuchar y decidir juntos, para que los demás detecten el error de uno."
+  },
+  "example": {
+    "en": "\"Good CRM: the first officer questioned the speed and the captain re-checked it.\"",
+    "es": "«Buen CRM: el primer oficial cuestionó la velocidad y el comandante la volvió a comprobar.»"
+  },
+  "pronunciation": {
+    "en": "C-R-M (see-ar-em)",
+    "es": "ce-erre-eme"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "sop",
+    "sterile-flight-deck"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012",
+    "faa-ac-120-51"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

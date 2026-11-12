@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RVSM",
+    "es": "RVSM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Reduced vertical separation minimum",
+    "es": "Separación vertical mínima reducida"
+  },
+  "categories": [
+    "air-traffic-control",
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A reduced vertical separation of 1,000 ft (instead of 2,000 ft) between FL 290 and FL 410 inclusive, applicable only to aircraft and operators approved for RVSM operations.",
+    "es": "Separación vertical reducida de 1000 ft (en lugar de 2000 ft) entre FL 290 y FL 410 inclusive, aplicable solo a aeronaves y operadores aprobados para operaciones RVSM."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "It lets more aircraft fit at cruising levels by halving the vertical gap, thanks to very accurate altimeters and autopilots.",
+    "es": "Permite que quepan más aviones en los niveles de crucero reduciendo a la mitad la separación vertical, gracias a altímetros y pilotos automáticos muy precisos."
+  },
+  "example": {
+    "en": "\"Unable RVSM due to equipment.\" — the aircraft must leave RVSM airspace.",
+    "es": "«Unable RVSM due to equipment.» — la aeronave debe abandonar el espacio RVSM."
+  },
+  "pronunciation": {
+    "en": "R-V-S-M",
+    "es": "erre-uve-ese-eme"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "flight-level",
+    "altimeter"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

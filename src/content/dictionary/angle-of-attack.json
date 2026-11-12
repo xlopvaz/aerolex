@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "angle of attack",
+    "es": "ángulo de ataque"
+  },
+  "abbreviation": "AoA",
+  "expansion": null,
+  "categories": [
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The acute angle between the chord line of the wing and the direction of the relative wind.",
+    "es": "Ángulo agudo entre la cuerda del ala y la dirección del viento relativo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How steeply the wing 'meets' the oncoming air. Too high an angle and the wing stalls.",
+    "es": "Lo inclinada que «encuentra» el ala al aire que le llega. Si el ángulo es demasiado grande, el ala entra en pérdida."
+  },
+  "example": {
+    "en": "\"As speed decreases, a higher angle of attack is needed to keep the same lift.\"",
+    "es": "«Al disminuir la velocidad, hace falta un ángulo de ataque mayor para mantener la misma sustentación.»"
+  },
+  "pronunciation": {
+    "en": "/ˈæŋɡəl əv əˈtæk/",
+    "es": "ángol of atac"
+  },
+  "synonyms": {
+    "en": [
+      "AOA"
+    ],
+    "es": [
+      "AOA"
+    ]
+  },
+  "related": [
+    "lift",
+    "stall",
+    "wing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

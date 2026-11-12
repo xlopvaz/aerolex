@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "taxiway",
+    "es": "calle de rodaje"
+  },
+  "abbreviation": "TWY",
+  "expansion": null,
+  "categories": [
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A defined path on a land aerodrome established for the taxiing of aircraft and intended to link one part of the aerodrome with another.",
+    "es": "Vía definida en un aeródromo terrestre, establecida para el rodaje de las aeronaves y destinada a proporcionar enlace entre una y otra parte del aeródromo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The 'roads' aircraft use to move between the apron and the runway.",
+    "es": "Las «carreteras» que usan los aviones para ir de la plataforma a la pista."
+  },
+  "example": {
+    "en": "\"Taxi to holding point runway 36L via taxiways A and K.\"",
+    "es": "«Ruede al punto de espera de la pista 36L vía calles de rodaje A y K.»"
+  },
+  "pronunciation": {
+    "en": "/ˈtæksiweɪ/",
+    "es": "tácsi-uei"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "rodadura"
+    ]
+  },
+  "related": [
+    "runway",
+    "apron",
+    "fod"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

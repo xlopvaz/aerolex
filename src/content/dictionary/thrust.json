@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "thrust",
+    "es": "empuje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The forward force produced by the powerplant (propeller or jet engine) that moves the aircraft through the air and opposes drag.",
+    "es": "Fuerza hacia delante producida por el grupo motopropulsor (hélice o motor a reacción) que desplaza la aeronave a través del aire y se opone a la resistencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The 'push' from the engines.",
+    "es": "El «empujón» de los motores."
+  },
+  "example": {
+    "en": "\"Set take-off thrust.\"",
+    "es": "«Ajustar empuje de despegue.»"
+  },
+  "pronunciation": {
+    "en": "/θrʌst/",
+    "es": "zrast"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "drag",
+    "lift",
+    "weight"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

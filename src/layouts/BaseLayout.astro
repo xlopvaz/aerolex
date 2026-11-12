@@ -19,16 +19,19 @@ import { STORAGE_KEY } from '../lib/core/schema.js';
 
 interface Props {
   lang: string;
+  /** Registered route key; also marks the active item in the navigation. */
   routeKey: any;
   title: string;
   description?: string;
+  /** Equivalent URL in each language. Defaults to the route's alternates; pass it for dynamic pages. */
+  alt?: Record<string, string>;
 }
-const { lang, routeKey, title, description = t(lang, 'meta.defaultDescription') } = Astro.props;
+const { lang, routeKey, title, description = t(lang, 'meta.defaultDescription'), alt: altProp } = Astro.props;
 
 const site = Astro.site ?? new URL('https://xlopvaz.github.io');
 const abs = (p: string) => new URL(p, site).href;
-const alt = alternates(routeKey);
-const canonical = abs(href(routeKey, lang));
+const alt = altProp ?? alternates(routeKey);
+const canonical = abs(alt[lang] ?? href(routeKey, lang));
 ---
 <!doctype html>
 <html lang={LOCALE_META[lang].htmlLang} data-theme="dark">
@@ -68,7 +71,7 @@ const canonical = abs(href(routeKey, lang));
   </head>
   <body>
     <a class="skip-link" href="#main">{t(lang, 'a11y.skipToContent')}</a>
-    <Header lang={lang} routeKey={routeKey} />
+    <Header lang={lang} routeKey={routeKey} alt={alt} />
     <main id="main" tabindex="-1">
       <slot />
     </main>

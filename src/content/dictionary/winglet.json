@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "winglet",
+    "es": "winglet (aleta de punta de ala)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A near-vertical extension at the wing tip that reduces the strength of wing-tip vortices and therefore induced drag, improving efficiency.",
+    "es": "Prolongación casi vertical en la punta del ala que reduce la intensidad de los torbellinos de punta de ala y, por tanto, la resistencia inducida, mejorando la eficiencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The upturned tip at the end of many airliner wings; it saves fuel.",
+    "es": "La punta doblada hacia arriba al final de las alas de muchos aviones de línea; ahorra combustible."
+  },
+  "example": {
+    "en": "\"Airbus calls the A320neo's winglets 'sharklets'.\"",
+    "es": "«Airbus llama 'sharklets' a los winglets del A320neo.»"
+  },
+  "pronunciation": {
+    "en": "/ˈwɪŋlət/",
+    "es": "uíng-let"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "wing",
+    "drag"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
