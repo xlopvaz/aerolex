@@ -24,8 +24,8 @@ const alt = alternates(routeKey);
         hreflang={l}
         lang={l}
         data-set-lang={l}
-        aria-label={t(lang, 'lang.switchTo')}
-      >{LOCALE_META[l].short}</a>
+        title={t(lang, 'lang.switchTo')}
+      >{LOCALE_META[l].short}<span class="visually-hidden"> · {t(lang, 'lang.switchTo')}</span></a>
     )
   )}
 </nav>

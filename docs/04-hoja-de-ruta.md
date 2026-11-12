@@ -16,7 +16,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Política de fuentes y fiabilidad → [05-fuentes-y-fiabilidad.md](05-fuentes-y-fiabilidad.md)
 - [x] Decisiones cerradas (ver final de este documento)
 
-## FASE 2 — Diseño y esqueleto 🚧
+## FASE 2 — Diseño y esqueleto ✅
 
 - [x] Proyecto Astro, GitHub Action de despliegue (`.github/workflows/deploy.yml`) → la web se publica sola al fusionar en `main`.
 - [x] `tokens.css` y temas claro/oscuro: recuerda la preferencia y respeta `prefers-color-scheme`, sin parpadeo al cargar.
@@ -27,7 +27,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] `store` con LocalStorageAdapter (con respaldo en memoria), migraciones, sincronización entre pestañas y exportar/importar/borrar desde el panel.
 - [x] Portada con bloques de contenido real: hero, tres pilares, plan de vuelo (estado real del proyecto) y política de fuentes.
 - [x] CI: Vitest (21 tests), comprobador del sitio compilado (enlaces, hreflang, páginas vacías) y Playwright (idioma, tema, panel, componentes, 404, móvil).
-- [ ] Lighthouse ≥ 90: se medirá sobre la web publicada.
+- [x] Lighthouse: 100 en rendimiento, accesibilidad, buenas prácticas y SEO en las páginas medidas (12/11/2026).
 
 **Hecho cuando:** se publica en `xlopvaz.github.io/aerolex/`, el cambio de idioma y de tema funciona en todas las páginas, no hay enlaces rotos y Lighthouse da ≥ 90.
 
