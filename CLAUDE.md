@@ -20,3 +20,23 @@ Léelos antes de cambiar nada.
 10. Rutas internas siempre a través del helper que añade el `base` de GitHub Pages (`/aerolex`).
 11. Accesibilidad WCAG 2.2 AA y respeto de `prefers-reduced-motion`.
 12. Al crear un archivo, indicar su ruta y para qué sirve; al modificarlo, entregar el archivo completo actualizado.
+
+## Comandos
+
+```bash
+npm run dev          # servidor local → http://localhost:4321/aerolex/
+npm test             # tests unitarios (Vitest)
+npm run build        # compila a dist/
+npm run check:site   # revisa el sitio compilado (enlaces, hreflang, páginas vacías)
+npm run e2e          # tests de extremo a extremo (Playwright; necesita el build)
+```
+
+## Añadir una página
+
+1. Registrarla en `src/i18n/routes.js` (clave + slug ES/EN + dónde aparece en la navegación).
+2. Crear su vista en `src/views/` y añadirla al mapa `VIEWS` de `src/pages/[lang]/[...slug].astro`.
+3. Añadir sus textos en `src/i18n/ui/es.json` y `en.json`. El test de paridad falla si falta alguno.
+
+## Flujo de trabajo
+
+Un PR por bloque de trabajo. El workflow `CI & Deploy` debe estar en verde antes de fusionar; al fusionar en `main` se publica solo.

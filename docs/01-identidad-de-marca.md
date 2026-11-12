@@ -81,7 +81,7 @@ Todos los pares texto/fondo se han comprobado con la fórmula de contraste WCAG 
 | `--surface` | `#111F38` | `#FFFFFF` | Tarjetas |
 | `--text` | `#E8EEF8` (15,6:1) | `#0F1B2D` (16,3:1) | Texto principal |
 | `--text-muted` | `#9AA8C0` (6,8:1) | `#55617A` (6,2:1) | Texto secundario |
-| `--primary` | `#5B9BFF` (6,5:1) | `#1F6FEB` (4,6:1) | Marca, enlaces, botones |
+| `--primary` | `#5B9BFF` (6,5:1) | `#1A65DA` (5,0:1 sobre fondo; 5,4:1 sobre blanco) | Marca, enlaces, botones |
 
 ### Semánticos (filosofía de cabina)
 

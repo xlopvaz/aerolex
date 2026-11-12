@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "siteName": "AeroLex",
+    "tagline": "Learn the language of the sky.",
+    "defaultDescription": "AeroLex is a bilingual (English/Spanish) aviation learning platform: academy, technical dictionary, aircraft encyclopedia and interactive tools."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "mobileNav": "Quick navigation",
+    "footerNav": "Footer navigation",
+    "breadcrumbs": "Breadcrumbs",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "AeroLex home"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "about": "About",
+    "styleguide": "Design system",
+    "legal": "Legal & privacy"
+  },
+  "lang": {
+    "switchTo": "Leer en español",
+    "current": "Language: English"
+  },
+  "theme": {
+    "toggle": "Switch between light and dark theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "footer": {
+    "disclaimerTitle": "Educational platform",
+    "disclaimer": "AeroLex is an educational platform. It does not replace approved training, the AFM/POH, the operator's operations manual or current official documentation.",
+    "source": "Source code on GitHub",
+    "built": "Built in the open, one phase at a time.",
+    "phase": "Phase 2 · Design & foundation"
+  },
+  "home": {
+    "metaTitle": "AeroLex · Learn the language of the sky",
+    "eyebrow": "Bilingual aviation learning platform",
+    "title": "Learn the language of the sky.",
+    "lead": "An aviation academy, a professional EN/ES dictionary, an aircraft encyclopedia and a lab of hands-on tools, from your very first flight to the flight deck.",
+    "ctaRoadmap": "See the flight plan",
+    "ctaAbout": "What is AeroLex?",
+    "illustrationAlt": "Illustration of a night approach: runway edge lights, approach lighting and a PAPI showing two white and two red lights, meaning on the glide path.",
+    "pillarsTitle": "One platform, three ways to learn",
+    "pillars": {
+      "learn": {
+        "title": "Learn",
+        "text": "Structured learning paths, from Beginner to Professional, for pilots, cabin crew, meteorology, ATC and airport operations."
+      },
+      "lookup": {
+        "title": "Look up",
+        "text": "A technical dictionary that always shows the English and Spanish terms side by side, with official definitions kept separate from plain-language explanations."
+      },
+      "practice": {
+        "title": "Practise",
+        "text": "METAR and TAF decoders, ATC phraseology practice, quizzes and flashcards that remember what you got wrong."
+      }
+    },
+    "boardTitle": "Departures · Flight plan",
+    "boardIntro": "AeroLex is built in phases. This board shows what is live and what is coming next. Nothing is shown before it actually works.",
+    "board": {
+      "flight": "Flight",
+      "destination": "Destination",
+      "phase": "Phase",
+      "status": "Status"
+    },
+    "rigorTitle": "Every fact has a source",
+    "rigorText": "Technical content cites ICAO, EASA, FAA, WMO, manufacturers or official investigation bodies. Each entry shows its review status, so you always know how far to trust it.",
+    "rigorDraft": "Written and sourced, not yet checked line by line.",
+    "rigorReviewed": "Checked against the cited sources.",
+    "rigorVerified": "Also reviewed by someone with recognised aviation training."
+  },
+  "status": {
+    "live": "Live",
+    "boarding": "Boarding",
+    "scheduled": "Scheduled",
+    "draft": "Draft",
+    "reviewed": "Reviewed",
+    "verified": "Verified"
+  },
+  "dashboard": {
+    "metaTitle": "Dashboard · AeroLex",
+    "title": "Your dashboard",
+    "lead": "Your progress and preferences are stored only in this browser. Nothing is sent to any server.",
+    "statsTitle": "Learning statistics",
+    "statsEmpty": "Lessons and quizzes arrive in Phase 3. Your XP, streak and completed lessons will appear here automatically.",
+    "xp": "XP points",
+    "streak": "Day streak",
+    "bestStreak": "Best streak",
+    "lessons": "Lessons completed",
+    "prefsTitle": "Preferences",
+    "themeLabel": "Theme",
+    "langLabel": "Language",
+    "langHelp": "Your progress is shared between languages: switching never loses it.",
+    "dataTitle": "Your data",
+    "dataText": "Make a backup copy of your progress, or move it to another browser or device.",
+    "export": "Export progress",
+    "import": "Import progress",
+    "reset": "Delete all progress",
+    "exported": "Backup downloaded.",
+    "imported": "Progress imported successfully.",
+    "importError": "This file is not a valid AeroLex backup. Nothing was changed.",
+    "resetDone": "All progress has been deleted.",
+    "resetConfirmTitle": "Delete all progress?",
+    "resetConfirmText": "This deletes your XP, streaks, badges, favourites and preferences from this browser. It cannot be undone. Export a backup first if you might want it back.",
+    "cancel": "Cancel",
+    "confirmReset": "Delete everything",
+    "storageUnavailable": "This browser is blocking local storage (for example, in private mode). Your progress will be lost when you close the tab."
+  },
+  "about": {
+    "metaTitle": "About · AeroLex",
+    "title": "About AeroLex",
+    "lead": "AeroLex wants to be an interactive aviation reference: part academy, part technical dictionary, part encyclopedia and part tool lab, fully in English and Spanish.",
+    "audienceTitle": "Who it is for",
+    "audience": [
+      "People discovering aviation for the first time",
+      "Student pilots and pilots who want to go further",
+      "Cabin crew in training and in service",
+      "AvGeeks who want to recognise every aircraft",
+      "Anyone who wants to read METARs and TAFs or improve their aviation English"
+    ],
+    "principlesTitle": "Principles",
+    "principles": {
+      "bilingual": "Everything in both languages: lessons, definitions, quizzes and tools. Standard English terms such as METAR, QNH or MAYDAY are kept and explained.",
+      "sources": "Nothing invented: data, regulations and procedures come from official, cited sources.",
+      "differences": "European (EASA) and US (FAA) differences are pointed out.",
+      "educational": "Educational, not operational. The operator's approved manuals and procedures always prevail."
+    },
+    "sourcesTitle": "Source hierarchy",
+    "sources": [
+      "Regulations and standards: ICAO, EU/EASA, FAA, WMO",
+      "Official training publications: FAA handbooks, AIP Spain (ENAIRE), AEMET",
+      "Manufacturers' public documentation: Airbus, Boeing, ATR, Embraer…",
+      "Official accident investigation bodies: CIAIAC, BEA, NTSB, AAIB…",
+      "Recognised secondary references, always cross-checked"
+    ],
+    "openTitle": "Built in the open",
+    "openText": "AeroLex is developed publicly on GitHub, phase by phase. You can follow the progress, read the documentation or report an error."
+  },
+  "legal": {
+    "metaTitle": "Legal & privacy · AeroLex",
+    "title": "Legal notice & privacy",
+    "educationalTitle": "Educational use only",
+    "educationalText": "The content and tools on AeroLex are for educational purposes. They do not replace approved training, the aircraft flight manual (AFM/POH), the operator's operations manual, aeronautical information publications or any current official documentation. They must not be used for flight planning or real operations.",
+    "privacyTitle": "Privacy",
+    "privacy": [
+      "AeroLex uses no cookies and no analytics or tracking tools.",
+      "Your progress and preferences are stored only in your browser (LocalStorage). You can export or delete them at any time from the dashboard.",
+      "Fonts are served from this site, not from third-party font services.",
+      "The site is hosted on GitHub Pages; GitHub may process technical data such as your IP address to serve it, under its own privacy statement."
+    ],
+    "accuracyTitle": "Accuracy",
+    "accuracyText": "We work to cite official sources and show the review status of every entry. If you find an error, please report it on GitHub.",
+    "licenceTitle": "Licence",
+    "licenceText": "The licences for the code and the content will be published before version 1.0. Third-party images and data keep their own licences and attribution.",
+    "reportError": "Report an error"
+  },
+  "styleguide": {
+    "metaTitle": "Design system · AeroLex",
+    "title": "Design system",
+    "lead": "The tokens and reusable components AeroLex is built from. Every section of the platform uses only what appears here.",
+    "colours": "Colours",
+    "coloursText": "The semantic colours follow the logic of flight deck displays: red for warnings, amber for cautions, green for normal, cyan for selectable items and magenta for targets and the active route. Every text/background pair meets WCAG AA contrast.",
+    "typography": "Typography",
+    "display": "Display · Space Grotesk",
+    "body": "Body · Inter",
+    "mono": "Data & codes · JetBrains Mono",
+    "sampleText": "Lift is the aerodynamic force that acts perpendicular to the relative airflow.",
+    "buttons": "Buttons",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "ghost": "Ghost",
+    "badges": "Badges",
+    "callouts": "Callouts",
+    "calloutInfo": "Information: context that helps understand the topic.",
+    "calloutTip": "Tip: a practical way to remember or apply it.",
+    "calloutCaution": "Caution: a common mistake or a nuance to watch.",
+    "calloutWarning": "Warning: something that matters for safety.",
+    "calloutRegional": "EASA/FAA difference: Europe and ICAO report pressure in hPa (Q1013); the US uses inches of mercury (A2992).",
+    "calloutOfficial": "Official procedure: this is educational material. The operator's approved procedures always prevail.",
+    "calloutLabels": {
+      "info": "Info",
+      "tip": "Tip",
+      "caution": "Caution",
+      "warning": "Warning",
+      "regional-diff": "EASA / FAA",
+      "official-procedure": "Official procedure"
+    },
+    "cards": "Cards",
+    "cardTitle": "Boarding pass card",
+    "cardText": "Used for courses: origin and destination are your starting and target level.",
+    "from": "From",
+    "to": "To",
+    "tabs": "Tabs",
+    "tabAirbus": "Airbus",
+    "tabBoeing": "Boeing",
+    "tabAirbusText": "Airbus fly-by-wire airliners (from the A320 family onward) use sidesticks and the ECAM system to display engine data and alerts.",
+    "tabBoeingText": "Boeing airliners keep control columns (yokes), including the fly-by-wire 777 and 787. The 757, 767, 747-400, 777 and 787 use EICAS; the 737 does not use a full EICAS.",
+    "accordion": "Accordion",
+    "accordionQ": "Why are aviation terms kept in English?",
+    "accordionA": "English is the common working language of international aviation. Keeping terms like METAR or QNH avoids translations that a pilot or controller would not recognise.",
+    "modal": "Dialog",
+    "openModal": "Open dialog",
+    "modalTitle": "Example dialog",
+    "modalText": "Dialogs can be closed with the Escape key, the close button or by clicking outside.",
+    "close": "Close",
+    "progress": "Glide path progress",
+    "progressLabel": "Path progress",
+    "stats": "Stat tiles",
+    "board": "Information board (FIDS)",
+    "icons": "Icons",
+    "breadcrumbsTitle": "Breadcrumbs"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page has gone around. Let's get you back on the approach.",
+    "back": "Go to the home page"
+  },
+  "root": {
+    "title": "AeroLex · Choose your language",
+    "redirecting": "Taking you to your language…",
+    "choose": "Choose your language"
+  }
+}

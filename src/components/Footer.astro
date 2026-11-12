@@ -1,0 +1,76 @@
+---
+/** Footer: permanent educational disclaimer, secondary links, project status. */
+import Logo from './Logo.astro';
+import Icon from './ui/Icon.astro';
+import { navRoutes } from '../i18n/routes.js';
+import { href, t } from '../i18n/index.js';
+import { REPO_URL } from '../site.js';
+
+interface Props { lang: string }
+const { lang } = Astro.props;
+const links = navRoutes('footer');
+---
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <Logo size={26} />
+      <p class="site-footer__tagline">{t(lang, 'meta.tagline')}</p>
+      <p class="site-footer__phase mono">{t(lang, 'footer.phase')}</p>
+    </div>
+
+    <div class="site-footer__disclaimer" role="note">
+      <p class="site-footer__title"><Icon name="info" size={16} /> {t(lang, 'footer.disclaimerTitle')}</p>
+      <p>{t(lang, 'footer.disclaimer')}</p>
+    </div>
+
+    <nav aria-label={t(lang, 'a11y.footerNav')}>
+      <ul class="site-footer__links">
+        {links.map((key) => <li><a href={href(key, lang)}>{t(lang, `nav.${key}`)}</a></li>)}
+        <li>
+          <a href={REPO_URL} rel="noopener">
+            {t(lang, 'footer.source')} <Icon name="external-link" size={14} />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container site-footer__bottom">
+    <span>© {new Date().getFullYear()} AeroLex</span>
+    <span>{t(lang, 'footer.built')}</span>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-9);
+    border-top: 1px solid var(--border);
+    background: var(--bg-elevated);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+  }
+  .site-footer__grid {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: 1.1fr 2fr 1fr;
+    padding-block: var(--space-7) var(--space-6);
+  }
+  .site-footer__tagline { margin: var(--space-3) 0 var(--space-2); color: var(--text); font-family: var(--font-display); }
+  .site-footer__phase { font-size: var(--text-xs); color: var(--cyan); margin: 0; }
+  .site-footer__title { display: flex; align-items: center; gap: var(--space-2); color: var(--text); font-weight: 600; margin-bottom: var(--space-2); }
+  .site-footer__disclaimer p:last-child { margin: 0; max-width: 60ch; }
+  .site-footer__links { list-style: none; margin: 0; padding: 0; }
+  .site-footer__links a { color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; }
+  .site-footer__links a:hover { color: var(--text); }
+  .site-footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding-block: var(--space-4) var(--space-5);
+    border-top: 1px solid var(--border);
+    font-size: var(--text-xs);
+  }
+  @media (max-width: 860px) {
+    .site-footer__grid { grid-template-columns: 1fr; }
+  }
+</style>

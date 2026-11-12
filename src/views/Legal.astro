@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Callout from '../components/ui/Callout.astro';
+import Button from '../components/ui/Button.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import { href, t, useT } from '../i18n/index.js';
+import { ISSUES_URL } from '../site.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const privacy = t(lang, 'legal.privacy');
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('legal.metaTitle')}>
+  <header class="page-header">
+    <div class="container container--narrow">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.legal') }]} />
+      <h1>{tr('legal.title')}</h1>
+    </div>
+  </header>
+
+  <div class="container container--narrow legal">
+    <section>
+      <h2>{tr('legal.educationalTitle')}</h2>
+      <Callout type="official-procedure" label={tr('styleguide.calloutLabels.official-procedure')}>
+        <p>{tr('legal.educationalText')}</p>
+      </Callout>
+    </section>
+
+    <section>
+      <h2>{tr('legal.privacyTitle')}</h2>
+      <ul>{privacy.map((p) => <li>{p}</li>)}</ul>
+    </section>
+
+    <section>
+      <h2>{tr('legal.accuracyTitle')}</h2>
+      <p>{tr('legal.accuracyText')}</p>
+      <Button href={ISSUES_URL} variant="secondary" icon="message-square-warning" iconAfter="external-link" rel="noopener">{tr('legal.reportError')}</Button>
+    </section>
+
+    <section>
+      <h2>{tr('legal.licenceTitle')}</h2>
+      <p>{tr('legal.licenceText')}</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .legal section { margin-top: var(--space-7); }
+  .legal p, .legal li { color: var(--text-muted); }
+</style>

@@ -16,17 +16,18 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Política de fuentes y fiabilidad → [05-fuentes-y-fiabilidad.md](05-fuentes-y-fiabilidad.md)
 - [x] Decisiones cerradas (ver final de este documento)
 
-## FASE 2 — Diseño y esqueleto
+## FASE 2 — Diseño y esqueleto 🚧
 
-1. Proyecto Astro, GitHub Action de despliegue y Pages activado → la web vacía ya se publica.
-2. `tokens.css`, temas claro/oscuro (con recuerdo de la preferencia y respeto de `prefers-color-scheme`).
-3. Logotipo y favicon SVG; set inicial de iconos.
-4. Sistema i18n: rutas `/es/` y `/en/`, selector ES/EN que lleva a la página equivalente, `hreflang`.
-5. Layouts y biblioteca de componentes base (§4 del documento de UX), con una página interna de muestra (`/styleguide/`).
-6. Cabecera, mega-menú, barra móvil, pie con avisos legales, 404 bilingüe.
-7. `store` con LocalStorageAdapter, migraciones y exportar/importar.
-8. Portada con los bloques que ya tengan contenido real.
-9. CI: build, Vitest, comprobador de enlaces y Playwright básico (idioma + tema + navegación).
+- [x] Proyecto Astro, GitHub Action de despliegue (`.github/workflows/deploy.yml`) → la web se publica sola al fusionar en `main`.
+- [x] `tokens.css` y temas claro/oscuro: recuerda la preferencia y respeta `prefers-color-scheme`, sin parpadeo al cargar.
+- [x] Logotipo y favicon SVG propios; iconos Lucide incrustados en la compilación.
+- [x] Sistema i18n: rutas `/es/` y `/en/` con slugs traducidos, selector ES/EN que lleva a la página equivalente, `hreflang`, redirección inicial según el navegador.
+- [x] Layouts y biblioteca de componentes base, con página de muestra (`/es/guia-de-estilo/`, `/en/styleguide/`).
+- [x] Cabecera, barra inferior móvil, pie con aviso educativo, 404 bilingüe. *El mega-menú se añadirá en la Fase 3, cuando existan las secciones que debe listar (no se publican menús vacíos).*
+- [x] `store` con LocalStorageAdapter (con respaldo en memoria), migraciones, sincronización entre pestañas y exportar/importar/borrar desde el panel.
+- [x] Portada con bloques de contenido real: hero, tres pilares, plan de vuelo (estado real del proyecto) y política de fuentes.
+- [x] CI: Vitest (21 tests), comprobador del sitio compilado (enlaces, hreflang, páginas vacías) y Playwright (idioma, tema, panel, componentes, 404, móvil).
+- [ ] Lighthouse ≥ 90: se medirá sobre la web publicada.
 
 **Hecho cuando:** se publica en `xlopvaz.github.io/aerolex/`, el cambio de idioma y de tema funciona en todas las páginas, no hay enlaces rotos y Lighthouse da ≥ 90.
 

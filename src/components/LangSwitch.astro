@@ -1,0 +1,64 @@
+---
+/**
+ * ES | EN switcher. Links to the EQUIVALENT page in the other language (never just the home page)
+ * and remembers the choice. Progress is keyed by content ID, so switching never loses it.
+ */
+import { LOCALES, LOCALE_META } from '../i18n/config.js';
+import { alternates, t } from '../i18n/index.js';
+
+interface Props {
+  lang: string;
+  routeKey: any;
+}
+const { lang, routeKey } = Astro.props;
+const alt = alternates(routeKey);
+---
+<nav class="lang" aria-label={t(lang, 'lang.current')}>
+  {LOCALES.map((l) =>
+    l === lang ? (
+      <span class="lang__item is-current" aria-current="true" lang={l}>{LOCALE_META[l].short}</span>
+    ) : (
+      <a
+        class="lang__item"
+        href={alt[l]}
+        hreflang={l}
+        lang={l}
+        data-set-lang={l}
+        aria-label={t(lang, 'lang.switchTo')}
+      >{LOCALE_META[l].short}</a>
+    )
+  )}
+</nav>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  document.addEventListener('click', (e) => {
+    const link = (e.target as Element)?.closest?.('[data-set-lang]') as HTMLElement | null;
+    if (!link) return;
+    getAppStore().update((s) => { s.prefs.lang = link.dataset.setLang; });
+  });
+</script>
+
+<style>
+  .lang {
+    display: inline-flex;
+    padding: 3px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    font-weight: 600;
+  }
+  .lang__item {
+    min-width: 2.4rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--radius-pill);
+    text-align: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+  }
+  a.lang__item:hover { color: var(--text); background: var(--surface-2); }
+  .is-current { background: var(--primary); color: var(--on-primary); }
+</style>

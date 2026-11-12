@@ -1,0 +1,33 @@
+---
+/** Generic surface. `href` makes the whole card a link; `interactive` adds hover elevation. */
+interface Props {
+  href?: string;
+  as?: string;
+  padding?: 'md' | 'lg';
+  interactive?: boolean;
+  class?: string;
+}
+const { href, as = 'div', padding = 'md', interactive = !!href, class: className = '' } = Astro.props;
+const Tag = href ? 'a' : as;
+---
+<Tag href={href} class:list={['card', `card--${padding}`, { 'card--interactive': interactive }, className]}>
+  <slot />
+</Tag>
+
+<style>
+  .card {
+    display: block;
+    position: relative;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    color: inherit;
+    text-decoration: none;
+  }
+  .card--md { padding: var(--space-5); }
+  .card--lg { padding: var(--space-6); }
+  .card--interactive { transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+  .card--interactive:hover { transform: translateY(-2px); border-color: var(--border-strong); box-shadow: var(--shadow-md); color: inherit; }
+  .card :global(> :last-child) { margin-bottom: 0; }
+</style>

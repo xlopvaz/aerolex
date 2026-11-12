@@ -1,0 +1,39 @@
+---
+/**
+ * AeroLex logo: an "A" drawn as a runway in perspective (converging edges, threshold bar,
+ * centreline), topped by a glide-path chevron. Original artwork.
+ */
+interface Props {
+  size?: number;
+  wordmark?: boolean;
+  class?: string;
+}
+const { size = 32, wordmark = true, class: className = '' } = Astro.props;
+---
+<span class:list={['logo', className]}>
+  <svg class="logo__mark" width={size} height={size} viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+    <path class="logo__edge" d="M7 43 21 9.5M41 43 27 9.5" />
+    <path class="logo__bar" d="M12.6 30.5h22.8" />
+    <path class="logo__centre" d="M24 42v-5.2M24 26.6v-3.4M24 19.8v-2.2" />
+    <path class="logo__glide" d="M19.6 6.4 24 2.8l4.4 3.6" />
+  </svg>
+  {wordmark && <span class="logo__word">Aero<span>Lex</span></span>}
+</span>
+
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 0.55rem; color: var(--text); }
+  .logo__mark { flex: none; }
+  .logo__mark path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .logo__edge { stroke: var(--primary); stroke-width: 3.6; }
+  .logo__bar { stroke: var(--primary); stroke-width: 3.2; }
+  .logo__centre { stroke: var(--cyan); stroke-width: 2.4; }
+  .logo__glide { stroke: var(--magenta); stroke-width: 2.6; }
+  .logo__word {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .logo__word span { color: var(--primary); }
+</style>

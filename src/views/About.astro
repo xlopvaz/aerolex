@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import { href, t, useT } from '../i18n/index.js';
+import { REPO_URL } from '../site.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const audience = t(lang, 'about.audience');
+const sources = t(lang, 'about.sources');
+const principles = [
+  { key: 'bilingual', icon: 'languages' },
+  { key: 'sources', icon: 'book-check' },
+  { key: 'differences', icon: 'globe' },
+  { key: 'educational', icon: 'graduation-cap' },
+];
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('about.metaTitle')} description={tr('about.lead')}>
+  <header class="page-header">
+    <div class="container container--narrow">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.about') }]} />
+      <h1>{tr('about.title')}</h1>
+      <p class="lead">{tr('about.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container container--narrow about">
+    <section>
+      <h2>{tr('about.audienceTitle')}</h2>
+      <ul class="about__list">
+        {audience.map((item) => <li><Icon name="check" size={18} class="about__check" /> <span>{item}</span></li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{tr('about.principlesTitle')}</h2>
+      <div class="about__principles">
+        {principles.map((p) => (
+          <Card>
+            <Icon name={p.icon} size={22} class="about__picon" />
+            <p>{tr(`about.principles.${p.key}`)}</p>
+          </Card>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2>{tr('about.sourcesTitle')}</h2>
+      <ol class="about__sources">
+        {sources.map((s) => <li>{s}</li>)}
+      </ol>
+    </section>
+
+    <section>
+      <h2>{tr('about.openTitle')}</h2>
+      <p>{tr('about.openText')}</p>
+      <Button href={REPO_URL} variant="secondary" icon="code" iconAfter="external-link" rel="noopener">GitHub</Button>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .about section { margin-top: var(--space-7); }
+  .about__list { list-style: none; padding: 0; }
+  .about__list li { display: flex; gap: var(--space-3); align-items: start; }
+  .about :global(.about__check) { color: var(--green); margin-top: 3px; }
+  .about__principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-4); }
+  .about__principles p { margin: var(--space-3) 0 0; color: var(--text-muted); }
+  .about :global(.about__picon) { color: var(--primary); }
+  .about__sources { padding-left: 1.4rem; }
+  .about__sources li::marker { color: var(--cyan); font-family: var(--font-mono); font-weight: 600; }
+</style>

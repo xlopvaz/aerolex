@@ -1,0 +1,36 @@
+---
+/** Single metric tile (XP, streak, lessons…). */
+import Icon from './Icon.astro';
+interface Props { label: string; value: string | number; icon?: string; tone?: 'primary' | 'cyan' | 'magenta' | 'green' | 'amber'; id?: string }
+const { label, value, icon, tone = 'primary', id } = Astro.props;
+---
+<div class:list={['stat', `stat--${tone}`]}>
+  {icon && <span class="stat__icon"><Icon name={icon} size={20} /></span>}
+  <span class="stat__value mono" id={id}>{value}</span>
+  <span class="stat__label">{label}</span>
+</div>
+
+<style>
+  .stat {
+    --c: var(--primary);
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+  }
+  .stat--cyan { --c: var(--cyan); }
+  .stat--magenta { --c: var(--magenta); }
+  .stat--green { --c: var(--green); }
+  .stat--amber { --c: var(--amber); }
+  .stat__icon {
+    display: inline-grid; place-items: center;
+    width: 36px; height: 36px; margin-bottom: var(--space-2);
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--c) 14%, transparent);
+    color: var(--c);
+  }
+  .stat__value { font-size: var(--text-2xl); font-weight: 600; line-height: 1.1; color: var(--text); }
+  .stat__label { font-size: var(--text-sm); color: var(--text-muted); }
+</style>

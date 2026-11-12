@@ -1,0 +1,19 @@
+{
+  "updated": "2026-11-12",
+  "flights": [
+    { "flight": "AX 201", "phase": 2, "status": "live",      "destination": { "en": "Bilingual site · light & dark mode", "es": "Web bilingüe · modo claro y oscuro" } },
+    { "flight": "AX 202", "phase": 2, "status": "live",      "destination": { "en": "Dashboard & progress backup",        "es": "Panel y copia de seguridad del progreso" } },
+    { "flight": "AX 301", "phase": 3, "status": "boarding",  "destination": { "en": "Aviation dictionary EN/ES",          "es": "Diccionario aeronáutico EN/ES" } },
+    { "flight": "AX 302", "phase": 3, "status": "boarding",  "destination": { "en": "Introduction to Aviation",           "es": "Introducción a la aviación" } },
+    { "flight": "AX 303", "phase": 3, "status": "boarding",  "destination": { "en": "Pilot Academy",                      "es": "Academia de pilotos" } },
+    { "flight": "AX 304", "phase": 3, "status": "boarding",  "destination": { "en": "Cabin Crew Academy",                 "es": "Academia de TCP" } },
+    { "flight": "AX 305", "phase": 3, "status": "boarding",  "destination": { "en": "METAR & SPECI Academy",              "es": "Academia METAR y SPECI" } },
+    { "flight": "AX 306", "phase": 3, "status": "boarding",  "destination": { "en": "Hangar · Aircraft encyclopedia",     "es": "Hangar · Enciclopedia de aeronaves" } },
+    { "flight": "AX 401", "phase": 4, "status": "scheduled", "destination": { "en": "METAR & TAF decoders",               "es": "Decodificadores METAR y TAF" } },
+    { "flight": "AX 402", "phase": 4, "status": "scheduled", "destination": { "en": "ATC phraseology trainer",            "es": "Entrenador de fraseología ATC" } },
+    { "flight": "AX 403", "phase": 4, "status": "scheduled", "destination": { "en": "Unit converters & airport codes",    "es": "Conversores y códigos de aeropuerto" } },
+    { "flight": "AX 501", "phase": 5, "status": "scheduled", "destination": { "en": "XP, streaks & badges",               "es": "XP, rachas e insignias" } },
+    { "flight": "AX 502", "phase": 5, "status": "scheduled", "destination": { "en": "Interactive flight deck",            "es": "Cabina de vuelo interactiva" } },
+    { "flight": "AX 601", "phase": 6, "status": "scheduled", "destination": { "en": "Version 1.0",                        "es": "Versión 1.0" } }
+  ]
+}
