@@ -1,0 +1,216 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import Callout from '../components/ui/Callout.astro';
+import Quiz from '../components/academy/Quiz.astro';
+import Term from '../components/academy/Term.astro';
+import MetarBreakdown from '../components/academy/MetarBreakdown.astro';
+import { childAlternates, childHref, href, useT } from '../i18n/index.js';
+import { lessonKey } from '../lib/academy/progress.js';
+
+interface Props { lang: string; routeKey: any; courseId: string; lessonId: string }
+const { lang, courseId, lessonId } = Astro.props;
+const tr = useT(lang);
+
+const course = (await getEntry('courses', courseId))!.data;
+const [doc] = await getCollection('lessons', (l) => l.data.course === courseId && l.data.lesson === lessonId && l.data.lang === lang);
+if (!doc) throw new Error(`Lesson ${courseId}/${lessonId} (${lang}) not found`);
+const L = doc.data;
+const { Content } = await render(doc);
+
+const all = await getCollection('lessons', (l) => l.data.course === courseId && l.data.lang === lang);
+const ordered = course.lessons.map((id, i) => {
+  const d = all.find((x) => x.data.lesson === id)!;
+  return { id, n: i + 1, title: d.data.title, key: lessonKey(courseId, id), href: childHref('academy', `${courseId}/${id}`, lang) };
+});
+const idx = course.lessons.indexOf(lessonId);
+const prev = ordered[idx - 1];
+const next = ordered[idx + 1];
+const key = lessonKey(courseId, lessonId);
+const courseHref = childHref('academy', courseId, lang);
+
+const dict = await getCollection('dictionary');
+const terms = L.terms.map((id) => {
+  const e = dict.find((d) => d.id === id);
+  if (!e) throw new Error(`Lesson ${courseId}/${lessonId}: unknown term "${id}"`);
+  return { id, name: e.data.term[lang] };
+});
+const sources = await getCollection('sources');
+const lessonSources = L.sources.map((id) => {
+  const s = sources.find((x) => x.id === id);
+  if (!s) throw new Error(`Lesson ${courseId}/${lessonId}: unknown source "${id}"`);
+  return s.data;
+});
+---
+<BaseLayout lang={lang} routeKey="academy" title={`${L.title} · ${course.title[lang]} · AeroLex`} description={L.summary} alt={childAlternates('academy', `${courseId}/${lessonId}`)}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs
+        label={tr('a11y.breadcrumbs')}
+        items={[{ label: tr('nav.academy'), href: href('academy', lang) }, { label: course.title[lang], href: courseHref }, { label: L.title }]}
+      />
+      <p class="eyebrow mono">{tr('academy.lessonOf', { n: idx + 1, total: ordered.length })}</p>
+      <h1>{L.title}</h1>
+      <p class="lead">{L.summary}</p>
+      <div class="lesson__meta">
+        <Badge icon="clock">{tr('academy.minutes', { count: L.minutes })}</Badge>
+        <Badge tone="amber" icon="pencil">{tr(`status.${L.review.status}`)}</Badge>
+      </div>
+    </div>
+  </header>
+
+  <div class="container lesson" data-lesson-page={key}>
+    <article class="lesson__main">
+      <section class="lesson__objectives" aria-labelledby="obj-title">
+        <h2 id="obj-title"><Icon name="target" size={20} /> {tr('academy.inThisLesson')}</h2>
+        <ul>{L.objectives.map((o) => <li>{o}</li>)}</ul>
+      </section>
+
+      <div class="prose">
+        <Content components={{ Term, MetarBreakdown, Callout }} />
+      </div>
+
+      {terms.length > 0 && (
+        <section class="lesson__terms" aria-labelledby="terms-title">
+          <h2 id="terms-title">{tr('academy.keyTerms')}</h2>
+          <ul class="tags">{terms.map((term) => <li><a href={childHref('dictionary', term.id, lang)}>{term.name}</a></li>)}</ul>
+        </section>
+      )}
+
+      {L.quiz && <Quiz id={L.quiz} lang={lang} lessonId={key} />}
+
+      <div class="lesson__complete">
+        <button type="button" class="complete-btn" data-complete={key} aria-pressed="false" data-label-on={tr('academy.markIncomplete')} data-label-off={tr('academy.markComplete')}>
+          <Icon name="circle-check" size={20} />
+          <span>{tr('academy.markComplete')}</span>
+        </button>
+        {!next && <p class="lesson__finished" data-finished hidden>{tr('academy.finished')}</p>}
+      </div>
+
+      <nav class="lesson__nav" aria-label={tr('academy.lessons')}>
+        {prev ? <a class="lesson__nav-link" href={prev.href} rel="prev"><Icon name="arrow-left" size={18} /><span><small>{tr('academy.previous')}</small>{prev.title}</span></a> : <span></span>}
+        {next
+          ? <a class="lesson__nav-link lesson__nav-link--next" href={next.href} rel="next"><span><small>{tr('academy.next')}</small>{next.title}</span><Icon name="arrow-right" size={18} /></a>
+          : <a class="lesson__nav-link lesson__nav-link--next" href={courseHref}><span><small>{course.title[lang]}</small>{tr('academy.backToCourse')}</span><Icon name="arrow-right" size={18} /></a>}
+      </nav>
+
+      <section class="lesson__sources" aria-labelledby="src-title">
+        <h2 id="src-title">{tr('academy.sources')}</h2>
+        <ul>{lessonSources.map((s) => <li><a href={s.url} rel="noopener">{s.publisher} — {s.title}</a></li>)}</ul>
+        <p>{tr('academy.educational')}</p>
+      </section>
+    </article>
+
+    <aside class="lesson__side">
+      <nav class="side-box" aria-label={tr('academy.lessons')}>
+        <a class="side-box__course" href={courseHref}>{course.title[lang]}</a>
+        <ol class="toc">
+          {ordered.map((o) => (
+            <li data-toc={o.key} class:list={{ 'is-current': o.id === lessonId }}>
+              <a href={o.href} aria-current={o.id === lessonId ? 'page' : undefined}>
+                <span class="toc__dot" aria-hidden="true"></span>
+                <span>{o.title}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+    </aside>
+  </div>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { completeLesson, uncompleteLesson, isLessonComplete } from '../lib/academy/progress.js';
+  const root = document.querySelector<HTMLElement>('[data-lesson-page]');
+  if (root) {
+    const store = getAppStore();
+    const key = root.dataset.lessonPage!;
+    const btn = root.querySelector<HTMLButtonElement>('[data-complete]')!;
+    const label = btn.querySelector('span')!;
+    const finished = root.querySelector<HTMLElement>('[data-finished]');
+    const render = (state: any) => {
+      const done = isLessonComplete(state, key);
+      btn.setAttribute('aria-pressed', String(done));
+      label.textContent = done ? btn.dataset.labelOn! : btn.dataset.labelOff!;
+      root.querySelectorAll<HTMLElement>('[data-toc]').forEach((li) => li.classList.toggle('is-done', isLessonComplete(state, li.dataset.toc!)));
+      if (finished) {
+        const keys = [...root.querySelectorAll<HTMLElement>('[data-toc]')].map((li) => li.dataset.toc!);
+        finished.hidden = !keys.every((k) => isLessonComplete(state, k));
+      }
+    };
+    btn.addEventListener('click', () => {
+      if (isLessonComplete(store.get(), key)) uncompleteLesson(store, key);
+      else completeLesson(store, key);
+    });
+    render(store.get());
+    store.subscribe(render);
+  }
+</script>
+
+<style>
+  .lesson__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+  .lesson { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: var(--space-7); padding-top: var(--space-6); align-items: start; }
+  .lesson__main { max-width: 760px; }
+  .lesson__objectives { padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-left: 4px solid var(--magenta); border-radius: var(--radius-md); background: var(--surface); margin-bottom: var(--space-6); }
+  .lesson__objectives h2 { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-lg); margin-bottom: var(--space-2); }
+  .lesson__objectives ul { margin: 0; }
+
+  .prose :global(h2) { font-size: var(--text-2xl); margin-top: var(--space-7); }
+  .prose :global(h3) { font-size: var(--text-xl); margin-top: var(--space-6); }
+  .prose :global(p), .prose :global(li) { font-size: 1.0625rem; }
+  .prose :global(table) { width: 100%; border-collapse: collapse; margin: var(--space-4) 0 var(--space-5); font-size: var(--text-sm); display: block; overflow-x: auto; }
+  .prose :global(th), .prose :global(td) { padding: 0.55rem 0.8rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+  .prose :global(th) { background: var(--surface-2); font-weight: 600; }
+  .prose :global(td code), .prose :global(p code), .prose :global(li code) { padding: 0.1rem 0.35rem; border-radius: var(--radius-sm); background: var(--surface-2); color: var(--cyan); font-weight: 600; }
+  .prose :global(pre) { padding: var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); overflow-x: auto; }
+  .prose :global(.callout) { margin: var(--space-5) 0; }
+  .prose :global(blockquote) { margin: var(--space-4) 0; padding-left: var(--space-4); border-left: 3px solid var(--border-strong); color: var(--text-muted); }
+
+  .lesson__terms { margin-top: var(--space-6); }
+  .lesson__terms h2, .lesson__sources h2 { font-size: var(--text-lg); }
+  .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .tags li { margin: 0; }
+  .tags a { display: inline-block; padding: 0.25rem 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-pill); font-size: var(--text-sm); text-decoration: none; color: var(--text); }
+  .tags a:hover { border-color: var(--cyan); background: var(--cyan-soft); }
+
+  .lesson__complete { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); margin-top: var(--space-6); }
+  .complete-btn {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    padding: 0.7rem 1.1rem; border: 1px solid var(--border-strong); border-radius: var(--radius-md);
+    background: var(--surface); color: var(--text); font-weight: 600; cursor: pointer;
+  }
+  .complete-btn:hover { border-color: var(--green); }
+  .complete-btn[aria-pressed='true'] { border-color: var(--green); background: var(--green-soft); color: var(--green); }
+  .lesson__finished { margin: 0; color: var(--green); font-weight: 600; }
+  .lesson__finished[hidden] { display: none; }
+
+  .lesson__nav { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-top: var(--space-6); }
+  .lesson__nav-link {
+    display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4);
+    border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface);
+    color: var(--text); text-decoration: none; font-weight: 600;
+  }
+  .lesson__nav-link:hover { border-color: var(--primary); color: var(--text); }
+  .lesson__nav-link small { display: block; color: var(--text-muted); font-weight: 500; font-size: var(--text-xs); }
+  .lesson__nav-link--next { justify-content: flex-end; text-align: right; }
+
+  .lesson__sources { margin-top: var(--space-7); padding-top: var(--space-5); border-top: 1px solid var(--border); font-size: var(--text-sm); color: var(--text-muted); }
+
+  .lesson__side { position: sticky; top: calc(var(--header-h) + var(--space-4)); }
+  .side-box { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .side-box__course { display: block; font-weight: 700; margin-bottom: var(--space-3); text-decoration: none; color: var(--text); }
+  .toc { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; font-size: var(--text-sm); }
+  .toc li { margin: 0; }
+  .toc a { display: flex; align-items: flex-start; gap: var(--space-2); padding: 0.4rem 0.5rem; border-radius: var(--radius-sm); color: var(--text-muted); text-decoration: none; }
+  .toc a:hover { background: var(--surface-2); color: var(--text); }
+  .toc .is-current a { background: var(--primary-soft); color: var(--text); font-weight: 600; }
+  .toc__dot { width: 0.7rem; height: 0.7rem; margin-top: 0.35rem; flex: none; border: 2px solid var(--border-strong); border-radius: 50%; }
+  .toc .is-done .toc__dot { border-color: var(--green); background: var(--green); }
+
+  @media (max-width: 960px) { .lesson { grid-template-columns: 1fr; } .lesson__side { position: static; order: 2; } }
+  @media (max-width: 560px) { .lesson__nav { grid-template-columns: 1fr; } }
+</style>

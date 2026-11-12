@@ -3,8 +3,10 @@ import { test, expect } from '@playwright/test';
 const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
+  'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
+  'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/',
 ];
 
 test.describe('language', () => {

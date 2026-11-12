@@ -9,6 +9,7 @@
  */
 export const ROUTES = {
   home:       { slug: { es: '',               en: '' },             nav: ['main'], icon: 'plane-takeoff' },
+  academy:    { slug: { es: 'academia',       en: 'academy' },      nav: ['main'], icon: 'graduation-cap' },
   dictionary: { slug: { es: 'diccionario',    en: 'dictionary' },   nav: ['main'], icon: 'book-a' },
   acronyms:   { slug: { es: 'diccionario/acronimos', en: 'dictionary/acronyms' }, nav: [], icon: 'case-upper' },
   dashboard:  { slug: { es: 'panel',          en: 'dashboard' },    nav: ['main'], icon: 'layout-dashboard' },

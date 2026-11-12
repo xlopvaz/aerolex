@@ -21,7 +21,8 @@
     "styleguide": "Design system",
     "legal": "Legal & privacy",
     "dictionary": "Dictionary",
-    "acronyms": "Abbreviations & acronyms"
+    "acronyms": "Abbreviations & acronyms",
+    "academy": "Academy"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -94,7 +95,7 @@
     "title": "Your dashboard",
     "lead": "Your progress and preferences are stored only in this browser. Nothing is sent to any server.",
     "statsTitle": "Learning statistics",
-    "statsEmpty": "Lessons and quizzes arrive in Phase 3. Your XP, streak and completed lessons will appear here automatically.",
+    "statsEmpty": "Completed lessons are counted as you study in the Academy. XP, streaks and badges arrive in Phase 5.",
     "xp": "XP points",
     "streak": "Day streak",
     "bestStreak": "Best streak",
@@ -319,5 +320,54 @@
     "handbook": "Handbook",
     "aip": "AIP",
     "web": "Web page"
+  },
+  "levels": {
+    "beginner": "Beginner",
+    "elementary": "Elementary",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "professional": "Professional"
+  },
+  "academy": {
+    "metaTitle": "Aviation Academy · AeroLex",
+    "metaDescription": "Learning paths and courses in English and Spanish, from zero to professional level.",
+    "title": "Aviation Academy",
+    "lead": "Learning paths that start from zero and build up step by step. Each lesson links key terms to the dictionary and ends with practice.",
+    "pathsTitle": "Learning paths",
+    "coursesCount": "{count} courses",
+    "oneCourse": "1 course",
+    "lessonsCount": "{count} lessons",
+    "minutes": "{count} min",
+    "level": "Level",
+    "objectives": "Learning objectives",
+    "lessons": "Lessons",
+    "start": "Start the course",
+    "continue": "Continue",
+    "review": "Review",
+    "completed": "Completed",
+    "notStarted": "Not started",
+    "progress": "Course progress",
+    "lessonOf": "Lesson {n} of {total}",
+    "previous": "Previous lesson",
+    "next": "Next lesson",
+    "backToCourse": "Back to the course",
+    "markComplete": "Mark as completed",
+    "markIncomplete": "Mark as not completed",
+    "completedOn": "Completed",
+    "keyTerms": "Key terms in this lesson",
+    "sources": "Sources",
+    "didacticExample": "Didactic example",
+    "educational": "Educational material. Official weather reports must be read with the current regulations and the operator's procedures.",
+    "courseSources": "Course bibliography",
+    "draftNotice": "This course is a draft: written with sources, pending expert review.",
+    "inThisLesson": "In this lesson",
+    "finished": "Course completed! You have finished every lesson."
+  },
+  "quiz": {
+    "title": "Check your understanding",
+    "correct": "Correct!",
+    "incorrect": "Not quite.",
+    "score": "{correct}/{total} correct",
+    "retryWrong": "Retry the ones I missed"
   }
 }

@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Decodifica:",
+        "en": "Decode:"
+      },
+      "code": "02/M01",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Temperatura 2 °C, punto de rocío −1 °C",
+            "en": "Temperature 2 °C, dew point −1 °C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Temperatura −2 °C, punto de rocío 1 °C",
+            "en": "Temperature −2 °C, dew point 1 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Temperatura 2 °C, punto de rocío 1 °C",
+            "en": "Temperature 2 °C, dew point 1 °C"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "M significa menos (bajo cero).",
+        "en": "M means minus (below zero)."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué indica Q0998?",
+        "en": "What does Q0998 indicate?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "QNH 998 hPa",
+            "en": "QNH 998 hPa"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "QFE 998 hPa",
+            "en": "QFE 998 hPa"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Altímetro 29,98 inHg",
+            "en": "Altimeter 29.98 inHg"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Q introduce el QNH en hectopascales. Las pulgadas de mercurio se indican con A.",
+        "en": "Q introduces QNH in hectopascals. Inches of mercury are shown with A."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Si vuelas de alta a baja presión sin actualizar el QNH, el altímetro…",
+        "en": "If you fly from high to low pressure without updating QNH, the altimeter…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "indica menos altura de la real",
+            "en": "reads lower than your real altitude"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "indica más altura de la real: estás más bajo de lo que crees",
+            "en": "reads higher than your real altitude: you are lower than you think"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "no se ve afectado",
+            "en": "is not affected"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "\"From high to low, look out below\": el altímetro sobrestima la altitud.",
+        "en": "\"From high to low, look out below\": the altimeter overreads."
+      }
+    }
+  ]
+}

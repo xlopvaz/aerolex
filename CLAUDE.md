@@ -44,6 +44,13 @@ npm run e2e          # tests de extremo a extremo (Playwright; necesita el build
 3. `definitionBasis: "official"` solo si se parafrasea una definición oficial; nunca copiar literalmente documentos con derechos (ICAO, IATA…).
 4. `npm test` valida los campos, las categorías, los `related` y las fuentes.
 
+## Añadir un curso o una lección
+
+1. Curso: `src/content/courses/<id>.json` (itinerario de `src/content/paths/paths.json`, nivel, títulos ES/EN, objetivos, orden de lecciones, fuentes).
+2. Lección: dos ficheros `src/content/lessons/<curso>/<nn>-<lección>.es.mdx` y `.en.mdx` con el mismo `lesson`, `quiz`, `terms` y `sources`.
+3. Dentro de la lección se pueden usar `<Term id="…">`, `<MetarBreakdown parts={[…]}>` y `<Callout type="…" label="…">`. Los ejemplos inventados se marcan como didácticos.
+4. Cuestionario: `src/content/quizzes/<id>.json` con preguntas bilingües, `answer` y `explanation`.
+
 ## Flujo de trabajo
 
 Un PR por bloque de trabajo. El workflow `CI & Deploy` debe estar en verde antes de fusionar; al fusionar en `main` se publica solo.

@@ -1,0 +1,27 @@
+---
+/**
+ * Link to a dictionary entry from inside a lesson: <Term id="qnh" /> or <Term id="qnh">QNH</Term>.
+ * The build fails if the entry does not exist, so lessons can never link to a missing term.
+ */
+import { getEntry } from 'astro:content';
+import { childHref } from '../../i18n/index.js';
+import { langFromUrl } from '../../i18n/from-url.js';
+
+interface Props { id: string }
+const { id } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const entry = await getEntry('dictionary', id);
+if (!entry) throw new Error(`<Term id="${id}"> — dictionary entry not found`);
+const hasText = Astro.slots.has('default');
+---
+<a class="term" href={childHref('dictionary', id, lang)} title={entry.data.term[lang === 'es' ? 'en' : 'es']}>{hasText ? <slot /> : entry.data.term[lang]}</a>
+
+<style>
+  .term {
+    color: inherit;
+    text-decoration: underline dotted var(--cyan);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .term:hover { color: var(--cyan); }
+</style>

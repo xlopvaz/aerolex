@@ -1,0 +1,52 @@
+---
+lesson: temperature-and-pressure
+course: metar-speci
+lang: en
+title: "Temperature, dew point and pressure"
+summary: "The TT/TdTd group, sub-zero values and QNH in hectopascals or inches of mercury."
+objectives:
+  - "Read temperature and dew point, including negative values"
+  - "Relate the spread between them to fog risk"
+  - "Decode QNH in hPa (Q) and inHg (A)"
+minutes: 8
+terms: [dew-point, qnh, qfe, altimeter]
+quiz: metar-speci-07
+sources: [icao-annex-3, wmo-306, faa-awh, icao-doc-8168]
+review:
+  status: draft
+---
+
+## Temperature and dew point: `TT/TdTd`
+
+Two numbers in **whole degrees Celsius** separated by a slash: first the air temperature, then the <Term id="dew-point" />. Sub-zero values are preceded by an `M` (*minus*).
+
+<MetarBreakdown parts={[
+  ["18/10", "Temperature 18 °C, dew point 10 °C"],
+  ["02/M01", "Temperature 2 °C, dew point −1 °C"],
+  ["M05/M08", "Temperature −5 °C, dew point −8 °C"]
+]} />
+
+## The spread matters
+
+The **closer** temperature and dew point are, the closer the air is to saturation. A spread of only a few degrees, especially around dusk with clear skies and light wind, points to possible **fog or low cloud**.
+
+Temperature also affects **performance**: in hot weather the air is less dense, engines produce less thrust and the aircraft needs more runway to take off.
+
+## Pressure: QNH
+
+The last mandatory group is the <Term id="qnh" />, the pressure to set on the <Term id="altimeter" /> so that it reads altitude above mean sea level.
+
+- `Q1013` → 1013 hPa. Under ICAO rules it is rounded **down** to the whole hectopascal.
+- `Q0998` → 998 hPa (a leading zero keeps four digits).
+
+<Callout type="regional-diff" label="ICAO / US">
+In the US the setting is given in **inches of mercury**, in hundredths: `A2992` = 29.92 inHg, roughly 1013 hPa (the standard atmosphere).
+</Callout>
+
+## Why set it correctly?
+
+The altimeter measures pressure, not distance to the ground. If you fly from high pressure to low pressure without updating QNH, the altimeter **reads higher than you really are**: you are lower than you think. Hence the classic rule: *"from high to low, look out below"*. Near sea level, each hectopascal is worth roughly 27–30 ft.
+
+<Callout type="info" label="QNH and QFE">
+With <Term id="qfe" /> set, the altimeter reads height above the aerodrome (zero on the runway). The METAR gives QNH; QFE comes from other sources, such as the ATIS or the tower, where it is used.
+</Callout>

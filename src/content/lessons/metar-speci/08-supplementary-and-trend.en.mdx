@@ -1,0 +1,63 @@
+---
+lesson: supplementary-and-trend
+course: metar-speci
+lang: en
+title: "Supplementary information and trend"
+summary: "Recent weather (RE), wind shear (WS), trend forecasts (NOSIG, BECMG, TEMPO) and US RMK remarks."
+objectives:
+  - "Interpret recent weather and wind shear reports"
+  - "Read a trend forecast with its time indicators"
+  - "Recognise the RMK section of US METARs"
+minutes: 10
+terms: [wind-shear, taf, metar]
+quiz: metar-speci-08
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Recent weather: `RE`
+
+It shows significant phenomena **observed since the previous report (within the last hour at most)** that are no longer present at the time of observation. They are written with `RE` in front:
+
+- `RERA`: recent rain.
+- `RETSRA`: recent thunderstorm with rain.
+- `RESN`: recent snow.
+
+It is useful, for example, to know the runway may be wet even though it has stopped raining.
+
+## Wind shear: `WS`
+
+If <Term id="wind-shear" /> has been reported in the take-off or approach paths, the affected runway (or all runways) is indicated:
+
+<MetarBreakdown parts={[
+  ["WS R24", "Wind shear reported on runway 24"],
+  ["WS ALL RWY", "Wind shear on all runways"]
+]} />
+
+## Trend forecast
+
+At many European airports, the METAR ends with a **trend forecast** valid for the **2 hours** after the observation:
+
+| Code | Meaning |
+|---|---|
+| `NOSIG` | No significant change expected |
+| `BECMG` | Becoming: a change expected to be reached and to persist |
+| `TEMPO` | Temporary fluctuations, each lasting less than an hour |
+| `FM` / `TL` / `AT` + time | From / until / at (HHMM UTC) |
+| `NSW` | End of significant weather (*no significant weather*) |
+
+<MetarBreakdown parts={[
+  ["BECMG", "Becoming…"],
+  ["FM1900", "…from 19:00 UTC:"],
+  ["25015KT", "wind 250° at 15 knots"],
+  ["TEMPO", "Temporarily:"],
+  ["3000", "visibility 3,000 m"],
+  ["SHRA", "in rain showers"]
+]} />
+
+The same indicators are used in the <Term id="taf" />, over longer periods.
+
+<Callout type="regional-diff" label="ICAO / US">
+US METARs have no trend. Instead they end with `RMK` (remarks), a section of additional observations. For example: `AO2` (automated station with a precipitation discriminator), `SLP199` (sea-level pressure 1019.9 hPa) or `T00831028` (temperature 8.3 °C and dew point −2.8 °C, in tenths).
+</Callout>

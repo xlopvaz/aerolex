@@ -55,4 +55,70 @@ const sources = defineCollection({
   }),
 });
 
-export const collections = { dictionary, sources };
+const LEVELS = ['beginner', 'elementary', 'intermediate', 'advanced', 'professional'] as const;
+const review = z.object({
+  status: z.enum(REVIEW_STATUSES as [string, ...string[]]),
+  reviewedBy: z.string().nullable().default(null),
+  date: z.string().nullable().default(null),
+});
+
+/** Learning paths (itinerarios). Only paths with at least one course are shown. */
+const paths = defineCollection({
+  loader: file('./src/content/paths/paths.json'),
+  schema: z.object({ order: z.number(), title: bilingual, description: bilingual, icon: text }),
+});
+
+/** Courses: metadata + ordered lesson IDs. */
+const courses = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/courses' }),
+  schema: z.object({
+    path: text,
+    level: z.enum(LEVELS),
+    title: bilingual,
+    description: bilingual,
+    objectives: bilingualList,
+    lessons: z.array(text).min(1),
+    finalQuiz: text.nullable().default(null),
+    sources: z.array(text).min(1),
+    review,
+  }),
+});
+
+/** Lessons: one MDX file per language ("<lesson>.es.mdx" / "<lesson>.en.mdx"). */
+const lessons = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/lessons' }),
+  schema: z.object({
+    lesson: text,
+    course: text,
+    lang: z.enum(['es', 'en']),
+    title: text,
+    summary: text,
+    objectives: z.array(text).min(1),
+    minutes: z.number().int().positive(),
+    terms: z.array(text).default([]),
+    quiz: text.nullable().default(null),
+    sources: z.array(text).min(1),
+    review,
+  }),
+});
+
+/** Quizzes: bilingual multiple-choice questions with explanations. */
+const quizzes = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/quizzes' }),
+  schema: z.object({
+    questions: z
+      .array(
+        z.object({
+          id: text,
+          prompt: bilingual,
+          code: z.string().nullable().default(null),
+          options: z.array(z.object({ id: text, text: bilingual })).min(2),
+          answer: text,
+          explanation: bilingual,
+        })
+      )
+      .min(1),
+  }),
+});
+
+export const collections = { dictionary, sources, paths, courses, lessons, quizzes };

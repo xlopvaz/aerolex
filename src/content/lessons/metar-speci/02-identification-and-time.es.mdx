@@ -1,0 +1,72 @@
+---
+lesson: identification-and-time
+course: metar-speci
+lang: es
+title: "Identificación, fecha y hora"
+summary: "El tipo de informe, el indicador de lugar ICAO, el grupo de fecha y hora, y los modificadores AUTO, COR y NIL."
+objectives:
+  - "Leer el indicador de lugar ICAO y distinguirlo del código IATA"
+  - "Convertir el grupo de fecha y hora a hora local"
+  - "Reconocer los modificadores AUTO, COR y NIL"
+minutes: 6
+terms: [metar, speci, utc]
+quiz: metar-speci-02
+sources: [icao-annex-3, wmo-306, enaire-aip-gen-2-2]
+review:
+  status: draft
+---
+
+## El indicador de lugar ICAO
+
+Después del tipo de informe (`METAR` o `SPECI`) aparece el **indicador de lugar ICAO**: cuatro letras que identifican el aeródromo. No es el código de tres letras que ves en tu tarjeta de embarque (ese es el código IATA).
+
+| Aeropuerto | ICAO | IATA |
+|---|---|---|
+| Madrid-Barajas | `LEMD` | MAD |
+| Barcelona-El Prat | `LEBL` | BCN |
+| Santiago-Rosalía de Castro | `LEST` | SCQ |
+| Vigo | `LEVX` | VGO |
+| A Coruña | `LECO` | LCG |
+| Londres-Heathrow | `EGLL` | LHR |
+| París-Charles de Gaulle | `LFPG` | CDG |
+| Nueva York-JFK | `KJFK` | JFK |
+
+La **primera letra** indica una gran región y las dos primeras suelen identificar el país: `LE` es España, `LF` Francia, `EG` Reino Unido, `ED` Alemania, `LP` Portugal. En el territorio continental de Estados Unidos los indicadores empiezan por `K`.
+
+## Día y hora: `DDHHMMZ`
+
+El grupo de fecha y hora tiene seis cifras y una `Z`:
+
+- `DD`: día del mes.
+- `HHMM`: hora y minutos de la observación.
+- `Z`: la hora está en UTC (Zulu).
+
+El mes y el año **no aparecen**: se sobreentienden.
+
+<MetarBreakdown parts={[
+  ["METAR", "Informe ordinario"],
+  ["LEMD", "Madrid-Barajas"],
+  ["121830Z", "Día 12, a las 18:30 UTC"]
+]} />
+
+En invierno, la España peninsular está en UTC+1, así que `121830Z` corresponde a las 19:30 hora local; en verano (UTC+2), a las 20:30. Canarias va una hora por detrás de la península.
+
+## Modificadores: AUTO, COR y NIL
+
+| Código | Dónde aparece | Significado |
+|---|---|---|
+| `AUTO` | Después de la hora | Informe totalmente automático, sin intervención humana |
+| `COR` | Después del tipo de informe | Informe corregido: sustituye a uno anterior que tenía un error |
+| `NIL` | En lugar del resto del informe | Informe que falta: no hay datos |
+
+<MetarBreakdown parts={[
+  ["METAR", "Informe ordinario"],
+  ["COR", "Corregido"],
+  ["LECO", "A Coruña"],
+  ["130630Z", "Día 13, 06:30 UTC"],
+  ["AUTO", "Observación automática"]
+]} caption="Ejemplo didáctico de cabecera con modificadores." />
+
+<Callout type="tip" label="Consejo">
+Comprueba siempre **la hora** antes de leer el resto: un METAR de hace dos horas puede no reflejar el tiempo actual. Si hay un SPECI posterior, es el que manda.
+</Callout>

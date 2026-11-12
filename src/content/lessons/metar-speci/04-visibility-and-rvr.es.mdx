@@ -1,0 +1,71 @@
+---
+lesson: visibility-and-rvr
+course: metar-speci
+lang: es
+title: "Visibilidad y RVR"
+summary: "La visibilidad predominante, la visibilidad mínima, NDV y el alcance visual en la pista (RVR)."
+objectives:
+  - "Decodificar la visibilidad en metros y los casos 9999 y 0000"
+  - "Interpretar la visibilidad mínima con dirección"
+  - "Leer un grupo RVR con su tendencia"
+minutes: 10
+terms: [rvr, runway, cavok]
+quiz: metar-speci-04
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Visibilidad predominante
+
+La visibilidad se da con **cuatro cifras, en metros**:
+
+| Código | Significado |
+|---|---|
+| `0800` | 800 m |
+| `4000` | 4000 m (4 km) |
+| `9999` | **10 km o más** |
+| `0000` | Menos de 50 m |
+
+Es la visibilidad *predominante*: la que se alcanza en al menos la mitad del horizonte alrededor del aeródromo.
+
+## Visibilidad mínima con dirección
+
+Si la visibilidad no es igual en todas las direcciones y la mínima es claramente inferior (menos de 1500 m, o menos de la mitad de la predominante y menos de 5000 m), se añade la **visibilidad mínima** con la dirección en la que se observa:
+
+<MetarBreakdown parts={[
+  ["4000", "Visibilidad predominante 4000 m"],
+  ["1400SW", "Visibilidad mínima 1400 m hacia el suroeste"]
+]} />
+
+Las estaciones automáticas que no pueden determinar diferencias por direcciones añaden `NDV` (*no directional variation*): `9999NDV`.
+
+## RVR: alcance visual en la pista
+
+El <Term id="rvr" /> indica **hasta dónde ve el piloto a lo largo de la pista** (sus marcas o sus luces). Se notifica cuando la visibilidad o el RVR son **inferiores a 1500 m**, y es el dato que se usa para las operaciones con baja visibilidad.
+
+Formato: `R` + designador de pista + `/` + valor en metros + tendencia.
+
+<MetarBreakdown parts={[
+  ["R35/1100U", "RVR de la pista 35: 1100 m, tendencia ascendente"],
+  ["R27L/0450N", "RVR de la pista 27L: 450 m, sin cambios"],
+  ["R24/P2000", "RVR de la pista 24: más de 2000 m"],
+  ["R24/0300V0600", "RVR de la pista 24: variando entre 300 y 600 m"]
+]} />
+
+| Elemento | Significado |
+|---|---|
+| `U` | Tendencia ascendente (*up*) |
+| `D` | Tendencia descendente (*down*) |
+| `N` | Sin cambios (*no change*) |
+| `P` | Mayor que el valor máximo que se puede medir |
+| `M` | Menor que el valor mínimo que se puede medir |
+| `V` | Variación entre dos valores |
+
+<Callout type="info" label="Visibilidad frente a RVR">
+La visibilidad se mide para todo el aeródromo; el RVR, para **una pista concreta** y con instrumentos específicos (y tiene en cuenta las luces de la pista). Por eso pueden ser distintos en el mismo informe.
+</Callout>
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+En EE. UU. la visibilidad se da en **millas terrestres**: `10SM`, `3SM`, `1/2SM`, `M1/4SM` (menos de un cuarto de milla). El RVR se da en **pies**: `R04R/2200FT`.
+</Callout>

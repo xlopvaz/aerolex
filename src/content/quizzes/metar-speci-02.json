@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué indica el grupo 121830Z?",
+        "en": "What does the group 121830Z indicate?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "12 de diciembre a las 18:30 hora local",
+            "en": "12 December at 18:30 local time"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Día 12 del mes a las 18:30 UTC",
+            "en": "Day 12 of the month at 18:30 UTC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "18 de diciembre a las 12:30 UTC",
+            "en": "18 December at 12:30 UTC"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "DDHHMMZ: día del mes, hora y minutos, siempre en UTC. El mes no aparece.",
+        "en": "DDHHMMZ: day of month, hours and minutes, always in UTC. The month is not included."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cuál es el indicador ICAO de Barcelona-El Prat?",
+        "en": "What is the ICAO indicator for Barcelona-El Prat?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "BCN",
+            "en": "BCN"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "LEBL",
+            "en": "LEBL"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "LEBC",
+            "en": "LEBC"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "BCN es el código IATA; en los METAR se usa el indicador ICAO de cuatro letras, LEBL.",
+        "en": "BCN is the IATA code; METARs use the four-letter ICAO indicator, LEBL."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué significa COR en la cabecera de un METAR?",
+        "en": "What does COR mean in a METAR header?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Informe corregido",
+            "en": "Corrected report"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Informe automático",
+            "en": "Automated report"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Informe que falta",
+            "en": "Missing report"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "COR indica que el informe corrige a otro anterior. AUTO es automático y NIL, que falta.",
+        "en": "COR means the report corrects an earlier one. AUTO means automated and NIL, missing."
+      }
+    }
+  ]
+}

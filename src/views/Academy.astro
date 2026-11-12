@@ -1,0 +1,107 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import ProgressGlide from '../components/ui/ProgressGlide.astro';
+import { childHref, href, useT } from '../i18n/index.js';
+import { lessonKey } from '../lib/academy/progress.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const courses = await getCollection('courses');
+const lessons = await getCollection('lessons', (l) => l.data.lang === lang);
+const minutesOf = (courseId: string) => lessons.filter((l) => l.data.course === courseId).reduce((n, l) => n + l.data.minutes, 0);
+const paths = (await getCollection('paths'))
+  .map((p) => ({ ...p, courses: courses.filter((c) => c.data.path === p.id) }))
+  .filter((p) => p.courses.length > 0) // never show empty paths
+  .sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('academy.metaTitle')} description={tr('academy.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.academy') }]} />
+      <h1>{tr('academy.title')}</h1>
+      <p class="lead">{tr('academy.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container academy">
+    <h2 class="academy__h">{tr('academy.pathsTitle')}</h2>
+    {paths.map((p) => (
+      <section class="path" aria-labelledby={`path-${p.id}`}>
+        <header class="path__head">
+          <span class="path__icon"><Icon name={p.data.icon} size={26} /></span>
+          <div>
+            <h3 id={`path-${p.id}`}>{p.data.title[lang]}</h3>
+            <p>{p.data.description[lang]}</p>
+          </div>
+          <span class="path__count mono">{p.courses.length === 1 ? tr('academy.oneCourse') : tr('academy.coursesCount', { count: p.courses.length })}</span>
+        </header>
+        <div class="grid">
+          {p.courses.map((c) => (
+            <a class="course-card" href={childHref('academy', c.id, lang)} data-course-card data-lessons={JSON.stringify(c.data.lessons.map((l) => lessonKey(c.id, l)))}>
+              <div class="course-card__route mono">
+                <span>{tr(`levels.${c.data.level}`)}</span>
+                <Icon name="plane" size={18} class="course-card__plane" />
+                <span>{tr('academy.lessonsCount', { count: c.data.lessons.length })}</span>
+              </div>
+              <h4>{c.data.title[lang]}</h4>
+              <p>{c.data.description[lang]}</p>
+              <div class="course-card__meta">
+                <Badge tone="primary">{tr(`levels.${c.data.level}`)}</Badge>
+                <Badge icon="clock">{tr('academy.minutes', { count: minutesOf(c.id) })}</Badge>
+                <Badge tone="amber" icon="pencil">{tr(`status.${c.data.review.status}`)}</Badge>
+              </div>
+              <ProgressGlide value={0} label={tr('academy.progress')} />
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { courseProgress } from '../lib/academy/progress.js';
+  const store = getAppStore();
+  const render = (state: any) => {
+    document.querySelectorAll<HTMLElement>('[data-course-card]').forEach((card) => {
+      const p = courseProgress(state, JSON.parse(card.dataset.lessons!));
+      const bar = card.querySelector<HTMLElement>('[role="progressbar"]');
+      if (bar) { bar.style.setProperty('--v', `${p.percent}%`); bar.setAttribute('aria-valuenow', String(p.percent)); }
+      const val = card.querySelector<HTMLElement>('.glide__value');
+      if (val) val.textContent = `${p.percent}%`;
+    });
+  };
+  render(store.get());
+  store.subscribe(render);
+</script>
+
+<style>
+  .academy { padding-top: var(--space-6); }
+  .academy__h { margin-bottom: var(--space-5); }
+  .path { margin-bottom: var(--space-7); }
+  .path__head { display: grid; grid-template-columns: auto 1fr auto; gap: var(--space-4); align-items: center; margin-bottom: var(--space-4); }
+  .path__head h3 { margin: 0 0 var(--space-1); }
+  .path__head p { margin: 0; color: var(--text-muted); }
+  .path__icon { display: inline-grid; place-items: center; width: 52px; height: 52px; border-radius: var(--radius-lg); background: var(--cyan-soft); color: var(--cyan); }
+  .path__count { color: var(--text-muted); font-size: var(--text-sm); }
+  .course-card {
+    display: grid; gap: var(--space-3); padding: var(--space-5);
+    border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface);
+    color: var(--text); text-decoration: none; box-shadow: var(--shadow-sm);
+    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .course-card:hover { transform: translateY(-2px); border-color: var(--border-strong); box-shadow: var(--shadow-md); color: var(--text); }
+  .course-card__route { display: flex; justify-content: space-between; align-items: center; padding-bottom: var(--space-3); border-bottom: 1px dashed var(--border-strong); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+  .academy :global(.course-card__plane) { color: var(--magenta); }
+  .course-card h4 { font-size: var(--text-xl); margin: 0; }
+  .course-card p { margin: 0; color: var(--text-muted); }
+  .course-card__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  @media (max-width: 640px) { .path__head { grid-template-columns: auto 1fr; } .path__count { grid-column: 1 / -1; } }
+</style>

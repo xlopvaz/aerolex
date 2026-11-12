@@ -1,0 +1,76 @@
+---
+lesson: what-is-metar
+course: metar-speci
+lang: en
+title: "What METAR and SPECI are"
+summary: "What they are for, who issues them, how often they are published and how they are ordered."
+objectives:
+  - "Explain what a METAR and a SPECI are"
+  - "Know who uses these reports and why"
+  - "Recognise the fixed order of the groups"
+minutes: 8
+terms: [metar, speci, taf, utc]
+quiz: metar-speci-01
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## An airport's weather in a single line
+
+A <Term id="metar" /> is the **routine weather report for an aerodrome**. It is produced by the airport's meteorological office or by an automatic station and describes the weather **right now**: wind, visibility, phenomena such as rain or fog, cloud, temperature and pressure.
+
+It is published at regular intervals, usually **every 30 or 60 minutes**, in a code standardised internationally by ICAO (Annex 3) and the World Meteorological Organization (Manual on Codes, WMO-No. 306). That is why a pilot can read a METAR from Madrid exactly like one from Tokyo.
+
+<MetarBreakdown parts={[
+  ["LEMD", "Aerodrome: Adolfo Suárez Madrid-Barajas"],
+  ["121830Z", "Day 12 of the month, 18:30 UTC"],
+  ["24012KT", "Wind from 240° at 12 knots"],
+  ["9999", "Visibility 10 km or more"],
+  ["SCT030", "Scattered cloud at 3,000 ft"],
+  ["18/10", "Temperature 18 °C, dew point 10 °C"],
+  ["Q1013", "QNH 1013 hPa"],
+  ["NOSIG", "No significant change expected in the next 2 hours"]
+]} caption="This course's example: a fair-weather METAR from Madrid." />
+
+Don't worry if you don't understand every group yet: the next lessons go through them one by one.
+
+## And what is a SPECI?
+
+A <Term id="speci" /> is a **special report**. It has exactly the same format as a METAR, but it is issued **between two METARs** when the weather changes significantly: for example, when a thunderstorm begins, when visibility drops below certain thresholds or when the cloud base comes down. Nobody has to wait for the next routine report to learn about an important deterioration.
+
+The exact criteria that trigger a SPECI are set by each State's meteorological authority, following ICAO Annex 3.
+
+## Who uses them?
+
+- **Pilots and dispatchers**, to plan the flight, decide whether a take-off or landing is possible and choose alternate aerodromes.
+- **Air traffic controllers**, who use the data to prepare the information broadcast to crews, such as the ATIS.
+- **Enthusiasts and students**, because they are one of the best ways to understand real aviation weather.
+
+<Callout type="info" label="METAR vs TAF">
+A METAR describes the **observed** weather. To know what weather is **expected** in the coming hours you use the <Term id="taf" />, which has its own course.
+</Callout>
+
+## An order that never changes
+
+The groups of a METAR **always appear in the same order**. If an element has nothing to report (for example, it isn't raining), its group is simply **left out**.
+
+| Order | Group | Example |
+|---|---|---|
+| 1 | Report type | `METAR` / `SPECI` |
+| 2 | ICAO location indicator | `LEMD` |
+| 3 | Day and time (UTC) | `121830Z` |
+| 4 | Wind | `24012KT` |
+| 5 | Visibility and, when applicable, RVR | `9999` · `R35/1100U` |
+| 6 | Present weather | `-RA` |
+| 7 | Cloud (or CAVOK) | `SCT030` |
+| 8 | Temperature / dew point | `18/10` |
+| 9 | Pressure (QNH) | `Q1013` |
+| 10 | Supplementary information | `RERA` · `WS R24` |
+| 11 | Trend forecast | `NOSIG` |
+
+<Callout type="regional-diff" label="ICAO / US">
+US METARs follow the same general order but use some different units (statute miles, inches of mercury), do not include a trend and usually end with a remarks section (`RMK`). We'll point them out throughout the course.
+</Callout>
+
+All times in a METAR are in <Term id="utc" />, aviation's single clock.

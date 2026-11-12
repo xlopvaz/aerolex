@@ -1,0 +1,70 @@
+---
+lesson: clouds
+course: metar-speci
+lang: es
+title: "Nubes"
+summary: "Cantidad en octas (FEW, SCT, BKN, OVC), altura, CB y TCU, visibilidad vertical, NSC, NCD, SKC, CLR y CAVOK."
+objectives:
+  - "Decodificar cantidad y altura de cada capa"
+  - "Identificar cuándo hay techo de nubes"
+  - "Reconocer NSC, NCD, SKC, CLR, VV y CAVOK"
+minutes: 12
+terms: [ceiling, cavok, vfr]
+quiz: metar-speci-06
+sources: [icao-annex-3, wmo-306, faa-awh, icao-annex-2]
+review:
+  status: draft
+---
+
+## Cantidad: octas
+
+El cielo se divide imaginariamente en **ocho partes (octas)**. La cantidad de cada capa se expresa así:
+
+| Código | Inglés | Cobertura |
+|---|---|---|
+| `FEW` | *few* | 1–2 octas (escasas) |
+| `SCT` | *scattered* | 3–4 octas (dispersas) |
+| `BKN` | *broken* | 5–7 octas (nuboso) |
+| `OVC` | *overcast* | 8 octas (cubierto) |
+
+## Altura de la base
+
+Tres cifras en **cientos de pies** sobre la elevación del aeródromo:
+
+- `SCT030` → 3000 ft.
+- `BKN008` → 800 ft.
+- `OVC120` → 12 000 ft.
+
+## Tipo: solo CB y TCU
+
+Solo se indica el tipo de dos nubes, por su peligrosidad: `CB` (**cumulonimbo**, nube de tormenta) y `TCU` (**cúmulo en torre**, *towering cumulus*).
+
+<MetarBreakdown parts={[
+  ["FEW010", "Nubes escasas a 1000 ft"],
+  ["SCT025CB", "Cumulonimbos dispersos a 2500 ft"],
+  ["BKN040", "Capa nubosa (5–7 octas) a 4000 ft"]
+]} />
+
+Las capas se ordenan **de abajo arriba**. Por norma, se notifica la capa más baja aunque sea escasa, después la siguiente que cubra más de 2 octas, después la siguiente que cubra más de 4 octas, y además cualquier CB o TCU.
+
+## Techo de nubes
+
+El <Term id="ceiling" /> es la altura de la base de la capa más baja **BKN u OVC** (por debajo de 20 000 ft). En el ejemplo anterior, el techo está a 4000 ft. Es un dato clave para el vuelo <Term id="vfr" /> y para los mínimos de aproximación.
+
+## Cuando no hay nubes que notificar
+
+| Código | Significado |
+|---|---|
+| `NSC` | Sin nubes significativas: ninguna por debajo de 5000 ft (o de la altitud mínima de sector más alta) y ningún CB ni TCU |
+| `NCD` | Sin nubes detectadas (estaciones automáticas) |
+| `SKC` | Cielo despejado (lo usan algunos Estados) |
+| `CLR` | EE. UU., estaciones automáticas: sin nubes detectadas por debajo de 12 000 ft |
+| `VV002` | Cielo oscurecido (p. ej., por niebla): visibilidad vertical de 200 ft |
+
+## CAVOK
+
+<Term id="cavok" /> sustituye a la vez a la visibilidad, al tiempo presente y a las nubes cuando hay 10 km o más de visibilidad, ninguna nube significativa ni CB/TCU, y ningún fenómeno significativo. **No** significa cielo totalmente despejado.
+
+<Callout type="caution" label="Precaución">
+Las alturas del METAR son **sobre el aeródromo**, no sobre el nivel del mar. En aeropuertos elevados la diferencia es importante a la hora de compararlas con altitudes de las cartas.
+</Callout>

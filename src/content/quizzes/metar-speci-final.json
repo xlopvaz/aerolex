@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué aeródromo y hora indica este METAR?",
+        "en": "Which aerodrome and time does this METAR indicate?"
+      },
+      "code": "METAR LEST 130630Z 21018KT 1200 R35/1100U RA BR SCT004 BKN008 12/12 Q1009",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Santiago, día 13 a las 06:30 UTC",
+            "en": "Santiago, day 13 at 06:30 UTC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Santiago, 13 de junio a las 06:30 local",
+            "en": "Santiago, 13 June at 06:30 local"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Lisboa, día 13 a las 06:30 UTC",
+            "en": "Lisbon, day 13 at 06:30 UTC"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "LEST es Santiago; 130630Z, día 13 a las 06:30 UTC.",
+        "en": "LEST is Santiago; 130630Z, day 13 at 06:30 UTC."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En el mismo METAR, ¿cuál es el techo de nubes?",
+        "en": "In the same METAR, what is the ceiling?"
+      },
+      "code": "SCT004 BKN008",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "400 ft",
+            "en": "400 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "800 ft",
+            "en": "800 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No hay techo",
+            "en": "There is no ceiling"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "SCT004 no forma techo; la primera capa BKN está a 800 ft.",
+        "en": "SCT004 is not a ceiling; the first BKN layer is at 800 ft."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Por qué aparece un grupo RVR en ese METAR?",
+        "en": "Why is there an RVR group in that METAR?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque siempre se incluye",
+            "en": "Because it is always included"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque la visibilidad es inferior a 1500 m",
+            "en": "Because visibility is below 1,500 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque hay tormenta",
+            "en": "Because there is a thunderstorm"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El RVR se notifica cuando la visibilidad o el RVR son inferiores a 1500 m.",
+        "en": "RVR is reported when visibility or RVR is below 1,500 m."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Decodifica el viento de este SPECI:",
+        "en": "Decode the wind in this SPECI:"
+      },
+      "code": "SPECI LEVX 131215Z 25025G38KT 220V290 3000 +TSRA BKN015CB 15/13 Q1004",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "De 250° a 25 nudos, rachas de 38, variando entre 220° y 290°",
+            "en": "From 250° at 25 kt, gusting 38, varying between 220° and 290°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De 220° a 25 nudos, rachas de 29",
+            "en": "From 220° at 25 kt, gusting 29"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Variable a 38 nudos",
+            "en": "Variable at 38 kt"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "25025G38KT es la dirección, la velocidad y las rachas; 220V290, la variación de dirección.",
+        "en": "25025G38KT gives direction, speed and gusts; 220V290, the direction variation."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué indica BKN015CB?",
+        "en": "What does BKN015CB indicate?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cúmulos en torre escasos a 15 000 ft",
+            "en": "Few towering cumulus at 15,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cumulonimbos que cubren 5–7 octas, con base a 1500 ft",
+            "en": "Cumulonimbus covering 5–7 oktas, base 1,500 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Capa nubosa a 150 ft",
+            "en": "Broken layer at 150 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "BKN = 5–7 octas, 015 = 1500 ft, CB = cumulonimbo.",
+        "en": "BKN = 5–7 oktas, 015 = 1,500 ft, CB = cumulonimbus."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué describe este grupo de un METAR de Heathrow?",
+        "en": "What does this group from a Heathrow METAR describe?"
+      },
+      "code": "R27R/0400D",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "RVR de la pista 27R: 400 m, disminuyendo",
+            "en": "RVR runway 27R: 400 m, decreasing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Visibilidad de 400 m hacia el oeste",
+            "en": "Visibility 400 m to the west"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "RVR de la pista 27R: 400 ft, sin cambios",
+            "en": "RVR runway 27R: 400 ft, no change"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "D es tendencia descendente; en formato ICAO el RVR va en metros.",
+        "en": "D is a downward tendency; in ICAO format RVR is in metres."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Qué grupo sustituye a la vez a visibilidad, tiempo presente y nubes con buen tiempo?",
+        "en": "Which group replaces visibility, present weather and cloud at once in good weather?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "NSC",
+            "en": "NSC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "CAVOK",
+            "en": "CAVOK"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "NOSIG",
+            "en": "NOSIG"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "CAVOK reúne los tres grupos. NSC solo sustituye a las nubes y NOSIG es una tendencia.",
+        "en": "CAVOK covers all three. NSC only replaces cloud and NOSIG is a trend."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En un METAR de EE. UU., ¿qué significa A3012?",
+        "en": "In a US METAR, what does A3012 mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Altímetro 30,12 inHg",
+            "en": "Altimeter 30.12 inHg"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "QNH 3012 hPa",
+            "en": "QNH 3012 hPa"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Altitud de 3012 ft",
+            "en": "Altitude 3,012 ft"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A introduce el reglaje en pulgadas de mercurio, en centésimas.",
+        "en": "A introduces the setting in inches of mercury, in hundredths."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Temperatura y punto de rocío son 05/05 con viento en calma. ¿Qué cabe esperar?",
+        "en": "Temperature and dew point are 05/05 with calm wind. What should you expect?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aire muy seco",
+            "en": "Very dry air"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aire saturado: niebla o nubes muy bajas",
+            "en": "Saturated air: fog or very low cloud"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tormentas",
+            "en": "Thunderstorms"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Cuando ambos valores coinciden, el aire está saturado; con calma es típica la niebla.",
+        "en": "When both values match the air is saturated; with calm wind fog is typical."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "¿Cuál es la interpretación correcta de este METAR?",
+        "en": "What is the correct interpretation of this METAR?"
+      },
+      "code": "METAR LEMD 121830Z 24012KT 9999 SCT030 18/10 Q1013 NOSIG",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Viento del suroeste a 12 nudos, 10 km o más de visibilidad, nubes dispersas a 3000 ft, 18 °C, QNH 1013 y sin cambios previstos",
+            "en": "South-westerly wind at 12 kt, visibility 10 km or more, scattered cloud at 3,000 ft, 18 °C, QNH 1013 and no change expected"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Viento del noreste a 12 nudos, visibilidad 9999 ft, techo a 3000 ft y 10 °C",
+            "en": "North-easterly wind at 12 kt, visibility 9,999 ft, ceiling at 3,000 ft and 10 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Viento de 240° con rachas de 12 nudos, niebla y QNH 1013",
+            "en": "Wind from 240° gusting 12 kt, fog and QNH 1013"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "240° es suroeste; SCT no forma techo; 18/10 es temperatura y punto de rocío; NOSIG, sin cambios significativos.",
+        "en": "240° is south-west; SCT is not a ceiling; 18/10 is temperature and dew point; NOSIG, no significant change."
+      }
+    }
+  ]
+}

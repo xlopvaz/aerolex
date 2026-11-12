@@ -1,0 +1,161 @@
+---
+/**
+ * Multiple-choice quiz with immediate correction and explanation.
+ * Answers are saved by question ID (store.quiz.answers) so progress is shared between languages.
+ * "Retry the ones I missed" resets only the wrong questions (repetition of failed questions).
+ */
+import { getEntry } from 'astro:content';
+import Icon from '../ui/Icon.astro';
+import { t } from '../../i18n/index.js';
+
+interface Props { id: string; lang: string; title?: string; lessonId?: string }
+const { id, lang, title, lessonId } = Astro.props;
+const quiz = await getEntry('quizzes', id);
+if (!quiz) throw new Error(`Quiz "${id}" not found`);
+const qs = quiz.data.questions;
+for (const q of qs) {
+  if (!q.options.some((o) => o.id === q.answer)) throw new Error(`Quiz ${id}/${q.id}: answer "${q.answer}" is not an option`);
+}
+const msgs = {
+  correct: t(lang, 'quiz.correct'),
+  incorrect: t(lang, 'quiz.incorrect'),
+  score: t(lang, 'quiz.score'),
+};
+---
+<section class="quiz" data-quiz={id} data-lesson={lessonId} data-total={qs.length} data-messages={JSON.stringify(msgs)} aria-labelledby={`${id}-title`}>
+  <header class="quiz__head">
+    <h2 id={`${id}-title`}><Icon name="list-checks" size={22} /> {title ?? t(lang, 'quiz.title')}</h2>
+    <p class="quiz__score mono" data-quiz-score aria-live="polite">{t(lang, 'quiz.score', { correct: 0, total: qs.length })}</p>
+  </header>
+
+  <ol class="quiz__list">
+    {qs.map((q, qi) => (
+      <li class="quiz__q" data-q={q.id} data-answer={q.answer}>
+        <fieldset>
+          <legend><span class="quiz__num mono">{qi + 1}.</span> {q.prompt[lang]}</legend>
+          {q.code && <p class="quiz__code mono">{q.code}</p>}
+          <div class="quiz__options">
+            {q.options.map((o) => (
+              <button type="button" class="quiz__opt" data-opt={o.id} aria-pressed="false">
+                <span class="quiz__mark" aria-hidden="true"></span>
+                <span>{o.text[lang]}</span>
+              </button>
+            ))}
+          </div>
+          <div class="quiz__feedback" role="status" aria-live="polite" hidden>
+            <p class="quiz__verdict"></p>
+            <p class="quiz__expl">{q.explanation[lang]}</p>
+          </div>
+        </fieldset>
+      </li>
+    ))}
+  </ol>
+
+  <div class="quiz__actions">
+    <button type="button" class="quiz__retry" data-quiz-retry hidden><Icon name="rotate-ccw" size={16} /> {t(lang, 'quiz.retryWrong')}</button>
+  </div>
+</section>
+
+<script>
+  import { getAppStore } from '../../lib/core/app-store.js';
+  import { recordAnswer, completeLesson } from '../../lib/academy/progress.js';
+
+  document.querySelectorAll<HTMLElement>('[data-quiz]').forEach((root) => {
+    const store = getAppStore();
+    const msg = JSON.parse(root.dataset.messages!);
+    const total = Number(root.dataset.total);
+    const scoreEl = root.querySelector<HTMLElement>('[data-quiz-score]')!;
+    const retry = root.querySelector<HTMLButtonElement>('[data-quiz-retry]')!;
+    const questions = [...root.querySelectorAll<HTMLElement>('.quiz__q')];
+    const results = new Map<string, boolean>();
+
+    const update = () => {
+      const correct = [...results.values()].filter(Boolean).length;
+      scoreEl.textContent = msg.score.replace('{correct}', String(correct)).replace('{total}', String(total));
+      const done = results.size === total;
+      retry.hidden = !done || correct === total;
+      root.classList.toggle('is-done', done);
+      if (done && root.dataset.lesson) completeLesson(store, root.dataset.lesson, { score: correct, total });
+    };
+
+    questions.forEach((q) => {
+      const answer = q.dataset.answer!;
+      const opts = [...q.querySelectorAll<HTMLButtonElement>('.quiz__opt')];
+      const fb = q.querySelector<HTMLElement>('.quiz__feedback')!;
+      const verdict = q.querySelector<HTMLElement>('.quiz__verdict')!;
+      opts.forEach((btn) => btn.addEventListener('click', () => {
+        if (q.classList.contains('is-answered')) return;
+        const ok = btn.dataset.opt === answer;
+        q.classList.add('is-answered', ok ? 'is-correct' : 'is-wrong');
+        opts.forEach((o) => {
+          o.disabled = true;
+          if (o.dataset.opt === answer) o.classList.add('is-answer');
+        });
+        btn.setAttribute('aria-pressed', 'true');
+        btn.classList.add(ok ? 'is-right-choice' : 'is-wrong-choice');
+        verdict.textContent = ok ? msg.correct : msg.incorrect;
+        fb.hidden = false;
+        results.set(q.dataset.q!, ok);
+        recordAnswer(store, `${root.dataset.quiz}/${q.dataset.q}`, ok);
+        update();
+      }));
+    });
+
+    retry.addEventListener('click', () => {
+      questions.forEach((q) => {
+        if (!q.classList.contains('is-wrong')) return;
+        q.classList.remove('is-answered', 'is-wrong');
+        q.querySelectorAll<HTMLButtonElement>('.quiz__opt').forEach((o) => {
+          o.disabled = false;
+          o.setAttribute('aria-pressed', 'false');
+          o.classList.remove('is-answer', 'is-right-choice', 'is-wrong-choice');
+        });
+        q.querySelector<HTMLElement>('.quiz__feedback')!.hidden = true;
+        results.delete(q.dataset.q!);
+      });
+      update();
+      questions.find((q) => !q.classList.contains('is-answered'))?.querySelector<HTMLButtonElement>('.quiz__opt')?.focus();
+    });
+  });
+</script>
+
+<style>
+  .quiz { margin-top: var(--space-7); padding: var(--space-5) var(--space-6); border: 1px solid var(--border-strong); border-radius: var(--radius-xl); background: var(--bg-elevated); }
+  .quiz__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-4); }
+  .quiz__head h2 { display: flex; align-items: center; gap: var(--space-2); margin: 0; font-size: var(--text-xl); }
+  .quiz__score { margin: 0; color: var(--magenta); font-weight: 600; }
+  .quiz__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-5); }
+  .quiz__q { margin: 0; }
+  fieldset { border: 0; padding: 0; margin: 0; }
+  legend { font-weight: 600; margin-bottom: var(--space-3); line-height: 1.45; }
+  .quiz__num { color: var(--cyan); }
+  .quiz__code { padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); overflow-x: auto; white-space: nowrap; }
+  .quiz__options { display: grid; gap: var(--space-2); }
+  .quiz__opt {
+    display: flex; align-items: center; gap: var(--space-3); width: 100%;
+    padding: 0.7rem 0.9rem; text-align: left;
+    border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface);
+    color: var(--text); cursor: pointer;
+    transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+  }
+  .quiz__opt:hover:not(:disabled) { border-color: var(--primary); background: var(--primary-soft); }
+  .quiz__opt:disabled { cursor: default; }
+  .quiz__mark { width: 1.1rem; height: 1.1rem; flex: none; border: 2px solid var(--border-strong); border-radius: 50%; }
+  .quiz__opt.is-answer { border-color: var(--green); background: var(--green-soft); }
+  .quiz__opt.is-answer .quiz__mark { border-color: var(--green); background: var(--green); box-shadow: inset 0 0 0 2px var(--surface); }
+  .quiz__opt.is-wrong-choice { border-color: var(--red); background: var(--red-soft); }
+  .quiz__opt.is-wrong-choice .quiz__mark { border-color: var(--red); background: var(--red); box-shadow: inset 0 0 0 2px var(--surface); }
+  .quiz__feedback { margin-top: var(--space-3); padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); border-left: 4px solid var(--c, var(--primary)); background: var(--surface); }
+  .is-correct .quiz__feedback { --c: var(--green); }
+  .is-wrong .quiz__feedback { --c: var(--red); }
+  .quiz__verdict { margin: 0 0 var(--space-1); font-weight: 700; color: var(--c); }
+  .quiz__expl { margin: 0; color: var(--text-muted); }
+  .quiz__actions { margin-top: var(--space-4); }
+  .quiz__retry {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    padding: 0.55rem 1rem; border: 1px solid var(--border-strong); border-radius: var(--radius-md);
+    background: var(--surface); color: var(--text); font-weight: 600; cursor: pointer;
+  }
+  .quiz__retry[hidden] { display: none; }
+  .quiz__retry:hover { border-color: var(--primary); }
+</style>

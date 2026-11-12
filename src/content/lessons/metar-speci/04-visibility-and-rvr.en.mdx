@@ -1,0 +1,71 @@
+---
+lesson: visibility-and-rvr
+course: metar-speci
+lang: en
+title: "Visibility and RVR"
+summary: "Prevailing visibility, minimum visibility, NDV and runway visual range (RVR)."
+objectives:
+  - "Decode visibility in metres and the 9999 and 0000 cases"
+  - "Interpret minimum visibility with a direction"
+  - "Read an RVR group with its tendency"
+minutes: 10
+terms: [rvr, runway, cavok]
+quiz: metar-speci-04
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Prevailing visibility
+
+Visibility is given with **four digits, in metres**:
+
+| Code | Meaning |
+|---|---|
+| `0800` | 800 m |
+| `4000` | 4,000 m (4 km) |
+| `9999` | **10 km or more** |
+| `0000` | Less than 50 m |
+
+It is the *prevailing* visibility: the value reached over at least half of the horizon around the aerodrome.
+
+## Minimum visibility with direction
+
+If visibility is not the same in all directions and the minimum is clearly lower (below 1,500 m, or below half of the prevailing value and below 5,000 m), the **minimum visibility** is added with the direction in which it is observed:
+
+<MetarBreakdown parts={[
+  ["4000", "Prevailing visibility 4,000 m"],
+  ["1400SW", "Minimum visibility 1,400 m towards the south-west"]
+]} />
+
+Automatic stations that cannot detect directional differences add `NDV` (*no directional variation*): `9999NDV`.
+
+## RVR: runway visual range
+
+<Term id="rvr" /> tells how far **the pilot can see along the runway** (its markings or lights). It is reported when visibility or RVR is **below 1,500 m**, and it is the value used for low-visibility operations.
+
+Format: `R` + runway designator + `/` + value in metres + tendency.
+
+<MetarBreakdown parts={[
+  ["R35/1100U", "RVR runway 35: 1,100 m, upward tendency"],
+  ["R27L/0450N", "RVR runway 27L: 450 m, no change"],
+  ["R24/P2000", "RVR runway 24: more than 2,000 m"],
+  ["R24/0300V0600", "RVR runway 24: varying between 300 and 600 m"]
+]} />
+
+| Element | Meaning |
+|---|---|
+| `U` | Upward tendency |
+| `D` | Downward tendency |
+| `N` | No change |
+| `P` | Greater than the highest value that can be measured |
+| `M` | Less than the lowest value that can be measured |
+| `V` | Variation between two values |
+
+<Callout type="info" label="Visibility vs RVR">
+Visibility is measured for the whole aerodrome; RVR for **one specific runway**, with dedicated instruments (and it takes the runway lights into account). That's why they can differ in the same report.
+</Callout>
+
+<Callout type="regional-diff" label="ICAO / US">
+In the US visibility is given in **statute miles**: `10SM`, `3SM`, `1/2SM`, `M1/4SM` (less than a quarter of a mile). RVR is given in **feet**: `R04R/2200FT`.
+</Callout>

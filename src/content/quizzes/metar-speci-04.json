@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué significa 9999?",
+        "en": "What does 9999 mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Visibilidad de 9999 m exactos",
+            "en": "Visibility of exactly 9,999 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Visibilidad de 10 km o más",
+            "en": "Visibility of 10 km or more"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Visibilidad desconocida",
+            "en": "Unknown visibility"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "9999 es el valor máximo que se codifica: 10 km o más.",
+        "en": "9999 is the highest coded value: 10 km or more."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Decodifica el grupo:",
+        "en": "Decode the group:"
+      },
+      "code": "R24/0550U",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "RVR de la pista 24: 550 m, tendencia ascendente",
+            "en": "RVR runway 24: 550 m, upward tendency"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Visibilidad de 550 m en la pista 24",
+            "en": "Visibility 550 m on runway 24"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "RVR de la pista 24: 550 ft, sin cambios",
+            "en": "RVR runway 24: 550 ft, no change"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "R + pista / valor en metros + tendencia (U ascendente, D descendente, N sin cambios).",
+        "en": "R + runway / value in metres + tendency (U up, D down, N no change)."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En un METAR de EE. UU., ¿cómo se expresa la visibilidad?",
+        "en": "In a US METAR, how is visibility expressed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En metros, como 9999",
+            "en": "In metres, like 9999"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "En millas terrestres, como 10SM",
+            "en": "In statute miles, like 10SM"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En millas náuticas, como 10NM",
+            "en": "In nautical miles, like 10NM"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "EE. UU. usa millas terrestres (SM) para la visibilidad y pies para el RVR.",
+        "en": "The US uses statute miles (SM) for visibility and feet for RVR."
+      }
+    }
+  ]
+}

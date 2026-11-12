@@ -1,0 +1,85 @@
+---
+lesson: present-weather
+course: metar-speci
+lang: es
+title: "Tiempo presente"
+summary: "Intensidad, proximidad, descriptores y fenómenos: RA, SN, DZ, FG, BR, TS, SH, FZ, SQ, GR, GS…"
+objectives:
+  - "Construir y leer un grupo de tiempo presente"
+  - "Distinguir niebla (FG) de neblina (BR)"
+  - "Reconocer los fenómenos más peligrosos para la aviación"
+minutes: 12
+terms: [metar, rvr]
+quiz: metar-speci-05
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Cómo se construye el grupo
+
+Cada fenómeno se escribe combinando, en este orden:
+
+**intensidad o proximidad** + **descriptor** + **fenómeno**
+
+| Intensidad / proximidad | Significado |
+|---|---|
+| `-` | Débil |
+| *(sin signo)* | Moderado |
+| `+` | Fuerte |
+| `VC` | En las proximidades (aprox. entre 8 y 16 km del aeródromo) |
+
+| Descriptor | Significado |
+|---|---|
+| `MI` | Baja (*shallow*), p. ej. niebla baja |
+| `BC` | En bancos |
+| `PR` | Parcial |
+| `DR` | Ventisca baja (levantada a poca altura) |
+| `BL` | Ventisca alta |
+| `SH` | Chubascos |
+| `TS` | Tormenta |
+| `FZ` | Engelante (gotas subfundidas) |
+
+## Fenómenos
+
+| Precipitación | | Oscurecimiento | | Otros | |
+|---|---|---|---|---|---|
+| `DZ` | Llovizna | `BR` | Neblina | `PO` | Remolinos de polvo/arena |
+| `RA` | Lluvia | `FG` | Niebla | `SQ` | Turbonada |
+| `SN` | Nieve | `FU` | Humo | `FC` | Nube embudo |
+| `SG` | Cinarra | `VA` | Ceniza volcánica | `SS` | Tempestad de arena |
+| `PL` | Hielo granulado | `DU` | Polvo extendido | `DS` | Tempestad de polvo |
+| `GR` | Granizo | `SA` | Arena | | |
+| `GS` | Granizo pequeño / nieve granulada | `HZ` | Calima | | |
+| `UP` | Precipitación desconocida (automática) | | | | |
+
+## Ejemplos
+
+<MetarBreakdown parts={[
+  ["-RA", "Lluvia débil"],
+  ["+TSRA", "Tormenta con lluvia fuerte"],
+  ["SHSN", "Chubascos de nieve moderados"],
+  ["FZFG", "Niebla engelante"],
+  ["BCFG", "Niebla en bancos"],
+  ["VCSH", "Chubascos en las proximidades"],
+  ["RA BR", "Lluvia moderada y neblina"]
+]} />
+
+## Niebla o neblina
+
+- `BR` (neblina): la visibilidad está **entre 1000 y 5000 m**.
+- `FG` (niebla): la visibilidad es **inferior a 1000 m**.
+
+Así que `0700 FG` es coherente, pero `6000 FG` no lo sería.
+
+## Algunos detalles importantes
+
+- `TS` solo, sin precipitación, significa que se oye tronar pero no llueve en el aeródromo.
+- `FZ` solo se combina con `FG`, `DZ` y `RA`: indica gotas subfundidas que se congelan al tocar el avión. **Riesgo de engelamiento.**
+- `GR` es granizo de 5 mm o más; `GS`, de menos de 5 mm.
+
+<Callout type="warning" label="Aviso">
+`TS`, `+TSRA`, `GR`, `SQ`, `FC`, `FZRA`/`FZDZ` y `VA` indican fenómenos especialmente peligrosos para la aviación: tormentas, granizo, turbonadas, engelamiento o ceniza volcánica. Su presencia condiciona las decisiones de despegue, aterrizaje y ruta.
+</Callout>
+
+Si no hay ningún fenómeno significativo, el grupo de tiempo presente **no aparece**.
