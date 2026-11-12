@@ -1,0 +1,46 @@
+---
+/** Bilingual 404 (GitHub Pages serves /aerolex/404.html for unknown paths). */
+import '@fontsource-variable/inter';
+import '@fontsource/space-grotesk/700.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import Logo from '../components/Logo.astro';
+import { href, t, withBase } from '../i18n/index.js';
+---
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>404 · AeroLex</title>
+    <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="nf">
+      <a href={withBase('')} aria-label="AeroLex"><Logo size={40} /></a>
+      <p class="nf__code mono" aria-hidden="true">404 · GO AROUND</p>
+      <div class="nf__cols">
+        <section lang="es">
+          <h1>{t('es', 'notFound.title')}</h1>
+          <p>{t('es', 'notFound.text')}</p>
+          <a href={href('home', 'es')}>{t('es', 'notFound.back')}</a>
+        </section>
+        <section lang="en">
+          <h2 class="nf__h">{t('en', 'notFound.title')}</h2>
+          <p>{t('en', 'notFound.text')}</p>
+          <a href={href('home', 'en')}>{t('en', 'notFound.back')}</a>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  .nf { min-height: 100vh; display: grid; place-content: center; justify-items: center; gap: var(--space-5); padding: var(--space-6); text-align: center; }
+  .nf__code { color: var(--amber); letter-spacing: 0.2em; margin: 0; }
+  .nf__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-7); max-width: 720px; }
+  .nf__h { font-size: var(--text-3xl); }
+  .nf p { color: var(--text-muted); }
+  .nf a { font-weight: 600; }
+</style>

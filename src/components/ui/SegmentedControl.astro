@@ -1,0 +1,48 @@
+---
+/** Radio-group styled as a segmented control (theme, language, units…). Native radios: accessible by default. */
+interface Props {
+  name: string;
+  legend: string;
+  options: { value: string; label: string; attrs?: Record<string, string> }[];
+  value?: string;
+}
+const { name, legend, options, value } = Astro.props;
+---
+<fieldset class="segmented">
+  <legend>{legend}</legend>
+  <div class="segmented__options">
+    {options.map((o) => (
+      <label>
+        <input type="radio" name={name} value={o.value} checked={o.value === value} {...o.attrs} />
+        <span>{o.label}</span>
+      </label>
+    ))}
+  </div>
+</fieldset>
+
+<style>
+  .segmented { border: 0; margin: 0; padding: 0; }
+  legend { padding: 0; margin-bottom: var(--space-2); font-weight: 600; font-size: var(--text-sm); }
+  .segmented__options {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface-2);
+  }
+  label { position: relative; }
+  input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  span {
+    display: block;
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+  }
+  input:checked + span { background: var(--surface); color: var(--text); box-shadow: var(--shadow-sm); }
+  input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 1px; }
+</style>

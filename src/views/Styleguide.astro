@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logo from '../components/Logo.astro';
+import Button from '../components/ui/Button.astro';
+import Badge from '../components/ui/Badge.astro';
+import Card from '../components/ui/Card.astro';
+import Callout from '../components/ui/Callout.astro';
+import Tabs from '../components/ui/Tabs.astro';
+import Accordion from '../components/ui/Accordion.astro';
+import Modal from '../components/ui/Modal.astro';
+import ProgressGlide from '../components/ui/ProgressGlide.astro';
+import StatTile from '../components/ui/StatTile.astro';
+import FidsBoard from '../components/ui/FidsBoard.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Icon from '../components/ui/Icon.astro';
+import { href, pick, useT } from '../i18n/index.js';
+import roadmap from '../content/site/roadmap.json';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const swatches = [
+  ['--bg', 'bg'], ['--surface', 'surface'], ['--text', 'text'], ['--text-muted', 'text-muted'], ['--primary', 'primary'],
+  ['--cyan', 'cyan'], ['--magenta', 'magenta'], ['--green', 'green'], ['--amber', 'amber'], ['--red', 'red'],
+];
+const callouts = [
+  ['info', 'calloutInfo'], ['tip', 'calloutTip'], ['caution', 'calloutCaution'], ['warning', 'calloutWarning'],
+  ['regional-diff', 'calloutRegional'], ['official-procedure', 'calloutOfficial'],
+] as const;
+const icons = ['plane', 'plane-takeoff', 'plane-landing', 'cloud-sun', 'wind', 'radio', 'headset', 'gauge', 'compass', 'map', 'book-a', 'graduation-cap', 'radar', 'shield-check', 'trophy', 'flame'];
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('styleguide.metaTitle')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.styleguide') }]} />
+      <h1>{tr('styleguide.title')}</h1>
+      <p class="lead">{tr('styleguide.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container sg">
+    <section class="sg__section">
+      <div class="sg__logos">
+        <Card><Logo size={44} /></Card>
+        <Card><Logo size={44} wordmark={false} /></Card>
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.colours')}</h2>
+      <p class="sg__text">{tr('styleguide.coloursText')}</p>
+      <div class="sg__swatches">
+        {swatches.map(([v, name]) => (
+          <div class="sg__swatch">
+            <span class="sg__chip" style={`background: var(${v})`}></span>
+            <code>{name}</code>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.typography')}</h2>
+      <div class="sg__type">
+        <div><p class="sg__label">{tr('styleguide.display')}</p><p class="sg__display">{tr('meta.tagline')}</p></div>
+        <div><p class="sg__label">{tr('styleguide.body')}</p><p>{tr('styleguide.sampleText')}</p></div>
+        <div><p class="sg__label">{tr('styleguide.mono')}</p><p class="mono sg__mono">LEMD 121830Z 24012KT 9999 SCT030 18/10 Q1013 NOSIG</p></div>
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.buttons')}</h2>
+      <div class="sg__row">
+        <Button icon="plane-takeoff">{tr('styleguide.primary')}</Button>
+        <Button variant="secondary">{tr('styleguide.secondary')}</Button>
+        <Button variant="ghost" iconAfter="arrow-right">{tr('styleguide.ghost')}</Button>
+        <Button size="sm">{tr('styleguide.primary')} · sm</Button>
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.badges')}</h2>
+      <div class="sg__row">
+        <Badge tone="amber" icon="pencil">{tr('status.draft')}</Badge>
+        <Badge tone="cyan" icon="search-check">{tr('status.reviewed')}</Badge>
+        <Badge tone="green" icon="badge-check">{tr('status.verified')}</Badge>
+        <Badge tone="primary">Beginner</Badge>
+        <Badge tone="magenta">Professional</Badge>
+        <Badge>EASA</Badge>
+        <Badge tone="red">MAYDAY</Badge>
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.callouts')}</h2>
+      <div class="sg__stack">
+        {callouts.map(([type, key]) => (
+          <Callout type={type} label={tr(`styleguide.calloutLabels.${type}`)}><p>{tr(`styleguide.${key}`)}</p></Callout>
+        ))}
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.cards')}</h2>
+      <div class="grid">
+        <Card padding="lg" class="pass">
+          <div class="pass__route mono">
+            <div><span class="pass__k">{tr('styleguide.from')}</span><strong>BEG</strong></div>
+            <Icon name="plane" size={22} class="pass__plane" />
+            <div><span class="pass__k">{tr('styleguide.to')}</span><strong>INT</strong></div>
+          </div>
+          <h3>{tr('styleguide.cardTitle')}</h3>
+          <p>{tr('styleguide.cardText')}</p>
+          <ProgressGlide value={35} label={tr('styleguide.progressLabel')} />
+        </Card>
+        <Card padding="lg" interactive>
+          <Icon name="cloud-sun" size={26} class="sg__accent" />
+          <h3>METAR</h3>
+          <p>Meteorological Aerodrome Report</p>
+        </Card>
+      </div>
+    </section>
+
+    <section class="sg__section sg__two">
+      <div>
+        <h2>{tr('styleguide.tabs')}</h2>
+        <Tabs id="sg-tabs" label={tr('styleguide.tabs')} tabs={[{ id: 'airbus', label: tr('styleguide.tabAirbus') }, { id: 'boeing', label: tr('styleguide.tabBoeing') }]}>
+          <p slot="airbus">{tr('styleguide.tabAirbusText')}</p>
+          <p slot="boeing">{tr('styleguide.tabBoeingText')}</p>
+        </Tabs>
+      </div>
+      <div>
+        <h2>{tr('styleguide.accordion')}</h2>
+        <Accordion summary={tr('styleguide.accordionQ')}><p>{tr('styleguide.accordionA')}</p></Accordion>
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.modal')}</h2>
+      <Button variant="secondary" icon="square-arrow-out-up-right" data-open-modal="sg-modal">{tr('styleguide.openModal')}</Button>
+      <Modal id="sg-modal" title={tr('styleguide.modalTitle')} closeLabel={tr('styleguide.close')}>
+        <p>{tr('styleguide.modalText')}</p>
+        <Fragment slot="actions"><Button type="submit" value="ok">{tr('styleguide.close')}</Button></Fragment>
+      </Modal>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.stats')}</h2>
+      <div class="grid">
+        <StatTile label={tr('dashboard.xp')} value="1 240" icon="zap" tone="magenta" />
+        <StatTile label={tr('dashboard.streak')} value="7" icon="flame" tone="amber" />
+        <StatTile label={tr('dashboard.lessons')} value="18" icon="circle-check" tone="green" />
+      </div>
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.board')}</h2>
+      <FidsBoard
+        caption={tr('styleguide.board')}
+        columns={[tr('home.board.flight'), tr('home.board.destination'), tr('home.board.phase'), tr('home.board.status')]}
+        rows={[roadmap.flights[0], roadmap.flights[2], roadmap.flights[8]].map((f) => ({
+          cells: [f.flight, pick(f.destination, lang), `F${f.phase}`],
+          status: { label: tr(`status.${f.status}`), tone: f.status },
+        }))}
+      />
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.breadcrumbsTitle')}</h2>
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.styleguide') }]} />
+    </section>
+
+    <section class="sg__section">
+      <h2>{tr('styleguide.icons')}</h2>
+      <div class="sg__icons">
+        {icons.map((name) => <div class="sg__icon"><Icon name={name} size={24} /><code>{name}</code></div>)}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .sg { padding-top: var(--space-5); }
+  .sg__section { margin-top: var(--space-7); }
+  .sg__text { color: var(--text-muted); max-width: 70ch; }
+  .sg__logos { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+  .sg__swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: var(--space-3); }
+  .sg__swatch { display: grid; gap: var(--space-2); font-size: var(--text-xs); }
+  .sg__chip { height: 64px; border-radius: var(--radius-md); border: 1px solid var(--border); }
+  .sg__type { display: grid; gap: var(--space-5); }
+  .sg__label { margin: 0 0 var(--space-1); font-size: var(--text-xs); font-family: var(--font-mono); color: var(--cyan); text-transform: uppercase; letter-spacing: 0.1em; }
+  .sg__display { font-family: var(--font-display); font-weight: 700; font-size: var(--text-3xl); letter-spacing: -0.03em; line-height: 1.1; }
+  .sg__mono { padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); overflow-x: auto; white-space: nowrap; }
+  .sg__row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .sg__stack { display: grid; gap: var(--space-3); }
+  .sg__two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+  .sg__icons { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: var(--space-3); }
+  .sg__icon { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-3); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: var(--text-xs); color: var(--text-muted); }
+  .sg__icon :global(svg) { color: var(--text); }
+  .sg :global(.sg__accent) { color: var(--cyan); margin-bottom: var(--space-3); }
+  .sg :global(.pass) p { color: var(--text-muted); }
+  .pass__route { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); padding-bottom: var(--space-4); border-bottom: 1px dashed var(--border-strong); }
+  .pass__route div { display: grid; }
+  .pass__route div:last-child { text-align: right; }
+  .pass__route strong { font-size: var(--text-2xl); color: var(--text); }
+  .pass__k { font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .sg :global(.pass__plane) { color: var(--magenta); }
+  @media (max-width: 860px) { .sg__two { grid-template-columns: 1fr; } }
+</style>

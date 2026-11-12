@@ -1,0 +1,79 @@
+---
+/** Site header: logo, main navigation (registered pages only), language and theme controls. */
+import Logo from './Logo.astro';
+import LangSwitch from './LangSwitch.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import { navRoutes } from '../i18n/routes.js';
+import { href, t } from '../i18n/index.js';
+
+interface Props {
+  lang: string;
+  routeKey: any;
+}
+const { lang, routeKey } = Astro.props;
+const items = navRoutes('main');
+---
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__brand" href={href('home', lang)} aria-label={t(lang, 'a11y.home')}>
+      <Logo size={30} />
+    </a>
+
+    <nav class="site-nav" aria-label={t(lang, 'a11y.mainNav')}>
+      <ul>
+        {items.map((key) => (
+          <li>
+            <a href={href(key, lang)} aria-current={key === routeKey ? 'page' : undefined}>
+              {t(lang, `nav.${key}`)}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <LangSwitch lang={lang} routeKey={routeKey} />
+      <ThemeToggle lang={lang} />
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: var(--header-h);
+    border-bottom: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  }
+  .site-header__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+  }
+  .site-header__brand { text-decoration: none; display: inline-flex; border-radius: var(--radius-md); }
+  .site-nav { flex: 1; }
+  .site-nav ul { display: flex; gap: var(--space-1); list-style: none; margin: 0; padding: 0; }
+  .site-nav li + li { margin: 0; }
+  .site-nav a {
+    display: inline-block;
+    padding: 0.45rem 0.8rem;
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+  }
+  .site-nav a:hover { color: var(--text); background: var(--surface-2); }
+  .site-nav a[aria-current='page'] { color: var(--text); background: var(--primary-soft); }
+  .site-header__actions { display: flex; align-items: center; gap: var(--space-3); margin-left: auto; }
+
+  @media (max-width: 860px) {
+    .site-nav { display: none; }
+  }
+</style>

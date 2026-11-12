@@ -1,0 +1,33 @@
+---
+/** Disclosure built on native <details>/<summary>: keyboard and screen-reader friendly, no JS. */
+import Icon from './Icon.astro';
+interface Props { summary: string; open?: boolean }
+const { summary, open = false } = Astro.props;
+---
+<details class="accordion" open={open}>
+  <summary>
+    <span>{summary}</span>
+    <Icon name="chevron-down" size={18} class="accordion__chevron" />
+  </summary>
+  <div class="accordion__body"><slot /></div>
+</details>
+
+<style>
+  .accordion { border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); }
+  .accordion + .accordion { margin-top: var(--space-2); }
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  .accordion :global(.accordion__chevron) { color: var(--text-muted); transition: transform var(--dur) var(--ease); }
+  .accordion[open] :global(.accordion__chevron) { transform: rotate(180deg); }
+  .accordion__body { padding: 0 var(--space-5) var(--space-4); color: var(--text-muted); }
+  .accordion__body :global(> :last-child) { margin-bottom: 0; }
+</style>

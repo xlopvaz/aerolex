@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroApproach from '../components/HeroApproach.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import FidsBoard from '../components/ui/FidsBoard.astro';
+import { href, pick, useT } from '../i18n/index.js';
+import roadmap from '../content/site/roadmap.json';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const pillars = [
+  { key: 'learn', icon: 'graduation-cap', tone: 'primary' },
+  { key: 'lookup', icon: 'book-a', tone: 'cyan' },
+  { key: 'practice', icon: 'radar', tone: 'magenta' },
+];
+
+const rows = roadmap.flights.map((f) => ({
+  cells: [f.flight, pick(f.destination, lang), `F${f.phase}`],
+  status: { label: tr(`status.${f.status}`), tone: f.status },
+}));
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('home.metaTitle')}>
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow"><Icon name="plane-landing" size={16} /> {tr('home.eyebrow')}</p>
+        <h1 class="hero__title">{tr('home.title')}</h1>
+        <p class="lead hero__lead">{tr('home.lead')}</p>
+        <div class="hero__cta">
+          <Button href="#flight-plan" size="lg" iconAfter="arrow-down">{tr('home.ctaRoadmap')}</Button>
+          <Button href={href('about', lang)} variant="secondary" size="lg">{tr('home.ctaAbout')}</Button>
+        </div>
+      </div>
+      <div class="hero__art">
+        <HeroApproach alt={tr('home.illustrationAlt')} />
+        <span class="hero__hud mono" aria-hidden="true">RWY 18R · ILS · PAPI 2W/2R</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. What AeroLex is -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">{tr('home.pillarsTitle')}</h2>
+      <div class="grid pillars">
+        {pillars.map((p) => (
+          <Card padding="lg" class={`pillar pillar--${p.tone}`}>
+            <span class="pillar__icon"><Icon name={p.icon} size={26} /></span>
+            <h3>{tr(`home.pillars.${p.key}.title`)}</h3>
+            <p>{tr(`home.pillars.${p.key}.text`)}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Flight plan (honest roadmap) -->
+  <section class="section section--board" id="flight-plan">
+    <div class="container">
+      <div class="board__head">
+        <div>
+          <p class="eyebrow"><Icon name="plane-takeoff" size={16} /> {tr('home.boardTitle')}</p>
+          <p class="lead">{tr('home.boardIntro')}</p>
+        </div>
+      </div>
+      <FidsBoard
+        caption={tr('home.boardTitle')}
+        columns={[tr('home.board.flight'), tr('home.board.destination'), tr('home.board.phase'), tr('home.board.status')]}
+        rows={rows}
+      />
+    </div>
+  </section>
+
+  <!-- 4. Rigor -->
+  <section class="section">
+    <div class="container rigor">
+      <div>
+        <h2>{tr('home.rigorTitle')}</h2>
+        <p class="lead">{tr('home.rigorText')}</p>
+      </div>
+      <ul class="rigor__list">
+        <li><Badge tone="amber" icon="pencil">{tr('status.draft')}</Badge><span>{tr('home.rigorDraft')}</span></li>
+        <li><Badge tone="cyan" icon="search-check">{tr('status.reviewed')}</Badge><span>{tr('home.rigorReviewed')}</span></li>
+        <li><Badge tone="green" icon="badge-check">{tr('status.verified')}</Badge><span>{tr('home.rigorVerified')}</span></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding-block: var(--space-8) var(--space-8);
+    background:
+      radial-gradient(900px 420px at 85% 10%, var(--primary-soft), transparent 70%),
+      radial-gradient(600px 300px at 0% 100%, var(--magenta-soft), transparent 70%);
+  }
+  .hero__grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: var(--space-7); align-items: center; }
+  .hero__title { font-size: var(--text-hero); letter-spacing: -0.035em; margin-bottom: var(--space-5); }
+  .hero__lead { margin-bottom: var(--space-6); }
+  .hero__cta { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+  .hero__art {
+    position: relative;
+    aspect-ratio: 640 / 420;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md), 0 30px 80px -30px rgba(91, 155, 255, 0.45);
+  }
+  .hero__hud {
+    position: absolute;
+    left: var(--space-4);
+    top: var(--space-4);
+    padding: 0.25rem 0.6rem;
+    border: 1px solid rgba(34, 211, 238, 0.45);
+    border-radius: var(--radius-sm);
+    background: rgba(5, 12, 26, 0.6);
+    color: #22D3EE;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+  }
+
+  .section__title { margin-bottom: var(--space-6); }
+  .pillars :global(.pillar) { --c: var(--primary); }
+  .pillars :global(.pillar--cyan) { --c: var(--cyan); }
+  .pillars :global(.pillar--magenta) { --c: var(--magenta); }
+  .pillar__icon {
+    display: inline-grid; place-items: center;
+    width: 52px; height: 52px; margin-bottom: var(--space-4);
+    border-radius: var(--radius-lg);
+    background: color-mix(in srgb, var(--c) 14%, transparent);
+    color: var(--c);
+  }
+  .pillars p { color: var(--text-muted); }
+
+  .section--board {
+    background: linear-gradient(180deg, transparent, var(--bg-elevated) 30%, var(--bg-elevated) 70%, transparent);
+  }
+  .board__head { margin-bottom: var(--space-5); }
+
+  .rigor { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-7); align-items: center; }
+  .rigor__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+  .rigor__list li {
+    display: grid; grid-template-columns: 8.5rem 1fr; align-items: center; gap: var(--space-4);
+    margin: 0; padding: var(--space-4) var(--space-5);
+    border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface);
+    color: var(--text-muted); font-size: var(--text-sm);
+  }
+
+  @media (max-width: 960px) {
+    .hero__grid, .rigor { grid-template-columns: 1fr; }
+    .hero { padding-block: var(--space-6); }
+  }
+  @media (max-width: 480px) {
+    .rigor__list li { grid-template-columns: 1fr; gap: var(--space-2); }
+  }
+</style>

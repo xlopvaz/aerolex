@@ -1,0 +1,192 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import StatTile from '../components/ui/StatTile.astro';
+import SegmentedControl from '../components/ui/SegmentedControl.astro';
+import Callout from '../components/ui/Callout.astro';
+import Modal from '../components/ui/Modal.astro';
+import { LOCALES, LOCALE_META } from '../i18n/config.js';
+import { alternates, useT } from '../i18n/index.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const alt = alternates(routeKey);
+
+// Messages the client script needs, in the current language.
+const messages = {
+  exported: tr('dashboard.exported'),
+  imported: tr('dashboard.imported'),
+  importError: tr('dashboard.importError'),
+  resetDone: tr('dashboard.resetDone'),
+};
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('dashboard.metaTitle')}>
+  <header class="page-header">
+    <div class="container">
+      <h1>{tr('dashboard.title')}</h1>
+      <p class="lead">{tr('dashboard.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container dash" data-dashboard data-messages={JSON.stringify(messages)} data-alternates={JSON.stringify(alt)}>
+    <div class="dash__warning" data-storage-warning hidden>
+      <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}>
+        <p>{tr('dashboard.storageUnavailable')}</p>
+      </Callout>
+    </div>
+
+    <section class="dash__section" aria-labelledby="stats-title">
+      <h2 id="stats-title">{tr('dashboard.statsTitle')}</h2>
+      <div class="grid dash__stats">
+        <StatTile label={tr('dashboard.xp')} value="0" icon="zap" tone="magenta" id="stat-xp" />
+        <StatTile label={tr('dashboard.streak')} value="0" icon="flame" tone="amber" id="stat-streak" />
+        <StatTile label={tr('dashboard.bestStreak')} value="0" icon="trophy" tone="cyan" id="stat-best" />
+        <StatTile label={tr('dashboard.lessons')} value="0" icon="circle-check" tone="green" id="stat-lessons" />
+      </div>
+      <p class="dash__note">{tr('dashboard.statsEmpty')}</p>
+    </section>
+
+    <div class="dash__cols">
+      <Card padding="lg" as="section">
+        <h2>{tr('dashboard.prefsTitle')}</h2>
+        <div class="dash__prefs">
+          <SegmentedControl
+            name="theme"
+            legend={tr('dashboard.themeLabel')}
+            value="system"
+            options={[
+              { value: 'system', label: tr('theme.system') },
+              { value: 'light', label: tr('theme.light') },
+              { value: 'dark', label: tr('theme.dark') },
+            ]}
+          />
+          <div>
+            <SegmentedControl
+              name="lang"
+              legend={tr('dashboard.langLabel')}
+              value={lang}
+              options={LOCALES.map((l) => ({ value: l, label: LOCALE_META[l].label, attrs: { lang: l } }))}
+            />
+            <p class="dash__help">{tr('dashboard.langHelp')}</p>
+          </div>
+        </div>
+      </Card>
+
+      <Card padding="lg" as="section">
+        <h2>{tr('dashboard.dataTitle')}</h2>
+        <p class="dash__help">{tr('dashboard.dataText')}</p>
+        <div class="dash__actions">
+          <Button icon="download" data-export>{tr('dashboard.export')}</Button>
+          <Button icon="upload" variant="secondary" data-import>{tr('dashboard.import')}</Button>
+          <input type="file" accept="application/json,.json" data-import-file hidden />
+          <Button icon="trash-2" variant="danger" data-open-modal="reset-modal">{tr('dashboard.reset')}</Button>
+        </div>
+        <p class="dash__status" role="status" aria-live="polite" data-status></p>
+      </Card>
+    </div>
+  </div>
+
+  <Modal id="reset-modal" title={tr('dashboard.resetConfirmTitle')} closeLabel={tr('styleguide.close')}>
+    <p>{tr('dashboard.resetConfirmText')}</p>
+    <Fragment slot="actions">
+      <Button variant="secondary" type="submit" value="cancel">{tr('dashboard.cancel')}</Button>
+      <Button variant="danger" type="submit" value="confirm" icon="trash-2">{tr('dashboard.confirmReset')}</Button>
+    </Fragment>
+  </Modal>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+
+  const root = document.querySelector<HTMLElement>('[data-dashboard]');
+  if (root) {
+    const store = getAppStore();
+    const msg = JSON.parse(root.dataset.messages || '{}');
+    const alt = JSON.parse(root.dataset.alternates || '{}');
+    const status = root.querySelector<HTMLElement>('[data-status]')!;
+    const say = (text: string, tone: 'ok' | 'error' = 'ok') => {
+      status.textContent = text;
+      status.dataset.tone = tone;
+    };
+
+    if (!store.persistent) root.querySelector<HTMLElement>('[data-storage-warning]')!.hidden = false;
+
+    const render = (s: any) => {
+      const set = (id: string, v: number) => { const el = document.getElementById(id); if (el) el.textContent = String(v); };
+      set('stat-xp', s.xp.total);
+      set('stat-streak', s.streak.current);
+      set('stat-best', s.streak.best);
+      set('stat-lessons', Object.keys(s.progress.lessons).length);
+      const theme = root.querySelector<HTMLInputElement>(`input[name="theme"][value="${s.prefs.theme}"]`);
+      if (theme) theme.checked = true;
+    };
+    render(store.get());
+    store.subscribe(render);
+
+    root.querySelectorAll<HTMLInputElement>('input[name="theme"]').forEach((input) =>
+      input.addEventListener('change', () => store.update((s) => { s.prefs.theme = input.value; }))
+    );
+    root.querySelectorAll<HTMLInputElement>('input[name="lang"]').forEach((input) =>
+      input.addEventListener('change', () => {
+        store.update((s) => { s.prefs.lang = input.value; });
+        if (alt[input.value]) location.href = alt[input.value];
+      })
+    );
+
+    // Export
+    root.querySelector('[data-export]')!.addEventListener('click', () => {
+      const data = JSON.stringify(store.exportData(), null, 2);
+      const url = URL.createObjectURL(new Blob([data], { type: 'application/json' }));
+      const a = Object.assign(document.createElement('a'), {
+        href: url,
+        download: `aerolex-progress-${new Date().toISOString().slice(0, 10)}.json`,
+      });
+      document.body.append(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      say(msg.exported);
+    });
+
+    // Import
+    const file = root.querySelector<HTMLInputElement>('[data-import-file]')!;
+    root.querySelector('[data-import]')!.addEventListener('click', () => file.click());
+    file.addEventListener('change', async () => {
+      const f = file.files?.[0];
+      if (!f) return;
+      try {
+        store.importData(await f.text());
+        say(msg.imported);
+      } catch {
+        say(msg.importError, 'error');
+      } finally {
+        file.value = '';
+      }
+    });
+
+    // Reset (confirmed in the dialog)
+    const dlg = document.getElementById('reset-modal') as HTMLDialogElement;
+    dlg.addEventListener('close', () => {
+      if (dlg.returnValue === 'confirm') {
+        store.reset();
+        say(msg.resetDone);
+      }
+    });
+  }
+</script>
+
+<style>
+  .dash { padding-top: var(--space-6); }
+  .dash__section { margin-bottom: var(--space-7); }
+  .dash__warning { margin-bottom: var(--space-5); }
+  .dash__note { margin-top: var(--space-4); color: var(--text-muted); font-size: var(--text-sm); }
+  .dash__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); align-items: start; }
+  .dash__prefs { display: grid; gap: var(--space-5); }
+  .dash__help { color: var(--text-muted); font-size: var(--text-sm); margin: var(--space-2) 0 0; }
+  .dash__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
+  .dash__status { min-height: 1.6em; margin: var(--space-4) 0 0; font-size: var(--text-sm); color: var(--green); }
+  .dash__status[data-tone='error'] { color: var(--red); }
+  @media (max-width: 860px) { .dash__cols { grid-template-columns: 1fr; } }
+</style>

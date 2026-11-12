@@ -1,0 +1,30 @@
+---
+/**
+ * Generates every registered page in every language from the route registry
+ * (src/i18n/routes.js). Adding a page = register its key + create its view.
+ */
+import { LOCALES } from '../../i18n/config.js';
+import { ROUTES, routeKeys } from '../../i18n/routes.js';
+import Home from '../../views/Home.astro';
+import Dashboard from '../../views/Dashboard.astro';
+import About from '../../views/About.astro';
+import Styleguide from '../../views/Styleguide.astro';
+import Legal from '../../views/Legal.astro';
+
+const VIEWS = { home: Home, dashboard: Dashboard, about: About, styleguide: Styleguide, legal: Legal };
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) =>
+    routeKeys().map((routeKey) => ({
+      params: { lang, slug: ROUTES[routeKey].slug[lang] || undefined },
+      props: { routeKey },
+    }))
+  );
+}
+
+const { lang } = Astro.params;
+const { routeKey } = Astro.props;
+const View = VIEWS[routeKey];
+if (!View) throw new Error(`No view registered for route "${routeKey}"`);
+---
+<View lang={lang} routeKey={routeKey} />

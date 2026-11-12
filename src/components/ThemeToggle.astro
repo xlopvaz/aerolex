@@ -1,0 +1,46 @@
+---
+/** Light/dark toggle. Saves an explicit preference; "System" can be chosen in the dashboard. */
+import Icon from './ui/Icon.astro';
+import { t } from '../i18n/index.js';
+
+interface Props { lang: string }
+const { lang } = Astro.props;
+---
+<button type="button" class="theme-toggle" data-theme-toggle aria-label={t(lang, 'theme.toggle')} title={t(lang, 'theme.toggle')}>
+  <span class="theme-toggle__icon theme-toggle__icon--sun"><Icon name="sun" size={18} /></span>
+  <span class="theme-toggle__icon theme-toggle__icon--moon"><Icon name="moon" size={18} /></span>
+</button>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { bindTheme } from '../lib/core/theme.js';
+
+  const store = getAppStore();
+  bindTheme(store);
+  document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+      store.update((s) => { s.prefs.theme = current === 'light' ? 'dark' : 'light'; });
+    });
+  });
+</script>
+
+<style>
+  .theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  }
+  .theme-toggle:hover { background: var(--surface-2); border-color: var(--border-strong); }
+  .theme-toggle__icon { grid-area: 1 / 1; display: inline-flex; transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease); }
+  /* Show the icon of the theme you would switch TO */
+  :global([data-theme='dark']) .theme-toggle__icon--moon,
+  :global([data-theme='light']) .theme-toggle__icon--sun { opacity: 0; transform: rotate(-45deg) scale(0.6); }
+</style>

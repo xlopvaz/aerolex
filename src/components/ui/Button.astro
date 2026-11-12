@@ -1,0 +1,62 @@
+---
+/** Button / link-button. Renders <a> when `href` is given, otherwise <button>. */
+import Icon from './Icon.astro';
+
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
+  size?: 'sm' | 'md' | 'lg';
+  icon?: string;
+  iconAfter?: string;
+  type?: 'button' | 'submit' | 'reset';
+  class?: string;
+  [key: string]: any;
+}
+const { href, variant = 'primary', size = 'md', icon, iconAfter, type = 'button', class: className = '', ...rest } = Astro.props;
+const Tag = href ? 'a' : 'button';
+const iconSize = size === 'sm' ? 16 : 18;
+---
+<Tag
+  href={href}
+  type={href ? undefined : type}
+  class:list={['btn', `btn--${variant}`, `btn--${size}`, className]}
+  {...rest}
+>
+  {icon && <Icon name={icon} size={iconSize} />}
+  <span><slot /></span>
+  {iconAfter && <Icon name={iconAfter} size={iconSize} />}
+</Tag>
+
+<style>
+  .btn {
+    --btn-bg: var(--primary);
+    --btn-fg: var(--on-primary);
+    --btn-border: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid var(--btn-border);
+    border-radius: var(--radius-md);
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease),
+      box-shadow var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  }
+  .btn:hover { color: var(--btn-fg); box-shadow: var(--glow); }
+  .btn:active { transform: translateY(1px); }
+  .btn--sm { padding: 0.4rem 0.75rem; font-size: var(--text-sm); }
+  .btn--md { padding: 0.65rem 1.1rem; font-size: var(--text-base); }
+  .btn--lg { padding: 0.85rem 1.4rem; font-size: var(--text-lg); }
+  .btn--secondary { --btn-bg: var(--surface); --btn-fg: var(--text); --btn-border: var(--border-strong); }
+  .btn--secondary:hover { --btn-bg: var(--surface-2); }
+  .btn--ghost { --btn-bg: transparent; --btn-fg: var(--primary); }
+  .btn--ghost:hover { --btn-bg: var(--primary-soft); box-shadow: none; }
+  .btn--danger { --btn-bg: transparent; --btn-fg: var(--red); --btn-border: var(--red); }
+  .btn--danger:hover { --btn-bg: var(--red-soft); box-shadow: none; }
+  .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+</style>

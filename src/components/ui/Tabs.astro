@@ -1,0 +1,92 @@
+---
+/**
+ * Accessible tabs (WAI-ARIA tabs pattern, arrow-key navigation).
+ *   <Tabs id="cockpit" tabs={[{ id: 'airbus', label: 'Airbus' }, …]}>
+ *     <div slot="airbus">…</div>
+ *   </Tabs>
+ */
+interface Props {
+  id: string;
+  tabs: { id: string; label: string }[];
+  label?: string;
+}
+const { id, tabs, label } = Astro.props;
+const panels = await Promise.all(tabs.map((tab) => Astro.slots.render(tab.id)));
+---
+<div class="tabs" data-tabs>
+  <div class="tabs__list" role="tablist" aria-label={label}>
+    {tabs.map((tab, i) => (
+      <button
+        type="button"
+        role="tab"
+        id={`${id}-tab-${tab.id}`}
+        aria-controls={`${id}-panel-${tab.id}`}
+        aria-selected={i === 0 ? 'true' : 'false'}
+        tabindex={i === 0 ? 0 : -1}
+        class="tabs__tab"
+      >{tab.label}</button>
+    ))}
+  </div>
+  {tabs.map((tab, i) => (
+    <div
+      class="tabs__panel"
+      role="tabpanel"
+      id={`${id}-panel-${tab.id}`}
+      aria-labelledby={`${id}-tab-${tab.id}`}
+      tabindex="0"
+      hidden={i !== 0}
+      set:html={panels[i]}
+    />
+  ))}
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-tabs]').forEach((root) => {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const select = (tab: HTMLButtonElement, focus = true) => {
+      tabs.forEach((t) => {
+        const on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        const panel = root.querySelector<HTMLElement>(`#${t.getAttribute('aria-controls')}`);
+        if (panel) panel.hidden = !on;
+      });
+      if (focus) tab.focus();
+    };
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => select(tab, false));
+      tab.addEventListener('keydown', (e) => {
+        const keys: Record<string, number> = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 };
+        if (!(e.key in keys)) return;
+        e.preventDefault();
+        select(tabs[(keys[e.key] + tabs.length) % tabs.length]);
+      });
+    });
+  });
+</script>
+
+<style>
+  .tabs__list {
+    display: inline-flex;
+    gap: var(--space-1);
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface-2);
+  }
+  .tabs__tab {
+    padding: 0.45rem 1rem;
+    border: 0;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+  }
+  .tabs__tab:hover { color: var(--text); }
+  .tabs__tab[aria-selected='true'] { background: var(--surface); color: var(--text); box-shadow: var(--shadow-sm); }
+  .tabs__panel { padding-top: var(--space-4); }
+  .tabs__panel :global(> :last-child) { margin-bottom: 0; }
+</style>

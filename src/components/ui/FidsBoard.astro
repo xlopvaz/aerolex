@@ -1,0 +1,66 @@
+---
+/**
+ * Airport flight information display (FIDS) styled table.
+ * rows: [{ cells: string[], status: { label, tone: 'live'|'boarding'|'scheduled' } }]
+ */
+interface Props {
+  caption: string;
+  columns: string[];
+  rows: { cells: string[]; status: { label: string; tone: 'live' | 'boarding' | 'scheduled' } }[];
+}
+const { caption, columns, rows } = Astro.props;
+---
+<div class="fids">
+  <table>
+    <caption class="visually-hidden">{caption}</caption>
+    <thead>
+      <tr>{columns.map((c) => <th scope="col">{c}</th>)}</tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          {r.cells.map((cell, i) => (i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}
+          <td><span class:list={['fids__status', `fids__status--${r.status.tone}`]}>{r.status.label}</span></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .fids {
+    overflow-x: auto;
+    border: 1px solid #1d2b45;
+    border-radius: var(--radius-lg);
+    background: var(--fids-bg);
+    box-shadow: var(--shadow-md);
+  }
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: var(--text-sm); }
+  th, td { padding: 0.7rem 1rem; text-align: left; white-space: nowrap; }
+  thead th {
+    color: #9fb0cc;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1d2b45;
+  }
+  tbody tr:nth-child(odd) { background: var(--fids-row); }
+  tbody th, tbody td { color: var(--fids-text); font-weight: 500; }
+  tbody td:nth-child(2) { white-space: normal; min-width: 14rem; color: #f3f6fb; }
+  .fids__status {
+    display: inline-block;
+    min-width: 7.5rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .fids__status--live { background: #0d3b2b; color: #4ff0b0; }
+  .fids__status--boarding { background: #3b2a06; color: #ffc44d; animation: fids-blink 1.6s steps(2, start) infinite; }
+  .fids__status--scheduled { background: #142039; color: #a9bbd8; }
+  @keyframes fids-blink { 50% { opacity: 0.55; } }
+  @media (prefers-reduced-motion: reduce) { .fids__status--boarding { animation: none; } }
+</style>

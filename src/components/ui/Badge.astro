@@ -1,0 +1,42 @@
+---
+/** Small status label. Tones follow the flight-deck colour logic. Always text + colour, never colour alone. */
+import Icon from './Icon.astro';
+
+interface Props {
+  tone?: 'neutral' | 'primary' | 'cyan' | 'magenta' | 'green' | 'amber' | 'red';
+  icon?: string;
+  class?: string;
+}
+const { tone = 'neutral', icon, class: className = '' } = Astro.props;
+---
+<span class:list={['badge', `badge--${tone}`, className]}>
+  {icon && <Icon name={icon} size={14} />}
+  <slot />
+</span>
+
+<style>
+  .badge {
+    --c: var(--text-muted);
+    --bg: var(--surface-2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid color-mix(in srgb, var(--c) 35%, transparent);
+    border-radius: var(--radius-pill);
+    background: var(--bg);
+    color: var(--c);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .badge--primary { --c: var(--primary); --bg: var(--primary-soft); }
+  .badge--cyan { --c: var(--cyan); --bg: var(--cyan-soft); }
+  .badge--magenta { --c: var(--magenta); --bg: var(--magenta-soft); }
+  .badge--green { --c: var(--green); --bg: var(--green-soft); }
+  .badge--amber { --c: var(--amber); --bg: var(--amber-soft); }
+  .badge--red { --c: var(--red); --bg: var(--red-soft); }
+</style>
