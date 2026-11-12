@@ -15,8 +15,8 @@ It's built for student pilots, pilots, cabin crew, aviation professionals, AvGee
 | Phase | Status |
 |---|---|
 | 1 · Planning | ✅ Done |
-| 2 · Design & foundation | 🚧 In progress |
-| 3 · Content | ⏳ Planned |
+| 2 · Design & foundation | ✅ Done |
+| 3 · Content | 🚧 Next |
 | 4 · Tools | ⏳ Planned |
 | 5 · User experience | ⏳ Planned |
 | 6 · Launch | ⏳ Planned |
@@ -35,7 +35,20 @@ The project documentation is written in Spanish.
 
 ## Tech stack
 
-[Astro](https://astro.build) (static site) · HTML5 · CSS3 · JavaScript ES6+ · JSON · LocalStorage · Vitest · GitHub Actions → **GitHub Pages**
+[Astro](https://astro.build) (static site) · HTML5 · CSS3 · JavaScript ES6+ · JSON · LocalStorage · Vitest · Playwright · GitHub Actions → **GitHub Pages**
+
+## Development
+
+```bash
+npm install
+npm run dev          # http://localhost:4321/aerolex/
+npm test             # unit tests
+npm run build        # build to dist/
+npm run check:site   # links, hreflang and empty-page checks on the build
+npm run e2e          # end-to-end tests (after building)
+```
+
+Every pull request runs all checks; merging into `main` deploys to GitHub Pages automatically.
 
 ## License
 

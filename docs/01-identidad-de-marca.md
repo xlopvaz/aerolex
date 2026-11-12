@@ -90,7 +90,7 @@ Todos los pares texto/fondo se han comprobado con la fórmula de contraste WCAG 
 | `--cyan` | `#22D3EE` (10,0:1) | `#0E7490` (5,4:1) | Interactivo / seleccionable |
 | `--magenta` | `#E25CF0` (6,1:1) | `#A21CAF` (6,3:1) | Objetivo, ruta, progreso activo |
 | `--green` | `#34D399` (9,4:1) | `#047857` (5,5:1) | Correcto / normal |
-| `--amber` | `#F5A524` (8,9:1) | `#B45309` (5,0:1) | Precaución / repasar |
+| `--amber` | `#F5A524` (8,9:1) | `#A04906` (5,7:1) | Precaución / repasar |
 | `--red` | `#FF5C5C` (6,0:1) | `#C62828` (5,6:1) | Error / aviso |
 
 **Accesibilidad:** el color nunca es el único indicador. Cada estado lleva también un icono y un texto, algo importante, por ejemplo, para las categorías de vuelo VFR/MVFR/IFR/LIFR del decodificador METAR.
