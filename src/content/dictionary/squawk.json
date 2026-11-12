@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "squawk",
+    "es": "squawk (código transpondedor)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The four-digit code (0000–7777, octal digits) set on the transponder, which identifies the aircraft on the controller's radar; also the instruction to set it.",
+    "es": "Código de cuatro cifras (0000–7777, dígitos octales) que se selecciona en el transpondedor e identifica a la aeronave en el radar del controlador; también la instrucción de seleccionarlo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's 'ID number' on the radar screen. Some codes have special meanings: 7700 emergency, 7600 radio failure, 7500 unlawful interference.",
+    "es": "El «número de identidad» del avión en la pantalla del radar. Algunos códigos tienen significado especial: 7700 emergencia, 7600 fallo de radio, 7500 interferencia ilícita."
+  },
+  "example": {
+    "en": "\"Squawk 4721.\" — \"Squawk 4721, IBE123.\"",
+    "es": "«Squawk 4721.» — «Squawk 4721, IBE123.»"
+  },
+  "pronunciation": {
+    "en": "/skwɔːk/",
+    "es": "scuok"
+  },
+  "synonyms": {
+    "en": [
+      "transponder code"
+    ],
+    "es": [
+      "código de transpondedor"
+    ]
+  },
+  "related": [
+    "atc",
+    "mayday",
+    "readback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

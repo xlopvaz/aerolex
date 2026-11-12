@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "runway",
+    "es": "pista"
+  },
+  "abbreviation": "RWY",
+  "expansion": null,
+  "categories": [
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A defined rectangular area on a land aerodrome prepared for the landing and take-off of aircraft. It is named after its magnetic direction rounded to tens of degrees (e.g. runway 36L ≈ 360°, left).",
+    "es": "Área rectangular definida en un aeródromo terrestre preparada para el aterrizaje y el despegue de las aeronaves. Se designa por su dirección magnética redondeada a decenas de grados (p. ej., pista 36L ≈ 360°, izquierda)."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The long strip where aircraft take off and land.",
+    "es": "La franja larga donde los aviones despegan y aterrizan."
+  },
+  "example": {
+    "en": "\"Line up and wait runway 36L.\"",
+    "es": "«Ruede a posición y mantenga pista 36L.»"
+  },
+  "pronunciation": {
+    "en": "/ˈrʌnweɪ/",
+    "es": "rán-uei"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "taxiway",
+    "threshold",
+    "apron",
+    "rvr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

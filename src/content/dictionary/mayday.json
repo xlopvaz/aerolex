@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "MAYDAY",
+    "es": "MAYDAY"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The radiotelephony distress signal, spoken three times, indicating that the aircraft is threatened by grave and imminent danger and requires immediate assistance.",
+    "es": "Señal radiotelefónica de socorro, pronunciada tres veces, que indica que la aeronave se ve amenazada por un peligro grave e inminente y necesita ayuda inmediata."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The most serious emergency call. Everyone else on the frequency must keep quiet unless they can help.",
+    "es": "La llamada de emergencia más grave. El resto de la frecuencia debe guardar silencio salvo que pueda ayudar."
+  },
+  "example": {
+    "en": "\"MAYDAY, MAYDAY, MAYDAY, Madrid Approach, IBE123, engine fire, …\"",
+    "es": "«MAYDAY, MAYDAY, MAYDAY, Madrid Aproximación, IBE123, fuego en motor, …»"
+  },
+  "pronunciation": {
+    "en": "/ˈmeɪdeɪ/",
+    "es": "méi-dei"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "llamada de socorro"
+    ]
+  },
+  "related": [
+    "pan-pan",
+    "squawk"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

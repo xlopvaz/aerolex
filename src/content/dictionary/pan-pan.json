@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "PAN PAN",
+    "es": "PAN PAN"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The radiotelephony urgency signal, spoken three times, indicating a condition concerning the safety of an aircraft or of a person on board that does not require immediate assistance.",
+    "es": "Señal radiotelefónica de urgencia, pronunciada tres veces, que indica una situación que afecta a la seguridad de una aeronave o de alguna persona a bordo pero que no requiere ayuda inmediata."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "An urgent call one step below MAYDAY: something is wrong, but there is no immediate danger.",
+    "es": "Una llamada urgente un escalón por debajo de MAYDAY: algo va mal, pero no hay peligro inmediato."
+  },
+  "example": {
+    "en": "\"PAN PAN, PAN PAN, PAN PAN, Barcelona Control, IBE123, sick passenger on board, …\"",
+    "es": "«PAN PAN, PAN PAN, PAN PAN, Barcelona Control, IBE123, pasajero enfermo a bordo, …»"
+  },
+  "pronunciation": {
+    "en": "/pæn pæn/ (French 'panne')",
+    "es": "pan pan"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "llamada de urgencia"
+    ]
+  },
+  "related": [
+    "mayday"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

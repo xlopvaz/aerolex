@@ -9,9 +9,10 @@ import { alternates, t } from '../i18n/index.js';
 interface Props {
   lang: string;
   routeKey: any;
+  alt?: Record<string, string>;
 }
-const { lang, routeKey } = Astro.props;
-const alt = alternates(routeKey);
+const { lang, routeKey, alt: altProp } = Astro.props;
+const alt = altProp ?? alternates(routeKey);
 ---
 <nav class="lang" aria-label={t(lang, 'lang.current')}>
   {LOCALES.map((l) =>

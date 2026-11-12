@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "slats",
+    "es": "slats"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Movable surfaces on the leading edge of the wing that, when extended, open a slot that energises the airflow over the upper surface, allowing a higher angle of attack before the stall.",
+    "es": "Superficies móviles en el borde de ataque del ala que, al extenderse, abren una ranura que energiza el flujo sobre el extradós y permiten un ángulo de ataque mayor antes de la pérdida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Panels at the front of the wing that help it keep flying at slow speeds.",
+    "es": "Paneles en la parte delantera del ala que la ayudan a seguir volando a baja velocidad."
+  },
+  "example": {
+    "en": "\"On the A320 the flap lever moves slats and flaps together.\"",
+    "es": "«En el A320 la palanca de flaps mueve juntos slats y flaps.»"
+  },
+  "pronunciation": {
+    "en": "/slæts/",
+    "es": "slats"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "aletas de borde de ataque"
+    ]
+  },
+  "related": [
+    "flaps",
+    "stall",
+    "angle-of-attack",
+    "wing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

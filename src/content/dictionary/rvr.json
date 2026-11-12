@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RVR",
+    "es": "RVR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Runway visual range",
+    "es": "Alcance visual en la pista"
+  },
+  "categories": [
+    "meteorology",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The range over which the pilot of an aircraft on the centre line of a runway can see the runway surface markings or the lights delineating the runway or identifying its centre line.",
+    "es": "Distancia hasta la cual el piloto de una aeronave que se encuentra sobre el eje de una pista puede ver las señales de superficie de la pista o las luces que la delimitan o que señalan su eje."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "How far down the runway the pilot can see. It decides whether a low-visibility take-off or landing is allowed.",
+    "es": "Hasta dónde puede ver el piloto a lo largo de la pista. Determina si se permite un despegue o un aterrizaje con baja visibilidad."
+  },
+  "example": {
+    "en": "In a METAR: R36L/0550N — RVR runway 36L 550 m, no change.",
+    "es": "En un METAR: R36L/0550N — RVR pista 36L 550 m, sin cambios."
+  },
+  "pronunciation": {
+    "en": "R-V-R (ar-vee-ar)",
+    "es": "erre-uve-erre"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "metar",
+    "runway",
+    "ceiling"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

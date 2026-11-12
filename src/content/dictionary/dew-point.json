@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "dew point",
+    "es": "punto de rocío"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The temperature to which air must be cooled, at constant pressure and moisture content, to become saturated.",
+    "es": "Temperatura a la que debe enfriarse el aire, a presión y contenido de humedad constantes, para saturarse."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When temperature and dew point get close, expect fog or low cloud. In a METAR it is the second number: 18/10.",
+    "es": "Cuando la temperatura y el punto de rocío se acercan, hay que esperar niebla o nubes bajas. En un METAR es el segundo número: 18/10."
+  },
+  "example": {
+    "en": "\"Temperature 4, dew point 3: fog is likely tonight.\"",
+    "es": "«Temperatura 4, punto de rocío 3: probablemente habrá niebla esta noche.»"
+  },
+  "pronunciation": {
+    "en": "/ˈdjuː pɔɪnt/",
+    "es": "diú point"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "temperatura de rocío"
+    ]
+  },
+  "related": [
+    "metar",
+    "ceiling"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

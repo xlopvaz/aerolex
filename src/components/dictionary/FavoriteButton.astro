@@ -1,0 +1,55 @@
+---
+/** Star toggle for a dictionary entry. State is stored by entry ID (shared across languages). */
+import Icon from '../ui/Icon.astro';
+import { t } from '../../i18n/index.js';
+interface Props { id: string; lang: string }
+const { id, lang } = Astro.props;
+---
+<button
+  type="button"
+  class="fav"
+  data-fav={id}
+  aria-pressed="false"
+  data-label-add={t(lang, 'dictionary.addFavorite')}
+  data-label-remove={t(lang, 'dictionary.removeFavorite')}
+  aria-label={t(lang, 'dictionary.addFavorite')}
+  title={t(lang, 'dictionary.addFavorite')}
+>
+  <Icon name="star" size={20} />
+</button>
+
+<script>
+  import { getAppStore } from '../../lib/core/app-store.js';
+  import { isFavorite, toggleFavorite } from '../../lib/dictionary/user.js';
+
+  const store = getAppStore();
+  const sync = () => {
+    const state = store.get();
+    document.querySelectorAll<HTMLButtonElement>('[data-fav]').forEach((btn) => {
+      const on = isFavorite(state, btn.dataset.fav!);
+      btn.setAttribute('aria-pressed', String(on));
+      const label = on ? btn.dataset.labelRemove! : btn.dataset.labelAdd!;
+      btn.setAttribute('aria-label', label);
+      btn.title = label;
+    });
+  };
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as Element).closest?.('[data-fav]') as HTMLButtonElement | null;
+    if (btn) toggleFavorite(store, btn.dataset.fav!);
+  });
+  store.subscribe(sync);
+  sync();
+</script>
+
+<style>
+  .fav {
+    display: inline-grid; place-items: center;
+    width: 40px; height: 40px; flex: none;
+    border: 1px solid var(--border); border-radius: var(--radius-pill);
+    background: var(--surface); color: var(--text-muted); cursor: pointer;
+    transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  }
+  .fav:hover { color: var(--amber); border-color: var(--amber); }
+  .fav[aria-pressed='true'] { color: var(--amber); border-color: var(--amber); background: var(--amber-soft); }
+  .fav[aria-pressed='true'] :global(svg) { fill: currentColor; }
+</style>

@@ -37,6 +37,13 @@ npm run e2e          # tests de extremo a extremo (Playwright; necesita el build
 2. Crear su vista en `src/views/` y añadirla al mapa `VIEWS` de `src/pages/[lang]/[...slug].astro`.
 3. Añadir sus textos en `src/i18n/ui/es.json` y `en.json`. El test de paridad falla si falta alguno.
 
+## Añadir un término al diccionario
+
+1. Crear `src/content/dictionary/<id>.json` (id en inglés, en minúsculas y con guiones) siguiendo el esquema de `src/content.config.ts`. Todos los textos van en ES y EN.
+2. Cada entrada cita al menos una fuente de `src/content/sources/sources.json` (añadirla allí si es nueva) y entra con `review.status: "draft"`.
+3. `definitionBasis: "official"` solo si se parafrasea una definición oficial; nunca copiar literalmente documentos con derechos (ICAO, IATA…).
+4. `npm test` valida los campos, las categorías, los `related` y las fuentes.
+
 ## Flujo de trabajo
 
 Un PR por bloque de trabajo. El workflow `CI & Deploy` debe estar en verde antes de fusionar; al fusionar en `main` se publica solo.

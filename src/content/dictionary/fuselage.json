@@ -1,0 +1,47 @@
+{
+  "type": "term",
+  "term": {
+    "en": "fuselage",
+    "es": "fuselaje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The main body of the aircraft, which carries the crew, passengers and cargo and to which the wings and tail are attached.",
+    "es": "Cuerpo principal de la aeronave, que aloja a la tripulación, los pasajeros y la carga, y al que se unen las alas y la cola."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The 'tube' of the aircraft.",
+    "es": "El «tubo» del avión."
+  },
+  "example": {
+    "en": "\"The A321 has a longer fuselage than the A320.\"",
+    "es": "«El A321 tiene un fuselaje más largo que el A320.»"
+  },
+  "pronunciation": {
+    "en": "/ˈfjuːzəlɑːʒ/",
+    "es": "fiú-se-lash"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "wing",
+    "landing-gear"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

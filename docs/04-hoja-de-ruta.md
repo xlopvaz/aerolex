@@ -31,7 +31,17 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 
 **Hecho cuando:** se publica en `xlopvaz.github.io/aerolex/`, el cambio de idioma y de tema funciona en todas las páginas, no hay enlaces rotos y Lighthouse da ≥ 90.
 
-## FASE 3 — Contenido
+## FASE 3 — Contenido 🚧
+
+**Bloque 1 — Diccionario ✅ (12/11/2026)**
+- [x] Colecciones validadas en compilación (`src/content.config.ts`): diccionario y registro de fuentes.
+- [x] 73 entradas (33 abreviaturas, incluidas todas las del brief, y 40 términos), todas como `draft` con fuentes.
+- [x] Página del diccionario: búsqueda EN/ES sin tildes, filtros por categoría (enlazables con `?cat=`), índice A–Z, favoritos y búsquedas recientes.
+- [x] Una página por entrada en ES y EN: definición técnica separada de la explicación sencilla, ejemplo, pronunciación con audio (Web Speech API), sinónimos, relacionados, diferencias regionales y fuentes.
+- [x] Página de abreviaturas y acrónimos con filtro.
+- [x] Portada: buscador con autocompletado y término del día.
+- [ ] Ampliar hasta 150 términos y 100 acrónimos.
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ATC",
+    "es": "ATC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Air traffic control",
+    "es": "Control de tránsito aéreo"
+  },
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A service provided to prevent collisions between aircraft, and between aircraft and obstructions on the manoeuvring area, and to expedite and maintain an orderly flow of air traffic.",
+    "es": "Servicio que se presta para prevenir colisiones entre aeronaves, y entre aeronaves y obstáculos en el área de maniobras, y para acelerar y mantener ordenadamente el movimiento del tránsito aéreo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The controllers who keep aircraft safely apart and organise the traffic, from the ground, by radio.",
+    "es": "Los controladores que, desde tierra y por radio, mantienen separados a los aviones y ordenan el tráfico."
+  },
+  "example": {
+    "en": "\"Contact ATC on 120.4 when airborne.\"",
+    "es": "«Contacte con ATC en 120.4 una vez en el aire.»"
+  },
+  "pronunciation": {
+    "en": "A-T-C (ay-tee-see)",
+    "es": "ei-ti-si"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "control de tráfico aéreo"
+    ]
+  },
+  "related": [
+    "atis",
+    "clearance",
+    "readback",
+    "squawk"
+  ],
+  "regionalNote": {
+    "en": "Spain's regulations use \"control de tránsito aéreo\"; \"control de tráfico aéreo\" is common in everyday Spanish.",
+    "es": "La normativa española usa «control de tránsito aéreo»; «control de tráfico aéreo» es habitual en el lenguaje común."
+  },
+  "sources": [
+    "icao-annex-11",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -9,8 +9,9 @@ import { href, t } from '../i18n/index.js';
 interface Props {
   lang: string;
   routeKey: any;
+  alt?: Record<string, string>;
 }
-const { lang, routeKey } = Astro.props;
+const { lang, routeKey, alt } = Astro.props;
 const items = navRoutes('main');
 ---
 <header class="site-header">
@@ -32,7 +33,7 @@ const items = navRoutes('main');
     </nav>
 
     <div class="site-header__actions">
-      <LangSwitch lang={lang} routeKey={routeKey} />
+      <LangSwitch lang={lang} routeKey={routeKey} alt={alt} />
       <ThemeToggle lang={lang} />
     </div>
   </div>

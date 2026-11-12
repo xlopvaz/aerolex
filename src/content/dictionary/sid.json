@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SID",
+    "es": "SID"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Standard instrument departure",
+    "es": "Salida normalizada por instrumentos"
+  },
+  "categories": [
+    "navigation",
+    "air-traffic-control",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A designated IFR departure route linking the aerodrome, or a specified runway, with a specified significant point, normally on an ATS route, where the en-route phase of the flight begins.",
+    "es": "Ruta de salida IFR designada que enlaza el aeródromo, o una pista determinada, con un punto significativo especificado, normalmente en una ruta ATS, donde comienza la fase en ruta del vuelo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A published 'exit road' from the runway to the airway network, so pilots and controllers share the same plan.",
+    "es": "Una «carretera de salida» publicada desde la pista hasta la red de aerovías, para que pilotos y controladores compartan el mismo plan."
+  },
+  "example": {
+    "en": "\"Cleared to Barcelona via the NAVAS 1C departure, squawk 4721.\"",
+    "es": "«Autorizado a Barcelona vía salida NAVAS 1C, squawk 4721.»"
+  },
+  "pronunciation": {
+    "en": "sid (one word) or S-I-D",
+    "es": "sid"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "star",
+    "ifr",
+    "clearance"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

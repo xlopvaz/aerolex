@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Icon from '../components/ui/Icon.astro';
+import { childHref, href, useT } from '../i18n/index.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const entries = await getCollection('dictionary');
+const rows = entries
+  .filter((e) => e.data.type === 'abbreviation' || e.data.abbreviation)
+  .map((e) => ({
+    id: e.id,
+    abbr: e.data.type === 'abbreviation' ? e.data.term.en : e.data.abbreviation!,
+    en: e.data.expansion?.en ?? e.data.term.en,
+    es: e.data.expansion?.es ?? e.data.term.es,
+  }))
+  .sort((a, b) => a.abbr.localeCompare(b.abbr, 'en'));
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('acronyms.metaTitle')} description={tr('acronyms.lead')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs
+        label={tr('a11y.breadcrumbs')}
+        items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.dictionary'), href: href('dictionary', lang) }, { label: tr('nav.acronyms') }]}
+      />
+      <h1>{tr('acronyms.title')}</h1>
+      <p class="lead">{tr('acronyms.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container acr" data-acronyms>
+    <label for="acr-q" class="visually-hidden">{tr('acronyms.filterLabel')}</label>
+    <div class="acr__field">
+      <Icon name="list-filter" size={18} class="acr__icon" />
+      <input id="acr-q" type="search" autocomplete="off" placeholder={tr('acronyms.filterPlaceholder')} data-acr-q />
+    </div>
+    <p class="acr__count" role="status" aria-live="polite" data-acr-count>{tr('dictionary.entriesCount').replace('{count}', String(rows.length))}</p>
+    <div class="acr__table">
+      <table>
+        <caption class="visually-hidden">{tr('acronyms.title')}</caption>
+        <thead>
+          <tr><th scope="col">{tr('acronyms.colAbbr')}</th><th scope="col">{tr('acronyms.colEn')}</th><th scope="col">{tr('acronyms.colEs')}</th></tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr data-acr-row data-search={`${r.abbr} ${r.en} ${r.es}`.toLowerCase()}>
+              <th scope="row"><a class="mono" href={childHref('dictionary', r.id, lang)}>{r.abbr}</a></th>
+              <td lang="en">{r.en}</td>
+              <td lang="es">{r.es}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { normalize } from '../lib/dictionary/search.js';
+  const root = document.querySelector<HTMLElement>('[data-acronyms]');
+  if (root) {
+    const input = root.querySelector<HTMLInputElement>('[data-acr-q]')!;
+    const count = root.querySelector<HTMLElement>('[data-acr-count]')!;
+    const template = count.textContent!.replace(/\d+/, '{count}');
+    const rows = [...root.querySelectorAll<HTMLElement>('[data-acr-row]')].map((tr) => ({ tr, text: normalize(tr.dataset.search) }));
+    input.addEventListener('input', () => {
+      const q = normalize(input.value);
+      let n = 0;
+      rows.forEach(({ tr, text }) => { const show = !q || text.includes(q); tr.hidden = !show; if (show) n++; });
+      count.textContent = template.replace('{count}', String(n));
+    });
+  }
+</script>
+
+<style>
+  .acr { padding-top: var(--space-6); }
+  .acr__field { position: relative; max-width: 480px; }
+  .acr :global(.acr__icon) { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+  .acr__field input { width: 100%; padding: 0.75rem 1rem 0.75rem 2.6rem; border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: var(--surface); }
+  .acr__field input:focus { outline: none; border-color: var(--primary); box-shadow: var(--glow); }
+  .acr__count { color: var(--text-muted); font-size: var(--text-sm); margin: var(--space-3) 0; }
+  .acr__table { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 0.7rem 1rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+  thead th { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); background: var(--surface-2); }
+  tbody tr:last-child > * { border-bottom: 0; }
+  tbody th a { font-weight: 600; font-size: var(--text-base); }
+  tbody td { color: var(--text-muted); }
+  tbody td:nth-child(2) { color: var(--text); }
+  tr[hidden] { display: none; }
+</style>

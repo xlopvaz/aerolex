@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CPL",
+    "es": "CPL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Commercial pilot licence",
+    "es": "Licencia de piloto comercial"
+  },
+  "categories": [
+    "commercial-aviation",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A pilot licence that allows its holder to fly for remuneration within the limits of its privileges, for example as pilot-in-command of single-pilot aircraft in commercial operations or as co-pilot of multi-pilot aircraft.",
+    "es": "Licencia de piloto que permite a su titular volar con remuneración dentro de los límites de sus atribuciones, por ejemplo como piloto al mando de aeronaves de un solo piloto en operaciones comerciales o como copiloto de aeronaves multipiloto."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The first licence that lets you be paid to fly.",
+    "es": "La primera licencia que permite cobrar por volar."
+  },
+  "example": {
+    "en": "\"With a CPL and an instrument rating he joined an airline as first officer.\"",
+    "es": "«Con la CPL y la habilitación de vuelo instrumental entró en una aerolínea como primer oficial.»"
+  },
+  "pronunciation": {
+    "en": "C-P-L (see-pee-el)",
+    "es": "ce-pe-ele"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ppl",
+    "atpl"
+  ],
+  "regionalNote": {
+    "en": "In the EU it is issued under Part-FCL; in the US the equivalent is the commercial pilot certificate.",
+    "es": "En la UE se emite según la Part-FCL; en EE. UU. el equivalente es el commercial pilot certificate."
+  },
+  "sources": [
+    "eu-1178-2011",
+    "icao-annex-1"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

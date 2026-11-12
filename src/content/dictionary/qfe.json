@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "QFE",
+    "es": "QFE"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Atmospheric pressure at aerodrome elevation (or at runway threshold)",
+    "es": "Presión atmosférica a la elevación del aeródromo (o en el umbral de la pista)"
+  },
+  "categories": [
+    "meteorology",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The atmospheric pressure at aerodrome elevation or at the runway threshold. With QFE set, the altimeter reads height above that reference (zero on the runway).",
+    "es": "La presión atmosférica a la elevación del aeródromo o en el umbral de la pista. Con el QFE ajustado, el altímetro indica la altura sobre esa referencia (cero en la pista)."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Set QFE and the altimeter shows how high you are above the airport, not above the sea.",
+    "es": "Con el QFE ajustado, el altímetro muestra a qué altura estás sobre el aeropuerto, no sobre el mar."
+  },
+  "example": {
+    "en": "\"QFE 1002, threshold elevation 610 feet.\"",
+    "es": "«QFE 1002, elevación del umbral 610 pies.»"
+  },
+  "pronunciation": {
+    "en": "Q-F-E (kyoo-ef-ee)",
+    "es": "kiu-ef-i"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "qnh",
+    "altimeter"
+  ],
+  "regionalNote": {
+    "en": "Its use varies by country and operator; most civil operations use QNH below the transition altitude.",
+    "es": "Su uso varía según el país y el operador; la mayoría de las operaciones civiles usan QNH por debajo de la altitud de transición."
+  },
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

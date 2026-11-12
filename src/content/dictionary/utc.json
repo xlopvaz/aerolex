@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "UTC",
+    "es": "UTC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Coordinated Universal Time",
+    "es": "Tiempo universal coordinado"
+  },
+  "categories": [
+    "flight-operations",
+    "meteorology",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The international time standard used in aviation for flight plans, NOTAMs, weather reports and ATC, so that everyone refers to the same clock regardless of local time zone.",
+    "es": "Estándar de tiempo internacional que se usa en aviación para planes de vuelo, NOTAM, informes meteorológicos y ATC, de modo que todos usen el mismo reloj con independencia de la zona horaria local."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Aviation's single world clock. In radio and reports it is often called 'Zulu' (the Z in 1830Z).",
+    "es": "El reloj único de la aviación mundial. En radio y en los informes suele llamarse «Zulu» (la Z de 1830Z)."
+  },
+  "example": {
+    "en": "\"Departure at 0945 UTC\" — 10:45 in Madrid in winter.",
+    "es": "«Salida a las 0945 UTC» — las 10:45 en Madrid en invierno."
+  },
+  "pronunciation": {
+    "en": "U-T-C (yoo-tee-see)",
+    "es": "u-te-ce"
+  },
+  "synonyms": {
+    "en": [
+      "Zulu time"
+    ],
+    "es": [
+      "hora Zulu"
+    ]
+  },
+  "related": [
+    "eta",
+    "etd",
+    "metar"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-annex-3"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

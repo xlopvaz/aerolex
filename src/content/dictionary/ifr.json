@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "IFR",
+    "es": "IFR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Instrument flight rules",
+    "es": "Reglas de vuelo por instrumentos"
+  },
+  "categories": [
+    "flight-operations",
+    "air-traffic-control",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The set of rules under which a flight is conducted when it is flown with reference to instruments and under air traffic control service, required in instrument meteorological conditions and in certain airspace.",
+    "es": "Conjunto de reglas con las que se realiza un vuelo con referencia a los instrumentos y bajo servicio de control de tránsito aéreo, obligatorias en condiciones meteorológicas de vuelo por instrumentos y en determinados espacios aéreos."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Flying 'by the instruments' on a clearance from ATC — the way almost all airline flights operate.",
+    "es": "Volar «por instrumentos» con una autorización de ATC: así operan casi todos los vuelos de aerolínea."
+  },
+  "example": {
+    "en": "\"Request IFR clearance to Valencia.\"",
+    "es": "«Solicito autorización IFR a Valencia.»"
+  },
+  "pronunciation": {
+    "en": "I-F-R (eye-ef-ar)",
+    "es": "i-efe-erre"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vfr",
+    "sid",
+    "star",
+    "clearance"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

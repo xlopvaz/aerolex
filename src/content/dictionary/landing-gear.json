@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "landing gear",
+    "es": "tren de aterrizaje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The structure of wheels, struts and shock absorbers that supports the aircraft on the ground and during take-off and landing; on most modern aircraft it retracts in flight.",
+    "es": "Conjunto de ruedas, patas y amortiguadores que soporta la aeronave en tierra y durante el despegue y el aterrizaje; en la mayoría de los aviones modernos se retrae en vuelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's 'legs and wheels'.",
+    "es": "Las «patas y ruedas» del avión."
+  },
+  "example": {
+    "en": "\"Positive climb — gear up.\"",
+    "es": "«Ascenso positivo — tren arriba.»"
+  },
+  "pronunciation": {
+    "en": "/ˈlændɪŋ ɡɪə/",
+    "es": "lánding guír"
+  },
+  "synonyms": {
+    "en": [
+      "gear",
+      "undercarriage"
+    ],
+    "es": [
+      "tren"
+    ]
+  },
+  "related": [
+    "fuselage",
+    "drag"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "sterile flight deck",
+    "es": "cabina estéril"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "cabin-crew",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A rule that restricts flight crew activities and communications to those required for the safe operation of the aircraft during critical phases of flight (taxi, take-off, landing and flight below a set altitude).",
+    "es": "Norma que limita las actividades y comunicaciones de la tripulación de vuelo a las necesarias para la operación segura de la aeronave durante las fases críticas del vuelo (rodaje, despegue, aterrizaje y vuelo por debajo de una altitud determinada)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "During critical phases, no chatting and no non-essential calls from the cabin: full concentration on flying.",
+    "es": "En las fases críticas, nada de charlas ni llamadas no esenciales desde la cabina: concentración total en volar."
+  },
+  "example": {
+    "en": "\"We're below 10,000 feet: sterile flight deck.\"",
+    "es": "«Estamos por debajo de 10 000 pies: cabina estéril.»"
+  },
+  "pronunciation": {
+    "en": "/ˈsterɑɪl flaɪt dek/",
+    "es": "sté-rail flait dek"
+  },
+  "synonyms": {
+    "en": [
+      "sterile cockpit"
+    ],
+    "es": []
+  },
+  "related": [
+    "crm",
+    "flight-deck",
+    "cabin-crew"
+  ],
+  "regionalNote": {
+    "en": "In the US it is set by 14 CFR §121.542 (flight below 10,000 ft, except in cruise); EASA rules apply the same idea to critical phases of flight, and operators define the details in their manuals.",
+    "es": "En EE. UU. lo fija el 14 CFR §121.542 (vuelo por debajo de 10 000 ft, salvo en crucero); la normativa de EASA aplica la misma idea a las fases críticas del vuelo y los operadores concretan los detalles en sus manuales."
+  },
+  "sources": [
+    "cfr-14-121-542",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

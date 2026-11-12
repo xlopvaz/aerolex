@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "NOTAM",
+    "es": "NOTAM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Notice to Airmen",
+    "es": "Aviso a los aviadores"
+  },
+  "categories": [
+    "flight-operations",
+    "navigation",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A notice distributed by telecommunication with information about the establishment, condition or change of any aeronautical facility, service, procedure or hazard, the timely knowledge of which is essential to personnel concerned with flight operations.",
+    "es": "Aviso distribuido por medios de telecomunicación con información sobre el establecimiento, el estado o la modificación de cualquier instalación, servicio, procedimiento o peligro aeronáutico, cuyo conocimiento oportuno es esencial para el personal que interviene en las operaciones de vuelo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Urgent, often temporary notices: a closed runway, an unserviceable navigation aid, a restricted area… Crews read them before every flight.",
+    "es": "Avisos urgentes, a menudo temporales: una pista cerrada, una radioayuda fuera de servicio, una zona restringida… Las tripulaciones los leen antes de cada vuelo."
+  },
+  "example": {
+    "en": "\"There's a NOTAM: the ILS for runway 36L is out of service until 1800 UTC.\"",
+    "es": "«Hay un NOTAM: el ILS de la pista 36L está fuera de servicio hasta las 1800 UTC.»"
+  },
+  "pronunciation": {
+    "en": "NO-tam",
+    "es": "nó-tam"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ils"
+  ],
+  "regionalNote": {
+    "en": "ICAO defines the word NOTAM without an official expansion. In the US, the FAA used \"Notice to Air Missions\" from December 2021 and returned to \"Notice to Airmen\" on 10 February 2025.",
+    "es": "La ICAO define la palabra NOTAM sin desarrollar las siglas. En EE. UU., la FAA usó «Notice to Air Missions» desde diciembre de 2021 y volvió a «Notice to Airmen» el 10 de febrero de 2025."
+  },
+  "sources": [
+    "icao-annex-11",
+    "faa-notam"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

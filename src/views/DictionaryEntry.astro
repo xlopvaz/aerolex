@@ -1,0 +1,231 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Callout from '../components/ui/Callout.astro';
+import Icon from '../components/ui/Icon.astro';
+import FavoriteButton from '../components/dictionary/FavoriteButton.astro';
+import SpeakButton from '../components/dictionary/SpeakButton.astro';
+import { childAlternates, childHref, href, t, useT } from '../i18n/index.js';
+
+interface Props { lang: string; routeKey: any; entryId: string }
+const { lang, entryId } = Astro.props;
+const tr = useT(lang);
+const other = lang === 'es' ? 'en' : 'es';
+
+const entry = await getEntry('dictionary', entryId);
+if (!entry) throw new Error(`Unknown dictionary entry ${entryId}`);
+const e = entry.data;
+const all = await getCollection('dictionary');
+const byId = new Map(all.map((x) => [x.id, x.data]));
+const sources = await getCollection('sources');
+const sourceById = new Map(sources.map((s) => [s.id, s.data]));
+
+const name = e.term[lang];
+const reviewTone = { draft: 'amber', reviewed: 'cyan', verified: 'green' }[e.review.status];
+const reviewIcon = { draft: 'pencil', reviewed: 'search-check', verified: 'badge-check' }[e.review.status];
+const title = `${name}${e.term[other] !== name ? ` · ${e.term[other]}` : ''} — ${tr('nav.dictionary')} · AeroLex`;
+const description = `${e.expansion ? `${e.expansion[lang]}. ` : ''}${e.simple[lang]}`;
+const cols = [
+  { l: 'en', label: tr('dictionary.inEnglish') },
+  { l: 'es', label: tr('dictionary.inSpanish') },
+];
+// Show the current language first
+if (lang === 'es') cols.reverse();
+---
+<BaseLayout lang={lang} routeKey="dictionary" title={title} description={description} alt={childAlternates('dictionary', entryId)}>
+  <article class="entry" data-entry={entryId}>
+    <header class="page-header">
+      <div class="container">
+        <Breadcrumbs
+          label={tr('a11y.breadcrumbs')}
+          items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.dictionary'), href: href('dictionary', lang) }, { label: name }]}
+        />
+        <div class="entry__head">
+          <div>
+            <div class="entry__badges">
+              <Badge tone={e.type === 'abbreviation' ? 'cyan' : 'primary'}>{e.type === 'abbreviation' ? tr('dictionary.typeAbbreviation') : tr('dictionary.typeTerm')}</Badge>
+              <Badge tone={reviewTone} icon={reviewIcon}>{tr(`status.${e.review.status}`)}</Badge>
+              {e.keepOriginal && <Badge icon="languages">{tr('dictionary.keepOriginal')}</Badge>}
+            </div>
+            <h1 class="entry__title">{name}</h1>
+            {e.term[other] !== name && <p class="entry__other" lang={other}>{e.term[other]}</p>}
+            {e.expansion && (
+              <p class="entry__exp">
+                <span class="mono">{e.term.en}</span> = <strong>{e.expansion[lang]}</strong>
+                {e.expansion[other] !== e.expansion[lang] && <span class="entry__exp-other" lang={other}> · {e.expansion[other]}</span>}
+              </p>
+            )}
+            {e.abbreviation && <p class="entry__exp">{tr('dictionary.abbreviation')}: <strong class="mono">{e.abbreviation}</strong></p>}
+          </div>
+          <div class="entry__actions">
+            <SpeakButton text={e.term.en} lang={lang} />
+            <FavoriteButton id={entryId} lang={lang} />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container entry__body">
+      <div class="entry__main">
+        <section class="entry__section">
+          <h2>{tr('dictionary.definition')}</h2>
+          <p class="entry__basis"><Icon name={e.definitionBasis === 'official' ? 'file-check' : 'book-open'} size={16} /> {e.definitionBasis === 'official' ? tr('dictionary.basisOfficial') : tr('dictionary.basisTechnical')}</p>
+          <div class="bi">
+            {cols.map((c) => (
+              <div class="bi__col" lang={c.l}>
+                <p class="bi__lang mono">{c.label}</p>
+                <p>{e.definition[c.l]}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="entry__section">
+          <h2>{tr('dictionary.simple')}</h2>
+          <div class="bi">
+            {cols.map((c) => (
+              <div class="bi__col" lang={c.l}>
+                <p class="bi__lang mono">{c.label}</p>
+                <p>{e.simple[c.l]}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="entry__section">
+          <h2>{tr('dictionary.example')}</h2>
+          <div class="bi">
+            {cols.map((c) => (
+              <div class="bi__col bi__col--example" lang={c.l}>
+                <p class="bi__lang mono">{c.label}</p>
+                <p>{e.example[c.l]}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {e.regionalNote && (
+          <section class="entry__section">
+            <Callout type="regional-diff" label={tr('dictionary.regionalNote')}>
+              <p>{e.regionalNote[lang]}</p>
+            </Callout>
+          </section>
+        )}
+
+        <section class="entry__section">
+          <h2>{tr('dictionary.sources')}</h2>
+          <ul class="entry__sources">
+            {e.sources.map((id) => {
+              const s = sourceById.get(id)!;
+              return (
+                <li>
+                  <span class="entry__src-pub mono">{s.publisher}</span>
+                  <a href={s.url} rel="noopener">{s.title} <Icon name="external-link" size={13} /></a>
+                  <span class="entry__src-kind">{tr(`sourceKinds.${s.kind}`)}</span>
+                </li>
+              );
+            })}
+          </ul>
+          <p class="entry__note">{tr('dictionary.officialDisclaimer')}</p>
+        </section>
+      </div>
+
+      <aside class="entry__side">
+        <div class="side-box">
+          <h2 class="side-box__title">{tr('dictionary.pronunciation')}</h2>
+          <dl class="entry__dl">
+            <dt>{tr('dictionary.pronunciationEn')}</dt><dd class="mono">{e.pronunciation.en}</dd>
+            <dt>{tr('dictionary.pronunciationEs')}</dt><dd class="mono">{e.pronunciation.es}</dd>
+          </dl>
+        </div>
+
+        <div class="side-box">
+          <h2 class="side-box__title">{tr('dictionary.categoriesTitle')}</h2>
+          <ul class="tags">
+            {e.categories.map((c) => <li><a href={`${href('dictionary', lang)}?cat=${c}`}>{tr(`categories.${c}`)}</a></li>)}
+          </ul>
+        </div>
+
+        {(e.synonyms.en.length > 0 || e.synonyms.es.length > 0) && (
+          <div class="side-box">
+            <h2 class="side-box__title">{tr('dictionary.synonyms')}</h2>
+            <dl class="entry__dl">
+              {e.synonyms.en.length > 0 && <><dt>EN</dt><dd lang="en">{e.synonyms.en.join(', ')}</dd></>}
+              {e.synonyms.es.length > 0 && <><dt>ES</dt><dd lang="es">{e.synonyms.es.join(', ')}</dd></>}
+            </dl>
+          </div>
+        )}
+
+        {e.related.length > 0 && (
+          <div class="side-box">
+            <h2 class="side-box__title">{tr('dictionary.related')}</h2>
+            <ul class="tags">
+              {e.related.map((id) => <li><a href={childHref('dictionary', id, lang)}>{byId.get(id)!.term[lang]}</a></li>)}
+            </ul>
+          </div>
+        )}
+
+        <a class="entry__back" href={href('dictionary', lang)}><Icon name="arrow-left" size={16} /> {tr('dictionary.backToDictionary')}</a>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { addViewed } from '../lib/dictionary/user.js';
+  const el = document.querySelector<HTMLElement>('[data-entry]');
+  if (el) addViewed(getAppStore(), el.dataset.entry!);
+</script>
+
+<style>
+  .entry__head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-5); }
+  .entry__badges { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
+  .entry__title { font-size: var(--text-hero); margin-bottom: var(--space-1); letter-spacing: -0.03em; }
+  .entry__other { font-size: var(--text-xl); color: var(--text-muted); font-style: italic; margin-bottom: var(--space-3); }
+  .entry__exp { margin: 0 0 var(--space-1); color: var(--text-muted); }
+  .entry__exp strong { color: var(--text); }
+  .entry__exp-other { font-style: italic; }
+  .entry__actions { display: flex; align-items: center; gap: var(--space-2); flex: none; }
+
+  .entry__body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: var(--space-7); padding-top: var(--space-6); align-items: start; }
+  .entry__section { margin-bottom: var(--space-6); }
+  .entry__section h2 { font-size: var(--text-xl); margin-bottom: var(--space-3); }
+  .entry__basis { display: flex; align-items: center; gap: var(--space-2); color: var(--text-muted); font-size: var(--text-sm); margin-top: calc(-1 * var(--space-2)); }
+  .bi { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .bi__col { padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .bi__col:first-child { border-color: color-mix(in srgb, var(--primary) 45%, var(--border)); }
+  .bi__col p:last-child { margin: 0; }
+  .bi__lang { font-size: var(--text-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); margin-bottom: var(--space-2); }
+  .bi__col--example p:last-child { font-family: var(--font-mono); font-size: var(--text-sm); }
+
+  .entry__sources { list-style: none; padding: 0; margin: 0 0 var(--space-3); display: grid; gap: var(--space-2); }
+  .entry__sources li { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-3); margin: 0; padding: var(--space-3) var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); }
+  .entry__src-pub { font-size: var(--text-xs); color: var(--cyan); font-weight: 600; }
+  .entry__sources a { flex: 1; display: inline-flex; align-items: center; gap: 0.3rem; }
+  .entry__src-kind { font-size: var(--text-xs); color: var(--text-muted); }
+  .entry__note { font-size: var(--text-sm); color: var(--text-muted); }
+
+  .entry__side { display: grid; gap: var(--space-4); position: sticky; top: calc(var(--header-h) + var(--space-4)); }
+  .side-box { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .side-box__title { font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-family: var(--font-mono); margin-bottom: var(--space-3); }
+  .entry__dl { display: grid; grid-template-columns: auto 1fr; gap: var(--space-2) var(--space-3); margin: 0; font-size: var(--text-sm); }
+  .entry__dl dt { color: var(--text-muted); }
+  .entry__dl dd { margin: 0; }
+  .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .tags li { margin: 0; }
+  .tags a { display: inline-block; padding: 0.25rem 0.7rem; border: 1px solid var(--border); border-radius: var(--radius-pill); font-size: var(--text-sm); text-decoration: none; color: var(--text); }
+  .tags a:hover { border-color: var(--primary); background: var(--primary-soft); }
+  .entry__back { display: inline-flex; align-items: center; gap: var(--space-2); font-weight: 600; text-decoration: none; }
+
+  @media (max-width: 960px) {
+    .entry__body { grid-template-columns: 1fr; }
+    .entry__side { position: static; }
+  }
+  @media (max-width: 640px) {
+    .bi { grid-template-columns: 1fr; }
+    .entry__head { flex-direction: column; }
+  }
+</style>

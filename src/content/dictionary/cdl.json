@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CDL",
+    "es": "CDL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Configuration deviation list",
+    "es": "Lista de desviaciones respecto a la configuración"
+  },
+  "categories": [
+    "maintenance",
+    "flight-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A list, established by the organization responsible for the type design and approved by the State of Design, of external parts that may be missing at the start of a flight, with any associated operating limitations and performance corrections.",
+    "es": "Lista, establecida por la organización responsable del diseño de tipo y aprobada por el Estado de diseño, de las piezas exteriores que pueden faltar al inicio de un vuelo, con las limitaciones operacionales y correcciones de performance asociadas."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The MEL's sister document for missing external parts, such as a panel or a fairing.",
+    "es": "El documento «hermano» de la MEL para piezas exteriores que faltan, como un panel o un carenado."
+  },
+  "example": {
+    "en": "\"A static discharger is missing; check the CDL for any performance penalty.\"",
+    "es": "«Falta un descargador estático; comprueba en la CDL si hay penalización de performance.»"
+  },
+  "pronunciation": {
+    "en": "C-D-L (see-dee-el)",
+    "es": "si-di-el"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mel"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

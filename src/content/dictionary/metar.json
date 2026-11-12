@@ -1,0 +1,60 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "METAR",
+    "es": "METAR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Aerodrome routine meteorological report",
+    "es": "Informe meteorológico ordinario de aeródromo"
+  },
+  "categories": [
+    "meteorology",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A routine weather report for an aerodrome, issued in a standard code (usually every 30 or 60 minutes) with wind, visibility, weather, cloud, temperature, dew point and pressure.",
+    "es": "Informe meteorológico ordinario de un aeródromo, emitido en un código normalizado (normalmente cada 30 o 60 minutos) con viento, visibilidad, tiempo presente, nubes, temperatura, punto de rocío y presión."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A short coded message describing the airport's weather right now.",
+    "es": "Un mensaje codificado corto que describe el tiempo que hace ahora en el aeropuerto."
+  },
+  "example": {
+    "en": "LEMD 121830Z 24012KT 9999 SCT030 18/10 Q1013 NOSIG",
+    "es": "LEMD 121830Z 24012KT 9999 SCT030 18/10 Q1013 NOSIG"
+  },
+  "pronunciation": {
+    "en": "MEE-tar",
+    "es": "mé-tar"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "taf",
+    "cavok",
+    "qnh",
+    "rvr",
+    "ceiling",
+    "dew-point"
+  ],
+  "regionalNote": {
+    "en": "US METARs use statute miles for visibility (10SM), inHg for pressure (A2992) and often add remarks (RMK).",
+    "es": "Los METAR de EE. UU. usan millas terrestres para la visibilidad (10SM), pulgadas de mercurio para la presión (A2992) y a menudo añaden observaciones (RMK)."
+  },
+  "sources": [
+    "icao-annex-3",
+    "wmo-306",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

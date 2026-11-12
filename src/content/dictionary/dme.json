@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "DME",
+    "es": "DME"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Distance measuring equipment",
+    "es": "Equipo radiotelemétrico"
+  },
+  "categories": [
+    "navigation",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A UHF system that measures the slant-range distance between the aircraft and a ground station, in nautical miles, by timing interrogation and reply pulses.",
+    "es": "Sistema de UHF que mide la distancia oblicua entre la aeronave y una estación en tierra, en millas náuticas, cronometrando pulsos de interrogación y respuesta."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "It tells the pilot how far away the station is, usually paired with a VOR or an ILS.",
+    "es": "Indica al piloto a qué distancia está la estación; suele ir junto a un VOR o un ILS."
+  },
+  "example": {
+    "en": "\"Report 10 DME on final.\"",
+    "es": "«Notifique a 10 DME en final.»"
+  },
+  "pronunciation": {
+    "en": "D-M-E (dee-em-ee)",
+    "es": "di-em-i"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vor",
+    "ils"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type": "term",
+  "term": {
+    "en": "cabin crew",
+    "es": "tripulación de cabina de pasajeros (TCP)"
+  },
+  "abbreviation": "TCP",
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety",
+    "commercial-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Crew members, other than flight crew, who perform duties assigned by the operator or the pilot-in-command in the interest of passenger safety, including emergency procedures.",
+    "es": "Miembros de la tripulación, distintos de la tripulación de vuelo, que realizan las funciones que les asigna el operador o el piloto al mando en interés de la seguridad de los pasajeros, incluidos los procedimientos de emergencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The flight attendants. Their primary job is safety; service comes second.",
+    "es": "Los tripulantes de cabina (azafatas y auxiliares de vuelo). Su función principal es la seguridad; el servicio va después."
+  },
+  "example": {
+    "en": "\"Cabin crew, prepare for take-off.\"",
+    "es": "«Tripulación de cabina, preparados para el despegue.»"
+  },
+  "pronunciation": {
+    "en": "/ˈkæbɪn kruː/",
+    "es": "cá-bin cru"
+  },
+  "synonyms": {
+    "en": [
+      "flight attendants"
+    ],
+    "es": [
+      "TCP",
+      "auxiliares de vuelo"
+    ]
+  },
+  "related": [
+    "boarding",
+    "pax",
+    "crm",
+    "sterile-flight-deck"
+  ],
+  "regionalNote": {
+    "en": "In the EU, cabin crew need an attestation under Part-CC; 'TCP' is the abbreviation used in Spain.",
+    "es": "En la UE, la tripulación de cabina necesita un certificado según la Part-CC; «TCP» es la abreviatura que se usa en España."
+  },
+  "sources": [
+    "icao-annex-6",
+    "eu-1178-2011",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

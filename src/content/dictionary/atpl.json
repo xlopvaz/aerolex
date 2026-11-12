@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ATPL",
+    "es": "ATPL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Airline transport pilot licence",
+    "es": "Licencia de piloto de transporte de línea aérea"
+  },
+  "categories": [
+    "commercial-aviation",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The highest level of pilot licence, required to act as pilot-in-command (captain) of multi-pilot aircraft in commercial air transport.",
+    "es": "El nivel más alto de licencia de piloto, necesario para actuar como piloto al mando (comandante) de aeronaves multipiloto en transporte aéreo comercial."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The 'captain's licence' for airliners. In Europe, a student who has passed the ATPL theory exams but lacks the flight hours is said to hold a 'frozen ATPL' (an informal term).",
+    "es": "La «licencia de comandante» de aviones de línea. En Europa, a quien ha aprobado los exámenes teóricos ATPL pero no tiene aún las horas de vuelo se le dice que tiene la «ATPL congelada» (término informal)."
+  },
+  "example": {
+    "en": "\"After 1,500 hours he upgraded to captain with his ATPL.\"",
+    "es": "«Tras 1500 horas ascendió a comandante con su ATPL.»"
+  },
+  "pronunciation": {
+    "en": "A-T-P-L (ay-tee-pee-el)",
+    "es": "a-te-pe-ele"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cpl",
+    "ppl"
+  ],
+  "regionalNote": {
+    "en": "In the US the equivalent is the airline transport pilot (ATP) certificate.",
+    "es": "En EE. UU. el equivalente es el airline transport pilot (ATP) certificate."
+  },
+  "sources": [
+    "eu-1178-2011",
+    "icao-annex-1"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

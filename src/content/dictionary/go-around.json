@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "go-around",
+    "es": "motor y al aire"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The discontinuation of an approach or landing and transition to a climb, followed by the published missed approach or ATC instructions.",
+    "es": "Interrupción de una aproximación o de un aterrizaje y paso a un ascenso, seguido de la aproximación frustrada publicada o de las instrucciones de ATC."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Abandoning the landing and climbing away to try again. It is a normal, safe manoeuvre, not an emergency.",
+    "es": "Abandonar el aterrizaje y volver a subir para intentarlo de nuevo. Es una maniobra normal y segura, no una emergencia."
+  },
+  "example": {
+    "en": "\"IBE123, going around.\" — \"IBE123, roger, climb to altitude 5000 feet.\"",
+    "es": "«IBE123, motor y al aire.» — «IBE123, recibido, ascienda a altitud 5000 pies.»"
+  },
+  "pronunciation": {
+    "en": "/ˈɡəʊ əraʊnd/",
+    "es": "góu a-ráund"
+  },
+  "synonyms": {
+    "en": [
+      "missed approach (procedure)"
+    ],
+    "es": [
+      "aproximación frustrada (procedimiento)"
+    ]
+  },
+  "related": [
+    "ils",
+    "runway",
+    "threshold"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

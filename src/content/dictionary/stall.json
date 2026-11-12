@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "stall",
+    "es": "pérdida (de sustentación)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A loss of lift and increase in drag that occurs when the wing exceeds its critical angle of attack and the airflow separates from the upper surface. It can happen at any airspeed and attitude.",
+    "es": "Pérdida de sustentación y aumento de la resistencia que se produce cuando el ala supera su ángulo de ataque crítico y el flujo de aire se desprende del extradós. Puede ocurrir a cualquier velocidad y actitud."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The wing stops 'flying' because it meets the air at too steep an angle. The cure is to reduce the angle of attack (lower the nose).",
+    "es": "El ala deja de «volar» porque encuentra el aire con un ángulo demasiado grande. La solución es reducir el ángulo de ataque (bajar el morro)."
+  },
+  "example": {
+    "en": "\"STALL, STALL\" — the stall warning sounds and the pilot lowers the nose.",
+    "es": "«STALL, STALL» — suena el aviso de pérdida y el piloto baja el morro."
+  },
+  "pronunciation": {
+    "en": "/stɔːl/",
+    "es": "stol"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "entrada en pérdida"
+    ]
+  },
+  "related": [
+    "angle-of-attack",
+    "lift",
+    "wing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

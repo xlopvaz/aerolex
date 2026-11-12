@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SOP",
+    "es": "SOP"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Standard operating procedures",
+    "es": "Procedimientos operativos estándar"
+  },
+  "categories": [
+    "flight-operations",
+    "safety",
+    "cabin-crew"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The operator's documented procedures that describe how each task is to be performed and by whom, so that crew members act in a consistent and predictable way.",
+    "es": "Procedimientos documentados del operador que describen cómo y quién realiza cada tarea, para que los miembros de la tripulación actúen de manera coherente y predecible."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The 'house rules' that make two pilots who have never met work together in exactly the same way.",
+    "es": "Las «reglas de la casa» que hacen que dos pilotos que no se conocen trabajen exactamente de la misma manera."
+  },
+  "example": {
+    "en": "\"As per SOP, the pilot monitoring calls 'one hundred above'.\"",
+    "es": "«Según los SOP, el piloto que supervisa canta 'one hundred above'.»"
+  },
+  "pronunciation": {
+    "en": "S-O-P (ess-oh-pee)",
+    "es": "ese-o-pe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "procedimientos normalizados de operación"
+    ]
+  },
+  "related": [
+    "crm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

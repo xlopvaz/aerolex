@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TAF",
+    "es": "TAF"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Terminal aerodrome forecast",
+    "es": "Pronóstico de aeródromo"
+  },
+  "categories": [
+    "meteorology",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A coded weather forecast for an aerodrome over a specified validity period, with expected changes indicated by groups such as BECMG, TEMPO, FM and PROB30/40.",
+    "es": "Pronóstico meteorológico codificado para un aeródromo durante un periodo de validez especificado, con los cambios previstos indicados mediante grupos como BECMG, TEMPO, FM y PROB30/40."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The METAR's 'forecast' sibling: what the weather at the airport is expected to do in the coming hours.",
+    "es": "El «hermano» de pronóstico del METAR: lo que se espera que haga el tiempo en el aeropuerto en las próximas horas."
+  },
+  "example": {
+    "en": "TAF LEMD 121700Z 1218/1324 24010KT 9999 FEW030 TEMPO 1300/1306 4000 BR",
+    "es": "TAF LEMD 121700Z 1218/1324 24010KT 9999 FEW030 TEMPO 1300/1306 4000 BR"
+  },
+  "pronunciation": {
+    "en": "taf",
+    "es": "taf"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "metar",
+    "cavok"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

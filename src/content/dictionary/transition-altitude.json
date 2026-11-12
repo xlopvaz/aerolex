@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "transition altitude",
+    "es": "altitud de transición"
+  },
+  "abbreviation": "TA",
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "flight-operations",
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes (QNH). When climbing through it, pilots change to the standard setting and use flight levels.",
+    "es": "Altitud a la cual o por debajo de la cual se controla la posición vertical de una aeronave por referencia a altitudes (QNH). Al ascender a través de ella, los pilotos cambian al reglaje estándar y usan niveles de vuelo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The height where you switch from 'local pressure' to 'standard pressure' on the altimeter on the way up.",
+    "es": "La altura a la que, en ascenso, pasas del «reglaje local» al «reglaje estándar» en el altímetro."
+  },
+  "example": {
+    "en": "\"Passing transition altitude — standard set.\"",
+    "es": "«Cruzando altitud de transición — estándar ajustado.»"
+  },
+  "pronunciation": {
+    "en": "/trænˈzɪʃən ˈæltɪtjuːd/",
+    "es": "tran-sí-shon ál-ti-tiud"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "flight-level",
+    "qnh",
+    "altimeter"
+  ],
+  "regionalNote": {
+    "en": "In the US the transition altitude is 18,000 ft everywhere; in Europe it varies by country and aerodrome and is published in each AIP.",
+    "es": "En EE. UU. la altitud de transición es 18 000 ft en todo el país; en Europa varía según el país y el aeródromo y se publica en cada AIP."
+  },
+  "sources": [
+    "icao-doc-8168",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

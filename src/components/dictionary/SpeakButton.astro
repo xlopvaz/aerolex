@@ -1,0 +1,42 @@
+---
+/**
+ * Speaks the English term with the browser's speech synthesis (Web Speech API).
+ * Hidden unless the browser supports it, so there is never a button that does nothing.
+ */
+import Icon from '../ui/Icon.astro';
+import { t } from '../../i18n/index.js';
+interface Props { text: string; lang: string }
+const { text, lang } = Astro.props;
+---
+<button type="button" class="speak" data-speak={text} hidden aria-label={t(lang, 'dictionary.listenLabel', { term: text })}>
+  <Icon name="volume-2" size={18} />
+  <span>{t(lang, 'dictionary.listen')}</span>
+</button>
+
+<script>
+  if ('speechSynthesis' in window) {
+    document.querySelectorAll<HTMLButtonElement>('[data-speak]').forEach((btn) => {
+      btn.hidden = false;
+      btn.addEventListener('click', () => {
+        speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(btn.dataset.speak!);
+        u.lang = 'en-GB';
+        const voice = speechSynthesis.getVoices().find((v) => v.lang.startsWith('en'));
+        if (voice) u.voice = voice;
+        u.rate = 0.9;
+        speechSynthesis.speak(u);
+      });
+    });
+  }
+</script>
+
+<style>
+  .speak {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border); border-radius: var(--radius-pill);
+    background: var(--surface); color: var(--text); font-size: var(--text-sm); font-weight: 600; cursor: pointer;
+  }
+  .speak:hover { border-color: var(--cyan); color: var(--cyan); }
+  .speak[hidden] { display: none; }
+</style>

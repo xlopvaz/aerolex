@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "flaps",
+    "es": "flaps"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Hinged surfaces on the trailing edge of the wing that, when extended, increase the wing's camber (and on many types its area), increasing lift and drag so the aircraft can fly more slowly for take-off and landing.",
+    "es": "Superficies articuladas en el borde de salida del ala que, al extenderse, aumentan la curvatura del ala (y en muchos tipos su superficie), incrementando la sustentación y la resistencia para que el avión pueda volar más despacio en el despegue y el aterrizaje."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Panels at the back of the wing that come out to let the aircraft fly slower safely.",
+    "es": "Paneles en la parte trasera del ala que salen para que el avión pueda volar más despacio con seguridad."
+  },
+  "example": {
+    "en": "\"Flaps 3… flaps full.\"",
+    "es": "«Flaps 3… flaps full.»"
+  },
+  "pronunciation": {
+    "en": "/flæps/",
+    "es": "flaps"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "flaps de borde de salida"
+    ]
+  },
+  "related": [
+    "slats",
+    "wing",
+    "lift",
+    "drag"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

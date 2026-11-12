@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "wing",
+    "es": "ala"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An airfoil attached to each side of the fuselage that produces the lift needed for flight; it also carries control surfaces and, on many aircraft, fuel tanks and engines.",
+    "es": "Superficie aerodinámica unida a cada lado del fuselaje que produce la sustentación necesaria para el vuelo; también lleva superficies de mando y, en muchos aviones, depósitos de combustible y motores."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The part that makes the aircraft fly.",
+    "es": "La parte que hace volar al avión."
+  },
+  "example": {
+    "en": "\"Fuel is stored in the wing tanks.\"",
+    "es": "«El combustible se almacena en los depósitos de las alas.»"
+  },
+  "pronunciation": {
+    "en": "/wɪŋ/",
+    "es": "uing"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "lift",
+    "flaps",
+    "slats",
+    "aileron",
+    "winglet",
+    "spoilers"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

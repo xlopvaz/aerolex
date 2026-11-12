@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "crosswind",
+    "es": "viento cruzado"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The component of the wind acting perpendicular to the runway or to the aircraft's path.",
+    "es": "Componente del viento que actúa perpendicular a la pista o a la trayectoria de la aeronave."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Wind blowing from the side, which pushes the aircraft sideways during take-off and landing.",
+    "es": "Viento que sopla de lado y empuja el avión lateralmente en el despegue y el aterrizaje."
+  },
+  "example": {
+    "en": "\"Wind 270 at 20 knots on runway 36: almost all of it is crosswind.\"",
+    "es": "«Viento 270 de 20 nudos en la pista 36: casi todo es viento cruzado.»"
+  },
+  "pronunciation": {
+    "en": "/ˈkrɒswɪnd/",
+    "es": "cros-uind"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "viento de costado"
+    ]
+  },
+  "related": [
+    "rudder",
+    "aileron",
+    "heading",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

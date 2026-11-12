@@ -113,6 +113,7 @@ aerolex/
 - Las páginas se generan desde un registro único de rutas (`src/i18n/routes.js`) con una sola plantilla, `src/pages/[lang]/[...slug].astro`. Cada página tiene su vista en `src/views/`.
 - Un único workflow (`deploy.yml`) hace las pruebas en cada PR y, además, publica al fusionar en `main`.
 - `scripts/check-site.mjs` revisa el sitio compilado: enlaces internos, `hreflang`, `<main>` vacíos y textos de relleno.
+- **Fase 3:** el diccionario usa Content Collections (`src/content.config.ts`) con esquemas Zod; `tests/unit/content.test.js` comprueba además las referencias cruzadas (`related`, `sources`). El índice de búsqueda se genera en la compilación en `/data/dictionary.json`. El modelo real de cada entrada está en el esquema; el ejemplo de §3.1 es orientativo.
 
 **Separación estricta:**
 - `content/` = datos

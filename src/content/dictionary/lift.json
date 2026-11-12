@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "lift",
+    "es": "sustentación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The component of the total aerodynamic force acting perpendicular to the relative airflow, produced mainly by the wings.",
+    "es": "Componente de la fuerza aerodinámica total que actúa perpendicular al flujo de aire relativo, producida principalmente por las alas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The upward force that holds the aircraft in the air when air flows over the wings.",
+    "es": "La fuerza hacia arriba que mantiene el avión en el aire cuando el aire fluye sobre las alas."
+  },
+  "example": {
+    "en": "\"Extending the flaps increases lift at low speed.\"",
+    "es": "«Extender los flaps aumenta la sustentación a baja velocidad.»"
+  },
+  "pronunciation": {
+    "en": "/lɪft/",
+    "es": "lift"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "drag",
+    "thrust",
+    "weight",
+    "angle-of-attack",
+    "stall",
+    "wing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

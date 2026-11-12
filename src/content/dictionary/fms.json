@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FMS",
+    "es": "FMS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Flight management system",
+    "es": "Sistema de gestión de vuelo"
+  },
+  "categories": [
+    "aircraft-systems",
+    "cockpit",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An onboard computer system that integrates navigation, flight planning and performance calculations to compute the aircraft's position and guide it along the programmed route and vertical profile.",
+    "es": "Sistema informático de a bordo que integra navegación, planificación del vuelo y cálculos de performance para calcular la posición de la aeronave y guiarla a lo largo de la ruta y el perfil vertical programados."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's 'navigation brain': the crew types the route and data into it, and it tells the autopilot where to go.",
+    "es": "El «cerebro de navegación» del avión: la tripulación introduce la ruta y los datos, y el sistema indica al piloto automático hacia dónde ir."
+  },
+  "example": {
+    "en": "\"Let's load the new SID into the FMS and cross-check the waypoints.\"",
+    "es": "«Carguemos la nueva SID en el FMS y comprobemos los puntos de recorrido.»"
+  },
+  "pronunciation": {
+    "en": "F-M-S (ef-em-ess)",
+    "es": "efe-eme-ese"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "sid",
+    "star",
+    "flight-deck"
+  ],
+  "regionalNote": {
+    "en": "Airbus aircraft integrate it in the FMGS (flight management and guidance system); crews interact with it through the MCDU or CDU.",
+    "es": "Los Airbus lo integran en el FMGS (sistema de gestión y guiado de vuelo); la tripulación lo maneja mediante la MCDU o CDU."
+  },
+  "sources": [
+    "faa-aim",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

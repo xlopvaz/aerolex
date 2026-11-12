@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PAX",
+    "es": "PAX"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Passengers",
+    "es": "Pasajeros"
+  },
+  "categories": [
+    "commercial-aviation",
+    "cabin-crew",
+    "ground-handling"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Abbreviation for passenger(s), widely used in airline operations, load sheets and communications.",
+    "es": "Abreviatura de pasajero(s), muy usada en las operaciones de las aerolíneas, en las hojas de carga y en las comunicaciones."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Industry shorthand for passengers.",
+    "es": "Forma abreviada de decir pasajeros en el sector."
+  },
+  "example": {
+    "en": "\"Final figures: 174 PAX plus 2 infants.\"",
+    "es": "«Cifras finales: 174 PAX más 2 bebés.»"
+  },
+  "pronunciation": {
+    "en": "paks",
+    "es": "pax"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "boarding",
+    "cabin-crew"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

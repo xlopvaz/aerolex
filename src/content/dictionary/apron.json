@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "apron",
+    "es": "plataforma"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "ground-handling"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A defined area on a land aerodrome intended to accommodate aircraft for loading or unloading passengers, mail or cargo, fuelling, parking or maintenance.",
+    "es": "Área definida en un aeródromo terrestre destinada a dar cabida a las aeronaves para el embarque o desembarque de pasajeros, correo o carga, el abastecimiento de combustible, el estacionamiento o el mantenimiento."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The area where aircraft park, are loaded and refuelled.",
+    "es": "La zona donde los aviones aparcan, se cargan y repostan."
+  },
+  "example": {
+    "en": "\"Follow the marshaller on the apron.\"",
+    "es": "«Siga al señalero en la plataforma.»"
+  },
+  "pronunciation": {
+    "en": "/ˈeɪprən/",
+    "es": "éi-pron"
+  },
+  "synonyms": {
+    "en": [
+      "ramp"
+    ],
+    "es": [
+      "rampa"
+    ]
+  },
+  "related": [
+    "taxiway",
+    "pushback",
+    "fod"
+  ],
+  "regionalNote": {
+    "en": "In the US 'ramp' is very common; in Spain 'plataforma' is the official term and 'rampa' is used colloquially.",
+    "es": "En EE. UU. es muy habitual 'ramp'; en España 'plataforma' es el término oficial y 'rampa' se usa coloquialmente."
+  },
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

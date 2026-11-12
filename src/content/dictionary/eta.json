@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ETA",
+    "es": "ETA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Estimated time of arrival",
+    "es": "Hora prevista de llegada"
+  },
+  "categories": [
+    "flight-operations",
+    "air-traffic-control",
+    "commercial-aviation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "For IFR flights, the time at which the aircraft is estimated to arrive over the designated point from which an instrument approach procedure is intended to start (or over the aerodrome if there is no associated navigation aid); for VFR flights, the estimated time of arrival over the aerodrome.",
+    "es": "Para los vuelos IFR, la hora a la que se estima que la aeronave llegará sobre el punto designado desde el que se prevé iniciar el procedimiento de aproximación por instrumentos (o sobre el aeródromo si no hay radioayuda asociada); para los vuelos VFR, la hora estimada de llegada sobre el aeródromo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "When the aircraft is expected to arrive. Careful: for ATC it means arriving at the approach, while for passengers it usually means arriving at the gate.",
+    "es": "La hora a la que se espera que llegue el avión. Cuidado: para ATC significa llegar a la aproximación, mientras que para los pasajeros suele significar llegar a la puerta."
+  },
+  "example": {
+    "en": "\"Our ETA in Madrid is 1435 UTC.\"",
+    "es": "«Nuestra ETA en Madrid es 1435 UTC.»"
+  },
+  "pronunciation": {
+    "en": "E-T-A (ee-tee-ay)",
+    "es": "i-ti-ei"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "hora estimada de llegada"
+    ]
+  },
+  "related": [
+    "etd",
+    "utc",
+    "ifr",
+    "vfr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

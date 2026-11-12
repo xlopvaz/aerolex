@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "threshold",
+    "es": "umbral"
+  },
+  "abbreviation": "THR",
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The beginning of that portion of the runway usable for landing.",
+    "es": "Comienzo de la parte de pista utilizable para el aterrizaje."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Where the landing part of the runway starts, marked with white stripes and green lights.",
+    "es": "Donde empieza la parte de la pista que se puede usar para aterrizar, marcada con franjas blancas y luces verdes."
+  },
+  "example": {
+    "en": "\"The aircraft crossed the threshold at 50 feet.\"",
+    "es": "«El avión cruzó el umbral a 50 pies.»"
+  },
+  "pronunciation": {
+    "en": "/ˈθreʃhəʊld/",
+    "es": "zrésh-jould"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "runway",
+    "ils",
+    "qfe"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

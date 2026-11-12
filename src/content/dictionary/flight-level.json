@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "flight level",
+    "es": "nivel de vuelo"
+  },
+  "abbreviation": "FL",
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "air-traffic-control",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A surface of constant atmospheric pressure related to the standard pressure datum of 1013.2 hPa, separated from other such surfaces by specific pressure intervals. It is expressed in hundreds of feet: FL350 ≈ 35,000 ft with the standard setting.",
+    "es": "Superficie de presión atmosférica constante relacionada con la referencia de presión normalizada de 1013,2 hPa y separada de otras superficies análogas por intervalos de presión específicos. Se expresa en centenas de pies: FL350 ≈ 35 000 ft con el reglaje estándar."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "At cruise altitude every aircraft sets the same standard pressure, so all altimeters agree and separation is easy.",
+    "es": "En crucero todos los aviones ajustan la misma presión estándar, así todos los altímetros coinciden y es fácil separarlos."
+  },
+  "example": {
+    "en": "\"Climb to flight level 240.\"",
+    "es": "«Ascienda a nivel de vuelo 240.»"
+  },
+  "pronunciation": {
+    "en": "flight level (FL: ef-el)",
+    "es": "flait lével / nivel de vuelo"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "transition-altitude",
+    "altimeter",
+    "qnh",
+    "rvsm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

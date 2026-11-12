@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "flight deck",
+    "es": "cabina de vuelo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The compartment from which the flight crew operates the aircraft, containing the flight controls, instruments and systems panels.",
+    "es": "Compartimento desde el que la tripulación de vuelo opera la aeronave, con los mandos de vuelo, los instrumentos y los paneles de sistemas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Where the pilots sit. 'Cockpit' means the same thing.",
+    "es": "Donde se sientan los pilotos. 'Cockpit' significa lo mismo."
+  },
+  "example": {
+    "en": "\"The flight deck door must remain locked in flight.\"",
+    "es": "«La puerta de la cabina de vuelo debe permanecer cerrada con llave en vuelo.»"
+  },
+  "pronunciation": {
+    "en": "/ˈflaɪt dek/",
+    "es": "flait dek"
+  },
+  "synonyms": {
+    "en": [
+      "cockpit"
+    ],
+    "es": [
+      "cabina de mando",
+      "cabina de pilotos"
+    ]
+  },
+  "related": [
+    "fms",
+    "sterile-flight-deck",
+    "cabin-crew"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

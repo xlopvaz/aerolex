@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "elevator",
+    "es": "timón de profundidad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A primary flight control surface on the horizontal tail that controls pitch, rotating the aircraft about its lateral axis (nose up or nose down).",
+    "es": "Superficie de mando primaria situada en el estabilizador horizontal que controla el cabeceo, haciendo girar la aeronave alrededor de su eje transversal (morro arriba o abajo)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The moving part of the horizontal tail that raises or lowers the nose.",
+    "es": "La parte móvil de la cola horizontal que sube o baja el morro."
+  },
+  "example": {
+    "en": "\"At rotation speed the pilot uses the elevator to raise the nose.\"",
+    "es": "«A la velocidad de rotación el piloto usa el timón de profundidad para levantar el morro.»"
+  },
+  "pronunciation": {
+    "en": "/ˈelɪveɪtə/",
+    "es": "éle-veitor"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "elevador"
+    ]
+  },
+  "related": [
+    "aileron",
+    "rudder"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

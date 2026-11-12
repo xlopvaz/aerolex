@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ILS",
+    "es": "ILS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Instrument landing system",
+    "es": "Sistema de aterrizaje por instrumentos"
+  },
+  "categories": [
+    "navigation",
+    "airport-operations",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A ground-based precision approach system that gives aircraft lateral guidance (localizer) and vertical guidance (glide path) towards the runway, often complemented by DME or marker beacons.",
+    "es": "Sistema de aproximación de precisión basado en tierra que proporciona a la aeronave guiado lateral (localizador) y vertical (senda de planeo) hacia la pista, a menudo complementado con DME o radiobalizas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Two invisible radio 'beams', one for left-right and one for up-down, that guide the aircraft to the runway even in poor visibility.",
+    "es": "Dos «haces» de radio invisibles, uno para izquierda-derecha y otro para arriba-abajo, que guían al avión hasta la pista incluso con poca visibilidad."
+  },
+  "example": {
+    "en": "\"Cleared ILS approach runway 18R.\"",
+    "es": "«Autorizado aproximación ILS pista 18R.»"
+  },
+  "pronunciation": {
+    "en": "I-L-S (eye-el-ess)",
+    "es": "ai-el-es"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "dme",
+    "threshold",
+    "runway",
+    "go-around"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

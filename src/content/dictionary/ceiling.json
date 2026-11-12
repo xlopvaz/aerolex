@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "ceiling",
+    "es": "techo de nubes"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The height above the ground or water of the base of the lowest layer of cloud below 6,000 m (20,000 ft) covering more than half the sky (broken or overcast).",
+    "es": "Altura sobre el suelo o el agua de la base de la capa de nubes más baja por debajo de 6000 m (20 000 ft) que cubre más de la mitad del cielo (BKN u OVC)."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The height of the lowest cloud layer that covers most of the sky.",
+    "es": "La altura de la capa de nubes más baja que cubre la mayor parte del cielo."
+  },
+  "example": {
+    "en": "BKN008 — ceiling 800 ft.",
+    "es": "BKN008 — techo de 800 ft."
+  },
+  "pronunciation": {
+    "en": "/ˈsiːlɪŋ/",
+    "es": "sí-ling"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "techo"
+    ]
+  },
+  "related": [
+    "metar",
+    "cavok",
+    "vfr",
+    "rvr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
