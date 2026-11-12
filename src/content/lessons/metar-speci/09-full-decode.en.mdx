@@ -1,0 +1,122 @@
+---
+lesson: full-decode
+course: metar-speci
+lang: en
+title: "Full decode"
+summary: "A step-by-step method and five complete reports, from fair weather to fog and thunderstorms, including one from the US."
+objectives:
+  - "Apply a systematic method to read any METAR"
+  - "Translate complete reports into plain language"
+  - "Check your learning in the final assessment"
+minutes: 15
+terms: [metar, speci, cavok, rvr, ceiling, qnh]
+quiz: metar-speci-final
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## An eight-step method
+
+1. **What, where and when?** Type, aerodrome and UTC time. Is it recent?
+2. **Wind:** direction, speed, gusts and variation.
+3. **Visibility and RVR:** are low-visibility operations involved?
+4. **Present weather:** any hazardous phenomena?
+5. **Cloud:** where is the ceiling? Any CB or TCU?
+6. **Temperature and dew point:** fog or icing risk?
+7. **QNH.**
+8. **Supplementary and trend:** improving or deteriorating?
+
+All the reports in this lesson are **didactic examples**: their format is valid, but they are not real observations.
+
+## 1. Fair weather in Madrid
+
+<MetarBreakdown parts={[
+  ["LEMD", "Madrid-Barajas"],
+  ["121830Z", "Day 12, 18:30 UTC"],
+  ["24012KT", "Wind from 240° at 12 knots"],
+  ["9999", "Visibility 10 km or more"],
+  ["SCT030", "Scattered cloud at 3,000 ft (no ceiling)"],
+  ["18/10", "18 °C, dew point 10 °C"],
+  ["Q1013", "QNH 1013 hPa"],
+  ["NOSIG", "No significant change in 2 hours"]
+]} />
+
+**In plain words:** moderate south-westerly wind, good visibility, some cloud at 3,000 ft, no weather and no change expected.
+
+## 2. Rain and low cloud in Santiago
+
+<MetarBreakdown parts={[
+  ["LEST", "Santiago"],
+  ["130630Z", "Day 13, 06:30 UTC"],
+  ["21018KT", "Wind from 210° at 18 knots"],
+  ["1200", "Visibility 1,200 m"],
+  ["R35/1100U", "RVR runway 35: 1,100 m, improving"],
+  ["RA", "Moderate rain"],
+  ["BR", "Mist"],
+  ["SCT004", "Scattered cloud at 400 ft"],
+  ["BKN008", "Broken layer at 800 ft: ceiling 800 ft"],
+  ["12/12", "12 °C, dew point 12 °C (saturated air)"],
+  ["Q1009", "QNH 1009 hPa"],
+  ["RETSRA", "Recent thunderstorm with rain"]
+]} />
+
+**In plain words:** south-south-westerly wind, rain with mist, reduced visibility, a very low ceiling at 800 ft and saturated air. There was a thunderstorm in the last hour.
+
+## 3. A thunderstorm SPECI at Vigo
+
+<MetarBreakdown parts={[
+  ["SPECI", "Special report"],
+  ["LEVX", "Vigo"],
+  ["131215Z", "Day 13, 12:15 UTC"],
+  ["25025G38KT", "Wind from 250° at 25 knots, gusting 38"],
+  ["220V290", "Direction varying between 220° and 290°"],
+  ["3000", "Visibility 3,000 m"],
+  ["+TSRA", "Thunderstorm with heavy rain"],
+  ["BKN015CB", "Broken cumulonimbus at 1,500 ft"],
+  ["15/13", "15 °C, dew point 13 °C"],
+  ["Q1004", "QNH 1004 hPa"]
+]} />
+
+**In plain words:** a special report was issued because a heavy thunderstorm with cumulonimbus began, with gusty wind and reduced visibility. Hazardous conditions.
+
+## 4. Fog at London Heathrow
+
+<MetarBreakdown parts={[
+  ["EGLL", "London Heathrow"],
+  ["130520Z", "Day 13, 05:20 UTC"],
+  ["AUTO", "Automated observation"],
+  ["00000KT", "Calm"],
+  ["0300", "Visibility 300 m"],
+  ["R27L/0450N", "RVR runway 27L: 450 m, no change"],
+  ["R27R/0400D", "RVR runway 27R: 400 m, decreasing"],
+  ["FG", "Fog"],
+  ["VV001", "Sky obscured, vertical visibility 100 ft"],
+  ["05/05", "5 °C, dew point 5 °C"],
+  ["Q1021", "QNH 1021 hPa"]
+]} />
+
+**In plain words:** thick fog with calm wind; only aircraft and crews approved for low-visibility operations could operate.
+
+## 5. A METAR from New York JFK
+
+<MetarBreakdown parts={[
+  ["KJFK", "New York JFK"],
+  ["131451Z", "Day 13, 14:51 UTC"],
+  ["31008KT", "Wind from 310° at 8 knots"],
+  ["10SM", "Visibility 10 statute miles or more"],
+  ["FEW050", "Few clouds at 5,000 ft"],
+  ["BKN250", "Broken layer at 25,000 ft"],
+  ["08/M03", "8 °C, dew point −3 °C"],
+  ["A3012", "Altimeter 30.12 inHg"],
+  ["RMK", "Start of remarks"],
+  ["AO2", "Automated station with precipitation discriminator"],
+  ["SLP199", "Sea-level pressure 1019.9 hPa"],
+  ["T00831028", "Temperature 8.3 °C, dew point −2.8 °C"]
+]} />
+
+**In plain words:** fair weather, dry air, high cloud. Note the miles, inches of mercury and the `RMK` section.
+
+<Callout type="official-procedure" label="Real-world use">
+Real flight planning uses current official reports, together with the TAF, NOTAMs and the operator's procedures. This course is educational material.
+</Callout>

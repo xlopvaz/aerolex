@@ -1,0 +1,76 @@
+---
+lesson: what-is-metar
+course: metar-speci
+lang: es
+title: "Qué son METAR y SPECI"
+summary: "Para qué sirven, quién los emite, cada cuánto se publican y cómo están ordenados."
+objectives:
+  - "Explicar qué es un METAR y qué es un SPECI"
+  - "Saber quién usa estos informes y para qué"
+  - "Reconocer el orden fijo de los grupos"
+minutes: 8
+terms: [metar, speci, taf, utc]
+quiz: metar-speci-01
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## El tiempo de un aeropuerto en una sola línea
+
+Un <Term id="metar" /> es el **informe meteorológico ordinario de un aeródromo**. Lo elabora la oficina meteorológica del aeropuerto o una estación automática y describe el tiempo que hace **en ese momento**: viento, visibilidad, fenómenos como lluvia o niebla, nubes, temperatura y presión.
+
+Se publica a intervalos regulares, normalmente **cada 30 o cada 60 minutos**, y está escrito en un código normalizado internacionalmente por la ICAO (Anexo 3) y la Organización Meteorológica Mundial (Manual de claves, WMO-No. 306). Gracias a eso, un piloto puede leer igual un METAR de Madrid que uno de Tokio.
+
+<MetarBreakdown parts={[
+  ["LEMD", "Aeródromo: Adolfo Suárez Madrid-Barajas"],
+  ["121830Z", "Día 12 del mes, 18:30 UTC"],
+  ["24012KT", "Viento de 240° a 12 nudos"],
+  ["9999", "Visibilidad de 10 km o más"],
+  ["SCT030", "Nubes dispersas a 3000 ft"],
+  ["18/10", "Temperatura 18 °C, punto de rocío 10 °C"],
+  ["Q1013", "QNH 1013 hPa"],
+  ["NOSIG", "No se esperan cambios significativos en las próximas 2 horas"]
+]} caption="El ejemplo de este curso: un METAR de Madrid con buen tiempo." />
+
+No te preocupes si todavía no entiendes cada grupo: en las próximas lecciones los veremos uno a uno.
+
+## ¿Y qué es un SPECI?
+
+Un <Term id="speci" /> es un **informe especial**. Tiene exactamente el mismo formato que un METAR, pero se emite **entre dos METAR** cuando el tiempo cambia de forma significativa: por ejemplo, si empieza una tormenta, si la visibilidad baja de ciertos umbrales o si la base de las nubes desciende. Así, nadie tiene que esperar al siguiente informe ordinario para conocer un empeoramiento importante.
+
+Los criterios exactos que obligan a emitir un SPECI los fija la autoridad meteorológica de cada Estado, siguiendo el Anexo 3 de la ICAO.
+
+## ¿Quién los usa?
+
+- **Pilotos y despachadores**, para preparar el vuelo, decidir si se puede despegar o aterrizar y elegir aeródromos alternativos.
+- **Controladores**, que a partir de estos datos preparan la información que se transmite a las tripulaciones, como el ATIS.
+- **Aficionados y estudiantes**, porque son una de las mejores maneras de entender la meteorología aeronáutica real.
+
+<Callout type="info" label="METAR frente a TAF">
+El METAR describe el tiempo **observado**. Para saber qué tiempo se **espera** en las próximas horas se usa el <Term id="taf" />, que tiene su propio curso.
+</Callout>
+
+## Un orden que nunca cambia
+
+Los grupos de un METAR aparecen **siempre en el mismo orden**. Si un elemento no tiene nada que notificar (por ejemplo, no llueve), su grupo simplemente **no aparece**.
+
+| Orden | Grupo | Ejemplo |
+|---|---|---|
+| 1 | Tipo de informe | `METAR` / `SPECI` |
+| 2 | Indicador de lugar ICAO | `LEMD` |
+| 3 | Día y hora (UTC) | `121830Z` |
+| 4 | Viento | `24012KT` |
+| 5 | Visibilidad y, si procede, RVR | `9999` · `R35/1100U` |
+| 6 | Tiempo presente | `-RA` |
+| 7 | Nubes (o CAVOK) | `SCT030` |
+| 8 | Temperatura / punto de rocío | `18/10` |
+| 9 | Presión (QNH) | `Q1013` |
+| 10 | Información suplementaria | `RERA` · `WS R24` |
+| 11 | Pronóstico de tendencia | `NOSIG` |
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+Los METAR de Estados Unidos siguen el mismo orden general, pero usan algunas unidades distintas (millas terrestres, pulgadas de mercurio), no incluyen tendencia y suelen terminar con una sección de observaciones (`RMK`). Las iremos señalando a lo largo del curso.
+</Callout>
+
+Todas las horas de un METAR están en <Term id="utc" />, el reloj único de la aviación.

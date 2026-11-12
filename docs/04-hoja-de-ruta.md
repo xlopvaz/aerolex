@@ -42,6 +42,13 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Portada: buscador con autocompletado y término del día.
 - [ ] Ampliar hasta 150 términos y 100 acrónimos.
 
+**Bloque 2 — Academia y curso METAR y SPECI ✅ (13/11/2026)**
+- [x] Colecciones de itinerarios, cursos, lecciones (MDX, una por idioma) y cuestionarios, validadas en compilación.
+- [x] Academia: solo muestra los itinerarios con contenido; página de curso con objetivos, lecciones y progreso; página de lección con índice, términos clave enlazados al diccionario, cuestionario y navegación.
+- [x] Cuestionarios con corrección inmediata, explicación, puntuación, historial de respuestas y repetición de las falladas.
+- [x] Progreso por ID (compartido entre idiomas), visible en el curso, la academia y el panel.
+- [x] Curso METAR y SPECI: 9 lecciones ES/EN, 34 preguntas y evaluación final; ejemplos didácticos marcados como tales.
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

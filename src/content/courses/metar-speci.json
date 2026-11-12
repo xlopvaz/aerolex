@@ -1,0 +1,41 @@
+{
+  "path": "aviation-meteorology",
+  "level": "beginner",
+  "title": { "en": "METAR & SPECI Academy", "es": "Academia METAR y SPECI" },
+  "description": {
+    "en": "Learn to read aerodrome weather reports from scratch: every group of a METAR or SPECI, what it means for a flight, and how ICAO and US reports differ.",
+    "es": "Aprende desde cero a leer los informes meteorológicos de aeródromo: cada grupo de un METAR o un SPECI, qué significa para un vuelo y en qué se diferencian los informes ICAO y los de EE. UU."
+  },
+  "objectives": {
+    "en": [
+      "Explain what METAR and SPECI reports are and when they are issued",
+      "Identify and decode every group of a METAR in the correct order",
+      "Interpret wind, visibility, RVR, present weather, cloud, temperature and pressure",
+      "Recognise supplementary information and trend forecasts (RE, WS, NOSIG, BECMG, TEMPO)",
+      "Spot the main differences between ICAO-format and US METARs",
+      "Decode complete reports in plain language"
+    ],
+    "es": [
+      "Explicar qué son los informes METAR y SPECI y cuándo se emiten",
+      "Identificar y decodificar cada grupo de un METAR en el orden correcto",
+      "Interpretar viento, visibilidad, RVR, tiempo presente, nubes, temperatura y presión",
+      "Reconocer la información suplementaria y los pronósticos de tendencia (RE, WS, NOSIG, BECMG, TEMPO)",
+      "Distinguir las principales diferencias entre los METAR en formato ICAO y los de EE. UU.",
+      "Decodificar informes completos en lenguaje natural"
+    ]
+  },
+  "lessons": [
+    "what-is-metar",
+    "identification-and-time",
+    "wind",
+    "visibility-and-rvr",
+    "present-weather",
+    "clouds",
+    "temperature-and-pressure",
+    "supplementary-and-trend",
+    "full-decode"
+  ],
+  "finalQuiz": null,
+  "sources": ["icao-annex-3", "wmo-306", "faa-awh", "faa-aim"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null }
+}

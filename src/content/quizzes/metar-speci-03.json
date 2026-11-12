@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Decodifica el viento:",
+        "en": "Decode the wind:"
+      },
+      "code": "03015G27KT",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hacia 030° a 15 nudos con rachas de 27",
+            "en": "Towards 030° at 15 knots, gusting 27"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De 030° a 15 nudos con rachas de 27",
+            "en": "From 030° at 15 knots, gusting 27"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De 150° a 27 nudos",
+            "en": "From 150° at 27 knots"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La dirección es desde dónde sopla el viento; G introduce las rachas.",
+        "en": "Direction is where the wind blows from; G introduces gusts."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué significa VRB02KT?",
+        "en": "What does VRB02KT mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Viento de dirección variable a 2 nudos",
+            "en": "Variable wind at 2 knots"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Viento de 020° a 2 nudos",
+            "en": "Wind from 020° at 2 knots"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Rachas de 2 nudos",
+            "en": "Gusts of 2 knots"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "VRB indica que no se puede dar una dirección única; con vientos flojos es habitual.",
+        "en": "VRB means a single direction cannot be given; it is common with light winds."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El viento de un METAR se refiere al norte…",
+        "en": "METAR wind is given relative to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "magnético, como el de la torre",
+            "en": "magnetic north, like tower wind"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "verdadero",
+            "en": "true north"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "de la cuadrícula de la carta",
+            "en": "chart grid north"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El METAR usa el norte verdadero; la torre y el ATIS dan el viento magnético.",
+        "en": "METARs use true north; the tower and ATIS give magnetic wind."
+      }
+    }
+  ]
+}

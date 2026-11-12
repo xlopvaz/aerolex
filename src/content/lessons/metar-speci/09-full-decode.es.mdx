@@ -1,0 +1,122 @@
+---
+lesson: full-decode
+course: metar-speci
+lang: es
+title: "Decodificación completa"
+summary: "Un método paso a paso y cinco informes completos, de buen tiempo a niebla y tormenta, incluido uno de EE. UU."
+objectives:
+  - "Aplicar un método sistemático para leer cualquier METAR"
+  - "Traducir informes completos a lenguaje natural"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 15
+terms: [metar, speci, cavok, rvr, ceiling, qnh]
+quiz: metar-speci-final
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Método en ocho pasos
+
+1. **¿Qué, dónde y cuándo?** Tipo, aeródromo y hora UTC. ¿Es reciente?
+2. **Viento:** dirección, velocidad, rachas y variaciones.
+3. **Visibilidad y RVR:** ¿hay operaciones con baja visibilidad?
+4. **Tiempo presente:** ¿algún fenómeno peligroso?
+5. **Nubes:** ¿dónde está el techo? ¿hay CB o TCU?
+6. **Temperatura y punto de rocío:** ¿riesgo de niebla o de engelamiento?
+7. **QNH.**
+8. **Suplementaria y tendencia:** ¿mejora o empeora?
+
+Todos los informes de esta lección son **ejemplos didácticos**: tienen un formato válido, pero no son observaciones reales.
+
+## 1. Buen tiempo en Madrid
+
+<MetarBreakdown parts={[
+  ["LEMD", "Madrid-Barajas"],
+  ["121830Z", "Día 12, 18:30 UTC"],
+  ["24012KT", "Viento de 240° a 12 nudos"],
+  ["9999", "Visibilidad de 10 km o más"],
+  ["SCT030", "Nubes dispersas a 3000 ft (sin techo)"],
+  ["18/10", "18 °C, punto de rocío 10 °C"],
+  ["Q1013", "QNH 1013 hPa"],
+  ["NOSIG", "Sin cambios significativos en 2 horas"]
+]} />
+
+**En palabras:** viento moderado del suroeste, buena visibilidad, algunas nubes a 3000 ft, sin fenómenos y sin cambios previstos.
+
+## 2. Lluvia y nubes bajas en Santiago
+
+<MetarBreakdown parts={[
+  ["LEST", "Santiago"],
+  ["130630Z", "Día 13, 06:30 UTC"],
+  ["21018KT", "Viento de 210° a 18 nudos"],
+  ["1200", "Visibilidad 1200 m"],
+  ["R35/1100U", "RVR pista 35: 1100 m, mejorando"],
+  ["RA", "Lluvia moderada"],
+  ["BR", "Neblina"],
+  ["SCT004", "Nubes dispersas a 400 ft"],
+  ["BKN008", "Capa nubosa a 800 ft: techo de 800 ft"],
+  ["12/12", "12 °C, punto de rocío 12 °C (aire saturado)"],
+  ["Q1009", "QNH 1009 hPa"],
+  ["RETSRA", "Tormenta con lluvia reciente"]
+]} />
+
+**En palabras:** viento del sur-suroeste, lluvia con neblina, visibilidad reducida, techo muy bajo a 800 ft y aire saturado. Hubo tormenta en la última hora.
+
+## 3. Un SPECI por tormenta en Vigo
+
+<MetarBreakdown parts={[
+  ["SPECI", "Informe especial"],
+  ["LEVX", "Vigo"],
+  ["131215Z", "Día 13, 12:15 UTC"],
+  ["25025G38KT", "Viento de 250° a 25 nudos con rachas de 38"],
+  ["220V290", "Dirección variando entre 220° y 290°"],
+  ["3000", "Visibilidad 3000 m"],
+  ["+TSRA", "Tormenta con lluvia fuerte"],
+  ["BKN015CB", "Cumulonimbos (5–7 octas) a 1500 ft"],
+  ["15/13", "15 °C, punto de rocío 13 °C"],
+  ["Q1004", "QNH 1004 hPa"]
+]} />
+
+**En palabras:** se emitió un informe especial porque empezó una tormenta fuerte con cumulonimbos, viento racheado y visibilidad reducida. Condiciones peligrosas.
+
+## 4. Niebla en Londres-Heathrow
+
+<MetarBreakdown parts={[
+  ["EGLL", "Londres-Heathrow"],
+  ["130520Z", "Día 13, 05:20 UTC"],
+  ["AUTO", "Observación automática"],
+  ["00000KT", "Calma"],
+  ["0300", "Visibilidad 300 m"],
+  ["R27L/0450N", "RVR pista 27L: 450 m, sin cambios"],
+  ["R27R/0400D", "RVR pista 27R: 400 m, empeorando"],
+  ["FG", "Niebla"],
+  ["VV001", "Cielo oscurecido, visibilidad vertical 100 ft"],
+  ["05/05", "5 °C, punto de rocío 5 °C"],
+  ["Q1021", "QNH 1021 hPa"]
+]} />
+
+**En palabras:** niebla densa con viento en calma; solo los aviones y tripulaciones autorizados para operaciones con baja visibilidad podrían operar.
+
+## 5. Un METAR de Nueva York-JFK
+
+<MetarBreakdown parts={[
+  ["KJFK", "Nueva York-JFK"],
+  ["131451Z", "Día 13, 14:51 UTC"],
+  ["31008KT", "Viento de 310° a 8 nudos"],
+  ["10SM", "Visibilidad de 10 millas terrestres o más"],
+  ["FEW050", "Nubes escasas a 5000 ft"],
+  ["BKN250", "Capa nubosa a 25 000 ft"],
+  ["08/M03", "8 °C, punto de rocío −3 °C"],
+  ["A3012", "Altímetro 30,12 inHg"],
+  ["RMK", "Comienzo de las observaciones"],
+  ["AO2", "Estación automática con discriminador de precipitación"],
+  ["SLP199", "Presión al nivel del mar 1019,9 hPa"],
+  ["T00831028", "Temperatura 8,3 °C, punto de rocío −2,8 °C"]
+]} />
+
+**En palabras:** buen tiempo, aire seco, nubes altas. Fíjate en las millas, las pulgadas de mercurio y la sección `RMK`.
+
+<Callout type="official-procedure" label="Uso real">
+Para planificar un vuelo real se usan los informes oficiales vigentes, junto con el TAF, los NOTAM y los procedimientos del operador. Este curso es material educativo.
+</Callout>

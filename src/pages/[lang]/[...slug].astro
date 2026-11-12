@@ -3,6 +3,7 @@
  * Generates every page in every language:
  *  - registered pages from the route registry (src/i18n/routes.js)
  *  - one page per dictionary entry under the dictionary section
+ *  - one page per course and per lesson under the academy section
  * Adding a page = register its key + create its view + add it to VIEWS.
  */
 import { getCollection } from 'astro:content';
@@ -16,6 +17,9 @@ import Legal from '../../views/Legal.astro';
 import Dictionary from '../../views/Dictionary.astro';
 import Acronyms from '../../views/Acronyms.astro';
 import DictionaryEntry from '../../views/DictionaryEntry.astro';
+import Academy from '../../views/Academy.astro';
+import Course from '../../views/Course.astro';
+import Lesson from '../../views/Lesson.astro';
 
 const VIEWS = {
   home: Home,
@@ -26,10 +30,14 @@ const VIEWS = {
   dictionary: Dictionary,
   acronyms: Acronyms,
   dictionaryEntry: DictionaryEntry,
+  academy: Academy,
+  course: Course,
+  lesson: Lesson,
 };
 
 export async function getStaticPaths() {
   const entries = await getCollection('dictionary');
+  const courses = await getCollection('courses');
   return LOCALES.flatMap((lang) => [
     ...routeKeys().map((routeKey) => ({
       params: { lang, slug: ROUTES[routeKey].slug[lang] || undefined },
@@ -39,12 +47,22 @@ export async function getStaticPaths() {
       params: { lang, slug: `${ROUTES.dictionary.slug[lang]}/${entry.id}` },
       props: { routeKey: 'dictionaryEntry', entryId: entry.id },
     })),
+    ...courses.flatMap((course) => [
+      {
+        params: { lang, slug: `${ROUTES.academy.slug[lang]}/${course.id}` },
+        props: { routeKey: 'course', courseId: course.id },
+      },
+      ...course.data.lessons.map((lessonId) => ({
+        params: { lang, slug: `${ROUTES.academy.slug[lang]}/${course.id}/${lessonId}` },
+        props: { routeKey: 'lesson', courseId: course.id, lessonId },
+      })),
+    ]),
   ]);
 }
 
 const { lang } = Astro.params;
-const { routeKey, entryId } = Astro.props;
+const { routeKey, ...rest } = Astro.props;
 const View = VIEWS[routeKey];
 if (!View) throw new Error(`No view registered for route "${routeKey}"`);
 ---
-<View lang={lang} routeKey={routeKey} entryId={entryId} />
+<View lang={lang} routeKey={routeKey} {...rest} />

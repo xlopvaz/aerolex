@@ -1,0 +1,63 @@
+---
+lesson: wind
+course: metar-speci
+lang: en
+title: "Wind"
+summary: "Direction and speed, gusts, variable wind, direction variation and calm."
+objectives:
+  - "Decode wind direction and speed"
+  - "Recognise gusts (G), variable wind (VRB) and the variation group (V)"
+  - "Know why METAR wind is true and tower wind is magnetic"
+minutes: 10
+terms: [crosswind, runway, atis]
+quiz: metar-speci-03
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## The basic group: `dddffKT`
+
+- `ddd`: direction the wind is blowing **from**, in degrees true, rounded to the nearest ten.
+- `ff`: mean speed.
+- `KT`: unit, knots. Some countries use metres per second (`MPS`).
+
+`24012KT` means wind **from** 240° (south-west) at 12 knots. Careful: a 240° wind comes from the south-west and pushes towards the north-east.
+
+Under ICAO rules, direction and speed are **averages over the 10 minutes** before the observation.
+
+## Gusts: `G`
+
+When gusts exceed the mean speed by **10 knots or more**, they are added with a `G`:
+
+<MetarBreakdown parts={[
+  ["03015G27KT", "Wind from 030° at 15 knots, gusting 27 knots"],
+  ["350V060", "Direction varying between 350° and 060°"]
+]} />
+
+## Direction variation: `dddVddd`
+
+If the direction varies by **60° or more but less than 180°** and the mean speed is **3 knots or more**, a group with the two extremes is added, such as `350V060`.
+
+## Variable wind: `VRB`
+
+`VRB` replaces the direction when:
+
+- the direction varies by 60° or more and the mean speed is **less than 3 knots** (`VRB02KT`), or
+- the variation is **180° or more**, or a single direction cannot be determined (for example, with a thunderstorm over the aerodrome).
+
+## Calm: `00000KT`
+
+When there is no wind, the group is `00000KT`.
+
+<Callout type="caution" label="Caution: true vs magnetic">
+In a METAR the wind is given relative to **true north**. The wind given by the tower or the <Term id="atis" /> for take-off and landing, however, is relative to **magnetic north**, like the numbering of the <Term id="runway" />. In Spain the difference is currently small, but in other parts of the world it can be large.
+</Callout>
+
+## Why does it matter so much?
+
+Aircraft take off and land **into the wind** whenever they can, because they then need less runway. Each aircraft also has a <Term id="crosswind" /> limit that must not be exceeded. With the METAR wind and the runway orientation, the pilot estimates those components.
+
+<Callout type="regional-diff" label="ICAO / US">
+In US METARs the mean wind is averaged over **2 minutes**, and `VRB` is used when the direction is variable with a speed of **6 knots or less**.
+</Callout>

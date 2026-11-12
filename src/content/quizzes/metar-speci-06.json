@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuántas octas cubre una capa BKN?",
+        "en": "How many oktas does a BKN layer cover?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1–2",
+            "en": "1–2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3–4",
+            "en": "3–4"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5–7",
+            "en": "5–7"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "8",
+            "en": "8"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "FEW 1–2, SCT 3–4, BKN 5–7, OVC 8.",
+        "en": "FEW 1–2, SCT 3–4, BKN 5–7, OVC 8."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Dónde está el techo de nubes?",
+        "en": "Where is the ceiling?"
+      },
+      "code": "FEW007 SCT018 BKN040",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A 700 ft",
+            "en": "At 700 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A 1800 ft",
+            "en": "At 1,800 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A 4000 ft",
+            "en": "At 4,000 ft"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El techo es la capa más baja BKN u OVC: BKN040, a 4000 ft.",
+        "en": "The ceiling is the lowest BKN or OVC layer: BKN040, at 4,000 ft."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué significa VV002?",
+        "en": "What does VV002 mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Visibilidad variable de 200 m",
+            "en": "Variable visibility of 200 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cielo oscurecido con visibilidad vertical de 200 ft",
+            "en": "Sky obscured, vertical visibility 200 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nubes escasas a 200 ft",
+            "en": "Few clouds at 200 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "VV se usa cuando no se ve el cielo (por ejemplo, con niebla) y da la visibilidad vertical en cientos de pies.",
+        "en": "VV is used when the sky cannot be seen (e.g. in fog) and gives vertical visibility in hundreds of feet."
+      }
+    }
+  ]
+}

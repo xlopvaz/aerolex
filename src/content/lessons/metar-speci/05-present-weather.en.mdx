@@ -1,0 +1,85 @@
+---
+lesson: present-weather
+course: metar-speci
+lang: en
+title: "Present weather"
+summary: "Intensity, proximity, descriptors and phenomena: RA, SN, DZ, FG, BR, TS, SH, FZ, SQ, GR, GS…"
+objectives:
+  - "Build and read a present-weather group"
+  - "Tell fog (FG) from mist (BR)"
+  - "Recognise the phenomena most dangerous to aviation"
+minutes: 12
+terms: [metar, rvr]
+quiz: metar-speci-05
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## How the group is built
+
+Each phenomenon is written by combining, in this order:
+
+**intensity or proximity** + **descriptor** + **phenomenon**
+
+| Intensity / proximity | Meaning |
+|---|---|
+| `-` | Light |
+| *(no sign)* | Moderate |
+| `+` | Heavy |
+| `VC` | In the vicinity (roughly 8 to 16 km from the aerodrome) |
+
+| Descriptor | Meaning |
+|---|---|
+| `MI` | Shallow, e.g. shallow fog |
+| `BC` | Patches |
+| `PR` | Partial |
+| `DR` | Low drifting |
+| `BL` | Blowing |
+| `SH` | Shower(s) |
+| `TS` | Thunderstorm |
+| `FZ` | Freezing (supercooled droplets) |
+
+## Phenomena
+
+| Precipitation | | Obscuration | | Other | |
+|---|---|---|---|---|---|
+| `DZ` | Drizzle | `BR` | Mist | `PO` | Dust/sand whirls |
+| `RA` | Rain | `FG` | Fog | `SQ` | Squall |
+| `SN` | Snow | `FU` | Smoke | `FC` | Funnel cloud |
+| `SG` | Snow grains | `VA` | Volcanic ash | `SS` | Sandstorm |
+| `PL` | Ice pellets | `DU` | Widespread dust | `DS` | Duststorm |
+| `GR` | Hail | `SA` | Sand | | |
+| `GS` | Small hail / snow pellets | `HZ` | Haze | | |
+| `UP` | Unknown precipitation (automatic) | | | | |
+
+## Examples
+
+<MetarBreakdown parts={[
+  ["-RA", "Light rain"],
+  ["+TSRA", "Thunderstorm with heavy rain"],
+  ["SHSN", "Moderate snow showers"],
+  ["FZFG", "Freezing fog"],
+  ["BCFG", "Fog patches"],
+  ["VCSH", "Showers in the vicinity"],
+  ["RA BR", "Moderate rain and mist"]
+]} />
+
+## Fog or mist
+
+- `BR` (mist): visibility **between 1,000 and 5,000 m**.
+- `FG` (fog): visibility **below 1,000 m**.
+
+So `0700 FG` is consistent, but `6000 FG` would not be.
+
+## Some important details
+
+- `TS` on its own, without precipitation, means thunder is heard but it isn't raining at the aerodrome.
+- `FZ` is only combined with `FG`, `DZ` and `RA`: it indicates supercooled droplets that freeze on contact with the aircraft. **Icing risk.**
+- `GR` is hail of 5 mm or more; `GS`, smaller than 5 mm.
+
+<Callout type="warning" label="Warning">
+`TS`, `+TSRA`, `GR`, `SQ`, `FC`, `FZRA`/`FZDZ` and `VA` indicate phenomena that are especially dangerous to aviation: thunderstorms, hail, squalls, icing or volcanic ash. Their presence shapes take-off, landing and routing decisions.
+</Callout>
+
+If there is no significant phenomenon, the present-weather group **does not appear**.

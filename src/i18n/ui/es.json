@@ -21,7 +21,8 @@
     "styleguide": "Sistema de diseño",
     "legal": "Aviso legal y privacidad",
     "dictionary": "Diccionario",
-    "acronyms": "Abreviaturas y acrónimos"
+    "acronyms": "Abreviaturas y acrónimos",
+    "academy": "Academia"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -94,7 +95,7 @@
     "title": "Tu panel",
     "lead": "Tu progreso y tus preferencias se guardan solo en este navegador. No se envía nada a ningún servidor.",
     "statsTitle": "Estadísticas de aprendizaje",
-    "statsEmpty": "Las lecciones y los cuestionarios llegan en la Fase 3. Tus XP, tu racha y tus lecciones completadas aparecerán aquí automáticamente.",
+    "statsEmpty": "Las lecciones completadas se cuentan a medida que estudias en la Academia. Los XP, las rachas y las insignias llegan en la Fase 5.",
     "xp": "Puntos XP",
     "streak": "Racha de días",
     "bestStreak": "Mejor racha",
@@ -319,5 +320,54 @@
     "handbook": "Manual",
     "aip": "AIP",
     "web": "Página web"
+  },
+  "levels": {
+    "beginner": "Beginner · Inicial",
+    "elementary": "Elementary · Básico",
+    "intermediate": "Intermediate · Intermedio",
+    "advanced": "Advanced · Avanzado",
+    "professional": "Professional · Profesional"
+  },
+  "academy": {
+    "metaTitle": "Academia aeronáutica · AeroLex",
+    "metaDescription": "Itinerarios y cursos en español e inglés, desde cero hasta nivel profesional.",
+    "title": "Academia aeronáutica",
+    "lead": "Itinerarios que empiezan desde cero y avanzan paso a paso. Cada lección enlaza los términos clave con el diccionario y termina con práctica.",
+    "pathsTitle": "Itinerarios de aprendizaje",
+    "coursesCount": "{count} cursos",
+    "oneCourse": "1 curso",
+    "lessonsCount": "{count} lecciones",
+    "minutes": "{count} min",
+    "level": "Nivel",
+    "objectives": "Objetivos de aprendizaje",
+    "lessons": "Lecciones",
+    "start": "Empezar el curso",
+    "continue": "Continuar",
+    "review": "Repasar",
+    "completed": "Completada",
+    "notStarted": "Sin empezar",
+    "progress": "Progreso del curso",
+    "lessonOf": "Lección {n} de {total}",
+    "previous": "Lección anterior",
+    "next": "Lección siguiente",
+    "backToCourse": "Volver al curso",
+    "markComplete": "Marcar como completada",
+    "markIncomplete": "Marcar como no completada",
+    "completedOn": "Completada",
+    "keyTerms": "Términos clave de esta lección",
+    "sources": "Fuentes",
+    "didacticExample": "Ejemplo didáctico",
+    "educational": "Material educativo. Los informes meteorológicos oficiales deben interpretarse con la normativa vigente y los procedimientos del operador.",
+    "courseSources": "Bibliografía del curso",
+    "draftNotice": "Este curso es un borrador: redactado con fuentes, pendiente de revisión experta.",
+    "inThisLesson": "En esta lección",
+    "finished": "¡Curso completado! Has terminado todas las lecciones."
+  },
+  "quiz": {
+    "title": "Comprueba lo que has aprendido",
+    "correct": "¡Correcto!",
+    "incorrect": "No exactamente.",
+    "score": "{correct}/{total} correctas",
+    "retryWrong": "Repetir las que he fallado"
   }
 }

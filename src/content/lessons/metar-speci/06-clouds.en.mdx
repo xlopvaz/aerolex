@@ -1,0 +1,70 @@
+---
+lesson: clouds
+course: metar-speci
+lang: en
+title: "Clouds"
+summary: "Amount in oktas (FEW, SCT, BKN, OVC), height, CB and TCU, vertical visibility, NSC, NCD, SKC, CLR and CAVOK."
+objectives:
+  - "Decode the amount and height of each layer"
+  - "Identify when there is a ceiling"
+  - "Recognise NSC, NCD, SKC, CLR, VV and CAVOK"
+minutes: 12
+terms: [ceiling, cavok, vfr]
+quiz: metar-speci-06
+sources: [icao-annex-3, wmo-306, faa-awh, icao-annex-2]
+review:
+  status: draft
+---
+
+## Amount: oktas
+
+The sky is imagined as divided into **eight parts (oktas)**. The amount of each layer is coded as:
+
+| Code | Meaning | Coverage |
+|---|---|---|
+| `FEW` | Few | 1–2 oktas |
+| `SCT` | Scattered | 3–4 oktas |
+| `BKN` | Broken | 5–7 oktas |
+| `OVC` | Overcast | 8 oktas |
+
+## Height of the base
+
+Three digits in **hundreds of feet** above aerodrome elevation:
+
+- `SCT030` → 3,000 ft.
+- `BKN008` → 800 ft.
+- `OVC120` → 12,000 ft.
+
+## Type: CB and TCU only
+
+Only two cloud types are reported, because they are hazardous: `CB` (**cumulonimbus**, the thunderstorm cloud) and `TCU` (**towering cumulus**).
+
+<MetarBreakdown parts={[
+  ["FEW010", "Few clouds at 1,000 ft"],
+  ["SCT025CB", "Scattered cumulonimbus at 2,500 ft"],
+  ["BKN040", "Broken layer (5–7 oktas) at 4,000 ft"]
+]} />
+
+Layers are listed **from the bottom up**. As a rule, the lowest layer is reported even if it is few, then the next layer covering more than 2 oktas, then the next covering more than 4 oktas, plus any CB or TCU.
+
+## Ceiling
+
+The <Term id="ceiling" /> is the height of the base of the lowest **BKN or OVC** layer (below 20,000 ft). In the example above, the ceiling is 4,000 ft. It is key for <Term id="vfr" /> flight and for approach minima.
+
+## When there is no cloud to report
+
+| Code | Meaning |
+|---|---|
+| `NSC` | No significant cloud: none below 5,000 ft (or the highest minimum sector altitude) and no CB or TCU |
+| `NCD` | No cloud detected (automatic stations) |
+| `SKC` | Sky clear (used by some States) |
+| `CLR` | US automatic stations: no cloud detected below 12,000 ft |
+| `VV002` | Sky obscured (e.g. by fog): vertical visibility 200 ft |
+
+## CAVOK
+
+<Term id="cavok" /> replaces visibility, present weather and cloud all at once when visibility is 10 km or more, there is no significant cloud and no CB/TCU, and no significant weather. It does **not** mean a completely clear sky.
+
+<Callout type="caution" label="Caution">
+METAR heights are **above the aerodrome**, not above sea level. At high-elevation airports the difference matters when comparing them with altitudes on charts.
+</Callout>

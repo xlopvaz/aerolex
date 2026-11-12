@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué significa RERA?",
+        "en": "What does RERA mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Está lloviendo ahora",
+            "en": "It is raining now"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ha llovido recientemente, pero ya no llueve",
+            "en": "It rained recently but has stopped"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se espera lluvia",
+            "en": "Rain is expected"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "RE indica tiempo reciente que ya no se observa en el momento del informe.",
+        "en": "RE indicates recent weather no longer observed at the time of the report."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Para cuánto tiempo es válido un pronóstico de tendencia como NOSIG?",
+        "en": "How long is a trend forecast such as NOSIG valid for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2 horas",
+            "en": "2 hours"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "24 horas",
+            "en": "24 hours"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La tendencia cubre las 2 horas siguientes a la observación.",
+        "en": "The trend covers the 2 hours after the observation."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué indica TEMPO?",
+        "en": "What does TEMPO indicate?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un cambio permanente",
+            "en": "A permanent change"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Fluctuaciones temporales que duran menos de una hora cada vez",
+            "en": "Temporary fluctuations each lasting less than an hour"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La temperatura",
+            "en": "The temperature"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "BECMG es un cambio que se mantiene; TEMPO, fluctuaciones temporales.",
+        "en": "BECMG is a lasting change; TEMPO, temporary fluctuations."
+      }
+    }
+  ]
+}

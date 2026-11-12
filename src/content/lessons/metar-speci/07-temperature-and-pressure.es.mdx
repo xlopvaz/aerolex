@@ -1,0 +1,52 @@
+---
+lesson: temperature-and-pressure
+course: metar-speci
+lang: es
+title: "Temperatura, punto de rocío y presión"
+summary: "El grupo TT/TdTd, los valores bajo cero y el QNH en hectopascales o pulgadas de mercurio."
+objectives:
+  - "Leer temperatura y punto de rocío, incluidos los valores negativos"
+  - "Relacionar la diferencia entre ambos con el riesgo de niebla"
+  - "Decodificar el QNH en hPa (Q) y en inHg (A)"
+minutes: 8
+terms: [dew-point, qnh, qfe, altimeter]
+quiz: metar-speci-07
+sources: [icao-annex-3, wmo-306, faa-awh, icao-doc-8168]
+review:
+  status: draft
+---
+
+## Temperatura y punto de rocío: `TT/TdTd`
+
+Dos números en **grados Celsius enteros** separados por una barra: primero la temperatura del aire y después el <Term id="dew-point" />. Los valores bajo cero llevan una `M` (*minus*) delante.
+
+<MetarBreakdown parts={[
+  ["18/10", "Temperatura 18 °C, punto de rocío 10 °C"],
+  ["02/M01", "Temperatura 2 °C, punto de rocío −1 °C"],
+  ["M05/M08", "Temperatura −5 °C, punto de rocío −8 °C"]
+]} />
+
+## La diferencia importa
+
+Cuanto **más se acercan** la temperatura y el punto de rocío, más cerca está el aire de saturarse. Una diferencia de muy pocos grados, sobre todo al anochecer con cielo despejado y viento flojo, anuncia posible **niebla o nubes bajas**.
+
+La temperatura también influye en las **performances**: con calor el aire es menos denso, los motores rinden menos y el avión necesita más pista para despegar.
+
+## Presión: el QNH
+
+El último grupo obligatorio es el <Term id="qnh" />, la presión que hay que ajustar en el <Term id="altimeter" /> para que indique la altitud sobre el nivel medio del mar.
+
+- `Q1013` → 1013 hPa. Según la ICAO se redondea **por defecto** al hectopascal entero.
+- `Q0998` → 998 hPa (se añade un cero delante para tener cuatro cifras).
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+En EE. UU. el reglaje se da en **pulgadas de mercurio**, en centésimas: `A2992` = 29,92 inHg, que equivale aproximadamente a 1013 hPa (la atmósfera estándar).
+</Callout>
+
+## ¿Por qué hay que ajustarlo bien?
+
+El altímetro mide presión, no distancia al suelo. Si vuelas de una zona de alta presión a otra de baja sin actualizar el QNH, el altímetro **indica más altura de la real**: estás más bajo de lo que crees. De ahí la regla clásica en inglés: *"from high to low, look out below"*. Cerca del nivel del mar, cada hectopascal equivale aproximadamente a 27–30 ft.
+
+<Callout type="info" label="QNH y QFE">
+Con el <Term id="qfe" /> ajustado, el altímetro marca la altura sobre el aeródromo (cero en la pista). El METAR da el QNH; el QFE se obtiene de otras fuentes, como el ATIS o la torre, donde se use.
+</Callout>

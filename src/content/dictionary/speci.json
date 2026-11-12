@@ -1,0 +1,27 @@
+{
+  "type": "abbreviation",
+  "term": { "en": "SPECI", "es": "SPECI" },
+  "abbreviation": null,
+  "expansion": { "en": "Aerodrome special meteorological report", "es": "Informe meteorológico especial de aeródromo" },
+  "categories": ["meteorology", "airport-operations"],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A weather report for an aerodrome issued between routine METARs when one or more elements change in a way that meets the criteria set by the meteorological authority. It uses the same code as the METAR.",
+    "es": "Informe meteorológico de un aeródromo que se emite entre dos METAR ordinarios cuando uno o más elementos cambian de forma que cumplen los criterios fijados por la autoridad meteorológica. Usa el mismo código que el METAR."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "An 'extra' METAR, published as soon as the weather changes significantly, without waiting for the next routine report.",
+    "es": "Un METAR «extra», que se publica en cuanto el tiempo cambia de forma significativa, sin esperar al siguiente informe ordinario."
+  },
+  "example": {
+    "en": "SPECI LEVX 131215Z 25025G38KT 220V290 3000 +TSRA BKN015CB 15/13 Q1004",
+    "es": "SPECI LEVX 131215Z 25025G38KT 220V290 3000 +TSRA BKN015CB 15/13 Q1004"
+  },
+  "pronunciation": { "en": "SPEE-see", "es": "spé-si" },
+  "synonyms": { "en": [], "es": [] },
+  "related": ["metar", "taf"],
+  "regionalNote": null,
+  "sources": ["icao-annex-3", "wmo-306"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null }
+}

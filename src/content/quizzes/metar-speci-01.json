@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué describe un METAR?",
+        "en": "What does a METAR describe?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El tiempo previsto para las próximas 24 horas",
+            "en": "The weather forecast for the next 24 hours"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El tiempo observado en un aeródromo en un momento dado",
+            "en": "The weather observed at an aerodrome at a given time"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los avisos de NOTAM del aeropuerto",
+            "en": "The airport's NOTAMs"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El METAR es un informe de observación. Los pronósticos de aeródromo son los TAF.",
+        "en": "A METAR is an observation report. Aerodrome forecasts are TAFs."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cuándo se emite un SPECI?",
+        "en": "When is a SPECI issued?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cada 30 minutos, siempre",
+            "en": "Every 30 minutes, always"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo de noche",
+            "en": "Only at night"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Entre dos METAR, cuando el tiempo cambia de forma significativa",
+            "en": "Between two METARs, when the weather changes significantly"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El SPECI es un informe especial con el mismo formato que el METAR, emitido cuando se cumplen ciertos criterios de cambio.",
+        "en": "A SPECI is a special report with the METAR format, issued when certain change criteria are met."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Si en un aeródromo no llueve ni hay otro fenómeno, ¿qué pasa con el grupo de tiempo presente?",
+        "en": "If there is no rain or other phenomenon at an aerodrome, what happens to the present-weather group?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aparece como NIL",
+            "en": "It appears as NIL"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Simplemente no aparece",
+            "en": "It simply does not appear"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se escribe 0000",
+            "en": "It is written 0000"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los grupos sin nada que notificar se omiten; el orden de los demás no cambia.",
+        "en": "Groups with nothing to report are omitted; the order of the others does not change."
+      }
+    }
+  ]
+}

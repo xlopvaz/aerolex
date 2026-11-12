@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué significa +TSRA?",
+        "en": "What does +TSRA mean?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Lluvia débil con tormenta lejana",
+            "en": "Light rain with a distant thunderstorm"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tormenta con lluvia fuerte",
+            "en": "Thunderstorm with heavy rain"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Chubascos de lluvia moderados",
+            "en": "Moderate rain showers"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "+ es fuerte, TS tormenta y RA lluvia.",
+        "en": "+ is heavy, TS thunderstorm and RA rain."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Con una visibilidad de 3000 m por gotas de agua en suspensión, el código correcto es…",
+        "en": "With visibility of 3,000 m due to suspended water droplets, the correct code is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "FG",
+            "en": "FG"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "BR",
+            "en": "BR"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "HZ",
+            "en": "HZ"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "BR (neblina) se usa con visibilidad entre 1000 y 5000 m; FG (niebla), por debajo de 1000 m. HZ es calima (partículas secas).",
+        "en": "BR (mist) is used with visibility between 1,000 and 5,000 m; FG (fog), below 1,000 m. HZ is haze (dry particles)."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué indica FZ delante de FG, DZ o RA?",
+        "en": "What does FZ in front of FG, DZ or RA indicate?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que el fenómeno es débil",
+            "en": "That the phenomenon is light"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Gotas subfundidas que se congelan al impactar: riesgo de engelamiento",
+            "en": "Supercooled droplets that freeze on impact: icing risk"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que el fenómeno está en las proximidades",
+            "en": "That the phenomenon is in the vicinity"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "FZ significa engelante. Las proximidades se indican con VC.",
+        "en": "FZ means freezing. Vicinity is indicated with VC."
+      }
+    }
+  ]
+}

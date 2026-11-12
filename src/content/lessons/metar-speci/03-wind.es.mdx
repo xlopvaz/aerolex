@@ -1,0 +1,63 @@
+---
+lesson: wind
+course: metar-speci
+lang: es
+title: "El viento"
+summary: "Dirección y velocidad, rachas, viento variable, variaciones de dirección y calma."
+objectives:
+  - "Decodificar dirección y velocidad del viento"
+  - "Reconocer rachas (G), viento variable (VRB) y el grupo de variación (V)"
+  - "Saber por qué el viento del METAR es verdadero y el de la torre, magnético"
+minutes: 10
+terms: [crosswind, runway, atis]
+quiz: metar-speci-03
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## El grupo básico: `dddffKT`
+
+- `ddd`: dirección **desde la que sopla** el viento, en grados verdaderos, redondeada a la decena más próxima.
+- `ff`: velocidad media.
+- `KT`: unidad, nudos. Algunos países usan metros por segundo (`MPS`).
+
+`24012KT` significa viento **de** 240° (del suroeste) a 12 nudos. Ojo: un viento de 240° viene del suroeste y empuja hacia el noreste.
+
+Según la ICAO, la dirección y la velocidad son **promedios de los 10 minutos** anteriores a la observación.
+
+## Rachas: `G`
+
+Cuando las rachas superan la velocidad media en **10 nudos o más**, se añaden con una `G` (*gust*):
+
+<MetarBreakdown parts={[
+  ["03015G27KT", "Viento de 030° a 15 nudos con rachas de 27 nudos"],
+  ["350V060", "La dirección varía entre 350° y 060°"]
+]} />
+
+## Variaciones de dirección: `dddVddd`
+
+Si la dirección varía **60° o más pero menos de 180°** y la velocidad media es de **3 nudos o más**, se añade un grupo con los dos extremos, como `350V060`.
+
+## Viento variable: `VRB`
+
+Se usa `VRB` en lugar de una dirección cuando:
+
+- la dirección varía 60° o más y la velocidad media es **inferior a 3 nudos** (`VRB02KT`), o
+- la variación es de **180° o más**, o no es posible fijar una dirección única (por ejemplo, con una tormenta sobre el aeródromo).
+
+## Calma: `00000KT`
+
+Cuando no hay viento, el grupo es `00000KT`.
+
+<Callout type="caution" label="Precaución: verdadero frente a magnético">
+En el METAR el viento se da con respecto al **norte verdadero**. En cambio, el viento que comunica la torre o el <Term id="atis" /> para despegar y aterrizar se da con respecto al **norte magnético**, igual que la numeración de la <Term id="runway" />. En España la diferencia actual es pequeña, pero en otras zonas del mundo puede ser grande.
+</Callout>
+
+## ¿Por qué importa tanto?
+
+Los aviones despegan y aterrizan **contra el viento** siempre que pueden, porque así necesitan menos pista. Además, cada avión tiene un límite de <Term id="crosswind" /> (componente cruzada) que no debe superarse. Con el viento del METAR y la orientación de la pista, el piloto estima esas componentes.
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+En los METAR de EE. UU. el viento medio se calcula sobre **2 minutos**, y `VRB` se usa cuando la dirección es variable con una velocidad de **6 nudos o menos**.
+</Callout>

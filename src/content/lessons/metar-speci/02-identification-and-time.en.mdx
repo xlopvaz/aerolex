@@ -1,0 +1,72 @@
+---
+lesson: identification-and-time
+course: metar-speci
+lang: en
+title: "Identification, date and time"
+summary: "The report type, the ICAO location indicator, the date-time group and the AUTO, COR and NIL modifiers."
+objectives:
+  - "Read the ICAO location indicator and tell it apart from the IATA code"
+  - "Convert the date-time group to local time"
+  - "Recognise the AUTO, COR and NIL modifiers"
+minutes: 6
+terms: [metar, speci, utc]
+quiz: metar-speci-02
+sources: [icao-annex-3, wmo-306, enaire-aip-gen-2-2]
+review:
+  status: draft
+---
+
+## The ICAO location indicator
+
+After the report type (`METAR` or `SPECI`) comes the **ICAO location indicator**: four letters that identify the aerodrome. It is not the three-letter code on your boarding pass (that is the IATA code).
+
+| Airport | ICAO | IATA |
+|---|---|---|
+| Madrid-Barajas | `LEMD` | MAD |
+| Barcelona-El Prat | `LEBL` | BCN |
+| Santiago-Rosalía de Castro | `LEST` | SCQ |
+| Vigo | `LEVX` | VGO |
+| A Coruña | `LECO` | LCG |
+| London Heathrow | `EGLL` | LHR |
+| Paris-Charles de Gaulle | `LFPG` | CDG |
+| New York JFK | `KJFK` | JFK |
+
+The **first letter** indicates a large region and the first two usually identify the country: `LE` is Spain, `LF` France, `EG` the United Kingdom, `ED` Germany, `LP` Portugal. In the contiguous United States indicators start with `K`.
+
+## Day and time: `DDHHMMZ`
+
+The date-time group has six digits and a `Z`:
+
+- `DD`: day of the month.
+- `HHMM`: hours and minutes of the observation.
+- `Z`: the time is in UTC (Zulu).
+
+The month and year are **not included**: they are implied.
+
+<MetarBreakdown parts={[
+  ["METAR", "Routine report"],
+  ["LEMD", "Madrid-Barajas"],
+  ["121830Z", "Day 12, at 18:30 UTC"]
+]} />
+
+In winter, mainland Spain is on UTC+1, so `121830Z` is 19:30 local time; in summer (UTC+2) it is 20:30. The Canary Islands are one hour behind the mainland.
+
+## Modifiers: AUTO, COR and NIL
+
+| Code | Where it appears | Meaning |
+|---|---|---|
+| `AUTO` | After the time | Fully automated report, with no human intervention |
+| `COR` | After the report type | Corrected report: it replaces an earlier one that contained an error |
+| `NIL` | Instead of the rest of the report | Missing report: no data |
+
+<MetarBreakdown parts={[
+  ["METAR", "Routine report"],
+  ["COR", "Corrected"],
+  ["LECO", "A Coruña"],
+  ["130630Z", "Day 13, 06:30 UTC"],
+  ["AUTO", "Automated observation"]
+]} caption="Didactic example of a header with modifiers." />
+
+<Callout type="tip" label="Tip">
+Always check **the time** before reading the rest: a METAR from two hours ago may not reflect the current weather. If there is a later SPECI, that one applies.
+</Callout>

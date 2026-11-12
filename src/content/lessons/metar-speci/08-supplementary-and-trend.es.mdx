@@ -1,0 +1,63 @@
+---
+lesson: supplementary-and-trend
+course: metar-speci
+lang: es
+title: "Información suplementaria y tendencia"
+summary: "Tiempo reciente (RE), cizalladura (WS), pronósticos de tendencia (NOSIG, BECMG, TEMPO) y las observaciones RMK de EE. UU."
+objectives:
+  - "Interpretar el tiempo reciente y los avisos de cizalladura"
+  - "Leer un pronóstico de tendencia con sus indicadores de hora"
+  - "Reconocer la sección RMK de los METAR de EE. UU."
+minutes: 10
+terms: [wind-shear, taf, metar]
+quiz: metar-speci-08
+sources: [icao-annex-3, wmo-306, faa-awh]
+review:
+  status: draft
+---
+
+## Tiempo reciente: `RE`
+
+Indica fenómenos significativos **observados desde el informe anterior (como máximo en la última hora)** que ya no están presentes en el momento de la observación. Se escriben con `RE` delante:
+
+- `RERA`: ha llovido recientemente.
+- `RETSRA`: ha habido tormenta con lluvia recientemente.
+- `RESN`: ha nevado recientemente.
+
+Es útil, por ejemplo, para saber que la pista puede estar mojada aunque ya no llueva.
+
+## Cizalladura: `WS`
+
+Si se ha notificado <Term id="wind-shear" /> en las trayectorias de despegue o de aproximación, se indica la pista afectada o todas:
+
+<MetarBreakdown parts={[
+  ["WS R24", "Cizalladura notificada en la pista 24"],
+  ["WS ALL RWY", "Cizalladura en todas las pistas"]
+]} />
+
+## Pronóstico de tendencia
+
+En muchos aeropuertos europeos, el METAR termina con un **pronóstico de tendencia** válido para las **2 horas** siguientes a la observación:
+
+| Código | Significado |
+|---|---|
+| `NOSIG` | No se esperan cambios significativos |
+| `BECMG` | *Becoming*: cambio que se espera que se alcance y se mantenga |
+| `TEMPO` | Fluctuaciones temporales que duran menos de una hora cada vez |
+| `FM` / `TL` / `AT` + hora | Desde / hasta / a las (HHMM UTC) |
+| `NSW` | Fin del tiempo significativo (*no significant weather*) |
+
+<MetarBreakdown parts={[
+  ["BECMG", "Cambio progresivo…"],
+  ["FM1900", "…a partir de las 19:00 UTC:"],
+  ["25015KT", "viento de 250° a 15 nudos"],
+  ["TEMPO", "Temporalmente:"],
+  ["3000", "visibilidad 3000 m"],
+  ["SHRA", "con chubascos de lluvia"]
+]} />
+
+Estos mismos indicadores se usan en el <Term id="taf" />, con periodos más largos.
+
+<Callout type="regional-diff" label="ICAO / EE. UU.">
+Los METAR de EE. UU. no llevan tendencia. En su lugar terminan con `RMK` (*remarks*), una sección de observaciones adicionales. Por ejemplo: `AO2` (estación automática con discriminador de precipitación), `SLP199` (presión al nivel del mar 1019,9 hPa) o `T00831028` (temperatura 8,3 °C y punto de rocío −2,8 °C, en décimas).
+</Callout>

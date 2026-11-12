@@ -1,0 +1,160 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import Button from '../components/ui/Button.astro';
+import Callout from '../components/ui/Callout.astro';
+import ProgressGlide from '../components/ui/ProgressGlide.astro';
+import { childAlternates, childHref, href, useT } from '../i18n/index.js';
+import { lessonKey } from '../lib/academy/progress.js';
+
+interface Props { lang: string; routeKey: any; courseId: string }
+const { lang, courseId } = Astro.props;
+const tr = useT(lang);
+const course = (await getEntry('courses', courseId))!;
+const c = course.data;
+const path = await getEntry('paths', c.path);
+const lessonDocs = await getCollection('lessons', (l) => l.data.course === courseId && l.data.lang === lang);
+const lessons = c.lessons.map((id, i) => {
+  const doc = lessonDocs.find((l) => l.data.lesson === id);
+  if (!doc) throw new Error(`Course ${courseId}: lesson "${id}" has no ${lang} version`);
+  return { id, n: i + 1, key: lessonKey(courseId, id), href: childHref('academy', `${courseId}/${id}`, lang), ...doc.data };
+});
+const minutes = lessons.reduce((n, l) => n + l.minutes, 0);
+const sources = await getCollection('sources');
+const courseSources = c.sources.map((id) => sources.find((s) => s.id === id)!.data);
+---
+<BaseLayout lang={lang} routeKey="academy" title={`${c.title[lang]} · AeroLex`} description={c.description[lang]} alt={childAlternates('academy', courseId)}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.academy'), href: href('academy', lang) }, { label: c.title[lang] }]} />
+      {path && <p class="eyebrow"><Icon name={path.data.icon} size={16} /> {path.data.title[lang]}</p>}
+      <h1>{c.title[lang]}</h1>
+      <p class="lead">{c.description[lang]}</p>
+      <div class="course__meta">
+        <Badge tone="primary">{tr(`levels.${c.level}`)}</Badge>
+        <Badge icon="book-open">{tr('academy.lessonsCount', { count: lessons.length })}</Badge>
+        <Badge icon="clock">{tr('academy.minutes', { count: minutes })}</Badge>
+        <Badge tone="amber" icon="pencil">{tr(`status.${c.review.status}`)}</Badge>
+      </div>
+    </div>
+  </header>
+
+  <div class="container course" data-course data-label-done={tr('academy.completed')} data-label-todo={tr('academy.notStarted')} data-lessons={JSON.stringify(lessons.map((l) => ({ key: l.key, href: l.href })))}>
+    <div class="course__main">
+      <div class="course__progress">
+        <ProgressGlide value={0} label={tr('academy.progress')} />
+        <Button href={lessons[0].href} icon="plane-takeoff" data-course-cta data-label-start={tr('academy.start')} data-label-continue={tr('academy.continue')} data-label-review={tr('academy.review')}>{tr('academy.start')}</Button>
+      </div>
+
+      <section>
+        <h2>{tr('academy.objectives')}</h2>
+        <ul class="course__objectives">
+          {c.objectives[lang].map((o) => <li><Icon name="target" size={18} /> <span>{o}</span></li>)}
+        </ul>
+      </section>
+
+      <section>
+        <h2>{tr('academy.lessons')}</h2>
+        <ol class="lesson-list">
+          {lessons.map((l) => (
+            <li data-lesson-row={l.key}>
+              <a href={l.href}>
+                <span class="lesson-list__n mono">{String(l.n).padStart(2, '0')}</span>
+                <span class="lesson-list__body">
+                  <span class="lesson-list__title">{l.title}</span>
+                  <span class="lesson-list__summary">{l.summary}</span>
+                </span>
+                <span class="lesson-list__min mono">{tr('academy.minutes', { count: l.minutes })}</span>
+                <span class="lesson-list__check" aria-hidden="true"><Icon name="circle-check" size={22} /></span>
+                <span class="visually-hidden" data-done-label>{tr('academy.notStarted')}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </div>
+
+    <aside class="course__side">
+      <Callout type="caution" label={tr('status.draft')}><p>{tr('academy.draftNotice')}</p></Callout>
+      <Callout type="official-procedure" label={tr('styleguide.calloutLabels.official-procedure')}><p>{tr('academy.educational')}</p></Callout>
+      <div class="side-box">
+        <h2 class="side-box__title">{tr('academy.courseSources')}</h2>
+        <ul class="side-box__list">
+          {courseSources.map((s) => <li><a href={s.url} rel="noopener">{s.publisher} — {s.title}</a></li>)}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { isLessonComplete } from '../lib/academy/progress.js';
+  const root = document.querySelector<HTMLElement>('[data-course]');
+  if (root) {
+    const store = getAppStore();
+    const lessons: { key: string; href: string }[] = JSON.parse(root.dataset.lessons!);
+    const cta = root.querySelector<HTMLAnchorElement>('[data-course-cta]')!;
+    const ctaText = cta.querySelector('span:last-of-type') ?? cta;
+    const doneLabel = [root.dataset.labelDone!, root.dataset.labelTodo!];
+    const render = (state: any) => {
+      const done = lessons.filter((l) => isLessonComplete(state, l.key));
+      const pct = Math.round((done.length / lessons.length) * 100);
+      const bar = root.querySelector<HTMLElement>('[role="progressbar"]')!;
+      bar.style.setProperty('--v', `${pct}%`);
+      bar.setAttribute('aria-valuenow', String(pct));
+      root.querySelector('.glide__value')!.textContent = `${pct}%`;
+      lessons.forEach((l) => {
+        const row = root.querySelector<HTMLElement>(`[data-lesson-row="${l.key}"]`)!;
+        const ok = isLessonComplete(state, l.key);
+        row.classList.toggle('is-done', ok);
+        row.querySelector('[data-done-label]')!.textContent = ok ? doneLabel[0] : doneLabel[1];
+      });
+      const next = lessons.find((l) => !isLessonComplete(state, l.key));
+      cta.href = (next ?? lessons[0]).href;
+      ctaText.textContent = done.length === 0 ? cta.dataset.labelStart! : next ? cta.dataset.labelContinue! : cta.dataset.labelReview!;
+    };
+    render(store.get());
+    store.subscribe(render);
+  }
+</script>
+
+<style>
+  .course__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+  .course { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: var(--space-7); padding-top: var(--space-6); align-items: start; }
+  .course section { margin-top: var(--space-6); }
+  .course__progress { display: grid; grid-template-columns: 1fr auto; gap: var(--space-5); align-items: end; padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .course__objectives { list-style: none; padding: 0; display: grid; gap: var(--space-2); }
+  .course__objectives li { display: flex; gap: var(--space-3); margin: 0; }
+  .course__objectives :global(svg) { color: var(--magenta); margin-top: 3px; }
+  .lesson-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
+  .lesson-list li { margin: 0; }
+  .lesson-list a {
+    display: grid; grid-template-columns: auto 1fr auto auto; gap: var(--space-4); align-items: center;
+    padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    background: var(--surface); color: var(--text); text-decoration: none;
+    transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+  }
+  .lesson-list a:hover { border-color: var(--primary); background: var(--surface-2); color: var(--text); }
+  .lesson-list__n { font-size: var(--text-lg); font-weight: 600; color: var(--cyan); }
+  .lesson-list__body { display: grid; gap: 2px; }
+  .lesson-list__title { font-weight: 600; }
+  .lesson-list__summary { color: var(--text-muted); font-size: var(--text-sm); }
+  .lesson-list__min { color: var(--text-muted); font-size: var(--text-xs); white-space: nowrap; }
+  .lesson-list__check { color: var(--border-strong); display: inline-flex; }
+  .lesson-list .is-done .lesson-list__check { color: var(--green); }
+  .lesson-list .is-done a { border-color: color-mix(in srgb, var(--green) 40%, var(--border)); }
+  .course__side { display: grid; gap: var(--space-4); position: sticky; top: calc(var(--header-h) + var(--space-4)); }
+  .side-box { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .side-box__title { font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-family: var(--font-mono); margin-bottom: var(--space-3); }
+  .side-box__list { padding-left: 1.1rem; margin: 0; font-size: var(--text-sm); }
+  @media (max-width: 960px) { .course { grid-template-columns: 1fr; } .course__side { position: static; } }
+  @media (max-width: 560px) {
+    .course__progress { grid-template-columns: 1fr; }
+    .lesson-list a { grid-template-columns: auto 1fr auto; }
+    .lesson-list__min { display: none; }
+  }
+</style>

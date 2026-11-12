@@ -1,0 +1,55 @@
+---
+/**
+ * Shows a didactic METAR/SPECI/TAF with each group colour-coded and explained.
+ *   <MetarBreakdown parts={[["LEMD", "Madrid-Barajas"], ["121830Z", "día 12, 18:30 UTC"], …]} />
+ * The explanations are written in the lesson's own language. This is a teaching aid, not a
+ * decoder: the interactive decoder is a separate tool (Phase 4).
+ */
+import Badge from '../ui/Badge.astro';
+import { t } from '../../i18n/index.js';
+import { langFromUrl } from '../../i18n/from-url.js';
+
+interface Props { parts: [string, string][]; caption?: string }
+const { parts, caption } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const tones = ['primary', 'cyan', 'magenta', 'green', 'amber', 'red'];
+---
+<figure class="mb">
+  <div class="mb__head">
+    <Badge tone="amber" icon="book-open">{t(lang, 'academy.didacticExample')}</Badge>
+    {caption && <figcaption>{caption}</figcaption>}
+  </div>
+  <p class="mb__code mono" aria-label={parts.map((p) => p[0]).join(' ')}>
+    {parts.map(([code], i) => <span class:list={['mb__tok', `mb--${tones[i % tones.length]}`]}><sup aria-hidden="true">{i + 1}</sup>{code}</span>)}
+  </p>
+  <dl class="mb__legend">
+    {parts.map(([code, text], i) => (
+      <div class:list={['mb__row', `mb--${tones[i % tones.length]}`]}>
+        <dt><span class="mb__n" aria-hidden="true">{i + 1}</span><code>{code}</code></dt>
+        <dd>{text}</dd>
+      </div>
+    ))}
+  </dl>
+</figure>
+
+<style>
+  .mb { margin: var(--space-5) 0; padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .mb__head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
+  figcaption { color: var(--text-muted); font-size: var(--text-sm); }
+  .mb--primary { --c: var(--primary); } .mb--cyan { --c: var(--cyan); } .mb--magenta { --c: var(--magenta); }
+  .mb--green { --c: var(--green); } .mb--amber { --c: var(--amber); } .mb--red { --c: var(--red); }
+  .mb__code {
+    display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin: 0 0 var(--space-4);
+    padding: var(--space-4); border-radius: var(--radius-md); background: var(--surface-2);
+    font-size: var(--text-lg); font-weight: 600; line-height: 1.9;
+  }
+  .mb__tok { position: relative; padding: 0 0.35rem; border-bottom: 3px solid var(--c); color: var(--text); }
+  .mb__tok sup { position: absolute; top: -0.9em; left: 0; font-size: 0.6rem; color: var(--c); }
+  .mb__legend { display: grid; gap: var(--space-2); margin: 0; }
+  .mb__row { display: grid; grid-template-columns: minmax(9rem, auto) 1fr; gap: var(--space-3); align-items: baseline; padding: var(--space-2) 0; border-top: 1px solid var(--border); }
+  .mb__row dt { display: flex; align-items: center; gap: var(--space-2); }
+  .mb__row dd { margin: 0; color: var(--text-muted); }
+  .mb__row code { color: var(--c); font-weight: 600; }
+  .mb__n { display: inline-grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--c); color: var(--bg); font-size: 0.7rem; font-weight: 700; flex: none; }
+  @media (max-width: 560px) { .mb__row { grid-template-columns: 1fr; gap: var(--space-1); } }
+</style>
