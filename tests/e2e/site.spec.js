@@ -4,9 +4,11 @@ const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/', 'es/academia/taf/', 'es/academia/taf/change-groups/',
+  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
   'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/', 'en/academy/taf/full-decode/',
+  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/',
 ];
 
 test.describe('language', () => {

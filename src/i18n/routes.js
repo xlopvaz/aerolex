@@ -3,16 +3,18 @@
  * The language switcher, hreflang tags and every internal link are built from here,
  * so a page is never linked under a URL that does not exist.
  *
- * `nav`: where the page appears ('main' header/mobile nav, 'footer', or none).
+ * `nav`: where the page appears ('main' header, 'mobile' bottom bar, 'footer', or none).
  * Only pages that exist and have real content are registered.
  * Child pages (e.g. one page per dictionary entry) are built with childHref().
  */
 export const ROUTES = {
-  home:       { slug: { es: '',               en: '' },             nav: ['main'], icon: 'plane-takeoff' },
-  academy:    { slug: { es: 'academia',       en: 'academy' },      nav: ['main'], icon: 'graduation-cap' },
-  dictionary: { slug: { es: 'diccionario',    en: 'dictionary' },   nav: ['main'], icon: 'book-a' },
+  home:       { slug: { es: '',               en: '' },             nav: ['main', 'mobile'], icon: 'plane-takeoff' },
+  academy:    { slug: { es: 'academia',       en: 'academy' },      nav: ['main', 'mobile'], icon: 'graduation-cap' },
+  dictionary: { slug: { es: 'diccionario',    en: 'dictionary' },   nav: ['main', 'mobile'], icon: 'book-a' },
+  hangar:     { slug: { es: 'hangar',         en: 'hangar' },       nav: ['main', 'mobile'], icon: 'plane' },
+  compare:    { slug: { es: 'hangar/comparador', en: 'hangar/compare' }, nav: [], icon: 'columns-3' },
   acronyms:   { slug: { es: 'diccionario/acronimos', en: 'dictionary/acronyms' }, nav: [], icon: 'case-upper' },
-  dashboard:  { slug: { es: 'panel',          en: 'dashboard' },    nav: ['main'], icon: 'layout-dashboard' },
+  dashboard:  { slug: { es: 'panel',          en: 'dashboard' },    nav: ['main', 'mobile'], icon: 'layout-dashboard' },
   about:      { slug: { es: 'acerca-de',      en: 'about' },        nav: ['main', 'footer'], icon: 'book-open' },
   styleguide: { slug: { es: 'guia-de-estilo', en: 'styleguide' },   nav: ['footer'], icon: 'palette' },
   legal:      { slug: { es: 'aviso-legal',    en: 'legal' },        nav: ['footer'], icon: 'shield-check' },
@@ -26,7 +28,7 @@ export function routeKeys() {
 }
 
 /**
- * @param {'main'|'footer'} area
+ * @param {'main'|'mobile'|'footer'} area
  * @returns {RouteKey[]}
  */
 export function navRoutes(area) {

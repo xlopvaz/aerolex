@@ -22,7 +22,9 @@
     "legal": "Legal & privacy",
     "dictionary": "Dictionary",
     "acronyms": "Abbreviations & acronyms",
-    "academy": "Academy"
+    "academy": "Academy",
+    "hangar": "Hangar",
+    "compare": "Aircraft comparator"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -319,7 +321,8 @@
     "glossary": "Glossary",
     "handbook": "Handbook",
     "aip": "AIP",
-    "web": "Web page"
+    "web": "Web page",
+    "manufacturer": "Manufacturer"
   },
   "levels": {
     "beginner": "Beginner",
@@ -369,5 +372,56 @@
     "incorrect": "Not quite.",
     "score": "{correct}/{total} correct",
     "retryWrong": "Retry the ones I missed"
+  },
+  "hangar": {
+    "metaTitle": "Hangar · Aircraft encyclopedia · AeroLex",
+    "metaDescription": "Aircraft families and variants with figures taken from manufacturers' official documentation, and a comparator.",
+    "title": "Hangar",
+    "lead": "An aircraft encyclopedia where every figure comes from the manufacturer's official documentation. Each variant has its own figures, because no 'A320' or '737' is generic.",
+    "families": "Aircraft families",
+    "variantsCount": "{count} variants",
+    "compareCta": "Compare aircraft",
+    "openFamily": "View family",
+    "history": "History",
+    "facts": "Did you know?",
+    "variants": "Variants",
+    "specs": "Specifications",
+    "length": "Length",
+    "wingspan": "Wingspan",
+    "height": "Height",
+    "seatsTypical": "Typical seats (two-class)",
+    "seatsMax": "Maximum seats",
+    "range": "Range",
+    "mtow": "Max take-off weight",
+    "engines": "Engines",
+    "milestones": "Milestones",
+    "firstFlight": "First flight",
+    "certified": "Certification",
+    "firstDelivery": "First delivery",
+    "notPublished": "Not published in the cited sources",
+    "status": {
+      "in-production": "In production",
+      "out-of-production": "Out of production",
+      "certified": "Certified",
+      "in-development": "In development"
+    },
+    "dataNote": "Figures as published by the manufacturer in the cited sources. A dash (—) means the cited source does not give that value; we never estimate it.",
+    "sources": "Sources",
+    "variantSources": "Sources for this variant",
+    "note": "Note",
+    "compareTitle": "Aircraft comparator",
+    "compareLead": "Choose two or three variants to compare them side by side. The highest known value for each figure is highlighted.",
+    "compareMetaTitle": "Aircraft comparator · Hangar · AeroLex",
+    "pick": "Aircraft {n}",
+    "none": "— Choose a variant —",
+    "metric": "Figure",
+    "units": "Units",
+    "unitsMetric": "Metric",
+    "unitsImperial": "Imperial (approx.)",
+    "highest": "Highest value",
+    "approx": "≈ converted from the metric value",
+    "compareEmpty": "Choose at least two variants to compare.",
+    "educational": "Educational tool. Figures are generic manufacturer data; actual aircraft vary by operator, configuration and engine. Not for operational use.",
+    "statusLabel": "Status"
   }
 }

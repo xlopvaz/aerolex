@@ -51,6 +51,12 @@ npm run e2e          # tests de extremo a extremo (Playwright; necesita el build
 3. Dentro de la lección se pueden usar `<Term id="…">`, `<MetarBreakdown parts={[…]}>` y `<Callout type="…" label="…">`. Los ejemplos inventados se marcan como didácticos.
 4. Cuestionario: `src/content/quizzes/<id>.json` con preguntas bilingües, `answer` y `explanation`.
 
+## Añadir una familia de aeronaves
+
+1. `src/content/aircraft/<id>.json` siguiendo el esquema `aircraft` de `src/content.config.ts`.
+2. Cada cifra sale de la documentación oficial citada en `sources` de esa variante (y la fuente también figura en las de la familia). Si la fuente no da un valor, se deja `null`: nunca se estima.
+3. Las conversiones de unidades se hacen en pantalla (`src/lib/units/convert.js`), no en los datos.
+
 ## Flujo de trabajo
 
 Un PR por bloque de trabajo. El workflow `CI & Deploy` debe estar en verde antes de fusionar; al fusionar en `main` se publica solo.

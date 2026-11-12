@@ -1,0 +1,92 @@
+{
+  "manufacturer": "Airbus",
+  "family": { "en": "A320neo Family", "es": "Familia A320neo" },
+  "category": "commercial",
+  "order": 1,
+  "summary": {
+    "en": "Airbus's single-aisle family for short- and medium-haul routes. The 'neo' (new engine option) generation pairs new-generation engines with Sharklet wingtips.",
+    "es": "La familia de pasillo único de Airbus para rutas de corto y medio radio. La generación «neo» (new engine option, nueva opción de motor) combina motores de nueva generación con puntas de ala Sharklet."
+  },
+  "history": {
+    "en": "The A320 Family entered service in 1988, with the first A320 delivered to Air France (Air Inter) on 26 March 1988. The neo generation followed: the first A320neo was delivered to Lufthansa on 20 January 2016 and the first A321neo to Virgin America on 20 April 2017. Long-range versions of the A321neo followed with the A321LR (first delivered to Arkia in 2018) and the A321XLR, which first flew on 15 June 2022.",
+    "es": "La familia A320 entró en servicio en 1988: el primer A320 se entregó a Air France (Air Inter) el 26 de marzo de 1988. Después llegó la generación neo: el primer A320neo se entregó a Lufthansa el 20 de enero de 2016 y el primer A321neo a Virgin America el 20 de abril de 2017. Le siguieron versiones de largo alcance del A321neo: el A321LR (entregado por primera vez a Arkia en 2018) y el A321XLR, que voló por primera vez el 15 de junio de 2022."
+  },
+  "facts": [
+    {
+      "en": "Airbus states that the A320neo burns 20% less fuel and emits 20% less CO2 than the previous generation, with a 50% smaller noise footprint.",
+      "es": "Según Airbus, el A320neo consume un 20 % menos de combustible y emite un 20 % menos de CO2 que la generación anterior, con una huella sonora un 50 % menor."
+    },
+    {
+      "en": "By November 2025 Airbus had recorded 19,472 orders for the A320 Family from more than 300 customers, 11,366 of them for the neo generation.",
+      "es": "En noviembre de 2025, Airbus contabilizaba 19 472 pedidos de la familia A320 de más de 300 clientes, 11 366 de ellos de la generación neo."
+    },
+    {
+      "en": "All members share the same cockpit and handling qualities, so pilots can move between them with very little extra training.",
+      "es": "Todos los modelos comparten cabina de vuelo y características de pilotaje, de modo que los pilotos pueden pasar de uno a otro con muy poca formación adicional."
+    }
+  ],
+  "sources": ["airbus-a320-facts-2025", "airbus-a320neo-page", "airbus-a321neo-page"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "a319neo",
+      "name": "A319neo",
+      "status": "in-production",
+      "milestones": { "firstFlight": null, "certified": "2018-12-21", "firstDelivery": null, "firstOperator": null },
+      "lengthM": 33.84, "wingspanM": 35.80, "heightM": 11.76,
+      "seatsTypical": "120–150", "seatsMax": 160,
+      "rangeNm": 3750, "rangeKm": 6950, "mtowT": 75.5,
+      "engines": ["CFM LEAP-1A", "Pratt & Whitney PW1100G-JM"],
+      "note": { "en": "Type certificate date is for the CFM LEAP-1A version.", "es": "La fecha de certificación de tipo corresponde a la versión con CFM LEAP-1A." },
+      "sources": ["airbus-a320-facts-2025"]
+    },
+    {
+      "id": "a320neo",
+      "name": "A320neo",
+      "status": "in-production",
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": "2016-01-20", "firstOperator": "Lufthansa" },
+      "lengthM": 37.57, "wingspanM": 35.80, "heightM": 11.76,
+      "seatsTypical": "150–180", "seatsMax": 194,
+      "rangeNm": 3450, "rangeKm": 6400, "mtowT": 79,
+      "engines": ["CFM LEAP-1A", "Pratt & Whitney PW1100G-JM"],
+      "note": { "en": "Airbus's A320neo web page gives a range of 3,400 nm (6,300 km); the November 2025 Facts & Figures give 3,450 nm.", "es": "La web del A320neo indica un alcance de 3400 NM (6300 km); el documento Facts & Figures de noviembre de 2025 indica 3450 NM." },
+      "sources": ["airbus-a320-facts-2025", "airbus-a320neo-page"]
+    },
+    {
+      "id": "a321neo",
+      "name": "A321neo",
+      "status": "in-production",
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": "2017-04-20", "firstOperator": "Virgin America" },
+      "lengthM": 44.51, "wingspanM": 35.80, "heightM": 11.76,
+      "seatsTypical": "180–220", "seatsMax": 244,
+      "rangeNm": null, "rangeKm": null, "mtowT": null,
+      "engines": ["CFM LEAP-1A", "Pratt & Whitney PW1100G-JM"],
+      "note": { "en": "Range and maximum take-off weight depend on the version (A321neo, A321LR, A321XLR).", "es": "El alcance y el peso máximo al despegue dependen de la versión (A321neo, A321LR, A321XLR)." },
+      "sources": ["airbus-a320-facts-2025", "airbus-a321neo-page"]
+    },
+    {
+      "id": "a321lr",
+      "name": "A321LR",
+      "status": "in-production",
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": "2018-11-13", "firstOperator": "Arkia Israeli Airlines" },
+      "lengthM": null, "wingspanM": null, "heightM": null,
+      "seatsTypical": "206", "seatsMax": null,
+      "rangeNm": 4000, "rangeKm": null, "mtowT": null,
+      "engines": ["CFM LEAP-1A", "Pratt & Whitney PW1100G-JM"],
+      "note": { "en": "Long-range version of the A321neo, with three additional centre tanks: up to 4,000 nm with 206 passengers.", "es": "Versión de largo alcance del A321neo, con tres depósitos centrales adicionales: hasta 4000 NM con 206 pasajeros." },
+      "sources": ["airbus-a320-facts-2025", "airbus-a321neo-page"]
+    },
+    {
+      "id": "a321xlr",
+      "name": "A321XLR",
+      "status": "in-production",
+      "milestones": { "firstFlight": "2022-06-15", "certified": "2024-07-19", "firstDelivery": null, "firstOperator": null },
+      "lengthM": null, "wingspanM": null, "heightM": null,
+      "seatsTypical": null, "seatsMax": 244,
+      "rangeNm": 4700, "rangeKm": 8700, "mtowT": 101,
+      "engines": ["CFM LEAP-1A", "Pratt & Whitney PW1100G-JM"],
+      "note": { "en": "Extra-long-range A321neo with a permanent rear centre tank (12,900 litres). EASA certified the CFM LEAP-1A version on 19 July 2024 and the Pratt & Whitney GTF version on 20 February 2025.", "es": "A321neo de alcance extralargo con un depósito central trasero permanente (12 900 litros). EASA certificó la versión con CFM LEAP-1A el 19 de julio de 2024 y la versión con Pratt & Whitney GTF el 20 de febrero de 2025." },
+      "sources": ["airbus-a320-facts-2025", "airbus-a321neo-page"]
+    }
+  ]
+}

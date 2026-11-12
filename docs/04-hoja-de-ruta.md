@@ -53,6 +53,13 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Curso TAF (nivel Elementary): 6 lecciones ES/EN (qué es un TAF, cabecera y validez, condiciones previstas, FM/BECMG/TEMPO, PROB/TX/TN/NSW y decodificación completa con línea temporal), 23 preguntas y evaluación final.
 - [x] Diccionario: nuevas entradas BECMG, TEMPO y NOSIG (77 entradas).
 
+**Bloque 4 — Hangar ✅ (13/11/2026)**
+- [x] Colección de aeronaves validada: cada variante tiene sus propias cifras y fuentes; lo que la fuente no publica queda en blanco (—), nunca estimado.
+- [x] Familia A320neo (A319neo, A320neo, A321neo, A321LR, A321XLR) con datos de Airbus *Facts & Figures* (nov. 2025) y sus fichas web.
+- [x] Familia Boeing 737 (737-700, -800, -900, 737-7, -8, -9, -10) con las fichas técnicas de Boeing y las certificaciones de la FAA de 2026.
+- [x] Página del Hangar, página por familia (historia, tabla de variantes, hitos, curiosidades y fuentes) y comparador de 2–3 variantes con unidades métricas/imperiales y URL compartible.
+- [ ] Resto de familias del brief (A220, A330, A340, A350, A380, 747, 757, 767, 777, 787, E-Jets, ATR 42/72) y fotografías con licencia libre.
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

@@ -53,8 +53,15 @@ describe('dictionary content', () => {
     for (const c of CATEGORIES) for (const l of ['es', 'en']) expect(DICTS[l].categories[c]).toBeTruthy();
   });
 
-  it('every source is used and well-formed', () => {
+  it('every source is used somewhere and well-formed', () => {
     const used = new Set(entries.flatMap((e) => e.data.sources));
+    const readJson = (dir) => fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+    for (const c of readJson('src/content/courses')) c.sources.forEach((x) => used.add(x));
+    for (const a of readJson('src/content/aircraft')) { a.sources.forEach((x) => used.add(x)); a.variants.forEach((v) => v.sources.forEach((x) => used.add(x))); }
+    for (const f of fs.readdirSync('src/content/lessons', { recursive: true }).map(String).filter((f) => f.endsWith('.mdx'))) {
+      const m = fs.readFileSync(path.join('src/content/lessons', f), 'utf8').match(/^sources: \[(.*)\]$/m);
+      if (m) m[1].split(',').map((x) => x.trim()).forEach((x) => used.add(x));
+    }
     for (const [id, s] of Object.entries(sources)) {
       expect(s.url, id).toMatch(/^https:\/\//);
       expect(used.has(id), `source "${id}" is not used by any entry`).toBe(true);

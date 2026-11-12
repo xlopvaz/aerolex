@@ -1,0 +1,105 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import Callout from '../components/ui/Callout.astro';
+import Icon from '../components/ui/Icon.astro';
+import { childAlternates, href, t, useT } from '../i18n/index.js';
+import { flattenVariants } from '../lib/aircraft/compare.js';
+import { compareTableHtml } from '../lib/aircraft/table.js';
+import '../styles/compare-table.css';
+
+interface Props { lang: string; routeKey: any; familyId: string }
+const { lang, familyId } = Astro.props;
+const tr = useT(lang);
+const fam = (await getEntry('aircraft', familyId))!;
+const f = fam.data;
+const variants = flattenVariants([{ id: fam.id, ...f }]);
+const sources = await getCollection('sources');
+const src = (id: string) => sources.find((s) => s.id === id)!.data;
+const labels = t(lang, 'hangar');
+const table = compareTableHtml(variants, { lang, units: 'metric', labels });
+const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) => `${fam.id}:${v.id}`).join(',')}`;
+---
+<BaseLayout lang={lang} routeKey="hangar" title={`${f.family[lang]} · ${tr('nav.hangar')} · AeroLex`} description={f.summary[lang]} alt={childAlternates('hangar', familyId)}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.hangar'), href: href('hangar', lang) }, { label: f.family[lang] }]} />
+      <p class="eyebrow">{f.manufacturer}</p>
+      <h1>{f.family[lang]}</h1>
+      <p class="lead">{f.summary[lang]}</p>
+      <div class="fam__meta">
+        <Badge tone="amber" icon="pencil">{tr(`status.${f.review.status}`)}</Badge>
+        <Badge icon="plane">{tr('hangar.variantsCount', { count: f.variants.length })}</Badge>
+      </div>
+    </div>
+  </header>
+
+  <div class="container family">
+    <section>
+      <h2>{tr('hangar.history')}</h2>
+      <p class="family__history">{f.history[lang]}</p>
+    </section>
+
+    <section>
+      <div class="family__specs-head">
+        <h2>{tr('hangar.specs')}</h2>
+        <Button href={compareHref} variant="secondary" icon="columns-3" size="sm">{tr('hangar.compareCta')}</Button>
+      </div>
+      <div class="cmp__wrap" set:html={table} />
+      <p class="family__note">{tr('hangar.dataNote')}</p>
+    </section>
+
+    <section>
+      <h2>{tr('hangar.variants')}</h2>
+      <div class="grid variants">
+        {f.variants.map((v) => (
+          <article class="variant" id={v.id}>
+            <header>
+              <h3>{v.name}</h3>
+              {v.status && <Badge tone={v.status === 'in-production' ? 'green' : v.status === 'certified' ? 'cyan' : 'neutral'}>{tr(`hangar.status.${v.status}`)}</Badge>}
+            </header>
+            {v.milestones.certified && <p class="variant__line"><Icon name="file-check" size={16} /> {tr('hangar.certified')}: {new Intl.DateTimeFormat(lang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${v.milestones.certified}T00:00:00Z`))}</p>}
+            {v.note && <p class="variant__note">{v.note[lang]}</p>}
+            <p class="variant__src">{tr('hangar.variantSources')}: {v.sources.map((s, i) => <>{i > 0 && ' · '}<a href={src(s).url} rel="noopener">{src(s).publisher}</a></>)}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {f.facts.length > 0 && (
+      <section>
+        <h2>{tr('hangar.facts')}</h2>
+        <ul class="facts">{f.facts.map((x) => <li><Icon name="lightbulb" size={18} /> <span>{x[lang]}</span></li>)}</ul>
+      </section>
+    )}
+
+    <section>
+      <h2>{tr('hangar.sources')}</h2>
+      <ul class="family__sources">{f.sources.map((s) => <li><a href={src(s).url} rel="noopener">{src(s).publisher} — {src(s).title}</a></li>)}</ul>
+      <Callout type="official-procedure" label={tr('styleguide.calloutLabels.official-procedure')}><p>{tr('hangar.educational')}</p></Callout>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .fam__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+  .family { padding-top: var(--space-6); }
+  .family section { margin-bottom: var(--space-7); }
+  .family__history { max-width: 75ch; }
+  .family__specs-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
+  .family__specs-head h2 { margin: 0; }
+  .family__note { color: var(--text-muted); font-size: var(--text-sm); margin-top: var(--space-3); }
+  .variant { padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .variant header { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); margin-bottom: var(--space-3); }
+  .variant h3 { margin: 0; font-size: var(--text-xl); }
+  .variant__line { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); }
+  .variant__note { color: var(--text-muted); font-size: var(--text-sm); }
+  .variant__src { font-size: var(--text-xs); color: var(--text-muted); margin: 0; }
+  .facts { list-style: none; padding: 0; display: grid; gap: var(--space-3); }
+  .facts li { display: flex; gap: var(--space-3); margin: 0; }
+  .facts :global(svg) { color: var(--amber); margin-top: 3px; }
+  .family__sources { font-size: var(--text-sm); }
+</style>
