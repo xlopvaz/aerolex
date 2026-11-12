@@ -146,6 +146,7 @@ const aircraft = defineCollection({
             firstFlight: z.string().nullable(),
             certified: z.string().nullable(),
             firstDelivery: z.string().nullable(),
+            entryIntoService: z.string().nullable().default(null),
             firstOperator: z.string().nullable(),
           }),
           lengthM: num,

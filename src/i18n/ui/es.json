@@ -422,6 +422,7 @@
     "approx": "≈ convertido desde el valor métrico",
     "compareEmpty": "Elige al menos dos variantes para compararlas.",
     "educational": "Herramienta educativa. Las cifras son datos genéricos del fabricante; cada avión real varía según el operador, la configuración y el motor. No apta para uso operacional.",
-    "statusLabel": "Estado"
+    "statusLabel": "Estado",
+    "entryIntoService": "Entrada en servicio"
   }
 }

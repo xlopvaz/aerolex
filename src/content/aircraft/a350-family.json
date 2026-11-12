@@ -1,0 +1,84 @@
+{
+  "manufacturer": "Airbus",
+  "family": { "en": "A350 Family", "es": "Familia A350" },
+  "category": "commercial",
+  "order": 3,
+  "summary": {
+    "en": "Airbus's long-range widebody family, built largely from composite materials and powered exclusively by Rolls-Royce Trent XWB engines.",
+    "es": "La familia de fuselaje ancho y largo alcance de Airbus, construida en gran parte con materiales compuestos y propulsada exclusivamente por motores Rolls-Royce Trent XWB."
+  },
+  "history": {
+    "en": "The A350-900 first flew on 14 June 2013, was certified by EASA on 30 September 2014 and entered service with Qatar Airways on 15 January 2015. The longer A350-1000 first flew on 24 November 2016 and entered service, also with Qatar Airways, on 24 February 2018. That same year Singapore Airlines put the ultra-long-range A350-900ULR into service, and in 2021 Airbus launched the A350F freighter.",
+    "es": "El A350-900 voló por primera vez el 14 de junio de 2013, fue certificado por EASA el 30 de septiembre de 2014 y entró en servicio con Qatar Airways el 15 de enero de 2015. El A350-1000, más largo, voló por primera vez el 24 de noviembre de 2016 y entró en servicio, también con Qatar Airways, el 24 de febrero de 2018. Ese mismo año, Singapore Airlines puso en servicio el A350-900ULR de alcance ultralargo, y en 2021 Airbus lanzó el carguero A350F."
+  },
+  "facts": [
+    {
+      "en": "At the end of December 2025, Airbus counted 1,529 A350 orders from 67 customers and 699 aircraft delivered to 39 operators, 109 of them A350-1000s.",
+      "es": "A finales de diciembre de 2025, Airbus contabilizaba 1529 pedidos del A350 de 67 clientes y 699 aviones entregados a 39 operadores, 109 de ellos A350-1000."
+    },
+    {
+      "en": "The A350-900ULR can fly 9,700 nautical miles (18,000 km) non-stop.",
+      "es": "El A350-900ULR puede volar 9700 millas náuticas (18 000 km) sin escalas."
+    },
+    {
+      "en": "Both passenger versions share the same 64.75 m wingspan; the A350-1000 is about 7 m longer than the A350-900.",
+      "es": "Las dos versiones de pasajeros comparten la misma envergadura de 64,75 m; el A350-1000 es unos 7 m más largo que el A350-900."
+    }
+  ],
+  "sources": ["airbus-a350-facts-2026", "airbus-a350f-facts-2025"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "a350-900", "name": "A350-900", "status": "in-production",
+      "milestones": { "firstFlight": "2013-06-14", "certified": "2014-09-30", "firstDelivery": "2014-12-22", "entryIntoService": "2015-01-15", "firstOperator": "Qatar Airways" },
+      "lengthM": 66.80, "wingspanM": 64.75, "heightM": 17.05,
+      "seatsTypical": null, "seatsMax": 440,
+      "rangeNm": 8500, "rangeKm": 15750, "mtowT": 283,
+      "engines": ["Rolls-Royce Trent XWB-84"],
+      "note": {
+        "en": "Range and MTOW shown for the high gross weight version. Airbus also lists a regional version (6,000 nm, 250 t) and a basic version (7,500 nm, 268 t). Certification date: EASA (FAA: 12 November 2014).",
+        "es": "Alcance y peso máximo al despegue de la versión de alto peso bruto. Airbus también indica una versión regional (6000 NM, 250 t) y una básica (7500 NM, 268 t). Fecha de certificación: EASA (FAA: 12 de noviembre de 2014)."
+      },
+      "sources": ["airbus-a350-facts-2026"]
+    },
+    {
+      "id": "a350-900ulr", "name": "A350-900ULR", "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": "2018-10-11", "firstOperator": "Singapore Airlines" },
+      "lengthM": null, "wingspanM": null, "heightM": null,
+      "seatsTypical": null, "seatsMax": null,
+      "rangeNm": 9700, "rangeKm": 18000, "mtowT": null,
+      "engines": ["Rolls-Royce Trent XWB-84"],
+      "note": {
+        "en": "Ultra-long-range version of the A350-900.",
+        "es": "Versión de alcance ultralargo del A350-900."
+      },
+      "sources": ["airbus-a350-facts-2026"]
+    },
+    {
+      "id": "a350-1000", "name": "A350-1000", "status": "in-production",
+      "milestones": { "firstFlight": "2016-11-24", "certified": "2017-11-21", "firstDelivery": "2018-02-20", "entryIntoService": "2018-02-24", "firstOperator": "Qatar Airways" },
+      "lengthM": 73.78, "wingspanM": 64.75, "heightM": 17.08,
+      "seatsTypical": null, "seatsMax": 480,
+      "rangeNm": 8100, "rangeKm": 15000, "mtowT": 308,
+      "engines": ["Rolls-Royce Trent XWB-97"],
+      "note": {
+        "en": "Basic version. Airbus lists a higher-weight version (322 t, 9,000 nm) with entry into service planned for 2030.",
+        "es": "Versión básica. Airbus indica una versión de mayor peso (322 t, 9000 NM) con entrada en servicio prevista para 2030."
+      },
+      "sources": ["airbus-a350-facts-2026"]
+    },
+    {
+      "id": "a350f", "name": "A350F", "status": "in-development",
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": null },
+      "lengthM": null, "wingspanM": null, "heightM": null,
+      "seatsTypical": null, "seatsMax": null,
+      "rangeNm": null, "rangeKm": null, "mtowT": null,
+      "engines": ["Rolls-Royce Trent XWB-97"],
+      "note": {
+        "en": "Freighter based on the A350-1000, with up to 111 t of payload. Airbus planned final assembly to start in 2025 and entry into service in 2027.",
+        "es": "Carguero basado en el A350-1000, con hasta 111 t de carga de pago. Airbus planificó el inicio del montaje final en 2025 y la entrada en servicio en 2027."
+      },
+      "sources": ["airbus-a350f-facts-2025", "airbus-a350-facts-2026"]
+    }
+  ]
+}

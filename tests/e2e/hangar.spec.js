@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('hangar', () => {
   test('lists families and opens a family with its variant table', async ({ page }) => {
     await page.goto('es/hangar/');
-    await expect(page.locator('.fam')).toHaveCount(2);
+    await expect(page.locator('.fam')).toHaveCount(4);
     await page.locator('.fam', { hasText: 'Familia A320neo' }).click();
     await expect(page).toHaveURL(/\/es\/hangar\/a320neo-family\/$/);
     await expect(page.locator('.cmp__table thead th')).toHaveCount(6); // label + 5 variants
@@ -12,6 +12,17 @@ test.describe('hangar', () => {
     await page.locator('.site-header [data-set-lang="en"]').click();
     await expect(page).toHaveURL(/\/en\/hangar\/a320neo-family\/$/);
     await expect(page.locator('.cmp__table')).toContainText('37.57 m');
+  });
+
+  test('widebody comparison hides rows nobody has and shows entry into service', async ({ page }) => {
+    await page.goto('en/hangar/compare/?v=a350-family:a350-1000,boeing-787:787-10');
+    const table = page.locator('[data-compare-table] .cmp__table');
+    await expect(table).toContainText('73.78 m');
+    await expect(table.locator('tbody tr', { hasText: 'Length' }).locator('td.is-top')).toContainText('73.78 m');
+    await expect(table.locator('tbody tr', { hasText: 'Entry into service' })).toContainText('Feb 24, 2018');
+    await expect(table.locator('tbody tr', { hasText: 'First delivery' })).toContainText('Qatar Airways');
+    // The A350 has no two-class figure, the 787-10 does: the row is kept
+    await expect(table.locator('tbody tr', { hasText: 'Typical seats' })).toContainText('300–375');
   });
 
   test('comparator: selection, highlighting, units and shareable URL', async ({ page }) => {

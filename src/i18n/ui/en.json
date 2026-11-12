@@ -422,6 +422,7 @@
     "approx": "≈ converted from the metric value",
     "compareEmpty": "Choose at least two variants to compare.",
     "educational": "Educational tool. Figures are generic manufacturer data; actual aircraft vary by operator, configuration and engine. Not for operational use.",
-    "statusLabel": "Status"
+    "statusLabel": "Status",
+    "entryIntoService": "Entry into service"
   }
 }

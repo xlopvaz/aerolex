@@ -58,7 +58,9 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Familia A320neo (A319neo, A320neo, A321neo, A321LR, A321XLR) con datos de Airbus *Facts & Figures* (nov. 2025) y sus fichas web.
 - [x] Familia Boeing 737 (737-700, -800, -900, 737-7, -8, -9, -10) con las fichas técnicas de Boeing y las certificaciones de la FAA de 2026.
 - [x] Página del Hangar, página por familia (historia, tabla de variantes, hitos, curiosidades y fuentes) y comparador de 2–3 variantes con unidades métricas/imperiales y URL compartible.
-- [ ] Resto de familias del brief (A220, A330, A340, A350, A380, 747, 757, 767, 777, 787, E-Jets, ATR 42/72) y fotografías con licencia libre.
+- [x] Familia A350 (A350-900, A350-900ULR, A350-1000, A350F) con Airbus *A350 Facts & Figures* (ene. 2026) y familia Boeing 787 (787-8, -9, -10) con la ficha técnica de Boeing.
+- [x] Hito «entrada en servicio» y filas vacías ocultas en las tablas de comparación.
+- [ ] Resto de familias del brief (A220, A330, A340, A380, 747, 757, 767, 777, E-Jets, ATR 42/72) y fotografías con licencia libre.
 
 
 | Bloque | Objetivo mínimo de la fase |
