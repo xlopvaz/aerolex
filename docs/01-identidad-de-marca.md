@@ -1,6 +1,6 @@
 # 01 · Identidad de marca
 
-> Estado: **propuesta de Fase 1** — pendiente de aprobación.
+> Estado: **aprobado (Fase 1)**. Nombre elegido: AeroLex.
 
 ## 1. Nombre
 

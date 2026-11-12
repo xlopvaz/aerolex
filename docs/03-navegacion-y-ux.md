@@ -1,6 +1,6 @@
 # 03 · Navegación y experiencia de usuario
 
-> Estado: **propuesta de Fase 1**.
+> Estado: **aprobado (Fase 1)**.
 
 ## 1. Mapa del sitio
 

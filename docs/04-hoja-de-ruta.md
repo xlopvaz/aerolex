@@ -14,7 +14,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Arquitectura técnica y modelo de datos → [02-arquitectura-tecnica.md](02-arquitectura-tecnica.md)
 - [x] Navegación, mapa del sitio y página de inicio → [03-navegacion-y-ux.md](03-navegacion-y-ux.md)
 - [x] Política de fuentes y fiabilidad → [05-fuentes-y-fiabilidad.md](05-fuentes-y-fiabilidad.md)
-- [ ] **Decisiones tuyas** (ver final de este documento)
+- [x] Decisiones cerradas (ver final de este documento)
 
 ## FASE 2 — Diseño y esqueleto
 
@@ -49,7 +49,7 @@ El contenido se sigue ampliando de forma continua después de esta fase.
 1. **METAR Decoder** completo (grupos, errores, visualizaciones, ES/EN) con batería de tests.
 2. **TAF Decoder** (FM, BECMG, TEMPO, PROB30/40, TX/TN, línea temporal visual).
 3. **METAR & TAF Practice** en 4 niveles.
-4. **Live METAR/TAF:** verificación de CORS y despliegue de la opción elegida.
+4. **Live METAR/TAF:** GitHub Action programada que publica JSON de una lista de aeropuertos configurable, con indicador de antigüedad y opción de pegar un mensaje.
 5. **Conversor de unidades** (kt↔km/h↔mph, ft↔m, nm↔km, lb↔kg, °C↔°F↔K, hPa↔inHg).
 6. **Buscador IATA/ICAO y Airport Explorer** (OurAirports).
 7. **ATC Phraseology Trainer y simulador** (rol piloto/controlador, evaluación de readback, TTS).
@@ -73,9 +73,11 @@ Cuentas y sincronización (`RemoteSyncAdapter`), PWA instalable con modo sin con
 
 ---
 
-## Decisiones pendientes para cerrar la Fase 1
+## Decisiones de la Fase 1 (12/11/2026)
 
-1. **Nombre:** ¿mantenemos **AeroLex**?
-2. **Stack:** ¿**Astro** (recomendado) o HTML/JS sin build?
-3. **Idioma por defecto** para quien llega sin preferencia: ¿detectar el idioma del navegador (recomendado) o fijar ES/EN?
-4. **METAR en directo:** ¿aceptas usar un proxy gratuito en Cloudflare Workers en la Fase 4, o nos quedamos solo con GitHub (opciones B/C)?
+| # | Tema | Decisión |
+|---|---|---|
+| 1 | Nombre | **AeroLex** (pendiente comprobar marcas y dominios antes del lanzamiento público) |
+| 2 | Stack | **Astro** + JS/JSON, compilado y desplegado con GitHub Actions |
+| 3 | Idioma inicial | **Según el idioma del navegador**; luego se recuerda la elección del usuario |
+| 4 | METAR en directo | **Solo GitHub, sin cuentas externas:** Action programada + biblioteca de práctica (ver `02` §8) |

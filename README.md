@@ -12,7 +12,7 @@ Está pensada para estudiantes de piloto, pilotos, TCP, profesionales del sector
 
 | Fase | Estado |
 |---|---|
-| 1 · Planificación | ✅ Propuesta lista, pendiente de aprobación |
+| 1 · Planificación | ✅ Completada |
 | 2 · Diseño y esqueleto | ⏳ |
 | 3 · Contenido | ⏳ |
 | 4 · Herramientas | ⏳ |
@@ -30,7 +30,7 @@ Está pensada para estudiantes de piloto, pilotos, TCP, profesionales del sector
 | [04 · Hoja de ruta](docs/04-hoja-de-ruta.md) | Fases, entregables, criterios de "hecho" y decisiones pendientes |
 | [05 · Fuentes y fiabilidad](docs/05-fuentes-y-fiabilidad.md) | Jerarquía de fuentes, derechos y flujo de revisión |
 
-## Tecnología (propuesta)
+## Tecnología
 
 Astro (sitio estático) · HTML5 · CSS3 · JavaScript ES6+ · JSON · LocalStorage · Pagefind · Vitest · Playwright · GitHub Actions → **GitHub Pages**
 

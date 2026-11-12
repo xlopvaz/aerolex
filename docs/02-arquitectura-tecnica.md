@@ -1,6 +1,6 @@
 # 02 · Arquitectura técnica
 
-> Estado: **propuesta de Fase 1** — la elección de stack (§1) está pendiente de tu decisión.
+> Estado: **aprobado (Fase 1)**. Stack elegido: Astro.
 
 ## 1. Elección de stack
 
@@ -38,7 +38,7 @@ Las herramientas interactivas se escriben como **módulos ES puros** (`src/lib/m
 
 React aporta poco aquí: casi todo es contenido de lectura y las herramientas no necesitan un árbol de estado complejo. Si alguna isla concreta lo requiere (por ejemplo, el simulador ATC), Astro permite usar **Preact** solo en esa isla.
 
-**Recomendación: Opción A (Astro).** Sigue siendo HTML5 + CSS3 + JavaScript ES6+ + JSON + LocalStorage, como pedías, pero con un paso de compilación que hace GitHub Actions automáticamente en cada `push`. No necesita ningún backend de pago.
+**✅ Decisión: Opción A (Astro).** Sigue siendo HTML5 + CSS3 + JavaScript ES6+ + JSON + LocalStorage, como pedías, pero con un paso de compilación que hace GitHub Actions automáticamente en cada `push`. No necesita ningún backend de pago.
 
 ## 2. Estructura del repositorio (Opción A)
 
@@ -189,7 +189,7 @@ prompt{es,en}, options[]{id, text{es,en}}, answer, explanation{es,en}, sources[]
 - **Rutas:** `/es/…` y `/en/…`, con secciones traducidas (`/es/diccionario/` ↔ `/en/dictionary/`) definidas en `i18n/routes.json`.
 - **Slugs:** cada entrada tiene un `id` estable. Por defecto el slug es el `id` en ambos idiomas; los términos que se traducen pueden tener slug propio en español.
 - **Selector ES/EN:** lleva a la **página equivalente** del otro idioma (no a la portada), gracias a un mapa de alternativas generado en build. También se generan las etiquetas `hreflang`.
-- **Idioma inicial:** se elige según el idioma del navegador y luego se recuerda la elección del usuario.
+- **Idioma inicial (✅ decidido):** según el idioma del navegador; luego se recuerda la elección del usuario.
 - **El progreso no se pierde:** todo el estado del usuario se guarda por `id` de contenido, nunca por URL ni idioma.
 - **Diccionario siempre bilingüe:** la ficha de cada término muestra EN y ES juntos, sea cual sea el idioma de la interfaz.
 
@@ -255,7 +255,13 @@ Alternativas, sin backend de pago:
 | **B. GitHub Action programada** | Cada X minutos descarga los METAR/TAF de una lista de aeropuertos y publica un JSON | Todo dentro de GitHub | Solo aeropuertos predefinidos; las ejecuciones programadas pueden retrasarse |
 | **C. Solo biblioteca de práctica** | Mensajes reales archivados y marcados como didácticos | Cero dependencias | No hay datos en directo |
 
-**Propuesta:** C desde el primer día (es el modo sin conexión que pediste) y A como mejora opcional en la Fase 4.
+**✅ Decisión (12/11/2026): B + C, sin cuentas en servicios externos.**
+- **C desde el primer día:** biblioteca de práctica (el modo sin conexión que pediste).
+- **B en la Fase 4:** una GitHub Action programada descarga los METAR/TAF de una lista de aeropuertos (empezando por LEST, LEVX, LECO, LEMD, EGLL, LFPG, KJFK y ampliable en un JSON) y publica un fichero estático que la web lee.
+- **Comportamiento en la web:**
+  - Cada informe muestra su hora de emisión y la hora de la última descarga. Si los datos tienen más de 2 horas, se marcan como antiguos.
+  - Para un código ICAO que no esté en la lista, el usuario puede **pegar el METAR/TAF** y se descodifica igual.
+- **A (proxy en Cloudflare)** queda documentada por si en el futuro quieres consultar cualquier aeropuerto.
 
 La interfaz marcará siempre de forma visible **🟢 LIVE · hora de emisión** o **📘 EJEMPLO DIDÁCTICO**, junto con el aviso *"No apto para uso operacional"*.
 
