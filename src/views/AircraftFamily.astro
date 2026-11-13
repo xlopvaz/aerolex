@@ -3,7 +3,7 @@ import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
 import Badge from '../components/ui/Badge.astro';
-import AircraftSilhouette from '../components/hangar/AircraftSilhouette.astro';
+import AircraftPhoto from '../components/hangar/AircraftPhoto.astro';
 import Button from '../components/ui/Button.astro';
 import Callout from '../components/ui/Callout.astro';
 import Icon from '../components/ui/Icon.astro';
@@ -18,6 +18,7 @@ const tr = useT(lang);
 const fam = (await getEntry('aircraft', familyId))!;
 const f = fam.data;
 const variants = flattenVariants([{ id: fam.id, ...f }]);
+const photos = (await getCollection('photos')).map((p) => ({ id: p.id, ...p.data })).filter((p) => p.family === familyId).sort((a, b) => a.order - b.order);
 const sources = await getCollection('sources');
 const src = (id: string) => sources.find((s) => s.id === id)!.data;
 const labels = t(lang, 'hangar');
@@ -35,7 +36,7 @@ const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) =
         <Badge tone="amber" icon="pencil">{tr(`status.${f.review.status}`)}</Badge>
         <Badge icon="plane">{tr('hangar.variantsCount', { count: f.variants.length })}</Badge>
       </div>
-      <div class="fam__art"><AircraftSilhouette config={f.silhouette} lang={lang} caption /></div>
+      {photos[0] && <div class="fam__hero"><AircraftPhoto photo={photos[0]} lang={lang} variant="hero" eager /></div>}
     </div>
   </header>
 
@@ -44,6 +45,17 @@ const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) =
       <h2>{tr('hangar.history')}</h2>
       <p class="family__history">{f.history[lang]}</p>
     </section>
+
+    {photos.length > 1 && (
+      <section id="recognise" aria-labelledby="recognise-title">
+        <h2 id="recognise-title">{tr('hangar.photos.title')}</h2>
+        <p class="family__note">{tr('hangar.photos.lead')}</p>
+        <div class="family__photos">
+          {photos.slice(1).map((p) => <AircraftPhoto photo={p} lang={lang} variant="gallery" />)}
+        </div>
+        <p class="family__note">{tr('hangar.photos.note')}</p>
+      </section>
+    )}
 
     <section>
       <div class="family__specs-head">
@@ -87,7 +99,8 @@ const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) =
 </BaseLayout>
 
 <style>
-  .fam__art { max-width: 34rem; margin-top: var(--space-5); padding: var(--space-3) var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .fam__hero { max-width: 52rem; margin-top: var(--space-5); }
+  .family__photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); gap: var(--space-6); margin-top: var(--space-4); }
   .fam__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
   .family { padding-top: var(--space-6); }
   .family section { margin-bottom: var(--space-7); }

@@ -4,6 +4,7 @@ test.describe('hangar', () => {
   test('lists families and opens a family with its variant table', async ({ page }) => {
     await page.goto('es/hangar/');
     await expect(page.locator('.fam')).toHaveCount(7);
+    await expect(page.locator('.fam img.ph--card')).toHaveCount(7);
     await page.locator('.fam', { hasText: 'Familia A320neo' }).click();
     await expect(page).toHaveURL(/\/es\/hangar\/a320neo-family\/$/);
     await expect(page.locator('.cmp__table thead th')).toHaveCount(6); // label + 5 variants
@@ -45,5 +46,19 @@ test.describe('hangar', () => {
     await page.locator('[data-pick="1"]').selectOption('');
     await page.locator('[data-pick="2"]').selectOption('');
     await expect(page.locator('[data-compare-empty]')).toBeVisible();
+  });
+
+  test('family pages teach recognition with attributed photos', async ({ page }) => {
+    await page.goto('es/hangar/boeing-787/');
+    const hero = page.locator('.fam__hero figure');
+    await expect(hero.locator('img')).toHaveAttribute('alt', /Boeing 787/);
+    await expect(hero).toContainText('En qué fijarte');
+    await expect(hero.locator('.ph__credit a').first()).toHaveAttribute('href', /commons\.wikimedia\.org\/wiki\/File:/);
+    const gallery = page.locator('#recognise figure');
+    expect(await gallery.count()).toBeGreaterThanOrEqual(2);
+    for (const img of await page.locator('#recognise img').all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect.poll(() => img.evaluate((el) => el.complete && el.naturalWidth > 0)).toBe(true);
+    }
   });
 });

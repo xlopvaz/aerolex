@@ -436,18 +436,15 @@
     "educational": "Herramienta educativa. Las cifras son datos genéricos del fabricante; cada avión real varía según el operador, la configuración y el motor. No apta para uso operacional.",
     "statusLabel": "Estado",
     "entryIntoService": "Entrada en servicio",
-    "silhouette": {
-      "template": "Silueta genérica de un {engines} {body}",
-      "templateTwoDecks": "Silueta genérica de un {engines} {body} con dos cubiertas completas",
-      "engines": {
-        "2": "bimotor",
-        "4": "cuatrimotor"
-      },
-      "body": {
-        "narrow": "de pasillo único",
-        "wide": "de dos pasillos"
-      },
-      "caption": "Ilustración genérica de la configuración: no está a escala y no es una fotografía."
+    "photos": {
+      "title": "Aprende a reconocerlo",
+      "lead": "Fotos reales elegidas para fijarse en los detalles que lo distinguen de otros aviones: puntas del ala, motores, morro, cola y tren de aterrizaje.",
+      "lookFor": "En qué fijarte",
+      "credit": "Foto: {author}",
+      "via": "vía Wikimedia Commons",
+      "publicDomain": "dominio público",
+      "note": "Fotografías con licencia libre de Wikimedia Commons, reducidas de tamaño. La aerolínea y la matrícula son las de cada foto; el avión puede llevar hoy otros colores.",
+      "count": "{n} fotos"
     }
   },
   "metar": {

@@ -3,7 +3,6 @@
   "family": { "en": "A350 Family", "es": "Familia A350" },
   "category": "commercial",
   "order": 5,
-  "silhouette": { "body": "wide", "engines": 2, "decks": 1 },
   "summary": {
     "en": "Airbus's long-range widebody family, built largely from composite materials and powered exclusively by Rolls-Royce Trent XWB engines.",
     "es": "La familia de fuselaje ancho y largo alcance de Airbus, construida en gran parte con materiales compuestos y propulsada exclusivamente por motores Rolls-Royce Trent XWB."
