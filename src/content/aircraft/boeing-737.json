@@ -2,7 +2,7 @@
   "manufacturer": "Boeing",
   "family": { "en": "Boeing 737", "es": "Boeing 737" },
   "category": "commercial",
-  "order": 2,
+  "order": 3,
   "summary": {
     "en": "Boeing's single-aisle family. The current generations are the 737 Next Generation (737-700, -800, -900) and the 737 MAX (737-7, -8, -9, -10) with CFM LEAP-1B engines.",
     "es": "La familia de pasillo único de Boeing. Las generaciones actuales son el 737 Next Generation (737-700, -800, -900) y el 737 MAX (737-7, -8, -9, -10), con motores CFM LEAP-1B."
