@@ -28,7 +28,8 @@
     "tools": "Tools",
     "metarDecoder": "METAR decoder",
     "tafDecoder": "TAF decoder",
-    "practice": "METAR and TAF practice"
+    "practice": "METAR and TAF practice",
+    "converter": "Unit converter"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -647,6 +648,10 @@
       "practice": {
         "title": "METAR and TAF practice",
         "text": "Four levels of questions generated on the fly, from identifying a group to interpreting a TAF."
+      },
+      "converter": {
+        "title": "Unit converter",
+        "text": "Speed, distance, altitude, mass, pressure, fuel and temperature, with exact definitions."
       }
     }
   },
@@ -852,5 +857,53 @@
       "tafPrevailing": "The prevailing conditions come from the base, the FM groups and any BECMG already completed; TEMPO and PROB are temporary or possible."
     },
     "locale": "en-GB"
+  },
+  "converter": {
+    "metaTitle": "Aviation unit converter · AeroLex",
+    "metaDescription": "Convert speed, distance, altitude, mass, pressure, volume and temperature between the units used in aviation.",
+    "title": "Unit converter",
+    "lead": "The units that get mixed up most in aviation, converted instantly: type a value in any field and the others update.",
+    "categories": {
+      "speed": "Speed",
+      "distance": "Distance",
+      "altitude": "Altitude and height",
+      "mass": "Mass",
+      "pressure": "Pressure",
+      "volume": "Fuel volume",
+      "temperature": "Temperature"
+    },
+    "units": {
+      "kt": "Knots (kt)",
+      "kmh": "Kilometres per hour (km/h)",
+      "mph": "Miles per hour (mph)",
+      "mps": "Metres per second (m/s)",
+      "nm": "Nautical miles (NM)",
+      "km": "Kilometres (km)",
+      "sm": "Statute miles (SM)",
+      "m": "Metres (m)",
+      "ft": "Feet (ft)",
+      "kg": "Kilograms (kg)",
+      "lb": "Pounds (lb)",
+      "t": "Tonnes (t)",
+      "hpa": "Hectopascals (hPa)",
+      "inhg": "Inches of mercury (inHg)",
+      "mmhg": "Millimetres of mercury (mmHg)",
+      "l": "Litres (L)",
+      "usgal": "US gallons (US gal)",
+      "impgal": "Imperial gallons (imp gal)",
+      "c": "Degrees Celsius (°C)",
+      "f": "Degrees Fahrenheit (°F)",
+      "k": "Kelvin (K)"
+    },
+    "notes": {
+      "speed": "1 kt = 1 NM per hour = exactly 1.852 km/h.",
+      "distance": "1 NM = exactly 1,852 m; 1 SM = 1,609.344 m.",
+      "altitude": "1 ft = exactly 0.3048 m (international foot).",
+      "mass": "1 lb = exactly 0.45359237 kg.",
+      "pressure": "1 inHg = 33.8639 hPa; ISA at sea level is 1013.25 hPa = 29.92 inHg.",
+      "volume": "Volume, not mass: converting to kg needs the fuel density, which changes with temperature.",
+      "temperature": "°F = °C × 9/5 + 32; K = °C + 273.15."
+    },
+    "invalid": "Enter a valid number."
   }
 }
