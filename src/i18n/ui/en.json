@@ -684,7 +684,7 @@
       },
       "aircraftGame": {
         "title": "Which aircraft is it?",
-        "text": "Identify aircraft from their official figures and compare variants, using Hangar data."
+        "text": "Recognise aircraft in real Hangar photos and learn what to look for, or identify them by their official figures."
       },
       "flashcards": {
         "title": "Flashcards",
@@ -1102,9 +1102,9 @@
   },
   "aircraftGame": {
     "metaTitle": "Aircraft identification game · AeroLex",
-    "metaDescription": "Which aircraft is it? Identify aircraft from their official figures and compare variants, using Hangar data.",
+    "metaDescription": "Which aircraft is it? Recognise aircraft in real photos and identify them by their official figures, with the Hangar data.",
     "title": "Which aircraft is it?",
-    "lead": "Identify aircraft from their figures and compare variants. Every figure comes from the manufacturers' official documentation used in the Hangar.",
+    "lead": "Learn to recognise aircraft from real photos and test what you know about their figures. The photos come from the Hangar and the figures from the manufacturers' official documentation.",
     "cluesPrompt": "Which aircraft has these figures?",
     "comparePrompt": "Which one has the greater {metric}?",
     "correct": "Correct!",
@@ -1137,7 +1137,16 @@
       "rangeNm": "NM",
       "mtowT": "t"
     },
-    "dataNote": "Figures are those published by each manufacturer for each variant; they may vary with the configuration."
+    "dataNote": "Figures are those published by each manufacturer for each variant; they may vary with the configuration.",
+    "modeLabel": "Game mode",
+    "modes": {
+      "photo": "From the photo",
+      "figures": "From the figures"
+    },
+    "photoPrompt": "Which aircraft is in the photo?",
+    "photoAlt": "Photo of the aircraft to identify",
+    "lookFor": "What to look for",
+    "zoom": "View the photo full size"
   },
   "flashcards": {
     "metaTitle": "Flashcards with spaced repetition · AeroLex",

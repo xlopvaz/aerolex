@@ -50,3 +50,18 @@ export function createRound(variants, rng = Math.random) {
   const r = rng() < 0.5 ? cluesRound(variants, rng) : compareRound(variants, rng);
   return r ?? cluesRound(variants, rng) ?? compareRound(variants, rng);
 }
+
+/**
+ * photo: a real Hangar photo; pick its family among four. Every option is a different family,
+ * so there is exactly one right answer. `exclude` avoids showing the same photo twice in a row.
+ * @param {{ id: string, family: string }[]} photos
+ * @param {string[]} familyIds
+ */
+export function photoRound(photos, familyIds, rng = Math.random, exclude = null) {
+  const pool = photos.filter((p) => p.id !== exclude && familyIds.includes(p.family));
+  if (pool.length === 0) return null;
+  const photo = pick(rng, pool);
+  const others = shuffle(rng, familyIds.filter((f) => f !== photo.family)).slice(0, 3);
+  if (others.length === 0) return null;
+  return { kind: 'photo', photo: photo.id, options: shuffle(rng, [photo.family, ...others]), answer: photo.family };
+}

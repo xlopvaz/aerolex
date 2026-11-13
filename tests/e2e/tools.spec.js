@@ -182,6 +182,22 @@ test.describe('Aircraft identification game', () => {
     }
     await expect(page.locator('[data-score]')).toContainText('de 3');
   });
+
+  test('photo mode: recognise the aircraft, then learn what to look for', async ({ page }) => {
+    await page.goto('en/tools/which-aircraft/');
+    const img = page.locator('[data-photo-img]');
+    await expect(img).toBeVisible();
+    await expect(img).toHaveAttribute('alt', 'Photo of the aircraft to identify');
+    await expect.poll(() => img.evaluate((el) => el.complete && el.naturalWidth > 0)).toBe(true);
+    await expect(page.locator('[data-photo-credit]')).toContainText('Wikimedia Commons');
+    await expect(page.locator('[data-opt]')).toHaveCount(4);
+    await page.locator('[data-opt]').first().click();
+    await expect(page.locator('[data-feedback]')).toContainText('What to look for');
+    await expect(img).not.toHaveAttribute('alt', 'Photo of the aircraft to identify');
+    await page.locator('label:has(input[value="figures"])').click();
+    await expect(page.locator('[data-photo]')).toBeHidden();
+    await expect(page.locator('[data-opt]').first()).toBeVisible();
+  });
 });
 
 test.describe('Flashcards', () => {
