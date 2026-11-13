@@ -29,7 +29,8 @@
     "metarDecoder": "METAR decoder",
     "tafDecoder": "TAF decoder",
     "practice": "METAR and TAF practice",
-    "converter": "Unit converter"
+    "converter": "Unit converter",
+    "liveWeather": "Live METAR and TAF"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -652,6 +653,10 @@
       "converter": {
         "title": "Unit converter",
         "text": "Speed, distance, altitude, mass, pressure, fuel and temperature, with exact definitions."
+      },
+      "liveWeather": {
+        "title": "Live METAR and TAF",
+        "text": "The latest real METAR and TAF for selected airports, decoded and flagged when old."
       }
     }
   },
@@ -711,7 +716,8 @@
     "noCeiling": "No ceiling",
     "locale": "en-GB",
     "noscript": "The decoder needs JavaScript. Below is an example that has already been decoded.",
-    "learnMore": "Want to learn to read it yourself? Try the METAR and SPECI Academy."
+    "learnMore": "Want to learn to read it yourself? Try the METAR and SPECI Academy.",
+    "sourceLive": "Live (NOAA/NWS)"
   },
   "navShort": {
     "home": "Home",
@@ -905,5 +911,38 @@
       "temperature": "°F = °C × 9/5 + 32; K = °C + 273.15."
     },
     "invalid": "Enter a valid number."
+  },
+  "live": {
+    "metaTitle": "Live METAR and TAF · AeroLex",
+    "metaDescription": "The latest METAR and TAF for a selection of airports, decoded, with the issue time and a warning when data is old.",
+    "title": "Live METAR and TAF",
+    "lead": "The latest METAR and TAF for a selection of airports, downloaded automatically from the Aviation Weather Center (NOAA/NWS) and decoded on the spot.",
+    "warning": "Real data, but for educational purposes only: not for operational use. Downloads are periodic and may be delayed; for flying, always use official aviation weather services.",
+    "fetched": "Last download: {time} UTC",
+    "fetchedAgo": "{min} min ago",
+    "updates": "Updated roughly every 30 minutes; scheduled GitHub runs can be delayed.",
+    "noData": "There is no live data available right now. You can paste any METAR or TAF into the decoders.",
+    "fetchErrors": "The last download had problems, so some data may be missing.",
+    "live": "Live",
+    "stale": "Old (more than 2 h)",
+    "issued": "Issued: {time} UTC",
+    "age": "{min} min ago",
+    "metar": "METAR",
+    "taf": "TAF",
+    "noMetar": "No METAR in the last download.",
+    "noTaf": "No TAF in the last download (not every aerodrome issues TAFs).",
+    "decode": "Decode",
+    "timeline": "See timeline",
+    "summary": {
+      "wind": "Wind",
+      "visibility": "Visibility",
+      "ceiling": "Ceiling",
+      "temperature": "Temperature",
+      "pressure": "Pressure"
+    },
+    "noCeiling": "No ceiling",
+    "source": "Source: Aviation Weather Center (NOAA/NWS), US public domain data.",
+    "otherAirport": "Another airport? Paste its METAR or TAF into the decoder.",
+    "stationsTitle": "Airports"
   }
 }

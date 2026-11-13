@@ -1,0 +1,13 @@
+{
+  "note": "Aerodromes whose latest METAR and TAF are downloaded by the scheduled 'Live weather' workflow. Add or remove ICAO codes here (max. 40).",
+  "stations": [
+    { "id": "LEST", "name": "Santiago de Compostela" },
+    { "id": "LEVX", "name": "Vigo" },
+    { "id": "LECO", "name": "A Coruña" },
+    { "id": "LEMD", "name": "Madrid-Barajas" },
+    { "id": "LEBL", "name": "Barcelona-El Prat" },
+    { "id": "EGLL", "name": "London Heathrow" },
+    { "id": "LFPG", "name": "Paris-Charles de Gaulle" },
+    { "id": "KJFK", "name": "New York JFK" }
+  ]
+}

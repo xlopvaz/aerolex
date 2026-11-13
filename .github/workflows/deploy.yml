@@ -34,6 +34,10 @@ jobs:
       - name: Unit tests (logic, translations, routes)
         run: npm test
 
+      - name: Fetch live METAR/TAF (best effort, never fails the build)
+        if: github.event_name != 'pull_request'
+        run: node scripts/fetch-live-weather.mjs || true
+
       - name: Build site
         run: npm run build
 

@@ -251,7 +251,7 @@ lib/metar/
 ## 8. METAR/TAF en directo: limitación importante de GitHub Pages
 
 - **Fuente candidata:** la [Data API del Aviation Weather Center (NOAA/NWS)](https://aviationweather.gov/data/api/). Es gratuita, sin clave, con estaciones de todo el mundo y datos de dominio público estadounidense. Ejemplo: `https://aviationweather.gov/api/data/metar?ids=LEMD&format=json`.
-- **Problema:** varios desarrolladores informan de que esa API **no envía la cabecera CORS**, así que un navegador no puede consultarla directamente desde `xlopvaz.github.io`. Lo comprobaremos al empezar la Fase 4, porque podría haber cambiado.
+- **Problema:** la propia documentación de la API indica que **no permite CORS** (comprobado el 13/11/2026), así que un navegador no puede consultarla directamente desde `xlopvaz.github.io`.
 
 Alternativas, sin backend de pago:
 

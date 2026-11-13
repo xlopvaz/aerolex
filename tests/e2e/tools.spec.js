@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(4);
+    await expect(page.locator('[data-tool]')).toHaveCount(5);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -102,5 +102,25 @@ test.describe('Unit converter', () => {
     const alt = page.locator('[data-cat="altitude"]');
     await alt.locator('[data-unit="m"]').fill('304,8');
     await expect(alt.locator('[data-unit="ft"]')).toHaveValue('1000');
+  });
+});
+
+test.describe('Live METAR/TAF', () => {
+  test('shows live stations (or the no-data message) and links to the decoders as live', async ({ page }) => {
+    await page.goto('es/herramientas/metar-taf-en-directo/');
+    await expect(page.locator('h1')).toHaveText('METAR y TAF en directo');
+    await expect(page.locator('.callout').first()).toContainText('no aptos para uso operacional');
+    const cards = page.locator('[data-station]');
+    if ((await cards.count()) === 0) {
+      await expect(page.locator('[data-live-empty]')).toBeVisible();
+      return;
+    }
+    const first = cards.first();
+    await expect(first.locator('.lw-raw').first()).not.toBeEmpty();
+    const badge = first.locator('.lw-badge').first();
+    if (await badge.count()) await expect(badge).toHaveText(/En directo|Antiguo/);
+    await first.getByRole('link', { name: 'Descodificar' }).click();
+    await expect(page).toHaveURL(/decodificador-metar\/\?m=.+&live=1/);
+    await expect(page.locator('[data-source]')).toHaveText('En directo (NOAA/NWS)');
   });
 });

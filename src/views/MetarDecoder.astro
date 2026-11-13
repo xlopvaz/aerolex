@@ -105,6 +105,8 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
     const outs = Object.fromEntries([...root.querySelectorAll<HTMLElement>('[data-out]')].map((el) => [el.dataset.out!, el]));
     const examples: string[] = data.examples;
     const norm = (s: string) => s.trim().toUpperCase().replace(/\s+/g, ' ');
+    const params = new URLSearchParams(location.search);
+    const liveRaw = params.get('live') === '1' ? params.get('m') : null;
 
     const render = () => {
       const raw = input.value;
@@ -116,8 +118,9 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
       outs.issues.innerHTML = out.issues;
       outs.ceiling.textContent = out.ceiling;
       const isExample = examples.some((e) => norm(e) === norm(raw));
-      source.dataset.kind = isExample ? 'example' : 'user';
-      source.textContent = isExample ? data.ui.sourceExample : data.ui.sourceUser;
+      const isLive = liveRaw !== null && norm(liveRaw) === norm(raw);
+      source.dataset.kind = isLive ? 'live' : isExample ? 'example' : 'user';
+      source.textContent = isLive ? data.ui.sourceLive : isExample ? data.ui.sourceExample : data.ui.sourceUser;
     };
 
     let timer: number | undefined;

@@ -5,6 +5,7 @@
 export const TOOLS = [
   { key: 'metarDecoder', icon: 'cloud-sun' },
   { key: 'tafDecoder', icon: 'calendar-clock' },
+  { key: 'liveWeather', icon: 'radio-tower' },
   { key: 'practice', icon: 'target' },
   { key: 'converter', icon: 'arrow-left-right' },
 ];

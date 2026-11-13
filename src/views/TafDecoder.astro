@@ -106,6 +106,8 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
     const source = root.querySelector<HTMLElement>('[data-source]')!;
     const outs = Object.fromEntries([...root.querySelectorAll<HTMLElement>('[data-out]')].map((el) => [el.dataset.out!, el]));
     const norm = (s: string) => s.trim().toUpperCase().replace(/\s+/g, ' ');
+    const params = new URLSearchParams(location.search);
+    const liveRaw = params.get('live') === '1' ? params.get('m') : null;
     let taf = decodeTaf(input.value);
 
     const draw = (full: boolean) => {
@@ -125,8 +127,9 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
       hour.disabled = total <= 0;
       if (Number(hour.value) > total) hour.value = '0';
       const isExample = data.examples.some((e: string) => norm(e) === norm(input.value));
-      source.dataset.kind = isExample ? 'example' : 'user';
-      source.textContent = isExample ? data.ui.sourceExample : data.ui.sourceUser;
+      const isLive = liveRaw !== null && norm(liveRaw) === norm(input.value);
+      source.dataset.kind = isLive ? 'live' : isExample ? 'example' : 'user';
+      source.textContent = isLive ? data.ui.sourceLive : isExample ? data.ui.sourceExample : data.ui.sourceUser;
       draw(true);
     };
 

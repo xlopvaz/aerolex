@@ -1,0 +1,167 @@
+---
+/**
+ * Live METAR/TAF (Phase 4). The data file is written by scripts/fetch-live-weather.mjs just
+ * before each build (CI deploy and the scheduled "Live weather" workflow), so this page is
+ * static; the browser only recomputes how old each report is.
+ */
+import fs from 'node:fs';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import { href, t, useT } from '../i18n/index.js';
+import { decodeMetar } from '../lib/metar/decode.js';
+import { explainGroup } from '../lib/metar/explain.js';
+import { ceilingFt } from '../lib/metar/render.js';
+import { isStale, ageMinutes } from '../lib/live/awc.js';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const M = t(lang, 'metar');
+
+const FILE = 'public/data/live/weather.json';
+let data: any = null;
+try {
+  if (fs.existsSync(FILE)) data = JSON.parse(fs.readFileSync(FILE, 'utf8'));
+} catch {
+  data = null;
+}
+const stations = (data?.stations ?? []).filter((s: any) => s.metar || s.taf);
+const builtAt = new Date();
+const hhmm = (iso: string) => iso.slice(11, 16);
+const day = (iso: string) => Number(iso.slice(8, 10));
+const when = (iso: string) => `${String(day(iso)).padStart(2, '0')}/${hhmm(iso)}`;
+
+function summary(raw: string) {
+  const r = decodeMetar(raw);
+  const g = (k: string) => r.groups.find((x: any) => x.kind === k && x.section === 'main' && x.status === 'ok');
+  const rows: [string, string][] = [];
+  const wind = g('wind');
+  if (wind) rows.push([tr('live.summary.wind'), explainGroup(wind, M, lang)]);
+  const vis = g('cavok') ?? g('visibility');
+  if (vis) rows.push([tr('live.summary.visibility'), explainGroup(vis, M, lang)]);
+  const c = ceilingFt(r);
+  rows.push([tr('live.summary.ceiling'), c === null ? tr('live.noCeiling') : `${c.toLocaleString(lang === 'es' ? 'es-ES' : 'en-GB')} ft`]);
+  const temp = g('temperature');
+  if (temp) rows.push([tr('live.summary.temperature'), explainGroup(temp, M, lang)]);
+  const p = g('pressure');
+  if (p) rows.push([tr('live.summary.pressure'), explainGroup(p, M, lang)]);
+  return rows;
+}
+const decoderLink = (key: 'metarDecoder' | 'tafDecoder', raw: string) => `${href(key, lang)}?m=${encodeURIComponent(raw)}&live=1`;
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('live.metaTitle')} description={tr('live.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.liveWeather') }]} />
+      <h1>{tr('live.title')}</h1>
+      <p class="lead">{tr('live.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container mt lw" data-live data-age-template={tr('live.age')} data-stale-label={tr('live.stale')} data-live-label={tr('live.live')}>
+    <Callout type="warning" label={tr('styleguide.calloutLabels.warning')}><p>{tr('live.warning')}</p></Callout>
+
+    {data?.fetchedAt && (
+      <p class="lw-status">
+        <strong>{tr('live.fetched', { time: when(data.fetchedAt) })}</strong>
+        <span data-age={data.fetchedAt}> · {tr('live.fetchedAgo', { min: ageMinutes(data.fetchedAt, builtAt) })}</span>
+        <br /><span class="lw-muted">{tr('live.updates')}</span>
+      </p>
+    )}
+    {data?.errors?.length > 0 && stations.length > 0 && <p class="lw-muted">{tr('live.fetchErrors')}</p>}
+
+    {stations.length === 0 ? (
+      <p class="lw-empty" data-live-empty>{tr('live.noData')}</p>
+    ) : (
+      <section aria-labelledby="lw-title">
+        <h2 id="lw-title" class="visually-hidden">{tr('live.stationsTitle')}</h2>
+        <div class="lw-grid">
+          {stations.map((s: any) => (
+            <article class="mt-card lw-card" data-station={s.id}>
+              <h3><span class="mono">{s.id}</span> · {s.name}</h3>
+              <div class="lw-block">
+                <div class="lw-head">
+                  <strong>{tr('live.metar')}</strong>
+                  {s.metar?.time && (
+                    <span class:list={['lw-badge', isStale(s.metar.time, builtAt) ? 'is-stale' : 'is-live']} data-time={s.metar.time}>
+                      {isStale(s.metar.time, builtAt) ? tr('live.stale') : tr('live.live')}
+                    </span>
+                  )}
+                  {s.metar?.time && <span class="lw-muted">{tr('live.issued', { time: when(s.metar.time) })}</span>}
+                </div>
+                {s.metar ? (
+                  <>
+                    <p class="mt-code mono lw-raw">{s.metar.raw}</p>
+                    <dl class="lw-sum">
+                      {summary(s.metar.raw).map(([k, v]) => (<div><dt>{k}</dt><dd>{v}</dd></div>))}
+                    </dl>
+                    <a href={decoderLink('metarDecoder', s.metar.raw)}>{tr('live.decode')}</a>
+                  </>
+                ) : <p class="lw-muted">{tr('live.noMetar')}</p>}
+              </div>
+              <div class="lw-block">
+                <div class="lw-head">
+                  <strong>{tr('live.taf')}</strong>
+                  {s.taf?.time && <span class="lw-muted">{tr('live.issued', { time: when(s.taf.time) })}</span>}
+                </div>
+                {s.taf ? (
+                  <>
+                    <p class="mt-code mono lw-raw">{s.taf.raw}</p>
+                    <a href={decoderLink('tafDecoder', s.taf.raw)}>{tr('live.timeline')}</a>
+                  </>
+                ) : <p class="lw-muted">{tr('live.noTaf')}</p>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <p class="lw-muted">{tr('live.source')} <a href="https://aviationweather.gov/data/api/" rel="noopener">aviationweather.gov</a></p>
+    <p><a href={href('metarDecoder', lang)}>{tr('live.otherAirport')}</a></p>
+  </div>
+</BaseLayout>
+
+<style>
+  .lw-status { margin: 0; }
+  .lw-muted { color: var(--text-muted); font-size: var(--text-sm); }
+  .lw-empty { padding: var(--space-4); border: 1px dashed var(--border-strong); border-radius: var(--radius-md); }
+  .lw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-4); }
+  .lw-card { display: grid; gap: var(--space-4); align-content: start; }
+  .lw-card h3 { margin: 0; font-size: var(--text-lg, 1.15rem); }
+  .lw-block { display: grid; gap: var(--space-2); }
+  .lw-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+  .lw-raw { font-size: 0.9rem; padding: var(--space-3); line-height: 1.6; }
+  .lw-badge { padding: 0 var(--space-2); border-radius: 999px; font-size: 0.75rem; font-weight: 700; border: 1px solid currentColor; }
+  .lw-badge.is-live { color: var(--green); }
+  .lw-badge.is-stale { color: var(--amber); }
+  .lw-sum { display: grid; gap: var(--space-1); margin: 0; font-size: var(--text-sm); }
+  .lw-sum div { display: grid; grid-template-columns: 7.5rem 1fr; gap: var(--space-2); }
+  .lw-sum dt { color: var(--text-muted); }
+  .lw-sum dd { margin: 0; }
+</style>
+
+<script>
+  import { isStale, ageMinutes } from '../lib/live/awc.js';
+
+  const root = document.querySelector<HTMLElement>('[data-live]');
+  if (root) {
+    const tpl = root.dataset.ageTemplate!;
+    const update = () => {
+      const now = new Date();
+      root.querySelectorAll<HTMLElement>('[data-age]').forEach((el) => {
+        el.textContent = ' · ' + tpl.replace('{min}', String(ageMinutes(el.dataset.age!, now)));
+      });
+      root.querySelectorAll<HTMLElement>('[data-time]').forEach((el) => {
+        const stale = isStale(el.dataset.time!, now);
+        el.classList.toggle('is-stale', stale);
+        el.classList.toggle('is-live', !stale);
+        el.textContent = stale ? root.dataset.staleLabel! : root.dataset.liveLabel!;
+      });
+    };
+    update();
+    setInterval(update, 60000);
+  }
+</script>
