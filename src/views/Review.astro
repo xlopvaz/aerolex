@@ -1,0 +1,270 @@
+---
+/**
+ * Error review and study history (Phase 5).
+ * - Review: the quiz questions whose last answer was wrong, to answer again here.
+ *   A right answer is saved like in the lesson (same question id) and leaves the list.
+ * - History: completed lessons, most recent first, grouped by day.
+ * Everything comes from the saved state in this browser; the page ships the questions
+ * and lesson titles of the current language as JSON and builds the lists on the client.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
+import StatTile from '../components/ui/StatTile.astro';
+import { childHref, href, t, useT } from '../i18n/index.js';
+import { lessonKey } from '../lib/academy/progress.js';
+
+interface Props { lang: 'es' | 'en'; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const courses = new Map((await getCollection('courses')).map((c) => [c.id, c.data]));
+const lessons = (await getCollection('lessons')).filter((l) => l.data.lang === lang);
+const quizzes = new Map((await getCollection('quizzes')).map((q) => [q.id, q.data]));
+
+// Lessons of the current language: key → title, course title and URL
+const lessonInfo: Record<string, { t: string; c: string; u: string }> = {};
+// Questions of quizzes that belong to a published lesson: key → question data
+const questions: Record<string, { p: string; c: string | null; o: [string, string][]; a: string; e: string; l: string }> = {};
+for (const l of lessons) {
+  const key = lessonKey(l.data.course, l.data.lesson);
+  lessonInfo[key] = {
+    t: l.data.title,
+    c: courses.get(l.data.course)?.title[lang] ?? l.data.course,
+    u: childHref('academy', `${l.data.course}/${l.data.lesson}`, lang),
+  };
+  const quiz = l.data.quiz ? quizzes.get(l.data.quiz) : undefined;
+  for (const q of quiz?.questions ?? []) {
+    questions[`${l.data.quiz}/${q.id}`] = {
+      p: q.prompt[lang],
+      c: q.code ?? null,
+      o: q.options.map((o) => [o.id, o.text[lang]]),
+      a: q.answer,
+      e: q.explanation[lang],
+      l: key,
+    };
+  }
+}
+
+const messages = {
+  correct: t(lang, 'quiz.correct'),
+  incorrect: t(lang, 'quiz.incorrect'),
+  cleared: tr('review.cleared'),
+  stillWrong: tr('review.stillWrong'),
+  fromLesson: tr('review.fromLesson'),
+  pending: tr('review.pending'),
+  score: tr('review.score'),
+};
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('review.metaTitle')} description={tr('review.lead')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.dashboard'), href: href('dashboard', lang) }, { label: tr('review.title') }]} />
+      <h1>{tr('review.title')}</h1>
+      <p class="lead">{tr('review.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container rv" data-review data-lang={lang} data-messages={JSON.stringify(messages)}>
+    <script type="application/json" data-review-data set:html={JSON.stringify({ questions, lessons: lessonInfo })} />
+
+    <div class="grid rv__stats">
+      <StatTile label={tr('review.statPending')} value="0" icon="rotate-ccw" tone="amber" id="rv-pending" />
+      <StatTile label={tr('review.statAnswered')} value="0" icon="list-checks" tone="cyan" id="rv-answered" />
+      <StatTile label={tr('review.statAccuracy')} value="—" icon="target" tone="green" id="rv-accuracy" />
+      <StatTile label={tr('review.statLessons')} value="0" icon="circle-check" tone="primary" id="rv-lessons" />
+    </div>
+
+    <section class="rv__section" aria-labelledby="rv-errors-title">
+      <h2 id="rv-errors-title">{tr('review.errorsTitle')}</h2>
+      <p class="rv__help">{tr('review.errorsHelp')}</p>
+      <p class="rv__status" role="status" aria-live="polite" data-review-count></p>
+      <div class="rv__empty" data-review-empty hidden>
+        <Icon name="circle-check" size={22} />
+        <p data-review-empty-text></p>
+        <Button href={href('academy', lang)} variant="secondary" size="sm" iconAfter="arrow-right">{tr('review.toAcademy')}</Button>
+      </div>
+      <ol class="rv__list" data-review-list></ol>
+      <template data-empty-texts>
+        <span data-k="none">{tr('review.emptyNone')}</span>
+        <span data-k="clean">{tr('review.emptyClean')}</span>
+      </template>
+    </section>
+
+    <section class="rv__section" aria-labelledby="rv-history-title">
+      <h2 id="rv-history-title">{tr('review.historyTitle')}</h2>
+      <p class="rv__help" data-history-empty>{tr('review.historyEmpty')}</p>
+      <div data-history></div>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { recordAnswer } from '../lib/academy/progress.js';
+  import { groupByDay, questionsToReview, quizAccuracy, studyHistory } from '../lib/review/review.js';
+
+  const root = document.querySelector<HTMLElement>('[data-review]');
+  if (root) {
+    const store = getAppStore();
+    const lang = root.dataset.lang || 'en';
+    const msg = JSON.parse(root.dataset.messages || '{}');
+    const data = JSON.parse(root.querySelector('[data-review-data]')!.textContent || '{}');
+    const qs: Record<string, any> = data.questions;
+    const lessons: Record<string, any> = data.lessons;
+    const known = new Set(Object.keys(qs));
+    const knownLessons = new Set(Object.keys(lessons));
+    const nf = new Intl.NumberFormat(lang);
+    const dayFmt = new Intl.DateTimeFormat(lang, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    const fill = (tpl: string, v: Record<string, string | number>) => tpl.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+    const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls?: string, text?: string) => {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text !== undefined) e.textContent = text;
+      return e;
+    };
+    const emptyText = (k: string) => root.querySelector<HTMLTemplateElement>('[data-empty-texts]')!.content.querySelector(`[data-k="${k}"]`)!.textContent!;
+
+    const stats = () => {
+      const s = store.get();
+      const acc = quizAccuracy(s.quiz.answers);
+      const pending = questionsToReview(s.quiz.answers, known).length;
+      const set = (id: string, v: string) => { document.getElementById(id)!.textContent = v; };
+      set('rv-pending', nf.format(pending));
+      set('rv-answered', nf.format(acc.answered));
+      set('rv-accuracy', acc.percent === null ? '—' : `${acc.percent} %`);
+      set('rv-lessons', nf.format(studyHistory(s.progress.lessons, knownLessons).length));
+      root.querySelector('[data-review-count]')!.textContent = pending ? fill(msg.pending, { n: pending }) : '';
+      return { pending, answered: acc.answered };
+    };
+
+    // --- Questions to review (built once; answering does not rebuild the list)
+    const list = root.querySelector<HTMLElement>('[data-review-list]')!;
+    const keys = questionsToReview(store.get().quiz.answers, known);
+    keys.forEach((key, i) => {
+      const q = qs[key];
+      const lesson = lessons[q.l];
+      const li = el('li', 'rq');
+      const fs = el('fieldset');
+      const legend = el('legend');
+      legend.append(el('span', 'rq__num mono', `${i + 1}.`), document.createTextNode(` ${q.p}`));
+      const from = el('p', 'rq__from');
+      const a = el('a', '', lesson.t);
+      a.href = lesson.u;
+      from.append(document.createTextNode(`${fill(msg.fromLesson, { course: lesson.c })} `), a);
+      fs.append(legend, from);
+      if (q.c) fs.append(el('p', 'rq__code mono', q.c));
+      const opts = el('div', 'rq__options');
+      const buttons = q.o.map(([id, text]: [string, string]) => {
+        const b = el('button', 'rq__opt');
+        b.type = 'button';
+        b.dataset.opt = id;
+        b.setAttribute('aria-pressed', 'false');
+        const mark = el('span', 'rq__mark');
+        mark.setAttribute('aria-hidden', 'true');
+        b.append(mark, el('span', '', text));
+        return b;
+      });
+      opts.append(...buttons);
+      const fb = el('div', 'rq__feedback');
+      fb.setAttribute('role', 'status');
+      fb.setAttribute('aria-live', 'polite');
+      fb.hidden = true;
+      const verdict = el('p', 'rq__verdict');
+      fb.append(verdict, el('p', 'rq__expl', q.e));
+      fs.append(opts, fb);
+      li.append(fs);
+      list.append(li);
+
+      buttons.forEach((b: HTMLButtonElement) => b.addEventListener('click', () => {
+        if (li.classList.contains('is-answered')) return;
+        const ok = b.dataset.opt === q.a;
+        li.classList.add('is-answered', ok ? 'is-correct' : 'is-wrong');
+        buttons.forEach((o: HTMLButtonElement) => {
+          o.disabled = true;
+          if (o.dataset.opt === q.a) o.classList.add('is-answer');
+        });
+        b.setAttribute('aria-pressed', 'true');
+        b.classList.add(ok ? 'is-right-choice' : 'is-wrong-choice');
+        verdict.textContent = `${ok ? msg.correct : msg.incorrect} ${ok ? msg.cleared : msg.stillWrong}`;
+        fb.hidden = false;
+        recordAnswer(store, key, ok);
+        const st = stats();
+        if (st.pending === 0) showEmpty('clean');
+      }));
+    });
+
+    const showEmpty = (k: 'none' | 'clean') => {
+      root.querySelector<HTMLElement>('[data-review-empty]')!.hidden = false;
+      root.querySelector('[data-review-empty-text]')!.textContent = emptyText(k);
+    };
+    const first = stats();
+    if (!keys.length) showEmpty(first.answered ? 'clean' : 'none');
+
+    // --- Study history
+    const history = studyHistory(store.get().progress.lessons, knownLessons);
+    root.querySelector<HTMLElement>('[data-history-empty]')!.hidden = history.length > 0;
+    const hist = root.querySelector<HTMLElement>('[data-history]')!;
+    for (const g of groupByDay(history, (h) => h.completedAt)) {
+      const [y, m, d] = g.day.split('-').map(Number);
+      const block = el('section', 'hd');
+      block.append(el('h3', 'hd__day', dayFmt.format(new Date(y, m - 1, d))));
+      const ul = el('ul', 'hd__list');
+      for (const h of g.items) {
+        const info = lessons[h.key];
+        const li = el('li');
+        const a = el('a', 'hd__lesson', info.t);
+        a.href = info.u;
+        li.append(a, el('span', 'hd__course', info.c));
+        if (h.total) li.append(el('span', 'hd__score mono', fill(msg.score, { score: h.score, total: h.total })));
+        ul.append(li);
+      }
+      block.append(ul);
+      hist.append(block);
+    }
+  }
+</script>
+
+<style>
+  .rv { padding-top: var(--space-6); padding-bottom: var(--space-8); }
+  .rv__stats { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin-bottom: var(--space-7); }
+  .rv__section { margin-bottom: var(--space-8); }
+  .rv__help { color: var(--text-muted); max-width: 72ch; }
+  .rv__status { font-weight: 600; color: var(--amber); min-height: 1.5em; }
+  .rv__empty { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); color: var(--green); }
+  .rv__empty p { margin: 0; color: var(--text); flex: 1 1 260px; }
+  .rv__empty[hidden] { display: none; }
+
+  .rv__list { list-style: none; padding: 0; margin: var(--space-4) 0 0; display: grid; gap: var(--space-4); }
+  .rv__list :global(.rq) { margin: 0; padding: var(--space-5); border: 1px solid var(--border-strong); border-radius: var(--radius-xl); background: var(--bg-elevated); }
+  .rv__list :global(fieldset) { border: 0; padding: 0; margin: 0; min-width: 0; }
+  .rv__list :global(legend) { font-weight: 600; line-height: 1.45; margin-bottom: var(--space-1); }
+  .rv__list :global(.rq__num) { color: var(--cyan); }
+  .rv__list :global(.rq__from) { font-size: var(--text-sm); color: var(--text-muted); margin: 0 0 var(--space-3); }
+  .rv__list :global(.rq__code) { padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); overflow-x: auto; white-space: nowrap; }
+  .rv__list :global(.rq__options) { display: grid; gap: var(--space-2); }
+  .rv__list :global(.rq__opt) { display: flex; align-items: center; gap: var(--space-3); width: 100%; padding: 0.7rem 0.9rem; text-align: left; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--text); cursor: pointer; font: inherit; }
+  .rv__list :global(.rq__opt:hover:not(:disabled)) { border-color: var(--primary); }
+  .rv__list :global(.rq__opt:disabled) { cursor: default; }
+  .rv__list :global(.rq__mark) { width: 18px; height: 18px; flex-shrink: 0; border-radius: 50%; border: 2px solid var(--border-strong); }
+  .rv__list :global(.rq__opt.is-answer) { border-color: var(--green); background: color-mix(in srgb, var(--green) 10%, var(--surface)); }
+  .rv__list :global(.rq__opt.is-answer .rq__mark) { border-color: var(--green); background: var(--green); }
+  .rv__list :global(.rq__opt.is-wrong-choice) { border-color: var(--red); background: color-mix(in srgb, var(--red) 10%, var(--surface)); }
+  .rv__list :global(.rq__opt.is-wrong-choice .rq__mark) { border-color: var(--red); background: var(--red); }
+  .rv__list :global(.rq__feedback) { margin-top: var(--space-3); padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); }
+  .rv__list :global(.rq__feedback p) { margin: 0; }
+  .rv__list :global(.rq__verdict) { font-weight: 600; margin-bottom: var(--space-1) !important; }
+  .rv__list :global(.is-correct .rq__verdict) { color: var(--green); }
+  .rv__list :global(.is-wrong .rq__verdict) { color: var(--red); }
+
+  [data-history] :global(.hd) { margin-top: var(--space-5); }
+  [data-history] :global(.hd__day) { font-size: var(--text-base); color: var(--text-muted); text-transform: capitalize; margin: 0 0 var(--space-2); }
+  [data-history] :global(.hd__list) { list-style: none; padding: 0; margin: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  [data-history] :global(.hd__list li) { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); align-items: baseline; margin: 0; padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--border); }
+  [data-history] :global(.hd__list li:last-child) { border-bottom: 0; }
+  [data-history] :global(.hd__lesson) { font-weight: 600; }
+  [data-history] :global(.hd__course) { color: var(--text-muted); font-size: var(--text-sm); flex: 1 1 auto; }
+  [data-history] :global(.hd__score) { color: var(--magenta); font-size: var(--text-sm); }
+</style>

@@ -37,7 +37,8 @@
     "flashcards": "Flashcards",
     "weatherGlossary": "Weather glossary",
     "timeline": "Timeline",
-    "sources": "Sources"
+    "sources": "Sources",
+    "review": "Mistake review"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -1346,5 +1347,28 @@
       "name": "Aviation Master",
       "desc": "Earn every other badge."
     }
+  },
+  "review": {
+    "metaTitle": "Mistake review and history · AeroLex",
+    "title": "Mistake review and history",
+    "lead": "Answer again the quiz questions you got wrong and look back at the lessons you have completed.",
+    "statPending": "Questions to review",
+    "statAnswered": "Answers given",
+    "statAccuracy": "Quiz accuracy",
+    "statLessons": "Lessons completed",
+    "errorsTitle": "Questions you got wrong",
+    "errorsHelp": "Questions whose last answer was wrong show up here, most recent first. Get one right and it leaves the list, just as it would in the lesson.",
+    "pending": "Questions to review: {n}.",
+    "fromLesson": "{course} ·",
+    "cleared": "It leaves your review list.",
+    "stillWrong": "It stays on your list: read the explanation and try again later.",
+    "emptyNone": "You have not answered any quiz yet. Questions you get wrong in the lessons will show up here.",
+    "emptyClean": "You have no wrong answers left to review.",
+    "toAcademy": "Go to the Academy",
+    "historyTitle": "Study history",
+    "historyEmpty": "The lessons you complete will show up here, by day.",
+    "score": "{score}/{total} in the quiz",
+    "dashLink": "Review mistakes and history",
+    "dashPending": "Wrong answers to review: {n}."
   }
 }
