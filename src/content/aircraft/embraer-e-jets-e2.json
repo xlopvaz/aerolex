@@ -1,0 +1,138 @@
+{
+  "manufacturer": "Embraer",
+  "family": {
+    "en": "E-Jets E2",
+    "es": "E-Jets E2"
+  },
+  "category": "regional",
+  "order": 9,
+  "summary": {
+    "en": "The second generation of Embraer's E-Jets: twin-engined single-aisle jets with a low wing and Pratt & Whitney geared turbofan engines, in three sizes (E175-E2, E190-E2 and E195-E2).",
+    "es": "La segunda generación de los E-Jets de Embraer: reactores bimotores de pasillo único y ala baja con motores turbofán con reductor de Pratt & Whitney, en tres tamaños (E175-E2, E190-E2 y E195-E2)."
+  },
+  "history": {
+    "en": "The E190-E2 was the first member of the E-Jet E2 family; the larger E195-E2 and the smaller E175-E2 complete it. Embraer states that the E2 burns 29% less fuel per seat than the previous generation and has a noise footprint up to 68% smaller than the first-generation E-Jets.",
+    "es": "El E190-E2 fue el primer miembro de la familia E-Jet E2; el E195-E2, más grande, y el E175-E2, más pequeño, la completan. Según Embraer, el E2 consume un 29 % menos de combustible por asiento que la generación anterior y tiene una huella sonora hasta un 68 % menor que la de los E-Jets de primera generación."
+  },
+  "facts": [
+    {
+      "en": "Each model has its own engine of the PW1000G family: PW1714G (E175-E2), PW1919G (E190-E2) and PW1921G (E195-E2), according to Embraer's airport planning manual.",
+      "es": "Cada modelo lleva su propio motor de la familia PW1000G: PW1714G (E175-E2), PW1919G (E190-E2) y PW1921G (E195-E2), según el manual de planificación aeroportuaria de Embraer."
+    },
+    {
+      "en": "Embraer states that 99.9% of all missions with up to 150 seats are within the E2's 3,000 NM range.",
+      "es": "Según Embraer, el 99,9 % de las misiones con hasta 150 asientos están dentro de las 3000 NM de alcance del E2."
+    },
+    {
+      "en": "The E195-E2 is the largest aircraft of the family, with up to 146 seats.",
+      "es": "El E195-E2 es el avión más grande de la familia, con hasta 146 asientos."
+    }
+  ],
+  "sources": [
+    "embraer-e2-apm",
+    "embraer-e2-overview",
+    "embraer-e195-e2-spec",
+    "embraer-e190-e2-spec",
+    "embraer-e175-e2-page"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "e175-e2",
+      "name": "E175-E2",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 32.37,
+      "wingspanM": 31.39,
+      "heightM": 10.18,
+      "seatsTypical": "80–88",
+      "seatsMax": 90,
+      "rangeNm": 2000,
+      "rangeKm": 3704,
+      "mtowT": 44.6,
+      "engines": [
+        "Pratt & Whitney PW1714G"
+      ],
+      "note": {
+        "en": "Layouts: 80 seats in three classes, 88 or 90 in one class. Range with a full load of passengers.",
+        "es": "Configuraciones: 80 asientos en tres clases, 88 o 90 en clase única. Alcance con todos los pasajeros."
+      },
+      "sources": [
+        "embraer-e2-apm",
+        "embraer-e175-e2-page"
+      ]
+    },
+    {
+      "id": "e190-e2",
+      "name": "E190-E2",
+      "status": "in-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 36.24,
+      "wingspanM": 33.72,
+      "heightM": 10.95,
+      "seatsTypical": "97–106",
+      "seatsMax": 114,
+      "rangeNm": 2950,
+      "rangeKm": 5463,
+      "mtowT": 56.4,
+      "engines": [
+        "Pratt & Whitney PW1919G"
+      ],
+      "note": {
+        "en": "Layouts: 97 seats in three classes, 106 in one class at 31-inch pitch or 114 at 29-inch pitch. Range with a full load of passengers, long-range cruise, typical reserves and a 100 NM alternate.",
+        "es": "Configuraciones: 97 asientos en tres clases, 106 en clase única con 31 pulgadas de separación o 114 con 29. Alcance con todos los pasajeros, crucero de largo alcance, reservas típicas y aeródromo alternativo a 100 NM."
+      },
+      "sources": [
+        "embraer-e2-apm",
+        "embraer-e190-e2-spec"
+      ]
+    },
+    {
+      "id": "e195-e2",
+      "name": "E195-E2",
+      "status": "in-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 41.6,
+      "wingspanM": 35.12,
+      "heightM": 10.78,
+      "seatsTypical": "120–132",
+      "seatsMax": 146,
+      "rangeNm": 3000,
+      "rangeKm": 5556,
+      "mtowT": 62.5,
+      "engines": [
+        "Pratt & Whitney PW1921G"
+      ],
+      "note": {
+        "en": "Layouts: 120 seats in three classes, 132 in one class at 31-inch pitch or 146 at 28-inch pitch. Range with a full load of passengers, long-range cruise, typical reserves and a 100 NM alternate. MTOW from the specification sheet (62.5 t); the 2022 section of the airport planning manual gives 61.5 t.",
+        "es": "Configuraciones: 120 asientos en tres clases, 132 en clase única con 31 pulgadas de separación o 146 con 28. Alcance con todos los pasajeros, crucero de largo alcance, reservas típicas y aeródromo alternativo a 100 NM. Peso máximo al despegue según la ficha técnica (62,5 t); la sección de 2022 del manual de planificación aeroportuaria indica 61,5 t."
+      },
+      "sources": [
+        "embraer-e2-apm",
+        "embraer-e195-e2-spec"
+      ]
+    }
+  ]
+}
