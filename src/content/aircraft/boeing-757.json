@@ -1,0 +1,103 @@
+{
+  "manufacturer": "Boeing",
+  "family": {
+    "en": "Boeing 757",
+    "es": "Boeing 757"
+  },
+  "category": "commercial",
+  "order": 13,
+  "summary": {
+    "en": "Boeing's long, slim single-aisle twinjet for medium-haul routes, built as the 757-200, the stretched 757-300 and the 757-200PF package freighter. It is out of production.",
+    "es": "El bimotor de pasillo único de Boeing para rutas de medio radio, largo y estilizado, fabricado como 757-200, como 757-300 alargado y como carguero de paquetería 757-200PF. Está fuera de producción."
+  },
+  "history": {
+    "en": "Boeing's airport planning manual (December 2024 revision) still covers every version: the 757-200 with Rolls-Royce RB211-535 or Pratt & Whitney PW2000 engines, the 757-200PF freighter and the 757-300.",
+    "es": "El manual de planificación aeroportuaria de Boeing (revisión de diciembre de 2024) sigue cubriendo todas las versiones: el 757-200 con motores Rolls-Royce RB211-535 o Pratt & Whitney PW2000, el carguero 757-200PF y el 757-300."
+  },
+  "facts": [
+    {
+      "en": "Airlines could choose between two engine makers: Rolls-Royce (RB211-535) and Pratt & Whitney (PW2037, PW2040, PW2043).",
+      "es": "Las aerolíneas podían elegir entre dos fabricantes de motores: Rolls-Royce (RB211-535) y Pratt & Whitney (PW2037, PW2040, PW2043)."
+    },
+    {
+      "en": "The 757-300 carries 243 passengers in two classes, against 186 for the 757-200.",
+      "es": "El 757-300 lleva 243 pasajeros en dos clases, frente a 186 el 757-200."
+    }
+  ],
+  "sources": [
+    "boeing-757-acap"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "757-200",
+      "name": "757-200",
+      "status": "out-of-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null,
+      "seatsTypical": "186",
+      "seatsMax": 239,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 115.67,
+      "engines": [
+        "Rolls-Royce RB211-535C",
+        "Rolls-Royce RB211-535E4",
+        "Pratt & Whitney PW2037",
+        "Pratt & Whitney PW2040"
+      ],
+      "note": {
+        "en": "Typical two-class seating: 16 first + 170 economy. The manual gives an FAA exit limit of 224 or 239 seats in one class, depending on the configuration noted in it. Maximum design take-off weights range from 99.8 t to 115.7 t. The manual gives the dimensions only as drawings, so they are not shown.",
+        "es": "Plazas típicas en dos clases: 16 en primera y 170 en turista. El manual indica un límite de salidas de la FAA de 224 o 239 asientos en clase única, según la configuración que anota. Los pesos máximos de despegue de diseño van de 99,8 t a 115,7 t. El manual da las dimensiones solo en planos, así que no se muestran."
+      },
+      "sources": [
+        "boeing-757-acap"
+      ]
+    },
+    {
+      "id": "757-300",
+      "name": "757-300",
+      "status": "out-of-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null,
+      "seatsTypical": "243",
+      "seatsMax": null,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 122.45,
+      "engines": [
+        "Pratt & Whitney PW2040",
+        "Pratt & Whitney PW2043",
+        "Rolls-Royce RB211-535E4",
+        "Rolls-Royce RB211-535E4B"
+      ],
+      "note": {
+        "en": "Typical two-class seating: 12 first + 231 economy; 279 in an all-economy layout. The manual gives the dimensions only as drawings, so they are not shown.",
+        "es": "Plazas típicas en dos clases: 12 en primera y 231 en turista; 279 en clase única. El manual da las dimensiones solo en planos, así que no se muestran."
+      },
+      "sources": [
+        "boeing-757-acap"
+      ]
+    }
+  ]
+}

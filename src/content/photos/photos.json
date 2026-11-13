@@ -838,5 +838,89 @@
     "author": "Olivier Cleynen",
     "licence": "CC BY-SA 3.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "boeing-757-1": {
+    "family": "boeing-757",
+    "order": 1,
+    "file": "photos/hangar/boeing-757-1.jpg",
+    "thumb": "photos/hangar/boeing-757-1-640.jpg",
+    "width": 1280,
+    "height": 710,
+    "alt": {
+      "es": "Boeing 757-200 de Delta en aproximación",
+      "en": "Delta Boeing 757-200 on approach"
+    },
+    "caption": {
+      "es": "Fuselaje largo y muy estrecho para su tamaño, morro puntiagudo, winglets altos en las puntas del ala y un tren de aterrizaje alto.",
+      "en": "A long fuselage that is very slim for its size, a pointed nose, tall winglets at the wingtips and tall landing gear."
+    },
+    "commonsTitle": "File:Delta Boeing 757-200 N699DL BWI MD1.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Delta_Boeing_757-200_N699DL_BWI_MD1.jpg",
+    "author": "Acroterion",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-757-2": {
+    "family": "boeing-757",
+    "order": 2,
+    "file": "photos/hangar/boeing-757-2.jpg",
+    "thumb": "photos/hangar/boeing-757-2-640.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": {
+      "es": "Boeing 757-200 de Icelandair rodando en Berlín-Tegel",
+      "en": "Icelandair Boeing 757-200 taxiing at Berlin Tegel"
+    },
+    "caption": {
+      "es": "De perfil: un pasillo único muy largo, con la cola alta y dos motores grandes bajo el ala.",
+      "en": "Side view: a very long single-aisle jet with a tall tail and two large engines under the wing."
+    },
+    "commonsTitle": "File:TF-FIK, Tegel Airport, Berlin (IMG 9001).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:TF-FIK,_Tegel_Airport,_Berlin_(IMG_9001).jpg",
+    "author": "Matti Blume",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-757-3": {
+    "family": "boeing-757",
+    "order": 3,
+    "file": "photos/hangar/boeing-757-3.jpg",
+    "thumb": "photos/hangar/boeing-757-3-640.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": {
+      "es": "Boeing 757 de Delta rodando hacia la terminal, de frente",
+      "en": "Delta Boeing 757 taxiing to the terminal, front view"
+    },
+    "caption": {
+      "es": "De frente se ve lo alto que queda el avión sobre el suelo: el tren es largo y los motores no rozan la pista. Los winglets apuntan hacia arriba.",
+      "en": "From the front you can see how high the aircraft sits: the landing gear is long and the engines are well clear of the ground. The winglets point upwards."
+    },
+    "commonsTitle": "File:Delta - B752 - N649DL at DCA - 2012-07-16.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Delta_-_B752_-_N649DL_at_DCA_-_2012-07-16.jpg",
+    "author": "PierreSelim",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "boeing-757-4": {
+    "family": "boeing-757",
+    "order": 4,
+    "file": "photos/hangar/boeing-757-4.jpg",
+    "thumb": "photos/hangar/boeing-757-4-640.jpg",
+    "width": 1280,
+    "height": 842,
+    "alt": {
+      "es": "Morro de un Boeing 757-200 de United con el tractor de remolque",
+      "en": "Nose of a United Boeing 757-200 with the pushback tractor"
+    },
+    "caption": {
+      "es": "Morro puntiagudo con ventanas de cabina estrechas y una pata de morro alta: compárala con la altura de la persona de al lado.",
+      "en": "A pointed nose with narrow cockpit windows and a tall nose gear leg: compare it with the height of the person next to it."
+    },
+    "commonsTitle": "File:United Airlines - N558UA - Boeing 757-222 - San Francisco International Airport-0713.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:United_Airlines_-_N558UA_-_Boeing_757-222_-_San_Francisco_International_Airport-0713.jpg",
+    "author": "Raimond Spekking",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   }
 }
