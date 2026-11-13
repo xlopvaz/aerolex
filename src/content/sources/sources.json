@@ -101,5 +101,8 @@
   "embraer-e2-overview": {"title": "E-Jets E2 — overview", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/e-jets-e2/en/", "licence": "copyright"},
   "embraer-e195-e2-spec": {"title": "E195-E2 specifications sheet", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/media/ue1bdfnq/e195-e2-spec-1.pdf", "licence": "copyright"},
   "embraer-e190-e2-spec": {"title": "E190-E2 specifications sheet", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/media/e5whgknk/e190-e2_spec.pdf", "licence": "copyright"},
-  "embraer-e175-e2-page": {"title": "E175-E2 — specifications", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraercommercialaviation.com/?p=175", "licence": "copyright"}
+  "embraer-e175-e2-page": {"title": "E175-E2 — specifications", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraercommercialaviation.com/?p=175", "licence": "copyright"},
+  "boeing-777x-page": {"title": "777X — technical specs", "publisher": "Boeing", "kind": "manufacturer", "url": "https://www.boeing.com/commercial/777x", "licence": "copyright"},
+  "boeing-777x-first-flight": {"title": "New Boeing 777X Completes Successful First Flight (25 January 2020)", "publisher": "Boeing", "kind": "manufacturer", "url": "https://boeing.mediaroom.com/2020-01-25-New-Boeing-777X-Completes-Successful-First-Flight", "licence": "copyright"},
+  "boeing-777x-second-flight": {"title": "Second Boeing 777X Completes First Flight (30 April 2020)", "publisher": "Boeing", "kind": "manufacturer", "url": "https://boeing.mediaroom.com/2020-04-30-Second-Boeing-777X-Completes-First-Flight", "licence": "copyright"}
 }
