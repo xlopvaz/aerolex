@@ -122,6 +122,11 @@ describe('decodeMetar — other groups', () => {
     expect(find(r, 'modifier').data.value).toBe('COR');
     expect(find(r, 'windShear').data).toEqual({ all: true });
   });
+  it('COR and AUTO together after the time (real UK format)', () => {
+    const r = decodeMetar('METAR EGLL 130120Z COR AUTO 31003KT 280V350 9999 NCD 02/M01 Q1013 NOSIG');
+    expect(r.groups.filter((g) => g.kind === 'modifier').map((g) => g.data.value)).toEqual(['COR', 'AUTO']);
+    expect(r.issues).toEqual([]);
+  });
   it('NIL reports skip the missing-group warnings', () => {
     expect(decodeMetar('METAR LEMD 131200Z NIL').issues).toEqual([]);
   });
