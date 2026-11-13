@@ -9,6 +9,7 @@ export const TOOLS = [
   { key: 'practice', icon: 'target' },
   { key: 'atcTrainer', icon: 'headset' },
   { key: 'aircraftGame', icon: 'plane' },
+  { key: 'cockpit', icon: 'gauge' },
   { key: 'flashcards', icon: 'layers' },
   { key: 'weatherGlossary', icon: 'cloud-rain' },
   { key: 'timeline', icon: 'history' },

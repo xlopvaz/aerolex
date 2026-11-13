@@ -4,11 +4,11 @@ const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/', 'es/academia/taf/', 'es/academia/taf/change-groups/',
-  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/', 'es/herramientas/diagramas-de-aeropuerto/',
+  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/', 'es/herramientas/diagramas-de-aeropuerto/', 'es/herramientas/cabina-de-vuelo/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
   'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/', 'en/academy/taf/full-decode/',
-  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/', 'en/tools/airport-diagrams/',
+  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/', 'en/tools/airport-diagrams/', 'en/tools/flight-deck/',
 ];
 
 test.describe('language', () => {
@@ -177,6 +177,35 @@ test.describe('airport diagrams', () => {
   });
 });
 
+test.describe('flight deck', () => {
+  test('explores both flight decks and plays "Where is…?"', async ({ page }) => {
+    await page.goto('en/tools/flight-deck/');
+    const airbus = page.locator('[data-deck="airbus"]');
+    await airbus.locator('.ck-item[data-item="sidestick"] rect').first().click();
+    await expect(airbus.locator('[data-card="sidestick"]')).toBeVisible();
+    await expect(airbus.locator('[data-card="sidestick"]')).toContainText('fly-by-wire');
+    await expect(airbus.locator('[data-pick="sidestick"]')).toHaveAttribute('aria-pressed', 'true');
+
+    await page.locator('label:has(input[name="ck-type"][value="boeing"])').click();
+    const boeing = page.locator('[data-deck="boeing"]');
+    await expect(boeing).toBeVisible();
+    await expect(airbus).toBeHidden();
+    await boeing.locator('[data-pick="mcp"]').click();
+    await expect(boeing.locator('[data-card="mcp"]')).toContainText('glareshield');
+
+    await page.locator('label:has(input[name="ck-mode"][value="quiz"])').click();
+    const prompt = await boeing.locator('[data-prompt]').textContent();
+    const target = await boeing.locator('[data-pick]').evaluateAll((els, p) => els.find((e) => p?.includes(e.querySelector('.ck__name').textContent))?.getAttribute('data-pick'), prompt);
+    expect(target).toBeTruthy();
+    await expect(boeing.locator(`[data-pick="${target}"] .ck__name`)).toBeHidden(); // names are hidden while playing
+    await boeing.locator(`[data-pick="${target}"]`).click();
+    await expect(boeing.locator('[data-feedback]')).toHaveText('Correct!');
+    await expect(boeing.locator('[data-score]')).toHaveText('1 of 1');
+    await boeing.locator('[data-next]').click();
+    await expect(boeing.locator('[data-feedback]')).toHaveText('');
+  });
+});
+
 test.describe('components', () => {
   test('tabs work with the keyboard', async ({ page }) => {
     await page.goto('en/styleguide/');
@@ -247,7 +276,7 @@ test('@mobile no page scrolls sideways on a 360 px screen', async ({ page }) => 
   const paths = [
     'es/', 'en/academy/taf/full-decode/', 'es/academia/metar-speci/full-decode/', 'es/hangar/boeing-737/', 'en/hangar/compare/',
     'es/diccionario/acronimos/', 'es/herramientas/diagramas-de-aeropuerto/?q=AMS', 'en/tools/airports/?q=london', 'es/panel/',
-    'es/panel/repaso/', 'es/fuentes/', 'en/styleguide/', 'en/this-does-not-exist/', 'es/herramientas/cronologia/',
+    'es/panel/repaso/', 'es/fuentes/', 'en/styleguide/', 'en/tools/flight-deck/', 'en/this-does-not-exist/', 'es/herramientas/cronologia/',
   ];
   for (const path of paths) {
     await page.goto(path);

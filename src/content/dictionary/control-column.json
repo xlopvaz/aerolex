@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Control column",
+    "es": "Columna de mando"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The column in front of each pilot, topped by a yoke, that moves the elevators (forwards and back) and the ailerons (when the yoke is turned). On Boeing airliners the two columns move together, even on fly-by-wire models such as the 777 and 787.",
+    "es": "Columna situada delante de cada piloto, rematada por un volante, que mueve los timones de profundidad (hacia delante y atrás) y los alerones (al girar el volante). En los aviones de línea de Boeing las dos columnas se mueven a la vez, incluso en los modelos con mandos eléctricos como el 777 y el 787."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"steering wheel\" of an aircraft.",
+    "es": "El «volante» del avión."
+  },
+  "example": {
+    "en": "The first officer felt the control column move as the captain flared.",
+    "es": "El copiloto notó moverse la columna de mando cuando el comandante hizo la recogida."
+  },
+  "pronunciation": {
+    "en": "kun-TROHL KOL-um",
+    "es": "co-lum-na de man-do"
+  },
+  "synonyms": {
+    "en": [
+      "yoke",
+      "control wheel"
+    ],
+    "es": [
+      "volante",
+      "cuernos"
+    ]
+  },
+  "related": [
+    "sidestick",
+    "elevator",
+    "aileron"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "arnedo-cockpits",
+    "aopa-autothrottles-2025",
+    "skybrary-flight-control-laws"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

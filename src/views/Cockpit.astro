@@ -1,0 +1,254 @@
+---
+/**
+ * Interactive flight deck (Phase 5): simplified sketches of an Airbus A320 and a Boeing
+ * (737/787) flight deck by zones. Explore: pick an element on the drawing or in the list
+ * to read what it does, how it differs from the other manufacturer, related terms and sources.
+ * "Where is…?": find the element asked for (practice, saved as cockpit-airbus / cockpit-boeing).
+ * Data: src/content/cockpits/cockpits.json (sources and review status per element).
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import SegmentedControl from '../components/ui/SegmentedControl.astro';
+import Icon from '../components/ui/Icon.astro';
+import { getCollection } from 'astro:content';
+import { childHref, href, t, useT } from '../i18n/index.js';
+import data from '../content/cockpits/cockpits.json';
+
+interface Props { lang: 'es' | 'en'; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const [W, H] = data.viewBox as [number, number];
+const dict = new Map((await getCollection('dictionary')).map((e) => [e.id, e.data.term[lang]]));
+const sources = new Map((await getCollection('sources')).map((s) => [s.id, s.data]));
+const types = Object.entries(data.cockpits) as [string, any][];
+const ui = {
+  find: tr('cockpit.find'),
+  right: tr('cockpit.right'),
+  wrong: tr('cockpit.wrong'),
+  score: tr('cockpit.score'),
+};
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('cockpit.metaTitle')} description={tr('cockpit.lead')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.cockpit') }]} />
+      <h1>{tr('cockpit.title')}</h1>
+      <p class="lead">{tr('cockpit.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container ck" data-cockpit data-ui={JSON.stringify(ui)}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('cockpit.notice')}</p></Callout>
+
+    <div class="ck__controls">
+      <SegmentedControl name="ck-type" legend={tr('cockpit.typeLabel')} value="airbus" options={types.map(([k, c]) => ({ value: k, label: c.name[lang] }))} />
+      <SegmentedControl name="ck-mode" legend={tr('cockpit.modeLabel')} value="explore" options={[{ value: 'explore', label: tr('cockpit.modes.explore') }, { value: 'quiz', label: tr('cockpit.modes.quiz') }]} />
+    </div>
+
+    {types.map(([key, c], ti) => (
+      <section class="ck__deck" data-deck={key} hidden={ti > 0} aria-labelledby={`ck-${key}-title`}>
+        <h2 id={`ck-${key}-title`}>{c.name[lang]}</h2>
+        <p class="ck__intro">{c.intro[lang]}</p>
+
+        <div class="ck__quiz" data-quiz hidden>
+          <p class="ck__prompt" data-prompt aria-live="polite"></p>
+          <p class="ck__feedback" role="status" aria-live="polite" data-feedback></p>
+          <p class="ck__score mono" data-score></p>
+          <button type="button" class="ck__next" data-next hidden><Icon name="arrow-right" size={16} /> {tr('cockpit.next')}</button>
+        </div>
+
+        <div class="ck__grid">
+          <figure class="ck__figure">
+            <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={tr('cockpit.svgLabel', { name: c.name[lang] })} data-svg>
+              {c.zones.map((z: any) => (
+                <g class={`ck-zone ck-zone--${z.id}`}>
+                  <rect x={z.shape[0]} y={z.shape[1]} width={z.shape[2]} height={z.shape[3]} rx="10" />
+                  <text x={z.shape[0] + 8} y={z.id === 'overhead' ? z.shape[1] + 18 : z.shape[1] + z.shape[3] - 8} class="ck-zone__label">{z.label[lang]}</text>
+                </g>
+              ))}
+              {c.items.map((it: any, n: number) => (
+                <g class="ck-item" data-item={it.id}>
+                  {it.shapes.map((s: number[]) => (
+                    <>
+                      <rect x={s[0]} y={s[1]} width={s[2]} height={s[3]} rx="6" class="ck-item__shape" />
+                      <text x={s[0] + s[2] / 2} y={s[1] + s[3] / 2 + 6} text-anchor="middle" class="ck-item__num">{n + 1}</text>
+                    </>
+                  ))}
+                </g>
+              ))}
+            </svg>
+            <figcaption class="ck__caption">{tr('cockpit.caption')}</figcaption>
+          </figure>
+
+          <div class="ck__side">
+            <ol class="ck__list" aria-label={tr('cockpit.listLabel', { name: c.name[lang] })}>
+              {c.items.map((it: any, n: number) => (
+                <li>
+                  <button type="button" class="ck__pick" data-pick={it.id} aria-pressed="false" aria-controls={`ck-${key}-info`}>
+                    <span class="ck__n mono">{n + 1}</span>
+                    <span class="ck__name">{it.name[lang]}</span>
+                    <span class="visually-hidden ck__zone-only">{tr('cockpit.zoneN', { n: n + 1 })}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+
+            <div class="ck__info" id={`ck-${key}-info`} aria-live="polite">
+              <p class="ck__hint" data-hint>{tr('cockpit.hint')}</p>
+              {c.items.map((it: any) => (
+                <article class="ck__card" data-card={it.id} hidden>
+                  <h3>{it.name[lang]}</h3>
+                  <p>{it.text[lang]}</p>
+                  {it.compare && <p class="ck__compare"><Icon name="arrow-left-right" size={16} /> <span>{it.compare[lang]}</span></p>}
+                  {it.terms.length > 0 && (
+                    <p class="ck__terms">{tr('cockpit.terms')} {it.terms.map((id: string, i: number) => (<>{i > 0 && ' · '}<a href={childHref('dictionary', id, lang)}>{dict.get(id) ?? id}</a></>))}</p>
+                  )}
+                  <p class="ck__src">{tr('cockpit.sourcesLabel')} {it.sources.map((id: string, i: number) => (<>{i > 0 && ' · '}<a href={`${href('sources', lang)}#src-${id}`}>{sources.get(id)?.publisher}</a></>))}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    ))}
+
+    <p class="ck__note">{tr('cockpit.draft')}</p>
+    <noscript><p>{tr('tools.noscript')}</p></noscript>
+  </div>
+</BaseLayout>
+
+<script>
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { recordPractice } from '../lib/practice/stats.js';
+  import { nextQuestion } from '../lib/cockpit/cockpit.js';
+
+  const root = document.querySelector<HTMLElement>('[data-cockpit]');
+  if (root) {
+    const ui = JSON.parse(root.dataset.ui || '{}');
+    const store = getAppStore();
+    const fill = (s: string, v: Record<string, string | number>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+    let type = 'airbus';
+    let mode: 'explore' | 'quiz' = 'explore';
+    const quiz = { target: '', asked: [] as string[], right: 0, total: 0, answered: false };
+    const deck = () => root.querySelector<HTMLElement>(`[data-deck="${type}"]`)!;
+    const nameOf = (id: string) => deck().querySelector<HTMLElement>(`[data-pick="${id}"] .ck__name`)!.textContent!;
+    const items = () => [...deck().querySelectorAll<HTMLElement>('[data-pick]')].map((b) => ({ id: b.dataset.pick! }));
+
+    const mark = (id: string | null, cls = 'is-selected') => {
+      deck().querySelectorAll(`.ck-item.${cls}`).forEach((g) => g.classList.remove(cls));
+      if (id) deck().querySelector(`.ck-item[data-item="${id}"]`)?.classList.add(cls);
+    };
+
+    const select = (id: string) => {
+      const d = deck();
+      mark(id);
+      d.querySelectorAll<HTMLElement>('[data-pick]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.pick === id)));
+      d.querySelectorAll<HTMLElement>('[data-card]').forEach((c) => { c.hidden = c.dataset.card !== id; });
+      d.querySelector<HTMLElement>('[data-hint]')!.hidden = true;
+    };
+
+    const ask = () => {
+      const d = deck();
+      const next = nextQuestion(items(), Math.random, quiz.asked);
+      quiz.target = next.id;
+      quiz.asked = next.asked;
+      quiz.answered = false;
+      mark(null, 'is-right');
+      mark(null, 'is-wrong');
+      d.querySelector('[data-prompt]')!.textContent = fill(ui.find, { name: nameOf(quiz.target) });
+      d.querySelector('[data-feedback]')!.textContent = '';
+      d.querySelector<HTMLElement>('[data-next]')!.hidden = true;
+    };
+
+    const answer = (id: string) => {
+      if (quiz.answered) return;
+      const d = deck();
+      const ok = id === quiz.target;
+      quiz.answered = true;
+      quiz.total += 1;
+      if (ok) quiz.right += 1;
+      mark(quiz.target, 'is-right');
+      if (!ok) mark(id, 'is-wrong');
+      d.querySelector('[data-feedback]')!.textContent = ok ? ui.right : fill(ui.wrong, { name: nameOf(quiz.target) });
+      d.querySelector('[data-score]')!.textContent = fill(ui.score, { right: quiz.right, total: quiz.total });
+      const next = d.querySelector<HTMLElement>('[data-next]')!;
+      next.hidden = false;
+      next.focus();
+      recordPractice(store, `cockpit-${type}`, ok);
+    };
+
+    const choose = (id: string) => (mode === 'quiz' ? answer(id) : select(id));
+
+    const setMode = (m: 'explore' | 'quiz') => {
+      mode = m;
+      root.classList.toggle('is-quiz', m === 'quiz');
+      root.querySelectorAll<HTMLElement>('[data-quiz]').forEach((q) => { q.hidden = m !== 'quiz'; });
+      root.querySelectorAll<HTMLElement>('[data-card]').forEach((c) => { c.hidden = true; });
+      root.querySelectorAll<HTMLElement>('[data-hint]').forEach((h) => { h.hidden = m === 'quiz'; });
+      root.querySelectorAll('.ck-item').forEach((g) => g.classList.remove('is-selected', 'is-right', 'is-wrong'));
+      root.querySelectorAll<HTMLElement>('[data-pick]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+      if (m === 'quiz') {
+        Object.assign(quiz, { asked: [], right: 0, total: 0 });
+        deck().querySelector('[data-score]')!.textContent = '';
+        ask();
+      }
+    };
+
+    root.querySelectorAll<HTMLInputElement>('input[name="ck-type"]').forEach((r) => r.addEventListener('change', () => {
+      type = r.value;
+      root.querySelectorAll<HTMLElement>('[data-deck]').forEach((d) => { d.hidden = d.dataset.deck !== type; });
+      setMode(mode);
+    }));
+    root.querySelectorAll<HTMLInputElement>('input[name="ck-mode"]').forEach((r) => r.addEventListener('change', () => setMode(r.value as any)));
+    root.querySelectorAll<HTMLElement>('[data-pick]').forEach((b) => b.addEventListener('click', () => choose(b.dataset.pick!)));
+    root.querySelectorAll<SVGGElement>('.ck-item').forEach((g) => g.addEventListener('click', () => choose(g.dataset.item!)));
+    root.querySelectorAll<HTMLElement>('[data-next]').forEach((b) => b.addEventListener('click', ask));
+  }
+</script>
+
+<style>
+  .ck { padding-top: var(--space-6); padding-bottom: var(--space-8); display: grid; gap: var(--space-5); }
+  .ck > * { min-width: 0; }
+  .ck__controls { display: flex; flex-wrap: wrap; gap: var(--space-5); }
+  .ck__deck h2 { margin-bottom: var(--space-1); }
+  .ck__intro { color: var(--text-muted); max-width: 75ch; }
+  .ck__grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--space-6); align-items: start; margin-top: var(--space-4); }
+  .ck__figure { margin: 0; }
+  .ck__figure svg { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-2); }
+  .ck__caption { margin-top: var(--space-2); font-size: var(--text-sm); color: var(--text-muted); }
+  .ck-zone rect { fill: var(--surface); stroke: var(--border-strong); stroke-width: 1.5; }
+  .ck-zone__label { font-size: 15px; fill: var(--text-muted); font-family: var(--font-mono); }
+  .ck-item { cursor: pointer; }
+  .ck-item__shape { fill: color-mix(in srgb, var(--primary) 14%, var(--surface)); stroke: var(--primary); stroke-width: 2; transition: fill var(--dur-fast) var(--ease); }
+  .ck-item__num { font-family: var(--font-mono); font-weight: 700; font-size: 20px; fill: var(--text); pointer-events: none; }
+  .ck-item:hover .ck-item__shape { fill: color-mix(in srgb, var(--primary) 30%, var(--surface)); }
+  .ck-item.is-selected .ck-item__shape { fill: var(--primary); }
+  .ck-item.is-selected .ck-item__num { fill: var(--on-primary, #fff); }
+  .ck-item.is-right .ck-item__shape { fill: var(--green); stroke: var(--green); }
+  .ck-item.is-wrong .ck-item__shape { fill: var(--red); stroke: var(--red); }
+  .ck-item.is-right .ck-item__num, .ck-item.is-wrong .ck-item__num { fill: #fff; }
+  .ck__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-1); }
+  .ck__list li { margin: 0; }
+  .ck__pick { display: flex; width: 100%; align-items: center; gap: var(--space-3); min-height: 40px; padding: 0.4rem 0.7rem; text-align: left; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font: inherit; font-size: var(--text-sm); cursor: pointer; }
+  .ck__pick:hover, .ck__pick[aria-pressed='true'] { border-color: var(--primary); }
+  .ck__pick[aria-pressed='true'] { background: color-mix(in srgb, var(--primary) 10%, var(--surface)); }
+  .ck__n { display: inline-grid; place-items: center; min-width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--surface-2); font-weight: 700; }
+  .is-quiz .ck__name { display: none; }
+  .is-quiz .ck__zone-only { position: static !important; width: auto; height: auto; margin: 0; clip: auto; overflow: visible; white-space: normal; }
+  .ck__info { margin-top: var(--space-4); }
+  .ck__hint { color: var(--text-muted); }
+  .ck__card { padding: var(--space-4) var(--space-5); border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: var(--bg-elevated); }
+  .ck__card h3 { margin-top: 0; }
+  .ck__compare { display: flex; gap: var(--space-2); align-items: flex-start; color: var(--text-muted); }
+  .ck__terms, .ck__src { font-size: var(--text-sm); color: var(--text-muted); margin-bottom: 0; }
+  .ck__quiz { padding: var(--space-4) var(--space-5); border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: var(--surface); margin-top: var(--space-3); }
+  .ck__prompt { font-weight: 600; font-size: var(--text-lg); margin: 0; }
+  .ck__feedback { margin: var(--space-2) 0 0; min-height: 1.5em; }
+  .ck__score { color: var(--magenta); margin: var(--space-1) 0 0; }
+  .ck__next { margin-top: var(--space-3); display: inline-flex; align-items: center; gap: var(--space-2); padding: 0.5rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--primary); background: var(--primary); color: var(--on-primary, #fff); font: inherit; cursor: pointer; }
+  .ck__note { font-size: var(--text-sm); color: var(--text-muted); }
+  [hidden] { display: none !important; }
+  @media (max-width: 900px) { .ck__grid { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { .ck-item__shape { transition: none; } }
+</style>

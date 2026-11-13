@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Sidestick",
+    "es": "Minipalanca lateral (sidestick)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A small control stick placed at the side of each pilot, used instead of a control column on fly-by-wire aircraft such as all Airbus types since the A320. Its inputs are sent as electrical signals to the flight control computers, with no mechanical link to the control surfaces.",
+    "es": "Pequeña palanca de mando situada al lado de cada piloto que sustituye a la columna de mando en aviones con mandos eléctricos, como todos los Airbus desde el A320. Sus órdenes se envían como señales eléctricas a los ordenadores de mandos de vuelo, sin conexión mecánica con las superficies de mando."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The small joystick Airbus pilots fly with.",
+    "es": "La pequeña palanca con la que vuelan los pilotos de Airbus."
+  },
+  "example": {
+    "en": "The captain flew the approach with the left sidestick.",
+    "es": "El comandante voló la aproximación con la minipalanca izquierda."
+  },
+  "pronunciation": {
+    "en": "SIDE-stik",
+    "es": "sáid-stik (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "side-stick"
+    ],
+    "es": [
+      "palanca lateral"
+    ]
+  },
+  "related": [
+    "fly-by-wire",
+    "control-column",
+    "autopilot"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-flight-control-laws",
+    "aopa-autothrottles-2025",
+    "arnedo-cockpits"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

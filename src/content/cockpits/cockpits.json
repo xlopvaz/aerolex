@@ -1,0 +1,844 @@
+{
+  "viewBox": [
+    1000,
+    680
+  ],
+  "cockpits": {
+    "airbus": {
+      "name": {
+        "es": "Airbus A320",
+        "en": "Airbus A320"
+      },
+      "intro": {
+        "es": "Cabina de dos pilotos con mandos eléctricos (fly-by-wire), minipalancas laterales y seis pantallas. El mismo concepto se repite en el resto de la familia Airbus.",
+        "en": "Two-pilot flight deck with fly-by-wire controls, sidesticks and six display units. The same concept is shared by the rest of the Airbus family."
+      },
+      "zones": [
+        {
+          "id": "overhead",
+          "shape": [
+            250,
+            4,
+            500,
+            96
+          ],
+          "label": {
+            "es": "Panel superior",
+            "en": "Overhead panel"
+          }
+        },
+        {
+          "id": "glareshield",
+          "shape": [
+            60,
+            112,
+            880,
+            46
+          ],
+          "label": {
+            "es": "Visera",
+            "en": "Glareshield"
+          }
+        },
+        {
+          "id": "panel",
+          "shape": [
+            60,
+            170,
+            880,
+            212
+          ],
+          "label": {
+            "es": "Panel de instrumentos",
+            "en": "Instrument panel"
+          }
+        },
+        {
+          "id": "pedestal",
+          "shape": [
+            390,
+            392,
+            220,
+            280
+          ],
+          "label": {
+            "es": "Pedestal",
+            "en": "Pedestal"
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "overhead",
+          "shapes": [
+            [
+              270,
+              28,
+              460,
+              64
+            ]
+          ],
+          "name": {
+            "es": "Panel superior",
+            "en": "Overhead panel"
+          },
+          "text": {
+            "es": "Reúne los mandos de los sistemas: protección contra incendios, hidráulica, combustible, electricidad, aire acondicionado, APU y presurización. Airbus los coloca según su importancia y la frecuencia con que se usan.",
+            "en": "It groups the systems controls: fire protection, hydraulics, fuel, electrics, air conditioning, APU and cabin pressure. Airbus places them according to their importance and how often they are used."
+          },
+          "compare": {
+            "es": "En los Boeing los sistemas también están arriba; en el 737 clásico son sobre todo interruptores de palanca y en el 787, pulsadores que muestran estados como ON o FAULT.",
+            "en": "Boeing also puts the systems overhead; on the classic 737 they are mostly toggle switches and on the 787, push buttons that show states such as ON or FAULT."
+          },
+          "terms": [
+            "overhead-panel",
+            "apu"
+          ],
+          "sources": [
+            "faa-sarter-2024-flight-deck",
+            "icao-airbus-fosas-2017"
+          ]
+        },
+        {
+          "id": "fcu",
+          "shapes": [
+            [
+              395,
+              118,
+              210,
+              34
+            ]
+          ],
+          "name": {
+            "es": "FCU (unidad de control de vuelo)",
+            "en": "FCU (flight control unit)"
+          },
+          "text": {
+            "es": "En el centro de la visera: es la interfaz inmediata con el vuelo automático, con la que se eligen objetivos como la velocidad, el rumbo y la altitud. En modo «seleccionado» el avión sigue los valores marcados en el FCU; en modo «gestionado», lo que se ha programado en la MCDU.",
+            "en": "In the centre of the glareshield: it is the immediate interface with automatic flight, used to set targets such as speed, heading and altitude. In 'selected' mode the aircraft follows the values set on the FCU; in 'managed' mode, what was programmed in the MCDU."
+          },
+          "compare": {
+            "es": "Boeing llama MCP a su panel equivalente.",
+            "en": "Boeing calls its equivalent panel the MCP."
+          },
+          "terms": [
+            "fcu",
+            "autopilot",
+            "mcdu"
+          ],
+          "sources": [
+            "skybrary-fcu",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "efis-cp",
+          "shapes": [
+            [
+              175,
+              118,
+              170,
+              34
+            ],
+            [
+              655,
+              118,
+              170,
+              34
+            ]
+          ],
+          "name": {
+            "es": "Paneles de control EFIS",
+            "en": "EFIS control panels"
+          },
+          "text": {
+            "es": "Uno por piloto, junto al FCU. Eligen qué muestran sus pantallas; por ejemplo, el modo del mapa de navegación.",
+            "en": "One per pilot, next to the FCU. They choose what their displays show; for example, the navigation map mode."
+          },
+          "compare": null,
+          "terms": [
+            "nd",
+            "weather-radar"
+          ],
+          "sources": [
+            "faa-sarter-2024-flight-deck",
+            "skybrary-efis"
+          ]
+        },
+        {
+          "id": "pfd",
+          "shapes": [
+            [
+              78,
+              184,
+              130,
+              170
+            ],
+            [
+              792,
+              184,
+              130,
+              170
+            ]
+          ],
+          "name": {
+            "es": "PFD (pantalla principal de vuelo)",
+            "en": "PFD (primary flight display)"
+          },
+          "text": {
+            "es": "La referencia principal del piloto: reúne en una sola pantalla lo que antes estaba en varios instrumentos, con la actitud en el centro y la velocidad, la altitud y el rumbo alrededor.",
+            "en": "The pilot's primary reference: one display brings together what used to be on several instruments, with the attitude in the centre and the speed, altitude and heading around it."
+          },
+          "compare": {
+            "es": "Los Boeing de pantallas tienen también un PFD por piloto.",
+            "en": "Boeing glass flight decks also have one PFD per pilot."
+          },
+          "terms": [
+            "pfd",
+            "attitude-indicator"
+          ],
+          "sources": [
+            "skybrary-efis",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "nd",
+          "shapes": [
+            [
+              218,
+              184,
+              130,
+              170
+            ],
+            [
+              652,
+              184,
+              130,
+              170
+            ]
+          ],
+          "name": {
+            "es": "ND (pantalla de navegación)",
+            "en": "ND (navigation display)"
+          },
+          "text": {
+            "es": "Junto al PFD de cada piloto. Muestra la ruta del sistema de gestión de vuelo como un mapa y puede superponer el radar meteorológico.",
+            "en": "Next to each pilot's PFD. It shows the flight management route as a map and can overlay the weather radar."
+          },
+          "compare": null,
+          "terms": [
+            "nd",
+            "fms",
+            "weather-radar"
+          ],
+          "sources": [
+            "skybrary-efis",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "ewd",
+          "shapes": [
+            [
+              430,
+              184,
+              140,
+              80
+            ]
+          ],
+          "name": {
+            "es": "Pantalla de motores y avisos (ECAM superior)",
+            "en": "Engine/warning display (upper ECAM)"
+          },
+          "text": {
+            "es": "La pantalla central de arriba del ECAM: indicaciones principales de los motores, combustible, posición de flaps y slats, y los avisos, precauciones y memorandos.",
+            "en": "The upper centre ECAM display: primary engine indications, fuel quantity, flap and slat position, and warnings, cautions and memos."
+          },
+          "compare": {
+            "es": "Es el equivalente de Airbus al EICAS de Boeing.",
+            "en": "It is Airbus's counterpart of Boeing's EICAS."
+          },
+          "terms": [
+            "ecam",
+            "eicas",
+            "flaps",
+            "slats"
+          ],
+          "sources": [
+            "skybrary-ecam",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "sd",
+          "shapes": [
+            [
+              430,
+              274,
+              140,
+              80
+            ]
+          ],
+          "name": {
+            "es": "Pantalla de sistemas (ECAM inferior)",
+            "en": "System display (lower ECAM)"
+          },
+          "text": {
+            "es": "Debajo de la anterior: esquemas de los sistemas del avión (por ejemplo, hidráulica o electricidad), mensajes de estado y datos de vuelo permanentes.",
+            "en": "Below the previous one: diagrams of the aircraft systems (for example hydraulics or electrics), status messages and permanent flight data."
+          },
+          "compare": null,
+          "terms": [
+            "ecam",
+            "hydraulic-system"
+          ],
+          "sources": [
+            "skybrary-ecam"
+          ]
+        },
+        {
+          "id": "mcdu",
+          "shapes": [
+            [
+              400,
+              398,
+              95,
+              78
+            ],
+            [
+              505,
+              398,
+              95,
+              78
+            ]
+          ],
+          "name": {
+            "es": "MCDU",
+            "en": "MCDU"
+          },
+          "text": {
+            "es": "Dos, en el pedestal entre los pilotos. Teclado y pantalla para introducir y cambiar el plan de vuelo y otros datos del sistema de gestión de vuelo (FMS).",
+            "en": "Two of them, on the pedestal between the pilots. Keypad and screen to enter and change the flight plan and other flight management system (FMS) data."
+          },
+          "compare": {
+            "es": "En los Boeing se llama CDU; en el 787 es una CDU virtual que se maneja con teclado y cursor.",
+            "en": "On Boeing aircraft it is the CDU; on the 787 it is a virtual CDU operated with a keypad and cursor."
+          },
+          "terms": [
+            "mcdu",
+            "fms"
+          ],
+          "sources": [
+            "skybrary-mcdu",
+            "faa-sarter-2024-flight-deck",
+            "icao-airbus-fosas-2017"
+          ]
+        },
+        {
+          "id": "thrust",
+          "shapes": [
+            [
+              440,
+              492,
+              120,
+              64
+            ]
+          ],
+          "name": {
+            "es": "Palancas de empuje",
+            "en": "Thrust levers"
+          },
+          "text": {
+            "es": "En el pedestal. Con el empuje automático conectado se dejan en un retén y no se mueven aunque el empuje cambie: el piloto lo comprueba en las pantallas.",
+            "en": "On the pedestal. With autothrust engaged they are left in a detent and do not move even when thrust changes: the pilot checks it on the displays."
+          },
+          "compare": {
+            "es": "En los Boeing las palancas sí se mueven solas con el autothrottle.",
+            "en": "On Boeing aircraft the levers do move by themselves with the autothrottle."
+          },
+          "terms": [
+            "autothrottle",
+            "thrust"
+          ],
+          "sources": [
+            "skybrary-autothrottle",
+            "aopa-autothrottles-2025",
+            "icao-airbus-fosas-2017"
+          ]
+        },
+        {
+          "id": "config",
+          "shapes": [
+            [
+              405,
+              568,
+              85,
+              54
+            ],
+            [
+              510,
+              568,
+              85,
+              54
+            ]
+          ],
+          "name": {
+            "es": "Flaps y aerofrenos",
+            "en": "Flaps and speed brake"
+          },
+          "text": {
+            "es": "También en el pedestal: la palanca de flaps y la de aerofrenos (speed brake), con las que se configura el avión para despegar, frenar en el aire y aterrizar.",
+            "en": "Also on the pedestal: the flap lever and the speed brake lever, used to configure the aircraft for take-off, slowing down in the air and landing."
+          },
+          "compare": null,
+          "terms": [
+            "flaps",
+            "spoilers"
+          ],
+          "sources": [
+            "icao-airbus-fosas-2017"
+          ]
+        },
+        {
+          "id": "sidestick",
+          "shapes": [
+            [
+              20,
+              440,
+              52,
+              100
+            ],
+            [
+              928,
+              440,
+              52,
+              100
+            ]
+          ],
+          "name": {
+            "es": "Minipalancas (sidesticks)",
+            "en": "Sidesticks"
+          },
+          "text": {
+            "es": "Una al lado de cada piloto, en lugar de la columna de mando. Envían señales eléctricas a los ordenadores de mandos de vuelo (fly-by-wire) y no se mueven solas con el piloto automático.",
+            "en": "One beside each pilot, instead of a control column. They send electrical signals to the flight control computers (fly-by-wire) and do not move by themselves with the autopilot."
+          },
+          "compare": {
+            "es": "Los Boeing mantienen columnas de mando que se mueven a la vez, incluso con mandos eléctricos en el 777 y el 787.",
+            "en": "Boeing keeps control columns that move together, even with fly-by-wire on the 777 and 787."
+          },
+          "terms": [
+            "sidestick",
+            "fly-by-wire",
+            "control-column"
+          ],
+          "sources": [
+            "skybrary-flight-control-laws",
+            "aopa-autothrottles-2025"
+          ]
+        }
+      ],
+      "sources": [
+        "faa-sarter-2024-flight-deck",
+        "icao-airbus-fosas-2017",
+        "skybrary-ecam",
+        "skybrary-fcu",
+        "skybrary-mcdu",
+        "skybrary-efis",
+        "skybrary-autothrottle",
+        "skybrary-flight-control-laws",
+        "aopa-autothrottles-2025"
+      ],
+      "review": {
+        "status": "draft",
+        "reviewedBy": null,
+        "date": null
+      }
+    },
+    "boeing": {
+      "name": {
+        "es": "Boeing (737 y 787)",
+        "en": "Boeing (737 and 787)"
+      },
+      "intro": {
+        "es": "Cabina de dos pilotos con columnas de mando y palancas de empuje que se mueven con el autothrottle. El esquema reúne lo que comparten el 737 y el 787; donde difieren, se indica.",
+        "en": "Two-pilot flight deck with control columns and thrust levers that move with the autothrottle. The sketch brings together what the 737 and 787 share; where they differ, it says so."
+      },
+      "zones": [
+        {
+          "id": "overhead",
+          "shape": [
+            250,
+            4,
+            500,
+            96
+          ],
+          "label": {
+            "es": "Panel superior",
+            "en": "Overhead panel"
+          }
+        },
+        {
+          "id": "glareshield",
+          "shape": [
+            60,
+            112,
+            880,
+            46
+          ],
+          "label": {
+            "es": "Visera",
+            "en": "Glareshield"
+          }
+        },
+        {
+          "id": "panel",
+          "shape": [
+            60,
+            170,
+            880,
+            212
+          ],
+          "label": {
+            "es": "Panel de instrumentos",
+            "en": "Instrument panel"
+          }
+        },
+        {
+          "id": "pedestal",
+          "shape": [
+            390,
+            392,
+            220,
+            280
+          ],
+          "label": {
+            "es": "Pedestal (control stand)",
+            "en": "Control stand"
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "overhead",
+          "shapes": [
+            [
+              270,
+              28,
+              460,
+              64
+            ]
+          ],
+          "name": {
+            "es": "Panel superior",
+            "en": "Overhead panel"
+          },
+          "text": {
+            "es": "Mandos de los sistemas del avión, como electricidad, combustible, hidráulica y presurización. En el 737 clásico son sobre todo interruptores de palanca; en el 787, pulsadores que muestran estados como ON, FAULT o NORM, además de los mandos del HUD y del vaciado de combustible.",
+            "en": "Aircraft systems controls, such as electrics, fuel, hydraulics and pressurisation. On the classic 737 they are mostly toggle switches; on the 787, push buttons that show states such as ON, FAULT or NORM, plus the HUD and fuel jettison controls."
+          },
+          "compare": null,
+          "terms": [
+            "overhead-panel",
+            "fuel-jettison"
+          ],
+          "sources": [
+            "faa-sarter-2024-flight-deck",
+            "arnedo-cockpits"
+          ]
+        },
+        {
+          "id": "mcp",
+          "shapes": [
+            [
+              395,
+              118,
+              210,
+              34
+            ]
+          ],
+          "name": {
+            "es": "MCP (panel de control de modos)",
+            "en": "MCP (mode control panel)"
+          },
+          "text": {
+            "es": "En el centro de la visera. Con él se dan objetivos inmediatos al piloto automático, al director de vuelo y al autothrottle: mantener una altitud o un rumbo, cambiar de nivel con una velocidad vertical o seguir al ordenador de gestión de vuelo.",
+            "en": "In the centre of the glareshield. It gives immediate targets to the autopilot, flight director and autothrottle: hold an altitude or heading, change level at a vertical speed or follow the flight management computer."
+          },
+          "compare": {
+            "es": "Airbus llama FCU a su panel equivalente.",
+            "en": "Airbus calls its equivalent panel the FCU."
+          },
+          "terms": [
+            "mcp",
+            "autopilot",
+            "autothrottle"
+          ],
+          "sources": [
+            "skybrary-mcp",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "pfd",
+          "shapes": [
+            [
+              78,
+              184,
+              130,
+              170
+            ],
+            [
+              792,
+              184,
+              130,
+              170
+            ]
+          ],
+          "name": {
+            "es": "PFD (pantalla principal de vuelo)",
+            "en": "PFD (primary flight display)"
+          },
+          "text": {
+            "es": "La referencia principal de cada piloto, con la actitud en el centro y la velocidad, la altitud y el rumbo alrededor. El 737 clásico aún mezclaba instrumentos de aguja con pantallas; el 787 usa cinco pantallas multifunción grandes.",
+            "en": "Each pilot's primary reference, with the attitude in the centre and the speed, altitude and heading around it. The classic 737 still mixed dial instruments with screens; the 787 uses five large multifunction displays."
+          },
+          "compare": null,
+          "terms": [
+            "pfd",
+            "attitude-indicator"
+          ],
+          "sources": [
+            "skybrary-efis",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "nd",
+          "shapes": [
+            [
+              218,
+              184,
+              130,
+              170
+            ],
+            [
+              652,
+              184,
+              130,
+              170
+            ]
+          ],
+          "name": {
+            "es": "ND (pantalla de navegación)",
+            "en": "ND (navigation display)"
+          },
+          "text": {
+            "es": "Junto al PFD: la ruta como un mapa, con los puntos del plan de vuelo y, si se elige, el radar meteorológico.",
+            "en": "Next to the PFD: the route as a map, with the flight plan waypoints and, if selected, the weather radar."
+          },
+          "compare": null,
+          "terms": [
+            "nd",
+            "fms",
+            "weather-radar"
+          ],
+          "sources": [
+            "skybrary-efis"
+          ]
+        },
+        {
+          "id": "eicas",
+          "shapes": [
+            [
+              430,
+              184,
+              140,
+              170
+            ]
+          ],
+          "name": {
+            "es": "EICAS",
+            "en": "EICAS"
+          },
+          "text": {
+            "es": "En el centro del panel: indicaciones de los motores y, según el modelo, combustible, tren y flaps. Avisa a la tripulación de fallos y de configuraciones como una puerta abierta, junto con las luces de aviso y precaución, y muestra el título de la lista de comprobación que hay que seguir.",
+            "en": "In the centre of the panel: engine indications and, depending on the model, fuel, gear and flaps. It alerts the crew to faults and configurations such as an open door, together with the master warning and caution lights, and shows the title of the checklist to follow."
+          },
+          "compare": {
+            "es": "Airbus usa el ECAM, que reparte esta información en dos pantallas.",
+            "en": "Airbus uses ECAM, which splits this information over two displays."
+          },
+          "terms": [
+            "eicas",
+            "ecam",
+            "qrh"
+          ],
+          "sources": [
+            "skybrary-eicas",
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "cdu",
+          "shapes": [
+            [
+              400,
+              398,
+              95,
+              78
+            ],
+            [
+              505,
+              398,
+              95,
+              78
+            ]
+          ],
+          "name": {
+            "es": "CDU",
+            "en": "CDU"
+          },
+          "text": {
+            "es": "En el pedestal: teclado y pantalla del ordenador de gestión de vuelo, con teclas de selección de línea a los lados y una línea de borrador abajo. En el 787 es virtual y se maneja con un teclado multifunción y un cursor.",
+            "en": "On the control stand: keypad and screen of the flight management computer, with line-select keys on each side and a scratchpad at the bottom. On the 787 it is virtual and is operated with a multifunction keypad and a cursor."
+          },
+          "compare": {
+            "es": "En Airbus se llama MCDU.",
+            "en": "On Airbus aircraft it is the MCDU."
+          },
+          "terms": [
+            "mcdu",
+            "fms"
+          ],
+          "sources": [
+            "faa-sarter-2024-flight-deck",
+            "skybrary-mcdu"
+          ]
+        },
+        {
+          "id": "thrust",
+          "shapes": [
+            [
+              440,
+              492,
+              120,
+              64
+            ]
+          ],
+          "name": {
+            "es": "Palancas de empuje",
+            "en": "Thrust levers"
+          },
+          "text": {
+            "es": "En el pedestal, con los interruptores de desconexión del autothrottle, los de despegue y motor y al aire (TO/GA) y las palancas de reversa. Con el autothrottle conectado se mueven solas, así que el piloto ve y nota los cambios de empuje.",
+            "en": "On the control stand, with the autothrottle disconnect switches, the take-off/go-around (TO/GA) switches and the reverse levers. With the autothrottle engaged they move by themselves, so the pilot sees and feels the thrust changes."
+          },
+          "compare": {
+            "es": "En Airbus las palancas se quedan quietas en un retén con el empuje automático.",
+            "en": "On Airbus aircraft the levers stay still in a detent with autothrust."
+          },
+          "terms": [
+            "autothrottle",
+            "thrust-reverser",
+            "go-around"
+          ],
+          "sources": [
+            "faa-sarter-2024-flight-deck",
+            "skybrary-autothrottle",
+            "aopa-autothrottles-2025"
+          ]
+        },
+        {
+          "id": "config",
+          "shapes": [
+            [
+              405,
+              568,
+              85,
+              54
+            ],
+            [
+              510,
+              568,
+              85,
+              54
+            ]
+          ],
+          "name": {
+            "es": "Flaps, aerofrenos y freno de aparcamiento",
+            "en": "Flaps, speed brake and parking brake"
+          },
+          "text": {
+            "es": "También en el pedestal: la palanca de flaps, la de aerofrenos y el freno de aparcamiento. En el 787 el estado del freno de aparcamiento aparece además como texto en el EICAS.",
+            "en": "Also on the control stand: the flap handle, the speed brake lever and the parking brake. On the 787 the parking brake status also appears as text on EICAS."
+          },
+          "compare": null,
+          "terms": [
+            "flaps",
+            "spoilers"
+          ],
+          "sources": [
+            "faa-sarter-2024-flight-deck"
+          ]
+        },
+        {
+          "id": "column",
+          "shapes": [
+            [
+              110,
+              440,
+              70,
+              120
+            ],
+            [
+              820,
+              440,
+              70,
+              120
+            ]
+          ],
+          "name": {
+            "es": "Columnas de mando",
+            "en": "Control columns"
+          },
+          "text": {
+            "es": "Delante de cada piloto. Mueven los timones de profundidad y, al girar el volante, los alerones. Las dos columnas se mueven a la vez, de modo que cada piloto nota lo que hace el otro; el 777 y el 787 tienen mandos eléctricos (fly-by-wire) pero conservan las columnas.",
+            "en": "In front of each pilot. They move the elevators and, when the yoke is turned, the ailerons. Both columns move together, so each pilot feels what the other is doing; the 777 and 787 have fly-by-wire controls but keep the columns."
+          },
+          "compare": {
+            "es": "Airbus usa minipalancas laterales que no se mueven solas.",
+            "en": "Airbus uses sidesticks that do not move by themselves."
+          },
+          "terms": [
+            "control-column",
+            "fly-by-wire",
+            "sidestick"
+          ],
+          "sources": [
+            "arnedo-cockpits",
+            "aopa-autothrottles-2025",
+            "skybrary-flight-control-laws"
+          ]
+        }
+      ],
+      "sources": [
+        "faa-sarter-2024-flight-deck",
+        "skybrary-mcp",
+        "skybrary-eicas",
+        "skybrary-efis",
+        "skybrary-mcdu",
+        "skybrary-autothrottle",
+        "skybrary-flight-control-laws",
+        "aopa-autothrottles-2025",
+        "arnedo-cockpits"
+      ],
+      "review": {
+        "status": "draft",
+        "reviewedBy": null,
+        "date": null
+      }
+    }
+  }
+}

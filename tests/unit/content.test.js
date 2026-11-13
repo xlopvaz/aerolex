@@ -61,6 +61,10 @@ describe('dictionary content', () => {
     for (const file of ['src/content/timeline/events.json', 'src/content/weather/codes.json']) {
       for (const e of Object.values(JSON.parse(fs.readFileSync(file, 'utf8')))) e.sources.forEach((x) => used.add(x));
     }
+    for (const c of Object.values(JSON.parse(fs.readFileSync('src/content/cockpits/cockpits.json', 'utf8')).cockpits)) {
+      c.sources.forEach((x) => used.add(x));
+      c.items.forEach((i) => i.sources.forEach((x) => used.add(x)));
+    }
     for (const f of fs.readdirSync('src/content/lessons', { recursive: true }).map(String).filter((f) => f.endsWith('.mdx'))) {
       const m = fs.readFileSync(path.join('src/content/lessons', f), 'utf8').match(/^sources: \[(.*)\]$/m);
       if (m) m[1].split(',').map((x) => x.trim()).forEach((x) => used.add(x));

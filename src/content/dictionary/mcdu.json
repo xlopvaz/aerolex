@@ -1,0 +1,59 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MCDU",
+    "es": "MCDU"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Multifunction (or multipurpose) control and display unit",
+    "es": "Unidad multifunción de control y presentación"
+  },
+  "categories": [
+    "cockpit",
+    "aircraft-systems",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The keypad and screen through which the pilots enter and modify the flight plan and other data in the flight management system (FMS). On Boeing aircraft the equivalent unit is usually called the CDU.",
+    "es": "Teclado con pantalla con el que los pilotos introducen y modifican el plan de vuelo y otros datos en el sistema de gestión de vuelo (FMS). En los Boeing la unidad equivalente suele llamarse CDU."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"keyboard\" of the flight management computer.",
+    "es": "El «teclado» del ordenador de gestión de vuelo."
+  },
+  "example": {
+    "en": "Before departure, the first officer entered the route into the MCDU.",
+    "es": "Antes de la salida, el copiloto introdujo la ruta en la MCDU."
+  },
+  "pronunciation": {
+    "en": "M-C-D-U (em-see-dee-you)",
+    "es": "eme-ce-de-u"
+  },
+  "synonyms": {
+    "en": [
+      "CDU",
+      "control display unit"
+    ],
+    "es": [
+      "CDU"
+    ]
+  },
+  "related": [
+    "fms",
+    "fcu",
+    "mcp"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-mcdu",
+    "faa-sarter-2024-flight-deck"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

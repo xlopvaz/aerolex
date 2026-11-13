@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Glareshield",
+    "es": "Visera (glareshield)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The ledge that overhangs the main instrument panel and shades it from outside glare. On airliners it carries the autopilot control panel (FCU on Airbus, MCP on Boeing) and the EFIS control panels for each pilot.",
+    "es": "Repisa que sobresale por encima del panel principal de instrumentos y lo protege de los reflejos del exterior. En los aviones de línea lleva el panel de control del piloto automático (FCU en Airbus, MCP en Boeing) y los paneles de control EFIS de cada piloto."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The ledge above the screens where the autopilot is set.",
+    "es": "La repisa sobre las pantallas donde se ajusta el piloto automático."
+  },
+  "example": {
+    "en": "She dialled the new altitude on the glareshield.",
+    "es": "Seleccionó la nueva altitud en la visera."
+  },
+  "pronunciation": {
+    "en": "GLAIR-sheeld",
+    "es": "glér-shild (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "glare shield"
+    ],
+    "es": [
+      "glareshield"
+    ]
+  },
+  "related": [
+    "fcu",
+    "mcp",
+    "overhead-panel"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-mcp",
+    "faa-sarter-2024-flight-deck"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
