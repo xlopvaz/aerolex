@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CTR",
+    "es": "CTR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Control zone",
+    "es": "Zona de control"
+  },
+  "categories": [
+    "air-traffic-control",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A controlled airspace extending upwards from the surface of the earth to a specified upper limit, normally around one or more aerodromes.",
+    "es": "Espacio aéreo controlado que se extiende hacia arriba desde la superficie terrestre hasta un límite superior especificado, normalmente alrededor de uno o varios aeródromos."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The controlled airspace that starts at the ground around an airport.",
+    "es": "El espacio aéreo controlado que empieza en el suelo alrededor de un aeropuerto."
+  },
+  "example": {
+    "en": "VFR traffic needs a clearance to enter the CTR.",
+    "es": "El tráfico VFR necesita autorización para entrar en la CTR."
+  },
+  "pronunciation": {
+    "en": "C-T-R (see-tee-ar)",
+    "es": "ce-te-erre"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tma",
+    "fir",
+    "atc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-11"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

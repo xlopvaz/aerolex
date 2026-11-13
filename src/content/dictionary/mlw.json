@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MLW",
+    "es": "MLW"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Maximum landing weight (mass)",
+    "es": "Peso (masa) máximo al aterrizaje"
+  },
+  "categories": [
+    "aircraft",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The maximum allowable weight of the aircraft on landing.",
+    "es": "Peso máximo permitido de la aeronave en el aterrizaje."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The heaviest the aircraft is allowed to be when it lands.",
+    "es": "Lo máximo que puede pesar el avión al aterrizar."
+  },
+  "example": {
+    "en": "After an early return the crew had to burn or dump fuel to get below the MLW.",
+    "es": "Tras un regreso prematuro, la tripulación tuvo que gastar o lanzar combustible para quedar por debajo del MLW."
+  },
+  "pronunciation": {
+    "en": "M-L-W (em-el-double-you)",
+    "es": "eme-ele-uve doble"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mtow",
+    "mzfw",
+    "weight"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

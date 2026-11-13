@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FDR",
+    "es": "FDR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Flight data recorder",
+    "es": "Registrador de datos de vuelo"
+  },
+  "categories": [
+    "safety",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A crash-protected recorder that stores flight parameters (such as altitude, speed, heading and control positions) for accident and incident investigation.",
+    "es": "Registrador protegido contra impactos que guarda parámetros del vuelo (como altitud, velocidad, rumbo y posición de los mandos) para la investigación de accidentes e incidentes."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "One of the two \"black boxes\": it records what the aircraft was doing.",
+    "es": "Una de las dos «cajas negras»: registra lo que hacía el avión."
+  },
+  "example": {
+    "en": "Investigators recovered the FDR from the wreckage.",
+    "es": "Los investigadores recuperaron el FDR de entre los restos."
+  },
+  "pronunciation": {
+    "en": "F-D-R (ef-dee-ar)",
+    "es": "efe-de-erre"
+  },
+  "synonyms": {
+    "en": [
+      "black box"
+    ],
+    "es": [
+      "caja negra"
+    ]
+  },
+  "related": [
+    "cvr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

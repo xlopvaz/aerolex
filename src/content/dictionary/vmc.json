@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "VMC",
+    "es": "VMC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Visual meteorological conditions",
+    "es": "Condiciones meteorológicas de vuelo visual"
+  },
+  "categories": [
+    "meteorology",
+    "flight-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Meteorological conditions expressed in terms of visibility, distance from cloud and ceiling that are equal to or better than specified minima.",
+    "es": "Condiciones meteorológicas expresadas en visibilidad, distancia a las nubes y techo de nubes iguales o mejores que los mínimos especificados."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Weather good enough to fly by looking outside.",
+    "es": "Tiempo lo bastante bueno para volar mirando al exterior."
+  },
+  "example": {
+    "en": "The flight continued in VMC above the cloud layer.",
+    "es": "El vuelo continuó en VMC por encima de la capa de nubes."
+  },
+  "pronunciation": {
+    "en": "V-M-C (vee-em-see)",
+    "es": "uve-eme-ce"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "imc",
+    "vfr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-2",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

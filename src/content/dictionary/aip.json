@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AIP",
+    "es": "AIP"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Aeronautical information publication",
+    "es": "Publicación de información aeronáutica"
+  },
+  "categories": [
+    "aviation-law",
+    "navigation",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A publication issued by or with the authority of a State containing aeronautical information of a lasting character that is essential to air navigation.",
+    "es": "Publicación expedida por un Estado, o con su autorización, que contiene información aeronáutica de carácter duradero indispensable para la navegación aérea."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Each country's official book of airports, airspace, routes and procedures.",
+    "es": "El libro oficial de cada país con sus aeropuertos, espacio aéreo, rutas y procedimientos."
+  },
+  "example": {
+    "en": "The aerodrome charts are published in the AIP.",
+    "es": "Las cartas del aeródromo se publican en el AIP."
+  },
+  "pronunciation": {
+    "en": "A-I-P (ay-eye-pee)",
+    "es": "a-i-pe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "notam"
+  ],
+  "regionalNote": {
+    "en": "In Spain the AIP is published by ENAIRE.",
+    "es": "En España, el AIP lo publica ENAIRE."
+  },
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-15"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

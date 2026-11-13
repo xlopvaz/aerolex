@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MDA/MDH",
+    "es": "MDA/MDH"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Minimum descent altitude / height",
+    "es": "Altitud / altura mínima de descenso"
+  },
+  "categories": [
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "In a two-dimensional instrument approach or a circling approach, the altitude or height below which descent must not be made without the required visual reference.",
+    "es": "En una aproximación por instrumentos bidimensional o en una aproximación en circuito, la altitud o altura por debajo de la cual no se debe descender sin la referencia visual requerida."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "On an approach without vertical guidance, the lowest level you may descend to until you see the runway.",
+    "es": "En una aproximación sin guía vertical, el nivel más bajo al que se puede descender hasta ver la pista."
+  },
+  "example": {
+    "en": "Level at the MDA, the crew looked for the runway lights.",
+    "es": "Nivelados en la MDA, la tripulación buscó las luces de la pista."
+  },
+  "pronunciation": {
+    "en": "M-D-A (em-dee-ay)",
+    "es": "eme-de-a"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "da-dh",
+    "ils",
+    "go-around"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

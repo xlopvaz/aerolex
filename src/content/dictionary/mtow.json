@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MTOW",
+    "es": "MTOW"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Maximum take-off weight (mass)",
+    "es": "Peso (masa) máximo al despegue"
+  },
+  "categories": [
+    "aircraft",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The maximum allowable weight of the aircraft at the start of the take-off run, set by its certification.",
+    "es": "Peso máximo permitido de la aeronave al inicio de la carrera de despegue, fijado por su certificación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The heaviest the aircraft is allowed to be when it starts its take-off.",
+    "es": "Lo máximo que puede pesar el avión cuando empieza el despegue."
+  },
+  "example": {
+    "en": "With full tanks and every seat taken, the flight would exceed the MTOW.",
+    "es": "Con los depósitos llenos y todos los asientos ocupados, el vuelo superaría el MTOW."
+  },
+  "pronunciation": {
+    "en": "M-T-O-W (em-tee-oh-double-you)",
+    "es": "eme-te-o-uve doble"
+  },
+  "synonyms": {
+    "en": [
+      "MTOM"
+    ],
+    "es": [
+      "MTOM"
+    ]
+  },
+  "related": [
+    "mlw",
+    "mzfw",
+    "weight"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

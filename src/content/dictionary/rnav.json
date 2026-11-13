@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RNAV",
+    "es": "RNAV"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Area navigation",
+    "es": "Navegación de área"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A method of navigation that lets an aircraft fly any desired flight path within the coverage of ground or space-based navigation aids, within the limits of self-contained aids, or a combination of both.",
+    "es": "Método de navegación que permite volar cualquier trayectoria deseada dentro de la cobertura de radioayudas terrestres o espaciales, dentro de los límites de las ayudas autónomas o con una combinación de ambas."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Flying from point to point (waypoints) instead of from one radio beacon to another.",
+    "es": "Volar de un punto a otro (puntos de recorrido) en lugar de ir de radiofaro en radiofaro."
+  },
+  "example": {
+    "en": "Cleared RNAV approach runway 27.",
+    "es": "Autorizado aproximación RNAV a la pista 27."
+  },
+  "pronunciation": {
+    "en": "AR-nav",
+    "es": "ar-nav"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "rnp",
+    "pbn",
+    "gnss",
+    "sid",
+    "star"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-11",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

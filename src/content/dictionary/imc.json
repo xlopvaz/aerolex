@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "IMC",
+    "es": "IMC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Instrument meteorological conditions",
+    "es": "Condiciones meteorológicas de vuelo por instrumentos"
+  },
+  "categories": [
+    "meteorology",
+    "flight-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Meteorological conditions expressed in terms of visibility, distance from cloud and ceiling that are less than the minima specified for visual meteorological conditions.",
+    "es": "Condiciones meteorológicas expresadas en visibilidad, distancia a las nubes y techo de nubes inferiores a los mínimos especificados para las condiciones de vuelo visual."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Weather in which you cannot fly by looking outside and must fly by instruments.",
+    "es": "Tiempo en el que no se puede volar mirando al exterior y hay que volar por instrumentos."
+  },
+  "example": {
+    "en": "The aircraft entered IMC shortly after take-off.",
+    "es": "La aeronave entró en IMC poco después del despegue."
+  },
+  "pronunciation": {
+    "en": "I-M-C (eye-em-see)",
+    "es": "i-eme-ce"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vmc",
+    "ifr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-2",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

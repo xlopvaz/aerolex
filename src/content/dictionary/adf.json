@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ADF",
+    "es": "ADF"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Automatic direction finder",
+    "es": "Radiogoniómetro automático"
+  },
+  "categories": [
+    "navigation",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An airborne radio receiver that shows the bearing from the aircraft to a non-directional beacon (NDB) or other suitable transmitter.",
+    "es": "Receptor de radio de a bordo que indica la marcación desde la aeronave hasta un radiofaro no direccional (NDB) u otra emisora adecuada."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A needle in the cockpit that points to a radio beacon on the ground.",
+    "es": "Una aguja en la cabina que apunta hacia un radiofaro en tierra."
+  },
+  "example": {
+    "en": "Tune the ADF to the NDB and follow the needle to the beacon.",
+    "es": "Sintoniza el ADF en el NDB y sigue la aguja hasta el radiofaro."
+  },
+  "pronunciation": {
+    "en": "A-D-F (ay-dee-ef)",
+    "es": "a-de-efe (ei-di-ef en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ndb",
+    "vor",
+    "dme"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

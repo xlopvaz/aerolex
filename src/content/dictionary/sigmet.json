@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SIGMET",
+    "es": "SIGMET"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Significant meteorological information",
+    "es": "Información meteorológica significativa"
+  },
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Information issued by a meteorological watch office about the occurrence or expected occurrence of specified en-route weather phenomena that may affect the safety of aircraft operations.",
+    "es": "Información que emite una oficina de vigilancia meteorológica sobre la existencia o la previsión de determinados fenómenos meteorológicos en ruta que pueden afectar a la seguridad de las operaciones."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A warning of dangerous weather along the route: thunderstorms, severe turbulence, icing, volcanic ash…",
+    "es": "Un aviso de tiempo peligroso en ruta: tormentas, turbulencia fuerte, engelamiento, ceniza volcánica…"
+  },
+  "example": {
+    "en": "A SIGMET for embedded thunderstorms was issued for the FIR.",
+    "es": "Se emitió un SIGMET por tormentas embebidas para la FIR."
+  },
+  "pronunciation": {
+    "en": "SIG-met",
+    "es": "sig-met"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "airmet",
+    "metar",
+    "turbulence",
+    "fir"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-3"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

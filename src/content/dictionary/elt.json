@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ELT",
+    "es": "ELT"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Emergency locator transmitter",
+    "es": "Transmisor de localización de emergencia"
+  },
+  "categories": [
+    "safety",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Equipment that broadcasts distinctive signals on designated frequencies and, depending on its type, is activated automatically by impact or manually, to help find an aircraft after an accident.",
+    "es": "Equipo que emite señales características en frecuencias designadas y que, según su tipo, se activa automáticamente por impacto o manualmente, para ayudar a localizar una aeronave tras un accidente."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A radio beacon on board that tells rescuers where the aircraft is after a crash.",
+    "es": "Una radiobaliza a bordo que indica a los equipos de rescate dónde está el avión tras un accidente."
+  },
+  "example": {
+    "en": "Search and rescue picked up the ELT signal.",
+    "es": "Los servicios de búsqueda y salvamento captaron la señal del ELT."
+  },
+  "pronunciation": {
+    "en": "E-L-T (ee-el-tee)",
+    "es": "e-ele-te"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mayday"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-6",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

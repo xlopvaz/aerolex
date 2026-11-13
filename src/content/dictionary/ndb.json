@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "NDB",
+    "es": "NDB"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Non-directional radio beacon",
+    "es": "Radiofaro no direccional"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A ground radio transmitter that sends the same signal in all directions; an aircraft with an ADF can determine its bearing to the beacon.",
+    "es": "Emisora de radio en tierra que envía la misma señal en todas direcciones; una aeronave con ADF puede determinar su marcación hacia el radiofaro."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A radio beacon on the ground that the ADF needle points to.",
+    "es": "Un radiofaro en tierra hacia el que apunta la aguja del ADF."
+  },
+  "example": {
+    "en": "The approach starts overhead the NDB.",
+    "es": "La aproximación empieza sobre la vertical del NDB."
+  },
+  "pronunciation": {
+    "en": "N-D-B (en-dee-bee)",
+    "es": "ene-de-be (en-di-bi en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "adf",
+    "vor"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-10",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ACC",
+    "es": "ACC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Area control centre",
+    "es": "Centro de control de área"
+  },
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A unit established to provide air traffic control service to controlled flights in the control areas under its jurisdiction.",
+    "es": "Dependencia establecida para prestar el servicio de control de tránsito aéreo a los vuelos controlados en las áreas de control bajo su jurisdicción."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The control centre that handles aircraft en route, between airports.",
+    "es": "El centro de control que se ocupa de los aviones en ruta, entre aeropuertos."
+  },
+  "example": {
+    "en": "After departure the flight was transferred to the ACC.",
+    "es": "Tras la salida, el vuelo pasó al ACC."
+  },
+  "pronunciation": {
+    "en": "A-C-C (ay-see-see)",
+    "es": "a-ce-ce"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "fir",
+    "tma",
+    "atc"
+  ],
+  "regionalNote": {
+    "en": "On the radio an ACC is usually called \"Control\" (e.g. \"Madrid Control\").",
+    "es": "Por radio, un ACC suele llamarse «Control» (p. ej., «Madrid Control»)."
+  },
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-11"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "DA/DH",
+    "es": "DA/DH"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Decision altitude / height",
+    "es": "Altitud / altura de decisión"
+  },
+  "categories": [
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "In a three-dimensional instrument approach, the altitude or height at which a missed approach must be initiated if the required visual reference to continue the approach has not been established.",
+    "es": "En una aproximación por instrumentos tridimensional, la altitud o altura a la que debe iniciarse la aproximación frustrada si no se ha establecido la referencia visual necesaria para continuar."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The point on an ILS-type approach where the pilot must see the runway or go around.",
+    "es": "El punto de una aproximación tipo ILS en el que el piloto tiene que ver la pista o frustrar."
+  },
+  "example": {
+    "en": "\"Minimums\" — the pilot called the DA and, with no runway in sight, went around.",
+    "es": "«Mínimos»: el piloto anunció la DA y, sin ver la pista, frustró la aproximación."
+  },
+  "pronunciation": {
+    "en": "D-A / D-H (dee-ay / dee-aych)",
+    "es": "de-a / de-hache"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mda",
+    "ils",
+    "go-around"
+  ],
+  "regionalNote": {
+    "en": "DA is measured from mean sea level; DH from the threshold elevation.",
+    "es": "La DA se mide desde el nivel medio del mar; la DH, desde la elevación del umbral."
+  },
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

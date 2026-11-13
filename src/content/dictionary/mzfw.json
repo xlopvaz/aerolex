@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MZFW",
+    "es": "MZFW"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Maximum zero fuel weight (mass)",
+    "es": "Peso (masa) máximo sin combustible"
+  },
+  "categories": [
+    "aircraft",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The maximum allowable weight of the loaded aircraft without usable fuel; everything above it must be fuel.",
+    "es": "Peso máximo permitido de la aeronave cargada sin combustible utilizable; todo lo que lo supere tiene que ser combustible."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The most the aircraft, passengers and cargo may weigh together, not counting the fuel.",
+    "es": "Lo máximo que pueden pesar juntos el avión, los pasajeros y la carga, sin contar el combustible."
+  },
+  "example": {
+    "en": "The freighter was loaded up to its MZFW.",
+    "es": "El carguero se cargó hasta su MZFW."
+  },
+  "pronunciation": {
+    "en": "M-Z-F-W (em-zed-ef-double-you)",
+    "es": "eme-zeta-efe-uve doble"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mtow",
+    "mlw",
+    "weight"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

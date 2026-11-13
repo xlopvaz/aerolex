@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FIR",
+    "es": "FIR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Flight information region",
+    "es": "Región de información de vuelo"
+  },
+  "categories": [
+    "air-traffic-control",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An airspace of defined dimensions within which flight information service and alerting service are provided.",
+    "es": "Espacio aéreo de dimensiones definidas dentro del cual se facilitan los servicios de información de vuelo y de alerta."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "One of the big pieces into which the world's airspace is divided.",
+    "es": "Uno de los grandes trozos en que se divide el espacio aéreo del mundo."
+  },
+  "example": {
+    "en": "The flight left the Madrid FIR and entered the Bordeaux FIR.",
+    "es": "El vuelo salió de la FIR de Madrid y entró en la FIR de Burdeos."
+  },
+  "pronunciation": {
+    "en": "F-I-R (ef-eye-ar)",
+    "es": "efe-i-erre"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ctr",
+    "tma",
+    "acc",
+    "atc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-2",
+    "icao-annex-11"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

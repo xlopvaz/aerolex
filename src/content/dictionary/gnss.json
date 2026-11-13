@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "GNSS",
+    "es": "GNSS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Global navigation satellite system",
+    "es": "Sistema mundial de navegación por satélite"
+  },
+  "categories": [
+    "navigation",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A worldwide position and time determination system that uses one or more satellite constellations, such as GPS or Galileo, with the augmentation needed for the intended operation.",
+    "es": "Sistema mundial de determinación de la posición y la hora que utiliza una o varias constelaciones de satélites, como GPS o Galileo, con el aumento necesario para la operación prevista."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Satellite navigation: GPS, Galileo and similar systems.",
+    "es": "Navegación por satélite: GPS, Galileo y sistemas parecidos."
+  },
+  "example": {
+    "en": "With GNSS the aircraft can fly an RNAV approach without ground navigation aids.",
+    "es": "Con GNSS la aeronave puede volar una aproximación RNAV sin radioayudas en tierra."
+  },
+  "pronunciation": {
+    "en": "G-N-S-S (jee-en-es-es)",
+    "es": "ge-ene-ese-ese"
+  },
+  "synonyms": {
+    "en": [
+      "GPS (one GNSS constellation)"
+    ],
+    "es": [
+      "GPS (una constelación GNSS)"
+    ]
+  },
+  "related": [
+    "rnav",
+    "pbn",
+    "rnp"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
