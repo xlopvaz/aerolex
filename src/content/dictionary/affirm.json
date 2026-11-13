@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Affirm",
+    "es": "Afirmativo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Phraseology word meaning \"yes\"; \"affirmative\" is avoided because it can be confused with \"negative\".",
+    "es": "Palabra de la fraseología que significa «sí»; en inglés se evita «affirmative» porque puede confundirse con «negative»."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Radio \"yes\".",
+    "es": "El «sí» de la radio."
+  },
+  "example": {
+    "en": "\"Confirm runway 25.\" — \"Affirm.\"",
+    "es": "«Confirme pista 25.» «Afirmativo.»"
+  },
+  "pronunciation": {
+    "en": "uh-FURM",
+    "es": "a-ferm (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "roger",
+    "wilco"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Call sign",
+    "es": "Indicativo de llamada"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The radiotelephony identification of an aircraft or ATC unit; an airline flight normally uses the airline's telephony designator followed by the flight number.",
+    "es": "Identificación radiotelefónica de una aeronave o de una dependencia ATC; un vuelo de aerolínea suele usar el designador telefónico de la compañía seguido del número de vuelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's name on the radio, such as \"Iberia 3141\".",
+    "es": "El nombre del avión en la radio, como «Iberia 3141»."
+  },
+  "example": {
+    "en": "Air Europa's telephony designator \"EUROPA\" is used in its call signs.",
+    "es": "En los indicativos de Air Europa se usa su designador telefónico «EUROPA»."
+  },
+  "pronunciation": {
+    "en": "KAWL-sine",
+    "es": "col-sain (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "readback",
+    "atc",
+    "phonetic-alphabet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-8585"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Missed approach",
+    "es": "Aproximación frustrada"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The published procedure an aircraft follows when an approach cannot be continued, usually started at the decision altitude or minimum descent altitude if the required visual reference is not obtained.",
+    "es": "Procedimiento publicado que sigue una aeronave cuando no puede continuar la aproximación, que suele iniciarse en la altitud de decisión o en la altitud mínima de descenso si no se obtiene la referencia visual necesaria."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The planned way out when you cannot land from an approach.",
+    "es": "La salida prevista cuando no se puede aterrizar tras una aproximación."
+  },
+  "example": {
+    "en": "The aircraft flew the missed approach and entered the hold.",
+    "es": "El avión voló la aproximación frustrada y entró en la espera."
+  },
+  "pronunciation": {
+    "en": "MIST uh-PROHCH",
+    "es": "mist a-prouch (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "go-around",
+    "da-dh",
+    "mda",
+    "holding"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Runway-holding position",
+    "es": "Punto de espera de la pista"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "air-traffic-control",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A designated position intended to protect a runway, an obstacle limitation surface or an ILS critical area, at which taxiing aircraft and vehicles must stop and hold unless otherwise authorised by the tower.",
+    "es": "Posición designada para proteger una pista, una superficie limitadora de obstáculos o un área crítica del ILS, en la que las aeronaves en rodaje y los vehículos deben detenerse y esperar salvo autorización en contrario de la torre."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The line before the runway where you must stop until cleared.",
+    "es": "La línea antes de la pista donde hay que parar hasta tener autorización."
+  },
+  "example": {
+    "en": "\"Taxi to holding point runway 36R, hold short.\"",
+    "es": "«Ruede al punto de espera de la pista 36R, mantenga fuera.»"
+  },
+  "pronunciation": {
+    "en": "HOHL-ding point",
+    "es": "jol-ding point (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "holding point"
+    ],
+    "es": [
+      "punto de espera"
+    ]
+  },
+  "related": [
+    "runway-incursion",
+    "taxiway",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

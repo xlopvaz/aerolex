@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Turnaround",
+    "es": "Escala (tiempo de rotación)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "commercial-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The process and time between an aircraft's arrival at the stand and its next departure, during which it is unloaded, cleaned, refuelled, catered, loaded and boarded.",
+    "es": "Proceso y tiempo entre la llegada del avión al puesto y su siguiente salida, durante el cual se descarga, se limpia, se reposta, se abastece de catering, se carga y se embarca."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Everything that happens to the aircraft on the ground between two flights.",
+    "es": "Todo lo que se le hace al avión en tierra entre dos vuelos."
+  },
+  "example": {
+    "en": "Low-cost airlines aim for a 25-minute turnaround.",
+    "es": "Las aerolíneas de bajo coste buscan escalas de 25 minutos."
+  },
+  "pronunciation": {
+    "en": "TURN-uh-rownd",
+    "es": "tern-a-raund (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "turn"
+    ],
+    "es": [
+      "rotación"
+    ]
+  },
+  "related": [
+    "stand",
+    "load-sheet",
+    "pushback",
+    "boarding"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

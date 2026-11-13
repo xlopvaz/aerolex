@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Airworthiness directive",
+    "es": "Directiva de aeronavegabilidad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "maintenance",
+    "aviation-law",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A document issued by the aviation authority that requires actions on an aircraft, engine or component (such as inspections or modifications) to restore an acceptable level of safety when an unsafe condition has been found.",
+    "es": "Documento emitido por la autoridad aeronáutica que exige actuaciones sobre una aeronave, motor o componente (como inspecciones o modificaciones) para restablecer un nivel de seguridad aceptable cuando se ha detectado una condición insegura."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A mandatory fix ordered by the authority.",
+    "es": "Una corrección obligatoria ordenada por la autoridad."
+  },
+  "example": {
+    "en": "The airworthiness directive required inspecting the engine mounts within 100 flight hours.",
+    "es": "La directiva de aeronavegabilidad exigía inspeccionar los anclajes de los motores en 100 horas de vuelo."
+  },
+  "pronunciation": {
+    "en": "AIR-wur-thee-ness dih-REK-tiv",
+    "es": "eir-uor-zi-nes di-rec-tiv (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "AD"
+    ],
+    "es": [
+      "AD"
+    ]
+  },
+  "related": [
+    "airworthiness",
+    "line-maintenance"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-continuing-airworthiness",
+    "icao-annex-8"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

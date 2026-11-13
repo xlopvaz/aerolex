@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Line maintenance",
+    "es": "Mantenimiento de línea"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "maintenance"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Maintenance carried out before flight, or at short intervals between flights, to make sure the aircraft is fit for the intended flight, such as checks, troubleshooting and simple replacements.",
+    "es": "Mantenimiento que se realiza antes del vuelo, o a intervalos cortos entre vuelos, para asegurar que la aeronave está en condiciones para el vuelo previsto, como inspecciones, localización de averías y sustituciones sencillas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The quick checks and fixes mechanics do at the airport between flights.",
+    "es": "Las revisiones y reparaciones rápidas que hacen los mecánicos en el aeropuerto entre vuelos."
+  },
+  "example": {
+    "en": "Line maintenance replaced the tyre during the turnaround.",
+    "es": "El mantenimiento de línea cambió el neumático durante la escala."
+  },
+  "pronunciation": {
+    "en": "LYNE MAYN-tuh-nunss",
+    "es": "lain mein-te-nans (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "airworthiness",
+    "mel",
+    "walkaround"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-continuing-airworthiness"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

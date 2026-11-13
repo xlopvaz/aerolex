@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Roger",
+    "es": "Recibido"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Phraseology word meaning \"I have received all of your last transmission\"; it must not be used to answer a question that requires a read-back or a direct yes or no.",
+    "es": "Palabra de la fraseología que significa «He recibido toda su última transmisión»; no debe usarse para responder a una pregunta que exige colación o un sí o un no."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "\"Message received\" — but it does not mean \"yes\" or \"I will do it\".",
+    "es": "«Mensaje recibido», pero no significa «sí» ni «lo haré»."
+  },
+  "example": {
+    "en": "\"Traffic at your 2 o'clock, 5 miles.\" — \"Roger, looking.\"",
+    "es": "«Tráfico a sus 2, a 5 millas.» «Recibido, buscando.»"
+  },
+  "pronunciation": {
+    "en": "RAH-jer",
+    "es": "ro-yer (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "wilco",
+    "affirm",
+    "readback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

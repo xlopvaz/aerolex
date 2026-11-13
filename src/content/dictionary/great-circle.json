@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Great circle",
+    "es": "Ortodrómica"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The circle on the surface of the Earth whose centre is the centre of the Earth; the shortest route between two points follows a great circle.",
+    "es": "Círculo sobre la superficie de la Tierra cuyo centro es el centro de la Tierra; la ruta más corta entre dos puntos sigue un círculo máximo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The shortest route on the globe, which looks curved on a flat map.",
+    "es": "La ruta más corta sobre el globo, que en un mapa plano parece curva."
+  },
+  "example": {
+    "en": "Madrid–Tokyo flights follow a great-circle route over northern latitudes.",
+    "es": "Los vuelos Madrid–Tokio siguen una ruta ortodrómica por latitudes altas."
+  },
+  "pronunciation": {
+    "en": "grayt SUR-kul",
+    "es": "greit ser-cul (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "círculo máximo"
+    ]
+  },
+  "related": [
+    "track",
+    "nm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

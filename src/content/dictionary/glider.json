@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Glider",
+    "es": "Planeador"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "general-aviation",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A non-power-driven, heavier-than-air aircraft that derives its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed.",
+    "es": "Aeronave más pesada que el aire, sin motor, que obtiene su sustentación en vuelo principalmente de reacciones aerodinámicas sobre superficies que permanecen fijas."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "An aircraft without an engine that flies using rising air.",
+    "es": "Un avión sin motor que vuela aprovechando las corrientes ascendentes."
+  },
+  "example": {
+    "en": "The glider was released from the tow at 600 m.",
+    "es": "El planeador se soltó del remolque a 600 m."
+  },
+  "pronunciation": {
+    "en": "GLY-der",
+    "es": "glai-der (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "sailplane"
+    ],
+    "es": [
+      "velero"
+    ]
+  },
+  "related": [
+    "lift",
+    "airfoil",
+    "aircraft"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-7"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

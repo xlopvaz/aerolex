@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Glide path",
+    "es": "Trayectoria de planeo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A descent profile determined for vertical guidance during a final approach; on an ILS it is provided by the glide path transmitter, typically at about 3 degrees.",
+    "es": "Perfil de descenso determinado para la guía vertical durante la aproximación final; en un ILS lo proporciona el transmisor de trayectoria de planeo, normalmente de unos 3 grados."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The invisible slope the aircraft follows down to the runway.",
+    "es": "La rampa invisible que sigue el avión hasta la pista."
+  },
+  "example": {
+    "en": "The aircraft captured the glide path at 3,000 ft.",
+    "es": "El avión capturó la trayectoria de planeo a 3000 ft."
+  },
+  "pronunciation": {
+    "en": "GLYDE path",
+    "es": "glaid paz (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "glideslope",
+      "GS"
+    ],
+    "es": [
+      "senda de planeo"
+    ]
+  },
+  "related": [
+    "ils",
+    "localizer",
+    "papi"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

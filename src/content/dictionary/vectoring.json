@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Radar vectoring",
+    "es": "Guiado vectorial"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Navigational guidance given to an aircraft in the form of specific headings, based on the use of an ATS surveillance system.",
+    "es": "Guía de navegación que se da a una aeronave en forma de rumbos específicos, basada en el uso de un sistema de vigilancia ATS."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The controller telling the pilot which headings to fly.",
+    "es": "El controlador indicando al piloto qué rumbos volar."
+  },
+  "example": {
+    "en": "\"Turn left heading 250, vectors for the ILS runway 32L.\"",
+    "es": "«Vire a la izquierda rumbo 250, vectores para el ILS de la pista 32L.»"
+  },
+  "pronunciation": {
+    "en": "VEK-tor-ing",
+    "es": "vec-to-rin (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "vectors"
+    ],
+    "es": [
+      "vectores radar"
+    ]
+  },
+  "related": [
+    "heading",
+    "ssr",
+    "ils"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

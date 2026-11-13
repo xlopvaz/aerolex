@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Waypoint",
+    "es": "Punto de recorrido"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A specified geographical location used to define an area navigation route or the flight path of an aircraft using area navigation; it can be fly-by or flyover.",
+    "es": "Lugar geográfico especificado que se usa para definir una ruta de navegación de área o la trayectoria de una aeronave que navega por área; puede ser de paso o de sobrevuelo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A named point on the map (often five letters) that routes go through.",
+    "es": "Un punto con nombre en el mapa (a menudo de cinco letras) por el que pasan las rutas."
+  },
+  "example": {
+    "en": "\"Proceed direct to waypoint TOBEK.\"",
+    "es": "«Proceda directo al punto TOBEK.»"
+  },
+  "pronunciation": {
+    "en": "WAY-point",
+    "es": "uei-point (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "WPT"
+    ],
+    "es": [
+      "waypoint"
+    ]
+  },
+  "related": [
+    "rnav",
+    "fms",
+    "sid",
+    "star"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-11",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

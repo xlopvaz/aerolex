@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Walkaround",
+    "es": "Inspección exterior"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "maintenance",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The visual inspection of the outside of the aircraft made by a pilot or engineer before flight, looking for damage, leaks, open panels or anything else unusual.",
+    "es": "Inspección visual del exterior de la aeronave que hace un piloto o un técnico antes del vuelo, buscando daños, fugas, paneles abiertos o cualquier otra anomalía."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Walking around the aircraft before the flight to check it.",
+    "es": "Dar una vuelta alrededor del avión antes del vuelo para revisarlo."
+  },
+  "example": {
+    "en": "During the walkaround the first officer found a dent on the leading edge.",
+    "es": "En la inspección exterior, el primer oficial encontró una abolladura en el borde de ataque."
+  },
+  "pronunciation": {
+    "en": "WAWK-uh-rownd",
+    "es": "uok-a-raund (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "preflight inspection",
+      "exterior inspection"
+    ],
+    "es": [
+      "vuelta al avión"
+    ]
+  },
+  "related": [
+    "line-maintenance",
+    "fod"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

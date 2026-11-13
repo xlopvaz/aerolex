@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Track",
+    "es": "Derrota"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The projection on the earth's surface of the path of an aircraft, whose direction is usually expressed in degrees from north (true, magnetic or grid).",
+    "es": "Proyección sobre la superficie terrestre de la trayectoria de una aeronave, cuya dirección se expresa normalmente en grados desde el norte (verdadero, magnético o de cuadrícula)."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The path the aircraft actually follows over the ground; wind can make it differ from the heading.",
+    "es": "El camino que sigue realmente el avión sobre el suelo; el viento puede hacer que difiera del rumbo."
+  },
+  "example": {
+    "en": "With a crosswind, the heading is 095 to keep a track of 090.",
+    "es": "Con viento cruzado, el rumbo es 095 para mantener una derrota de 090."
+  },
+  "pronunciation": {
+    "en": "trak",
+    "es": "trak (en inglés), derrota"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "heading",
+    "bearing",
+    "crosswind"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-annex-11"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

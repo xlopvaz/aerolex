@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Aerodrome control tower",
+    "es": "Torre de control de aeródromo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A unit established to provide air traffic control service to aerodrome traffic: aircraft on the manoeuvring area and those flying in the vicinity of the aerodrome.",
+    "es": "Dependencia establecida para prestar el servicio de control de tránsito aéreo al tránsito de aeródromo: las aeronaves en el área de maniobras y las que vuelan en las proximidades del aeródromo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The controllers who authorise take-offs and landings.",
+    "es": "Los controladores que autorizan despegues y aterrizajes."
+  },
+  "example": {
+    "en": "\"Madrid Tower, Iberia 3141, ready for departure.\"",
+    "es": "«Madrid Torre, Iberia 3141, listo para salir.»"
+  },
+  "pronunciation": {
+    "en": "TOW-er",
+    "es": "tauer (en inglés), torre"
+  },
+  "synonyms": {
+    "en": [
+      "TWR"
+    ],
+    "es": [
+      "TWR",
+      "torre"
+    ]
+  },
+  "related": [
+    "atc",
+    "ctr",
+    "runway",
+    "clearance"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-11",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

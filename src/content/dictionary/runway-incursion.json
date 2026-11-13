@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Runway incursion",
+    "es": "Incursión en pista"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "airport-operations",
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle or person on the protected area of a surface designated for the landing and take-off of aircraft.",
+    "es": "Cualquier suceso en un aeródromo en el que una aeronave, vehículo o persona se encuentra indebidamente en el área protegida de una superficie destinada al aterrizaje y despegue de aeronaves."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Someone or something on the runway who should not be there.",
+    "es": "Alguien o algo en la pista que no debería estar allí."
+  },
+  "example": {
+    "en": "Crossing the holding point without clearance caused a runway incursion.",
+    "es": "Cruzar el punto de espera sin autorización provocó una incursión en pista."
+  },
+  "pronunciation": {
+    "en": "RUN-way in-KUR-zhun",
+    "es": "ran-uei in-ker-shon (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "holding-point",
+    "runway",
+    "readback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
