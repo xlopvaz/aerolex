@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('hangar', () => {
   test('lists families and opens a family with its variant table', async ({ page }) => {
     await page.goto('es/hangar/');
-    await expect(page.locator('.fam')).toHaveCount(6);
+    await expect(page.locator('.fam')).toHaveCount(7);
     await page.locator('.fam', { hasText: 'Familia A320neo' }).click();
     await expect(page).toHaveURL(/\/es\/hangar\/a320neo-family\/$/);
     await expect(page.locator('.cmp__table thead th')).toHaveCount(6); // label + 5 variants

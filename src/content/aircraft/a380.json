@@ -1,0 +1,44 @@
+{
+  "manufacturer": "Airbus",
+  "family": { "en": "A380", "es": "A380" },
+  "category": "commercial",
+  "order": 7,
+  "summary": {
+    "en": "Airbus's full double-deck airliner: a four-engined very large aircraft for high-density long-haul routes, powered by Rolls-Royce Trent 900 or Engine Alliance GP7200 engines. Production ended in 2021.",
+    "es": "El avión de pasajeros de Airbus con dos cubiertas completas: un cuatrimotor muy grande para rutas de largo radio con mucha demanda, con motores Rolls-Royce Trent 900 o Engine Alliance GP7200. Su producción terminó en 2021."
+  },
+  "history": {
+    "en": "The A380 first flew on 27 April 2005. Airbus handed over the first aircraft to Singapore Airlines on 15 October 2007, and it entered service on 25 October 2007 with a special flight between Singapore and Sydney. Production ended in December 2021 with the last delivery, the 123rd A380 for Emirates.",
+    "es": "El A380 voló por primera vez el 27 de abril de 2005. Airbus entregó el primer avión a Singapore Airlines el 15 de octubre de 2007, y entró en servicio el 25 de octubre de 2007 con un vuelo especial entre Singapur y Sídney. La producción terminó en diciembre de 2021 con la última entrega, el A380 número 123 de Emirates."
+  },
+  "facts": [
+    {
+      "en": "Airbus recorded 251 firm orders for the A380 from 14 customers.",
+      "es": "Airbus registró 251 pedidos en firme del A380 de 14 clientes."
+    },
+    {
+      "en": "The span of its horizontal stabiliser is 30.4 m, only a little less than the wingspan of an A320 (34.9 m).",
+      "es": "La envergadura de su estabilizador horizontal es de 30,4 m, poco menos que la envergadura del ala de un A320 (34,9 m)."
+    },
+    {
+      "en": "Airbus states a 33% improvement in fuel burn and CO2 emissions compared with previous-generation aircraft.",
+      "es": "Según Airbus, el A380 mejora en un 33 % el consumo de combustible y las emisiones de CO2 respecto a los aviones de la generación anterior."
+    }
+  ],
+  "sources": ["airbus-a380-facts-2022-02", "airbus-a380-facts-2022-01", "airbus-a380-customers-2022", "airbus-a380-first-anniversary", "aviationweek-a380-decade", "mtu-aeroreport-a380"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "a380-800",
+      "name": "A380",
+      "status": "out-of-production",
+      "milestones": { "firstFlight": "2005-04-27", "certified": null, "firstDelivery": "2007-10-15", "entryIntoService": "2007-10-25", "firstOperator": "Singapore Airlines" },
+      "lengthM": 72.7, "wingspanM": 79.8, "heightM": 24.1,
+      "seatsTypical": "545", "seatsMax": 853,
+      "rangeNm": 8000, "rangeKm": 15000, "mtowT": 575,
+      "engines": ["Rolls-Royce Trent 900", "Engine Alliance GP7200"],
+      "note": { "en": "Typical seating is for a four-class cabin; range is with maximum passengers. Airbus lists maximum take-off weights of 560 t and 575 t.", "es": "Las plazas típicas corresponden a una cabina de cuatro clases y el alcance es con el máximo de pasajeros. Airbus indica pesos máximos al despegue de 560 t y 575 t." },
+      "sources": ["airbus-a380-facts-2022-02", "airbus-a380-facts-2022-01", "airbus-a380-first-anniversary", "mtu-aeroreport-a380"]
+    }
+  ]
+}

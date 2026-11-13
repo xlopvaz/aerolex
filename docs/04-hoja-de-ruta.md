@@ -61,7 +61,8 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Familia A350 (A350-900, A350-900ULR, A350-1000, A350F) con Airbus *A350 Facts & Figures* (ene. 2026) y familia Boeing 787 (787-8, -9, -10) con la ficha técnica de Boeing.
 - [x] Hito «entrada en servicio» y filas vacías ocultas en las tablas de comparación.
 - [x] Familias A220 (A220-100 y -300) y A330 (A330-200, -300, -800 y -900) con las cifras de los Facts & Figures de Airbus de enero y febrero de 2026 (13/11/2026). Donde la fuente no da un valor claro (plazas máximas pendientes de certificación o ilegibles, fechas solo con el año) se deja vacío y se explica en la nota.
-- [ ] Resto de familias del brief (A340, A380, 747, 757, 767, 777, E-Jets, ATR 42/72) y fotografías con licencia libre.
+- [x] A380 con las cifras de los Facts & Figures de Airbus de enero y febrero de 2022 (fin de producción) y los hitos de entrega y entrada en servicio (13/11/2026).
+- [ ] Resto de familias del brief (A340, 747, 757, 767, 777, E-Jets, ATR 42/72) y fotografías con licencia libre.
 
 **Bloque 5 — Introducción a la aviación ✅ (13/11/2026)**
 - [x] Curso *Fundamentos de la aviación* (nivel Beginner), primero del itinerario «Introducción a la aviación»: 7 lecciones ES/EN (qué es una aeronave, las cuatro fuerzas, ejes y mandos, fases del vuelo, el aeropuerto, quién dicta las normas, códigos y lenguaje), 32 preguntas y evaluación final.
