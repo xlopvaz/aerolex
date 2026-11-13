@@ -13,6 +13,7 @@ import { childHref, href, useT } from '../i18n/index.js';
 import { USAGE_AREAS, buildUsage, groupByKind, usageCount } from '../lib/sources/bibliography.js';
 import timelineEvents from '../content/timeline/events.json';
 import weatherCodes from '../content/weather/codes.json';
+import cockpits from '../content/cockpits/cockpits.json';
 
 interface Props { lang: 'es' | 'en'; routeKey: any }
 const { lang, routeKey } = Astro.props;
@@ -40,6 +41,12 @@ const areas: Record<string, Item[]> = {
     sources: [...a.data.sources, ...a.data.variants.flatMap((v) => v.sources)],
     label: a.data.family[lang],
     url: childHref('hangar', a.id, lang),
+  })),
+  cockpit: Object.entries((cockpits as any).cockpits).map(([id, c]: [string, any]) => ({
+    key: id,
+    sources: [...c.sources, ...c.items.flatMap((i: any) => i.sources)],
+    label: c.name[lang],
+    url: href('cockpit', lang),
   })),
   timeline: Object.entries(timelineEvents as Record<string, any>).map(([id, e]) => ({ key: id, sources: e.sources, label: e.title[lang], url: `${href('timeline', lang)}#${id}` })),
   weather: Object.entries(weatherCodes as Record<string, any>).map(([id, c]) => ({ key: id, sources: c.sources, label: c.code, url: `${href('weatherGlossary', lang)}#code-${id}` })),

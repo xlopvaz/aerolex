@@ -39,7 +39,8 @@
     "timeline": "Cronología",
     "sources": "Fuentes",
     "review": "Repaso de errores",
-    "airportDiagram": "Diagramas de aeropuerto"
+    "airportDiagram": "Diagramas de aeropuerto",
+    "cockpit": "Cabina de vuelo interactiva"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -162,7 +163,9 @@
       "atc-pilot": "Fraseología ATC · piloto",
       "atc-controller": "Fraseología ATC · controlador",
       "aircraft-photo": "¿Qué avión es? · por la foto",
-      "aircraft-game": "¿Qué avión es? · por las cifras"
+      "aircraft-game": "¿Qué avión es? · por las cifras",
+      "cockpit-airbus": "Cabina de vuelo · Airbus",
+      "cockpit-boeing": "Cabina de vuelo · Boeing"
     },
     "activityTitle": "Actividad reciente",
     "activityEmpty": "Aquí verás lo que vayas ganando.",
@@ -742,6 +745,10 @@
       "airportDiagram": {
         "title": "Diagramas de aeropuerto",
         "text": "Las pistas de más de 4000 aeropuertos a escala, con cómo se leen sus números."
+      },
+      "cockpit": {
+        "title": "Cabina de vuelo interactiva",
+        "text": "La cabina de un Airbus A320 y la de un Boeing por zonas: qué es cada pantalla y cada mando, y un juego para encontrarlos."
       }
     },
     "noscript": "Esta herramienta necesita JavaScript para funcionar."
@@ -1285,7 +1292,7 @@
   "sourcesPage": {
     "metaTitle": "Fuentes y bibliografía · AeroLex",
     "title": "Fuentes y bibliografía",
-    "lead": "Todas las fuentes que citan el diccionario, la academia, el Hangar, la cronología y el glosario meteorológico, con lo que se apoya en cada una.",
+    "lead": "Todas las fuentes que citan el diccionario, la academia, el Hangar, la cabina de vuelo, la cronología y el glosario meteorológico, con lo que se apoya en cada una.",
     "statSources": "Fuentes",
     "statKinds": "Tipos de fuente",
     "statItems": "Contenidos con fuente",
@@ -1302,7 +1309,8 @@
       "courses": "Cursos",
       "aircraft": "Hangar",
       "timeline": "Cronología",
-      "weather": "Glosario meteorológico"
+      "weather": "Glosario meteorológico",
+      "cockpit": "Cabina de vuelo"
     },
     "licences": {
       "copyright": "Con derechos de autor: se cita y se parafrasea",
@@ -1428,5 +1436,30 @@
     "termThreshold": "umbral",
     "termVariation": "declinación magnética",
     "source": "Pistas: OurAirports (dominio público), datos del {date}. Pueden contener errores o estar desactualizados. Designación de pistas según el Anexo 14 de la OACI."
+  },
+  "cockpit": {
+    "metaTitle": "Cabina de vuelo interactiva · AeroLex",
+    "title": "Cabina de vuelo interactiva",
+    "lead": "Recorre por zonas la cabina de un Airbus A320 y la de un Boeing, descubre para qué sirve cada pantalla y cada mando, y practica encontrándolos.",
+    "notice": "Esquema educativo simplificado, no a escala y sin todos los mandos. La disposición exacta cambia según el modelo, la versión y la configuración del operador: para operar, sigue siempre la documentación del fabricante y del operador.",
+    "typeLabel": "Cabina",
+    "modeLabel": "Modo",
+    "modes": {
+      "explore": "Explorar",
+      "quiz": "¿Dónde está…?"
+    },
+    "svgLabel": "Esquema por zonas de la cabina de vuelo: {name}. Los números corresponden a la lista.",
+    "caption": "Esquema por zonas: panel superior, visera, panel de instrumentos y pedestal. Los números corresponden a la lista.",
+    "listLabel": "Elementos de la cabina: {name}",
+    "zoneN": "Zona {n}",
+    "hint": "Elige un número en el dibujo o en la lista para ver qué es.",
+    "terms": "En el diccionario:",
+    "sourcesLabel": "Fuentes:",
+    "find": "¿Dónde está: {name}?",
+    "right": "¡Correcto!",
+    "wrong": "No: «{name}» es la zona marcada en verde.",
+    "score": "{right} de {total}",
+    "next": "Siguiente",
+    "draft": "Contenido en borrador, redactado a partir de las fuentes citadas en cada elemento y pendiente de revisión."
   }
 }

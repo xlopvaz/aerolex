@@ -39,7 +39,8 @@
     "timeline": "Timeline",
     "sources": "Sources",
     "review": "Mistake review",
-    "airportDiagram": "Airport diagrams"
+    "airportDiagram": "Airport diagrams",
+    "cockpit": "Interactive flight deck"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -162,7 +163,9 @@
       "atc-pilot": "ATC phraseology · pilot",
       "atc-controller": "ATC phraseology · controller",
       "aircraft-photo": "Which aircraft? · by photo",
-      "aircraft-game": "Which aircraft? · by the numbers"
+      "aircraft-game": "Which aircraft? · by the numbers",
+      "cockpit-airbus": "Flight deck · Airbus",
+      "cockpit-boeing": "Flight deck · Boeing"
     },
     "activityTitle": "Recent activity",
     "activityEmpty": "What you earn will show up here.",
@@ -742,6 +745,10 @@
       "airportDiagram": {
         "title": "Airport diagrams",
         "text": "The runways of more than 4,000 airports to scale, and how to read their numbers."
+      },
+      "cockpit": {
+        "title": "Interactive flight deck",
+        "text": "An Airbus A320 and a Boeing flight deck zone by zone: what each display and control is, and a game to find them."
       }
     },
     "noscript": "This tool needs JavaScript to work."
@@ -1285,7 +1292,7 @@
   "sourcesPage": {
     "metaTitle": "Sources and bibliography · AeroLex",
     "title": "Sources and bibliography",
-    "lead": "Every source cited by the dictionary, the academy, the Hangar, the timeline and the weather glossary, with what relies on each one.",
+    "lead": "Every source cited by the dictionary, the academy, the Hangar, the flight deck, the timeline and the weather glossary, with what relies on each one.",
     "statSources": "Sources",
     "statKinds": "Source types",
     "statItems": "Items with sources",
@@ -1302,7 +1309,8 @@
       "courses": "Courses",
       "aircraft": "Hangar",
       "timeline": "Timeline",
-      "weather": "Weather glossary"
+      "weather": "Weather glossary",
+      "cockpit": "Flight deck"
     },
     "licences": {
       "copyright": "Copyrighted: cited and paraphrased",
@@ -1428,5 +1436,30 @@
     "termThreshold": "threshold",
     "termVariation": "magnetic variation",
     "source": "Runways: OurAirports (public domain), data of {date}. They may contain errors or be out of date. Runway designation as in ICAO Annex 14."
+  },
+  "cockpit": {
+    "metaTitle": "Interactive flight deck · AeroLex",
+    "title": "Interactive flight deck",
+    "lead": "Tour an Airbus A320 and a Boeing flight deck zone by zone, find out what each display and control is for, and practise finding them.",
+    "notice": "Simplified educational sketch, not to scale and without every control. The exact layout changes with the model, version and operator configuration: for real operations, always follow the manufacturer's and operator's documentation.",
+    "typeLabel": "Flight deck",
+    "modeLabel": "Mode",
+    "modes": {
+      "explore": "Explore",
+      "quiz": "Where is…?"
+    },
+    "svgLabel": "Zone sketch of the flight deck: {name}. The numbers match the list.",
+    "caption": "Zone sketch: overhead panel, glareshield, instrument panel and pedestal. The numbers match the list.",
+    "listLabel": "Flight deck elements: {name}",
+    "zoneN": "Zone {n}",
+    "hint": "Choose a number on the drawing or in the list to see what it is.",
+    "terms": "In the dictionary:",
+    "sourcesLabel": "Sources:",
+    "find": "Where is: {name}?",
+    "right": "Correct!",
+    "wrong": "No: “{name}” is the zone marked in green.",
+    "score": "{right} of {total}",
+    "next": "Next",
+    "draft": "Draft content, written from the sources cited for each element and awaiting review."
   }
 }

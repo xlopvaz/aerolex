@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "QRH",
+    "es": "QRH"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Quick reference handbook",
+    "es": "Manual de referencia rápida"
+  },
+  "categories": [
+    "cockpit",
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The handbook of checklists for abnormal and emergency situations. On aircraft with ECAM or EICAS it is used together with those systems or as a back-up, for example when a condition cannot be detected by any sensor; on aircraft without them it is the only reference.",
+    "es": "Manual con las listas de comprobación para situaciones anormales y de emergencia. En los aviones con ECAM o EICAS se usa junto con esos sistemas o como respaldo, por ejemplo cuando ningún sensor puede detectar la situación; en los aviones sin ellos es la única referencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The book of emergency checklists in the flight deck.",
+    "es": "El libro de listas de emergencia de la cabina de vuelo."
+  },
+  "example": {
+    "en": "EICAS showed the checklist title and the first officer opened the QRH.",
+    "es": "El EICAS mostró el título de la lista y el copiloto abrió el QRH."
+  },
+  "pronunciation": {
+    "en": "Q-R-H (kew-ar-aitch)",
+    "es": "cu-erre-hache"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "eicas",
+    "ecam",
+    "crm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-qrh",
+    "skybrary-eicas"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

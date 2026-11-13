@@ -8,7 +8,7 @@
 export const KIND_ORDER = ['standard', 'regulation', 'aip', 'handbook', 'glossary', 'manufacturer', 'web'];
 
 /** Content areas that cite sources, in the order they are listed under each source. */
-export const USAGE_AREAS = ['dictionary', 'lessons', 'courses', 'aircraft', 'timeline', 'weather'];
+export const USAGE_AREAS = ['dictionary', 'lessons', 'courses', 'aircraft', 'cockpit', 'timeline', 'weather'];
 
 /** Lower case, no accents, single spaces. */
 export function fold(s) {

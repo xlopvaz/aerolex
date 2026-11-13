@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Overhead panel",
+    "es": "Panel superior (overhead)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The panel in the flight deck ceiling that groups most of the aircraft systems controls, such as fire protection, hydraulics, fuel, electrics, air conditioning, APU and cabin pressure.",
+    "es": "Panel del techo de la cabina de vuelo que reúne la mayoría de los mandos de los sistemas del avión, como protección contra incendios, hidráulica, combustible, electricidad, aire acondicionado, APU y presurización."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The ceiling panel full of switches.",
+    "es": "El panel del techo lleno de interruptores."
+  },
+  "example": {
+    "en": "During the preflight check, the captain worked through the overhead panel from left to right.",
+    "es": "En la comprobación prevuelo, el comandante repasó el panel superior de izquierda a derecha."
+  },
+  "pronunciation": {
+    "en": "OH-ver-hed PAN-ul",
+    "es": "ó-ver-jed pá-nel (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "overhead"
+    ],
+    "es": [
+      "overhead"
+    ]
+  },
+  "related": [
+    "apu",
+    "hydraulic-system",
+    "glareshield"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "arnedo-cockpits",
+    "faa-sarter-2024-flight-deck"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

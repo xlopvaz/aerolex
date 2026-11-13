@@ -1,0 +1,61 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Autothrottle",
+    "es": "Empuje automático (autothrottle / autothrust)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "aircraft-systems",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A system that sets engine thrust automatically to hold a selected speed or a thrust value for each flight phase. Boeing calls it autothrottle and its thrust levers move as thrust changes; Airbus calls it autothrust and the levers stay still in a detent while thrust varies.",
+    "es": "Sistema que ajusta automáticamente el empuje de los motores para mantener una velocidad seleccionada o un valor de empuje en cada fase del vuelo. Boeing lo llama autothrottle y sus palancas de empuje se mueven al cambiar el empuje; Airbus lo llama autothrust y las palancas se quedan quietas en un retén mientras el empuje varía."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The automatic \"accelerator\" of an airliner.",
+    "es": "El «acelerador» automático de un avión de línea."
+  },
+  "example": {
+    "en": "With the autothrottle engaged, the levers moved back as the aircraft levelled off.",
+    "es": "Con el autothrottle conectado, las palancas retrocedieron al nivelarse el avión."
+  },
+  "pronunciation": {
+    "en": "AW-toh-throt-ul",
+    "es": "ó-to-zro-tl (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "autothrust",
+      "A/T",
+      "A/THR"
+    ],
+    "es": [
+      "autothrust",
+      "A/T",
+      "A/THR",
+      "autoempuje"
+    ]
+  },
+  "related": [
+    "autopilot",
+    "fcu",
+    "mcp",
+    "thrust"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-autothrottle",
+    "aopa-autothrottles-2025"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
