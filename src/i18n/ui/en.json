@@ -54,7 +54,7 @@
     "disclaimer": "AeroLex is an educational platform. It does not replace approved training, the AFM/POH, the operator's operations manual or current official documentation.",
     "source": "Source code on GitHub",
     "built": "Built in the open, one phase at a time.",
-    "phase": "Phase 4 · Tools"
+    "phase": "Phase 5 · User experience"
   },
   "home": {
     "metaTitle": "AeroLex · Learn the language of the sky",
@@ -110,7 +110,6 @@
     "title": "Your dashboard",
     "lead": "Your progress and preferences are stored only in this browser. Nothing is sent to any server.",
     "statsTitle": "Learning statistics",
-    "statsEmpty": "Completed lessons are counted as you study in the Academy. XP, streaks and badges arrive in Phase 5.",
     "xp": "XP points",
     "streak": "Day streak",
     "bestStreak": "Best streak",
@@ -132,7 +131,46 @@
     "resetConfirmText": "This deletes your XP, streaks, badges, favourites and preferences from this browser. It cannot be undone. Export a backup first if you might want it back.",
     "cancel": "Cancel",
     "confirmReset": "Delete everything",
-    "storageUnavailable": "This browser is blocking local storage (for example, in private mode). Your progress will be lost when you close the tab."
+    "storageUnavailable": "This browser is blocking local storage (for example, in private mode). Your progress will be lost when you close the tab.",
+    "statsLead": "You earn XP for completing lessons (50) and courses (100), for each question you get right for the first time (10), in practice (2 per right answer, up to 40 a day per practice) and reviewing flashcards (1 per card, up to 30 a day). Every day with XP counts towards your streak.",
+    "today": "XP today",
+    "courses": "Courses completed",
+    "badgesEarned": "Badges",
+    "goalTitle": "Daily goal",
+    "goalLabel": "XP per day",
+    "goalProgress": "{xp} of {goal} XP today",
+    "goalMet": "Today's goal reached.",
+    "goalTodo": "{n} XP to go for today's goal.",
+    "weekTitle": "Last 7 days",
+    "weekDay": "{day}: {xp} XP",
+    "badgesTitle": "Badges",
+    "badgeEarned": "Earned on {date}",
+    "badgeLocked": "Not yet earned",
+    "practiceTitle": "Practice results",
+    "practiceEmpty": "You have not done any practice yet.",
+    "colPractice": "Practice",
+    "colCorrect": "Right",
+    "colWrong": "Wrong",
+    "colRate": "Accuracy",
+    "practices": {
+      "metar-taf-1": "METAR & TAF · level 1",
+      "metar-taf-2": "METAR & TAF · level 2",
+      "metar-taf-3": "METAR & TAF · level 3",
+      "metar-taf-4": "METAR & TAF · level 4",
+      "atc-pilot": "ATC phraseology · pilot",
+      "atc-controller": "ATC phraseology · controller",
+      "aircraft-photo": "Which aircraft? · by photo",
+      "aircraft-game": "Which aircraft? · by the numbers"
+    },
+    "activityTitle": "Recent activity",
+    "activityEmpty": "What you earn will show up here.",
+    "reasons": {
+      "lesson": "Lesson completed",
+      "course": "Course completed",
+      "quiz": "Question answered right",
+      "practice": "Practice",
+      "flashcard": "Flashcard review"
+    }
   },
   "about": {
     "metaTitle": "About · AeroLex",
@@ -1264,6 +1302,49 @@
       "public-domain-us": "Public domain (US Government)",
       "eu-reuse": "Reusable with attribution (public-sector information)",
       "wmo": "© World Meteorological Organization"
+    }
+  },
+  "rewards": {
+    "xp": "+{n} XP",
+    "goal": "Daily goal reached!",
+    "badge": "Badge: {name}"
+  },
+  "badges": {
+    "first-flight": {
+      "name": "First Flight",
+      "desc": "Complete your first lesson."
+    },
+    "aviation-enthusiast": {
+      "name": "Aviation Enthusiast",
+      "desc": "Complete your first Academy course."
+    },
+    "pilot-in-training": {
+      "name": "Pilot in Training",
+      "desc": "Complete every published course of the pilot path."
+    },
+    "cabin-crew-ready": {
+      "name": "Cabin Crew Ready",
+      "desc": "Complete every published course of the cabin crew path."
+    },
+    "metar-master": {
+      "name": "METAR Master",
+      "desc": "Complete the METAR & SPECI Academy and get 25 answers right in METAR and TAF practice."
+    },
+    "atc-communicator": {
+      "name": "ATC Communicator",
+      "desc": "Get 10 exercises right in the ATC phraseology trainer."
+    },
+    "aircraft-expert": {
+      "name": "Aircraft Expert",
+      "desc": "Get 25 rounds right in “Which aircraft is it?”."
+    },
+    "week-streak": {
+      "name": "A Week Aloft",
+      "desc": "Study 7 days in a row."
+    },
+    "aviation-master": {
+      "name": "Aviation Master",
+      "desc": "Earn every other badge."
     }
   }
 }

@@ -8,7 +8,7 @@
  *    Never edit an existing migration.
  */
 export const STORAGE_KEY = 'aerolex:v1';
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 export const THEMES = ['system', 'light', 'dark'];
 
@@ -21,12 +21,14 @@ export function defaultState(now = new Date()) {
     prefs: {
       theme: 'system',   // 'system' | 'light' | 'dark'
       lang: null,        // 'es' | 'en' | null (null = follow the browser)
+      dailyGoal: 50,     // XP per day (since v3): 20 | 50 | 100 | 200
     },
     progress: {
       lessons: {},       // { [lessonId]: { completedAt, score? } }
       paths: {},         // { [pathId]: { startedAt, lastLessonId } }
+      courses: {},       // { [courseId]: { completedAt } } (since v3)
     },
-    xp: { total: 0, log: [] },                       // log: [{ at, amount, reason, ref }]
+    xp: { total: 0, log: [], days: {}, awarded: {} }, // log: [{ at, amount, reason, ref }]; days: { [YYYY-MM-DD]: { total, caps } }; awarded: { ['<type>:<ref>']: true } (days/awarded since v3)
     streak: { current: 0, best: 0, lastActiveDay: null },
     badges: {},                                      // { [badgeId]: { earnedAt } }
     favorites: { terms: [], aircraft: [], lessons: [] },
@@ -43,6 +45,22 @@ export function defaultState(now = new Date()) {
  */
 export const MIGRATIONS = {
   1: (s) => ({ ...s, schemaVersion: 2, practice: {} }),
+  // v3: gamification. Lessons already completed and questions already answered correctly
+  // earn their XP once, retroactively (50 and 10, as in XP_RULES), without counting towards
+  // any day or streak; they are marked as awarded so they never count twice.
+  2: (s) => {
+    const awarded = {};
+    let total = 0;
+    for (const k of Object.keys(s.progress?.lessons ?? {})) { awarded[`lesson:${k}`] = true; total += 50; }
+    for (const [k, a] of Object.entries(s.quiz?.answers ?? {})) if (a?.correct > 0) { awarded[`quiz:${k}`] = true; total += 10; }
+    return {
+      ...s,
+      schemaVersion: 3,
+      prefs: { ...s.prefs, dailyGoal: 50 },
+      progress: { ...s.progress, courses: {} },
+      xp: { ...s.xp, total: (s.xp?.total ?? 0) + total, days: {}, awarded },
+    };
+  },
 };
 
 /**

@@ -54,7 +54,7 @@
     "disclaimer": "AeroLex es una plataforma educativa. No sustituye la formación reglada, el AFM/POH, el manual de operaciones del operador ni la documentación oficial vigente.",
     "source": "Código fuente en GitHub",
     "built": "Construido en abierto, fase a fase.",
-    "phase": "Fase 4 · Herramientas"
+    "phase": "Fase 5 · Experiencia de usuario"
   },
   "home": {
     "metaTitle": "AeroLex · Aprende el idioma del cielo",
@@ -110,7 +110,6 @@
     "title": "Tu panel",
     "lead": "Tu progreso y tus preferencias se guardan solo en este navegador. No se envía nada a ningún servidor.",
     "statsTitle": "Estadísticas de aprendizaje",
-    "statsEmpty": "Las lecciones completadas se cuentan a medida que estudias en la Academia. Los XP, las rachas y las insignias llegan en la Fase 5.",
     "xp": "Puntos XP",
     "streak": "Racha de días",
     "bestStreak": "Mejor racha",
@@ -132,7 +131,46 @@
     "resetConfirmText": "Se borrarán tus XP, rachas, insignias, favoritos y preferencias de este navegador. No se puede deshacer. Exporta antes una copia si quieres poder recuperarlo.",
     "cancel": "Cancelar",
     "confirmReset": "Borrarlo todo",
-    "storageUnavailable": "Este navegador está bloqueando el almacenamiento local (por ejemplo, en modo privado). Tu progreso se perderá al cerrar la pestaña."
+    "storageUnavailable": "Este navegador está bloqueando el almacenamiento local (por ejemplo, en modo privado). Tu progreso se perderá al cerrar la pestaña.",
+    "statsLead": "Ganas XP al completar lecciones (50) y cursos (100), con cada pregunta que aciertas por primera vez (10), en las prácticas (2 por acierto, hasta 40 al día por práctica) y repasando flashcards (1 por tarjeta, hasta 30 al día). Cada día con XP cuenta para la racha.",
+    "today": "XP de hoy",
+    "courses": "Cursos completados",
+    "badgesEarned": "Insignias",
+    "goalTitle": "Meta diaria",
+    "goalLabel": "XP al día",
+    "goalProgress": "{xp} de {goal} XP hoy",
+    "goalMet": "Meta de hoy cumplida.",
+    "goalTodo": "Te faltan {n} XP para la meta de hoy.",
+    "weekTitle": "Últimos 7 días",
+    "weekDay": "{day}: {xp} XP",
+    "badgesTitle": "Insignias",
+    "badgeEarned": "Conseguida el {date}",
+    "badgeLocked": "Pendiente",
+    "practiceTitle": "Aciertos en las prácticas",
+    "practiceEmpty": "Todavía no has hecho ninguna práctica.",
+    "colPractice": "Práctica",
+    "colCorrect": "Aciertos",
+    "colWrong": "Fallos",
+    "colRate": "Acierto",
+    "practices": {
+      "metar-taf-1": "METAR y TAF · nivel 1",
+      "metar-taf-2": "METAR y TAF · nivel 2",
+      "metar-taf-3": "METAR y TAF · nivel 3",
+      "metar-taf-4": "METAR y TAF · nivel 4",
+      "atc-pilot": "Fraseología ATC · piloto",
+      "atc-controller": "Fraseología ATC · controlador",
+      "aircraft-photo": "¿Qué avión es? · por la foto",
+      "aircraft-game": "¿Qué avión es? · por las cifras"
+    },
+    "activityTitle": "Actividad reciente",
+    "activityEmpty": "Aquí verás lo que vayas ganando.",
+    "reasons": {
+      "lesson": "Lección completada",
+      "course": "Curso completado",
+      "quiz": "Pregunta acertada",
+      "practice": "Práctica",
+      "flashcard": "Repaso de flashcards"
+    }
   },
   "about": {
     "metaTitle": "Acerca de · AeroLex",
@@ -1264,6 +1302,49 @@
       "public-domain-us": "Dominio público (Gobierno de EE. UU.)",
       "eu-reuse": "Reutilizable citando la fuente (información del sector público)",
       "wmo": "© Organización Meteorológica Mundial"
+    }
+  },
+  "rewards": {
+    "xp": "+{n} XP",
+    "goal": "¡Meta diaria cumplida!",
+    "badge": "Insignia: {name}"
+  },
+  "badges": {
+    "first-flight": {
+      "name": "Primer vuelo",
+      "desc": "Completa tu primera lección."
+    },
+    "aviation-enthusiast": {
+      "name": "Entusiasta de la aviación",
+      "desc": "Completa tu primer curso de la Academia."
+    },
+    "pilot-in-training": {
+      "name": "Piloto en formación",
+      "desc": "Completa todos los cursos publicados del itinerario de pilotos."
+    },
+    "cabin-crew-ready": {
+      "name": "TCP preparado",
+      "desc": "Completa todos los cursos publicados del itinerario de TCP."
+    },
+    "metar-master": {
+      "name": "Maestro del METAR",
+      "desc": "Completa la Academia METAR y SPECI y acierta 25 preguntas en la práctica METAR y TAF."
+    },
+    "atc-communicator": {
+      "name": "Comunicador ATC",
+      "desc": "Acierta 10 ejercicios en el entrenador de fraseología ATC."
+    },
+    "aircraft-expert": {
+      "name": "Experto en aeronaves",
+      "desc": "Acierta 25 rondas en «¿Qué avión es?»."
+    },
+    "week-streak": {
+      "name": "Una semana en vuelo",
+      "desc": "Estudia 7 días seguidos."
+    },
+    "aviation-master": {
+      "name": "Maestro de la aviación",
+      "desc": "Consigue todas las demás insignias."
     }
   }
 }

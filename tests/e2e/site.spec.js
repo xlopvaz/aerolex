@@ -95,6 +95,37 @@ test.describe('dashboard', () => {
   });
 });
 
+test.describe('gamification', () => {
+  test('completing a lesson earns XP and a badge, shown in the toast and the dashboard', async ({ page }) => {
+    await page.goto('en/academy/aviation-fundamentals/what-is-an-aircraft/');
+    await page.locator('[data-complete]').click();
+    const toast = page.locator('[data-toast-box]');
+    await expect(toast).toBeVisible();
+    await expect(toast).toContainText('+50 XP');
+    await expect(toast).toContainText('First Flight');
+    // Undoing and redoing does not earn the XP again
+    await page.locator('[data-complete]').click();
+    await page.locator('[data-complete]').click();
+
+    await page.goto('en/dashboard/');
+    await expect(page.locator('[data-toast-box]')).toBeHidden(); // nothing earned on this page yet
+    await expect(page.locator('#stat-xp')).toHaveText('50');
+    await expect(page.locator('#stat-today')).toHaveText('50');
+    await expect(page.locator('#stat-streak')).toHaveText('1');
+    await expect(page.locator('[data-badge="first-flight"]')).toHaveClass(/is-earned/);
+    await expect(page.locator('[data-badge-count]')).toHaveText('1/9');
+    await expect(page.locator('[data-goal-text]')).toContainText('50 of 50 XP today');
+    await expect(page.locator('[data-activity] li')).toHaveCount(1);
+    await expect(page.locator('[data-week] li')).toHaveCount(7);
+
+    // Raising the daily goal is saved
+    await page.locator('input[name="dailyGoal"][value="100"]').check({ force: true });
+    await expect(page.locator('[data-goal-text]')).toContainText('50 of 100 XP today');
+    await page.reload();
+    await expect(page.locator('input[name="dailyGoal"][value="100"]')).toBeChecked();
+  });
+});
+
 test.describe('components', () => {
   test('tabs work with the keyboard', async ({ page }) => {
     await page.goto('en/styleguide/');

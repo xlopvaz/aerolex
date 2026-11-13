@@ -96,6 +96,8 @@ const payload = JSON.stringify({ ui: t(lang, 'flashcards'), cats: t(lang, 'categ
   import { review, previewIntervals, studyQueue, deckStats } from '../lib/srs/leitner.js';
   import { esc } from '../lib/metar/render.js';
   import { getAppStore } from '../lib/core/app-store.js';
+  import { award } from '../lib/gamification/engine.js';
+  import { emitReward } from '../lib/gamification/client.js';
 
   const root = document.querySelector<HTMLElement>('[data-fc]');
   if (root) {
@@ -161,9 +163,12 @@ const payload = JSON.stringify({ ui: t(lang, 'flashcards'), cats: t(lang, 'categ
     const grade = (g: 'again' | 'good' | 'easy') => {
       if (!current || !revealed) return;
       const id = current;
+      let reward;
       store.update((s: any) => {
         s.srs.cards[id] = review(s.srs.cards[id] ?? null, g);
+        reward = award(s, { type: 'flashcard', ref: 'review' });
       });
+      emitReward(reward);
       if (g === 'again') queue.push(id);
       showCard();
     };

@@ -2,10 +2,18 @@
  * Learning progress, keyed by content IDs (never by URL or language).
  *   lessons:  store.progress.lessons[lessonId] = { completedAt, score?, total? }
  *   answers:  store.quiz.answers["<quiz>/<question>"] = { correct, wrong, last, lastAt }
+ * Completing lessons and courses and answering correctly also earn XP and badges
+ * (src/lib/gamification/engine.js); the reward is returned and announced to the page.
  */
+import { award, completeCourses, mergeRewards } from '../gamification/engine.js';
+import { emitReward } from '../gamification/client.js';
 
-/** Mark a lesson as completed. Keeps the first completion date and the best score. */
-export function completeLesson(store, lessonId, result = {}) {
+/**
+ * Mark a lesson as completed. Keeps the first completion date and the best score.
+ * `ctx.courses` (course → lessons) lets it detect finished courses and path badges.
+ */
+export function completeLesson(store, lessonId, result = {}, ctx) {
+  let reward;
   store.update((s) => {
     const prev = s.progress.lessons[lessonId];
     const next = { completedAt: prev?.completedAt ?? new Date().toISOString() };
@@ -18,7 +26,13 @@ export function completeLesson(store, lessonId, result = {}) {
       next.total = prev.total;
     }
     s.progress.lessons[lessonId] = next;
+    const now = new Date();
+    const rewards = [award(s, { type: 'lesson', ref: lessonId }, { now, ctx })];
+    for (const course of completeCourses(s, ctx, now)) rewards.push(award(s, { type: 'course', ref: course }, { now, ctx }));
+    reward = mergeRewards(...rewards);
   });
+  emitReward(reward);
+  return reward;
 }
 
 export function uncompleteLesson(store, lessonId) {
@@ -37,13 +51,17 @@ export function courseProgress(state, lessonIds) {
 
 /** Record a quiz answer (used later for error history and spaced repetition). */
 export function recordAnswer(store, questionKey, correct) {
+  let reward;
   store.update((s) => {
     const a = s.quiz.answers[questionKey] ?? { correct: 0, wrong: 0 };
     if (correct) a.correct += 1; else a.wrong += 1;
     a.last = correct;
     a.lastAt = new Date().toISOString();
     s.quiz.answers[questionKey] = a;
+    if (correct) reward = award(s, { type: 'quiz', ref: questionKey });
   });
+  emitReward(reward);
+  return reward;
 }
 
 /** Questions whose last answer was wrong ("error history"). */

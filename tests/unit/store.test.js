@@ -12,7 +12,7 @@ describe('store', () => {
   it('starts with a valid default state', () => {
     const s = make().get();
     expect(s.schemaVersion).toBe(SCHEMA_VERSION);
-    expect(s.prefs).toEqual({ theme: 'system', lang: null });
+    expect(s.prefs).toEqual({ theme: 'system', lang: null, dailyGoal: 50 });
     expect(s.xp.total).toBe(0);
   });
 
@@ -119,7 +119,7 @@ describe('schema v2 — practice results', () => {
   it('migrates a v1 state and keeps its data', () => {
     const v1 = { schemaVersion: 1, prefs: { theme: 'dark', lang: 'es' }, progress: { lessons: { 'taf/what-is-taf': { completedAt: '2026-11-13T00:00:00.000Z' } }, paths: {} } };
     const s = normalizeState(v1);
-    expect(s.schemaVersion).toBe(2);
+    expect(s.schemaVersion).toBe(SCHEMA_VERSION);
     expect(s.practice).toEqual({});
     expect(s.prefs.theme).toBe('dark');
     expect(s.progress.lessons['taf/what-is-taf']).toBeTruthy();

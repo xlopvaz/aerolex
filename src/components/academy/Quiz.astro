@@ -58,6 +58,7 @@ const msgs = {
 
 <script>
   import { getAppStore } from '../../lib/core/app-store.js';
+  import { pageContext } from '../../lib/gamification/client.js';
   import { recordAnswer, completeLesson } from '../../lib/academy/progress.js';
 
   document.querySelectorAll<HTMLElement>('[data-quiz]').forEach((root) => {
@@ -75,7 +76,7 @@ const msgs = {
       const done = results.size === total;
       retry.hidden = !done || correct === total;
       root.classList.toggle('is-done', done);
-      if (done && root.dataset.lesson) completeLesson(store, root.dataset.lesson, { score: correct, total });
+      if (done && root.dataset.lesson) completeLesson(store, root.dataset.lesson, { score: correct, total }, pageContext());
     };
 
     questions.forEach((q) => {
