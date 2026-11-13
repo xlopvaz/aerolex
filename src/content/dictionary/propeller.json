@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Propeller",
+    "es": "Hélice"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A set of rotating blades, driven by an engine, that produces thrust by accelerating air backwards; each blade works like a rotating wing.",
+    "es": "Conjunto de palas giratorias, movido por un motor, que produce empuje acelerando el aire hacia atrás; cada pala funciona como un ala que gira."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The spinning blades at the front of a propeller aircraft.",
+    "es": "Las palas que giran en el morro o en las alas de un avión de hélice."
+  },
+  "example": {
+    "en": "The ATR 72 has six-blade propellers.",
+    "es": "El ATR 72 tiene hélices de seis palas."
+  },
+  "pronunciation": {
+    "en": "pro-PEL-er",
+    "es": "pro-pe-ler (en inglés), hélice"
+  },
+  "synonyms": {
+    "en": [
+      "prop"
+    ],
+    "es": []
+  },
+  "related": [
+    "turbofan",
+    "thrust",
+    "airfoil"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-powerplant"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

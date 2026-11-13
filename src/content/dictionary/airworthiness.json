@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Airworthiness",
+    "es": "Aeronavegabilidad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "maintenance",
+    "aviation-law",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The condition of an aircraft that conforms to its approved design and is in a condition for safe operation; it is shown by a certificate of airworthiness kept valid through maintenance.",
+    "es": "Condición de una aeronave que se ajusta a su diseño aprobado y está en condiciones de operar con seguridad; se acredita con un certificado de aeronavegabilidad que se mantiene válido mediante el mantenimiento."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Being fit and legal to fly from the technical point of view.",
+    "es": "Estar en condiciones técnicas y legales para volar."
+  },
+  "example": {
+    "en": "Without the repair, the aircraft is not airworthy.",
+    "es": "Sin la reparación, el avión no es aeronavegable."
+  },
+  "pronunciation": {
+    "en": "AIR-wur-thee-ness",
+    "es": "eir-uor-zi-nes (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mel",
+    "cdl"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-8",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

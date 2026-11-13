@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Yaw",
+    "es": "Guiñada"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Rotation of the aircraft about its vertical axis, which moves the nose left or right; it is controlled with the rudder.",
+    "es": "Giro de la aeronave alrededor de su eje vertical, que mueve el morro a izquierda o derecha; se controla con el timón de dirección."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The nose turning left or right, like shaking your head \"no\".",
+    "es": "El morro girando a izquierda o derecha, como al negar con la cabeza."
+  },
+  "example": {
+    "en": "After the engine failure the aircraft yawed towards the dead engine.",
+    "es": "Tras el fallo de motor, el avión guiñó hacia el motor parado."
+  },
+  "pronunciation": {
+    "en": "yaw (rhymes with \"law\")",
+    "es": "yo (en inglés), guiñada"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "pitch",
+    "roll",
+    "rudder"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

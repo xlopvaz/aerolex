@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Decompression",
+    "es": "Despresurización"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "aircraft-systems",
+    "cabin-crew"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A loss of cabin pressure in a pressurised aircraft, gradual or rapid; at high altitude it requires oxygen masks and an emergency descent.",
+    "es": "Pérdida de presión en la cabina de un avión presurizado, lenta o rápida; a gran altitud obliga a usar las máscaras de oxígeno y a hacer un descenso de emergencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the cabin loses its pressure and the oxygen masks drop.",
+    "es": "Cuando la cabina pierde la presión y caen las máscaras de oxígeno."
+  },
+  "example": {
+    "en": "After the decompression the crew made an emergency descent to FL100.",
+    "es": "Tras la despresurización, la tripulación hizo un descenso de emergencia a FL100."
+  },
+  "pronunciation": {
+    "en": "dee-kom-PRESH-un",
+    "es": "des-pre-su-ri-za-ción"
+  },
+  "synonyms": {
+    "en": [
+      "depressurisation"
+    ],
+    "es": [
+      "descompresión"
+    ]
+  },
+  "related": [
+    "pressurization",
+    "pbe",
+    "mayday"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

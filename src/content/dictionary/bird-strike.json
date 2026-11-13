@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Bird strike",
+    "es": "Impacto con aves"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A collision between an aircraft and one or more birds, most frequent near the ground during take-off and landing; airports run wildlife hazard management programmes to reduce it.",
+    "es": "Colisión entre una aeronave y una o varias aves, más frecuente cerca del suelo durante el despegue y el aterrizaje; los aeropuertos aplican programas de gestión del riesgo de fauna para reducirla."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When a bird hits the aircraft.",
+    "es": "Cuando un pájaro choca con el avión."
+  },
+  "example": {
+    "en": "After a bird strike on take-off, the crew returned to the airport.",
+    "es": "Tras un impacto con aves en el despegue, la tripulación regresó al aeropuerto."
+  },
+  "pronunciation": {
+    "en": "BURD strike",
+    "es": "berd straik (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "birdstrike"
+    ],
+    "es": [
+      "choque con aves"
+    ]
+  },
+  "related": [
+    "fod",
+    "turbofan"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

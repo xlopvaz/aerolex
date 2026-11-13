@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Aircraft stand",
+    "es": "Puesto de estacionamiento"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "ground-handling"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A designated area on an apron intended to be used for parking an aircraft.",
+    "es": "Área designada en una plataforma destinada al estacionamiento de una aeronave."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The parking spot for an aircraft at the airport.",
+    "es": "La plaza de aparcamiento de un avión en el aeropuerto."
+  },
+  "example": {
+    "en": "\"Taxi to stand 14.\"",
+    "es": "«Ruede al puesto 14.»"
+  },
+  "pronunciation": {
+    "en": "stand",
+    "es": "stand (en inglés), puesto"
+  },
+  "synonyms": {
+    "en": [
+      "parking stand",
+      "gate (informal)"
+    ],
+    "es": [
+      "puesto",
+      "posición"
+    ]
+  },
+  "related": [
+    "apron",
+    "jet-bridge",
+    "marshaller",
+    "pushback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "De-icing",
+    "es": "Deshielo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "safety",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Removing frost, ice or snow from an aircraft on the ground before flight, usually with heated fluids; anti-icing fluid may then be applied to prevent new contamination for a limited holdover time.",
+    "es": "Eliminar escarcha, hielo o nieve de una aeronave en tierra antes del vuelo, normalmente con líquidos calientes; después puede aplicarse líquido antihielo para evitar una nueva contaminación durante un tiempo de protección limitado."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Spraying the aircraft on the ground to clean off ice and snow before take-off.",
+    "es": "Rociar el avión en tierra para quitarle el hielo y la nieve antes de despegar."
+  },
+  "example": {
+    "en": "Expect a 20-minute delay for de-icing.",
+    "es": "Prevea un retraso de 20 minutos por el deshielo."
+  },
+  "pronunciation": {
+    "en": "dee-EYE-sing",
+    "es": "di-ai-sing (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "de-icing / anti-icing"
+    ],
+    "es": [
+      "deshielo / antihielo"
+    ]
+  },
+  "related": [
+    "icing",
+    "pushback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

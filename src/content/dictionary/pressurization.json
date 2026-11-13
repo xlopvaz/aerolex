@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Pressurisation",
+    "es": "Presurización"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The system that pumps air into the fuselage and controls its outflow to keep the cabin at a pressure equivalent to a much lower altitude than the one at which the aircraft is flying.",
+    "es": "Sistema que introduce aire en el fuselaje y controla su salida para mantener en la cabina una presión equivalente a una altitud mucho menor que la de vuelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The system that keeps the cabin air at a comfortable pressure when flying high.",
+    "es": "El sistema que mantiene el aire de la cabina a una presión cómoda cuando se vuela alto."
+  },
+  "example": {
+    "en": "At FL370 the cabin altitude was about 7,000 ft.",
+    "es": "A FL370, la altitud de cabina era de unos 7000 ft."
+  },
+  "pronunciation": {
+    "en": "presh-ur-eye-ZAY-shun",
+    "es": "pre-su-ri-za-ción"
+  },
+  "synonyms": {
+    "en": [
+      "pressurization (US)"
+    ],
+    "es": []
+  },
+  "related": [
+    "decompression",
+    "apu"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

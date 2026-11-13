@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Jet stream",
+    "es": "Corriente en chorro"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A narrow band of very strong winds in the upper troposphere, typically near the tropopause, which can greatly increase or reduce an aircraft's ground speed and is associated with clear-air turbulence.",
+    "es": "Banda estrecha de vientos muy fuertes en la troposfera superior, normalmente cerca de la tropopausa, que puede aumentar o reducir mucho la velocidad respecto al suelo y se asocia a turbulencia en aire claro."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A \"river\" of very fast wind high up: flights use it to save time eastbound.",
+    "es": "Un «río» de viento muy rápido en altura: los vuelos lo aprovechan para ganar tiempo hacia el este."
+  },
+  "example": {
+    "en": "Thanks to the jet stream, the flight arrived 40 minutes early.",
+    "es": "Gracias a la corriente en chorro, el vuelo llegó 40 minutos antes."
+  },
+  "pronunciation": {
+    "en": "JET-streem",
+    "es": "yet strim (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "turbulence",
+    "headwind",
+    "tailwind"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

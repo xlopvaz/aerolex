@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Taxi",
+    "es": "Rodaje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The movement of an aircraft on the surface of an aerodrome under its own power, excluding take-off and landing.",
+    "es": "Movimiento autopropulsado de una aeronave sobre la superficie de un aeródromo, excluidos el despegue y el aterrizaje."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Driving the aircraft on the ground with its own engines.",
+    "es": "Mover el avión por tierra con sus propios motores."
+  },
+  "example": {
+    "en": "\"Taxi to holding point runway 36L via taxiway A.\"",
+    "es": "«Ruede al punto de espera de la pista 36L por la calle de rodaje A.»"
+  },
+  "pronunciation": {
+    "en": "TAK-see",
+    "es": "tak-si (en inglés), rodaje"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "taxiway",
+    "apron",
+    "pushback",
+    "holding"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

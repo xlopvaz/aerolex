@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Turbofan",
+    "es": "Turbofán"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A gas turbine engine in which a large front fan, driven by the turbine, pushes most of the air around the core (bypass air); it is the engine of almost all modern airliners.",
+    "es": "Motor de turbina de gas en el que un gran ventilador delantero, movido por la turbina, empuja la mayor parte del aire por fuera del núcleo (flujo secundario); es el motor de casi todos los aviones de línea modernos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The jet engine of airliners, with a big fan at the front.",
+    "es": "El motor a reacción de los aviones de línea, con un gran ventilador delante."
+  },
+  "example": {
+    "en": "The A320neo uses high-bypass turbofans.",
+    "es": "El A320neo usa turbofanes de alto índice de derivación."
+  },
+  "pronunciation": {
+    "en": "TUR-boh-fan",
+    "es": "tur-bo-fan"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "thrust",
+    "propeller",
+    "apu"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-powerplant"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

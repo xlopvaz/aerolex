@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Pitch",
+    "es": "Cabeceo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Rotation of the aircraft about its lateral axis, which raises or lowers the nose; it is controlled with the elevator.",
+    "es": "Giro de la aeronave alrededor de su eje transversal, que sube o baja el morro; se controla con el timón de profundidad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The nose going up or down, like nodding \"yes\".",
+    "es": "El morro subiendo o bajando, como al asentir con la cabeza."
+  },
+  "example": {
+    "en": "Pitch up to 15 degrees after rotation.",
+    "es": "Cabecea hasta 15 grados tras la rotación."
+  },
+  "pronunciation": {
+    "en": "pitch",
+    "es": "pich (en inglés), cabeceo"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "yaw",
+    "roll",
+    "elevator",
+    "angle-of-attack"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

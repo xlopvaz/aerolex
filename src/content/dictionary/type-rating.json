@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Type rating",
+    "es": "Habilitación de tipo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-law",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An authorisation entered on a pilot licence that allows the holder to fly a specific aircraft type, obtained after type-specific training and checks.",
+    "es": "Autorización anotada en una licencia de piloto que permite al titular volar un tipo concreto de aeronave, obtenida tras la formación y las pruebas específicas de ese tipo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The qualification to fly one particular aircraft type, such as the A320.",
+    "es": "La cualificación para volar un tipo de avión concreto, como el A320."
+  },
+  "example": {
+    "en": "She completed her A320 type rating in the simulator.",
+    "es": "Completó su habilitación de tipo A320 en el simulador."
+  },
+  "pronunciation": {
+    "en": "TYPE RAY-ting",
+    "es": "taip rei-ting (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "atpl",
+    "cpl"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-1",
+    "eu-1178-2011"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

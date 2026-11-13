@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Visibility",
+    "es": "Visibilidad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The greatest distance at which an object of suitable dimensions can be seen and recognised against a bright background, or lights can be seen at night; reported in METAR in metres (or statute miles in the US).",
+    "es": "Mayor distancia a la que puede verse y reconocerse un objeto de dimensiones adecuadas contra un fondo claro, o verse luces de noche; en el METAR se da en metros (o en millas terrestres en EE. UU.)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How far you can see.",
+    "es": "Hasta dónde se ve."
+  },
+  "example": {
+    "en": "Visibility 800 m in fog: below the VFR minima.",
+    "es": "Visibilidad de 800 m con niebla: por debajo de los mínimos VFR."
+  },
+  "pronunciation": {
+    "en": "viz-ih-BIL-ih-tee",
+    "es": "vi-si-bi-li-dad"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "rvr",
+    "fog",
+    "vmc",
+    "cavok"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

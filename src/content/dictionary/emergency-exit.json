@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Emergency exit",
+    "es": "Salida de emergencia"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A door, hatch or window exit used to evacuate the aircraft in an emergency; its number, type and location are set by the certification rules and determine the maximum number of passengers.",
+    "es": "Puerta, trampilla o ventana que se usa para evacuar el avión en una emergencia; su número, tipo y situación los fijan las normas de certificación y determinan el número máximo de pasajeros."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The doors and windows you use to get out quickly in an emergency.",
+    "es": "Las puertas y ventanas por las que se sale rápido en una emergencia."
+  },
+  "example": {
+    "en": "Passengers in the emergency exit rows must be willing and able to help.",
+    "es": "Los pasajeros de las filas de salida de emergencia deben poder y querer ayudar."
+  },
+  "pronunciation": {
+    "en": "ih-MUR-jen-see EG-zit",
+    "es": "i-mer-yen-si eg-sit (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "evacuation-slide",
+    "safety-demonstration",
+    "brace-position"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-25-803",
+    "cfr-14-part-25"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
