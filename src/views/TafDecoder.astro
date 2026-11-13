@@ -1,0 +1,170 @@
+---
+/**
+ * TAF decoder (Phase 4): group-by-group explanation, timeline and "conditions at a given time".
+ * The first didactic example is decoded at build time; in the browser everything runs locally.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import { childHref, href, t, useT } from '../i18n/index.js';
+import { decodeTaf } from '../lib/taf/decode.js';
+import { renderTaf, tafMessages } from '../lib/taf/render.js';
+import samples from '../content/samples/taf.json';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const M = tafMessages(t(lang, 'metar'), t(lang, 'taf'));
+const ui = { ...t(lang, 'metarTool'), ...t(lang, 'tafTool') };
+const first = samples.examples[0];
+const out = renderTaf(decodeTaf(first.raw), 0, M, lang, ui);
+const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw) });
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('tafTool.metaTitle')} description={tr('tafTool.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.tafDecoder') }]} />
+      <h1>{tr('tafTool.title')}</h1>
+      <p class="lead">{tr('tafTool.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container mt" data-taf data-lang={lang}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+
+    <div class="mt-input">
+      <label for="tf-input" class="mt-label">{tr('tafTool.inputLabel')}</label>
+      <textarea id="tf-input" class="mono" rows="4" spellcheck="false" autocomplete="off" autocapitalize="characters" placeholder={tr('tafTool.placeholder')} aria-describedby="tf-hint" data-input>{first.raw}</textarea>
+      <p id="tf-hint" class="mt-hint">{tr('metarTool.hint')}</p>
+      <div class="mt-actions">
+        <Button variant="secondary" size="sm" icon="eraser" data-clear>{tr('metarTool.clear')}</Button>
+        <Button variant="secondary" size="sm" icon="link" data-copy>{tr('metarTool.copyLink')}</Button>
+        <span class="mt-copied" role="status" data-copied></span>
+      </div>
+      <noscript><p class="mt-hint">{tr('tafTool.noscript')}</p></noscript>
+    </div>
+
+    <section class="mt-examples" aria-labelledby="tf-ex-title">
+      <h2 id="tf-ex-title">{tr('metarTool.examplesTitle')}</h2>
+      <div class="mt-examples__list">
+        {samples.examples.map((e) => (
+          <button type="button" class="mt-example" data-example={e.raw}>
+            <Badge tone="amber" icon="book-open">{tr('metarTool.sourceExample')}</Badge>
+            <span>{e.label[lang]}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-result" aria-labelledby="tf-res-title">
+      <div class="mt-result__head">
+        <h2 id="tf-res-title">{tr('metarTool.resultTitle')}</h2>
+        <span class="mt-source" data-source data-kind="example">{tr('metarTool.sourceExample')}</span>
+      </div>
+
+      <h3>{tr('metarTool.highlightTitle')}</h3>
+      <p class="mt-code mono" data-out="highlighted" set:html={out.highlighted} />
+
+      <h3>{tr('tafTool.timelineTitle')}</h3>
+      <div class="mt-card tf-scroll" data-out="timeline" set:html={out.timeline} />
+
+      <h3>{tr('tafTool.atTitle')}</h3>
+      <div class="mt-card">
+        <div class="tf-slider">
+          <label for="tf-hour">{tr('tafTool.sliderLabel')}</label>
+          <input id="tf-hour" type="range" min="0" max={out.hours} step="1" value="0" data-hour />
+        </div>
+        <div class="tf-at" data-out="at" aria-live="polite" set:html={out.at} />
+      </div>
+
+      <h3>{tr('metarTool.groupsTitle')}</h3>
+      <div class="mt-table-wrap" data-out="table" set:html={out.table} />
+
+      <h3>{tr('metarTool.issuesTitle')}</h3>
+      <div data-out="issues" set:html={out.issues} />
+    </section>
+
+    <p class="mt-more"><a href={childHref('academy', 'taf', lang)}>{tr('tafTool.learnMore')}</a></p>
+  </div>
+
+  <script type="application/json" id="tf-i18n" set:html={i18n} />
+</BaseLayout>
+
+<script>
+  import { decodeTaf } from '../lib/taf/decode.js';
+  import { renderTaf } from '../lib/taf/render.js';
+
+  const root = document.querySelector<HTMLElement>('[data-taf]');
+  const data = JSON.parse(document.getElementById('tf-i18n')!.textContent!);
+  if (root) {
+    const lang = root.dataset.lang!;
+    const input = root.querySelector<HTMLTextAreaElement>('[data-input]')!;
+    const hour = root.querySelector<HTMLInputElement>('[data-hour]')!;
+    const source = root.querySelector<HTMLElement>('[data-source]')!;
+    const outs = Object.fromEntries([...root.querySelectorAll<HTMLElement>('[data-out]')].map((el) => [el.dataset.out!, el]));
+    const norm = (s: string) => s.trim().toUpperCase().replace(/\s+/g, ' ');
+    let taf = decodeTaf(input.value);
+
+    const draw = (full: boolean) => {
+      const h = Number(hour.value);
+      const out = renderTaf(taf, h, data.M, lang, data.ui);
+      outs.timeline.innerHTML = out.timeline;
+      outs.at.innerHTML = out.at;
+      if (!full) return;
+      outs.highlighted.innerHTML = out.highlighted;
+      outs.table.innerHTML = out.table;
+      outs.issues.innerHTML = out.issues;
+    };
+    const decode = () => {
+      taf = decodeTaf(input.value);
+      const total = renderTaf(taf, 0, data.M, lang, data.ui).hours;
+      hour.max = String(Math.max(0, Math.floor(total)));
+      hour.disabled = total <= 0;
+      if (Number(hour.value) > total) hour.value = '0';
+      const isExample = data.examples.some((e: string) => norm(e) === norm(input.value));
+      source.dataset.kind = isExample ? 'example' : 'user';
+      source.textContent = isExample ? data.ui.sourceExample : data.ui.sourceUser;
+      draw(true);
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(decode, 150);
+    });
+    hour.addEventListener('input', () => draw(false));
+    root.querySelectorAll<HTMLButtonElement>('[data-example]').forEach((b) =>
+      b.addEventListener('click', () => {
+        input.value = b.dataset.example!;
+        hour.value = '0';
+        decode();
+        input.focus();
+      })
+    );
+    root.querySelector('[data-clear]')!.addEventListener('click', () => {
+      input.value = '';
+      decode();
+      input.focus();
+    });
+    const copied = root.querySelector<HTMLElement>('[data-copied]')!;
+    root.querySelector('[data-copy]')!.addEventListener('click', async () => {
+      const url = new URL(location.href);
+      url.searchParams.set('m', norm(input.value));
+      history.replaceState(null, '', url);
+      try {
+        await navigator.clipboard.writeText(url.toString());
+      } catch {
+        /* clipboard unavailable: the address bar already has the link */
+      }
+      copied.textContent = data.ui.copied;
+      setTimeout(() => (copied.textContent = ''), 2500);
+    });
+
+    const fromUrl = new URLSearchParams(location.search).get('m');
+    if (fromUrl) input.value = fromUrl.slice(0, 2000);
+    decode();
+  }
+</script>
