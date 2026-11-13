@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ND",
+    "es": "ND"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Navigation display",
+    "es": "Pantalla de navegación"
+  },
+  "categories": [
+    "cockpit",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A cockpit display that shows the aircraft's position on its route, with waypoints, navigation aids, weather radar and traffic.",
+    "es": "Pantalla de la cabina que muestra la posición del avión en su ruta, con puntos de recorrido, radioayudas, radar meteorológico y tráfico."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The moving map in the cockpit.",
+    "es": "El mapa en movimiento de la cabina."
+  },
+  "example": {
+    "en": "The storm cell appeared in red on the ND.",
+    "es": "La célula tormentosa apareció en rojo en el ND."
+  },
+  "pronunciation": {
+    "en": "N-D (en-dee)",
+    "es": "ene-de"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "pfd",
+    "fms",
+    "tcas"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

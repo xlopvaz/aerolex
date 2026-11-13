@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AMSL",
+    "es": "AMSL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Above mean sea level",
+    "es": "Sobre el nivel medio del mar"
+  },
+  "categories": [
+    "navigation",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Altitude or elevation measured from mean sea level; with the altimeter set to QNH, it shows altitude AMSL.",
+    "es": "Altitud o elevación medida desde el nivel medio del mar; con el altímetro ajustado al QNH, indica la altitud AMSL."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How high you are above the sea, whatever the ground below.",
+    "es": "A qué altura estás sobre el mar, sea cual sea el terreno de debajo."
+  },
+  "example": {
+    "en": "The airport elevation is 2,000 ft AMSL.",
+    "es": "La elevación del aeropuerto es de 2000 ft AMSL."
+  },
+  "pronunciation": {
+    "en": "A-M-S-L (ay-em-es-el)",
+    "es": "a-eme-ese-ele"
+  },
+  "synonyms": {
+    "en": [
+      "MSL"
+    ],
+    "es": [
+      "MSL"
+    ]
+  },
+  "related": [
+    "agl",
+    "qnh",
+    "altimeter"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

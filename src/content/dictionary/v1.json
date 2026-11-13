@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "V1",
+    "es": "V1"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Take-off decision speed",
+    "es": "Velocidad de decisión de despegue"
+  },
+  "categories": [
+    "flight-operations",
+    "aerodynamics",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The maximum speed in the take-off at which the pilot must take the first action to stop the aircraft within the accelerate-stop distance; it is also the minimum speed at which the take-off can be continued after an engine failure.",
+    "es": "Velocidad máxima durante el despegue a la que el piloto debe tomar la primera medida para detener el avión dentro de la distancia de aceleración-parada; es también la velocidad mínima a la que se puede continuar el despegue tras un fallo de motor."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The point of no return on the runway: below V1 you can stop, above it you continue.",
+    "es": "El punto de no retorno en la pista: por debajo de V1 se puede parar; por encima, se sigue."
+  },
+  "example": {
+    "en": "\"V1… rotate.\" — after V1 the crew continued the take-off despite the warning.",
+    "es": "«V1… rotación.» Pasada V1, la tripulación continuó el despegue pese al aviso."
+  },
+  "pronunciation": {
+    "en": "V1 (vee-1)",
+    "es": "uve-1"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vr",
+    "v2",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-part-25",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

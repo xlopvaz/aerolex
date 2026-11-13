@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SSR",
+    "es": "SSR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Secondary surveillance radar",
+    "es": "Radar secundario de vigilancia"
+  },
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A surveillance radar system that uses transmitters/receivers (interrogators) on the ground and transponders on board the aircraft.",
+    "es": "Sistema de radar de vigilancia que utiliza transmisores/receptores (interrogadores) en tierra y transpondedores a bordo de las aeronaves."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A radar that \"asks\" each aircraft's transponder who it is and how high it is flying.",
+    "es": "Un radar que «pregunta» al transpondedor de cada avión quién es y a qué altitud vuela."
+  },
+  "example": {
+    "en": "The SSR code 7700 appeared on the controller's screen.",
+    "es": "En la pantalla del controlador apareció el código SSR 7700."
+  },
+  "pronunciation": {
+    "en": "S-S-R (es-es-ar)",
+    "es": "ese-ese-erre"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "squawk",
+    "ads-b",
+    "tcas"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-4444",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

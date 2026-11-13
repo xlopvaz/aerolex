@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PM",
+    "es": "PM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Pilot monitoring",
+    "es": "Piloto que supervisa"
+  },
+  "categories": [
+    "flight-operations",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The pilot who is not controlling the flight path; he or she monitors the flight and the pilot flying, handles radio communications and performs other tasks.",
+    "es": "Piloto que no controla la trayectoria; supervisa el vuelo y al piloto a los mandos, lleva las comunicaciones por radio y realiza otras tareas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The pilot who checks, talks to ATC and backs up the pilot flying.",
+    "es": "El piloto que vigila, habla con el ATC y respalda al piloto a los mandos."
+  },
+  "example": {
+    "en": "PM: \"Speed check, flaps 1.\"",
+    "es": "PM: «Velocidad comprobada, flaps 1.»"
+  },
+  "pronunciation": {
+    "en": "P-M (pee-em)",
+    "es": "pe-eme"
+  },
+  "synonyms": {
+    "en": [
+      "PNF (pilot not flying, older term)"
+    ],
+    "es": [
+      "PNF (piloto que no vuela, término antiguo)"
+    ]
+  },
+  "related": [
+    "pf",
+    "crm",
+    "sop"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

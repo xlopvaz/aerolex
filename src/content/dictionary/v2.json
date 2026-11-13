@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "V2",
+    "es": "V2"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Take-off safety speed",
+    "es": "Velocidad de seguridad en el despegue"
+  },
+  "categories": [
+    "flight-operations",
+    "aerodynamics",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The minimum climb speed that must be reached by 35 ft above the runway with one engine inoperative.",
+    "es": "Velocidad mínima de subida que debe alcanzarse a 35 ft sobre la pista con un motor inoperativo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The safe climbing speed if an engine fails just after take-off.",
+    "es": "La velocidad segura de subida si falla un motor justo después del despegue."
+  },
+  "example": {
+    "en": "With one engine failed, fly V2 until the acceleration altitude.",
+    "es": "Con un motor parado, mantén V2 hasta la altitud de aceleración."
+  },
+  "pronunciation": {
+    "en": "V2 (vee-2)",
+    "es": "uve-2"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "v1",
+    "vr",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-part-25",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

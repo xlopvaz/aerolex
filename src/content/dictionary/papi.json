@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PAPI",
+    "es": "PAPI"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Precision approach path indicator",
+    "es": "Indicador de trayectoria de aproximación de precisión"
+  },
+  "categories": [
+    "airport-operations",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A row of four lights beside the runway that shows the pilot whether the aircraft is above, on or below the correct approach slope: two white and two red mean on slope.",
+    "es": "Fila de cuatro luces junto a la pista que indica al piloto si está por encima, en o por debajo de la pendiente de aproximación correcta: dos blancas y dos rojas significa en pendiente."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Lights next to the runway: two white and two red means you are on the right glide path.",
+    "es": "Luces junto a la pista: dos blancas y dos rojas indican que vas por la senda correcta."
+  },
+  "example": {
+    "en": "\"Three whites\" on the PAPI: the aircraft was slightly high.",
+    "es": "«Tres blancas» en el PAPI: el avión iba un poco alto."
+  },
+  "pronunciation": {
+    "en": "PAH-pee",
+    "es": "pa-pi"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "runway",
+    "threshold",
+    "ils"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "LVP",
+    "es": "LVP"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Low visibility procedures",
+    "es": "Procedimientos de visibilidad reducida"
+  },
+  "categories": [
+    "airport-operations",
+    "safety",
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Procedures applied at an aerodrome to ensure safe operations during low-visibility take-offs and low-visibility approaches, for example by protecting the ILS signals and reducing ground traffic.",
+    "es": "Procedimientos que se aplican en un aeródromo para garantizar operaciones seguras durante despegues y aproximaciones con visibilidad reducida, por ejemplo protegiendo las señales del ILS y reduciendo el tráfico en tierra."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Special rules the airport switches on in fog.",
+    "es": "Normas especiales que el aeropuerto activa con niebla."
+  },
+  "example": {
+    "en": "ATIS: \"Low visibility procedures in force.\"",
+    "es": "ATIS: «Procedimientos de visibilidad reducida en vigor.»"
+  },
+  "pronunciation": {
+    "en": "L-V-P (el-vee-pee)",
+    "es": "ele-uve-pe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ils",
+    "rvr",
+    "atis"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "NM",
+    "es": "NM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Nautical mile",
+    "es": "Milla náutica"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The unit of distance used in air navigation, equal to exactly 1,852 m.",
+    "es": "Unidad de distancia usada en la navegación aérea, igual a 1852 m exactos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Aviation's mile: 1.852 km.",
+    "es": "La milla de la aviación: 1,852 km."
+  },
+  "example": {
+    "en": "The airport is 25 NM ahead.",
+    "es": "El aeropuerto está a 25 NM."
+  },
+  "pronunciation": {
+    "en": "N-M (en-em)",
+    "es": "ene-eme"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "kt",
+    "dme"
+  ],
+  "regionalNote": {
+    "en": "Do not confuse NM with the statute mile (SM, 1,609 m) used in US visibility reports.",
+    "es": "No confundir la NM con la milla terrestre (SM, 1609 m) que se usa en los informes de visibilidad de EE. UU."
+  },
+  "sources": [
+    "icao-doc-8400",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

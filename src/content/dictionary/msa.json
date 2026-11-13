@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MSA",
+    "es": "MSA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Minimum sector altitude",
+    "es": "Altitud mínima de sector"
+  },
+  "categories": [
+    "navigation",
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The lowest altitude that may be used which provides a minimum clearance of 300 m (1,000 ft) above all objects located in a sector of a circle of 46 km (25 NM) radius centred on a navigation aid or reference point.",
+    "es": "Altitud más baja que puede utilizarse y que proporciona un margen mínimo de 300 m (1000 ft) sobre todos los obstáculos situados en un sector de un círculo de 46 km (25 NM) de radio centrado en una radioayuda o punto de referencia."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A safe altitude near the airport, shown on approach charts, that keeps you clear of terrain.",
+    "es": "Una altitud segura cerca del aeropuerto, indicada en las cartas de aproximación, que te mantiene lejos del terreno."
+  },
+  "example": {
+    "en": "With the navigation display failed, the crew climbed to the MSA.",
+    "es": "Con la pantalla de navegación averiada, la tripulación subió a la MSA."
+  },
+  "pronunciation": {
+    "en": "M-S-A (em-es-ay)",
+    "es": "eme-ese-a"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "agl",
+    "amsl"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

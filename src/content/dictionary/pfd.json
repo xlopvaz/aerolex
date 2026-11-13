@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PFD",
+    "es": "PFD"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Primary flight display",
+    "es": "Pantalla principal de vuelo"
+  },
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The main flight instrument display, which combines attitude, airspeed, altitude, vertical speed, heading and flight mode information on one screen.",
+    "es": "Pantalla principal de instrumentos de vuelo, que reúne en un solo monitor la actitud, la velocidad, la altitud, la velocidad vertical, el rumbo y los modos de vuelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The screen in front of each pilot with the artificial horizon, speed and altitude.",
+    "es": "La pantalla frente a cada piloto con el horizonte artificial, la velocidad y la altitud."
+  },
+  "example": {
+    "en": "The speed tape on the PFD turned amber.",
+    "es": "La cinta de velocidad del PFD se puso en ámbar."
+  },
+  "pronunciation": {
+    "en": "P-F-D (pee-ef-dee)",
+    "es": "pe-efe-de"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "nd",
+    "flight-deck",
+    "ias"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TOGA",
+    "es": "TOGA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Take-off / go-around",
+    "es": "Despegue / motor y al aire"
+  },
+  "categories": [
+    "flight-operations",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The thrust setting and autoflight mode used for take-off and for a go-around, selected by thrust levers or dedicated switches depending on the aircraft.",
+    "es": "Ajuste de empuje y modo del sistema de vuelo automático que se usan para el despegue y para el motor y al aire, que se seleccionan con las palancas de empuje o con pulsadores específicos según el avión."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Full go-around power: \"TOGA\" is what pilots select to climb away.",
+    "es": "Potencia de motor y al aire: «TOGA» es lo que seleccionan los pilotos para volver a subir."
+  },
+  "example": {
+    "en": "\"Go around, flaps!\" — the captain pushed the thrust levers to TOGA.",
+    "es": "«¡Motor y al aire, flaps!»: el comandante llevó las palancas de empuje a TOGA."
+  },
+  "pronunciation": {
+    "en": "TOH-gah",
+    "es": "to-ga"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "go-around",
+    "thrust"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
