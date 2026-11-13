@@ -1,0 +1,80 @@
+{
+  "manufacturer": "Airbus",
+  "family": { "en": "A330 Family", "es": "Familia A330" },
+  "category": "commercial",
+  "order": 4,
+  "summary": {
+    "en": "Airbus's twin-aisle family for medium- and long-haul routes. The original A330 (now 'ceo') was followed by the A330neo generation (A330-800 and A330-900) with Rolls-Royce Trent 7000 engines and a larger wing.",
+    "es": "La familia de dos pasillos de Airbus para rutas de medio y largo radio. Al A330 original (hoy «ceo») le siguió la generación A330neo (A330-800 y A330-900), con motores Rolls-Royce Trent 7000 y un ala de mayor envergadura."
+  },
+  "history": {
+    "en": "The A330-300 was launched in 1987 and entered service with Air Inter in 1994; the shorter, longer-range A330-200 followed, entering service with Air Canada in 1998. The A330neo was launched in 2014: the A330-900 first flew on 19 October 2017 and was first delivered to TAP Air Portugal on 26 November 2018; the A330-800 first flew on 6 November 2018 and was first delivered to Kuwait Airways in 2020.",
+    "es": "El A330-300 se lanzó en 1987 y entró en servicio con Air Inter en 1994; después llegó el A330-200, más corto y de mayor alcance, que entró en servicio con Air Canada en 1998. El A330neo se lanzó en 2014: el A330-900 voló por primera vez el 19 de octubre de 2017 y se entregó por primera vez a TAP Air Portugal el 26 de noviembre de 2018; el A330-800 voló por primera vez el 6 de noviembre de 2018 y se entregó por primera vez a Kuwait Airways en 2020."
+  },
+  "facts": [
+    {
+      "en": "At the end of January 2026 Airbus had recorded 1,954 orders for the A330 Family (473 of them A330neo, freighter and MRTT) from more than 130 customers, with 1,659 delivered to 150 operators.",
+      "es": "A finales de enero de 2026, Airbus contabilizaba 1954 pedidos de la familia A330 (473 de ellos A330neo, cargueros y MRTT) de más de 130 clientes, y 1659 entregados a 150 operadores."
+    },
+    {
+      "en": "Airbus states that the A330 and the A330neo share 95% of their airframe spare parts.",
+      "es": "Según Airbus, el A330 y el A330neo comparten el 95 % de las piezas de repuesto de la estructura."
+    },
+    {
+      "en": "The family also includes the A330-200F freighter and the A330 MRTT multi-role tanker transport.",
+      "es": "La familia incluye también el carguero A330-200F y el avión cisterna y de transporte multifunción A330 MRTT."
+    }
+  ],
+  "sources": ["airbus-a330-facts-2026"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "a330-200",
+      "name": "A330-200",
+      "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": "Air Canada" },
+      "lengthM": 58.82, "wingspanM": 60.30, "heightM": 17.39,
+      "seatsTypical": "210–250", "seatsMax": 406,
+      "rangeNm": 7250, "rangeKm": 13450, "mtowT": 242,
+      "engines": ["GE CF6-80E1", "Pratt & Whitney PW4000", "Rolls-Royce Trent 700"],
+      "note": { "en": "Entered service with Air Canada in 1998 (the source gives the year only).", "es": "Entró en servicio con Air Canada en 1998 (la fuente solo da el año)." },
+      "sources": ["airbus-a330-facts-2026"]
+    },
+    {
+      "id": "a330-300",
+      "name": "A330-300",
+      "status": null,
+      "milestones": { "firstFlight": null, "certified": null, "firstDelivery": null, "entryIntoService": null, "firstOperator": "Air Inter" },
+      "lengthM": 63.66, "wingspanM": 60.30, "heightM": 16.79,
+      "seatsTypical": "250–290", "seatsMax": null,
+      "rangeNm": 6350, "rangeKm": 11750, "mtowT": 242,
+      "engines": ["GE CF6-80E1", "Pratt & Whitney PW4000", "Rolls-Royce Trent 700"],
+      "note": { "en": "Entered service with Air Inter in 1994 (the source gives the year only). The maximum seating figure cannot be read unambiguously in the source table, so it is not shown.", "es": "Entró en servicio con Air Inter en 1994 (la fuente solo da el año). La capacidad máxima no se lee con claridad en la tabla de la fuente, así que no se muestra." },
+      "sources": ["airbus-a330-facts-2026"]
+    },
+    {
+      "id": "a330-800",
+      "name": "A330-800",
+      "status": "in-production",
+      "milestones": { "firstFlight": "2018-11-06", "certified": "2020-02-13", "firstDelivery": null, "entryIntoService": null, "firstOperator": "Kuwait Airways" },
+      "lengthM": 58.82, "wingspanM": 64.00, "heightM": 17.39,
+      "seatsTypical": "257 / 271", "seatsMax": null,
+      "rangeNm": 8100, "rangeKm": 15000, "mtowT": 251,
+      "engines": ["Rolls-Royce Trent 7000"],
+      "note": { "en": "Typical seating: 257 with 8 seats abreast in economy or 271 with 9. First delivered to Kuwait Airways in 2020 (the source gives the year only). MTOW is 242 t basic or 251 t as an option. The maximum seating figure cannot be read unambiguously in the source table, so it is not shown.", "es": "Plazas típicas: 257 con 8 asientos por fila en turista o 271 con 9. Primera entrega a Kuwait Airways en 2020 (la fuente solo da el año). El peso máximo al despegue es de 242 t en la versión básica o 251 t como opción. La capacidad máxima no se lee con claridad en la tabla de la fuente, así que no se muestra." },
+      "sources": ["airbus-a330-facts-2026"]
+    },
+    {
+      "id": "a330-900",
+      "name": "A330-900",
+      "status": "in-production",
+      "milestones": { "firstFlight": "2017-10-19", "certified": "2018-09-26", "firstDelivery": "2018-11-26", "entryIntoService": null, "firstOperator": "TAP Air Portugal" },
+      "lengthM": 63.66, "wingspanM": 64.00, "heightM": 16.79,
+      "seatsTypical": "287 / 303", "seatsMax": 465,
+      "rangeNm": 7150, "rangeKm": 13250, "mtowT": 251,
+      "engines": ["Rolls-Royce Trent 7000"],
+      "note": { "en": "Typical seating: 287 with 8 seats abreast in economy or 303 with 9. Certification date is EASA's (FAA: 21 December 2018). Range is for the 251 t version; MTOW is 242 t basic or 251 t as an option.", "es": "Plazas típicas: 287 con 8 asientos por fila en turista o 303 con 9. La fecha de certificación es la de EASA (FAA: 21 de diciembre de 2018). El alcance corresponde a la versión de 251 t; el peso máximo al despegue es de 242 t en la versión básica o 251 t como opción." },
+      "sources": ["airbus-a330-facts-2026"]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "manufacturer": "Airbus",
+  "family": { "en": "A220 Family", "es": "Familia A220" },
+  "category": "commercial",
+  "order": 1,
+  "summary": {
+    "en": "Airbus's smallest single-aisle family, designed from a clean sheet for the 100–150 seat market, with Pratt & Whitney PW1500G geared turbofan engines.",
+    "es": "La familia de pasillo único más pequeña de Airbus, diseñada desde cero para el mercado de 100 a 150 plazas, con motores turbofán con reductor Pratt & Whitney PW1500G."
+  },
+  "history": {
+    "en": "The programme was launched on 12 July 2008 as the C Series. The A220-100 first flew on 16 September 2013 and the larger A220-300 on 27 February 2015. The A220-100 entered service with SWISS on 15 July 2016 and the A220-300 with airBaltic on 14 December 2016.",
+    "es": "El programa se lanzó el 12 de julio de 2008 con el nombre de C Series. El A220-100 voló por primera vez el 16 de septiembre de 2013 y el A220-300, más largo, el 27 de febrero de 2015. El A220-100 entró en servicio con SWISS el 15 de julio de 2016 y el A220-300 con airBaltic el 14 de diciembre de 2016."
+  },
+  "facts": [
+    {
+      "en": "At the end of December 2025 Airbus had recorded 949 orders for the A220 from more than 30 customers, with 482 aircraft delivered to 25 operators.",
+      "es": "A finales de diciembre de 2025, Airbus contabilizaba 949 pedidos del A220 de más de 30 clientes y 482 aviones entregados a 25 operadores."
+    },
+    {
+      "en": "Both versions share the same wing (35.10 m span), height and engines; the A220-300 has a longer fuselage (38.70 m against 35.00 m).",
+      "es": "Las dos versiones comparten ala (35,10 m de envergadura), altura y motores; el A220-300 tiene un fuselaje más largo (38,70 m frente a 35,00 m)."
+    },
+    {
+      "en": "Airbus delivered 93 A220s in 2025, up from 75 in 2024.",
+      "es": "Airbus entregó 93 A220 en 2025, frente a 75 en 2024."
+    }
+  ],
+  "sources": ["airbus-a220-facts-2026"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null },
+  "variants": [
+    {
+      "id": "a220-100",
+      "name": "A220-100",
+      "status": "in-production",
+      "milestones": { "firstFlight": "2013-09-16", "certified": "2015-12-18", "firstDelivery": null, "entryIntoService": "2016-07-15", "firstOperator": "SWISS" },
+      "lengthM": 35.00, "wingspanM": 35.10, "heightM": 11.50,
+      "seatsTypical": "100–120", "seatsMax": null,
+      "rangeNm": 3600, "rangeKm": null, "mtowT": 63.73,
+      "engines": ["Pratt & Whitney PW1500G"],
+      "note": { "en": "Airbus lists up to 135 seats in high density, pending certification, so no certified maximum is shown.", "es": "Airbus indica hasta 135 plazas en alta densidad, pendientes de certificación, por lo que no se muestra un máximo certificado." },
+      "sources": ["airbus-a220-facts-2026"]
+    },
+    {
+      "id": "a220-300",
+      "name": "A220-300",
+      "status": "in-production",
+      "milestones": { "firstFlight": "2015-02-27", "certified": "2016-07-11", "firstDelivery": null, "entryIntoService": "2016-12-14", "firstOperator": "airBaltic" },
+      "lengthM": 38.70, "wingspanM": 35.10, "heightM": 11.50,
+      "seatsTypical": "120–150", "seatsMax": null,
+      "rangeNm": 3400, "rangeKm": null, "mtowT": 70.90,
+      "engines": ["Pratt & Whitney PW1500G"],
+      "note": { "en": "Airbus lists up to 160 seats in high density, pending certification, so no certified maximum is shown.", "es": "Airbus indica hasta 160 plazas en alta densidad, pendientes de certificación, por lo que no se muestra un máximo certificado." },
+      "sources": ["airbus-a220-facts-2026"]
+    }
+  ]
+}

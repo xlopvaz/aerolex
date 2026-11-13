@@ -2,7 +2,7 @@
   "manufacturer": "Boeing",
   "family": { "en": "Boeing 787 Dreamliner", "es": "Boeing 787 Dreamliner" },
   "category": "commercial",
-  "order": 4,
+  "order": 6,
   "summary": {
     "en": "Boeing's mid-size widebody family, the 787 Dreamliner, offered in three lengths (787-8, 787-9 and 787-10) with a choice of GE Aerospace GEnx-1B or Rolls-Royce Trent 1000 engines.",
     "es": "La familia de fuselaje ancho de tamaño medio de Boeing, el 787 Dreamliner, en tres longitudes (787-8, 787-9 y 787-10) y con motores GE Aerospace GEnx-1B o Rolls-Royce Trent 1000 a elegir."
