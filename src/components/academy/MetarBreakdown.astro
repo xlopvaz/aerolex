@@ -4,28 +4,36 @@
  *   <MetarBreakdown parts={[["LEMD", "Madrid-Barajas"], ["121830Z", "día 12, 18:30 UTC"], …]} />
  * The explanations are written in the lesson's own language. This is a teaching aid, not a
  * decoder: the interactive decoder is a separate tool (Phase 4).
+ *
+ * kind="summary" turns it into a numbered, colour-coded summary list for real (non-invented)
+ * content: no "didactic example" badge and no code strip.
  */
 import Badge from '../ui/Badge.astro';
 import { t } from '../../i18n/index.js';
 import { langFromUrl } from '../../i18n/from-url.js';
 
-interface Props { parts: [string, string][]; caption?: string }
-const { parts, caption } = Astro.props;
+interface Props { parts: [string, string][]; caption?: string; kind?: 'example' | 'summary' }
+const { parts, caption, kind = 'example' } = Astro.props;
+const isExample = kind === 'example';
 const lang = langFromUrl(Astro.url);
 const tones = ['primary', 'cyan', 'magenta', 'green', 'amber', 'red'];
 ---
-<figure class="mb">
-  <div class="mb__head">
-    <Badge tone="amber" icon="book-open">{t(lang, 'academy.didacticExample')}</Badge>
-    {caption && <figcaption>{caption}</figcaption>}
-  </div>
-  <p class="mb__code mono" aria-label={parts.map((p) => p[0]).join(' ')}>
-    {parts.map(([code], i) => <span class:list={['mb__tok', `mb--${tones[i % tones.length]}`]}><sup aria-hidden="true">{i + 1}</sup>{code}</span>)}
-  </p>
+<figure class:list={['mb', { 'mb--summary': !isExample }]}>
+  {(isExample || caption) && (
+    <div class="mb__head">
+      {isExample && <Badge tone="amber" icon="book-open">{t(lang, 'academy.didacticExample')}</Badge>}
+      {caption && <figcaption>{caption}</figcaption>}
+    </div>
+  )}
+  {isExample && (
+    <p class="mb__code mono" aria-label={parts.map((p) => p[0]).join(' ')}>
+      {parts.map(([code], i) => <span class:list={['mb__tok', `mb--${tones[i % tones.length]}`]}><sup aria-hidden="true">{i + 1}</sup>{code}</span>)}
+    </p>
+  )}
   <dl class="mb__legend">
     {parts.map(([code, text], i) => (
       <div class:list={['mb__row', `mb--${tones[i % tones.length]}`]}>
-        <dt><span class="mb__n" aria-hidden="true">{i + 1}</span><code>{code}</code></dt>
+        <dt><span class="mb__n" aria-hidden="true">{i + 1}</span>{isExample ? <code>{code}</code> : <strong>{code}</strong>}</dt>
         <dd>{text}</dd>
       </div>
     ))}
@@ -50,6 +58,7 @@ const tones = ['primary', 'cyan', 'magenta', 'green', 'amber', 'red'];
   .mb__row dt { display: flex; align-items: center; gap: var(--space-2); }
   .mb__row dd { margin: 0; color: var(--text-muted); }
   .mb__row code { color: var(--c); font-weight: 600; }
+  .mb--summary .mb__row:first-child { border-top: 0; }
   .mb__n { display: inline-grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--c); color: var(--bg); font-size: 0.7rem; font-weight: 700; flex: none; }
   @media (max-width: 560px) { .mb__row { grid-template-columns: 1fr; gap: var(--space-1); } }
 </style>

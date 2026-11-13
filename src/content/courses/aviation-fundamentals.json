@@ -1,0 +1,33 @@
+{
+  "path": "introduction-to-aviation",
+  "level": "beginner",
+  "title": { "en": "Aviation Fundamentals", "es": "Fundamentos de la aviación" },
+  "description": {
+    "en": "Your first course if you are starting from zero: what an aircraft is, why an aeroplane flies, how it is controlled, the phases of a flight, the airport, who sets the rules and the codes and language that aviation uses every day.",
+    "es": "El primer curso si empiezas desde cero: qué es una aeronave, por qué vuela un avión, cómo se controla, las fases de un vuelo, el aeropuerto, quién dicta las normas y los códigos y el lenguaje que la aviación usa a diario."
+  },
+  "objectives": {
+    "en": [
+      "Classify aircraft and name the main parts of an aeroplane",
+      "Explain the four forces of flight and what a stall is",
+      "Relate each primary flight control to its axis and movement",
+      "Put the phases of a flight in order, from pushback to arrival at the stand",
+      "Understand runway numbers and the main areas of an airport",
+      "Tell apart the roles of ICAO, EASA, the FAA, AESA and IATA",
+      "Read airport, airline and aircraft codes, the phonetic alphabet and UTC times"
+    ],
+    "es": [
+      "Clasificar las aeronaves y nombrar las partes principales de un avión",
+      "Explicar las cuatro fuerzas del vuelo y qué es una pérdida",
+      "Relacionar cada mando de vuelo primario con su eje y su movimiento",
+      "Ordenar las fases de un vuelo, del remolque a la llegada al puesto de estacionamiento",
+      "Entender la numeración de las pistas y las zonas principales de un aeropuerto",
+      "Distinguir las funciones de la OACI, EASA, la FAA, AESA e IATA",
+      "Leer códigos de aeropuerto, aerolínea y aeronave, el alfabeto fonético y las horas UTC"
+    ]
+  },
+  "lessons": ["what-is-an-aircraft", "four-forces", "flight-controls", "phases-of-flight", "the-airport", "who-sets-the-rules", "codes-and-language"],
+  "finalQuiz": null,
+  "sources": ["icao-annex-7", "faa-phak", "cictt-phase-of-flight", "icao-annex-14", "icao-history", "icao-doc-7910", "icao-annex-10"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null }
+}

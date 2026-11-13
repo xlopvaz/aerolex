@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "IATA",
+    "es": "IATA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "International Air Transport Association",
+    "es": "Asociación Internacional de Transporte Aéreo"
+  },
+  "categories": [
+    "commercial-aviation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Trade association of the world's airlines. Among other things, it assigns the two-character airline designators and three-letter location codes used in reservations, tickets and baggage tags, and publishes industry standards such as the Airport Handling Manual. It is not a regulator.",
+    "es": "Asociación comercial de las aerolíneas del mundo. Entre otras cosas, asigna los designadores de aerolínea de dos caracteres y los códigos de tres letras de los aeropuertos que se usan en reservas, billetes y etiquetas de equipaje, y publica estándares del sector como el Airport Handling Manual. No es una autoridad reguladora."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The airlines' club. Its codes are the ones passengers see: MAD for Madrid, IB for Iberia.",
+    "es": "El «club» de las aerolíneas. Sus códigos son los que ve el pasajero: MAD para Madrid, IB para Iberia."
+  },
+  "example": {
+    "en": "\"The bag tag shows BCN, the IATA code for Barcelona-El Prat.\"",
+    "es": "«La etiqueta de la maleta indica BCN, el código IATA de Barcelona-El Prat.»"
+  },
+  "pronunciation": {
+    "en": "/aɪˈɑːtə/ (eye-AH-ta)",
+    "es": "iáta"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "icao",
+    "pax",
+    "boarding"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-code-search",
+    "iata-ahm"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "airfoil",
+    "es": "perfil aerodinámico"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A surface shaped to produce a useful aerodynamic reaction, mainly lift, from the air flowing around it, such as a wing, a propeller blade or a tail surface.",
+    "es": "Superficie con una forma diseñada para obtener una reacción aerodinámica útil, principalmente sustentación, del aire que fluye a su alrededor, como un ala, una pala de hélice o una superficie de cola."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The special cross-section shape of a wing that makes it lift when air flows over it.",
+    "es": "La forma especial de la sección de un ala que hace que sustente cuando el aire pasa por ella."
+  },
+  "example": {
+    "en": "\"The leading edge of the airfoil is rounded and the trailing edge is thin.\"",
+    "es": "«El borde de ataque del perfil es redondeado y el borde de salida, fino.»"
+  },
+  "pronunciation": {
+    "en": "/ˈeəfɔɪl/",
+    "es": "érfoil"
+  },
+  "synonyms": {
+    "en": [
+      "aerofoil",
+      "wing section"
+    ],
+    "es": [
+      "perfil alar"
+    ]
+  },
+  "related": [
+    "lift",
+    "wing",
+    "angle-of-attack",
+    "drag"
+  ],
+  "regionalNote": {
+    "en": "\"Airfoil\" is American English; British English uses \"aerofoil\".",
+    "es": "«Airfoil» es la forma estadounidense; en inglés británico se escribe «aerofoil»."
+  },
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

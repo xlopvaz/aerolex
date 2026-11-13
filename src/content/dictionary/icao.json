@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ICAO",
+    "es": "OACI"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "International Civil Aviation Organization",
+    "es": "Organización de Aviación Civil Internacional"
+  },
+  "categories": [
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Specialized agency of the United Nations, created by the Convention on International Civil Aviation (Chicago, 1944), that adopts the Standards and Recommended Practices (SARPs) for international civil aviation. Its headquarters are in Montréal.",
+    "es": "Organismo especializado de las Naciones Unidas, creado por el Convenio sobre Aviación Civil Internacional (Chicago, 1944), que adopta las normas y métodos recomendados (SARPs) de la aviación civil internacional. Tiene su sede en Montreal."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The UN body where the world's countries agree on common aviation rules, so a flight works the same way everywhere.",
+    "es": "El organismo de la ONU donde los países acuerdan normas comunes para la aviación, para que un vuelo funcione igual en todas partes."
+  },
+  "example": {
+    "en": "\"LEMD is the ICAO code for Madrid-Barajas; MAD is its IATA code.\"",
+    "es": "«LEMD es el código OACI de Madrid-Barajas; MAD es su código IATA.»"
+  },
+  "pronunciation": {
+    "en": "/aɪˈkeɪəʊ/ (eye-KAY-oh)",
+    "es": "oási"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "ICAO"
+    ]
+  },
+  "related": [
+    "easa",
+    "faa",
+    "iata"
+  ],
+  "regionalNote": {
+    "en": "The official Spanish acronym is OACI, but \"ICAO\" is very common in Spanish too, especially for codes (\"código ICAO\").",
+    "es": "La sigla oficial en español es OACI, pero «ICAO» también es muy habitual, sobre todo al hablar de códigos («código ICAO»)."
+  },
+  "sources": [
+    "icao-history"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

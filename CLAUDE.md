@@ -48,7 +48,7 @@ npm run e2e          # tests de extremo a extremo (Playwright; necesita el build
 
 1. Curso: `src/content/courses/<id>.json` (itinerario de `src/content/paths/paths.json`, nivel, títulos ES/EN, objetivos, orden de lecciones, fuentes).
 2. Lección: dos ficheros `src/content/lessons/<curso>/<nn>-<lección>.es.mdx` y `.en.mdx` con el mismo `lesson`, `quiz`, `terms` y `sources`.
-3. Dentro de la lección se pueden usar `<Term id="…">`, `<MetarBreakdown parts={[…]}>` y `<Callout type="…" label="…">`. Los ejemplos inventados se marcan como didácticos.
+3. Dentro de la lección se pueden usar `<Term id="…">`, `<MetarBreakdown parts={[…]}>` y `<Callout type="…" label="…">`. Los ejemplos inventados se marcan como didácticos (es lo que hace `MetarBreakdown` por defecto); para resumir contenido real se usa `<MetarBreakdown kind="summary" …>`, que no lleva esa etiqueta.
 4. Cuestionario: `src/content/quizzes/<id>.json` con preguntas bilingües, `answer` y `explanation`.
 
 ## Añadir una familia de aeronaves

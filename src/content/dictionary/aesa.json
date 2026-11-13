@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AESA",
+    "es": "AESA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "State Aviation Safety Agency (Spain)",
+    "es": "Agencia Estatal de Seguridad Aérea"
+  },
+  "categories": [
+    "aviation-law",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Spain's civil aviation authority: the state agency responsible for supervising, inspecting and sanctioning in matters of air transport safety, air navigation and airport security, and for protecting passenger rights. It was created by Royal Decree 184/2008.",
+    "es": "Autoridad de aviación civil de España: la agencia estatal encargada de la supervisión, la inspección y la potestad sancionadora en materia de seguridad del transporte aéreo, de la navegación aérea y de la seguridad aeroportuaria, y de la protección de los derechos de los pasajeros. Se creó por el Real Decreto 184/2008."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Spain's aviation authority: it issues licences, inspects airlines and handles passenger complaints.",
+    "es": "La autoridad aeronáutica española: expide licencias, inspecciona a las aerolíneas y atiende las reclamaciones de los pasajeros."
+  },
+  "example": {
+    "en": "\"Pilot licences in Spain are issued by AESA under EU rules.\"",
+    "es": "«En España, las licencias de piloto las expide AESA según la normativa europea.»"
+  },
+  "pronunciation": {
+    "en": "A-E-S-A (spoken as a word: \"ah-EH-sa\")",
+    "es": "aésa"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "easa",
+    "icao"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "boe-rd-184-2008"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

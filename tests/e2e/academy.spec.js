@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('academy', () => {
   test('academy lists the METAR course and only paths with content', async ({ page }) => {
     await page.goto('es/academia/');
-    await expect(page.locator('.path')).toHaveCount(1);
+    await expect(page.locator('.path')).toHaveCount(2);
     await page.locator('.course-card', { hasText: 'METAR' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/metar-speci\/$/);
     await expect(page.locator('.lesson-list li')).toHaveCount(9);
@@ -59,7 +59,7 @@ test.describe('academy', () => {
 test.describe('TAF academy', () => {
   test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
     await page.goto('en/academy/');
-    await expect(page.locator('.course-card')).toHaveCount(2);
+    await expect(page.locator('.course-card')).toHaveCount(3);
     await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
     await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
@@ -77,5 +77,30 @@ test.describe('TAF academy', () => {
     await quiz.locator('[data-q="q1"] [data-opt="a"]').click();
     await quiz.locator('[data-q="q2"] [data-opt="a"]').click();
     await expect(quiz.locator('[data-quiz-score]')).toHaveText('1/8 correctas');
+  });
+});
+
+test.describe('Aviation Fundamentals', () => {
+  test('opens the academy, links terms to the dictionary and keeps the lesson across languages', async ({ page }) => {
+    await page.goto('es/academia/');
+    await expect(page.locator('.path').first()).toContainText('Introducción a la aviación');
+    await page.locator('.course-card', { hasText: 'Fundamentos de la aviación' }).click();
+    await expect(page).toHaveURL(/\/es\/academia\/aviation-fundamentals\/$/);
+    await expect(page.locator('.lesson-list li')).toHaveCount(7);
+    await page.locator('.lesson-list a', { hasText: 'Quién dicta las normas' }).click();
+    await expect(page.locator('.prose .mb .badge')).toHaveCount(0); // summaries are not labelled as invented examples
+    await page.locator('.site-header [data-set-lang="en"]').click();
+    await expect(page).toHaveURL(/\/en\/academy\/aviation-fundamentals\/who-sets-the-rules\/$/);
+    await expect(page.locator('h1')).toHaveText('Who sets the rules');
+    await page.locator('.prose a.term', { hasText: 'ICAO' }).first().click();
+    await expect(page).toHaveURL(/\/en\/dictionary\/icao\/$/);
+  });
+
+  test('final assessment covers the whole course', async ({ page }) => {
+    await page.goto('en/academy/aviation-fundamentals/codes-and-language/');
+    const quiz = page.locator('[data-quiz="aviation-fundamentals-final"]');
+    await expect(quiz.locator('.quiz__q')).toHaveCount(8);
+    await quiz.locator('[data-q="q8"] [data-opt="c"]').click();
+    await expect(quiz.locator('[data-quiz-score]')).toHaveText('1/8 correct');
   });
 });

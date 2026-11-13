@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál de estas máquinas NO es una aeronave?",
+        "en": "Which of these machines is NOT an aircraft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un globo aerostático",
+            "en": "A hot-air balloon"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un aerodeslizador",
+            "en": "A hovercraft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un planeador",
+            "en": "A glider"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un helicóptero",
+            "en": "A helicopter"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El aerodeslizador se sostiene con aire empujado contra la superficie, y esa reacción queda excluida de la definición de aeronave.",
+        "en": "A hovercraft is held up by air pushed against the surface, and that reaction is excluded from the definition of an aircraft."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Según el Anexo 7, un dirigible es…",
+        "en": "Under Annex 7, an airship is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un aerodino sin motor",
+            "en": "A heavier-than-air aircraft without an engine"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un aerostato con motor",
+            "en": "A power-driven lighter-than-air aircraft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un giroavión",
+            "en": "A rotorcraft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un tipo de avión",
+            "en": "A type of aeroplane"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El dirigible flota porque es más ligero que el aire y, a diferencia del globo, tiene motor.",
+        "en": "An airship floats because it is lighter than air and, unlike a balloon, it has an engine."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué diferencia a un avión de un helicóptero?",
+        "en": "What sets an aeroplane apart from a helicopter?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El avión tiene motor y el helicóptero no",
+            "en": "The aeroplane has an engine and the helicopter does not"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El helicóptero es más ligero que el aire",
+            "en": "The helicopter is lighter than air"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En el avión, la sustentación la generan alas fijas; en el helicóptero, rotores",
+            "en": "On an aeroplane lift comes from fixed wings; on a helicopter, from rotors"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguna: ambos son aviones",
+            "en": "Nothing: both are aeroplanes"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Ambos son aerodinos con motor; el avión se sostiene con alas que permanecen fijas y el helicóptero, con rotores que giran.",
+        "en": "Both are power-driven heavier-than-air aircraft; the aeroplane is held up by wings that stay fixed and the helicopter by spinning rotors."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿En qué parte del avión están la deriva y el timón de dirección?",
+        "en": "Which part of the aeroplane carries the fin and the rudder?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El empenaje",
+            "en": "The empennage"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El fuselaje",
+            "en": "The fuselage"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El tren de aterrizaje",
+            "en": "The landing gear"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El grupo motopropulsor",
+            "en": "The powerplant"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El empenaje, o cola, reúne los estabilizadores vertical y horizontal con el timón de dirección y el de profundidad.",
+        "en": "The empennage, or tail, groups the vertical and horizontal stabilizers with the rudder and the elevator."
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+---
+lesson: codes-and-language
+course: aviation-fundamentals
+lang: en
+title: "The codes and language of aviation"
+summary: "IATA and ICAO airport and airline codes, aircraft type designators, registration marks, the phonetic alphabet and UTC."
+objectives:
+  - "Tell IATA and ICAO airport and airline codes apart"
+  - "Recognise type designators and nationality marks"
+  - "Spell with the phonetic alphabet and convert UTC times"
+  - "Check what you have learned in the final assessment"
+minutes: 12
+terms: [iata, icao, phonetic-alphabet, utc]
+quiz: aviation-fundamentals-final
+sources: [icao-doc-7910, icao-doc-8585, icao-doc-8643, icao-annex-7, icao-annex-10, iata-code-search]
+review:
+  status: draft
+---
+
+## Two codes for every airport
+
+| | <Term id="iata" /> code | <Term id="icao" /> code |
+|---|---|---|
+| Letters | 3 | 4 |
+| Used by | Passengers, tickets, baggage, reservations | Pilots, air traffic control, flight plans, METAR and TAF |
+| Madrid-Barajas | MAD | LEMD |
+| Barcelona-El Prat | BCN | LEBL |
+| Gran Canaria | LPA | GCLP |
+| New York JFK | JFK | KJFK |
+
+IATA codes follow no geographical rule. ICAO codes (Doc 7910) do: the **first letter** shows a large region and the first two letters usually identify the country.
+
+- **L**: southern Europe → **LE** mainland Spain and the Balearic Islands, **LF** France, **LP** Portugal, **LI** Italy.
+- **E**: northern Europe → **EG** United Kingdom, **ED** Germany.
+- **G**: western Africa, including the **Canary Islands** (**GC**).
+- **K**: the contiguous United States, usually a "K" in front of the three-letter code (KJFK).
+
+## Airlines: two letters, three letters and a call sign
+
+| Airline | IATA | ICAO | Radiotelephony call sign |
+|---|---|---|---|
+| Iberia | IB | IBE | IBERIA |
+| Vueling | VY | VLG | VUELING |
+| Air Europa | UX | AEA | EUROPA |
+| Ryanair | FR | RYR | RYANAIR |
+
+Passengers see the IATA code on their boarding pass; flight plans and radar use the ICAO code (Doc 8585), and on the radio the **call sign** is spoken:
+
+<MetarBreakdown parts={[
+  ["IB3166", "Commercial flight number (IATA code): what the passenger sees"],
+  ["IBE3166", "Identification in the flight plan and on the controller's screen (ICAO code)"],
+  ["\"Iberia three one six six\"", "How it is said on the radio, with the radiotelephony call sign"]
+]} caption="Didactic example: the same flight under three names." />
+
+## The aircraft: type and registration
+
+- **Type designator** (Doc 8643): a code of up to four characters for each model, used in flight plans. For example, **A20N** (A320neo), **B738** (737-800), **A359** (A350-900) or **B789** (787-9).
+- **Registration** (Annex 7): like a car's number plate, unique to each aircraft. It starts with the **nationality mark**: **EC** Spain, **F** France, **G** United Kingdom, **D** Germany, **N** United States.
+
+## Spelling on the radio: the phonetic alphabet
+
+On the radio, letters are replaced by the words of the ICAO <Term id="phonetic-alphabet" /> (Annex 10) so they cannot be confused:
+
+**A** Alfa · **B** Bravo · **C** Charlie · **D** Delta · **E** Echo · **F** Foxtrot · **G** Golf · **H** Hotel · **I** India · **J** Juliett · **K** Kilo · **L** Lima · **M** Mike · **N** November · **O** Oscar · **P** Papa · **Q** Quebec · **R** Romeo · **S** Sierra · **T** Tango · **U** Uniform · **V** Victor · **W** Whiskey · **X** X-ray · **Y** Yankee · **Z** Zulu
+
+So a Spanish registration such as EC-ABC is read "Echo Charlie Alfa Bravo Charlie". Some numbers also have special pronunciations to avoid confusion, such as **"tree"** (3), **"fife"** (5) and **"niner"** (9).
+
+## Time: always UTC
+
+Aviation uses <Term id="utc" />, also called **Zulu** time (that is why METAR and TAF times end in "Z"), and the 24-hour clock. That removes any doubt between countries or around daylight-saving changes.
+
+- Mainland Spain and the Balearic Islands: **UTC+1** in winter and **UTC+2** in summer.
+- Canary Islands: **UTC+0** in winter and **UTC+1** in summer.
+
+Example: a departure at **1430Z** in July is at 16:30 in Madrid and 15:30 in Las Palmas.
+
+<Callout type="tip" label="Final assessment">
+The course assessment is at the end of this lesson, with questions from every lesson.
+</Callout>

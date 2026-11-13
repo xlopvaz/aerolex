@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En vuelo recto y nivelado a velocidad constante…",
+        "en": "In straight-and-level flight at constant speed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La sustentación es mayor que el peso",
+            "en": "Lift is greater than weight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La sustentación compensa el peso y el empuje compensa la resistencia",
+            "en": "Lift equals weight and thrust equals drag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El empuje es el doble de la resistencia",
+            "en": "Thrust is twice the drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No actúa ninguna fuerza",
+            "en": "No forces act on the aircraft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Sin aceleración, las cuatro fuerzas están en equilibrio por parejas.",
+        "en": "With no acceleration, the four forces balance in pairs."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué es el ángulo de ataque?",
+        "en": "What is the angle of attack?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El ángulo entre el morro y el horizonte",
+            "en": "The angle between the nose and the horizon"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El ángulo de inclinación de las alas en un viraje",
+            "en": "The bank angle in a turn"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El ángulo entre la cuerda del perfil y el viento relativo",
+            "en": "The angle between the airfoil chord line and the relative wind"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El ángulo de la pista respecto al norte",
+            "en": "The runway angle relative to north"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Se mide entre la cuerda y la dirección del aire que llega al ala, no respecto al horizonte.",
+        "en": "It is measured between the chord line and the direction of the oncoming air, not relative to the horizon."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué provoca una pérdida?",
+        "en": "What causes a stall?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que el motor se pare",
+            "en": "The engine stopping"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Superar el ángulo de ataque crítico",
+            "en": "Exceeding the critical angle of attack"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Volar por encima de cierta altitud",
+            "en": "Flying above a certain altitude"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Llevar los flaps extendidos",
+            "en": "Having the flaps extended"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La pérdida es aerodinámica: ocurre al superar el ángulo de ataque crítico, a cualquier velocidad o actitud.",
+        "en": "A stall is aerodynamic: it happens when the critical angle of attack is exceeded, at any airspeed or attitude."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Si se duplica la velocidad, manteniendo lo demás igual, la sustentación…",
+        "en": "If airspeed doubles and everything else stays the same, lift…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se reduce a la mitad",
+            "en": "Halves"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se duplica",
+            "en": "Doubles"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se multiplica por cuatro",
+            "en": "Becomes four times greater"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La sustentación depende del cuadrado de la velocidad: el doble de velocidad da cuatro veces más sustentación.",
+        "en": "Lift depends on the square of airspeed: twice the speed gives four times the lift."
+      }
+    }
+  ]
+}

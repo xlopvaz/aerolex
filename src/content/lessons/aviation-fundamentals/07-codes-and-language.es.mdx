@@ -1,0 +1,79 @@
+---
+lesson: codes-and-language
+course: aviation-fundamentals
+lang: es
+title: "Códigos y lenguaje de la aviación"
+summary: "Códigos IATA y OACI de aeropuertos y aerolíneas, designadores de tipo de aeronave, matrículas, el alfabeto fonético y la hora UTC."
+objectives:
+  - "Distinguir los códigos IATA y OACI de aeropuertos y aerolíneas"
+  - "Reconocer designadores de tipo y marcas de nacionalidad"
+  - "Deletrear con el alfabeto fonético y convertir horas UTC"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 12
+terms: [iata, icao, phonetic-alphabet, utc]
+quiz: aviation-fundamentals-final
+sources: [icao-doc-7910, icao-doc-8585, icao-doc-8643, icao-annex-7, icao-annex-10, iata-code-search]
+review:
+  status: draft
+---
+
+## Dos códigos para cada aeropuerto
+
+| | Código <Term id="iata" /> | Código <Term id="icao">OACI</Term> |
+|---|---|---|
+| Letras | 3 | 4 |
+| Lo usan | Pasajeros, billetes, equipaje, reservas | Pilotos, control aéreo, planes de vuelo, METAR y TAF |
+| Madrid-Barajas | MAD | LEMD |
+| Barcelona-El Prat | BCN | LEBL |
+| Gran Canaria | LPA | GCLP |
+| Nueva York-JFK | JFK | KJFK |
+
+Los códigos IATA no siguen una regla geográfica. Los de la OACI (Doc 7910) sí: la **primera letra** indica una gran región y, normalmente, las dos primeras identifican el país.
+
+- **L**: sur de Europa → **LE** España peninsular y Baleares, **LF** Francia, **LP** Portugal, **LI** Italia.
+- **E**: norte de Europa → **EG** Reino Unido, **ED** Alemania.
+- **G**: África occidental, incluidas las **Canarias** (**GC**).
+- **K**: Estados Unidos contiguos, normalmente con la «K» delante del código de tres letras (KJFK).
+
+## Aerolíneas: dos letras, tres letras y un indicativo
+
+| Aerolínea | IATA | OACI | Indicativo radiotelefónico |
+|---|---|---|---|
+| Iberia | IB | IBE | IBERIA |
+| Vueling | VY | VLG | VUELING |
+| Air Europa | UX | AEA | EUROPA |
+| Ryanair | FR | RYR | RYANAIR |
+
+El pasajero ve el código IATA en su tarjeta de embarque; el plan de vuelo y el radar usan el de la OACI (Doc 8585), y por radio se dice el **indicativo**:
+
+<MetarBreakdown parts={[
+  ["IB3166", "Número de vuelo comercial (código IATA): lo que ve el pasajero"],
+  ["IBE3166", "Identificación en el plan de vuelo y en la pantalla del controlador (código OACI)"],
+  ["«Iberia tres uno seis seis»", "Cómo se dice por radio, con el indicativo radiotelefónico"]
+]} caption="Ejemplo didáctico: el mismo vuelo con tres nombres." />
+
+## El avión: tipo y matrícula
+
+- **Designador de tipo** (Doc 8643): un código de hasta cuatro caracteres para cada modelo, usado en el plan de vuelo. Por ejemplo, **A20N** (A320neo), **B738** (737-800), **A359** (A350-900) o **B789** (787-9).
+- **Matrícula** (Anexo 7): como la de un coche, única para cada aeronave. Empieza por la **marca de nacionalidad**: **EC** España, **F** Francia, **G** Reino Unido, **D** Alemania, **N** Estados Unidos.
+
+## Deletrear por radio: el alfabeto fonético
+
+Por radio, las letras se sustituyen por las palabras del <Term id="phonetic-alphabet" /> de la OACI (Anexo 10), para que no se confundan:
+
+**A** Alfa · **B** Bravo · **C** Charlie · **D** Delta · **E** Echo · **F** Foxtrot · **G** Golf · **H** Hotel · **I** India · **J** Juliett · **K** Kilo · **L** Lima · **M** Mike · **N** November · **O** Oscar · **P** Papa · **Q** Quebec · **R** Romeo · **S** Sierra · **T** Tango · **U** Uniform · **V** Victor · **W** Whiskey · **X** X-ray · **Y** Yankee · **Z** Zulu
+
+Así, una matrícula española como EC-ABC se diría «Echo Charlie Alfa Bravo Charlie». Algunas cifras también se pronuncian de forma especial en inglés para evitar confusiones, como **«tree»** (3), **«fife»** (5) y **«niner»** (9).
+
+## La hora: siempre UTC
+
+La aviación usa la <Term id="utc" />, también llamada hora **Zulu** (por eso los METAR y TAF terminan la hora en «Z»), y el reloj de 24 horas. Así no hay dudas entre países ni con los cambios de horario.
+
+- España peninsular y Baleares: **UTC+1** en invierno y **UTC+2** en verano.
+- Canarias: **UTC+0** en invierno y **UTC+1** en verano.
+
+Ejemplo: una salida a las **1430Z** en julio es a las 16:30 en Madrid y a las 15:30 en Las Palmas.
+
+<Callout type="tip" label="Evaluación final">
+Al final de esta lección está la evaluación del curso, con preguntas de todas las lecciones.
+</Callout>

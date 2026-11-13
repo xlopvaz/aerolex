@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué mando controla el alabeo?",
+        "en": "Which control governs roll?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los alerones",
+            "en": "The ailerons"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El timón de dirección",
+            "en": "The rudder"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El timón de profundidad",
+            "en": "The elevator"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los flaps",
+            "en": "The flaps"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los alerones hacen girar el avión alrededor de su eje longitudinal.",
+        "en": "The ailerons rotate the aircraft about its longitudinal axis."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El piloto tira de los mandos hacia atrás. ¿Qué ocurre?",
+        "en": "The pilot pulls back on the controls. What happens?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El morro baja",
+            "en": "The nose goes down"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El morro sube",
+            "en": "The nose goes up"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El avión se inclina a la derecha",
+            "en": "The aircraft banks right"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se extienden los spoilers",
+            "en": "The spoilers extend"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El timón de profundidad sube, la cola baja y el morro sube: cabeceo alrededor del eje lateral.",
+        "en": "The elevator rises, the tail goes down and the nose comes up: pitch about the lateral axis."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cómo vira principalmente un avión?",
+        "en": "How does an aeroplane mainly turn?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Con el timón de dirección, como un barco",
+            "en": "With the rudder, like a boat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alabeando, para que la sustentación tire hacia el lado del viraje",
+            "en": "By banking, so that lift pulls towards the inside of the turn"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Con los flaps",
+            "en": "With the flaps"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Reduciendo la potencia de un motor",
+            "en": "By reducing power on one engine"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Al inclinar las alas, una parte de la sustentación empuja el avión hacia el viraje; el timón de dirección lo coordina.",
+        "en": "Once the wings are banked, part of the lift pulls the aircraft round; the rudder coordinates the turn."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué hacen los spoilers al levantarse?",
+        "en": "What do spoilers do when raised?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumentan la sustentación",
+            "en": "Increase lift"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumentan el empuje",
+            "en": "Increase thrust"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reducen la sustentación y aumentan la resistencia",
+            "en": "Reduce lift and increase drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Bajan el tren de aterrizaje",
+            "en": "Lower the landing gear"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Por eso se usan para descender o frenar en vuelo y para pegar el avión a la pista tras tomar tierra.",
+        "en": "That is why they are used to descend or slow down in flight and to keep the aircraft on the runway after touchdown."
+      }
+    }
+  ]
+}

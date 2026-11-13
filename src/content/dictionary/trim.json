@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "trim",
+    "es": "compensación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Adjustment of a trim tab, a movable stabilizer or the control system so that the aircraft holds the desired attitude without the pilot having to keep pressure on the controls.",
+    "es": "Ajuste de una aleta compensadora, de un estabilizador móvil o del sistema de mandos para que la aeronave mantenga la actitud deseada sin que el piloto tenga que hacer fuerza continuamente sobre los mandos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Fine-tuning the controls so the aeroplane flies the way you want \"hands off\", without you pushing or pulling all the time.",
+    "es": "Afinar los mandos para que el avión vuele como quieres «solo», sin tener que empujar o tirar todo el rato."
+  },
+  "example": {
+    "en": "\"After levelling off, trim the aircraft for cruise.\"",
+    "es": "«Tras nivelar, compensa el avión para el crucero.»"
+  },
+  "pronunciation": {
+    "en": "/trɪm/",
+    "es": "trim"
+  },
+  "synonyms": {
+    "en": [
+      "trimming"
+    ],
+    "es": [
+      "trim",
+      "compensar"
+    ]
+  },
+  "related": [
+    "elevator",
+    "empennage",
+    "aileron",
+    "rudder"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

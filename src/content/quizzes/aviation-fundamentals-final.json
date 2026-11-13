@@ -1,0 +1,341 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué tipo de aeronave es un planeador?",
+        "en": "What kind of aircraft is a glider?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aerostato sin motor",
+            "en": "Lighter-than-air, not power-driven"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aerodino sin motor",
+            "en": "Heavier-than-air, not power-driven"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aerodino con motor",
+            "en": "Heavier-than-air, power-driven"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No es una aeronave",
+            "en": "It is not an aircraft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El planeador es más pesado que el aire y no tiene motor: se sostiene por fuerzas aerodinámicas.",
+        "en": "A glider is heavier than air and has no engine: it is held up by aerodynamic forces."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué fuerza se opone al empuje?",
+        "en": "Which force opposes thrust?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El peso",
+            "en": "Weight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La sustentación",
+            "en": "Lift"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La resistencia aerodinámica",
+            "en": "Drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La gravedad",
+            "en": "Gravity"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El empuje lleva el avión hacia delante y la resistencia actúa hacia atrás.",
+        "en": "Thrust pulls the aircraft forward and drag acts rearward."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué superficie controla la guiñada y cómo se acciona?",
+        "en": "Which surface controls yaw and how is it operated?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El timón de dirección, con los pedales",
+            "en": "The rudder, with the pedals"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Los alerones, con el volante",
+            "en": "The ailerons, with the yoke"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los flaps, con una palanca",
+            "en": "The flaps, with a lever"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El timón de profundidad, con los pedales",
+            "en": "The elevator, with the pedals"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La guiñada es el giro alrededor del eje vertical y la controla el timón de dirección, situado en la deriva.",
+        "en": "Yaw is rotation about the vertical axis and is controlled by the rudder, on the fin."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿En qué fase la tripulación puede ejecutar un «motor y al aire»?",
+        "en": "In which phase may the crew fly a go-around?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Rodaje",
+            "en": "Taxi"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aproximación",
+            "en": "Approach"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Remolque",
+            "en": "Pushback"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Estacionado",
+            "en": "Standing"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La aproximación incluye la aproximación frustrada, que se ejecuta con un motor y al aire.",
+        "en": "The approach phase includes the missed approach, flown as a go-around."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿De qué color son las marcas pintadas en las calles de rodaje?",
+        "en": "What colour are taxiway markings?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Blancas",
+            "en": "White"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Amarillas",
+            "en": "Yellow"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Rojas",
+            "en": "Red"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Azules",
+            "en": "Blue"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Las marcas de pista son blancas; las de calles de rodaje y plataforma, amarillas.",
+        "en": "Runway markings are white; taxiway and apron markings are yellow."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué organismo es la autoridad de aviación civil de España?",
+        "en": "Which body is Spain's civil aviation authority?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "IATA",
+            "en": "IATA"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "AESA",
+            "en": "AESA"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La OACI",
+            "en": "ICAO"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La FAA",
+            "en": "The FAA"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "AESA, creada por el Real Decreto 184/2008, supervisa, inspecciona y expide licencias en España.",
+        "en": "AESA, created by Royal Decree 184/2008, supervises, inspects and issues licences in Spain."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Madrid-Barajas tiene estos dos códigos. ¿Cuál es el de la OACI?",
+        "en": "Madrid-Barajas has these two codes. Which one is the ICAO code?"
+      },
+      "code": "MAD · LEMD",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "MAD",
+            "en": "MAD"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "LEMD",
+            "en": "LEMD"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los dos",
+            "en": "Both"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los códigos de aeropuerto de la OACI tienen cuatro letras; MAD es el código IATA del mismo aeropuerto.",
+        "en": "ICAO airport codes have four letters; MAD is the IATA code for the same airport."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "¿Qué hora local es en Madrid un vuelo a las 1430Z en julio?",
+        "en": "What is the local time in Madrid for a 1430Z departure in July?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "14:30",
+            "en": "14:30"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "15:30",
+            "en": "15:30"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "16:30",
+            "en": "16:30"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "12:30",
+            "en": "12:30"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "En verano, la España peninsular está en UTC+2: 14:30 + 2 h = 16:30.",
+        "en": "In summer, mainland Spain is on UTC+2: 14:30 + 2 h = 16:30."
+      }
+    }
+  ]
+}

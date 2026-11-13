@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según la taxonomía CICTT, ¿cuándo termina la fase de despegue?",
+        "en": "Under the CICTT taxonomy, when does the take-off phase end?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Al recoger el tren",
+            "en": "When the gear is retracted"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A 35 ft sobre la elevación de la pista",
+            "en": "At 35 ft above runway elevation"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al alcanzar el nivel de crucero",
+            "en": "On reaching cruise level"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al despegar las ruedas del suelo",
+            "en": "When the wheels leave the ground"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El despegue va desde que se aplica la potencia de despegue hasta 35 ft sobre la pista; después empieza el ascenso inicial.",
+        "en": "Take-off runs from the application of take-off power to 35 ft above the runway; then initial climb begins."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿En qué fase se incluyen las esperas?",
+        "en": "Which phase includes holding?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Rodaje",
+            "en": "Taxi"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aproximación",
+            "en": "Approach"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En ruta",
+            "en": "En route"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aterrizaje",
+            "en": "Landing"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La fase en ruta incluye el ascenso al crucero, el crucero, los cambios de nivel, el descenso y las esperas.",
+        "en": "En route includes climb to cruise, cruise, level changes, descent and holding."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál es el orden correcto?",
+        "en": "What is the correct order?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Rodaje → remolque → despegue → ascenso inicial",
+            "en": "Taxi → pushback → take-off → initial climb"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Remolque → rodaje → despegue → ascenso inicial",
+            "en": "Pushback → taxi → take-off → initial climb"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Remolque → despegue → rodaje → en ruta",
+            "en": "Pushback → take-off → taxi → en route"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Despegue → remolque → ascenso inicial → rodaje",
+            "en": "Take-off → pushback → initial climb → taxi"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El avión sale del puesto con el tractor, rueda hasta la pista, despega y empieza el ascenso inicial.",
+        "en": "The aircraft leaves the stand with the tug, taxis to the runway, takes off and starts the initial climb."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuál de estas NO es una fase crítica del vuelo para un avión según el Reglamento (UE) 965/2012?",
+        "en": "Which of these is NOT a critical phase of flight for an aeroplane under Regulation (EU) No 965/2012?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La carrera de despegue",
+            "en": "The take-off run"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La aproximación final",
+            "en": "The final approach"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El crucero",
+            "en": "Cruise"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El aterrizaje",
+            "en": "The landing"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Las fases críticas son la carrera y la trayectoria de despegue, la aproximación final, la frustrada y el aterrizaje, además de las que decida el comandante.",
+        "en": "The critical phases are the take-off run and flight path, final approach, missed approach and landing, plus any the pilot-in-command decides."
+      }
+    }
+  ]
+}

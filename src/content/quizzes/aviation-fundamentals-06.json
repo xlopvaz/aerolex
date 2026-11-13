@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué documento creó la OACI?",
+        "en": "Which document created ICAO?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Tratado de Roma",
+            "en": "The Treaty of Rome"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Convenio sobre Aviación Civil Internacional (Chicago, 1944)",
+            "en": "The Convention on International Civil Aviation (Chicago, 1944)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Convenio de Varsovia (1929)",
+            "en": "The Warsaw Convention (1929)"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La Federal Aviation Act (1958)",
+            "en": "The Federal Aviation Act (1958)"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El Convenio de Chicago se firmó el 7 de diciembre de 1944 y la OACI pasó a existir oficialmente el 4 de abril de 1947.",
+        "en": "The Chicago Convention was signed on 7 December 1944 and ICAO officially came into being on 4 April 1947."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Dónde publica la OACI sus normas y métodos recomendados (SARPs)?",
+        "en": "Where does ICAO publish its Standards and Recommended Practices (SARPs)?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En los anexos al Convenio de Chicago",
+            "en": "In the Annexes to the Chicago Convention"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "En el Diario Oficial de la UE",
+            "en": "In the Official Journal of the EU"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En el AIP de cada país",
+            "en": "In each country's AIP"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En los manuales de IATA",
+            "en": "In IATA manuals"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los SARPs están en los anexos; después, cada Estado los incorpora a su legislación.",
+        "en": "SARPs are in the Annexes; each State then writes them into its own law."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál de estas organizaciones NO es una autoridad aeronáutica?",
+        "en": "Which of these organisations is NOT an aviation authority?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "AESA",
+            "en": "AESA"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "FAA",
+            "en": "FAA"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "IATA",
+            "en": "IATA"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "EASA",
+            "en": "EASA"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "IATA es la asociación comercial de las aerolíneas: publica estándares del sector y asigna códigos, pero no regula.",
+        "en": "IATA is the airlines' trade association: it publishes industry standards and assigns codes, but does not regulate."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Además de regular, ¿qué hace la FAA que EASA no hace?",
+        "en": "Besides regulating, what does the FAA do that EASA does not?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Certificar aeronaves",
+            "en": "Certify aircraft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Gestionar el control del tránsito aéreo de su país",
+            "en": "Run its country's air traffic control"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Publicar normas de seguridad",
+            "en": "Publish safety rules"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Fabricar aviones",
+            "en": "Build aircraft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La FAA también gestiona el sistema de control aéreo de EE. UU.; en Europa, ese servicio lo prestan otros organismos.",
+        "en": "The FAA also runs the US air traffic control system; in Europe that service is provided by other bodies."
+      }
+    }
+  ]
+}
