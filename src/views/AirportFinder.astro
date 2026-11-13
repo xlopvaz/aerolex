@@ -1,0 +1,116 @@
+---
+/**
+ * IATA / ICAO airport finder (Phase 4). The dataset (/data/airports.json, ~5,000 airports from
+ * OurAirports) is loaded only when the user starts searching.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import { href, t, useT, withBase } from '../i18n/index.js';
+import data from '../content/airports/airports.json';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const ui = t(lang, 'airports');
+const dateText = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${data.dataDate}T00:00:00Z`));
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('airports.metaTitle')} description={tr('airports.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.airportFinder') }]} />
+      <h1>{tr('airports.title')}</h1>
+      <p class="lead">{tr('airports.lead')}</p>
+    </div>
+  </header>
+  <div class="container mt af" data-airports data-lang={lang} data-src={withBase('data/airports.json')}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+    <div>
+      <label for="af-q" class="mt-label">{tr('airports.label')}</label>
+      <input id="af-q" type="search" class="af-input" autocomplete="off" spellcheck="false" placeholder={tr('airports.placeholder')} aria-describedby="af-status" data-q />
+      <p id="af-status" class="mt-hint" role="status" data-status>{tr('airports.hint')}</p>
+    </div>
+    <div class="mt-table-wrap" data-results></div>
+    <p class="mt-hint">{tr('airports.source', { date: dateText })}</p>
+    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+  </div>
+  <script type="application/json" id="af-i18n" set:html={JSON.stringify(ui)} />
+</BaseLayout>
+
+<style is:global>
+  .af-input { width: 100%; max-width: 36rem; padding: var(--space-3) var(--space-4); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font-size: 1.05rem; }
+  .af-input:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 2px; }
+  .af-table td:first-child, .af-table td:nth-child(2) { font-family: var(--font-mono); font-weight: 700; }
+  .af-table details summary { cursor: pointer; color: var(--primary); }
+  .af-table details p { margin: var(--space-1) 0; color: var(--text-muted); }
+</style>
+
+<script>
+  import { buildAirportIndex, searchAirports, icaoRegion } from '../lib/airports/search.js';
+  import { esc } from '../lib/metar/render.js';
+
+  const root = document.querySelector<HTMLElement>('[data-airports]');
+  if (root) {
+    const ui = JSON.parse(document.getElementById('af-i18n')!.textContent!);
+    const lang = root.dataset.lang!;
+    const input = root.querySelector<HTMLInputElement>('[data-q]')!;
+    const status = root.querySelector<HTMLElement>('[data-status]')!;
+    const results = root.querySelector<HTMLElement>('[data-results]')!;
+    const fill = (s: string, v: Record<string, unknown>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+    let regionNames: Intl.DisplayNames | null = null;
+    try { regionNames = new Intl.DisplayNames([lang], { type: 'region' }); } catch { regionNames = null; }
+    const countryName = (a: any) => { try { return regionNames?.of(a.country) ?? a.countryName; } catch { return a.countryName; } };
+    let index: ReturnType<typeof buildAirportIndex> | null = null;
+    let loading: Promise<void> | null = null;
+
+    const load = () => {
+      loading ??= fetch(root.dataset.src!)
+        .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+        .then((d) => { index = buildAirportIndex(d); })
+        .catch(() => { status.textContent = ui.loadError; });
+      return loading;
+    };
+
+    const row = (a: any) => {
+      const region = icaoRegion(a.icao);
+      const details = [
+        `<p>${esc(ui.size[a.size])}${a.scheduled ? ` · ${esc(ui.scheduled)}` : ''}</p>`,
+        a.elevationFt !== null ? `<p>${esc(fill(ui.elevation, { ft: a.elevationFt.toLocaleString(lang), m: Math.round(a.elevationFt * 0.3048).toLocaleString(lang) }))}</p>` : '',
+        `<p>${esc(fill(ui.coords, { lat: a.lat.toFixed(4), lon: a.lon.toFixed(4) }))} · <a href="https://www.openstreetmap.org/?mlat=${a.lat}&mlon=${a.lon}#map=13/${a.lat}/${a.lon}" rel="noopener">${esc(ui.map)}</a></p>`,
+        region ? `<p>${esc(fill(ui.region, { letter: region, region: ui.regions[region] }))}</p>` : `<p>${esc(ui.noIcao)}</p>`,
+      ].join('');
+      return `<tr><td>${esc(a.iata)}</td><td>${esc(a.icao ?? '—')}</td><td>${esc(a.name)}<details><summary>${esc(ui.details)}</summary>${details}</details></td><td>${esc(a.city ?? '—')}</td><td>${esc(countryName(a))}</td></tr>`;
+    };
+
+    const run = async () => {
+      const q = input.value.trim();
+      if (q.length < 2) {
+        results.innerHTML = '';
+        status.textContent = ui.hint;
+        return;
+      }
+      if (!index) {
+        status.textContent = ui.loading;
+        await load();
+        if (!index) return;
+      }
+      const found = searchAirports(index, q);
+      status.textContent = found.length === 0 ? ui.none : found.length === 1 ? ui.countOne : fill(ui.count, { n: found.length });
+      results.innerHTML = found.length
+        ? `<table class="mt-table af-table"><thead><tr>${['iata', 'icao', 'name', 'city', 'country'].map((c) => `<th scope="col">${esc(ui.cols[c])}</th>`).join('')}</tr></thead><tbody>${found.map(row).join('')}</tbody></table>`
+        : '';
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('focus', () => { load(); }, { once: true });
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(run, 120);
+    });
+    const initial = new URLSearchParams(location.search).get('q');
+    if (initial) {
+      input.value = initial;
+      run();
+    }
+  }
+</script>

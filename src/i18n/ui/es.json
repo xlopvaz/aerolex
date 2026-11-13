@@ -30,7 +30,8 @@
     "tafDecoder": "Decodificador TAF",
     "practice": "Práctica METAR y TAF",
     "converter": "Conversor de unidades",
-    "liveWeather": "METAR y TAF en directo"
+    "liveWeather": "METAR y TAF en directo",
+    "airportFinder": "Buscador de aeropuertos"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -657,6 +658,10 @@
       "liveWeather": {
         "title": "METAR y TAF en directo",
         "text": "Los últimos METAR y TAF reales de una selección de aeropuertos, descodificados y con aviso de datos antiguos."
+      },
+      "airportFinder": {
+        "title": "Buscador de aeropuertos",
+        "text": "Códigos IATA y OACI de más de 5000 aeropuertos, con su región OACI, elevación y situación."
       }
     }
   },
@@ -944,5 +949,63 @@
     "source": "Fuente: Aviation Weather Center (NOAA/NWS), datos de dominio público de EE. UU.",
     "otherAirport": "¿Otro aeropuerto? Pega su METAR o TAF en el decodificador.",
     "stationsTitle": "Aeropuertos"
+  },
+  "airports": {
+    "metaTitle": "Buscador de aeropuertos IATA y OACI · AeroLex",
+    "metaDescription": "Encuentra el código IATA y OACI de más de 5000 aeropuertos por código, nombre o ciudad.",
+    "title": "Buscador de aeropuertos",
+    "lead": "Busca por código IATA (MAD), código OACI (LEMD), nombre o ciudad. Incluye más de 5000 aeropuertos con código IATA.",
+    "label": "Código, nombre o ciudad",
+    "placeholder": "Por ejemplo: SCQ, LEVX, Coruña, Heathrow…",
+    "loading": "Cargando datos de aeropuertos…",
+    "loadError": "No se han podido cargar los datos. Inténtalo de nuevo más tarde.",
+    "hint": "Escribe al menos 2 caracteres.",
+    "count": "{n} resultados",
+    "countOne": "1 resultado",
+    "none": "No se ha encontrado ningún aeropuerto.",
+    "cols": {
+      "iata": "IATA",
+      "icao": "OACI",
+      "name": "Aeropuerto",
+      "city": "Ciudad",
+      "country": "País"
+    },
+    "size": {
+      "large": "Aeropuerto grande",
+      "medium": "Aeropuerto mediano",
+      "small": "Aeropuerto pequeño"
+    },
+    "scheduled": "Con vuelos regulares",
+    "details": "Detalles",
+    "elevation": "Elevación: {ft} ft ({m} m)",
+    "coords": "Coordenadas: {lat}, {lon}",
+    "map": "Ver en OpenStreetMap",
+    "region": "Región OACI ({letter}): {region}",
+    "noIcao": "Sin indicador OACI en los datos",
+    "source": "Datos: OurAirports (dominio público), actualizados el {date}. Pueden contener errores: para operar, consulta el AIP.",
+    "regions": {
+      "A": "Pacífico suroccidental",
+      "B": "Groenlandia, Islandia y Kosovo",
+      "C": "Canadá",
+      "D": "África occidental (parte) y Túnez",
+      "E": "Norte de Europa",
+      "F": "África central y meridional, y océano Índico",
+      "G": "África occidental, con Canarias y Marruecos",
+      "H": "África oriental, con Egipto y Libia",
+      "K": "Estados Unidos contiguos",
+      "L": "Sur de Europa, Israel y Turquía",
+      "M": "Centroamérica, México y parte del Caribe",
+      "N": "Pacífico sur, con Nueva Zelanda",
+      "O": "Oriente Próximo, Afganistán y Pakistán",
+      "P": "Pacífico norte, con Alaska y Hawái",
+      "R": "Pacífico occidental: Japón, Corea, Filipinas y Taiwán",
+      "S": "Sudamérica",
+      "T": "Caribe oriental",
+      "U": "Rusia y países vecinos de la antigua URSS",
+      "V": "Asia meridional y sudeste asiático continental",
+      "W": "Sudeste asiático marítimo",
+      "Y": "Australia",
+      "Z": "China, Mongolia y Corea del Norte"
+    }
   }
 }

@@ -16,6 +16,7 @@ export const ROUTES = {
   metarDecoder: { slug: { es: 'herramientas/decodificador-metar', en: 'tools/metar-decoder' }, nav: [], icon: 'cloud-sun' },
   tafDecoder: { slug: { es: 'herramientas/decodificador-taf', en: 'tools/taf-decoder' }, nav: [], icon: 'calendar-clock' },
   liveWeather: { slug: { es: 'herramientas/metar-taf-en-directo', en: 'tools/live-metar-taf' }, nav: [], icon: 'radio-tower' },
+  airportFinder: { slug: { es: 'herramientas/aeropuertos', en: 'tools/airports' }, nav: [], icon: 'map-pin' },
   converter:  { slug: { es: 'herramientas/conversor', en: 'tools/converter' }, nav: [], icon: 'arrow-left-right' },
   practice:   { slug: { es: 'herramientas/practica-metar-taf', en: 'tools/metar-taf-practice' }, nav: [], icon: 'target' },
   compare:    { slug: { es: 'hangar/comparador', en: 'hangar/compare' }, nav: [], icon: 'columns-3' },

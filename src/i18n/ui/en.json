@@ -30,7 +30,8 @@
     "tafDecoder": "TAF decoder",
     "practice": "METAR and TAF practice",
     "converter": "Unit converter",
-    "liveWeather": "Live METAR and TAF"
+    "liveWeather": "Live METAR and TAF",
+    "airportFinder": "Airport finder"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -657,6 +658,10 @@
       "liveWeather": {
         "title": "Live METAR and TAF",
         "text": "The latest real METAR and TAF for selected airports, decoded and flagged when old."
+      },
+      "airportFinder": {
+        "title": "Airport finder",
+        "text": "IATA and ICAO codes for more than 5,000 airports, with ICAO region, elevation and location."
       }
     }
   },
@@ -944,5 +949,63 @@
     "source": "Source: Aviation Weather Center (NOAA/NWS), US public domain data.",
     "otherAirport": "Another airport? Paste its METAR or TAF into the decoder.",
     "stationsTitle": "Airports"
+  },
+  "airports": {
+    "metaTitle": "IATA and ICAO airport finder · AeroLex",
+    "metaDescription": "Find the IATA and ICAO codes of more than 5,000 airports by code, name or city.",
+    "title": "Airport finder",
+    "lead": "Search by IATA code (MAD), ICAO code (LEMD), name or city. Covers more than 5,000 airports with an IATA code.",
+    "label": "Code, name or city",
+    "placeholder": "For example: SCQ, LEVX, Coruña, Heathrow…",
+    "loading": "Loading airport data…",
+    "loadError": "The data could not be loaded. Please try again later.",
+    "hint": "Type at least 2 characters.",
+    "count": "{n} results",
+    "countOne": "1 result",
+    "none": "No airport found.",
+    "cols": {
+      "iata": "IATA",
+      "icao": "ICAO",
+      "name": "Airport",
+      "city": "City",
+      "country": "Country"
+    },
+    "size": {
+      "large": "Large airport",
+      "medium": "Medium airport",
+      "small": "Small airport"
+    },
+    "scheduled": "Scheduled flights",
+    "details": "Details",
+    "elevation": "Elevation: {ft} ft ({m} m)",
+    "coords": "Coordinates: {lat}, {lon}",
+    "map": "View on OpenStreetMap",
+    "region": "ICAO region ({letter}): {region}",
+    "noIcao": "No ICAO indicator in the data",
+    "source": "Data: OurAirports (public domain), updated {date}. It may contain errors: for operations, check the AIP.",
+    "regions": {
+      "A": "Western South Pacific",
+      "B": "Greenland, Iceland and Kosovo",
+      "C": "Canada",
+      "D": "Part of West Africa, and Tunisia",
+      "E": "Northern Europe",
+      "F": "Central and southern Africa, and the Indian Ocean",
+      "G": "West Africa, including the Canary Islands and Morocco",
+      "H": "East Africa, including Egypt and Libya",
+      "K": "Contiguous United States",
+      "L": "Southern Europe, Israel and Turkey",
+      "M": "Central America, Mexico and part of the Caribbean",
+      "N": "South Pacific, including New Zealand",
+      "O": "Middle East, Afghanistan and Pakistan",
+      "P": "North Pacific, including Alaska and Hawaii",
+      "R": "Western Pacific: Japan, Korea, the Philippines and Taiwan",
+      "S": "South America",
+      "T": "Eastern Caribbean",
+      "U": "Russia and neighbouring former Soviet countries",
+      "V": "South Asia and mainland Southeast Asia",
+      "W": "Maritime Southeast Asia",
+      "Y": "Australia",
+      "Z": "China, Mongolia and North Korea"
+    }
   }
 }
