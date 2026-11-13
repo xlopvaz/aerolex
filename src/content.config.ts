@@ -168,4 +168,33 @@ const aircraft = defineCollection({
   }),
 });
 
-export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft };
+/** Aviation timeline (Phase 4). Dates are ISO with the precision the sources give:
+ *  YYYY, YYYY-MM or YYYY-MM-DD. Every event cites its sources and starts as a draft. */
+const timeline = defineCollection({
+  loader: file('./src/content/timeline/events.json'),
+  schema: z.object({
+    date: z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/),
+    theme: z.enum(['flight', 'airline', 'regulation']),
+    title: bilingual,
+    text: bilingual,
+    terms: z.array(text),
+    sources: z.array(text).min(1),
+    review,
+  }),
+});
+
+/** Weather glossary (Phase 4): METAR/TAF codes with their meaning (WMO-No. 306 / ICAO Annex 3). */
+const weatherCodes = defineCollection({
+  loader: file('./src/content/weather/codes.json'),
+  schema: z.object({
+    code: text,
+    group: z.enum(['report', 'modifier', 'wind', 'visibility', 'intensity', 'descriptor', 'precipitation', 'obscuration', 'other', 'cloud', 'pressure', 'general', 'change']),
+    meaning: bilingual,
+    example: z.string().nullable(),
+    terms: z.array(text),
+    sources: z.array(text).min(1),
+    review,
+  }),
+});
+
+export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft, timeline, weatherCodes };

@@ -1,0 +1,120 @@
+---
+/** Aviation timeline (Phase 4): sourced milestones, grouped by century, filterable by theme.
+ *  Everything is rendered at build time; the script only hides events of other themes. */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Badge from '../components/ui/Badge.astro';
+import SegmentedControl from '../components/ui/SegmentedControl.astro';
+import { childHref, href, pick, useT } from '../i18n/index.js';
+import { THEMES, formatEventDate, groupByCentury, parseEventDate } from '../lib/timeline/timeline.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const events = (await getCollection('timeline')).map((e) => ({ id: e.id, ...e.data }));
+const groups = groupByCentury(events);
+const sources = await getCollection('sources');
+const src = (id: string) => sources.find((s) => s.id === id)!.data;
+const dictionary = await getCollection('dictionary');
+const termName = (id: string) => pick(dictionary.find((d) => d.id === id)!.data.term, lang);
+const THEME_TONE: Record<string, 'cyan' | 'magenta' | 'green'> = { flight: 'cyan', airline: 'magenta', regulation: 'green' };
+const THEME_ICON: Record<string, string> = { flight: 'plane', airline: 'ticket', regulation: 'scale' };
+const options = [{ value: 'all', label: tr('timeline.all') }, ...THEMES.map((th) => ({ value: th, label: tr(`timeline.themes.${th}`) }))];
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('timeline.metaTitle')} description={tr('timeline.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.timeline') }]} />
+      <h1>{tr('timeline.title')}</h1>
+      <p class="lead">{tr('timeline.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container tl" data-timeline>
+    <Callout type="info" label={tr('styleguide.calloutLabels.info')}><p>{tr('timeline.draftNote')}</p></Callout>
+
+    <div class="tl-filter" data-filter hidden>
+      <SegmentedControl name="tl-theme" legend={tr('timeline.filterLabel')} options={options} value="all" />
+      <p class="tl-count" role="status" data-count>{tr('timeline.count', { n: events.length })}</p>
+    </div>
+
+    {groups.map((g) => (
+      <section class="tl-century" data-century aria-labelledby={`tl-c${g.century}`}>
+        <h2 id={`tl-c${g.century}`}>{tr(`timeline.centuries.${g.century}`)}</h2>
+        <ol class="tl-list" role="list">
+          {g.events.map((e) => (
+            <li class="tl-event" id={e.id} data-event data-theme={e.theme}>
+              <div class="tl-event__year" aria-hidden="true">{parseEventDate(e.date)!.year}</div>
+              <article class="tl-event__body">
+                <p class="tl-event__meta">
+                  <time datetime={e.date}>{formatEventDate(e.date, lang)}</time>
+                  <Badge tone={THEME_TONE[e.theme]} icon={THEME_ICON[e.theme]}>{tr(`timeline.themes.${e.theme}`)}</Badge>
+                </p>
+                <h3>{pick(e.title, lang)}</h3>
+                <p>{pick(e.text, lang)}</p>
+                {e.terms.length > 0 && (
+                  <p class="tl-event__terms">{tr('timeline.terms')}: {e.terms.map((id, i) => <>{i > 0 && ' · '}<a href={childHref('dictionary', id, lang)}>{termName(id)}</a></>)}</p>
+                )}
+                <p class="tl-event__sources">{tr('timeline.sources')}: {e.sources.map((s, i) => <>{i > 0 && ' · '}<a href={src(s).url} rel="noopener">{src(s).publisher} — {src(s).title}</a></>)}</p>
+              </article>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div>
+  <script type="application/json" id="tl-data" set:html={JSON.stringify({ count: tr('timeline.count', { n: '{n}' }) })} />
+</BaseLayout>
+
+<style>
+  .tl { padding-block: var(--space-6) var(--space-9); }
+  .tl-filter { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-6); }
+  .tl-count { margin: 0; color: var(--text-muted); font-size: var(--text-sm); }
+  .tl-century { margin-top: var(--space-7, var(--space-6)); }
+  .tl-century h2 { font-size: var(--text-2xl, var(--text-xl)); }
+  .tl-list { list-style: none; margin: var(--space-4) 0 0; padding: 0; border-left: 2px solid var(--border-strong); }
+  .tl-event { position: relative; display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--space-4); margin: 0 0 var(--space-5); padding-left: var(--space-4); }
+  .tl-event::before { content: ''; position: absolute; left: -7px; top: 0.55rem; width: 12px; height: 12px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 3px var(--bg, var(--surface)); }
+  .tl-event[data-theme='airline']::before { background: var(--magenta, var(--primary)); }
+  .tl-event[data-theme='regulation']::before { background: var(--green, var(--primary)); }
+  .tl-event__year { font-family: var(--font-mono); font-weight: 700; font-size: var(--text-lg); color: var(--text-muted); padding-top: 0.2rem; }
+  .tl-event__body { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .tl-event__body h3 { margin: var(--space-2) 0; font-size: var(--text-lg); }
+  .tl-event__body p { margin: 0 0 var(--space-2); }
+  .tl-event__meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); color: var(--text-muted); font-size: var(--text-sm); }
+  .tl-event__terms, .tl-event__sources { color: var(--text-muted); font-size: var(--text-sm); }
+  .tl-event__sources { margin-bottom: 0 !important; }
+  [hidden] { display: none !important; }
+  @media (max-width: 560px) {
+    .tl-event { grid-template-columns: 1fr; gap: var(--space-1); }
+  }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-timeline]');
+  const data = document.getElementById('tl-data');
+  if (root && data) {
+    const { count } = JSON.parse(data.textContent || '{}');
+    const filter = root.querySelector<HTMLElement>('[data-filter]')!;
+    const counter = root.querySelector<HTMLElement>('[data-count]')!;
+    const events = [...root.querySelectorAll<HTMLElement>('[data-event]')];
+    const centuries = [...root.querySelectorAll<HTMLElement>('[data-century]')];
+    filter.hidden = false;
+    const apply = (theme: string) => {
+      let n = 0;
+      for (const e of events) {
+        const show = theme === 'all' || e.dataset.theme === theme;
+        e.hidden = !show;
+        if (show) n++;
+      }
+      for (const c of centuries) c.hidden = !c.querySelector('[data-event]:not([hidden])');
+      counter.textContent = String(count).replace('{n}', String(n));
+    };
+    filter.addEventListener('change', (ev) => {
+      const t = ev.target as HTMLInputElement;
+      if (t.name === 'tl-theme') apply(t.value);
+    });
+  }
+</script>

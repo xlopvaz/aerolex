@@ -34,7 +34,9 @@
     "airportFinder": "Buscador de aeropuertos",
     "atcTrainer": "Entrenador de fraseología ATC",
     "aircraftGame": "¿Qué avión es?",
-    "flashcards": "Flashcards"
+    "flashcards": "Flashcards",
+    "weatherGlossary": "Glosario meteorológico",
+    "timeline": "Cronología"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -677,8 +679,17 @@
       "flashcards": {
         "title": "Flashcards",
         "text": "Repasa el vocabulario EN/ES del diccionario con repetición espaciada, por categorías o con tus favoritos."
+      },
+      "weatherGlossary": {
+        "title": "Glosario meteorológico",
+        "text": "Todos los códigos de METAR y TAF con su significado, y un explicador: escribe un grupo como +TSRA o BKN012CB y te dice qué es cada parte."
+      },
+      "timeline": {
+        "title": "Cronología de la aviación",
+        "text": "De los primeros globos al A380: hitos de vuelo, de las aerolíneas y de la normativa, con fuentes y filtro por tema."
       }
-    }
+    },
+    "noscript": "Esta herramienta necesita JavaScript para funcionar."
   },
   "metarTool": {
     "metaTitle": "Decodificador METAR y SPECI · AeroLex",
@@ -1146,5 +1157,64 @@
     "openEntry": "Ver en el diccionario",
     "keys": "Atajos: espacio para mostrar la respuesta; 1, 2 y 3 para calificar.",
     "howItWorks": "Cómo funciona: «Otra vez» devuelve la tarjeta a esta sesión; «Bien» y «Fácil» la programan para dentro de 1, 3, 7, 16 o 35 días según lo bien que la conozcas."
+  },
+  "weatherGlossary": {
+    "metaTitle": "Glosario meteorológico METAR y TAF · AeroLex",
+    "metaDescription": "Significado de todos los códigos de METAR y TAF (intensidad, fenómenos, nubes, tendencias) y explicador de grupos.",
+    "title": "Glosario meteorológico",
+    "lead": "Los códigos de los informes METAR y de los pronósticos TAF, agrupados y con un ejemplo. Escribe un código o un grupo completo para ver qué significa cada parte.",
+    "searchLabel": "Código, grupo o palabra",
+    "searchPlaceholder": "p. ej. +TSRA, BKN012CB, niebla",
+    "explainTitle": "Qué significa {token}",
+    "height": "Altura de la base: {ft} ft sobre el aeródromo.",
+    "heightUnknown": "Altura no disponible (///).",
+    "results": "{n} códigos",
+    "noResults": "Ningún código coincide con la búsqueda.",
+    "code": "Código",
+    "meaning": "Significado",
+    "example": "Ejemplo",
+    "related": "En el diccionario",
+    "decode": "Descodificar un METAR o TAF completo",
+    "termsTitle": "Términos meteorológicos del diccionario",
+    "sourcesNote": "Fuentes: OMM n.º 306 (Manual de claves) y Anexo 3 de la OACI; usos de EE. UU. según el AIM de la FAA. Contenido en revisión (borrador).",
+    "groups": {
+      "report": "Tipos de informe",
+      "modifier": "Modificadores",
+      "wind": "Viento",
+      "visibility": "Visibilidad",
+      "intensity": "Intensidad y proximidad",
+      "descriptor": "Descriptores",
+      "precipitation": "Precipitación",
+      "obscuration": "Fenómenos que reducen la visibilidad",
+      "other": "Otros fenómenos",
+      "cloud": "Nubes",
+      "pressure": "Presión",
+      "general": "Grupos generales",
+      "change": "Tendencias y cambios previstos"
+    }
+  },
+  "timeline": {
+    "metaTitle": "Cronología de la aviación · AeroLex",
+    "metaDescription": "Hitos de la historia de la aviación, del primer vuelo en globo a los grandes aviones de hoy, con fuentes.",
+    "title": "Cronología de la aviación",
+    "lead": "Momentos clave de la historia de la aviación: los primeros vuelos, las aerolíneas y las normas que hoy la ordenan. Cada hito cita sus fuentes.",
+    "filterLabel": "Tema",
+    "all": "Todos",
+    "themes": {
+      "flight": "Hitos de vuelo",
+      "airline": "Aviación comercial",
+      "regulation": "Normas y organismos"
+    },
+    "centuries": {
+      "18": "Siglo XVIII",
+      "19": "Siglo XIX",
+      "20": "Siglo XX",
+      "21": "Siglo XXI"
+    },
+    "count": "{n} hitos",
+    "yearsAgo": "hace {n} años",
+    "terms": "En el diccionario",
+    "sources": "Fuentes",
+    "draftNote": "Contenido en revisión: las fechas y los datos proceden de las fuentes citadas en cada hito. Cuando una fuente solo da el mes o el año, no se indica el día."
   }
 }
