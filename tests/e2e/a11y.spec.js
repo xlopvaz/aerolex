@@ -10,7 +10,7 @@ const PAGES = [
   'es/', 'en/dictionary/', 'es/diccionario/metar/', 'en/dictionary/acronyms/', 'es/academia/', 'en/academy/taf/',
   'es/academia/metar-speci/full-decode/', 'en/hangar/', 'es/hangar/boeing-737/', 'en/hangar/compare/', 'es/herramientas/',
   'en/tools/metar-decoder/', 'es/herramientas/diagramas-de-aeropuerto/?q=MAD', 'en/tools/flight-deck/', 'es/herramientas/cronologia/',
-  'en/dashboard/', 'es/panel/repaso/', 'en/sources/', 'es/guia-de-estilo/',
+  'en/dashboard/', 'es/panel/repaso/', 'es/academia/apuntes/', 'en/academy/notes/metar-speci/', 'en/sources/', 'es/guia-de-estilo/',
 ];
 
 for (const scheme of ['dark', 'light']) {

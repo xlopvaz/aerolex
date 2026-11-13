@@ -1,0 +1,155 @@
+{
+  "course": "principles-of-flight",
+  "lessons": [
+    {
+      "lesson": "atmosphere",
+      "key": {
+        "es": "ISA al nivel del mar: 15 °C, 1013,25 hPa y 1,225 kg/m³; con aire menos denso (alto, caliente, húmedo) las actuaciones empeoran.",
+        "en": "ISA at sea level: 15 °C, 1013.25 hPa and 1.225 kg/m³; in less dense air (high, hot, humid) performance gets worse."
+      },
+      "points": [
+        {
+          "es": "La temperatura ISA baja unos 2 °C cada 1000 ft (−6,5 °C/km) hasta la tropopausa, a 11 km, con −56,5 °C.",
+          "en": "ISA temperature falls about 2 °C per 1,000 ft (−6.5 °C/km) up to the tropopause at 11 km, at −56.5 °C."
+        },
+        {
+          "es": "ISA +10 = el día está 10 °C por encima de la temperatura ISA a esa altitud.",
+          "en": "ISA +10 = the day is 10 °C warmer than the ISA temperature at that altitude."
+        },
+        {
+          "es": "La presión baja unos 30 ft por hPa cerca del mar; la densidad baja con la altura, la temperatura y la humedad.",
+          "en": "Pressure falls about 30 ft per hPa near sea level; density falls with height, temperature and humidity."
+        },
+        {
+          "es": "Altitud de presión: la del altímetro a 1013,25 hPa (niveles de vuelo). Altitud de densidad: la de presión corregida por temperatura.",
+          "en": "Pressure altitude: the altimeter reading at 1013.25 hPa (flight levels). Density altitude: pressure altitude corrected for temperature."
+        },
+        {
+          "es": "Con más altitud de densidad: más velocidad verdadera, motores que rinden menos, despegue más largo y menos ascenso. Regla práctica: unos 120 ft por grado sobre la ISA.",
+          "en": "Higher density altitude: more true airspeed, weaker engines, longer take-off and less climb. Rule of thumb: about 120 ft per degree above ISA."
+        }
+      ]
+    },
+    {
+      "lesson": "lift-and-airspeed",
+      "key": {
+        "es": "L = CL · ½ρV² · S: a menos velocidad, más ángulo de ataque para la misma sustentación.",
+        "en": "L = CL · ½ρV² · S: at lower speed, more angle of attack for the same lift."
+      },
+      "points": [
+        {
+          "es": "½ρV² es la presión dinámica: duplicar la velocidad multiplica por cuatro la sustentación.",
+          "en": "½ρV² is dynamic pressure: doubling the speed quadruples the lift."
+        },
+        {
+          "es": "El CL crece con el ángulo de ataque hasta el CL máx, en el ángulo crítico; después, la pérdida.",
+          "en": "CL rises with angle of attack up to CL max at the critical angle; beyond it, the stall."
+        },
+        {
+          "es": "IAS (indicada) → CAS (corregida por instrumento y posición) → TAS (por altitud y temperatura) → GS (con el viento).",
+          "en": "IAS (indicated) → CAS (corrected for instrument and position) → TAS (for altitude and temperature) → GS (with wind)."
+        },
+        {
+          "es": "A la misma IAS el ala se comporta igual a cualquier altitud: por eso los límites se dan en velocidad indicada.",
+          "en": "At the same IAS the wing behaves the same at any altitude: that is why limits are given as indicated airspeed."
+        },
+        {
+          "es": "Anemómetro: arco blanco (flaps, VS0–VFE), verde (normal, VS1–VNO), amarillo (precaución) y línea roja (VNE).",
+          "en": "Airspeed indicator: white arc (flaps, VS0–VFE), green (normal, VS1–VNO), yellow (caution) and red line (VNE)."
+        }
+      ]
+    },
+    {
+      "lesson": "drag",
+      "key": {
+        "es": "Resistencia total = parásita (crece con V²) + inducida (baja con V²): mínima en la velocidad de L/D máx.",
+        "en": "Total drag = parasite (grows with V²) + induced (falls with V²): lowest at the best L/D speed."
+      },
+      "points": [
+        {
+          "es": "Parásita: de forma, de interferencia y de fricción.",
+          "en": "Parasite drag: form, interference and skin friction."
+        },
+        {
+          "es": "Inducida: el precio de la sustentación; nace de los torbellinos de punta de ala y es máxima a baja velocidad y con mucho peso.",
+          "en": "Induced drag: the price of lift; it comes from wingtip vortices and is highest at low speed and high weight."
+        },
+        {
+          "es": "Se reduce con alas de gran alargamiento y con winglets.",
+          "en": "It is reduced by high aspect ratio wings and winglets."
+        },
+        {
+          "es": "La curva de resistencia total tiene forma de U.",
+          "en": "The total drag curve is U-shaped."
+        },
+        {
+          "es": "Por debajo de la velocidad de resistencia mínima, ir más despacio exige más empuje: zona de mando invertido.",
+          "en": "Below minimum drag speed, flying slower needs more thrust: the back side of the drag curve."
+        }
+      ]
+    },
+    {
+      "lesson": "stability",
+      "key": {
+        "es": "Estática = tendencia inicial; dinámica = qué pasa con el tiempo. El centro de gravedad debe estar dentro de los límites del manual.",
+        "en": "Static = initial tendency; dynamic = what happens over time. The centre of gravity must be within the manual's limits."
+      },
+      "points": [
+        {
+          "es": "Lo deseable: estabilidad estática y dinámica positivas, sin exceso.",
+          "en": "The goal: positive static and dynamic stability, without excess."
+        },
+        {
+          "es": "Longitudinal (cabeceo): CG delante del centro de presiones y estabilizador horizontal, que empuja la cola hacia abajo.",
+          "en": "Longitudinal (pitch): CG ahead of the centre of pressure and a horizontal stabiliser pushing the tail down."
+        },
+        {
+          "es": "Lateral (alabeo): diedro, flecha y efecto quilla. Direccional (guiñada): la deriva, como una veleta.",
+          "en": "Lateral (roll): dihedral, sweep and keel effect. Directional (yaw): the fin, like a weather vane."
+        },
+        {
+          "es": "Si domina la direccional: inestabilidad espiral; si domina la lateral: balanceo del holandés.",
+          "en": "If directional dominates: spiral instability; if lateral dominates: Dutch roll."
+        },
+        {
+          "es": "CG adelantado: más estable, pérdida más alta y quizá falta de profundidad en la recogida. CG retrasado: menos estable y recuperación de pérdida difícil.",
+          "en": "Forward CG: more stable, higher stall speed and possibly too little elevator for the flare. Aft CG: less stable and difficult stall recovery."
+        }
+      ]
+    },
+    {
+      "lesson": "turns-and-load-factor",
+      "key": {
+        "es": "En viraje nivelado n = 1/cos(alabeo) y la velocidad de pérdida sube con √n: a 60°, 2 g y un 41 % más.",
+        "en": "In a level turn n = 1/cos(bank) and stall speed rises with √n: at 60°, 2 g and 41% more."
+      },
+      "points": [
+        {
+          "es": "Al alabear, la sustentación se divide en una componente vertical (sostiene el peso) y otra horizontal (hace virar).",
+          "en": "When banked, lift splits into a vertical component (supports weight) and a horizontal one (turns the aircraft)."
+        },
+        {
+          "es": "Para virar sin perder altura hay que aumentar la sustentación total con más ángulo de ataque (y potencia).",
+          "en": "To turn without losing height, total lift must increase with more angle of attack (and power)."
+        },
+        {
+          "es": "30° = 1,15 g; 45° = 1,41 g; 60° = 2 g; a 75°, casi 4 g.",
+          "en": "30° = 1.15 g; 45° = 1.41 g; 60° = 2 g; at 75°, nearly 4 g."
+        },
+        {
+          "es": "Por eso puede haber pérdida a una velocidad que parecería segura en vuelo recto.",
+          "en": "That is why a stall can happen at a speed that would seem safe in straight flight."
+        },
+        {
+          "es": "VA (velocidad de maniobra): por debajo, el avión entra en pérdida antes de superar su factor de carga límite; baja cuando el avión pesa menos.",
+          "en": "VA (manoeuvring speed): below it, the aircraft stalls before exceeding its limit load factor; it decreases at lower weight."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

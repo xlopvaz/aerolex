@@ -1,0 +1,97 @@
+{
+  "course": "cabin-crew-introduction",
+  "lessons": [
+    {
+      "lesson": "role-of-cabin-crew",
+      "key": {
+        "es": "El TCP está a bordo, ante todo, por la seguridad de los pasajeros; en la UE se exige con más de 19 asientos.",
+        "en": "Cabin crew are on board, above all, for passenger safety; in the EU they are required with more than 19 seats."
+      },
+      "points": [
+        {
+          "es": "Funciones de seguridad: comprobar el equipo, preparar la cabina, informar a los pasajeros, reaccionar ante incidentes y dirigir una evacuación.",
+          "en": "Safety duties: check equipment, prepare the cabin, brief passengers, respond to incidents and lead an evacuation."
+        },
+        {
+          "es": "Reglamento (UE) 965/2012 (ORO.CC.100): al menos un TCP con más de 19 asientos de pasajeros y algún pasajero a bordo.",
+          "en": "Regulation (EU) 965/2012 (ORO.CC.100): at least one cabin crew member with more than 19 passenger seats and passengers on board."
+        },
+        {
+          "es": "Mínimo: el mayor entre el número fijado en la certificación del avión y 1 TCP por cada 50 asientos o fracción en la misma cubierta.",
+          "en": "Minimum: the higher of the number set at aircraft certification and 1 per 50 seats, or part of 50, on the same deck."
+        },
+        {
+          "es": "Ejemplo: 180 asientos → 3,6 → 4 TCP como mínimo por la regla de 50.",
+          "en": "Example: 180 seats → 3.6 → at least 4 cabin crew under the 50-seat rule."
+        },
+        {
+          "es": "Con más de un TCP, el operador designa un jefe de cabina, responsable ante el comandante. El manual del operador prevalece.",
+          "en": "With more than one cabin crew member, the operator appoints a senior cabin crew member, answerable to the commander. The operator's manual prevails."
+        }
+      ]
+    },
+    {
+      "lesson": "becoming-cabin-crew",
+      "key": {
+        "es": "Certificado de TCP (parte CC del Reglamento 1178/2011): 18 años, curso inicial con examen y aptitud aeromédica.",
+        "en": "Cabin crew attestation (Part-CC of Regulation 1178/2011): age 18, initial course with exam and aeromedical fitness."
+      },
+      "points": [
+        {
+          "es": "El curso inicial lo imparte una organización aprobada; el certificado vale mientras se ejerza la profesión.",
+          "en": "The initial course is given by an approved organisation; the attestation stays valid while you keep working."
+        },
+        {
+          "es": "Caduca si no se ejerce durante 60 meses en al menos un tipo de avión.",
+          "en": "It lapses after 60 months without working on at least one aircraft type."
+        },
+        {
+          "es": "Después llega la formación del operador: conversión, tipo de avión, diferencias y vuelos de familiarización.",
+          "en": "Then comes operator training: conversion, aircraft type, differences and familiarisation flights."
+        },
+        {
+          "es": "Formación y verificación periódicas anuales (con prácticas de puertas y salidas) y refresco tras un tiempo sin volar un tipo.",
+          "en": "Annual recurrent training and checking (including door and exit drills) and refresher training after time off a type."
+        },
+        {
+          "es": "Evaluación aeromédica cada 60 meses como máximo; el CRM forma parte de todo el proceso.",
+          "en": "Aeromedical assessment at most every 60 months; CRM is part of the whole process."
+        }
+      ]
+    },
+    {
+      "lesson": "crew-and-authority",
+      "key": {
+        "es": "El comandante es la máxima autoridad a bordo; el jefe de cabina coordina la cabina y responde ante él.",
+        "en": "The commander is the highest authority on board; the senior cabin crew member coordinates the cabin and answers to them."
+      },
+      "points": [
+        {
+          "es": "Cadena: comandante → jefe de cabina → tripulantes de cabina, cada uno con sus puertas, zona y tareas.",
+          "en": "Chain: commander → senior cabin crew member → cabin crew, each with their doors, zone and tasks."
+        },
+        {
+          "es": "El jefe de cabina hace el briefing previo, transmite la información del comandante y le informa de cualquier incidencia.",
+          "en": "The senior cabin crew member gives the pre-flight briefing, passes on the commander's information and reports any issue."
+        },
+        {
+          "es": "Comunicación por interfono: mensajes breves, claros y completos, confirmados, y avisar de todo lo que afecte a la seguridad.",
+          "en": "Interphone communication: short, clear, complete messages, read back, reporting anything that affects safety."
+        },
+        {
+          "es": "Cabina estéril en rodaje, despegue, aterrizaje y por debajo de la altitud fijada: solo se llama por seguridad.",
+          "en": "Sterile flight deck during taxi, take-off, landing and below the set altitude: call only for safety matters."
+        },
+        {
+          "es": "CRM: una sola tripulación que trabaja en equipo y habla cuando algo no encaja.",
+          "en": "CRM: one crew working as a team and speaking up when something does not fit."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

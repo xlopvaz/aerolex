@@ -4,11 +4,11 @@ const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/', 'es/academia/taf/', 'es/academia/taf/change-groups/',
-  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/', 'es/herramientas/diagramas-de-aeropuerto/', 'es/herramientas/cabina-de-vuelo/',
+  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/', 'es/herramientas/diagramas-de-aeropuerto/', 'es/herramientas/cabina-de-vuelo/', 'es/academia/apuntes/', 'es/academia/apuntes/taf/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
   'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/', 'en/academy/taf/full-decode/',
-  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/', 'en/tools/airport-diagrams/', 'en/tools/flight-deck/',
+  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/', 'en/tools/airport-diagrams/', 'en/tools/flight-deck/', 'en/academy/notes/', 'en/academy/notes/aerodynamics/',
 ];
 
 test.describe('language', () => {
@@ -203,6 +203,31 @@ test.describe('flight deck', () => {
     await expect(boeing.locator('[data-score]')).toHaveText('1 of 1');
     await boeing.locator('[data-next]').click();
     await expect(boeing.locator('[data-feedback]')).toHaveText('');
+  });
+});
+
+test.describe('academy notes', () => {
+  test('lead from the academy to each course\'s notes and back to the lessons', async ({ page }) => {
+    await page.goto('es/academia/');
+    await page.locator('.academy__notes').click();
+    await expect(page).toHaveURL(/\/es\/academia\/apuntes\/$/);
+    await expect(page.locator('.nidx__card')).toHaveCount(8);
+    await page.locator('.nidx__card', { hasText: 'Academia TAF' }).click();
+    await expect(page).toHaveURL(/\/es\/academia\/apuntes\/taf\/$/);
+    await expect(page.locator('.cn__lesson')).toHaveCount(6);
+    await expect(page.locator('.cn__lesson').first().locator('.cn__key')).toContainText('pronóstico');
+    await expect(page.locator('.quiz')).toHaveCount(0); // notes have no quizzes
+    await page.locator('.cn__lesson').first().locator('.cn__full').click();
+    await expect(page).toHaveURL(/\/es\/academia\/taf\/what-is-taf\/$/);
+
+    // Same notes in English through the language switcher, and from the course page
+    await page.goto('es/academia/apuntes/taf/');
+    await page.locator('.site-header [data-set-lang="en"]').click();
+    await expect(page).toHaveURL(/\/en\/academy\/notes\/taf\/$/);
+    await expect(page.locator('h1')).toHaveText('Notes: TAF Academy');
+    await page.goto('en/academy/taf/');
+    await page.locator('.course__notes a').click();
+    await expect(page).toHaveURL(/\/en\/academy\/notes\/taf\/$/);
   });
 });
 

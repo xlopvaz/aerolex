@@ -10,6 +10,7 @@
 export const ROUTES = {
   home:       { slug: { es: '',               en: '' },             nav: ['main', 'mobile'], icon: 'plane-takeoff' },
   academy:    { slug: { es: 'academia',       en: 'academy' },      nav: ['main', 'mobile'], icon: 'graduation-cap' },
+  academyNotes: { slug: { es: 'academia/apuntes', en: 'academy/notes' }, nav: [], icon: 'notebook-pen' },
   dictionary: { slug: { es: 'diccionario',    en: 'dictionary' },   nav: ['main', 'mobile'], icon: 'book-a' },
   hangar:     { slug: { es: 'hangar',         en: 'hangar' },       nav: ['main', 'mobile'], icon: 'plane' },
   tools:      { slug: { es: 'herramientas',   en: 'tools' },        nav: ['main', 'mobile'], icon: 'flask-conical' },

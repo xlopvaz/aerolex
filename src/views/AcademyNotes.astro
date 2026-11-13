@@ -1,0 +1,73 @@
+---
+/**
+ * Academy notes index: one card per course that has notes (src/content/notes/), grouped by
+ * learning path in the same order as the Academy. Notes are summaries for revision, no quizzes.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import { childHref, href, useT } from '../i18n/index.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const notes = new Map((await getCollection('notes')).map((n) => [n.data.course, n.data]));
+const courses = (await getCollection('courses')).filter((c) => notes.has(c.id));
+const paths = (await getCollection('paths'))
+  .map((p) => ({ ...p, courses: courses.filter((c) => c.data.path === p.id).sort((a, b) => a.data.order - b.data.order || a.id.localeCompare(b.id)) }))
+  .filter((p) => p.courses.length > 0)
+  .sort((a, b) => a.data.order - b.data.order);
+const pointsOf = (id: string) => notes.get(id)!.lessons.reduce((n, l) => n + l.points.length, 0);
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('notes.metaTitle')} description={tr('notes.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.academy'), href: href('academy', lang) }, { label: tr('notes.title') }]} />
+      <h1>{tr('notes.title')}</h1>
+      <p class="lead">{tr('notes.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container nidx">
+    {paths.map((p) => (
+      <section class="nidx__path" aria-labelledby={`np-${p.id}`}>
+        <h2 id={`np-${p.id}`}><Icon name={p.data.icon} size={22} /> {p.data.title[lang]}</h2>
+        <ul class="nidx__list">
+          {p.courses.map((c) => (
+            <li>
+              <a class="nidx__card" href={childHref('academyNotes', c.id, lang)}>
+                <span class="nidx__icon"><Icon name="notebook-pen" size={22} /></span>
+                <span class="nidx__body">
+                  <strong>{c.data.title[lang]}</strong>
+                  <span class="nidx__meta">
+                    <Badge icon="book-open">{tr('notes.lessonsCount', { count: c.data.lessons.length })}</Badge>
+                    <Badge icon="list">{tr('notes.points', { count: pointsOf(c.id) })}</Badge>
+                  </span>
+                </span>
+                <Icon name="arrow-right" size={18} class="nidx__arrow" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .nidx { padding-top: var(--space-6); padding-bottom: var(--space-8); }
+  .nidx__path { margin-bottom: var(--space-7); }
+  .nidx__path h2 { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-xl); }
+  .nidx__list { list-style: none; padding: 0; margin: var(--space-3) 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--space-3); }
+  .nidx__list li { margin: 0; }
+  .nidx__card { display: flex; align-items: center; gap: var(--space-3); height: 100%; padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); color: var(--text); text-decoration: none; transition: border-color var(--dur-fast) var(--ease); }
+  .nidx__card:hover { border-color: var(--primary); }
+  .nidx__icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: var(--radius-md); background: var(--primary-soft); color: var(--primary); }
+  .nidx__body { display: grid; gap: var(--space-2); flex: 1; }
+  .nidx__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .nidx :global(.nidx__arrow) { color: var(--text-muted); flex-shrink: 0; }
+  @media (prefers-reduced-motion: reduce) { .nidx__card { transition: none; } }
+</style>

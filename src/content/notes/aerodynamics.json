@@ -1,0 +1,155 @@
+{
+  "course": "aerodynamics",
+  "lessons": [
+    {
+      "lesson": "wing-geometry",
+      "key": {
+        "es": "Alargamiento, estrechamiento, flecha, diedro y torsión deciden cómo vuela el ala; la pérdida debe empezar en la raíz.",
+        "en": "Aspect ratio, taper, sweep, dihedral and washout shape how a wing flies; the stall should start at the root."
+      },
+      "points": [
+        {
+          "es": "Alargamiento = envergadura² / superficie: alto, menos resistencia inducida; bajo, alas más robustas y maniobrables.",
+          "en": "Aspect ratio = span² / area: high means less induced drag; low means sturdier, more manoeuvrable wings."
+        },
+        {
+          "es": "Flecha: retrasa la compresibilidad y da estabilidad lateral. Diedro: tiende a nivelar las alas.",
+          "en": "Sweep: delays compressibility and adds lateral stability. Dihedral: tends to level the wings."
+        },
+        {
+          "es": "Torsión (washout): menos incidencia en la punta, para que la raíz entre antes en pérdida y los alerones sigan funcionando.",
+          "en": "Washout: less incidence at the tip, so the root stalls first and the ailerons keep working."
+        },
+        {
+          "es": "Las alas en flecha tienden a entrar en pérdida por la punta; se corrige con vallas o generadores de torbellinos.",
+          "en": "Swept wings tend to stall at the tip; fences or vortex generators correct it."
+        },
+        {
+          "es": "Winglets: torbellinos más débiles, menos resistencia inducida y menos consumo, a cambio de peso y carga en el ala.",
+          "en": "Winglets: weaker vortices, less induced drag and less fuel burn, at the cost of weight and wing load."
+        }
+      ]
+    },
+    {
+      "lesson": "high-lift-devices",
+      "key": {
+        "es": "Flaps: más CL máx y menos velocidad de pérdida; slats: ángulo de ataque crítico mayor; spoilers: lo contrario.",
+        "en": "Flaps: higher CL max and lower stall speed; slats: higher critical angle of attack; spoilers: the opposite."
+      },
+      "points": [
+        {
+          "es": "Un ala de crucero da poca sustentación a baja velocidad: necesita cambiar de forma para despegar y aterrizar.",
+          "en": "A cruise wing gives little lift at low speed: it must change shape for take-off and landing."
+        },
+        {
+          "es": "Flaps sencillo, de intradós, ranurado y Fowler; el Fowler aumenta curvatura y superficie y es el más eficaz.",
+          "en": "Plain, split, slotted and Fowler flaps; the Fowler adds camber and area and is the most effective."
+        },
+        {
+          "es": "Con flaps la pérdida llega con algo menos de ángulo de ataque; las últimas posiciones añaden sobre todo resistencia.",
+          "en": "With flaps the stall comes at a slightly lower angle of attack; the last settings mainly add drag."
+        },
+        {
+          "es": "Ranuras, slats y flaps Krueger dan energía a la capa límite y retrasan el desprendimiento.",
+          "en": "Slots, slats and Krueger flaps energise the boundary layer and delay separation."
+        },
+        {
+          "es": "Cada posición de flap tiene una velocidad máxima de extensión (VFE).",
+          "en": "Each flap setting has a maximum extension speed (VFE)."
+        }
+      ]
+    },
+    {
+      "lesson": "boundary-layer-and-stall",
+      "key": {
+        "es": "La pérdida llega cuando la capa límite se desprende de gran parte del ala; una barrena necesita pérdida y guiñada.",
+        "en": "The stall comes when the boundary layer separates over much of the wing; a spin needs a stall plus yaw."
+      },
+      "points": [
+        {
+          "es": "Capa límite laminar: poca fricción pero poca energía. Turbulenta: más fricción pero se mantiene pegada más tiempo.",
+          "en": "Laminar boundary layer: little friction but little energy. Turbulent: more friction but stays attached longer."
+        },
+        {
+          "es": "Los generadores de torbellinos mezclan aire rápido en la capa límite para retrasar el desprendimiento.",
+          "en": "Vortex generators mix fast air into the boundary layer to delay separation."
+        },
+        {
+          "es": "Avisos de pérdida: bataneo (buffet), mandos blandos, bocina de pérdida o vibrador de palanca (stick shaker).",
+          "en": "Stall warnings: buffet, sloppy controls, stall horn or stick shaker."
+        },
+        {
+          "es": "Barrena: autorrotación con un ala más en pérdida que la otra; una pérdida sin coordinar es especialmente peligrosa.",
+          "en": "Spin: autorotation with one wing more stalled than the other; an uncoordinated stall is especially dangerous."
+        },
+        {
+          "es": "Efecto suelo (a menos de una envergadura): menos resistencia inducida, el avión flota en la recogida y puede despegar sin velocidad suficiente.",
+          "en": "Ground effect (within about one span): less induced drag, the aircraft floats in the flare and can lift off too slow."
+        }
+      ]
+    },
+    {
+      "lesson": "high-speed-flight",
+      "key": {
+        "es": "Por encima del Mach crítico aparecen ondas de choque; la flecha sube el Mach crítico.",
+        "en": "Above the critical Mach number shock waves form; sweep raises the critical Mach number."
+      },
+      "points": [
+        {
+          "es": "La velocidad del sonido depende solo de la temperatura: unos 661 kt al nivel del mar ISA y 574 kt en la tropopausa.",
+          "en": "The speed of sound depends only on temperature: about 661 kt at ISA sea level and 574 kt at the tropopause."
+        },
+        {
+          "es": "Mach = TAS / velocidad local del sonido; subiendo a IAS constante, el Mach aumenta.",
+          "en": "Mach = TAS / local speed of sound; climbing at constant IAS, the Mach number increases."
+        },
+        {
+          "es": "Regímenes: subsónico (< 0,75), transónico (0,75–1,20), supersónico (1,20–5) e hipersónico (> 5).",
+          "en": "Regimes: subsonic (< 0.75), transonic (0.75–1.20), supersonic (1.20–5) and hypersonic (> 5)."
+        },
+        {
+          "es": "Las ondas de choque traen resistencia de onda, bataneo y tendencia a picar (Mach tuck).",
+          "en": "Shock waves bring wave drag, high-speed buffet and a nose-down tendency (Mach tuck)."
+        },
+        {
+          "es": "Los reactores tienen dos límites: VMO (en IAS, baja altitud) y MMO (en Mach, gran altitud).",
+          "en": "Jets have two limits: VMO (as IAS, at low altitude) and MMO (as Mach, at high altitude)."
+        }
+      ]
+    },
+    {
+      "lesson": "wake-turbulence",
+      "key": {
+        "es": "La estela es más fuerte detrás de aviones pesados, limpios y lentos; desciende y, cerca del suelo, se desplaza hacia los lados.",
+        "en": "Wake is strongest behind heavy, clean and slow aircraft; it sinks and, near the ground, drifts sideways."
+      },
+      "points": [
+        {
+          "es": "Son dos torbellinos de punta de ala que giran en sentidos opuestos, desde la rotación hasta la toma de contacto.",
+          "en": "It is two counter-rotating wingtip vortices, from rotation until touchdown."
+        },
+        {
+          "es": "Descienden varios cientos de pies por minuto; cerca del suelo se mueven a unos 2–3 kt hacia los lados.",
+          "en": "They sink several hundred feet per minute; near the ground they move sideways at about 2–3 kt."
+        },
+        {
+          "es": "Un viento cruzado de 1–5 kt puede dejar un torbellino sobre la zona de toma; un viento de cola puede arrastrar la estela hacia ella.",
+          "en": "A 1–5 kt crosswind can hold a vortex over the touchdown zone; a tailwind can carry the wake into it."
+        },
+        {
+          "es": "Categorías OACI por masa máxima al despegue: L ≤ 7000 kg, M, H ≥ 136 000 kg y J (designados, como el A380).",
+          "en": "ICAO categories by maximum take-off mass: L ≤ 7,000 kg, M, H ≥ 136,000 kg and J (designated types such as the A380)."
+        },
+        {
+          "es": "Al aterrizar detrás de un avión grande, mantenerse en su senda o por encima y tomar más allá de su punto de toma; al despegar detrás, rotar antes y subir por encima.",
+          "en": "Landing behind a larger aircraft: stay on or above its path and touch down beyond its touchdown point; taking off behind: rotate earlier and climb above its path."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

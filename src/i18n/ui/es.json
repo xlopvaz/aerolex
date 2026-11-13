@@ -43,7 +43,8 @@
     "sources": "Fuentes",
     "review": "Repaso de errores",
     "airportDiagram": "Diagramas de aeropuerto",
-    "cockpit": "Cabina de vuelo interactiva"
+    "cockpit": "Cabina de vuelo interactiva",
+    "academyNotes": "Apuntes"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -1464,5 +1465,26 @@
     "score": "{right} de {total}",
     "next": "Siguiente",
     "draft": "Contenido en borrador, redactado a partir de las fuentes citadas en cada elemento y pendiente de revisión."
+  },
+  "notes": {
+    "metaTitle": "Apuntes de la Academia · AeroLex",
+    "metaDescription": "Resúmenes de cada curso de la Academia de AeroLex: la idea clave y los puntos principales de cada lección, para repasar sin cuestionarios.",
+    "title": "Apuntes",
+    "lead": "Lo más importante de cada curso, lección a lección: la idea clave y los puntos que conviene recordar. Para repasar rápido, sin cuestionarios.",
+    "cardText": "Resúmenes de cada curso para repasar sin cuestionarios.",
+    "open": "Ver apuntes",
+    "lessonsCount": "{count} lecciones",
+    "points": "{count} puntos",
+    "courseTitle": "Apuntes: {course}",
+    "courseLead": "Resumen de las {count} lecciones del curso. Para estudiarlo a fondo, con ejemplos y cuestionarios, abre cada lección.",
+    "keyIdea": "Idea clave",
+    "terms": "Términos:",
+    "fullLesson": "Ver la lección completa",
+    "print": "Imprimir o guardar en PDF",
+    "toc": "Lecciones",
+    "backToCourse": "Ir al curso",
+    "draft": "Apuntes en borrador: resumen de las lecciones, que citan sus fuentes. Pendientes de revisión; ante cualquier duda, manda la lección y, para operar, la documentación oficial.",
+    "sourcesTitle": "Fuentes de las lecciones",
+    "courseLink": "Apuntes del curso"
   }
 }

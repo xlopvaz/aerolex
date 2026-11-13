@@ -1,0 +1,121 @@
+---
+/**
+ * Notes for one course: for each lesson, its key idea and main points, with the lesson's terms
+ * (linked to the dictionary) and a link to the full lesson. No quizzes. Print-friendly: the
+ * print stylesheet hides the site chrome so the notes can be printed or saved as PDF.
+ */
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import Callout from '../components/ui/Callout.astro';
+import Icon from '../components/ui/Icon.astro';
+import { childAlternates, childHref, href, useT } from '../i18n/index.js';
+
+interface Props { lang: 'es' | 'en'; routeKey: any; courseId: string }
+const { lang, courseId } = Astro.props;
+const tr = useT(lang);
+
+const course = (await getEntry('courses', courseId))!.data;
+const notes = (await getCollection('notes')).find((n) => n.data.course === courseId)!.data;
+const path = await getEntry('paths', course.path);
+const lessonDocs = await getCollection('lessons', (l) => l.data.course === courseId && l.data.lang === lang);
+const dict = new Map((await getCollection('dictionary')).map((e) => [e.id, e.data.term[lang]]));
+const sources = new Map((await getCollection('sources')).map((s) => [s.id, s.data]));
+
+const lessons = notes.lessons.map((n, i) => {
+  const doc = lessonDocs.find((l) => l.data.lesson === n.lesson)!;
+  return { ...n, n: i + 1, title: doc.data.title, terms: doc.data.terms, href: childHref('academy', `${courseId}/${n.lesson}`, lang) };
+});
+const sourceIds = [...new Set([...course.sources, ...lessonDocs.flatMap((l) => l.data.sources)])];
+const title = tr('notes.courseTitle', { course: course.title[lang] });
+---
+<BaseLayout lang={lang} routeKey="academyNotes" title={`${title} · AeroLex`} description={`${tr('notes.title')}: ${course.description[lang]}`} alt={childAlternates('academyNotes', courseId)}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.academy'), href: href('academy', lang) }, { label: tr('notes.title'), href: href('academyNotes', lang) }, { label: course.title[lang] }]} />
+      {path && <p class="eyebrow"><Icon name={path.data.icon} size={16} /> {path.data.title[lang]}</p>}
+      <h1>{title}</h1>
+      <p class="lead">{tr('notes.courseLead', { count: lessons.length })}</p>
+      <div class="cn__actions">
+        <Button href={childHref('academy', courseId, lang)} variant="secondary" size="sm" icon="graduation-cap">{tr('notes.backToCourse')}</Button>
+        <Button size="sm" variant="secondary" icon="printer" data-print>{tr('notes.print')}</Button>
+        <Badge tone="amber" icon="pencil">{tr(`status.${notes.review.status}`)}</Badge>
+      </div>
+    </div>
+  </header>
+
+  <div class="container cn">
+    <nav class="cn__toc" aria-labelledby="cn-toc">
+      <h2 id="cn-toc" class="cn__toc-title">{tr('notes.toc')}</h2>
+      <ol>
+        {lessons.map((l) => <li><a href={`#n-${l.lesson}`}>{l.title}</a></li>)}
+      </ol>
+    </nav>
+
+    <div class="cn__main">
+      {lessons.map((l) => (
+        <section class="cn__lesson" id={`n-${l.lesson}`} aria-labelledby={`nh-${l.lesson}`}>
+          <h2 id={`nh-${l.lesson}`}><span class="cn__num mono">{String(l.n).padStart(2, '0')}</span> {l.title}</h2>
+          <p class="cn__key"><strong>{tr('notes.keyIdea')}:</strong> {l.key[lang]}</p>
+          <ul class="cn__points">
+            {l.points.map((p) => <li>{p[lang]}</li>)}
+          </ul>
+          <p class="cn__foot">
+            {l.terms.length > 0 && (
+              <span class="cn__terms">{tr('notes.terms')} {l.terms.map((id, i) => (<>{i > 0 && ' · '}<a href={childHref('dictionary', id, lang)}>{dict.get(id) ?? id}</a></>))}</span>
+            )}
+            <a class="cn__full" href={l.href}>{tr('notes.fullLesson')} <Icon name="arrow-right" size={14} /></a>
+          </p>
+        </section>
+      ))}
+
+      <Callout type="info" label={tr('status.draft')}><p>{tr('notes.draft')}</p></Callout>
+
+      <section class="cn__sources" aria-labelledby="cn-src">
+        <h2 id="cn-src">{tr('notes.sourcesTitle')}</h2>
+        <ul>
+          {sourceIds.map((id) => sources.get(id)).filter(Boolean).map((s) => <li><a href={s!.url} rel="noopener">{s!.publisher} — {s!.title}</a></li>)}
+        </ul>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+</script>
+
+<style>
+  .cn__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-4); }
+  .cn { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: var(--space-7); padding-top: var(--space-6); padding-bottom: var(--space-8); align-items: start; }
+  .cn__toc { position: sticky; top: calc(var(--header-h) + var(--space-4)); }
+  .cn__toc-title { font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 0 0 var(--space-2); }
+  .cn__toc ol { margin: 0; padding-left: 1.2rem; display: grid; gap: var(--space-1); font-size: var(--text-sm); }
+  .cn__main { max-width: 760px; display: grid; gap: var(--space-5); }
+  .cn__lesson { padding: var(--space-5) var(--space-6); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); scroll-margin-top: calc(var(--header-h) + var(--space-4)); break-inside: avoid; }
+  .cn__lesson h2 { font-size: var(--text-xl); margin: 0 0 var(--space-3); display: flex; gap: var(--space-2); align-items: baseline; }
+  .cn__num { color: var(--cyan); font-size: var(--text-base); }
+  .cn__key { margin: 0 0 var(--space-3); padding: var(--space-3) var(--space-4); border-left: 3px solid var(--primary); background: var(--primary-soft); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+  .cn__points { margin: 0; padding-left: 1.2rem; display: grid; gap: var(--space-2); }
+  .cn__points li { margin: 0; line-height: 1.55; }
+  .cn__foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2) var(--space-4); margin: var(--space-4) 0 0; font-size: var(--text-sm); color: var(--text-muted); }
+  .cn__full { display: inline-flex; align-items: center; gap: 0.25rem; white-space: nowrap; }
+  .cn__sources h2 { font-size: var(--text-lg); }
+  .cn__sources ul { padding-left: 1.2rem; font-size: var(--text-sm); }
+  @media (max-width: 900px) {
+    .cn { grid-template-columns: minmax(0, 1fr); }
+    .cn__toc { position: static; }
+  }
+  @media print {
+    :global(.site-header), :global(.site-footer), :global(.mobile-nav), :global(.skip-link), :global(.crumbs), .cn__actions, .cn__toc, .cn__full { display: none !important; }
+    :global(body) { padding: 0 !important; background: #fff !important; color: #000 !important; }
+    :global(.page-header) { padding: 0 0 12px !important; background: none !important; border: 0 !important; }
+    .cn { display: block; padding: 0; }
+    .cn__lesson { border: 0; border-bottom: 1px solid #999; border-radius: 0; padding: 12px 0; background: none; }
+    .cn__key { background: none; border-left-color: #000; }
+    .cn__main { max-width: none; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>

@@ -1,0 +1,97 @@
+{
+  "course": "cabin-crew-aircraft",
+  "lessons": [
+    {
+      "lesson": "cabin-layout",
+      "key": {
+        "es": "Pasillo único o doble pasillo; galleys, lavabos, PSU, compartimentos y asientos de tripulación, y puertas designadas L1, R2…",
+        "en": "Single or twin aisle; galleys, lavatories, PSUs, overhead bins and crew seats, and doors designated L1, R2…"
+      },
+      "points": [
+        {
+          "es": "Pasillo único (A320, 737) para corto y medio radio; doble pasillo (A350, 787) para más pasajeros y largo radio.",
+          "en": "Single aisle (A320, 737) for short and medium haul; twin aisle (A350, 787) for more passengers and long haul."
+        },
+        {
+          "es": "La cabina se divide por clases y, para la tripulación, por zonas de responsabilidad ligadas a las puertas.",
+          "en": "The cabin is divided by class and, for the crew, into areas of responsibility tied to the doors."
+        },
+        {
+          "es": "Todo en el galley se bloquea en despegue, aterrizaje y turbulencia: un carro suelto es un proyectil.",
+          "en": "Everything in the galley is locked for take-off, landing and turbulence: a loose cart is a projectile."
+        },
+        {
+          "es": "Lavabos con detector de humo y extintor en la papelera; PSU con luces, llamada, aire y, a menudo, máscaras.",
+          "en": "Lavatories have a smoke detector and a waste-bin extinguisher; PSUs have lights, call button, air and often masks."
+        },
+        {
+          "es": "Puertas por lado y orden desde el morro: L1 es la primera de la izquierda; cada TCP se sienta junto a su salida.",
+          "en": "Doors by side and order from the nose: L1 is the first on the left; each crew member sits near their exit."
+        }
+      ]
+    },
+    {
+      "lesson": "doors-and-exits",
+      "key": {
+        "es": "Puerta armada = la rampa se despliega al abrir; se arma antes del remolque, se desarma al llegar y se hace comprobación cruzada.",
+        "en": "Armed door = the slide deploys when opened; arm before pushback, disarm on arrival and cross-check."
+      },
+      "points": [
+        {
+          "es": "Salidas a nivel del suelo (con rampa si el umbral está alto) y salidas sobre el ala.",
+          "en": "Floor-level exits (with a slide if the sill is high) and overwing exits."
+        },
+        {
+          "es": "La certificación clasifica las salidas por tipos según su tamaño (p. ej., FAA 25.807): más grande, más pasajeros.",
+          "en": "Certification classifies exits into types by size (e.g. FAA 25.807): larger exits, more passengers."
+        },
+        {
+          "es": "Abrir por error una puerta armada en el puesto despliega la rampa y puede herir a alguien fuera.",
+          "en": "Opening an armed door by mistake at the gate deploys the slide and can injure someone outside."
+        },
+        {
+          "es": "Demostración de 90 segundos con más de 44 asientos, usando como máximo la mitad de las salidas laterales.",
+          "en": "90-second evacuation demonstration for more than 44 seats, using at most half of the side exits."
+        },
+        {
+          "es": "Antes de abrir una salida en emergencia, evaluar fuera: fuego, humo, agua u obstáculos.",
+          "en": "Before opening an exit in an emergency, assess outside: fire, smoke, water or obstacles."
+        }
+      ]
+    },
+    {
+      "lesson": "emergency-equipment",
+      "key": {
+        "es": "Cuatro familias: fuego y humo, oxígeno, primeros auxilios y evacuación/supervivencia; cada TCP comprueba las de su zona antes del vuelo.",
+        "en": "Four families: fire and smoke, oxygen, first aid and evacuation/survival; each crew member checks their zone before flight."
+      },
+      "points": [
+        {
+          "es": "Fuego y humo: extintores, equipos de protección respiratoria (PBE) y guantes.",
+          "en": "Fire and smoke: extinguishers, protective breathing equipment (PBE) and gloves."
+        },
+        {
+          "es": "Oxígeno: máscaras de pasajeros y botellas portátiles. Primeros auxilios: botiquines y, en muchos aviones, desfibrilador.",
+          "en": "Oxygen: passenger masks and portable bottles. First aid: kits and, on many aircraft, a defibrillator."
+        },
+        {
+          "es": "Evacuación y supervivencia: rampas, linternas, megáfonos, chalecos y, sobre agua, balsas y radiobaliza.",
+          "en": "Evacuation and survival: slides, torches, megaphones, life jackets and, over water, rafts and an emergency beacon."
+        },
+        {
+          "es": "En la comprobación: en su sitio, precintos intactos, indicadores en la zona correcta y acceso libre.",
+          "en": "In the check: in place, seals intact, gauges in range and access clear."
+        },
+        {
+          "es": "Los fallos se comunican al jefe de cabina y al comandante; algunos pueden impedir el vuelo según la lista de equipo mínimo.",
+          "en": "Faults are reported to the senior cabin crew member and the commander; some may prevent the flight under the minimum equipment list."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

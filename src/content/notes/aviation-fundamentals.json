@@ -1,0 +1,213 @@
+{
+  "course": "aviation-fundamentals",
+  "lessons": [
+    {
+      "lesson": "what-is-an-aircraft",
+      "key": {
+        "es": "Un avión es solo un tipo de aeronave: la de ala fija y con motor.",
+        "en": "An aeroplane is just one kind of aircraft: the powered, fixed-wing one."
+      },
+      "points": [
+        {
+          "es": "Aeronave: máquina que se sostiene en la atmósfera por reacciones del aire, salvo las del aire contra la superficie (un aerodeslizador no lo es).",
+          "en": "Aircraft: a machine supported in the atmosphere by reactions of the air, other than those against the surface (a hovercraft is not one)."
+        },
+        {
+          "es": "El Anexo 7 de la OACI las clasifica por cómo se sostienen (más ligeras o más pesadas que el aire) y por si llevan motor.",
+          "en": "ICAO Annex 7 classifies them by how they stay up (lighter or heavier than air) and whether they have an engine."
+        },
+        {
+          "es": "Aerostatos: globo (sin motor) y dirigible (con motor). Aerodinos: planeador (sin motor), avión y giroavión (con motor).",
+          "en": "Lighter than air: balloon (unpowered) and airship (powered). Heavier than air: glider (unpowered), aeroplane and rotorcraft (powered)."
+        },
+        {
+          "es": "Avión: la sustentación la dan alas fijas. Helicóptero: rotores que giran.",
+          "en": "Aeroplane: lift comes from fixed wings. Helicopter: from rotating rotors."
+        },
+        {
+          "es": "Cinco partes de un avión: fuselaje, alas, empenaje (cola), tren de aterrizaje y grupo motopropulsor.",
+          "en": "Five main parts: fuselage, wings, empennage (tail), landing gear and powerplant."
+        }
+      ]
+    },
+    {
+      "lesson": "four-forces",
+      "key": {
+        "es": "En vuelo recto y nivelado a velocidad constante, sustentación = peso y empuje = resistencia.",
+        "en": "In straight and level flight at constant speed, lift = weight and thrust = drag."
+      },
+      "points": [
+        {
+          "es": "Las cuatro fuerzas: sustentación (arriba), peso (abajo), empuje (adelante) y resistencia (atrás).",
+          "en": "The four forces: lift (up), weight (down), thrust (forward) and drag (back)."
+        },
+        {
+          "es": "El perfil del ala desvía el aire hacia abajo y crea menos presión encima y más debajo; Bernoulli y Newton describen lo mismo.",
+          "en": "The airfoil deflects air downwards, giving lower pressure above and higher below; Bernoulli and Newton describe the same thing."
+        },
+        {
+          "es": "La sustentación crece con la velocidad (al cuadrado), la densidad del aire, la superficie alar y el ángulo de ataque.",
+          "en": "Lift grows with speed (squared), air density, wing area and angle of attack."
+        },
+        {
+          "es": "Ángulo de ataque: entre la cuerda del perfil y el viento relativo; no es la inclinación del morro respecto al horizonte.",
+          "en": "Angle of attack: between the chord line and the relative wind; it is not the nose attitude relative to the horizon."
+        },
+        {
+          "es": "La pérdida llega al superar el ángulo de ataque crítico, a cualquier velocidad; se sale reduciendo el ángulo de ataque. No tiene que ver con que se pare el motor.",
+          "en": "A stall happens when the critical angle of attack is exceeded, at any speed; recovery starts by reducing the angle of attack. It has nothing to do with an engine stopping."
+        }
+      ]
+    },
+    {
+      "lesson": "flight-controls",
+      "key": {
+        "es": "Alerones → alabeo; timón de profundidad → cabeceo; timón de dirección → guiñada.",
+        "en": "Ailerons → roll; elevator → pitch; rudder → yaw."
+      },
+      "points": [
+        {
+          "es": "Los tres ejes se cruzan en el centro de gravedad: longitudinal (alabeo), lateral (cabeceo) y vertical (guiñada).",
+          "en": "The three axes meet at the centre of gravity: longitudinal (roll), lateral (pitch) and vertical (yaw)."
+        },
+        {
+          "es": "Los alerones se mueven en sentidos opuestos; tirar de los mandos sube el morro; el pedal izquierdo lleva el morro a la izquierda.",
+          "en": "Ailerons move in opposite directions; pulling back raises the nose; left pedal moves the nose left."
+        },
+        {
+          "es": "Para virar se alabea; el timón de dirección coordina el viraje y contrarresta la guiñada adversa.",
+          "en": "To turn, the pilot banks; the rudder coordinates the turn and counters adverse yaw."
+        },
+        {
+          "es": "Flaps: más sustentación y más resistencia para volar más despacio (despegue y, sobre todo, aterrizaje).",
+          "en": "Flaps: more lift and more drag to fly slower (take-off and, above all, landing)."
+        },
+        {
+          "es": "Slats: retrasan la pérdida. Spoilers: menos sustentación y más resistencia. Compensación: mantener la actitud sin hacer fuerza.",
+          "en": "Slats: delay the stall. Spoilers: less lift and more drag. Trim: holds the attitude without constant force."
+        }
+      ]
+    },
+    {
+      "lesson": "phases-of-flight",
+      "key": {
+        "es": "Estacionado, remolque, rodaje, despegue, ascenso inicial, en ruta, aproximación, aterrizaje y rodaje.",
+        "en": "Standing, pushback, taxi, take-off, initial climb, en route, approach, landing and taxi."
+      },
+      "points": [
+        {
+          "es": "Las fases las definió el equipo CICTT (OACI y CAST) para comparar informes de seguridad de todo el mundo.",
+          "en": "The phases were defined by the CICTT team (ICAO and CAST) so safety reports worldwide can be compared."
+        },
+        {
+          "es": "Despegue: desde la potencia de despegue hasta 35 ft sobre la pista. Ascenso inicial: hasta la primera reducción de potencia o 1000 ft.",
+          "en": "Take-off: from take-off power to 35 ft above the runway. Initial climb: to the first power reduction or 1,000 ft."
+        },
+        {
+          "es": "En ruta incluye el crucero y las esperas; la aproximación incluye la aproximación frustrada (motor y al aire).",
+          "en": "En route includes cruise and holding; approach includes the missed approach (go-around)."
+        },
+        {
+          "es": "La recogida (flare) es levantar ligeramente el morro justo antes de tocar la pista.",
+          "en": "The flare is raising the nose slightly just before touchdown."
+        },
+        {
+          "es": "Fases críticas (Reglamento UE 965/2012): despegue, aproximación final, frustrada y aterrizaje; en ellas, cabina estéril.",
+          "en": "Critical phases (EU Regulation 965/2012): take-off, final approach, missed approach and landing; sterile flight deck applies."
+        }
+      ]
+    },
+    {
+      "lesson": "the-airport",
+      "key": {
+        "es": "Número de pista = rumbo magnético ÷ 10, redondeado; los dos extremos se diferencian en 18.",
+        "en": "Runway number = magnetic heading ÷ 10, rounded; the two ends differ by 18."
+      },
+      "points": [
+        {
+          "es": "Aeródromo: zona preparada para aeronaves. Aeropuerto: aeródromo con servicios para pasajeros o carga.",
+          "en": "Aerodrome: an area prepared for aircraft. Airport: an aerodrome with services for passengers or cargo."
+        },
+        {
+          "es": "Área de maniobras = pistas + calles de rodaje (la autoriza la torre). Área de movimiento = maniobras + plataformas.",
+          "en": "Manoeuvring area = runways + taxiways (cleared by the tower). Movement area = manoeuvring area + aprons."
+        },
+        {
+          "es": "Pistas paralelas: L, C y R vistas desde la aproximación; la 14L es la 32R desde el otro extremo. Un dígito lleva un cero delante (09).",
+          "en": "Parallel runways: L, C and R as seen on approach; 14L is 32R from the other end. Single digits take a leading zero (09)."
+        },
+        {
+          "es": "Marcas de pista blancas; de rodaje y plataforma, amarillas.",
+          "en": "Runway markings are white; taxiway and apron markings, yellow."
+        },
+        {
+          "es": "Letreros: blanco sobre rojo = instrucción obligatoria (no cruzar sin autorización); amarillo sobre negro = posición; negro sobre amarillo = dirección.",
+          "en": "Signs: white on red = mandatory instruction (do not cross without clearance); yellow on black = location; black on yellow = direction."
+        }
+      ]
+    },
+    {
+      "lesson": "who-sets-the-rules",
+      "key": {
+        "es": "La OACI fija las normas mundiales; EASA, FAA y AESA las aplican en su ámbito; la IATA no es una autoridad.",
+        "en": "ICAO sets worldwide standards; EASA, the FAA and AESA apply rules in their areas; IATA is not an authority."
+      },
+      "points": [
+        {
+          "es": "Convenio de Chicago: firmado el 7 de diciembre de 1944; la OACI es oficial desde el 4 de abril de 1947, con sede en Montreal y 193 Estados.",
+          "en": "Chicago Convention: signed on 7 December 1944; ICAO became official on 4 April 1947, based in Montreal, with 193 States."
+        },
+        {
+          "es": "La OACI adopta normas y métodos recomendados (SARPs) en los anexos; cada Estado los incorpora y notifica las diferencias.",
+          "en": "ICAO adopts Standards and Recommended Practices (SARPs) in the Annexes; each State adopts them and notifies differences."
+        },
+        {
+          "es": "EASA (2002, Colonia): prepara las normas comunes de la UE, certifica y supervisa.",
+          "en": "EASA (2002, Cologne): prepares common EU rules, certifies and oversees."
+        },
+        {
+          "es": "FAA (1958; nombre actual desde 1967): regula y además gestiona el control del tránsito aéreo de EE. UU.",
+          "en": "FAA (1958; current name since 1967): regulates and also runs US air traffic control."
+        },
+        {
+          "es": "AESA (2008): autoridad española que supervisa, inspecciona, sanciona, expide licencias y atiende reclamaciones. IATA: asociación de aerolíneas y sus códigos.",
+          "en": "AESA (2008): Spain's authority that oversees, inspects, sanctions, issues licences and handles complaints. IATA: the airlines' association and its codes."
+        }
+      ]
+    },
+    {
+      "lesson": "codes-and-language",
+      "key": {
+        "es": "El pasajero usa códigos IATA; pilotos y controladores, los de la OACI; por radio se dice el indicativo; la hora siempre en UTC.",
+        "en": "Passengers use IATA codes; pilots and controllers, ICAO codes; on the radio, the call sign; time is always UTC."
+      },
+      "points": [
+        {
+          "es": "Aeropuertos: IATA de 3 letras (MAD) y OACI de 4 (LEMD); la primera letra OACI indica la región (L sur de Europa, E norte, G con Canarias, K EE. UU.).",
+          "en": "Airports: 3-letter IATA (MAD) and 4-letter ICAO (LEMD); the first ICAO letter shows the region (L southern Europe, E northern, G incl. Canaries, K USA)."
+        },
+        {
+          "es": "Aerolíneas: IATA de 2 caracteres (IB), OACI de 3 letras (IBE) e indicativo radiotelefónico (IBERIA).",
+          "en": "Airlines: 2-character IATA (IB), 3-letter ICAO (IBE) and radiotelephony call sign (IBERIA)."
+        },
+        {
+          "es": "Designador de tipo de hasta 4 caracteres (A20N, B738) y matrícula con marca de nacionalidad (EC España, N EE. UU.).",
+          "en": "Type designator of up to 4 characters (A20N, B738) and registration with a nationality mark (EC Spain, N USA)."
+        },
+        {
+          "es": "Alfabeto fonético OACI (Alfa, Bravo, Charlie…) y cifras especiales: tree (3), fife (5), niner (9).",
+          "en": "ICAO phonetic alphabet (Alfa, Bravo, Charlie…) and special numbers: tree (3), fife (5), niner (9)."
+        },
+        {
+          "es": "UTC o hora Zulu (Z) con reloj de 24 h: España peninsular UTC+1 en invierno y UTC+2 en verano; Canarias, una hora menos.",
+          "en": "UTC or Zulu time (Z) on the 24-hour clock: mainland Spain is UTC+1 in winter and UTC+2 in summer; the Canaries, one hour less."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

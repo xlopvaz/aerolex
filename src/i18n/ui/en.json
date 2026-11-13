@@ -43,7 +43,8 @@
     "sources": "Sources",
     "review": "Mistake review",
     "airportDiagram": "Airport diagrams",
-    "cockpit": "Interactive flight deck"
+    "cockpit": "Interactive flight deck",
+    "academyNotes": "Notes"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -1464,5 +1465,26 @@
     "score": "{right} of {total}",
     "next": "Next",
     "draft": "Draft content, written from the sources cited for each element and awaiting review."
+  },
+  "notes": {
+    "metaTitle": "Academy notes · AeroLex",
+    "metaDescription": "Summaries of every AeroLex Academy course: the key idea and main points of each lesson, for revision without quizzes.",
+    "title": "Notes",
+    "lead": "The most important points of each course, lesson by lesson: the key idea and what is worth remembering. For quick revision, without quizzes.",
+    "cardText": "Course summaries for revision without quizzes.",
+    "open": "Open notes",
+    "lessonsCount": "{count} lessons",
+    "points": "{count} points",
+    "courseTitle": "Notes: {course}",
+    "courseLead": "Summary of the course's {count} lessons. To study it in depth, with examples and quizzes, open each lesson.",
+    "keyIdea": "Key idea",
+    "terms": "Terms:",
+    "fullLesson": "Open the full lesson",
+    "print": "Print or save as PDF",
+    "toc": "Lessons",
+    "backToCourse": "Go to the course",
+    "draft": "Draft notes: a summary of the lessons, which cite their sources. Awaiting review; if in doubt, the lesson prevails and, for real operations, the official documentation.",
+    "sourcesTitle": "Sources of the lessons",
+    "courseLink": "Course notes"
   }
 }

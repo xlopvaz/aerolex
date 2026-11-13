@@ -1,0 +1,172 @@
+{
+  "course": "taf",
+  "lessons": [
+    {
+      "lesson": "what-is-taf",
+      "key": {
+        "es": "El TAF es el pronóstico de un aeródromo: dice qué tiempo se espera, mientras el METAR dice qué tiempo hace.",
+        "en": "A TAF is an aerodrome forecast: it says what weather is expected, while the METAR says what it is now."
+      },
+      "points": [
+        {
+          "es": "Lo elabora un meteorólogo y usa casi los mismos códigos que el METAR.",
+          "en": "A meteorologist issues it, using almost the same codes as the METAR."
+        },
+        {
+          "es": "Sirve para decidir si se sale, cuánto combustible extra llevar y qué alternativos elegir.",
+          "en": "It is used to decide whether to depart, how much extra fuel to carry and which alternates to choose."
+        },
+        {
+          "es": "Validez entre 6 y 30 horas según la OACI (habitual: 9, 24 o 30 h).",
+          "en": "Validity of 6 to 30 hours under ICAO (commonly 9, 24 or 30 h)."
+        },
+        {
+          "es": "Incluye viento, visibilidad, tiempo, nubes, cambios y probabilidades; normalmente no lleva RVR, punto de rocío ni QNH.",
+          "en": "It includes wind, visibility, weather, cloud, changes and probabilities; normally no RVR, dew point or QNH."
+        },
+        {
+          "es": "Es una estimación, no una certeza: se contrasta con los METAR más recientes.",
+          "en": "It is an estimate, not a certainty: check it against the latest METARs."
+        }
+      ]
+    },
+    {
+      "lesson": "header-and-validity",
+      "key": {
+        "es": "TAF + lugar + emisión DDHHMMZ + validez DDHH/DDHH (sin minutos).",
+        "en": "TAF + location + issue time DDHHMMZ + validity DDHH/DDHH (no minutes)."
+      },
+      "points": [
+        {
+          "es": "1218/1324 = del día 12 a las 18 UTC al día 13 a las 24 UTC (fin del día 13).",
+          "en": "1218/1324 = from day 12 at 18 UTC to day 13 at 24 UTC (end of day 13)."
+        },
+        {
+          "es": "Ejemplos: 1306/1406 son 24 h; 1312/1418, 30 h; 1309/1318, 9 h.",
+          "en": "Examples: 1306/1406 is 24 h; 1312/1418, 30 h; 1309/1318, 9 h."
+        },
+        {
+          "es": "AMD = enmendado (sustituye al anterior); COR = corregido; CNL = cancelado; NIL = no hay TAF.",
+          "en": "AMD = amended (replaces the previous one); COR = corrected; CNL = cancelled; NIL = no TAF."
+        },
+        {
+          "es": "Comprueba siempre que lees el último TAF emitido.",
+          "en": "Always check that you are reading the latest TAF issued."
+        }
+      ]
+    },
+    {
+      "lesson": "forecast-conditions",
+      "key": {
+        "es": "La parte de base usa los códigos del METAR para las condiciones al inicio de la validez.",
+        "en": "The base forecast uses METAR codes for the conditions at the start of the validity period."
+      },
+      "points": [
+        {
+          "es": "Se usan G, VRB, CAVOK, NSC y los códigos de tiempo presente.",
+          "en": "G, VRB, CAVOK, NSC and the present weather codes are all used."
+        },
+        {
+          "es": "De los tipos de nube solo se pronostica el CB; el TCU no.",
+          "en": "Of the cloud types, only CB is forecast; TCU is not."
+        },
+        {
+          "es": "Sin RVR ni punto de rocío y, normalmente, sin presión.",
+          "en": "No RVR or dew point and, normally, no pressure."
+        },
+        {
+          "es": "NSW solo aparece en grupos de cambio, para indicar el fin del tiempo significativo.",
+          "en": "NSW only appears in change groups, to show significant weather ending."
+        },
+        {
+          "es": "En EE. UU.: millas (P6SM = más de 6), sin CAVOK y con cizalladura no convectiva (WS020/24045KT).",
+          "en": "In the USA: miles (P6SM = more than 6), no CAVOK, and non-convective wind shear groups (WS020/24045KT)."
+        }
+      ]
+    },
+    {
+      "lesson": "change-groups",
+      "key": {
+        "es": "FM: cambio completo a una hora; BECMG: cambio progresivo que se mantiene; TEMPO: fluctuaciones breves.",
+        "en": "FM: complete change at a time; BECMG: gradual change that lasts; TEMPO: brief fluctuations."
+      },
+      "points": [
+        {
+          "es": "FMDDHHMM: desde esa hora rigen condiciones nuevas y completas; lo anterior se descarta.",
+          "en": "FMDDHHMM: from that time a complete new forecast applies; everything before is dropped."
+        },
+        {
+          "es": "BECMG DDHH/DDHH: el cambio ocurre dentro del periodo (normalmente hasta 2 h, máximo 4) y solo se escriben los elementos que cambian.",
+          "en": "BECMG DDHH/DDHH: the change happens within the period (normally up to 2 h, at most 4) and only the changing elements are written."
+        },
+        {
+          "es": "TEMPO: cada fluctuación dura menos de una hora y, en total, menos de la mitad del periodo; después vuelven las condiciones anteriores.",
+          "en": "TEMPO: each fluctuation lasts under an hour and, in total, less than half the period; afterwards the earlier conditions apply again."
+        },
+        {
+          "es": "Para planificar, las condiciones de un TEMPO cuentan, según la normativa y el operador.",
+          "en": "For planning, TEMPO conditions do count, under the rules of the regulator and operator."
+        }
+      ]
+    },
+    {
+      "lesson": "probability-and-temperature",
+      "key": {
+        "es": "PROB30 o PROB40 para fenómenos inciertos; TX y TN para las temperaturas extremas; NSW para el fin del tiempo significativo.",
+        "en": "PROB30 or PROB40 for uncertain weather; TX and TN for the extreme temperatures; NSW for the end of significant weather."
+      },
+      "points": [
+        {
+          "es": "Solo hay dos probabilidades: 30 % y 40 % (a partir del 50 % se pronostica directamente).",
+          "en": "There are only two probabilities: 30% and 40% (from 50% it is forecast outright)."
+        },
+        {
+          "es": "PROB va solo con un periodo o combinado con TEMPO; nunca con BECMG ni FM.",
+          "en": "PROB goes alone with a period or combined with TEMPO; never with BECMG or FM."
+        },
+        {
+          "es": "TX24/1315Z = máxima de 24 °C el día 13 a las 15 UTC; TNM02 = mínima de −2 °C.",
+          "en": "TX24/1315Z = maximum of 24 °C on day 13 at 15 UTC; TNM02 = minimum of −2 °C."
+        },
+        {
+          "es": "Las temperaturas ayudan a prever performances con calor o hielo con frío.",
+          "en": "Temperatures help anticipate take-off performance in heat or ice in the cold."
+        },
+        {
+          "es": "En EE. UU. predominan los FM y solo se usa PROB30.",
+          "en": "In the USA, FM groups dominate and only PROB30 is used."
+        }
+      ]
+    },
+    {
+      "lesson": "full-decode",
+      "key": {
+        "es": "Dibuja una línea temporal: base → cambios en orden → para cada hora, qué FM/BECMG ya ocurrió y qué TEMPO/PROB está activo.",
+        "en": "Draw a timeline: base → changes in order → for each time, which FM/BECMG has happened and which TEMPO/PROB is active."
+      },
+      "points": [
+        {
+          "es": "Lee primero la cabecera: aeródromo, emisión y validez.",
+          "en": "Read the header first: aerodrome, issue time and validity."
+        },
+        {
+          "es": "Las condiciones de base rigen desde el principio hasta que un FM o BECMG las cambie.",
+          "en": "The base conditions apply from the start until an FM or BECMG changes them."
+        },
+        {
+          "es": "Un TEMPO describe lo que puede pasar a ratos, sin sustituir las condiciones de fondo.",
+          "en": "A TEMPO describes what may happen at times, without replacing the background conditions."
+        },
+        {
+          "es": "En los TAF de EE. UU. la sucesión de FM marca cada nuevo pronóstico completo.",
+          "en": "In US TAFs, each FM in turn starts a new complete forecast."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
