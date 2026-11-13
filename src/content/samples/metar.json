@@ -1,0 +1,10 @@
+{
+  "note": "Didactic examples written for AeroLex. They are NOT real observations and must be labelled as didactic wherever they are shown.",
+  "examples": [
+    { "id": "fair", "raw": "METAR LEMD 131030Z 24012G25KT 210V280 9999 FEW030 SCT100 18/09 Q1017 NOSIG", "label": { "es": "Buen tiempo con rachas", "en": "Fair weather, gusty" } },
+    { "id": "rain-tempo", "raw": "METAR LEST 130630Z 22018G30KT 4000 -RA BKN008 OVC015 12/11 Q1004 TEMPO FM0700 TL0900 2000 RA BKN005", "label": { "es": "Lluvia y nubes bajas, con TEMPO", "en": "Rain and low cloud, with TEMPO" } },
+    { "id": "fog-rvr", "raw": "SPECI EGLL 130650Z 00000KT 0300 R27L/0450N R27R/0500U FG VV001 07/07 Q1021", "label": { "es": "Niebla con RVR (SPECI)", "en": "Fog with RVR (SPECI)" } },
+    { "id": "us-format", "raw": "METAR KJFK 131151Z 31015G24KT 10SM FEW045 BKN250 08/M03 A3012 RMK AO2 SLP199", "label": { "es": "Formato de EE. UU.", "en": "US format" } },
+    { "id": "thunderstorm", "raw": "METAR LEVC 131500Z 27015G35KT 3000 +TSRA SCT015 BKN025CB 24/20 Q1009 RETS", "label": { "es": "Tormenta con cumulonimbos", "en": "Thunderstorm with cumulonimbus" } }
+  ]
+}

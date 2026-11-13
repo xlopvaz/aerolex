@@ -111,6 +111,10 @@ El contenido se sigue ampliando de forma continua después de esta fase.
 9. **Motor de quizzes, flashcards y generador de quizzes.**
 10. **Weather Glossary, Acronym Dictionary y Aviation Timeline.**
 
+**Progreso**
+- [x] **Bloque 1 — Decodificador METAR (13/11/2026):** librería pura `src/lib/metar/` (tokenizador con posiciones, parsers por grupo, máquina de estados con avisos de orden, grupos desconocidos o imposibles señalados sin adivinar, formatos OACI y EE. UU., tendencias y RMK), explicaciones ES/EN desde `src/i18n`, rosa de vientos, perfil de nubes y techo, enlace compartible (`?m=`), ejemplos didácticos en `src/content/samples/metar.json`, 37 tests unitarios y e2e. Nueva sección «Herramientas» que solo lista las herramientas que existen.
+- [ ] Decodificador TAF · Práctica METAR/TAF · Conversor · METAR/TAF en directo · Buscador IATA/OACI · Fraseología ATC · Identificación de aeronaves · Flashcards · Glosario y cronología.
+
 **Hecho cuando:** cada herramienta tiene tests unitarios de sus cálculos o de su parseo, el aviso "educativo, no operacional" y funciona sin conexión cuando es posible.
 
 ## FASE 5 — Experiencia de usuario

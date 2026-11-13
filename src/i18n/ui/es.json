@@ -24,7 +24,9 @@
     "acronyms": "Abreviaturas y acrónimos",
     "academy": "Academia",
     "hangar": "Hangar",
-    "compare": "Comparador de aeronaves"
+    "compare": "Comparador de aeronaves",
+    "tools": "Herramientas",
+    "metarDecoder": "Decodificador METAR"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -41,7 +43,7 @@
     "disclaimer": "AeroLex es una plataforma educativa. No sustituye la formación reglada, el AFM/POH, el manual de operaciones del operador ni la documentación oficial vigente.",
     "source": "Código fuente en GitHub",
     "built": "Construido en abierto, fase a fase.",
-    "phase": "Fase 3 · Contenido"
+    "phase": "Fase 4 · Herramientas"
   },
   "home": {
     "metaTitle": "AeroLex · Aprende el idioma del cielo",
@@ -424,5 +426,284 @@
     "educational": "Herramienta educativa. Las cifras son datos genéricos del fabricante; cada avión real varía según el operador, la configuración y el motor. No apta para uso operacional.",
     "statusLabel": "Estado",
     "entryIntoService": "Entrada en servicio"
+  },
+  "metar": {
+    "kinds": {
+      "type": "Tipo de informe",
+      "station": "Aeródromo",
+      "time": "Día y hora",
+      "modifier": "Modificador",
+      "wind": "Viento",
+      "windVariation": "Variación del viento",
+      "cavok": "CAVOK",
+      "visibility": "Visibilidad",
+      "minVisibility": "Visibilidad mínima",
+      "rvr": "Alcance visual en pista (RVR)",
+      "weather": "Tiempo presente",
+      "clouds": "Nubes",
+      "temperature": "Temperatura y punto de rocío",
+      "pressure": "Presión",
+      "recent": "Tiempo reciente",
+      "windShear": "Cizalladura del viento",
+      "trend": "Tendencia",
+      "trendTime": "Hora de la tendencia",
+      "remarks": "Observaciones (RMK)",
+      "unknown": "No reconocido"
+    },
+    "sections": {
+      "main": "Observación",
+      "trend": "Tendencia (próximas 2 horas)",
+      "remarks": "Observaciones"
+    },
+    "explain": {
+      "type": {
+        "METAR": "Informe ordinario de observación meteorológica del aeródromo.",
+        "SPECI": "Informe especial: se emite fuera de hora cuando las condiciones cambian de forma significativa.",
+        "TAF": "Pronóstico de aeródromo (TAF). Usa el decodificador TAF para leerlo."
+      },
+      "modifier": {
+        "COR": "Informe corregido: sustituye a uno anterior con un error.",
+        "AUTO": "Observación automática, sin intervención humana.",
+        "NIL": "Informe ausente: no hay datos para esta hora.",
+        "AMD": "Pronóstico enmendado.",
+        "CNL": "Informe cancelado."
+      },
+      "station": "Indicador OACI del aeródromo: {code}.",
+      "time": "Día {day} del mes, a las {hh}:{mm} UTC.",
+      "wind": "Viento de {dir}° a {speed}.",
+      "windGust": "Rachas de {gust}.",
+      "windVrb": "Viento de dirección variable a {speed}.",
+      "windCalm": "Calma: viento inferior a 1 nudo.",
+      "windMissing": "Viento no disponible.",
+      "speed": "{v} {unit}",
+      "approxKmh": "(≈ {v} km/h)",
+      "units": {
+        "KT": "kt",
+        "MPS": "m/s",
+        "KMH": "km/h"
+      },
+      "above": "más de {v}",
+      "below": "menos de {v}",
+      "m": "{v} m",
+      "km": "{v} km",
+      "windVariation": "La dirección del viento varía entre {from}° y {to}°.",
+      "cavok": "CAVOK: visibilidad de 10 km o más, sin nubes por debajo de 5000 ft (o de la altitud mínima de sector más alta, si es mayor), sin cumulonimbos ni cúmulos en torre y sin tiempo significativo.",
+      "visM": "Visibilidad dominante de {v}.",
+      "vis10k": "Visibilidad de 10 km o más.",
+      "vis50": "Visibilidad inferior a 50 m.",
+      "visNdv": "NDV: la estación automática no puede evaluar variaciones según la dirección.",
+      "visMissing": "Visibilidad no disponible.",
+      "visSm": "Visibilidad de {v} millas terrestres (≈ {m}).",
+      "visSmBelow": "Visibilidad inferior a {v} millas terrestres (≈ {m}).",
+      "visSmAbove": "Visibilidad superior a {v} millas terrestres (≈ {m}).",
+      "minVis": "Visibilidad mínima de {v} hacia el {dir}.",
+      "dirs": {
+        "N": "norte",
+        "NE": "nordeste",
+        "E": "este",
+        "SE": "sudeste",
+        "S": "sur",
+        "SW": "sudoeste",
+        "W": "oeste",
+        "NW": "noroeste"
+      },
+      "rvr": "RVR de la pista {rwy}: {value}.",
+      "rvrRange": "entre {min} y {max}",
+      "rvrTrend": {
+        "U": "Tendencia: en aumento.",
+        "D": "Tendencia: en disminución.",
+        "N": "Sin cambios apreciables."
+      },
+      "intensity": {
+        "light": "ligera",
+        "moderate": "moderada",
+        "heavy": "fuerte"
+      },
+      "intensityLabel": "intensidad {i}",
+      "and": " y ",
+      "wxVicinity": "{what} en las proximidades del aeródromo, no en él",
+      "wxNsw": "NSW: fin del tiempo significativo",
+      "wxMissing": "Tiempo presente no observado (estación automática)",
+      "wxTornado": "Tornado o tromba marina",
+      "descriptors": {
+        "MI": "baja",
+        "BC": "en bancos",
+        "PR": "parcial",
+        "DR": "levantada por el viento a poca altura",
+        "BL": "levantada por el viento a cierta altura",
+        "SH": "en forma de chubascos",
+        "TS": "con tormenta",
+        "FZ": "engelante"
+      },
+      "descriptorsAlone": {
+        "TS": "tormenta",
+        "SH": "chubascos"
+      },
+      "phenomena": {
+        "DZ": "llovizna",
+        "RA": "lluvia",
+        "SN": "nieve",
+        "SG": "cinarra",
+        "PL": "hielo granulado",
+        "GR": "granizo",
+        "GS": "granizo pequeño o nieve granulada",
+        "UP": "precipitación de tipo desconocido",
+        "IC": "cristales de hielo",
+        "BR": "neblina",
+        "FG": "niebla",
+        "FU": "humo",
+        "VA": "ceniza volcánica",
+        "DU": "polvo extendido",
+        "SA": "arena",
+        "HZ": "calima",
+        "PY": "rociones",
+        "PO": "remolinos de polvo o arena",
+        "SQ": "turbonadas",
+        "FC": "nube en embudo",
+        "SS": "tempestad de arena",
+        "DS": "tempestad de polvo"
+      },
+      "recent": "Tiempo reciente, observado desde el informe anterior pero ya no presente: {what}.",
+      "covers": {
+        "FEW": "Nubes escasas (1–2 octas)",
+        "SCT": "Nubes dispersas (3–4 octas)",
+        "BKN": "Nubosidad abundante (5–7 octas)",
+        "OVC": "Cielo cubierto (8 octas)"
+      },
+      "coverUnknown": "Nubes de cobertura no identificada",
+      "clouds": "{cover} con la base a {h} ft sobre el aeródromo.",
+      "cloudsNoHeight": "{cover}; altura de la base no disponible.",
+      "cloudType": {
+        "CB": "Cumulonimbos.",
+        "TCU": "Cúmulos en torre.",
+        "unknown": "Tipo de nube no identificado (estación automática)."
+      },
+      "vv": "Cielo oculto: visibilidad vertical de {h} ft.",
+      "vvMissing": "Cielo oculto; visibilidad vertical no disponible.",
+      "special": {
+        "NSC": "NSC: sin nubes significativas (ninguna por debajo de 5000 ft ni cumulonimbos o cúmulos en torre).",
+        "NCD": "NCD: la estación automática no detecta nubes.",
+        "SKC": "SKC: cielo despejado.",
+        "CLR": "CLR: la estación automática no detecta nubes por debajo de 12 000 ft (uso de EE. UU.)."
+      },
+      "temperature": "Temperatura {t} °C y punto de rocío {d} °C (diferencia de {spread} °C).",
+      "temperatureNoDew": "Temperatura {t} °C; punto de rocío no disponible.",
+      "qnh": "QNH {v} hPa (≈ {alt} inHg).",
+      "altimeter": "Reglaje altimétrico {v} inHg (≈ {alt} hPa).",
+      "windShear": "Cizalladura del viento en la pista {rwy}.",
+      "windShearAll": "Cizalladura del viento en todas las pistas.",
+      "trend": {
+        "NOSIG": "NOSIG: no se esperan cambios significativos en las próximas 2 horas.",
+        "BECMG": "BECMG: cambio previsto que se produce de forma gradual.",
+        "TEMPO": "TEMPO: fluctuaciones temporales previstas."
+      },
+      "trendTime": {
+        "FM": "Desde las {hh}:{mm} UTC.",
+        "TL": "Hasta las {hh}:{mm} UTC.",
+        "AT": "A las {hh}:{mm} UTC."
+      },
+      "remarks": "Observaciones de uso nacional. Se muestran tal cual: no se descodifican.",
+      "unknown": "Grupo no reconocido. No se interpreta, para no inducir a error.",
+      "invalidNote": "⚠ Formato reconocido, pero con valores imposibles."
+    },
+    "issues": {
+      "empty": "Escribe o pega un mensaje METAR o SPECI.",
+      "isTaf": "Parece un TAF, no un METAR.",
+      "noStation": "Falta el indicador OACI del aeródromo.",
+      "noTime": "Falta el grupo de día y hora (DDHHMMZ).",
+      "noWind": "No se ha encontrado el grupo de viento.",
+      "noVisibility": "No se ha encontrado la visibilidad ni CAVOK.",
+      "noTemperature": "No se ha encontrado el grupo de temperatura y punto de rocío.",
+      "noPressure": "No se ha encontrado el grupo de presión (Q o A).",
+      "cavokWithWeather": "CAVOK no debería ir acompañado de tiempo presente ni de grupos de nubes.",
+      "outOfOrder": "El grupo {group} está fuera del orden habitual.",
+      "unknownGroup": "Grupo no reconocido: {group}.",
+      "windNotTens": "La dirección del viento de {group} no está redondeada a la decena de grados.",
+      "invalid": {
+        "range": "El grupo {group} tiene valores fuera de rango.",
+        "gust": "En {group}, la racha no puede ser menor o igual que el viento medio.",
+        "dewAboveTemp": "En {group}, el punto de rocío no puede ser mayor que la temperatura."
+      }
+    }
+  },
+  "tools": {
+    "metaTitle": "Laboratorio de herramientas · AeroLex",
+    "metaDescription": "Herramientas aeronáuticas educativas: decodificadores, conversores y entrenadores.",
+    "title": "Laboratorio de herramientas",
+    "lead": "Herramientas para practicar con mensajes y datos aeronáuticos reales y de ejemplo. Funcionan en tu navegador, sin cuentas ni datos personales.",
+    "educational": "Herramientas educativas: no aptas para uso operacional. Para volar, usa siempre la información oficial y los servicios meteorológicos aeronáuticos autorizados.",
+    "open": "Abrir",
+    "cards": {
+      "metarDecoder": {
+        "title": "Decodificador METAR",
+        "text": "Pega un METAR o SPECI y obtén cada grupo explicado, con rosa de vientos, capas de nubes y avisos de formato."
+      }
+    }
+  },
+  "metarTool": {
+    "metaTitle": "Decodificador METAR y SPECI · AeroLex",
+    "metaDescription": "Decodifica un METAR o SPECI grupo a grupo, en español y en inglés, con formatos de la OACI y de EE. UU.",
+    "title": "Decodificador METAR",
+    "lead": "Pega un METAR o SPECI y cada grupo se explica en lenguaje claro. Admite los formatos de la OACI y de EE. UU. (SM, inHg, RMK) y marca lo que no reconoce en lugar de adivinarlo.",
+    "inputLabel": "Mensaje METAR o SPECI",
+    "placeholder": "METAR LEMD 131030Z 24012KT 9999 FEW030 18/09 Q1017 NOSIG",
+    "hint": "Se descodifica mientras escribes. El mensaje no sale de tu navegador.",
+    "clear": "Borrar",
+    "copyLink": "Copiar enlace",
+    "copied": "Enlace copiado",
+    "examplesTitle": "Ejemplos didácticos",
+    "sourceExample": "Ejemplo didáctico",
+    "sourceUser": "Mensaje introducido por ti",
+    "resultTitle": "Resultado",
+    "highlightTitle": "Mensaje por grupos",
+    "groupsTitle": "Grupo a grupo",
+    "issuesTitle": "Comprobación del formato",
+    "windTitle": "Viento",
+    "cloudsTitle": "Capas de nubes",
+    "ceilingTitle": "Techo de nubes",
+    "colGroup": "Grupo",
+    "colKind": "Qué es",
+    "colMeaning": "Significado",
+    "tableCaption": "Explicación de cada grupo del mensaje",
+    "status": {
+      "unknown": "No reconocido",
+      "invalid": "Valores imposibles"
+    },
+    "level": {
+      "error": "Error",
+      "warning": "Aviso"
+    },
+    "noIssues": "No se han encontrado problemas de formato.",
+    "cardinal": {
+      "N": "N",
+      "E": "E",
+      "S": "S",
+      "W": "O"
+    },
+    "units": {
+      "KT": "kt",
+      "MPS": "m/s",
+      "KMH": "km/h"
+    },
+    "calm": "Calma",
+    "noWind": "Sin datos",
+    "roseTitle": "Viento de {dir}° a {speed}",
+    "cloudsCavok": "CAVOK: sin nubes significativas",
+    "cloudsNone": "Sin nubes que dibujar",
+    "cloudsUnknown": "Sin información de nubes",
+    "cloudsAria": "Capas de nubes: {layers}",
+    "ftAal": "ft sobre el aeródromo",
+    "noCeiling": "Sin techo",
+    "locale": "es-ES",
+    "noscript": "El decodificador necesita JavaScript. Debajo tienes un ejemplo ya descodificado.",
+    "learnMore": "¿Quieres aprender a leerlo tú? Prueba la Academia METAR y SPECI."
+  },
+  "navShort": {
+    "home": "Inicio",
+    "academy": "Academia",
+    "dictionary": "Diccionario",
+    "hangar": "Hangar",
+    "dashboard": "Panel",
+    "tools": "Lab"
   }
 }

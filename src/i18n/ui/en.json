@@ -24,7 +24,9 @@
     "acronyms": "Abbreviations & acronyms",
     "academy": "Academy",
     "hangar": "Hangar",
-    "compare": "Aircraft comparator"
+    "compare": "Aircraft comparator",
+    "tools": "Tools",
+    "metarDecoder": "METAR decoder"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -41,7 +43,7 @@
     "disclaimer": "AeroLex is an educational platform. It does not replace approved training, the AFM/POH, the operator's operations manual or current official documentation.",
     "source": "Source code on GitHub",
     "built": "Built in the open, one phase at a time.",
-    "phase": "Phase 3 · Content"
+    "phase": "Phase 4 · Tools"
   },
   "home": {
     "metaTitle": "AeroLex · Learn the language of the sky",
@@ -424,5 +426,284 @@
     "educational": "Educational tool. Figures are generic manufacturer data; actual aircraft vary by operator, configuration and engine. Not for operational use.",
     "statusLabel": "Status",
     "entryIntoService": "Entry into service"
+  },
+  "metar": {
+    "kinds": {
+      "type": "Report type",
+      "station": "Aerodrome",
+      "time": "Day and time",
+      "modifier": "Modifier",
+      "wind": "Wind",
+      "windVariation": "Wind variation",
+      "cavok": "CAVOK",
+      "visibility": "Visibility",
+      "minVisibility": "Minimum visibility",
+      "rvr": "Runway visual range (RVR)",
+      "weather": "Present weather",
+      "clouds": "Clouds",
+      "temperature": "Temperature and dew point",
+      "pressure": "Pressure",
+      "recent": "Recent weather",
+      "windShear": "Wind shear",
+      "trend": "Trend",
+      "trendTime": "Trend time",
+      "remarks": "Remarks (RMK)",
+      "unknown": "Not recognised"
+    },
+    "sections": {
+      "main": "Observation",
+      "trend": "Trend (next 2 hours)",
+      "remarks": "Remarks"
+    },
+    "explain": {
+      "type": {
+        "METAR": "Routine aerodrome weather observation report.",
+        "SPECI": "Special report: issued between routine reports when conditions change significantly.",
+        "TAF": "Terminal aerodrome forecast (TAF). Use the TAF decoder to read it."
+      },
+      "modifier": {
+        "COR": "Corrected report: replaces an earlier one that had an error.",
+        "AUTO": "Automated observation, with no human intervention.",
+        "NIL": "Missing report: there is no data for this time.",
+        "AMD": "Amended forecast.",
+        "CNL": "Cancelled report."
+      },
+      "station": "ICAO location indicator of the aerodrome: {code}.",
+      "time": "Day {day} of the month, at {hh}:{mm} UTC.",
+      "wind": "Wind from {dir}° at {speed}.",
+      "windGust": "Gusting to {gust}.",
+      "windVrb": "Variable wind direction at {speed}.",
+      "windCalm": "Calm: wind below 1 knot.",
+      "windMissing": "Wind not available.",
+      "speed": "{v} {unit}",
+      "approxKmh": "(≈ {v} km/h)",
+      "units": {
+        "KT": "kt",
+        "MPS": "m/s",
+        "KMH": "km/h"
+      },
+      "above": "more than {v}",
+      "below": "less than {v}",
+      "m": "{v} m",
+      "km": "{v} km",
+      "windVariation": "The wind direction varies between {from}° and {to}°.",
+      "cavok": "CAVOK: visibility 10 km or more, no cloud below 5,000 ft (or the highest minimum sector altitude, if greater), no cumulonimbus or towering cumulus, and no significant weather.",
+      "visM": "Prevailing visibility {v}.",
+      "vis10k": "Visibility 10 km or more.",
+      "vis50": "Visibility less than 50 m.",
+      "visNdv": "NDV: the automated station cannot assess directional variations.",
+      "visMissing": "Visibility not available.",
+      "visSm": "Visibility {v} statute miles (≈ {m}).",
+      "visSmBelow": "Visibility less than {v} statute miles (≈ {m}).",
+      "visSmAbove": "Visibility more than {v} statute miles (≈ {m}).",
+      "minVis": "Minimum visibility {v} towards the {dir}.",
+      "dirs": {
+        "N": "north",
+        "NE": "north-east",
+        "E": "east",
+        "SE": "south-east",
+        "S": "south",
+        "SW": "south-west",
+        "W": "west",
+        "NW": "north-west"
+      },
+      "rvr": "RVR for runway {rwy}: {value}.",
+      "rvrRange": "between {min} and {max}",
+      "rvrTrend": {
+        "U": "Trend: increasing.",
+        "D": "Trend: decreasing.",
+        "N": "No distinct change."
+      },
+      "intensity": {
+        "light": "light",
+        "moderate": "moderate",
+        "heavy": "heavy"
+      },
+      "intensityLabel": "{i} intensity",
+      "and": " and ",
+      "wxVicinity": "{what} in the vicinity of the aerodrome, not at it",
+      "wxNsw": "NSW: no significant weather (end of significant weather)",
+      "wxMissing": "Present weather not observed (automated station)",
+      "wxTornado": "Tornado or waterspout",
+      "descriptors": {
+        "MI": "shallow",
+        "BC": "patches",
+        "PR": "partial",
+        "DR": "low drifting",
+        "BL": "blowing",
+        "SH": "showers",
+        "TS": "with thunderstorm",
+        "FZ": "freezing"
+      },
+      "descriptorsAlone": {
+        "TS": "thunderstorm",
+        "SH": "showers"
+      },
+      "phenomena": {
+        "DZ": "drizzle",
+        "RA": "rain",
+        "SN": "snow",
+        "SG": "snow grains",
+        "PL": "ice pellets",
+        "GR": "hail",
+        "GS": "small hail or snow pellets",
+        "UP": "unknown precipitation",
+        "IC": "ice crystals",
+        "BR": "mist",
+        "FG": "fog",
+        "FU": "smoke",
+        "VA": "volcanic ash",
+        "DU": "widespread dust",
+        "SA": "sand",
+        "HZ": "haze",
+        "PY": "spray",
+        "PO": "dust or sand whirls",
+        "SQ": "squalls",
+        "FC": "funnel cloud",
+        "SS": "sandstorm",
+        "DS": "duststorm"
+      },
+      "recent": "Recent weather, observed since the previous report but no longer present: {what}.",
+      "covers": {
+        "FEW": "Few clouds (1–2 oktas)",
+        "SCT": "Scattered clouds (3–4 oktas)",
+        "BKN": "Broken clouds (5–7 oktas)",
+        "OVC": "Overcast (8 oktas)"
+      },
+      "coverUnknown": "Cloud of unidentified cover",
+      "clouds": "{cover} with the base at {h} ft above the aerodrome.",
+      "cloudsNoHeight": "{cover}; base height not available.",
+      "cloudType": {
+        "CB": "Cumulonimbus.",
+        "TCU": "Towering cumulus.",
+        "unknown": "Cloud type not identified (automated station)."
+      },
+      "vv": "Sky obscured: vertical visibility {h} ft.",
+      "vvMissing": "Sky obscured; vertical visibility not available.",
+      "special": {
+        "NSC": "NSC: no significant cloud (none below 5,000 ft and no cumulonimbus or towering cumulus).",
+        "NCD": "NCD: the automated station detects no cloud.",
+        "SKC": "SKC: sky clear.",
+        "CLR": "CLR: the automated station detects no cloud below 12,000 ft (US usage)."
+      },
+      "temperature": "Temperature {t} °C and dew point {d} °C (spread {spread} °C).",
+      "temperatureNoDew": "Temperature {t} °C; dew point not available.",
+      "qnh": "QNH {v} hPa (≈ {alt} inHg).",
+      "altimeter": "Altimeter setting {v} inHg (≈ {alt} hPa).",
+      "windShear": "Wind shear on runway {rwy}.",
+      "windShearAll": "Wind shear on all runways.",
+      "trend": {
+        "NOSIG": "NOSIG: no significant change expected in the next 2 hours.",
+        "BECMG": "BECMG: a change expected to happen gradually.",
+        "TEMPO": "TEMPO: temporary fluctuations expected."
+      },
+      "trendTime": {
+        "FM": "From {hh}:{mm} UTC.",
+        "TL": "Until {hh}:{mm} UTC.",
+        "AT": "At {hh}:{mm} UTC."
+      },
+      "remarks": "National remarks. Shown as they are: not decoded.",
+      "unknown": "Group not recognised. It is not interpreted, to avoid misleading you.",
+      "invalidNote": "⚠ Recognised format, but with impossible values."
+    },
+    "issues": {
+      "empty": "Type or paste a METAR or SPECI message.",
+      "isTaf": "This looks like a TAF, not a METAR.",
+      "noStation": "The aerodrome ICAO location indicator is missing.",
+      "noTime": "The day and time group (DDHHMMZ) is missing.",
+      "noWind": "No wind group was found.",
+      "noVisibility": "No visibility group or CAVOK was found.",
+      "noTemperature": "No temperature and dew point group was found.",
+      "noPressure": "No pressure group (Q or A) was found.",
+      "cavokWithWeather": "CAVOK should not be accompanied by present weather or cloud groups.",
+      "outOfOrder": "Group {group} is out of the usual order.",
+      "unknownGroup": "Group not recognised: {group}.",
+      "windNotTens": "The wind direction in {group} is not rounded to the nearest ten degrees.",
+      "invalid": {
+        "range": "Group {group} has values out of range.",
+        "gust": "In {group}, the gust cannot be less than or equal to the mean wind.",
+        "dewAboveTemp": "In {group}, the dew point cannot be higher than the temperature."
+      }
+    }
+  },
+  "tools": {
+    "metaTitle": "Tools lab · AeroLex",
+    "metaDescription": "Educational aviation tools: decoders, converters and trainers.",
+    "title": "Tools lab",
+    "lead": "Tools to practise with real and example aviation messages and data. They run in your browser, with no accounts and no personal data.",
+    "educational": "Educational tools: not for operational use. For flying, always use official information and authorised aviation weather services.",
+    "open": "Open",
+    "cards": {
+      "metarDecoder": {
+        "title": "METAR decoder",
+        "text": "Paste a METAR or SPECI and get every group explained, with a wind rose, cloud layers and format warnings."
+      }
+    }
+  },
+  "metarTool": {
+    "metaTitle": "METAR and SPECI decoder · AeroLex",
+    "metaDescription": "Decode a METAR or SPECI group by group, in English and Spanish, in ICAO and US formats.",
+    "title": "METAR decoder",
+    "lead": "Paste a METAR or SPECI and every group is explained in plain language. It handles ICAO and US formats (SM, inHg, RMK) and flags what it does not recognise instead of guessing.",
+    "inputLabel": "METAR or SPECI message",
+    "placeholder": "METAR LEMD 131030Z 24012KT 9999 FEW030 18/09 Q1017 NOSIG",
+    "hint": "It decodes as you type. The message never leaves your browser.",
+    "clear": "Clear",
+    "copyLink": "Copy link",
+    "copied": "Link copied",
+    "examplesTitle": "Didactic examples",
+    "sourceExample": "Didactic example",
+    "sourceUser": "Message entered by you",
+    "resultTitle": "Result",
+    "highlightTitle": "Message by groups",
+    "groupsTitle": "Group by group",
+    "issuesTitle": "Format check",
+    "windTitle": "Wind",
+    "cloudsTitle": "Cloud layers",
+    "ceilingTitle": "Ceiling",
+    "colGroup": "Group",
+    "colKind": "What it is",
+    "colMeaning": "Meaning",
+    "tableCaption": "Explanation of each group in the message",
+    "status": {
+      "unknown": "Not recognised",
+      "invalid": "Impossible values"
+    },
+    "level": {
+      "error": "Error",
+      "warning": "Warning"
+    },
+    "noIssues": "No format problems found.",
+    "cardinal": {
+      "N": "N",
+      "E": "E",
+      "S": "S",
+      "W": "W"
+    },
+    "units": {
+      "KT": "kt",
+      "MPS": "m/s",
+      "KMH": "km/h"
+    },
+    "calm": "Calm",
+    "noWind": "No data",
+    "roseTitle": "Wind from {dir}° at {speed}",
+    "cloudsCavok": "CAVOK: no significant cloud",
+    "cloudsNone": "No cloud to draw",
+    "cloudsUnknown": "No cloud information",
+    "cloudsAria": "Cloud layers: {layers}",
+    "ftAal": "ft above aerodrome",
+    "noCeiling": "No ceiling",
+    "locale": "en-GB",
+    "noscript": "The decoder needs JavaScript. Below is an example that has already been decoded.",
+    "learnMore": "Want to learn to read it yourself? Try the METAR and SPECI Academy."
+  },
+  "navShort": {
+    "home": "Home",
+    "academy": "Academy",
+    "dictionary": "Dictionary",
+    "hangar": "Hangar",
+    "dashboard": "Dashboard",
+    "tools": "Lab"
   }
 }
