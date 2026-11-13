@@ -33,7 +33,8 @@
     "liveWeather": "Live METAR and TAF",
     "airportFinder": "Airport finder",
     "atcTrainer": "ATC phraseology trainer",
-    "aircraftGame": "Which aircraft is it?"
+    "aircraftGame": "Which aircraft is it?",
+    "flashcards": "Flashcards"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -672,6 +673,10 @@
       "aircraftGame": {
         "title": "Which aircraft is it?",
         "text": "Identify aircraft from their official figures and compare variants, using Hangar data."
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "text": "Review the EN/ES dictionary vocabulary with spaced repetition, by category or with your favourites."
       }
     }
   },
@@ -1112,5 +1117,34 @@
       "mtowT": "t"
     },
     "dataNote": "Figures are those published by each manufacturer for each variant; they may vary with the configuration."
+  },
+  "flashcards": {
+    "metaTitle": "Flashcards with spaced repetition · AeroLex",
+    "metaDescription": "Review EN/ES aviation vocabulary with flashcards and spaced repetition: each term comes back just as you start to forget it.",
+    "title": "Flashcards",
+    "lead": "Review the dictionary vocabulary with flashcards. Spaced repetition shows each term just as you start to forget it; your progress is saved in this browser.",
+    "deckLabel": "Deck",
+    "allTerms": "Whole dictionary",
+    "favorites": "My favourites",
+    "directionLabel": "Prompt",
+    "directions": {
+      "en": "English term",
+      "es": "Spanish term"
+    },
+    "stats": "Due: {due} · New: {fresh} · Learned: {learned} of {total}",
+    "reveal": "Show answer",
+    "again": "Again",
+    "good": "Good",
+    "easy": "Easy",
+    "days": {
+      "0": "now",
+      "1": "1 day",
+      "n": "{n} days"
+    },
+    "done": "You are done for now! Come back later for the cards that are due.",
+    "emptyFavorites": "You have no favourites yet. Star them in the dictionary.",
+    "openEntry": "Open in the dictionary",
+    "keys": "Shortcuts: space to show the answer; 1, 2 and 3 to grade.",
+    "howItWorks": "How it works: \"Again\" brings the card back in this session; \"Good\" and \"Easy\" schedule it in 1, 3, 7, 16 or 35 days depending on how well you know it."
   }
 }

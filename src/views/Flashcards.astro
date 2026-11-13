@@ -1,0 +1,190 @@
+---
+/**
+ * Flashcards with spaced repetition (Phase 4). Cards are dictionary entries; card state is
+ * saved by entry ID in store.srs.cards (shared between languages).
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Button from '../components/ui/Button.astro';
+import { childHref, href, t, useT } from '../i18n/index.js';
+import { CATEGORIES } from '../lib/dictionary/categories.js';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const L = lang as 'es' | 'en';
+const entries = (await getCollection('dictionary')).sort((a, b) => a.id.localeCompare(b.id));
+const cards = entries.map((e) => ({
+  id: e.id,
+  term: e.data.term,
+  expansion: e.data.expansion,
+  cats: e.data.categories,
+  simple: e.data.simple[L],
+  url: childHref('dictionary', e.id, lang),
+}));
+const usedCats = CATEGORIES.filter((c) => cards.some((x) => x.cats.includes(c)));
+const payload = JSON.stringify({ ui: t(lang, 'flashcards'), cats: t(lang, 'categories'), cards });
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('flashcards.metaTitle')} description={tr('flashcards.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.flashcards') }]} />
+      <h1>{tr('flashcards.title')}</h1>
+      <p class="lead">{tr('flashcards.lead')}</p>
+    </div>
+  </header>
+  <div class="container mt fc" data-fc data-lang={lang}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+    <div class="fc-controls">
+      <label>
+        <span class="mt-label">{tr('flashcards.deckLabel')}</span>
+        <select data-deck>
+          <option value="all">{tr('flashcards.allTerms')}</option>
+          <option value="favorites">{tr('flashcards.favorites')}</option>
+          {usedCats.map((c) => <option value={c}>{tr(`categories.${c}`)}</option>)}
+        </select>
+      </label>
+      <label>
+        <span class="mt-label">{tr('flashcards.directionLabel')}</span>
+        <select data-direction>
+          <option value="en">{tr('flashcards.directions.en')}</option>
+          <option value="es">{tr('flashcards.directions.es')}</option>
+        </select>
+      </label>
+    </div>
+    <p class="mt-hint" data-stats aria-live="polite"></p>
+
+    <section class="mt-card fc-card" aria-live="polite">
+      <p class="fc-front" lang="en" data-front>{cards[0].term.en}</p>
+      <div class="fc-back" data-back hidden></div>
+      <p class="fc-done" data-done hidden></p>
+      <div class="mt-actions" data-reveal-wrap>
+        <Button size="sm" icon="eye" data-reveal>{tr('flashcards.reveal')}</Button>
+      </div>
+      <div class="fc-grades" data-grades hidden>
+        <button type="button" class="pr-opt fc-grade" data-grade="again"><strong>1 · {tr('flashcards.again')}</strong><span data-int="again"></span></button>
+        <button type="button" class="pr-opt fc-grade" data-grade="good"><strong>2 · {tr('flashcards.good')}</strong><span data-int="good"></span></button>
+        <button type="button" class="pr-opt fc-grade" data-grade="easy"><strong>3 · {tr('flashcards.easy')}</strong><span data-int="easy"></span></button>
+      </div>
+    </section>
+    <p class="mt-hint">{tr('flashcards.keys')}</p>
+    <Callout type="tip" label={tr('styleguide.calloutLabels.tip')}><p>{tr('flashcards.howItWorks')}</p></Callout>
+    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+  </div>
+  <script type="application/json" id="fc-data" set:html={payload} />
+</BaseLayout>
+
+<style is:global>
+  .fc-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+  .fc-controls select { width: 100%; padding: var(--space-2) var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font: inherit; }
+  .fc-controls select:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 2px; }
+  .fc-card { display: grid; gap: var(--space-4); justify-items: center; text-align: center; min-height: 16rem; align-content: center; }
+  .fc-front { margin: 0; font-family: var(--font-display); font-size: clamp(1.6rem, 1.2rem + 2vw, 2.4rem); font-weight: 700; }
+  .fc-back { display: grid; gap: var(--space-2); max-width: 40rem; }
+  .fc-back .fc-term { font-size: 1.3rem; font-weight: 700; margin: 0; }
+  .fc-back p { margin: 0; }
+  .fc-grades { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); width: 100%; max-width: 36rem; }
+  .fc-grade { display: grid; gap: 2px; text-align: center; }
+  .fc-grade span { color: var(--text-muted); font-size: var(--text-sm); }
+  .fc-done { font-weight: 600; margin: 0; }
+</style>
+
+<script>
+  import { review, previewIntervals, studyQueue, deckStats } from '../lib/srs/leitner.js';
+  import { esc } from '../lib/metar/render.js';
+  import { getAppStore } from '../lib/core/app-store.js';
+
+  const root = document.querySelector<HTMLElement>('[data-fc]');
+  if (root) {
+    const { ui, cats, cards } = JSON.parse(document.getElementById('fc-data')!.textContent!);
+    const lang = root.dataset.lang as 'es' | 'en';
+    const store = getAppStore();
+    const byId: Record<string, any> = Object.fromEntries(cards.map((c: any) => [c.id, c]));
+    const $ = (s: string) => root.querySelector<HTMLElement>(s)!;
+    const deckSel = root.querySelector<HTMLSelectElement>('[data-deck]')!;
+    const dirSel = root.querySelector<HTMLSelectElement>('[data-direction]')!;
+    dirSel.value = lang === 'es' ? 'en' : 'es';
+    let queue: string[] = [];
+    let current: string | null = null;
+    let revealed = false;
+    const cardId = (id: string) => `dict:${id}`;
+    const states = () => store.get().srs.cards;
+    const dayText = (n: number) => (n === 0 ? ui.days['0'] : n === 1 ? ui.days['1'] : ui.days.n.replace('{n}', String(n)));
+
+    const deckIds = () => {
+      const v = deckSel.value;
+      if (v === 'all') return cards.map((c: any) => cardId(c.id));
+      if (v === 'favorites') return store.get().favorites.terms.filter((id: string) => byId[id]).map(cardId);
+      return cards.filter((c: any) => c.cats.includes(v)).map((c: any) => cardId(c.id));
+    };
+    const updateStats = () => {
+      const s = deckStats(deckIds(), states());
+      $('[data-stats]').textContent = ui.stats.replace(/\{(\w+)\}/g, (_: string, k: string) => String((s as any)[k]));
+    };
+    const showCard = () => {
+      revealed = false;
+      $('[data-back]').hidden = true;
+      $('[data-grades]').hidden = true;
+      current = queue.shift() ?? null;
+      const empty = !current;
+      $('[data-front]').hidden = empty;
+      $('[data-reveal-wrap]').hidden = empty;
+      $('[data-done]').hidden = !empty;
+      if (empty) {
+        $('[data-done]').textContent = deckSel.value === 'favorites' && deckIds().length === 0 ? ui.emptyFavorites : ui.done;
+        updateStats();
+        return;
+      }
+      const c = byId[current!.slice(5)];
+      const front = dirSel.value as 'es' | 'en';
+      $('[data-front]').textContent = c.term[front];
+      $('[data-front]').setAttribute('lang', front);
+      updateStats();
+    };
+    const reveal = () => {
+      if (!current || revealed) return;
+      revealed = true;
+      const c = byId[current.slice(5)];
+      const other = dirSel.value === 'en' ? 'es' : 'en';
+      const exp = c.expansion ? `<p lang="${other}">${esc(c.expansion[other])}</p>` : '';
+      $('[data-back]').innerHTML = `<p class="fc-term" lang="${other}">${esc(c.term[other])}</p>${exp}<p>${esc(c.simple)}</p><p class="mt-hint">${c.cats.map((k: string) => esc(cats[k])).join(' · ')} · <a href="${c.url}">${esc(ui.openEntry)}</a></p>`;
+      $('[data-back]').hidden = false;
+      $('[data-reveal-wrap]').hidden = true;
+      $('[data-grades]').hidden = false;
+      const p = previewIntervals(states()[current] ?? null);
+      for (const g of ['again', 'good', 'easy']) $(`[data-int="${g}"]`).textContent = dayText((p as any)[g]);
+      root.querySelector<HTMLElement>('[data-grade="good"]')!.focus();
+    };
+    const grade = (g: 'again' | 'good' | 'easy') => {
+      if (!current || !revealed) return;
+      const id = current;
+      store.update((s: any) => {
+        s.srs.cards[id] = review(s.srs.cards[id] ?? null, g);
+      });
+      if (g === 'again') queue.push(id);
+      showCard();
+    };
+    const start = () => {
+      queue = studyQueue(deckIds(), states());
+      showCard();
+    };
+
+    root.addEventListener('click', (e) => {
+      const el = e.target as HTMLElement;
+      if (el.closest('[data-reveal]')) reveal();
+      const g = el.closest<HTMLElement>('[data-grade]');
+      if (g) grade(g.dataset.grade as any);
+    });
+    document.addEventListener('keydown', (e) => {
+      if ((e.target as HTMLElement).closest('select, input, textarea')) return;
+      if (e.key === ' ' && !revealed && current) { e.preventDefault(); reveal(); }
+      if (revealed && ['1', '2', '3'].includes(e.key)) grade((['again', 'good', 'easy'] as const)[Number(e.key) - 1]);
+    });
+    deckSel.addEventListener('change', start);
+    dirSel.addEventListener('change', start);
+    start();
+  }
+</script>
