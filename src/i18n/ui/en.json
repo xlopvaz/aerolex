@@ -435,7 +435,20 @@
     "compareEmpty": "Choose at least two variants to compare.",
     "educational": "Educational tool. Figures are generic manufacturer data; actual aircraft vary by operator, configuration and engine. Not for operational use.",
     "statusLabel": "Status",
-    "entryIntoService": "Entry into service"
+    "entryIntoService": "Entry into service",
+    "silhouette": {
+      "template": "Generic silhouette of a {engines} {body} airliner",
+      "templateTwoDecks": "Generic silhouette of a {engines} {body} airliner with two full decks",
+      "engines": {
+        "2": "twin-engined",
+        "4": "four-engined"
+      },
+      "body": {
+        "narrow": "single-aisle",
+        "wide": "twin-aisle"
+      },
+      "caption": "Generic illustration of the configuration: not to scale and not a photograph."
+    }
   },
   "metar": {
     "kinds": {

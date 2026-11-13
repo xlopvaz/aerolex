@@ -3,6 +3,7 @@ import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
 import Badge from '../components/ui/Badge.astro';
+import AircraftSilhouette from '../components/hangar/AircraftSilhouette.astro';
 import Button from '../components/ui/Button.astro';
 import Callout from '../components/ui/Callout.astro';
 import Icon from '../components/ui/Icon.astro';
@@ -34,6 +35,7 @@ const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) =
         <Badge tone="amber" icon="pencil">{tr(`status.${f.review.status}`)}</Badge>
         <Badge icon="plane">{tr('hangar.variantsCount', { count: f.variants.length })}</Badge>
       </div>
+      <div class="fam__art"><AircraftSilhouette config={f.silhouette} lang={lang} caption /></div>
     </div>
   </header>
 
@@ -85,6 +87,7 @@ const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) =
 </BaseLayout>
 
 <style>
+  .fam__art { max-width: 34rem; margin-top: var(--space-5); padding: var(--space-3) var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
   .fam__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
   .family { padding-top: var(--space-6); }
   .family section { margin-bottom: var(--space-7); }
