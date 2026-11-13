@@ -1,0 +1,36 @@
+# Fetches aircraft photos from Wikimedia Commons (free licences only) for the Hangar.
+# Runs on demand and on pushes to photos/** branches; the result is a downloadable artifact
+# that is reviewed by hand before any photo is committed to the site.
+name: Commons photos
+
+on:
+  push:
+    branches: ['photos/**']
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: candidates or final
+        default: candidates
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch
+        run: |
+          MODE="${{ github.event.inputs.mode || '' }}"
+          if [ -z "$MODE" ]; then MODE=$(cat scripts/photos/mode.txt 2>/dev/null || echo candidates); fi
+          if [ "$MODE" = "final" ]; then INPUT=src/content/photos/selection.json; else INPUT=scripts/photos/queries.json; fi
+          node scripts/photos/fetch-commons.mjs "$MODE" "$INPUT" out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: commons-photos
+          path: out/
+          retention-days: 7
