@@ -684,7 +684,7 @@
       },
       "aircraftGame": {
         "title": "¿Qué avión es?",
-        "text": "Identifica aeronaves por sus cifras oficiales y compara variantes, con los datos del Hangar."
+        "text": "Reconoce aviones en fotos reales del Hangar y aprende en qué fijarte; o identifícalos por sus cifras oficiales."
       },
       "flashcards": {
         "title": "Flashcards",
@@ -1102,9 +1102,9 @@
   },
   "aircraftGame": {
     "metaTitle": "Juego de identificación de aeronaves · AeroLex",
-    "metaDescription": "¿Qué avión es? Identifica aeronaves por sus cifras oficiales y compara variantes, con los datos del Hangar.",
+    "metaDescription": "¿Qué avión es? Reconoce aeronaves en fotos reales e identifícalas por sus cifras oficiales, con los datos del Hangar.",
     "title": "¿Qué avión es?",
-    "lead": "Identifica aeronaves por sus cifras y compara variantes. Todas las cifras salen de la documentación oficial de los fabricantes que usa el Hangar.",
+    "lead": "Aprende a reconocer aviones con fotos reales y pon a prueba lo que sabes de sus cifras. Las fotos son del Hangar y las cifras salen de la documentación oficial de los fabricantes.",
     "cluesPrompt": "¿Qué aeronave tiene estas cifras?",
     "comparePrompt": "¿Cuál tiene {metric} mayor?",
     "correct": "¡Correcto!",
@@ -1137,7 +1137,16 @@
       "rangeNm": "NM",
       "mtowT": "t"
     },
-    "dataNote": "Las cifras son las publicadas por cada fabricante para cada variante; pueden cambiar según la configuración."
+    "dataNote": "Las cifras son las publicadas por cada fabricante para cada variante; pueden cambiar según la configuración.",
+    "modeLabel": "Modo de juego",
+    "modes": {
+      "photo": "Por la foto",
+      "figures": "Por las cifras"
+    },
+    "photoPrompt": "¿Qué avión es el de la foto?",
+    "photoAlt": "Foto del avión que tienes que identificar",
+    "lookFor": "En qué fijarte",
+    "zoom": "Ver la foto a tamaño completo"
   },
   "flashcards": {
     "metaTitle": "Flashcards con repetición espaciada · AeroLex",

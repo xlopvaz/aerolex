@@ -5,7 +5,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
 import Callout from '../components/ui/Callout.astro';
 import Button from '../components/ui/Button.astro';
-import { childHref, href, t, useT } from '../i18n/index.js';
+import SegmentedControl from '../components/ui/SegmentedControl.astro';
+import { childHref, href, pick, t, useT, withBase } from '../i18n/index.js';
 import { flattenVariants } from '../lib/aircraft/compare.js';
 import '../styles/metar-tool.css';
 
@@ -18,7 +19,18 @@ const variants = flattenVariants(families).map((v: any) => ({
   lengthM: v.lengthM, wingspanM: v.wingspanM, heightM: v.heightM, seatsMax: v.seatsMax, rangeNm: v.rangeNm, mtowT: v.mtowT,
   familyUrl: childHref('hangar', v.familyId, lang),
 }));
-const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), variants });
+const P = t(lang, 'hangar.photos');
+const photos = (await getCollection('photos')).map((p) => ({
+  id: p.id, family: p.data.family, src: withBase(p.data.file), small: withBase(p.data.thumb), width: p.data.width, height: p.data.height,
+  alt: pick(p.data.alt, lang), caption: pick(p.data.caption, lang), author: p.data.author, pageUrl: p.data.pageUrl,
+  licence: p.data.licence.toLowerCase() === 'public domain' ? P.publicDomain : p.data.licence, licenceUrl: p.data.licenceUrl,
+}));
+const shortName = (f: any) => {
+  const n = pick(f.family, lang).replace(/^Familia\s+/i, '').replace(/\s+Family$/i, '');
+  return n.startsWith(f.manufacturer) ? n : `${f.manufacturer} ${n}`;
+};
+const familyInfo = Object.fromEntries(families.map((f: any) => [f.id, { name: shortName(f), url: childHref('hangar', f.id, lang) }]));
+const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), credit: P, variants, photos, families: familyInfo });
 ---
 <BaseLayout lang={lang} routeKey={routeKey} title={tr('aircraftGame.metaTitle')} description={tr('aircraftGame.metaDescription')}>
   <header class="page-header">
@@ -30,8 +42,15 @@ const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), variants });
   </header>
   <div class="container mt" data-game data-lang={lang}>
     <Callout type="info" label={tr('styleguide.calloutLabels.info')}><p>{tr('aircraftGame.dataNote')}</p></Callout>
+    <div class="ag-mode" data-mode hidden>
+      <SegmentedControl name="ag-mode" legend={tr('aircraftGame.modeLabel')} value="photo" options={[{ value: 'photo', label: tr('aircraftGame.modes.photo') }, { value: 'figures', label: tr('aircraftGame.modes.figures') }]} />
+    </div>
     <section class="mt-card pr-q" aria-live="polite">
       <h2 class="pr-prompt" id="ag-q" data-prompt>{tr('aircraftGame.cluesPrompt')}</h2>
+      <figure class="ag-photo" data-photo hidden>
+        <a data-photo-link href="#"><img data-photo-img alt="" /></a>
+        <figcaption class="ag-credit" data-photo-credit></figcaption>
+      </figure>
       <dl class="ag-clues" data-clues></dl>
       <div class="pr-options" role="group" aria-labelledby="ag-q" data-options></div>
       <div class="pr-feedback" data-feedback hidden></div>
@@ -51,17 +70,28 @@ const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), variants });
   .ag-clues dt { color: var(--text-muted); }
   .ag-clues dd { margin: 0; font-family: var(--font-mono); font-weight: 700; }
   .ag-clues:empty { display: none; }
+  .ag-mode { margin-bottom: var(--space-4); }
+  .ag-photo { margin: 0; width: 100%; }
+  .ag-photo img { display: block; width: 100%; height: auto; max-height: 34rem; object-fit: contain; border-radius: var(--radius-lg); background: var(--surface-2); }
+  .ag-credit { margin-top: var(--space-2); font-size: var(--text-xs); color: var(--text-muted); }
+  .ag-look { margin-top: var(--space-2); }
 </style>
 
 <script>
-  import { createRound } from '../lib/aircraft/game.js';
+  import { createRound, photoRound } from '../lib/aircraft/game.js';
   import { esc } from '../lib/metar/render.js';
   import { getAppStore } from '../lib/core/app-store.js';
   import { recordPractice } from '../lib/practice/stats.js';
 
   const root = document.querySelector<HTMLElement>('[data-game]');
   if (root) {
-    const { ui, variants } = JSON.parse(document.getElementById('ag-data')!.textContent!);
+    const { ui, credit, variants, photos, families } = JSON.parse(document.getElementById('ag-data')!.textContent!);
+    const photoById: Record<string, any> = Object.fromEntries(photos.map((p: any) => [p.id, p]));
+    const familyIds = Object.keys(families);
+    let mode = photos.length ? 'photo' : 'figures';
+    let lastPhoto: string | null = null;
+    const modeBox = root.querySelector<HTMLElement>('[data-mode]');
+    if (modeBox && photos.length) modeBox.hidden = false;
     const lang = root.dataset.lang!;
     const store = getAppStore();
     const byKey: Record<string, any> = Object.fromEntries(variants.map((v: any) => [`${v.familyId}:${v.id}`, v]));
@@ -74,18 +104,39 @@ const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), variants });
     let answered = false;
     const score = { ok: 0, total: 0 };
 
+    const photoBox = $('[data-photo]');
+    const photoImg = root.querySelector<HTMLImageElement>('[data-photo-img]')!;
+    const photoLink = root.querySelector<HTMLAnchorElement>('[data-photo-link]')!;
+    const creditHtml = (p: any) => `<a href="${esc(p.pageUrl)}" rel="noopener">${esc(credit.credit.replace('{author}', p.author))}</a> · ${p.licenceUrl ? `<a href="${esc(p.licenceUrl)}" rel="noopener license">${esc(p.licence)}</a>` : esc(p.licence)} · ${esc(credit.via)}`;
+    const optionLabel = (k: string) => (round.kind === 'photo' ? families[k].name : name(k));
+
     const show = () => {
-      round = createRound(variants);
+      round = mode === 'photo' ? photoRound(photos, familyIds, Math.random, lastPhoto) : createRound(variants);
       answered = false;
       $('[data-feedback]').hidden = true;
-      if (round.kind === 'clues') {
+      photoBox.hidden = round.kind !== 'photo';
+      if (round.kind === 'photo') {
+        const p = photoById[round.photo];
+        lastPhoto = p.id;
+        $('[data-prompt]').textContent = ui.photoPrompt;
+        photoImg.src = p.src;
+        photoImg.srcset = `${p.small} 640w, ${p.src} 1280w`;
+        photoImg.sizes = '(min-width: 900px) 800px, 100vw';
+        photoImg.width = p.width;
+        photoImg.height = p.height;
+        photoImg.alt = ui.photoAlt;
+        photoLink.href = p.src;
+        photoLink.setAttribute('aria-label', ui.zoom);
+        $('[data-photo-credit]').innerHTML = creditHtml(p);
+        $('[data-clues]').innerHTML = '';
+      } else if (round.kind === 'clues') {
         $('[data-prompt]').textContent = ui.cluesPrompt;
         $('[data-clues]').innerHTML = round.clues.map((c: any) => `<div><dt>${esc(ui.labels[c.key])}</dt><dd>${esc(value(c.key, c.value))}</dd></div>`).join('');
       } else {
         $('[data-prompt]').textContent = fill(ui.comparePrompt, { metric: ui.metrics[round.metric] });
         $('[data-clues]').innerHTML = '';
       }
-      $('[data-options]').innerHTML = round.options.map((k: string) => `<button type="button" class="pr-opt" data-opt="${esc(k)}">${esc(name(k))}</button>`).join('');
+      $('[data-options]').innerHTML = round.options.map((k: string) => `<button type="button" class="pr-opt" data-opt="${esc(k)}">${esc(optionLabel(k))}</button>`).join('');
     };
 
     root.addEventListener('click', (e) => {
@@ -99,22 +150,33 @@ const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), variants });
           if (b.dataset.opt === round.answer) b.classList.add('is-correct');
         });
         if (!ok) opt.classList.add('is-wrong');
+        let details = '';
+        if (round.kind === 'photo') {
+          const p = photoById[round.photo];
+          photoImg.alt = p.alt;
+          details = `<p><strong>${esc(p.alt)}.</strong></p><p class="ag-look"><strong>${esc(ui.lookFor)}:</strong> ${esc(p.caption)}</p><p><a href="${families[round.answer].url}">${esc(ui.openFamily)}</a></p>`;
+        } else {
         const shownKeys = round.kind === 'compare' ? round.options : [round.answer];
         const metricKeys = round.kind === 'compare' ? [round.metric] : round.metrics;
-        const details = shownKeys
+        details = shownKeys
           .map((k: string) => `<p><strong>${esc(name(k))}</strong>: ${metricKeys.map((m: string) => `${esc(ui.labels[m])} ${esc(value(m, byKey[k][m]))}`).join(' · ')} — <a href="${byKey[k].familyUrl}">${esc(ui.openFamily)}</a></p>`)
           .join('');
+        }
         const fb = $('[data-feedback]');
-        fb.innerHTML = `<strong>${esc(ok ? ui.correct : ui.incorrect)}</strong>${ok ? '' : `<p>${esc(fill(ui.theAnswer, { answer: name(round.answer) }))}</p>`}${details}`;
+        fb.innerHTML = `<strong>${esc(ok ? ui.correct : ui.incorrect)}</strong>${ok ? '' : `<p>${esc(fill(ui.theAnswer, { answer: optionLabel(round.answer) }))}</p>`}${details}`;
         fb.hidden = false;
         score.total += 1;
         if (ok) score.ok += 1;
         $('[data-score]').textContent = fill(ui.score, score);
-        recordPractice(store, 'aircraft-game', ok);
+        recordPractice(store, round.kind === 'photo' ? 'aircraft-photo' : 'aircraft-game', ok);
         root.querySelector<HTMLElement>('[data-next]')!.focus();
         return;
       }
       if (el.closest('[data-next]')) show();
+    });
+    root.addEventListener('change', (e) => {
+      const t = e.target as HTMLInputElement;
+      if (t.name === 'ag-mode') { mode = t.value; show(); }
     });
     show();
   }
