@@ -1,0 +1,165 @@
+{
+  "manufacturer": "Boeing",
+  "family": {
+    "en": "Boeing 777",
+    "es": "Boeing 777"
+  },
+  "category": "commercial",
+  "order": 15,
+  "summary": {
+    "en": "Boeing's large long-haul twinjet: the 777-200ER, the ultra-long-range 777-200LR, the stretched 777-300ER and the 777 Freighter. Its successor, the 777X, has its own page.",
+    "es": "El gran bimotor de largo radio de Boeing: el 777-200ER, el 777-200LR de muy largo alcance, el 777-300ER alargado y el 777 Freighter. Su sucesor, el 777X, tiene su propia ficha."
+  },
+  "history": {
+    "en": "Boeing's current 777 page lists the 777-200ER, 777-200LR and 777-300ER. The 777-200ER was offered with three engine makers (Pratt & Whitney PW4000, Rolls-Royce Trent 800 and GE90), while the 777-200LR, 777-300ER and 777 Freighter use only GE90 engines.",
+    "es": "La página actual del 777 de Boeing muestra el 777-200ER, el 777-200LR y el 777-300ER. El 777-200ER se ofrecía con motores de tres fabricantes (Pratt & Whitney PW4000, Rolls-Royce Trent 800 y GE90), mientras que el 777-200LR, el 777-300ER y el 777 Freighter solo llevan motores GE90."
+  },
+  "facts": [
+    {
+      "en": "The 777-200LR has the longest range in Boeing's table: up to 8,500 NM (15,740 km).",
+      "es": "El 777-200LR tiene el mayor alcance de la tabla de Boeing: hasta 8500 NM (15 740 km)."
+    },
+    {
+      "en": "The 777-300ER is about 10 m longer than the 777-200ER (73.9 m against 63.7 m).",
+      "es": "El 777-300ER es unos 10 m más largo que el 777-200ER (73,9 m frente a 63,7 m)."
+    },
+    {
+      "en": "Boeing gives the 777 Freighter a payload of 102,010 kg (224,900 lb).",
+      "es": "Boeing indica para el 777 Freighter una carga de pago de 102 010 kg (224 900 lb)."
+    }
+  ],
+  "sources": [
+    "boeing-777-page",
+    "boeing-777-acap-lr-er-f"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "777-200ER",
+      "name": "777-200ER",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 63.7,
+      "wingspanM": 60.9,
+      "heightM": 18.5,
+      "seatsTypical": "300–375",
+      "seatsMax": null,
+      "rangeNm": 7500,
+      "rangeKm": 13890,
+      "mtowT": 297.55,
+      "engines": [
+        "Pratt & Whitney PW4000",
+        "Rolls-Royce Trent 800",
+        "GE Aerospace GE90"
+      ],
+      "note": null,
+      "sources": [
+        "boeing-777-page"
+      ]
+    },
+    {
+      "id": "777-200LR",
+      "name": "777-200LR",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 63.7,
+      "wingspanM": 64.8,
+      "heightM": 18.6,
+      "seatsTypical": "300–375",
+      "seatsMax": null,
+      "rangeNm": 8500,
+      "rangeKm": 15740,
+      "mtowT": 347.45,
+      "engines": [
+        "GE Aerospace GE90-110B1",
+        "GE Aerospace GE90-115B1"
+      ],
+      "note": {
+        "en": "Boeing's airport planning manual also lists the GE90-110B and gives 279 seats in two classes (42 first + 237 economy) and 301 in three classes.",
+        "es": "El manual de planificación aeroportuaria de Boeing también incluye el GE90-110B y da 279 asientos en dos clases (42 en primera y 237 en turista) y 301 en tres clases."
+      },
+      "sources": [
+        "boeing-777-page",
+        "boeing-777-acap-lr-er-f"
+      ]
+    },
+    {
+      "id": "777-300ER",
+      "name": "777-300ER",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 73.9,
+      "wingspanM": 64.8,
+      "heightM": 18.5,
+      "seatsTypical": "350–425",
+      "seatsMax": null,
+      "rangeNm": 7500,
+      "rangeKm": 13890,
+      "mtowT": 351.53,
+      "engines": [
+        "GE Aerospace GE90-115B1"
+      ],
+      "note": {
+        "en": "Engine model from Boeing's airport planning manual, which gives 339 seats in two classes and 370 in three classes as reference layouts.",
+        "es": "Modelo de motor según el manual de planificación aeroportuaria de Boeing, que da 339 asientos en dos clases y 370 en tres como configuraciones de referencia."
+      },
+      "sources": [
+        "boeing-777-page",
+        "boeing-777-acap-lr-er-f"
+      ]
+    },
+    {
+      "id": "777F",
+      "name": "777F",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null,
+      "seatsTypical": null,
+      "seatsMax": null,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 347.81,
+      "engines": [
+        "GE Aerospace GE90-110B1L"
+      ],
+      "note": {
+        "en": "Freighter. Maximum design take-off weight and engine from Boeing's airport planning manual; payload of 102,010 kg from Boeing's 777 page. The manual gives the dimensions only as drawings, so they are not shown.",
+        "es": "Carguero. Peso máximo de despegue de diseño y motor según el manual de planificación aeroportuaria de Boeing; carga de pago de 102 010 kg según la página del 777 de Boeing. El manual da las dimensiones solo en planos, así que no se muestran."
+      },
+      "sources": [
+        "boeing-777-acap-lr-er-f",
+        "boeing-777-page"
+      ]
+    }
+  ]
+}
