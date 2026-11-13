@@ -72,7 +72,7 @@ const payload = JSON.stringify({ ui: t(lang, 'flashcards'), cats: t(lang, 'categ
     </section>
     <p class="mt-hint">{tr('flashcards.keys')}</p>
     <Callout type="tip" label={tr('styleguide.calloutLabels.tip')}><p>{tr('flashcards.howItWorks')}</p></Callout>
-    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+    <noscript><p>{tr('tools.noscript')}</p></noscript>
   </div>
   <script type="application/json" id="fc-data" set:html={payload} />
 </BaseLayout>

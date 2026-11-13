@@ -10,6 +10,8 @@ export const TOOLS = [
   { key: 'atcTrainer', icon: 'headset' },
   { key: 'aircraftGame', icon: 'plane' },
   { key: 'flashcards', icon: 'layers' },
+  { key: 'weatherGlossary', icon: 'cloud-rain' },
+  { key: 'timeline', icon: 'history' },
   { key: 'converter', icon: 'arrow-left-right' },
   { key: 'airportFinder', icon: 'map-pin' },
 ];

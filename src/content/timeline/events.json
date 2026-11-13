@@ -1,0 +1,218 @@
+{
+  "first-free-balloon-flight": {
+    "date": "1783-11-21",
+    "theme": "flight",
+    "title": { "es": "Primer vuelo libre tripulado en globo", "en": "First crewed free balloon flight" },
+    "text": {
+      "es": "Jean-François Pilâtre de Rozier y el marqués d'Arlandes despegan de los jardines del castillo de La Muette, en París, en un globo de aire caliente de los hermanos Montgolfier. Es el primer vuelo libre (sin amarras) con personas a bordo.",
+      "en": "Jean-François Pilâtre de Rozier and the Marquis d'Arlandes lift off from the gardens of the Château de la Muette in Paris in a Montgolfier hot-air balloon. It is the first free (untethered) flight with people on board."
+    },
+    "terms": [],
+    "sources": ["museum-of-flight-montgolfier", "guinness-first-free-balloon"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "lilienthal-gliders": {
+    "date": "1891",
+    "theme": "flight",
+    "title": { "es": "Otto Lilienthal empieza a planear", "en": "Otto Lilienthal starts gliding" },
+    "text": {
+      "es": "El ingeniero alemán Otto Lilienthal realiza en 1891 sus primeros vuelos planeados seguros y repetidos. Hasta 1896 construye y vuela una serie de planeadores que se controlan desplazando el peso del cuerpo, y su trabajo influye en los hermanos Wright.",
+      "en": "German engineer Otto Lilienthal makes his first safe, repeated gliding flights in 1891. Until 1896 he builds and flies a series of gliders controlled by shifting his body weight, and his work influences the Wright brothers."
+    },
+    "terms": ["airfoil"],
+    "sources": ["nasm-lilienthal-glider", "lilienthal-museum"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "wright-flyer": {
+    "date": "1903-12-17",
+    "theme": "flight",
+    "title": { "es": "El Wright Flyer: primer vuelo propulsado y controlado", "en": "The Wright Flyer: first powered, controlled flight" },
+    "text": {
+      "es": "En Kitty Hawk (Carolina del Norte), Orville y Wilbur Wright hacen volar su primer avión con motor. El primer vuelo, con Orville a los mandos, dura 12 segundos y recorre 36 m; es el primer vuelo controlado y sostenido de una máquina más pesada que el aire con piloto a bordo.",
+      "en": "At Kitty Hawk, North Carolina, Orville and Wilbur Wright fly their first powered aeroplane. The first flight, with Orville at the controls, lasts 12 seconds and covers 36 m; it is the first controlled, sustained flight of a piloted heavier-than-air machine."
+    },
+    "terms": ["aircraft"],
+    "sources": ["nasm-wright-kitty-hawk", "si-1903-wright-flyer"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "bleriot-channel": {
+    "date": "1909-07-25",
+    "theme": "flight",
+    "title": { "es": "Blériot cruza el canal de la Mancha", "en": "Blériot crosses the English Channel" },
+    "text": {
+      "es": "Louis Blériot vuela de Calais a Dover en su monoplano Blériot XI: unos 40 km en 36 minutos y 30 segundos. Es el primer cruce del canal de la Mancha en avión.",
+      "en": "Louis Blériot flies from Calais to Dover in his Blériot XI monoplane: about 40 km in 36 minutes 30 seconds. It is the first crossing of the English Channel by aeroplane."
+    },
+    "terms": [],
+    "sources": ["nasm-bleriot-xi"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "first-scheduled-airline": {
+    "date": "1914-01-01",
+    "theme": "airline",
+    "title": { "es": "Nace la primera línea aérea regular", "en": "The first scheduled airline begins service" },
+    "text": {
+      "es": "La St. Petersburg–Tampa Airboat Line empieza a volar sobre la bahía de Tampa (Florida) con un hidroavión Benoist. El trayecto dura 23 minutos, frente a muchas horas por tierra; es el primer servicio regular de pasajeros con un avión de ala fija.",
+      "en": "The St. Petersburg–Tampa Airboat Line starts flying across Tampa Bay, Florida, with a Benoist flying boat. The trip takes 23 minutes instead of many hours overland; it is the first scheduled passenger service with a fixed-wing aircraft."
+    },
+    "terms": [],
+    "sources": ["nasm-early-airlines", "iata-first-airline"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "cierva-autogiro": {
+    "date": "1923-01",
+    "theme": "flight",
+    "title": { "es": "Vuela el autogiro de Juan de la Cierva", "en": "Juan de la Cierva's autogiro flies" },
+    "text": {
+      "es": "En el aeródromo de Getafe (Madrid) vuela el C.4 del ingeniero español Juan de la Cierva, un aparato cuya sustentación procede de alas giratorias (un rotor). Es el primer autogiro que vuela con éxito, tras cuatro años de trabajo en el diseño.",
+      "en": "At Getafe aerodrome (Madrid) the C.4 designed by Spanish engineer Juan de la Cierva flies: a machine whose lift comes from rotating wings (a rotor). It is the first successful autogiro, after four years of work on the design."
+    },
+    "terms": [],
+    "sources": ["guinness-first-autogyro"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "lindbergh-atlantic": {
+    "date": "1927-05-20",
+    "theme": "flight",
+    "title": { "es": "Lindbergh cruza el Atlántico en solitario", "en": "Lindbergh flies solo across the Atlantic" },
+    "text": {
+      "es": "Charles Lindbergh despega de Long Island (Nueva York) en el Spirit of St. Louis y aterriza en París el 21 de mayo: unos 5800 km en 33 horas y media. Es el primer vuelo transatlántico sin escalas en solitario.",
+      "en": "Charles Lindbergh takes off from Long Island, New York, in the Spirit of St. Louis and lands in Paris on 21 May: about 5,800 km in 33 and a half hours. It is the first non-stop solo transatlantic flight."
+    },
+    "terms": [],
+    "sources": ["nasm-lindbergh"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "iberia-first-flight": {
+    "date": "1927-12-14",
+    "theme": "airline",
+    "title": { "es": "Primer vuelo de Iberia: Madrid–Barcelona", "en": "Iberia's first flight: Madrid–Barcelona" },
+    "text": {
+      "es": "Iberia, Compañía Aérea de Transportes, constituida el 28 de junio de 1927, abre la ruta Madrid–Barcelona en presencia del rey Alfonso XIII. Fue la primera ruta aérea comercial de España.",
+      "en": "Iberia, Compañía Aérea de Transportes, founded on 28 June 1927, opens the Madrid–Barcelona route with King Alfonso XIII in attendance. It was Spain's first commercial air route."
+    },
+    "terms": [],
+    "sources": ["iberia-timeline"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "first-jet-flight": {
+    "date": "1939-08-27",
+    "theme": "flight",
+    "title": { "es": "Primer vuelo de un avión a reacción", "en": "First flight of a jet aircraft" },
+    "text": {
+      "es": "El Heinkel He 178, pilotado por Erich Warsitz, vuela en Marienehe (Alemania). Es el primer avión que vuela impulsado por un motor turborreactor.",
+      "en": "The Heinkel He 178, flown by Erich Warsitz, flies at Marienehe, Germany. It is the first aeroplane to fly powered by a turbojet engine."
+    },
+    "terms": [],
+    "sources": ["guinness-first-jet-flight"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "chicago-convention": {
+    "date": "1944-12-07",
+    "theme": "regulation",
+    "title": { "es": "Se firma el Convenio de Chicago", "en": "The Chicago Convention is signed" },
+    "text": {
+      "es": "Al cierre de la Conferencia de Chicago, 52 Estados firman el Convenio sobre Aviación Civil Internacional, la base del derecho aéreo internacional. Con las ratificaciones necesarias, la OACI nace oficialmente el 4 de abril de 1947.",
+      "en": "At the close of the Chicago Conference, 52 States sign the Convention on International Civil Aviation, the basis of international air law. Once enough States had ratified it, ICAO officially came into being on 4 April 1947."
+    },
+    "terms": ["icao"],
+    "sources": ["icao-history"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "bell-x1-mach-1": {
+    "date": "1947-10-14",
+    "theme": "flight",
+    "title": { "es": "El Bell X-1 supera la velocidad del sonido", "en": "The Bell X-1 breaks the sound barrier" },
+    "text": {
+      "es": "El capitán Charles «Chuck» Yeager, de la Fuerza Aérea de EE. UU., pilota el avión cohete Bell X-1 sobre lo que hoy es la base de Edwards (California) y se convierte en el primer piloto que vuela más rápido que el sonido (Mach 1).",
+      "en": "US Air Force Captain Charles 'Chuck' Yeager flies the Bell X-1 rocket plane over what is now Edwards Air Force Base, California, and becomes the first pilot to fly faster than sound (Mach 1)."
+    },
+    "terms": ["mach-number"],
+    "sources": ["nasm-bell-x-1", "nasa-breaking-barrier"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "comet-jet-service": {
+    "date": "1952-05-02",
+    "theme": "airline",
+    "title": { "es": "Primer servicio de pasajeros en avión a reacción", "en": "First jet passenger service" },
+    "text": {
+      "es": "BOAC inaugura con el de Havilland Comet un vuelo con escalas de Londres a Johannesburgo: es el debut del primer avión comercial a reacción con pasajeros de pago. Tres accidentes en sus primeros doce meses de servicio acabaron dejando el modelo en tierra.",
+      "en": "BOAC opens a multi-stop London–Johannesburg service with the de Havilland Comet: the fare-paying debut of the first jet airliner. Three accidents in its first twelve months of service eventually led to the type being grounded."
+    },
+    "terms": [],
+    "sources": ["flightglobal-comet-debut"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "federal-aviation-act": {
+    "date": "1958-08-23",
+    "theme": "regulation",
+    "title": { "es": "EE. UU. crea la autoridad que hoy es la FAA", "en": "The US creates the authority that is now the FAA" },
+    "text": {
+      "es": "El presidente de EE. UU. firma la Federal Aviation Act, que crea la Federal Aviation Agency. En 1967 pasa al nuevo Departamento de Transporte con su nombre actual: Federal Aviation Administration (FAA).",
+      "en": "The US President signs the Federal Aviation Act, creating the Federal Aviation Agency. In 1967 it moves into the new Department of Transportation under its current name: the Federal Aviation Administration (FAA)."
+    },
+    "terms": ["faa"],
+    "sources": ["faa-brief-history"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "boeing-747-service": {
+    "date": "1970-01-22",
+    "theme": "airline",
+    "title": { "es": "El Boeing 747 entra en servicio", "en": "The Boeing 747 enters service" },
+    "text": {
+      "es": "Pan Am estrena el Boeing 747, el «jumbo», en un vuelo de Nueva York a Londres que sale de madrugada tras un retraso. Boeing había entregado los primeros 747 a Pan Am y TWA en diciembre de 1969.",
+      "en": "Pan Am introduces the Boeing 747, the 'jumbo', on a New York–London flight that departs in the early hours after a delay. Boeing had delivered the first 747s to Pan Am and TWA in December 1969."
+    },
+    "terms": [],
+    "sources": ["flightglobal-747-service"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "airbus-a300-first-flight": {
+    "date": "1972-10-28",
+    "theme": "airline",
+    "title": { "es": "Primer vuelo del Airbus A300", "en": "First flight of the Airbus A300" },
+    "text": {
+      "es": "El A300B1 despega en Toulouse en el primer vuelo de un avión de Airbus. Fue el primer avión comercial de fuselaje ancho con solo dos motores, y en el consorcio participaba también la española CASA.",
+      "en": "The A300B1 takes off in Toulouse on the first flight of an Airbus aircraft. It was the first twin-engined wide-body airliner, and Spain's CASA was also a partner in the consortium."
+    },
+    "terms": [],
+    "sources": ["airbus-a300-50"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "concorde-service": {
+    "date": "1976-01-21",
+    "theme": "airline",
+    "title": { "es": "El Concorde inicia los vuelos supersónicos comerciales", "en": "Concorde starts commercial supersonic flights" },
+    "text": {
+      "es": "British Airways (Londres–Baréin) y Air France (París–Río de Janeiro, con escala en Dakar) inauguran a la vez los primeros servicios de pasajeros de pago en avión supersónico.",
+      "en": "British Airways (London–Bahrain) and Air France (Paris–Rio de Janeiro via Dakar) open, at the same time, the first fare-paying passenger services by supersonic aircraft."
+    },
+    "terms": ["mach-number"],
+    "sources": ["aviationweek-concorde-service"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "easa-established": {
+    "date": "2002",
+    "theme": "regulation",
+    "title": { "es": "Nace la Agencia Europea de Seguridad Aérea (EASA)", "en": "The European Union Aviation Safety Agency (EASA) is created" },
+    "text": {
+      "es": "El Reglamento (CE) 1592/2002 crea la EASA, que pasa a ser plenamente operativa un año después. Hoy elabora las normas comunes de seguridad aérea de la Unión Europea.",
+      "en": "Regulation (EC) 1592/2002 creates EASA, which becomes fully operational a year later. Today it drafts the European Union's common aviation safety rules."
+    },
+    "terms": ["easa"],
+    "sources": ["easa-20-years"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  },
+  "a380-service": {
+    "date": "2007-10-25",
+    "theme": "airline",
+    "title": { "es": "El Airbus A380 entra en servicio", "en": "The Airbus A380 enters service" },
+    "text": {
+      "es": "Singapore Airlines realiza el primer vuelo comercial del A380, el avión de pasajeros de dos cubiertas completas, entre Singapur y Sídney (vuelo SQ380).",
+      "en": "Singapore Airlines operates the first commercial flight of the A380, the full double-deck airliner, between Singapore and Sydney (flight SQ380)."
+    },
+    "terms": [],
+    "sources": ["aviationweek-a380-decade"],
+    "review": { "status": "draft", "reviewedBy": null, "date": null }
+  }
+}

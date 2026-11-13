@@ -1,0 +1,1359 @@
+{
+  "metar": {
+    "code": "METAR",
+    "group": "report",
+    "meaning": {
+      "es": "Informe ordinario de observación meteorológica de un aeródromo, normalmente cada hora o cada media hora.",
+      "en": "Routine aerodrome weather observation report, usually issued every hour or half hour."
+    },
+    "example": "METAR LEMD 131030Z …",
+    "terms": [
+      "metar"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "speci": {
+    "code": "SPECI",
+    "group": "report",
+    "meaning": {
+      "es": "Informe especial: se emite fuera del horario ordinario cuando las condiciones cambian de forma significativa.",
+      "en": "Special report: issued outside the routine schedule when conditions change significantly."
+    },
+    "example": "SPECI LEST 131047Z …",
+    "terms": [
+      "speci"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "taf": {
+    "code": "TAF",
+    "group": "report",
+    "meaning": {
+      "es": "Pronóstico de aeródromo: las condiciones que se esperan en el aeródromo durante un periodo de validez.",
+      "en": "Aerodrome forecast: the conditions expected at the aerodrome during a validity period."
+    },
+    "example": "TAF LEBL 130500Z 1306/1412 …",
+    "terms": [
+      "taf"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "auto": {
+    "code": "AUTO",
+    "group": "modifier",
+    "meaning": {
+      "es": "Observación totalmente automática, sin intervención humana.",
+      "en": "Fully automated observation, with no human intervention."
+    },
+    "example": "METAR LEVX 131030Z AUTO …",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "cor": {
+    "code": "COR",
+    "group": "modifier",
+    "meaning": {
+      "es": "Informe corregido: sustituye a otro anterior que contenía un error.",
+      "en": "Corrected report: replaces an earlier one that contained an error."
+    },
+    "example": "METAR COR EGLL …",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "nil": {
+    "code": "NIL",
+    "group": "modifier",
+    "meaning": {
+      "es": "Informe ausente: no hay datos para esa hora.",
+      "en": "Missing report: there is no data for that time."
+    },
+    "example": "METAR LECO 131030Z NIL=",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "amd": {
+    "code": "AMD",
+    "group": "modifier",
+    "meaning": {
+      "es": "Pronóstico enmendado: sustituye al TAF anterior.",
+      "en": "Amended forecast: replaces the previous TAF."
+    },
+    "example": "TAF AMD LEMD …",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "cnl": {
+    "code": "CNL",
+    "group": "modifier",
+    "meaning": {
+      "es": "Pronóstico cancelado.",
+      "en": "Cancelled forecast."
+    },
+    "example": "TAF AMD LEMD 131100Z 1312/1418 CNL=",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "vrb": {
+    "code": "VRB",
+    "group": "wind",
+    "meaning": {
+      "es": "Dirección del viento variable: no se puede dar una dirección media (vientos flojos o muy cambiantes).",
+      "en": "Variable wind direction: no mean direction can be given (light or very changeable winds)."
+    },
+    "example": "VRB02KT",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "kt": {
+    "code": "KT",
+    "group": "wind",
+    "meaning": {
+      "es": "Nudos: unidad de la velocidad del viento (millas náuticas por hora). Algunos países usan MPS (metros por segundo).",
+      "en": "Knots: the unit of wind speed (nautical miles per hour). Some countries use MPS (metres per second)."
+    },
+    "example": "27015G25KT",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ndv": {
+    "code": "NDV",
+    "group": "visibility",
+    "meaning": {
+      "es": "Sin variaciones direccionales: la estación automática no puede indicar diferencias de visibilidad según la dirección.",
+      "en": "No directional variation: the automatic station cannot report visibility differences by direction."
+    },
+    "example": "9999NDV",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "cavok": {
+    "code": "CAVOK",
+    "group": "general",
+    "meaning": {
+      "es": "Techo y visibilidad correctos: visibilidad de 10 km o más, ninguna nube por debajo de 5000 ft (o de la altitud mínima de sector más alta, si es mayor), ni cumulonimbos ni cúmulos en torre, y sin tiempo significativo.",
+      "en": "Ceiling and visibility OK: visibility 10 km or more, no cloud below 5,000 ft (or below the highest minimum sector altitude, if greater), no cumulonimbus or towering cumulus, and no significant weather."
+    },
+    "example": "24008KT CAVOK 18/09 Q1021",
+    "terms": [
+      "cavok"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "rvr": {
+    "code": "R…/…",
+    "group": "visibility",
+    "meaning": {
+      "es": "Alcance visual en la pista (RVR): la distancia a la que el piloto ve las marcas o luces de la pista indicada.",
+      "en": "Runway visual range (RVR): the distance at which the pilot can see the markings or lights of the runway given."
+    },
+    "example": "R18R/0600U",
+    "terms": [
+      "rvr"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "light": {
+    "code": "-",
+    "group": "intensity",
+    "meaning": {
+      "es": "Intensidad ligera.",
+      "en": "Light intensity."
+    },
+    "example": "-RA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "moderate": {
+    "code": "(sin signo)",
+    "group": "intensity",
+    "meaning": {
+      "es": "Intensidad moderada: no se escribe ningún signo.",
+      "en": "Moderate intensity: no sign is written."
+    },
+    "example": "RA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "heavy": {
+    "code": "+",
+    "group": "intensity",
+    "meaning": {
+      "es": "Intensidad fuerte; con remolinos de polvo, nubes en embudo y tempestades de arena o polvo indica que están bien desarrollados.",
+      "en": "Heavy intensity; with dust whirls, funnel clouds and sand or dust storms it means they are well developed."
+    },
+    "example": "+TSRA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "vc": {
+    "code": "VC",
+    "group": "intensity",
+    "meaning": {
+      "es": "En las proximidades: el fenómeno no está en el aeródromo, pero sí a no más de unos 8 km de su perímetro (criterio OACI).",
+      "en": "In the vicinity: the phenomenon is not at the aerodrome but within about 8 km of its perimeter (ICAO criterion)."
+    },
+    "example": "VCSH",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "mi": {
+    "code": "MI",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Baja (poco espesor): se usa con la niebla.",
+      "en": "Shallow: used with fog."
+    },
+    "example": "MIFG",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "bc": {
+    "code": "BC",
+    "group": "descriptor",
+    "meaning": {
+      "es": "En bancos: se usa con la niebla.",
+      "en": "Patches: used with fog."
+    },
+    "example": "BCFG",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "pr": {
+    "code": "PR",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Parcial: niebla que cubre solo parte del aeródromo.",
+      "en": "Partial: fog covering only part of the aerodrome."
+    },
+    "example": "PRFG",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "dr": {
+    "code": "DR",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Levantado por el viento a poca altura (por debajo de los ojos de un observador, unos 2 m).",
+      "en": "Low drifting: raised by the wind to a low height (below an observer's eye level, about 2 m)."
+    },
+    "example": "DRSN",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "bl": {
+    "code": "BL",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Levantado por el viento hasta 2 m o más de altura.",
+      "en": "Blowing: raised by the wind to 2 m or more."
+    },
+    "example": "BLSA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "sh": {
+    "code": "SH",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Chubascos: precipitación que empieza y termina de golpe, de nubes convectivas.",
+      "en": "Showers: precipitation that starts and stops suddenly, from convective clouds."
+    },
+    "example": "SHRA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ts": {
+    "code": "TS",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Tormenta: hay truenos o rayos; puede ir con precipitación.",
+      "en": "Thunderstorm: thunder or lightning; it may come with precipitation."
+    },
+    "example": "TSRA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "fz": {
+    "code": "FZ",
+    "group": "descriptor",
+    "meaning": {
+      "es": "Engelante: gotas subfundidas que se congelan al tocar una superficie.",
+      "en": "Freezing: supercooled drops that freeze on contact with a surface."
+    },
+    "example": "FZDZ",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "dz": {
+    "code": "DZ",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Llovizna: gotas muy pequeñas y muy juntas.",
+      "en": "Drizzle: very small, closely spaced drops."
+    },
+    "example": "-DZ",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ra": {
+    "code": "RA",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Lluvia.",
+      "en": "Rain."
+    },
+    "example": "RA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "sn": {
+    "code": "SN",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Nieve.",
+      "en": "Snow."
+    },
+    "example": "-SN",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "sg": {
+    "code": "SG",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Cinarra: granos de hielo blancos y muy pequeños.",
+      "en": "Snow grains: very small white grains of ice."
+    },
+    "example": "SG",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "pl": {
+    "code": "PL",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Hielo granulado: bolitas de hielo transparentes.",
+      "en": "Ice pellets: transparent pellets of ice."
+    },
+    "example": "PL",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "gr": {
+    "code": "GR",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Granizo (granos de 5 mm o más).",
+      "en": "Hail (stones of 5 mm or more)."
+    },
+    "example": "+TSGR",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "gs": {
+    "code": "GS",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Granizo pequeño o nieve granulada (menos de 5 mm).",
+      "en": "Small hail and/or snow pellets (less than 5 mm)."
+    },
+    "example": "SHGS",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "up": {
+    "code": "UP",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Precipitación de tipo desconocido (solo estaciones automáticas).",
+      "en": "Unknown precipitation (automatic stations only)."
+    },
+    "example": "UP",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ic": {
+    "code": "IC",
+    "group": "precipitation",
+    "meaning": {
+      "es": "Cristales de hielo (polvo de diamante).",
+      "en": "Ice crystals (diamond dust)."
+    },
+    "example": "IC",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "br": {
+    "code": "BR",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Neblina: visibilidad de 1000 m o más y no superior a 5000 m.",
+      "en": "Mist: visibility of at least 1,000 m and not more than 5,000 m."
+    },
+    "example": "4000 BR",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "fg": {
+    "code": "FG",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Niebla: visibilidad inferior a 1000 m.",
+      "en": "Fog: visibility below 1,000 m."
+    },
+    "example": "0300 FG",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "fu": {
+    "code": "FU",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Humo.",
+      "en": "Smoke."
+    },
+    "example": "FU",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "va": {
+    "code": "VA",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Ceniza volcánica.",
+      "en": "Volcanic ash."
+    },
+    "example": "VA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "du": {
+    "code": "DU",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Polvo extendido en suspensión.",
+      "en": "Widespread dust in suspension."
+    },
+    "example": "DU",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "sa": {
+    "code": "SA",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Arena.",
+      "en": "Sand."
+    },
+    "example": "BLSA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "hz": {
+    "code": "HZ",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Calima: partículas secas muy finas que enturbian el aire.",
+      "en": "Haze: very fine dry particles that make the air hazy."
+    },
+    "example": "HZ",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "py": {
+    "code": "PY",
+    "group": "obscuration",
+    "meaning": {
+      "es": "Rociones: gotas de agua levantadas del mar.",
+      "en": "Spray: water droplets raised from the sea."
+    },
+    "example": "PY",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "po": {
+    "code": "PO",
+    "group": "other",
+    "meaning": {
+      "es": "Remolinos de polvo o arena.",
+      "en": "Dust or sand whirls."
+    },
+    "example": "PO",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "sq": {
+    "code": "SQ",
+    "group": "other",
+    "meaning": {
+      "es": "Turbonada: aumento brusco y fuerte del viento que dura al menos un minuto.",
+      "en": "Squall: a sudden, strong increase in wind lasting at least a minute."
+    },
+    "example": "SQ",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "fc": {
+    "code": "FC",
+    "group": "other",
+    "meaning": {
+      "es": "Nube en embudo; +FC indica un tornado o una tromba marina.",
+      "en": "Funnel cloud; +FC means a tornado or waterspout."
+    },
+    "example": "+FC",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ss": {
+    "code": "SS",
+    "group": "other",
+    "meaning": {
+      "es": "Tempestad de arena.",
+      "en": "Sandstorm."
+    },
+    "example": "SS",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ds": {
+    "code": "DS",
+    "group": "other",
+    "meaning": {
+      "es": "Tempestad de polvo.",
+      "en": "Duststorm."
+    },
+    "example": "+DS",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "few": {
+    "code": "FEW",
+    "group": "cloud",
+    "meaning": {
+      "es": "Nubes escasas: 1 a 2 octas (octavos de cielo cubierto).",
+      "en": "Few: 1 to 2 oktas (eighths of the sky covered)."
+    },
+    "example": "FEW020",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "sct": {
+    "code": "SCT",
+    "group": "cloud",
+    "meaning": {
+      "es": "Nubes dispersas: 3 a 4 octas.",
+      "en": "Scattered: 3 to 4 oktas."
+    },
+    "example": "SCT035",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "bkn": {
+    "code": "BKN",
+    "group": "cloud",
+    "meaning": {
+      "es": "Nubosidad abundante: 5 a 7 octas.",
+      "en": "Broken: 5 to 7 oktas."
+    },
+    "example": "BKN012",
+    "terms": [
+      "ceiling"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ovc": {
+    "code": "OVC",
+    "group": "cloud",
+    "meaning": {
+      "es": "Cielo cubierto: 8 octas.",
+      "en": "Overcast: 8 oktas."
+    },
+    "example": "OVC004",
+    "terms": [
+      "ceiling"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "nsc": {
+    "code": "NSC",
+    "group": "cloud",
+    "meaning": {
+      "es": "Sin nubes significativas: ninguna por debajo de 5000 ft (o de la altitud mínima de sector más alta) y ni cumulonimbos ni cúmulos en torre, cuando no se puede usar CAVOK.",
+      "en": "No significant cloud: none below 5,000 ft (or the highest minimum sector altitude) and no cumulonimbus or towering cumulus, when CAVOK cannot be used."
+    },
+    "example": "9999 NSC",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ncd": {
+    "code": "NCD",
+    "group": "cloud",
+    "meaning": {
+      "es": "Sin nubes detectadas: la estación automática no detecta nubes.",
+      "en": "No cloud detected: the automatic station detects no cloud."
+    },
+    "example": "AUTO 9999 NCD",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "skc": {
+    "code": "SKC",
+    "group": "cloud",
+    "meaning": {
+      "es": "Cielo despejado. Se usa en algunos países, por ejemplo en los TAF de EE. UU.; en los METAR de formato OACI se emplean NSC, NCD o CAVOK.",
+      "en": "Sky clear. Used in some countries, for example in US TAFs; ICAO-format METARs use NSC, NCD or CAVOK instead."
+    },
+    "example": "SKC",
+    "terms": [],
+    "sources": [
+      "faa-aim",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "clr": {
+    "code": "CLR",
+    "group": "cloud",
+    "meaning": {
+      "es": "La estación automática no detecta nubes por debajo de 12 000 ft (uso de EE. UU.).",
+      "en": "The automated station detects no clouds below 12,000 ft (US usage)."
+    },
+    "example": "CLR",
+    "terms": [],
+    "sources": [
+      "faa-aim"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "vv": {
+    "code": "VV",
+    "group": "cloud",
+    "meaning": {
+      "es": "Visibilidad vertical, en cientos de pies, cuando el cielo está oscurecido (por ejemplo, por niebla) y no se ven las nubes. VV/// indica que no se puede medir.",
+      "en": "Vertical visibility, in hundreds of feet, when the sky is obscured (for example by fog) and the clouds cannot be seen. VV/// means it cannot be measured."
+    },
+    "example": "VV002",
+    "terms": [
+      "ceiling"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "cb": {
+    "code": "CB",
+    "group": "cloud",
+    "meaning": {
+      "es": "Cumulonimbos: nubes de tormenta. Se añade al grupo de nubes.",
+      "en": "Cumulonimbus: thunderstorm clouds. Added to the cloud group."
+    },
+    "example": "SCT030CB",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "tcu": {
+    "code": "TCU",
+    "group": "cloud",
+    "meaning": {
+      "es": "Cúmulos en torre (congestus): cúmulos de gran desarrollo vertical.",
+      "en": "Towering cumulus (congestus): cumulus with great vertical development."
+    },
+    "example": "BKN025TCU",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "q": {
+    "code": "Q…",
+    "group": "pressure",
+    "meaning": {
+      "es": "QNH en hectopascales: la presión para que el altímetro marque la elevación del aeródromo en tierra.",
+      "en": "QNH in hectopascals: the setting that makes the altimeter read the aerodrome elevation on the ground."
+    },
+    "example": "Q1013",
+    "terms": [
+      "qnh"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "a": {
+    "code": "A…",
+    "group": "pressure",
+    "meaning": {
+      "es": "Reglaje del altímetro en centésimas de pulgada de mercurio (uso de EE. UU. y otros países).",
+      "en": "Altimeter setting in hundredths of an inch of mercury (US and other countries)."
+    },
+    "example": "A2992",
+    "terms": [
+      "qnh"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "ws": {
+    "code": "WS",
+    "group": "general",
+    "meaning": {
+      "es": "Cizalladura del viento en la capa de despegue o aproximación de la pista indicada.",
+      "en": "Wind shear in the take-off or approach layer of the runway given."
+    },
+    "example": "WS R27",
+    "terms": [
+      "wind-shear"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "re": {
+    "code": "RE…",
+    "group": "general",
+    "meaning": {
+      "es": "Tiempo reciente: fenómeno observado desde el informe anterior, pero no en el momento de la observación.",
+      "en": "Recent weather: a phenomenon observed since the previous report but not at the time of observation."
+    },
+    "example": "RETSRA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "nsw": {
+    "code": "NSW",
+    "group": "general",
+    "meaning": {
+      "es": "Sin tiempo significativo: indica que termina el fenómeno anunciado antes (en el TAF y en la tendencia).",
+      "en": "No significant weather: announces the end of a previously forecast phenomenon (in TAFs and trends)."
+    },
+    "example": "BECMG 1316/1318 NSW",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "rmk": {
+    "code": "RMK",
+    "group": "general",
+    "meaning": {
+      "es": "Observaciones: información adicional de uso nacional al final del informe.",
+      "en": "Remarks: additional national information at the end of the report."
+    },
+    "example": "RMK AO2",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "nosig": {
+    "code": "NOSIG",
+    "group": "change",
+    "meaning": {
+      "es": "Sin cambios significativos previstos en las 2 horas siguientes (tendencia del METAR).",
+      "en": "No significant change expected in the next 2 hours (METAR trend)."
+    },
+    "example": "Q1018 NOSIG",
+    "terms": [
+      "nosig"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "becmg": {
+    "code": "BECMG",
+    "group": "change",
+    "meaning": {
+      "es": "Cambio gradual: las condiciones que siguen se alcanzan durante el periodo indicado y se mantienen después.",
+      "en": "Becoming: the conditions that follow are reached during the period given and persist afterwards."
+    },
+    "example": "BECMG 1310/1312 25015KT",
+    "terms": [
+      "becmg"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "tempo": {
+    "code": "TEMPO",
+    "group": "change",
+    "meaning": {
+      "es": "Fluctuaciones temporales: cada una dura menos de una hora y, en total, menos de la mitad del periodo.",
+      "en": "Temporary fluctuations: each lasts less than an hour and, in total, less than half of the period."
+    },
+    "example": "TEMPO 1314/1318 4000 SHRA",
+    "terms": [
+      "tempo"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "fm": {
+    "code": "FM",
+    "group": "change",
+    "meaning": {
+      "es": "Desde (from): a partir de la hora indicada empiezan condiciones completamente nuevas.",
+      "en": "From: completely new conditions start at the time given."
+    },
+    "example": "FM131500 27012KT …",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "prob": {
+    "code": "PROB30 / PROB40",
+    "group": "change",
+    "meaning": {
+      "es": "Probabilidad del 30 % o del 40 % de que se den las condiciones que siguen.",
+      "en": "30 % or 40 % probability of the conditions that follow."
+    },
+    "example": "PROB30 1315/1318 TSRA",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "tx-tn": {
+    "code": "TX / TN",
+    "group": "change",
+    "meaning": {
+      "es": "Temperaturas máxima (TX) y mínima (TN) previstas, con el día y la hora.",
+      "en": "Forecast maximum (TX) and minimum (TN) temperatures, with day and time."
+    },
+    "example": "TX24/1314Z TN12/1405Z",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  }
+}

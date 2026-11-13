@@ -32,7 +32,7 @@ const dateText = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', 
     </div>
     <div class="mt-table-wrap" data-results></div>
     <p class="mt-hint">{tr('airports.source', { date: dateText })}</p>
-    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+    <noscript><p>{tr('tools.noscript')}</p></noscript>
   </div>
   <script type="application/json" id="af-i18n" set:html={JSON.stringify(ui)} />
 </BaseLayout>

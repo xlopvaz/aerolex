@@ -17,7 +17,7 @@ It's built for student pilots, pilots, cabin crew, aviation professionals, AvGee
 | 1 · Planning | ✅ Done |
 | 2 · Design & foundation | ✅ Done |
 | 3 · Content | 🚧 In progress: dictionary, academy (METAR, TAF, aviation fundamentals, pilot and cabin crew modules) and Hangar live |
-| 4 · Tools | 🚧 In progress: METAR and TAF decoders live |
+| 4 · Tools | ✅ Done: METAR/TAF decoders, practice, live METAR/TAF, unit converter, airport finder, ATC phraseology trainer, aircraft game, flashcards, weather glossary and aviation timeline |
 | 5 · User experience | ⏳ Planned |
 | 6 · Launch | ⏳ Planned |
 

@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(9);
+    await expect(page.locator('[data-tool]')).toHaveCount(11);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -207,5 +207,52 @@ test.describe('Flashcards', () => {
     await page.goto('en/tools/flashcards/');
     await page.locator('[data-deck]').selectOption('favorites');
     await expect(page.locator('[data-done]')).toHaveText('You have no favourites yet. Star them in the dictionary.');
+  });
+});
+
+test.describe('Weather glossary', () => {
+  test('explains a group, searches and keeps the query in the URL', async ({ page }) => {
+    await page.goto('en/tools/weather-glossary/');
+    await expect(page.locator('h1')).toHaveText('Weather glossary');
+    await expect(page.locator('[data-row="br"]')).toBeVisible();
+    await page.locator('[data-q]').fill('+TSRA');
+    const box = page.locator('[data-explain]');
+    await expect(box).toBeVisible();
+    await expect(box.locator('li')).toHaveCount(3);
+    await expect(box).toContainText('Thunderstorm');
+    await expect(page.locator('[data-row="br"]')).toBeHidden();
+    await expect(page).toHaveURL(/q=%2BTSRA/);
+    await page.locator('[data-q]').fill('BKN012CB');
+    await expect(box).toContainText('1,200 ft');
+    await page.locator('[data-q]').fill('volcanic');
+    await expect(box).toBeHidden();
+    await expect(page.locator('[data-row="va"]')).toBeVisible();
+    await expect(page.locator('[data-count]')).toHaveText('1 codes');
+    await page.locator('[data-q]').fill('zzzz');
+    await expect(page.locator('[data-empty]')).toBeVisible();
+  });
+
+  test('weather glossary works from a shared link in Spanish', async ({ page }) => {
+    await page.goto('es/herramientas/glosario-meteorologico/?q=FZFG');
+    await expect(page.locator('[data-explain]')).toContainText('Engelante');
+    await expect(page.locator('[data-explain] li')).toHaveCount(2);
+  });
+});
+
+test.describe('Aviation timeline', () => {
+  test('sourced events grouped by century and filtered by theme', async ({ page }) => {
+    await page.goto('es/herramientas/cronologia/');
+    await expect(page.locator('h1')).toHaveText('Cronología de la aviación');
+    const all = await page.locator('[data-event]').count();
+    expect(all).toBeGreaterThanOrEqual(15);
+    await expect(page.locator('#wright-flyer time')).toHaveText('17 de diciembre de 1903');
+    await expect(page.locator('#cierva-autogiro time')).toHaveText('enero de 1923');
+    await expect(page.locator('#wright-flyer .tl-event__sources a').first()).toHaveAttribute('href', /si\.edu/);
+    await page.locator('label:has(input[value="regulation"])').click();
+    await expect(page.locator('[data-event]:visible')).toHaveCount(3);
+    await expect(page.locator('[data-count]')).toHaveText('3 hitos');
+    await expect(page.locator('#wright-flyer')).toBeHidden();
+    await page.locator('label:has(input[value="all"])').click();
+    await expect(page.locator('[data-event]:visible')).toHaveCount(all);
   });
 });

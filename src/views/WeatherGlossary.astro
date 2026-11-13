@@ -1,0 +1,166 @@
+---
+/** Weather glossary (Phase 4): every METAR/TAF code with its meaning, plus a group explainer.
+ *  The full glossary is rendered at build time (usable without JavaScript); the script only filters. */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Badge from '../components/ui/Badge.astro';
+import Icon from '../components/ui/Icon.astro';
+import { childHref, href, pick, t, useT } from '../i18n/index.js';
+import { groupCodes } from '../lib/weather/glossary.js';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const codes = (await getCollection('weatherCodes')).map((c) => ({ id: c.id, ...c.data }));
+const groups = groupCodes(codes);
+const dictionary = await getCollection('dictionary');
+const termName = (id: string) => pick(dictionary.find((d) => d.id === id)!.data.term, lang);
+const weatherTerms = dictionary
+  .filter((d) => d.data.categories.includes('meteorology'))
+  .map((d) => ({ id: d.id, name: pick(d.data.term, lang) }))
+  .sort((a, b) => a.name.localeCompare(b.name, lang));
+const payload = JSON.stringify({
+  ui: t(lang, 'weatherGlossary'),
+  codes: codes.map((c) => ({ id: c.id, code: c.code, group: c.group, meaning: c.meaning })),
+});
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('weatherGlossary.metaTitle')} description={tr('weatherGlossary.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.weatherGlossary') }]} />
+      <h1>{tr('weatherGlossary.title')}</h1>
+      <p class="lead">{tr('weatherGlossary.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container mt wg" data-glossary data-lang={lang}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+
+    <div class="wg-search" role="search">
+      <label for="wg-q" class="mt-label">{tr('weatherGlossary.searchLabel')}</label>
+      <input id="wg-q" type="search" class="mono" autocomplete="off" spellcheck="false" placeholder={tr('weatherGlossary.searchPlaceholder')} data-q />
+      <p class="mt-hint" role="status" data-count>{tr('weatherGlossary.results', { n: codes.length })}</p>
+    </div>
+
+    <section class="mt-card wg-explain" aria-live="polite" data-explain hidden></section>
+
+    {groups.map((g) => (
+      <section class="wg-group" data-group={g.group} aria-labelledby={`wg-${g.group}`}>
+        <h2 id={`wg-${g.group}`}>{tr(`weatherGlossary.groups.${g.group}`)}</h2>
+        <div class="wg-table-wrap">
+          <table class="wg-table">
+            <thead><tr><th scope="col">{tr('weatherGlossary.code')}</th><th scope="col">{tr('weatherGlossary.meaning')}</th><th scope="col">{tr('weatherGlossary.example')}</th></tr></thead>
+            <tbody>
+              {g.items.map((c) => (
+                <tr data-row={c.id} id={`code-${c.id}`}>
+                  <th scope="row"><code>{c.code}</code></th>
+                  <td>
+                    {pick(c.meaning, lang)}
+                    {c.terms.length > 0 && (
+                      <span class="wg-terms">{tr('weatherGlossary.related')}: {c.terms.map((id, i) => <>{i > 0 && ' · '}<a href={childHref('dictionary', id, lang)}>{termName(id)}</a></>)}</span>
+                    )}
+                  </td>
+                  <td>{c.example ? <code class="wg-example">{c.example}</code> : '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))}
+    <p class="mt-hint" data-empty hidden>{tr('weatherGlossary.noResults')}</p>
+
+    <p><a class="wg-decode" href={href('metarDecoder', lang)}><Icon name="cloud-sun" size={18} /> {tr('weatherGlossary.decode')}</a></p>
+
+    <section class="wg-group" aria-labelledby="wg-terms">
+      <h2 id="wg-terms">{tr('weatherGlossary.termsTitle')}</h2>
+      <ul class="wg-termlist" role="list">
+        {weatherTerms.map((w) => <li><a href={childHref('dictionary', w.id, lang)}>{w.name}</a></li>)}
+      </ul>
+    </section>
+
+    <p class="mt-hint"><Badge tone="amber" icon="pencil">{tr('status.draft')}</Badge> {tr('weatherGlossary.sourcesNote')}</p>
+  </div>
+  <script type="application/json" id="wg-data" set:html={payload} />
+</BaseLayout>
+
+<style is:global>
+  .wg-search input { width: 100%; max-width: 32rem; padding: var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font-size: var(--text-lg); }
+  .wg-search input:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 2px; }
+  .wg-explain h2 { margin: 0 0 var(--space-3); font-size: var(--text-lg); }
+  .wg-explain ol { margin: 0; padding-left: 1.25rem; display: grid; gap: var(--space-2); }
+  .wg-explain code, .wg-table code { font-family: var(--font-mono); font-weight: 700; }
+  .wg-group { margin-top: var(--space-6); }
+  .wg-group h2 { font-size: var(--text-xl); }
+  .wg-table-wrap { overflow-x: auto; }
+  .wg-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .wg-table th, .wg-table td { padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  .wg-table thead th { color: var(--text-muted); font-weight: 600; }
+  .wg-table tbody th { white-space: nowrap; width: 9rem; }
+  .wg-table td:last-child { white-space: nowrap; }
+  .wg-example { color: var(--cyan); }
+  .wg-terms { display: block; margin-top: var(--space-1); color: var(--text-muted); }
+  .wg-termlist { display: flex; flex-wrap: wrap; gap: var(--space-2); list-style: none; margin: 0; padding: 0; }
+  .wg-termlist a { display: inline-block; padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--surface); }
+  .wg-decode { display: inline-flex; align-items: center; gap: var(--space-2); margin-top: var(--space-5); font-weight: 600; }
+</style>
+
+<script>
+  import { buildCodeIndex, explainGroup, searchCodes } from '../lib/weather/glossary.js';
+  import { esc } from '../lib/metar/render.js';
+
+  const interpolate = (str: string, vars: Record<string, unknown>) => String(str).replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? `{${k}}`));
+
+  const root = document.querySelector<HTMLElement>('[data-glossary]');
+  const dataEl = document.getElementById('wg-data');
+  if (root && dataEl) {
+    const lang = root.dataset.lang as 'es' | 'en';
+    const { ui, codes } = JSON.parse(dataEl.textContent || '{}');
+    const byId = new Map(codes.map((c: any) => [c.id, c]));
+    const index = buildCodeIndex(codes);
+    const input = root.querySelector<HTMLInputElement>('[data-q]')!;
+    const count = root.querySelector<HTMLElement>('[data-count]')!;
+    const explainBox = root.querySelector<HTMLElement>('[data-explain]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const rows = [...root.querySelectorAll<HTMLElement>('[data-row]')];
+    const sections = [...root.querySelectorAll<HTMLElement>('[data-group]')];
+
+    const update = () => {
+      const q = input.value;
+      const explained = explainGroup(q, index);
+      let visible: Set<string>;
+      if (explained) {
+        visible = new Set(explained.ids);
+        const items = explained.ids.map((id: string) => {
+          const c: any = byId.get(id);
+          return `<li><code>${esc(c.code)}</code> — ${esc(c.meaning[lang])}</li>`;
+        }).join('');
+        let height = '';
+        if (explained.heightFt !== undefined) {
+          height = `<p class="mt-hint">${esc(explained.heightFt === null ? ui.heightUnknown : interpolate(ui.height, { ft: explained.heightFt.toLocaleString(lang) }))}</p>`;
+        }
+        explainBox.innerHTML = `<h2>${esc(interpolate(ui.explainTitle, { token: explained.token }))}</h2><ol>${items}</ol>${height}`;
+        explainBox.hidden = false;
+      } else {
+        visible = new Set(searchCodes(codes, q, lang).map((c: any) => c.id));
+        explainBox.hidden = true;
+        explainBox.innerHTML = '';
+      }
+      for (const r of rows) r.hidden = !visible.has(r.dataset.row!);
+      for (const s of sections) s.hidden = !s.querySelector('[data-row]:not([hidden])');
+      empty.hidden = visible.size > 0;
+      count.textContent = interpolate(ui.results, { n: visible.size });
+      const url = new URL(location.href);
+      if (q.trim()) url.searchParams.set('q', q.trim()); else url.searchParams.delete('q');
+      history.replaceState(null, '', url);
+    };
+
+    const initial = new URLSearchParams(location.search).get('q');
+    if (initial) input.value = initial;
+    input.addEventListener('input', update);
+    if (initial) update();
+  }
+</script>

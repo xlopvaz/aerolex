@@ -34,7 +34,9 @@
     "airportFinder": "Airport finder",
     "atcTrainer": "ATC phraseology trainer",
     "aircraftGame": "Which aircraft is it?",
-    "flashcards": "Flashcards"
+    "flashcards": "Flashcards",
+    "weatherGlossary": "Weather glossary",
+    "timeline": "Timeline"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -677,8 +679,17 @@
       "flashcards": {
         "title": "Flashcards",
         "text": "Review the EN/ES dictionary vocabulary with spaced repetition, by category or with your favourites."
+      },
+      "weatherGlossary": {
+        "title": "Weather glossary",
+        "text": "Every METAR and TAF code with its meaning, plus an explainer: type a group such as +TSRA or BKN012CB and see what each part means."
+      },
+      "timeline": {
+        "title": "Aviation timeline",
+        "text": "From the first balloons to the A380: milestones in flight, airlines and regulation, with sources and a theme filter."
       }
-    }
+    },
+    "noscript": "This tool needs JavaScript to work."
   },
   "metarTool": {
     "metaTitle": "METAR and SPECI decoder · AeroLex",
@@ -1146,5 +1157,64 @@
     "openEntry": "Open in the dictionary",
     "keys": "Shortcuts: space to show the answer; 1, 2 and 3 to grade.",
     "howItWorks": "How it works: \"Again\" brings the card back in this session; \"Good\" and \"Easy\" schedule it in 1, 3, 7, 16 or 35 days depending on how well you know it."
+  },
+  "weatherGlossary": {
+    "metaTitle": "METAR and TAF weather glossary · AeroLex",
+    "metaDescription": "Meaning of every METAR and TAF code (intensity, phenomena, clouds, trends) and a group explainer.",
+    "title": "Weather glossary",
+    "lead": "The codes used in METAR reports and TAF forecasts, grouped and with an example. Type a code or a whole group to see what each part means.",
+    "searchLabel": "Code, group or word",
+    "searchPlaceholder": "e.g. +TSRA, BKN012CB, fog",
+    "explainTitle": "What {token} means",
+    "height": "Base height: {ft} ft above the aerodrome.",
+    "heightUnknown": "Height not available (///).",
+    "results": "{n} codes",
+    "noResults": "No code matches your search.",
+    "code": "Code",
+    "meaning": "Meaning",
+    "example": "Example",
+    "related": "In the dictionary",
+    "decode": "Decode a full METAR or TAF",
+    "termsTitle": "Weather terms in the dictionary",
+    "sourcesNote": "Sources: WMO No. 306 (Manual on Codes) and ICAO Annex 3; US usage per the FAA AIM. Content under review (draft).",
+    "groups": {
+      "report": "Report types",
+      "modifier": "Modifiers",
+      "wind": "Wind",
+      "visibility": "Visibility",
+      "intensity": "Intensity and proximity",
+      "descriptor": "Descriptors",
+      "precipitation": "Precipitation",
+      "obscuration": "Obscuration",
+      "other": "Other phenomena",
+      "cloud": "Clouds",
+      "pressure": "Pressure",
+      "general": "General groups",
+      "change": "Trends and forecast changes"
+    }
+  },
+  "timeline": {
+    "metaTitle": "Aviation timeline · AeroLex",
+    "metaDescription": "Milestones in aviation history, from the first balloon flight to today's large airliners, with sources.",
+    "title": "Aviation timeline",
+    "lead": "Key moments in the history of aviation: the first flights, the airlines and the rules that organise it today. Every milestone cites its sources.",
+    "filterLabel": "Theme",
+    "all": "All",
+    "themes": {
+      "flight": "Flight milestones",
+      "airline": "Commercial aviation",
+      "regulation": "Rules and authorities"
+    },
+    "centuries": {
+      "18": "18th century",
+      "19": "19th century",
+      "20": "20th century",
+      "21": "21st century"
+    },
+    "count": "{n} milestones",
+    "yearsAgo": "{n} years ago",
+    "terms": "In the dictionary",
+    "sources": "Sources",
+    "draftNote": "Content under review: dates and figures come from the sources cited in each milestone. When a source only gives the month or the year, no day is shown."
   }
 }
