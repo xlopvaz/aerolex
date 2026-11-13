@@ -19,6 +19,7 @@ export const ROUTES = {
   airportFinder: { slug: { es: 'herramientas/aeropuertos', en: 'tools/airports' }, nav: [], icon: 'map-pin' },
   atcTrainer: { slug: { es: 'herramientas/fraseologia-atc', en: 'tools/atc-phraseology' }, nav: [], icon: 'headset' },
   aircraftGame: { slug: { es: 'herramientas/que-avion-es', en: 'tools/which-aircraft' }, nav: [], icon: 'plane' },
+  flashcards: { slug: { es: 'herramientas/flashcards', en: 'tools/flashcards' }, nav: [], icon: 'layers' },
   converter:  { slug: { es: 'herramientas/conversor', en: 'tools/converter' }, nav: [], icon: 'arrow-left-right' },
   practice:   { slug: { es: 'herramientas/practica-metar-taf', en: 'tools/metar-taf-practice' }, nav: [], icon: 'target' },
   compare:    { slug: { es: 'hangar/comparador', en: 'hangar/compare' }, nav: [], icon: 'columns-3' },

@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(8);
+    await expect(page.locator('[data-tool]')).toHaveCount(9);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -181,5 +181,31 @@ test.describe('Aircraft identification game', () => {
       await page.locator('[data-next]').click();
     }
     await expect(page.locator('[data-score]')).toContainText('de 3');
+  });
+});
+
+test.describe('Flashcards', () => {
+  test('reviews cards with spaced repetition and keeps progress', async ({ page }) => {
+    await page.goto('es/herramientas/flashcards/');
+    await page.locator('[data-deck]').selectOption('meteorology');
+    const stats = page.locator('[data-stats]');
+    await expect(stats).toContainText('Pendientes: 0');
+    const front = await page.locator('[data-front]').textContent();
+    await page.locator('[data-reveal]').click();
+    await expect(page.locator('[data-back] a')).toHaveAttribute('href', /\/es\/diccionario\//);
+    await expect(page.locator('[data-int="good"]')).toHaveText('1 día');
+    await page.keyboard.press('2');
+    await expect(page.locator('[data-front]')).not.toHaveText(front ?? '');
+    await page.locator('[data-reveal]').click();
+    await page.locator('[data-grade="again"]').click();
+    await expect(stats).toContainText('Pendientes: 1');
+    await page.reload();
+    await page.locator('[data-deck]').selectOption('meteorology');
+    await expect(stats).toContainText('Pendientes: 1');
+  });
+  test('favourites deck is empty until terms are starred', async ({ page }) => {
+    await page.goto('en/tools/flashcards/');
+    await page.locator('[data-deck]').selectOption('favorites');
+    await expect(page.locator('[data-done]')).toHaveText('You have no favourites yet. Star them in the dictionary.');
   });
 });

@@ -33,7 +33,8 @@
     "liveWeather": "METAR y TAF en directo",
     "airportFinder": "Buscador de aeropuertos",
     "atcTrainer": "Entrenador de fraseología ATC",
-    "aircraftGame": "¿Qué avión es?"
+    "aircraftGame": "¿Qué avión es?",
+    "flashcards": "Flashcards"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -672,6 +673,10 @@
       "aircraftGame": {
         "title": "¿Qué avión es?",
         "text": "Identifica aeronaves por sus cifras oficiales y compara variantes, con los datos del Hangar."
+      },
+      "flashcards": {
+        "title": "Flashcards",
+        "text": "Repasa el vocabulario EN/ES del diccionario con repetición espaciada, por categorías o con tus favoritos."
       }
     }
   },
@@ -1112,5 +1117,34 @@
       "mtowT": "t"
     },
     "dataNote": "Las cifras son las publicadas por cada fabricante para cada variante; pueden cambiar según la configuración."
+  },
+  "flashcards": {
+    "metaTitle": "Flashcards con repetición espaciada · AeroLex",
+    "metaDescription": "Repasa el vocabulario aeronáutico EN/ES con tarjetas y repetición espaciada: cada término vuelve justo cuando empiezas a olvidarlo.",
+    "title": "Flashcards",
+    "lead": "Repasa el vocabulario del diccionario con tarjetas. La repetición espaciada te enseña cada término justo cuando empiezas a olvidarlo; tu progreso se guarda en este navegador.",
+    "deckLabel": "Mazo",
+    "allTerms": "Todo el diccionario",
+    "favorites": "Mis favoritos",
+    "directionLabel": "Pregunta",
+    "directions": {
+      "en": "Término en inglés",
+      "es": "Término en español"
+    },
+    "stats": "Pendientes: {due} · Nuevas: {fresh} · Aprendidas: {learned} de {total}",
+    "reveal": "Mostrar respuesta",
+    "again": "Otra vez",
+    "good": "Bien",
+    "easy": "Fácil",
+    "days": {
+      "0": "ahora",
+      "1": "1 día",
+      "n": "{n} días"
+    },
+    "done": "¡Has terminado por ahora! Vuelve más tarde para las tarjetas pendientes.",
+    "emptyFavorites": "Aún no tienes favoritos. Márcalos con la estrella en el diccionario.",
+    "openEntry": "Ver en el diccionario",
+    "keys": "Atajos: espacio para mostrar la respuesta; 1, 2 y 3 para calificar.",
+    "howItWorks": "Cómo funciona: «Otra vez» devuelve la tarjeta a esta sesión; «Bien» y «Fácil» la programan para dentro de 1, 3, 7, 16 o 35 días según lo bien que la conozcas."
   }
 }
