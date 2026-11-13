@@ -1,0 +1,41 @@
+{
+  "path": "cabin-crew-training",
+  "order": 2,
+  "level": "beginner",
+  "title": {
+    "en": "Cabin Crew Academy · Module 2: Aircraft Familiarisation",
+    "es": "Academia de TCP · Módulo 2: Familiarización con la aeronave"
+  },
+  "description": {
+    "en": "The cabin as a workplace: layout, galleys and service units, doors and emergency exits, and the emergency equipment on board. The operator's manual always prevails over this course.",
+    "es": "La cabina como lugar de trabajo: distribución, galleys y unidades de servicio, puertas y salidas de emergencia, y el equipo de emergencia a bordo. El manual del operador prevalece siempre sobre este curso."
+  },
+  "objectives": {
+    "en": [
+      "Describe the main areas of a passenger cabin",
+      "Explain armed and disarmed door modes and the types of exits",
+      "Identify the main items of cabin emergency equipment and what they are for"
+    ],
+    "es": [
+      "Describir las zonas principales de una cabina de pasaje",
+      "Explicar los modos armado y desarmado de las puertas y los tipos de salida",
+      "Identificar el equipo de emergencia principal de la cabina y para qué sirve"
+    ]
+  },
+  "lessons": [
+    "cabin-layout",
+    "doors-and-exits",
+    "emergency-equipment"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "eu-965-2012",
+    "cfr-14-25-803",
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

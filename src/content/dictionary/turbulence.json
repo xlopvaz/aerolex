@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "turbulence",
+    "es": "turbulencia"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety",
+    "cabin-crew"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Irregular, often invisible air movement that makes an aircraft bump or jolt. It can be caused by convection, terrain, jet streams, fronts or wake vortices, and can occur in clear air.",
+    "es": "Movimiento irregular del aire, a menudo invisible, que provoca sacudidas en la aeronave. Puede deberse a la convección, al relieve, a las corrientes en chorro, a los frentes o a la estela de otros aviones, y puede producirse con el cielo despejado."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"bumps\" during a flight. The best protection is to keep your seat belt fastened whenever you are seated.",
+    "es": "Los «baches» del vuelo. La mejor protección es llevar el cinturón abrochado siempre que estés sentado."
+  },
+  "example": {
+    "en": "\"Cabin crew, take your seats: we expect moderate turbulence.\"",
+    "es": "«Tripulación, a sus asientos: esperamos turbulencia moderada.»"
+  },
+  "pronunciation": {
+    "en": "/ˈtɜːbjʊləns/",
+    "es": "turbulencia"
+  },
+  "synonyms": {
+    "en": [
+      "chop",
+      "bumps"
+    ],
+    "es": [
+      "baches"
+    ]
+  },
+  "related": [
+    "wake-turbulence",
+    "wind-shear",
+    "cabin-crew"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-turbulence",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

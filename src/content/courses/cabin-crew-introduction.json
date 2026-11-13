@@ -1,0 +1,44 @@
+{
+  "path": "cabin-crew-training",
+  "order": 1,
+  "level": "beginner",
+  "title": {
+    "en": "Cabin Crew Academy · Module 1: Introduction to Cabin Crew",
+    "es": "Academia de TCP · Módulo 1: Introducción a la profesión de TCP"
+  },
+  "description": {
+    "en": "What cabin crew are for, how many there must be on board, how to become one under EU rules and how the crew is organised. The operator's manual always prevails over this course.",
+    "es": "Para qué está la tripulación de cabina, cuántos tripulantes tiene que haber a bordo, cómo se llega a serlo según la normativa europea y cómo se organiza la tripulación. El manual del operador prevalece siempre sobre este curso."
+  },
+  "objectives": {
+    "en": [
+      "Explain why safety is the primary role of cabin crew",
+      "Describe how the minimum number of cabin crew is determined",
+      "Outline the EU requirements for the cabin crew attestation",
+      "Describe the chain of authority and communication with the flight deck"
+    ],
+    "es": [
+      "Explicar por qué la seguridad es la función principal de la tripulación de cabina",
+      "Describir cómo se determina el número mínimo de tripulantes de cabina",
+      "Resumir los requisitos europeos del certificado de TCP",
+      "Describir la cadena de autoridad y la comunicación con la cabina de vuelo"
+    ]
+  },
+  "lessons": [
+    "role-of-cabin-crew",
+    "becoming-cabin-crew",
+    "crew-and-authority"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "eu-965-2012",
+    "eu-1178-2011",
+    "easa-ear-air-ops",
+    "easa-ear-aircrew"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

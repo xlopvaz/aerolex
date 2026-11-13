@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PBE",
+    "es": "PBE"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Protective breathing equipment",
+    "es": "Equipo de protección respiratoria"
+  },
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Portable equipment that protects the eyes, nose and mouth of a crew member and supplies breathable gas for a limited time, so they can fight a fire or work in smoke or fumes.",
+    "es": "Equipo portátil que protege los ojos, la nariz y la boca de un tripulante y le suministra gas respirable durante un tiempo limitado, para que pueda combatir un incendio o trabajar entre humo o gases."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The hood the crew put on to fight a fire in the cabin without breathing the smoke.",
+    "es": "La capucha que se pone la tripulación para combatir un fuego en cabina sin respirar el humo."
+  },
+  "example": {
+    "en": "\"Check that the PBE is in place and its seal is intact.\"",
+    "es": "«Comprueba que el PBE está en su sitio y con el precinto intacto.»"
+  },
+  "pronunciation": {
+    "en": "P-B-E (pee-bee-ee)",
+    "es": "pe-be-e"
+  },
+  "synonyms": {
+    "en": [
+      "smoke hood"
+    ],
+    "es": [
+      "capucha antihumo"
+    ]
+  },
+  "related": [
+    "cabin-crew",
+    "evacuation-slide"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

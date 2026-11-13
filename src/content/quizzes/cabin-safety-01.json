@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué equipaje de mano se puede llevar en la cabina según el Reglamento 965/2012?",
+        "en": "Which cabin baggage may be taken on board under Regulation 965/2012?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cualquiera",
+            "en": "Any"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo el que pueda estibarse de forma adecuada y segura",
+            "en": "Only baggage that can be adequately and securely stowed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo bolsos pequeños",
+            "en": "Only small handbags"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguno",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Lo que no puede estibarse con seguridad no viaja en la cabina.",
+        "en": "What cannot be stowed securely does not travel in the cabin."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cuándo se arman las puertas?",
+        "en": "When are the doors armed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Al empezar el embarque",
+            "en": "At the start of boarding"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tras cerrarlas, antes del remolque",
+            "en": "After closing them, before pushback"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En crucero",
+            "en": "In cruise"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al aterrizar",
+            "en": "On landing"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Y se hace la comprobación cruzada.",
+        "en": "And they are cross-checked."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál de estas comprobaciones forma parte de la cabina asegurada?",
+        "en": "Which of these checks is part of securing the cabin?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Mesas recogidas y respaldos en posición vertical",
+            "en": "Tray tables stowed and seat backs upright"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Luces de lectura encendidas",
+            "en": "Reading lights on"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Carros en el pasillo listos para el servicio",
+            "en": "Carts in the aisle ready for service"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lavabos ocupados",
+            "en": "Lavatories occupied"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También pasajeros sentados y abrochados, equipaje estibado, salidas despejadas y galleys asegurados.",
+        "en": "Also passengers seated and belted, baggage stowed, exits clear and galleys secured."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Quién informa a la cabina de vuelo de que la cabina está asegurada?",
+        "en": "Who reports to the flight deck that the cabin is secure?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un pasajero",
+            "en": "A passenger"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El jefe de cabina",
+            "en": "The senior cabin crew member"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El agente de rampa",
+            "en": "The ramp agent"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nadie",
+            "en": "Nobody"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Lo hace con la fórmula que fije el operador.",
+        "en": "Using the phrase set by the operator."
+      }
+    }
+  ]
+}

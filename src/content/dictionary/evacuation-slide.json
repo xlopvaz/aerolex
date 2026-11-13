@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "evacuation slide",
+    "es": "rampa de evacuación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An inflatable slide fitted to an emergency exit that deploys and inflates automatically when the door is opened in armed mode, so that occupants can get from the cabin down to the ground; some models also serve as rafts on water.",
+    "es": "Tobogán hinchable instalado en una salida de emergencia que se despliega e infla automáticamente al abrir la puerta en modo armado, para que los ocupantes puedan bajar de la cabina al suelo; algunos modelos sirven también como balsa en el agua."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The inflatable slide that comes out of the door in an evacuation.",
+    "es": "El tobogán hinchable que sale por la puerta en una evacuación."
+  },
+  "example": {
+    "en": "\"Doors to arm, slides armed and cross-check.\"",
+    "es": "«Puertas en automático, rampas armadas y comprobación cruzada.»"
+  },
+  "pronunciation": {
+    "en": "/ɪˌvækjuˈeɪʃən slaɪd/",
+    "es": "rampa de evacuación"
+  },
+  "synonyms": {
+    "en": [
+      "escape slide",
+      "slide raft"
+    ],
+    "es": [
+      "tobogán de evacuación",
+      "rampa"
+    ]
+  },
+  "related": [
+    "cabin-crew",
+    "brace-position",
+    "safety-demonstration"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-25-803",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

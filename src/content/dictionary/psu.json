@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PSU",
+    "es": "PSU"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Passenger service unit",
+    "es": "Unidad de servicio al pasajero"
+  },
+  "categories": [
+    "cabin-crew",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The panel above each row of passenger seats that groups the reading lights, the cabin crew call button, the air outlets, the information signs and, on many aircraft, the compartment from which the oxygen masks drop.",
+    "es": "Panel situado sobre cada fila de asientos que agrupa las luces de lectura, el pulsador de llamada a la tripulación, las salidas de aire, los letreros informativos y, en muchos aviones, el compartimento del que caen las máscaras de oxígeno."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The panel above your seat with the light, the call button and the air vent.",
+    "es": "El panel sobre tu asiento con la luz, el botón de llamada y la salida de aire."
+  },
+  "example": {
+    "en": "\"A passenger call light is on at the PSU of row 14.\"",
+    "es": "«Hay una llamada de pasajero encendida en la PSU de la fila 14.»"
+  },
+  "pronunciation": {
+    "en": "P-S-U (pee-ess-you)",
+    "es": "pe-ese-u"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cabin-crew",
+    "pax"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

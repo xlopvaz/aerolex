@@ -1,0 +1,63 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SCCM",
+    "es": "SCCM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Senior cabin crew member",
+    "es": "Jefe de cabina (sobrecargo)"
+  },
+  "categories": [
+    "cabin-crew"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The cabin crew member nominated by the operator, when more than one cabin crew member is assigned, to be responsible to the pilot-in-command for the conduct and coordination of normal and emergency procedures in the cabin.",
+    "es": "Tripulante de cabina designado por el operador, cuando hay más de uno a bordo, como responsable ante el comandante de dirigir y coordinar los procedimientos normales y de emergencia en la cabina."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The head of the cabin crew on a flight, and the link between the cabin and the flight deck.",
+    "es": "La persona al frente de la tripulación de cabina en un vuelo y el enlace entre la cabina de pasaje y la de vuelo."
+  },
+  "example": {
+    "en": "\"The SCCM briefs the cabin crew before boarding.\"",
+    "es": "«El jefe de cabina hace el briefing a la tripulación antes del embarque.»"
+  },
+  "pronunciation": {
+    "en": "S-C-C-M",
+    "es": "ese-ce-ce-eme"
+  },
+  "synonyms": {
+    "en": [
+      "purser",
+      "cabin manager",
+      "chief flight attendant"
+    ],
+    "es": [
+      "sobrecargo",
+      "TCP jefe",
+      "jefe de cabina"
+    ]
+  },
+  "related": [
+    "cabin-crew",
+    "crm",
+    "flight-deck"
+  ],
+  "regionalNote": {
+    "en": "Airlines use many titles for this role (purser, cabin manager, cabin service director…); the regulation describes the function, not the title.",
+    "es": "Cada aerolínea usa su propio título (sobrecargo, jefe de cabina, *purser*…); la normativa describe la función, no el nombre."
+  },
+  "sources": [
+    "eu-965-2012",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

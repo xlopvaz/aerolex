@@ -77,6 +77,14 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Orden de los cursos dentro de cada itinerario (`order` en el curso).
 - [ ] Módulos 3–17 de la Academia de pilotos.
 
+**Bloque 7 — Academia de TCP, módulos 1–3 ✅ (13/11/2026)**
+- [x] Módulo 1 *Introducción a la profesión de TCP*: función de la tripulación de cabina y número mínimo (ORO.CC.100), certificado de TCP según la parte CC y formación del operador, autoridad a bordo y comunicación con la cabina de vuelo.
+- [x] Módulo 2 *Familiarización con la aeronave*: distribución de la cabina, puertas y salidas (armado/desarmado, regla de los 90 segundos) y equipo de emergencia.
+- [x] Módulo 3 *Seguridad en cabina*: comprobaciones previas y cabina asegurada, información de seguridad a los pasajeros (AMC1 CAT.OP.MPA.170), asientos junto a salidas y turbulencia.
+- [x] 9 lecciones ES/EN con el aviso «el manual del operador prevalece» y 42 preguntas con evaluación final por módulo.
+- [x] Diccionario: 8 entradas nuevas (SCCM, CCA, rampa de evacuación, PBE, posición de impacto, demostración de seguridad, PSU y turbulencia): 105 entradas.
+- [ ] Módulos 4–15 de la Academia de TCP.
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

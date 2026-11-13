@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál de estos puntos debe incluir la información de seguridad antes del despegue?",
+        "en": "Which of these must the pre-take-off safety briefing include?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El menú del vuelo",
+            "en": "The menu"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La ubicación de las salidas de emergencia",
+            "en": "The location of the emergency exits"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La historia de la aerolínea",
+            "en": "The airline's history"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El tiempo en destino",
+            "en": "The weather at destination"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Cinturones, salidas, oxígeno y, si procede, chalecos salvavidas.",
+        "en": "Seat belts, exits, oxygen and, where applicable, life jackets."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En una despresurización, un adulto que viaja con un niño…",
+        "en": "In a decompression, an adult travelling with a child…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Pone primero la máscara al niño",
+            "en": "Puts the child's mask on first"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se pone primero su propia máscara y luego ayuda al niño",
+            "en": "Puts on their own mask first, then helps the child"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Espera a la tripulación",
+            "en": "Waits for the crew"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No usa la máscara",
+            "en": "Does not use the mask"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Sin oxígeno, el adulto podría perder la capacidad de ayudar en poco tiempo.",
+        "en": "Without oxygen, the adult could soon lose the ability to help."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Quién NO debería sentarse normalmente junto a una salida de emergencia?",
+        "en": "Who should normally NOT sit next to an emergency exit?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un adulto que entiende las instrucciones y acepta ayudar",
+            "en": "An adult who understands the instructions and agrees to help"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un pasajero que viaja con un bebé",
+            "en": "A passenger travelling with an infant"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un pasajero de negocios",
+            "en": "A business traveller"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un pasajero sin equipaje",
+            "en": "A passenger without baggage"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los asientos de salida se asignan a quien no estorbe la evacuación y pueda ayudar.",
+        "en": "Exit seats go to people who will not impede an evacuation and can help."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué son las categorías especiales de pasajeros?",
+        "en": "What are special categories of passengers?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Pasajeros de clase business",
+            "en": "Business class passengers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Personas que necesitan condiciones, ayuda o equipos especiales a bordo",
+            "en": "People who need special conditions, assistance or devices on board"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Pasajeros frecuentes",
+            "en": "Frequent flyers"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tripulantes en situación adicional",
+            "en": "Positioning crew"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por ejemplo, personas con movilidad reducida, bebés o niños no acompañados.",
+        "en": "For example people with reduced mobility, infants or unaccompanied children."
+      }
+    }
+  ]
+}

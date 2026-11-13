@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué ocurre si se abre una puerta en modo armado?",
+        "en": "What happens if a door is opened in armed mode?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Suena una alarma y nada más",
+            "en": "An alarm sounds, nothing else"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La rampa se despliega y se infla",
+            "en": "The slide deploys and inflates"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La puerta no se abre",
+            "en": "The door does not open"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se encienden las luces de lectura",
+            "en": "The reading lights come on"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso se arma antes del remolque y se desarma al llegar al puesto de estacionamiento.",
+        "en": "That is why doors are armed before pushback and disarmed on arrival at the stand."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Para qué sirve la comprobación cruzada?",
+        "en": "What is the cross-check for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para contar a los pasajeros",
+            "en": "To count passengers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para que otro tripulante verifique el modo de cada puerta",
+            "en": "So another crew member verifies each door's mode"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para revisar los billetes",
+            "en": "To check tickets"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para probar las rampas",
+            "en": "To test the slides"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Dos personas verifican el modo de las puertas para evitar errores.",
+        "en": "Two people verify the door modes to avoid mistakes."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En la certificación, ¿en cuánto tiempo deben poder evacuar todos los ocupantes?",
+        "en": "In certification, within what time must all occupants be able to evacuate?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "60 segundos",
+            "en": "60 seconds"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "90 segundos",
+            "en": "90 seconds"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "3 minutos",
+            "en": "3 minutes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5 minutos",
+            "en": "5 minutes"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Con más de 44 asientos y usando como máximo la mitad de las salidas laterales.",
+        "en": "With more than 44 seats and using no more than half of the side exits."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué se hace siempre antes de abrir una salida en una emergencia?",
+        "en": "What is always done before opening an exit in an emergency?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Recoger el equipaje",
+            "en": "Collect the baggage"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Evaluar las condiciones exteriores",
+            "en": "Assess the conditions outside"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hacer un anuncio de venta a bordo",
+            "en": "Make a sales announcement"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Encender los motores",
+            "en": "Start the engines"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Fuego, humo, agua u obstáculos pueden hacer que una salida no se deba usar.",
+        "en": "Fire, smoke, water or obstacles may mean an exit must not be used."
+      }
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué edad mínima exige la parte CC para el certificado de TCP?",
+        "en": "What minimum age does Part-CC require for the cabin crew attestation?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "16 años",
+            "en": "16"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "18 años",
+            "en": "18"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "21 años",
+            "en": "21"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hay edad mínima",
+            "en": "There is none"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El solicitante debe tener al menos 18 años.",
+        "en": "The applicant must be at least 18."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cada cuánto, como máximo, se repite la evaluación aeromédica del TCP?",
+        "en": "At what maximum interval is the cabin crew aero-medical assessment repeated?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "12 meses",
+            "en": "12 months"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "24 meses",
+            "en": "24 months"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "60 meses",
+            "en": "60 months"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "MED.C.005: antes de la primera asignación y después a intervalos de 60 meses como máximo.",
+        "en": "MED.C.005: before first assignment and then at intervals of 60 months at most."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Con qué frecuencia se hace la formación periódica?",
+        "en": "How often is recurrent training done?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cada año",
+            "en": "Every year"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cada cinco años",
+            "en": "Every five years"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo al cambiar de aerolínea",
+            "en": "Only when changing airlines"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cada mes",
+            "en": "Every month"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Cada TCP completa una formación y verificación periódicas anuales.",
+        "en": "Each cabin crew member completes recurrent training and checking every year."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuándo deja de ser válido el certificado de TCP?",
+        "en": "When does the cabin crew attestation stop being valid?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A los 12 meses de su emisión",
+            "en": "12 months after issue"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Si no se ejerce durante 60 meses en al menos un tipo de avión",
+            "en": "If not exercised for 60 months on at least one aircraft type"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al cambiar de aerolínea",
+            "en": "When changing airlines"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "A los 40 años",
+            "en": "At age 40"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "También puede suspenderse o revocarse si no se cumplen los requisitos.",
+        "en": "It can also be suspended or revoked if the requirements are not met."
+      }
+    }
+  ]
+}

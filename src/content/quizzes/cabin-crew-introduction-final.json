@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Quién es la máxima autoridad a bordo?",
+        "en": "Who is the highest authority on board?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El jefe de cabina",
+            "en": "The senior cabin crew member"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El comandante",
+            "en": "The commander"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El operador de handling",
+            "en": "The ground handler"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El TCP más antiguo",
+            "en": "The most senior cabin crew member by age"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El comandante tiene la responsabilidad final de la seguridad de la aeronave y sus ocupantes.",
+        "en": "The commander has final responsibility for the safety of the aircraft and its occupants."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Durante el despegue y el aterrizaje, ¿cuándo debe llamar la cabina de pasaje a la de vuelo?",
+        "en": "During take-off and landing, when should the cabin call the flight deck?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para pedir el menú",
+            "en": "To ask about catering"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo por asuntos de seguridad",
+            "en": "Only for safety matters"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nunca, por ningún motivo",
+            "en": "Never, for any reason"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para informar del número de cafés servidos",
+            "en": "To report how many coffees were served"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es la norma de cabina estéril: solo lo imprescindible para la seguridad del vuelo.",
+        "en": "That is the sterile flight deck rule: only what is essential for the safety of the flight."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué caracteriza un buen mensaje a la cabina de vuelo?",
+        "en": "What makes a good message to the flight deck?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Largo y detallado con todas las opiniones",
+            "en": "Long and detailed with everyone's opinions"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Breve, claro y completo: qué, dónde y qué se ha hecho",
+            "en": "Short, clear and complete: what, where and what has been done"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo por escrito",
+            "en": "Written only"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Siempre en el idioma de los pasajeros",
+            "en": "Always in the passengers' language"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Un mensaje breve, claro y confirmado reduce malentendidos.",
+        "en": "A short, clear, confirmed message reduces misunderstandings."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué tiene que ocurrir antes de que el certificado de TCP se expida?",
+        "en": "What must happen before the cabin crew attestation is issued?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Superar el curso inicial y la evaluación aeromédica inicial",
+            "en": "Pass the initial course and the initial aero-medical assessment"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Volar 100 horas",
+            "en": "Fly 100 hours"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tener contrato con una aerolínea",
+            "en": "Have an airline contract"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aprobar un examen de pilotaje",
+            "en": "Pass a flying test"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El certificado llega tras el curso inicial con su examen y la evaluación aeromédica inicial.",
+        "en": "The attestation follows the initial course and examination and the initial aero-medical assessment."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué formación recibe un TCP cuando cambia la variante de un avión que ya conoce?",
+        "en": "What training does cabin crew receive when the variant of a known aircraft changes?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Formación de diferencias",
+            "en": "Differences training"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Curso inicial completo",
+            "en": "A full initial course"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ninguna",
+            "en": "None"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Formación de piloto",
+            "en": "Pilot training"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La formación de diferencias cubre lo que cambia respecto a lo ya conocido.",
+        "en": "Differences training covers what changes compared with what is already known."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Para quién es la formación CRM?",
+        "en": "Who is CRM training for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo para pilotos",
+            "en": "Pilots only"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo para el jefe de cabina",
+            "en": "The senior cabin crew member only"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para toda la tripulación",
+            "en": "The whole crew"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para los pasajeros",
+            "en": "Passengers"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La gestión de recursos de la tripulación forma a pilotos y TCP para trabajar como un equipo.",
+        "en": "Crew resource management trains pilots and cabin crew to work as one team."
+      }
+    }
+  ]
+}
