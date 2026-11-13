@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Para qué sirve un PBE?",
+        "en": "What is a PBE for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para inflar los chalecos",
+            "en": "Inflating life jackets"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para respirar y protegerse del humo al combatir un fuego",
+            "en": "Breathing and protection from smoke when fighting a fire"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para comunicarse con la cabina de vuelo",
+            "en": "Talking to the flight deck"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para medir la presión de cabina",
+            "en": "Measuring cabin pressure"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Protege ojos, nariz y boca y suministra gas respirable durante un tiempo limitado.",
+        "en": "It protects eyes, nose and mouth and supplies breathable gas for a limited time."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué se comprueba en un extintor durante la revisión previa?",
+        "en": "What is checked on an extinguisher during the pre-flight check?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Su color",
+            "en": "Its colour"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que está en su sitio, precintado y con el indicador en la zona correcta",
+            "en": "That it is in place, sealed and with its gauge in the correct range"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Su peso exacto en gramos",
+            "en": "Its exact weight in grams"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nada: lo revisa mantenimiento",
+            "en": "Nothing: maintenance does it"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Ubicación, precinto e indicadores son las comprobaciones habituales.",
+        "en": "Location, seal and indicators are the usual checks."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué equipo se usa en una despresurización?",
+        "en": "Which equipment is used in a decompression?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Las máscaras de oxígeno",
+            "en": "Oxygen masks"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Los megáfonos",
+            "en": "Megaphones"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Las balsas",
+            "en": "Life rafts"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los guantes ignífugos",
+            "en": "Fire gloves"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las máscaras de pasajeros caen de la PSU o del respaldo, y la tripulación dispone de botellas portátiles.",
+        "en": "Passenger masks drop from the PSU or seat back, and the crew have portable bottles."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué puede pasar si falta un equipo de emergencia obligatorio?",
+        "en": "What can happen if a required emergency item is missing?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Nada",
+            "en": "Nothing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que el vuelo no pueda salir o se limite el número de pasajeros",
+            "en": "The flight may not depart or passenger numbers may be limited"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que el TCP lo sustituya por uno casero",
+            "en": "The crew improvise a replacement"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que se ignore hasta el siguiente vuelo",
+            "en": "It is ignored until the next flight"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Depende de la lista de equipo mínimo del operador; siempre se informa al comandante.",
+        "en": "It depends on the operator's minimum equipment list; the commander is always told."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Una salida sobre el ala es…",
+        "en": "An overwing exit is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una puerta de embarque",
+            "en": "A boarding door"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una salida de emergencia que da al ala",
+            "en": "An emergency exit leading onto the wing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La puerta de la bodega",
+            "en": "The cargo door"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un acceso al tren de aterrizaje",
+            "en": "A landing gear access"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Desde el ala se baja al suelo por el borde o por una rampa, según el avión.",
+        "en": "From the wing, occupants get down via its edge or a slide, depending on the aircraft."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Dónde se sienta cada TCP para el despegue y el aterrizaje?",
+        "en": "Where does each cabin crew member sit for take-off and landing?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En cualquier asiento libre de pasaje",
+            "en": "In any free passenger seat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "En su asiento de tripulación, cerca de su salida, con el arnés abrochado",
+            "en": "In their crew seat near their exit, harness fastened"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En la cabina de vuelo",
+            "en": "On the flight deck"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "De pie en el galley",
+            "en": "Standing in the galley"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Así está listo para actuar en su salida si hiciera falta.",
+        "en": "That way they are ready to act at their exit if needed."
+      }
+    }
+  ]
+}

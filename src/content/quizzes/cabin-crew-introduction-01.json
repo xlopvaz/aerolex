@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál es la función principal de la tripulación de cabina?",
+        "en": "What is the primary role of cabin crew?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El servicio de comidas y bebidas",
+            "en": "Food and drink service"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La seguridad de los pasajeros",
+            "en": "Passenger safety"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La venta a bordo",
+            "en": "Onboard sales"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La limpieza de la cabina",
+            "en": "Cleaning the cabin"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La normativa exige TCP por la seguridad; el servicio es secundario.",
+        "en": "The rules require cabin crew for safety; service is secondary."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En la UE, ¿desde qué configuración de asientos es obligatorio al menos un TCP cuando hay pasajeros?",
+        "en": "In the EU, above what seating configuration is at least one cabin crew member required when carrying passengers?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Más de 9 asientos",
+            "en": "More than 9 seats"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más de 19 asientos",
+            "en": "More than 19 seats"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Más de 50 asientos",
+            "en": "More than 50 seats"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Más de 100 asientos",
+            "en": "More than 100 seats"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "ORO.CC.100: más de 19 asientos de configuración máxima operativa.",
+        "en": "ORO.CC.100: a maximum operational seating configuration of more than 19."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Con la regla de 1 por cada 50 asientos o fracción, ¿cuántos TCP necesita un avión de 189 asientos en una cubierta?",
+        "en": "Using the one-per-50-or-fraction rule, how many cabin crew does a 189-seat single-deck aircraft need?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "4",
+            "en": "4"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5",
+            "en": "5"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2",
+            "en": "2"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "189 / 50 = 3,78; la fracción cuenta como uno más: 4 (salvo que la certificación exija más).",
+        "en": "189 / 50 = 3.78; the fraction counts as one more: 4 (unless certification requires more)."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Si hay más de un TCP, el operador designa a uno como responsable ante…",
+        "en": "With more than one cabin crew member, the operator nominates one to be responsible to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El agente de handling",
+            "en": "The handling agent"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El comandante",
+            "en": "The commander"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La autoridad aeronáutica",
+            "en": "The aviation authority"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El pasajero de mayor edad",
+            "en": "The oldest passenger"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es el jefe de cabina, que responde ante el comandante.",
+        "en": "That is the senior cabin crew member, responsible to the commander."
+      }
+    }
+  ]
+}

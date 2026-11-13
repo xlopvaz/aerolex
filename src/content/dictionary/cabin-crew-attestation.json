@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CCA",
+    "es": "CCA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Cabin crew attestation",
+    "es": "Certificado de tripulante de cabina de pasajeros"
+  },
+  "categories": [
+    "cabin-crew",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The document required under the EU Part-CC rules to work as cabin crew in commercial air transport, issued after the applicant completes the initial training course and examination and the initial aero-medical assessment.",
+    "es": "Documento exigido por la parte CC de la normativa europea para trabajar como tripulante de cabina en transporte aéreo comercial; se expide tras superar el curso de formación inicial y su examen y la evaluación aeromédica inicial."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"licence\" of a cabin crew member in Europe.",
+    "es": "La «licencia» del tripulante de cabina en Europa."
+  },
+  "example": {
+    "en": "\"You need a valid CCA before starting your airline's type training.\"",
+    "es": "«Necesitas un certificado de TCP válido antes de empezar la formación de tipo de tu aerolínea.»"
+  },
+  "pronunciation": {
+    "en": "C-C-A (see-see-ay)",
+    "es": "ce-ce-a"
+  },
+  "synonyms": {
+    "en": [
+      "cabin crew attestation"
+    ],
+    "es": [
+      "certificado de TCP",
+      "certificado de tripulante de cabina"
+    ]
+  },
+  "related": [
+    "cabin-crew",
+    "senior-cabin-crew-member"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-1178-2011",
+    "easa-ear-aircrew"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

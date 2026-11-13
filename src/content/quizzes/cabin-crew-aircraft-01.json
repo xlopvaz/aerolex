@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué tiene un avión de doble pasillo?",
+        "en": "What does a twin-aisle aircraft have?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Dos cubiertas siempre",
+            "en": "Always two decks"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Dos pasillos en la cabina",
+            "en": "Two aisles in the cabin"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Dos cabinas de vuelo",
+            "en": "Two flight decks"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Dos alas por lado",
+            "en": "Two wings per side"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por ejemplo, el A350 o el 787; los de pasillo único, como el A320 o el 737, tienen uno.",
+        "en": "For example the A350 or 787; single-aisle aircraft such as the A320 or 737 have one."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Por qué deben bloquearse los carros en despegue, aterrizaje y turbulencia?",
+        "en": "Why must carts be locked for take-off, landing and turbulence?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para que no se enfríe la comida",
+            "en": "So the food stays warm"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque un carro suelto puede convertirse en un proyectil",
+            "en": "Because a loose cart can become a projectile"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para ahorrar combustible",
+            "en": "To save fuel"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hace falta bloquearlos",
+            "en": "They do not need to be locked"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Un objeto pesado suelto en la cabina es un peligro para todos.",
+        "en": "A heavy loose object in the cabin is a danger to everyone."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué elemento agrupa la luz de lectura, la llamada y, a menudo, las máscaras de oxígeno?",
+        "en": "Which item groups the reading light, the call button and often the oxygen masks?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La PSU",
+            "en": "The PSU"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El galley",
+            "en": "The galley"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El interfono",
+            "en": "The interphone"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El compartimento de equipaje",
+            "en": "The overhead bin"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La unidad de servicio al pasajero está sobre cada fila.",
+        "en": "The passenger service unit is above each row."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con la designación habitual de puertas, ¿qué es la R2?",
+        "en": "Under the usual door designation, what is R2?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La segunda puerta del lado derecho",
+            "en": "The second door on the right"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La puerta trasera izquierda",
+            "en": "The rear left door"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La salida sobre el ala",
+            "en": "The overwing exit"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La puerta de la cabina de vuelo",
+            "en": "The flight deck door"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "L o R indica el lado y el número, el orden desde el morro; compruébalo en el manual de cada avión.",
+        "en": "L or R gives the side and the number the order from the nose; check each aircraft's manual."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "brace position",
+    "es": "posición de impacto"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The body position that passengers and crew adopt before an expected impact, such as an emergency landing or ditching, to reduce injuries; it varies with the type of seat and the person (adult, pregnant passenger, infant).",
+    "es": "Posición del cuerpo que adoptan pasajeros y tripulantes antes de un impacto previsto, como un aterrizaje de emergencia o un amaraje, para reducir lesiones; varía según el tipo de asiento y la persona (adulto, embarazada, bebé)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Head down and feet flat on the floor, ready for the impact.",
+    "es": "Cabeza abajo y pies apoyados en el suelo, preparados para el impacto."
+  },
+  "example": {
+    "en": "\"Brace, brace!\"",
+    "es": "«¡Agáchense, agáchense!» / «Brace, brace!»"
+  },
+  "pronunciation": {
+    "en": "/breɪs pəˈzɪʃən/",
+    "es": "posición de impacto"
+  },
+  "synonyms": {
+    "en": [
+      "brace for impact"
+    ],
+    "es": [
+      "posición de seguridad",
+      "posición de protección"
+    ]
+  },
+  "related": [
+    "safety-demonstration",
+    "evacuation-slide",
+    "cabin-crew"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

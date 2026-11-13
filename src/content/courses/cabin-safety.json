@@ -1,0 +1,43 @@
+{
+  "path": "cabin-crew-training",
+  "order": 3,
+  "level": "elementary",
+  "title": {
+    "en": "Cabin Crew Academy · Module 3: Cabin Safety",
+    "es": "Academia de TCP · Módulo 3: Seguridad en cabina"
+  },
+  "description": {
+    "en": "Safety from boarding to arrival: pre-flight checks, securing the cabin, the passenger briefing, exit-row seating and turbulence. The operator's manual always prevails over this course.",
+    "es": "La seguridad del embarque a la llegada: comprobaciones previas, cabina asegurada, información de seguridad a los pasajeros, asientos junto a salidas y turbulencia. El manual del operador prevalece siempre sobre este curso."
+  },
+  "objectives": {
+    "en": [
+      "List the cabin checks before departure",
+      "Know what the passenger safety briefing must cover",
+      "Explain who may sit at emergency exits",
+      "Apply the principles of turbulence management in the cabin"
+    ],
+    "es": [
+      "Enumerar las comprobaciones de cabina antes de la salida",
+      "Saber qué debe incluir la información de seguridad a los pasajeros",
+      "Explicar quién puede sentarse junto a las salidas de emergencia",
+      "Aplicar los principios de gestión de la turbulencia en la cabina"
+    ]
+  },
+  "lessons": [
+    "pre-flight-and-boarding",
+    "passenger-briefing",
+    "turbulence-in-the-cabin"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "eu-965-2012",
+    "easa-ear-air-ops",
+    "faa-turbulence"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

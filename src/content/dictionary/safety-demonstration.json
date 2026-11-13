@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "safety demonstration",
+    "es": "demostración de seguridad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety",
+    "commercial-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The passenger safety briefing given before take-off, in person or by video, covering at least the seat belts, the emergency exits and, when applicable, the oxygen equipment and life jackets.",
+    "es": "Información de seguridad que se da a los pasajeros antes del despegue, en persona o en vídeo, y que trata al menos los cinturones, las salidas de emergencia y, cuando procede, el equipo de oxígeno y los chalecos salvavidas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The explanation at the start of the flight on how to fasten your belt, where the exits are and what to do with the oxygen mask.",
+    "es": "La explicación del principio del vuelo sobre cómo abrocharse el cinturón, dónde están las salidas y qué hacer con la máscara de oxígeno."
+  },
+  "example": {
+    "en": "\"Ladies and gentlemen, please give us your attention for the safety demonstration.\"",
+    "es": "«Señoras y señores, les rogamos presten atención a la demostración de seguridad.»"
+  },
+  "pronunciation": {
+    "en": "/ˈseɪfti ˌdɛmənˈstreɪʃən/",
+    "es": "demostración de seguridad"
+  },
+  "synonyms": {
+    "en": [
+      "safety briefing",
+      "safety video"
+    ],
+    "es": [
+      "briefing de seguridad",
+      "vídeo de seguridad"
+    ]
+  },
+  "related": [
+    "brace-position",
+    "cabin-crew",
+    "pax"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

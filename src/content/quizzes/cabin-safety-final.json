@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según la FAA, ¿quién sufre la mayoría de las lesiones graves por turbulencia?",
+        "en": "According to the FAA, who suffers most serious turbulence injuries?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los pasajeros sentados",
+            "en": "Seated passengers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Los tripulantes",
+            "en": "Crew members"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los pilotos",
+            "en": "Pilots"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los niños",
+            "en": "Children"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "166 de las 207 lesiones graves registradas desde 2009 fueron de tripulantes.",
+        "en": "166 of the 207 serious injuries recorded since 2009 were to crew members."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Si la presión contra los cinturones es clara, los objetos sueltos se desplazan y caminar es difícil, la turbulencia es…",
+        "en": "If there is definite strain against seat belts, unsecured objects are dislodged and walking is difficult, the turbulence is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ligera",
+            "en": "Light"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Moderada",
+            "en": "Moderate"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Fuerte",
+            "en": "Severe"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nula",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es la descripción del AIM de la turbulencia moderada.",
+        "en": "That is the AIM description of moderate turbulence."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Ante una turbulencia fuerte inesperada, el TCP debe…",
+        "en": "In sudden severe turbulence, cabin crew should…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Seguir comprobando cinturones de pie",
+            "en": "Keep checking seat belts standing up"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sentarse y abrocharse de inmediato, en el asiento libre más cercano si hace falta",
+            "en": "Sit and strap in immediately, in the nearest free seat if needed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Terminar el servicio",
+            "en": "Finish the service"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ir a la cabina de vuelo",
+            "en": "Go to the flight deck"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La seguridad propia es lo primero: un tripulante herido no puede ayudar.",
+        "en": "Personal safety comes first: an injured crew member cannot help."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuándo recomienda la FAA llevar el cinturón abrochado?",
+        "en": "When does the FAA recommend keeping the seat belt fastened?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo en despegue y aterrizaje",
+            "en": "Only for take-off and landing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Siempre que se esté sentado",
+            "en": "At all times while seated"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo de noche",
+            "en": "Only at night"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nunca en crucero",
+            "en": "Never in cruise"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La turbulencia puede aparecer sin aviso, incluso con el cielo despejado.",
+        "en": "Turbulence can appear without warning, even in a clear sky."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Cuál de estas tareas va antes del cierre de puertas?",
+        "en": "Which of these tasks comes before the doors are closed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El embarque",
+            "en": "Boarding"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La comprobación de cabina asegurada para el aterrizaje",
+            "en": "The cabin-secure check for landing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El desarmado de puertas",
+            "en": "Disarming the doors"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El servicio en crucero",
+            "en": "In-flight service"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Briefing, comprobaciones previas y embarque van antes de cerrar y armar las puertas.",
+        "en": "Briefing, pre-flight checks and boarding come before closing and arming the doors."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La tarjeta de seguridad del asiento debe presentar la información…",
+        "en": "The seat safety card should present information…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo en inglés",
+            "en": "In English only"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Preferentemente con pictogramas",
+            "en": "Preferably with pictograms"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo en braille",
+            "en": "In braille only"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En un código QR",
+            "en": "As a QR code"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los pictogramas la hacen comprensible para pasajeros de cualquier idioma.",
+        "en": "Pictograms make it understandable to passengers of any language."
+      }
+    }
+  ]
+}

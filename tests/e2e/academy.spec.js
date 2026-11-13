@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('academy', () => {
   test('academy lists the METAR course and only paths with content', async ({ page }) => {
     await page.goto('es/academia/');
-    await expect(page.locator('.path')).toHaveCount(3);
+    await expect(page.locator('.path')).toHaveCount(4);
     await page.locator('.course-card', { hasText: 'METAR' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/metar-speci\/$/);
     await expect(page.locator('.lesson-list li')).toHaveCount(9);
@@ -59,7 +59,7 @@ test.describe('academy', () => {
 test.describe('TAF academy', () => {
   test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
     await page.goto('en/academy/');
-    await expect(page.locator('.course-card')).toHaveCount(5);
+    await expect(page.locator('.course-card')).toHaveCount(8);
     await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
     await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
@@ -119,5 +119,19 @@ test.describe('Pilot Academy', () => {
     await expect(quiz.locator('.quiz__q')).toHaveCount(8);
     await quiz.locator('[data-q="q5"] [data-opt="b"]').click();
     await expect(quiz.locator('[data-quiz-score]')).toHaveText('1/8 correct');
+  });
+});
+
+test.describe('Cabin Crew Academy', () => {
+  test('lists modules 1–3 in order, shows the operator-manual notice and links terms', async ({ page }) => {
+    await page.goto('en/academy/');
+    const path = page.locator('.path', { hasText: 'Cabin Crew Training' });
+    await expect(path.locator('.course-card')).toHaveCount(3);
+    await expect(path.locator('.course-card').nth(0)).toContainText('Module 1');
+    await expect(path.locator('.course-card').nth(2)).toContainText('Module 3');
+    await page.goto('es/academia/cabin-crew-aircraft/doors-and-exits/');
+    await expect(page.locator('.callout').first()).toContainText('El manual del operador prevalece');
+    await page.locator('.prose a.term', { hasText: 'rampa de evacuación' }).first().click();
+    await expect(page).toHaveURL(/\/es\/diccionario\/evacuation-slide\/$/);
   });
 });
