@@ -1,0 +1,134 @@
+{
+  "manufacturer": "Boeing",
+  "family": {
+    "en": "Boeing 777X",
+    "es": "Boeing 777X"
+  },
+  "category": "commercial",
+  "order": 7,
+  "summary": {
+    "en": "The new generation of Boeing's 777 twin-aisle family: the 777-8, the 777-9 and the 777-8 Freighter, with GE9X engines and a very long wing whose tips fold up on the ground.",
+    "es": "La nueva generación de la familia de dos pasillos 777 de Boeing: el 777-8, el 777-9 y el carguero 777-8 Freighter, con motores GE9X y un ala muy larga cuyas puntas se pliegan hacia arriba en tierra."
+  },
+  "history": {
+    "en": "The 777X programme was launched in 2013 and production started in 2017. The first 777-9 flew on 25 January 2020 from Paine Field (Everett), in a flight of 3 hours 51 minutes that opened the test programme. Boeing's current page still describes the aircraft in the future tense and gives no certification date.",
+    "es": "El programa 777X se lanzó en 2013 y la producción empezó en 2017. El primer 777-9 voló el 25 de enero de 2020 desde Paine Field (Everett), en un vuelo de 3 horas y 51 minutos que abrió el programa de ensayos. La página actual de Boeing sigue describiendo el avión en futuro y no da fecha de certificación."
+  },
+  "facts": [
+    {
+      "en": "The wingtips fold up so that the wingspan goes from 71.8 m in flight to 64.8 m on the ground.",
+      "es": "Las puntas del ala se pliegan hacia arriba para que la envergadura pase de 71,8 m en vuelo a 64,8 m en tierra."
+    },
+    {
+      "en": "At 76.7 m, the 777-9 is the longest model on Boeing's 777X page.",
+      "es": "Con 76,7 m, el 777-9 es el modelo más largo de la página del 777X de Boeing."
+    },
+    {
+      "en": "The ranges Boeing publishes today (9,500 NM for the 777-8 and 8,000 NM for the 777-9) are higher than those it gave in 2020 (8,730 NM and 7,285 NM).",
+      "es": "Los alcances que Boeing publica hoy (9500 NM para el 777-8 y 8000 NM para el 777-9) son mayores que los que daba en 2020 (8730 NM y 7285 NM)."
+    }
+  ],
+  "sources": [
+    "boeing-777x-page",
+    "boeing-777x-first-flight",
+    "boeing-777x-second-flight"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "777-8",
+      "name": "777-8",
+      "status": "in-development",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 70.9,
+      "wingspanM": 71.8,
+      "heightM": 19.5,
+      "seatsTypical": "350–425",
+      "seatsMax": null,
+      "rangeNm": 9500,
+      "rangeKm": 17590,
+      "mtowT": 365.14,
+      "engines": [
+        "GE Aerospace GE9X"
+      ],
+      "note": {
+        "en": "Wingspan with the wingtips extended (64.8 m on the ground). Typical two-class seating.",
+        "es": "Envergadura con las puntas del ala desplegadas (64,8 m en tierra). Plazas típicas en dos clases."
+      },
+      "sources": [
+        "boeing-777x-page"
+      ]
+    },
+    {
+      "id": "777-9",
+      "name": "777-9",
+      "status": "in-development",
+      "milestones": {
+        "firstFlight": "2020-01-25",
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 76.7,
+      "wingspanM": 71.8,
+      "heightM": 19.5,
+      "seatsTypical": "375–450",
+      "seatsMax": null,
+      "rangeNm": 8000,
+      "rangeKm": 14820,
+      "mtowT": 351.53,
+      "engines": [
+        "GE Aerospace GE9X"
+      ],
+      "note": {
+        "en": "Wingspan with the wingtips extended (64.8 m on the ground). Typical two-class seating. Boeing lists a lower MTOW for the 777-9 than for the 777-8.",
+        "es": "Envergadura con las puntas del ala desplegadas (64,8 m en tierra). Plazas típicas en dos clases. Boeing indica un peso máximo al despegue menor para el 777-9 que para el 777-8."
+      },
+      "sources": [
+        "boeing-777x-page",
+        "boeing-777x-first-flight"
+      ]
+    },
+    {
+      "id": "777-8f",
+      "name": "777-8 Freighter",
+      "status": "in-development",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 70.9,
+      "wingspanM": 71.8,
+      "heightM": 19.5,
+      "seatsTypical": null,
+      "seatsMax": null,
+      "rangeNm": 5000,
+      "rangeKm": 9260,
+      "mtowT": 365.14,
+      "engines": [
+        "GE Aerospace GE9X"
+      ],
+      "note": {
+        "en": "Freighter: maximum structural payload 118 t; range with 110 t of payload.",
+        "es": "Carguero: carga de pago estructural máxima de 118 t; alcance con 110 t de carga."
+      },
+      "sources": [
+        "boeing-777x-page"
+      ]
+    }
+  ]
+}
