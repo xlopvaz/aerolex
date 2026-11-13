@@ -1,18 +1,28 @@
 ---
+/**
+ * User dashboard: XP, daily goal, streak, badges, practice results and recent activity
+ * (all read from the saved state in this browser), plus preferences and data backup.
+ * Numbers are rendered on the client from the store; the server only renders the frame.
+ */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/ui/Card.astro';
 import Button from '../components/ui/Button.astro';
+import Icon from '../components/ui/Icon.astro';
 import StatTile from '../components/ui/StatTile.astro';
 import SegmentedControl from '../components/ui/SegmentedControl.astro';
+import ProgressGlide from '../components/ui/ProgressGlide.astro';
 import Callout from '../components/ui/Callout.astro';
 import Modal from '../components/ui/Modal.astro';
 import { LOCALES, LOCALE_META } from '../i18n/config.js';
-import { alternates, useT } from '../i18n/index.js';
+import { alternates, t, useT } from '../i18n/index.js';
+import { BADGES, DAILY_GOALS, DEFAULT_DAILY_GOAL } from '../lib/gamification/engine.js';
 
 interface Props { lang: string; routeKey: any }
 const { lang, routeKey } = Astro.props;
 const tr = useT(lang);
 const alt = alternates(routeKey);
+
+const practices = t(lang, 'dashboard.practices') as unknown as Record<string, string>;
 
 // Messages the client script needs, in the current language.
 const messages = {
@@ -20,6 +30,14 @@ const messages = {
   imported: tr('dashboard.imported'),
   importError: tr('dashboard.importError'),
   resetDone: tr('dashboard.resetDone'),
+  goalProgress: tr('dashboard.goalProgress'),
+  goalMet: tr('dashboard.goalMet'),
+  goalTodo: tr('dashboard.goalTodo'),
+  weekDay: tr('dashboard.weekDay'),
+  badgeEarned: tr('dashboard.badgeEarned'),
+  badgeLocked: tr('dashboard.badgeLocked'),
+  reasons: t(lang, 'dashboard.reasons'),
+  practices,
 };
 ---
 <BaseLayout lang={lang} routeKey={routeKey} title={tr('dashboard.metaTitle')}>
@@ -30,7 +48,7 @@ const messages = {
     </div>
   </header>
 
-  <div class="container dash" data-dashboard data-messages={JSON.stringify(messages)} data-alternates={JSON.stringify(alt)}>
+  <div class="container dash" data-dashboard data-lang={lang} data-messages={JSON.stringify(messages)} data-alternates={JSON.stringify(alt)}>
     <div class="dash__warning" data-storage-warning hidden>
       <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}>
         <p>{tr('dashboard.storageUnavailable')}</p>
@@ -41,12 +59,78 @@ const messages = {
       <h2 id="stats-title">{tr('dashboard.statsTitle')}</h2>
       <div class="grid dash__stats">
         <StatTile label={tr('dashboard.xp')} value="0" icon="zap" tone="magenta" id="stat-xp" />
+        <StatTile label={tr('dashboard.today')} value="0" icon="sunrise" tone="primary" id="stat-today" />
         <StatTile label={tr('dashboard.streak')} value="0" icon="flame" tone="amber" id="stat-streak" />
         <StatTile label={tr('dashboard.bestStreak')} value="0" icon="trophy" tone="cyan" id="stat-best" />
         <StatTile label={tr('dashboard.lessons')} value="0" icon="circle-check" tone="green" id="stat-lessons" />
+        <StatTile label={tr('dashboard.courses')} value="0" icon="graduation-cap" tone="green" id="stat-courses" />
       </div>
-      <p class="dash__note">{tr('dashboard.statsEmpty')}</p>
+      <p class="dash__note">{tr('dashboard.statsLead')}</p>
     </section>
+
+    <div class="dash__cols">
+      <Card padding="lg" as="section">
+        <h2>{tr('dashboard.goalTitle')}</h2>
+        <div data-goal>
+          <ProgressGlide value={0} label={tr('dashboard.goalTitle')} />
+        </div>
+        <p class="dash__goal-text" data-goal-text></p>
+        <SegmentedControl
+          name="dailyGoal"
+          legend={tr('dashboard.goalLabel')}
+          value={String(DEFAULT_DAILY_GOAL)}
+          options={DAILY_GOALS.map((g) => ({ value: String(g), label: String(g) }))}
+        />
+      </Card>
+
+      <Card padding="lg" as="section">
+        <h2 id="week-title">{tr('dashboard.weekTitle')}</h2>
+        <ol class="week" aria-labelledby="week-title" data-week></ol>
+      </Card>
+    </div>
+
+    <section class="dash__section" aria-labelledby="badges-title">
+      <h2 id="badges-title">{tr('dashboard.badgesTitle')} <span class="mono dash__count" data-badge-count></span></h2>
+      <ul class="badges">
+        {BADGES.map((b) => (
+          <li class="badge" data-badge={b.id}>
+            <span class="badge__icon"><Icon name={b.icon} size={22} /></span>
+            <span class="badge__body">
+              <strong class="badge__name">{tr(`badges.${b.id}.name`)}</strong>
+              <span class="badge__desc">{tr(`badges.${b.id}.desc`)}</span>
+              <span class="badge__state" data-badge-state>{tr('dashboard.badgeLocked')}</span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <div class="dash__cols">
+      <Card padding="lg" as="section">
+        <h2>{tr('dashboard.practiceTitle')}</h2>
+        <p class="dash__help" data-practice-empty>{tr('dashboard.practiceEmpty')}</p>
+        <div class="dash__table" data-practice-wrap hidden>
+          <table>
+            <caption class="visually-hidden">{tr('dashboard.practiceTitle')}</caption>
+            <thead>
+              <tr>
+                <th scope="col">{tr('dashboard.colPractice')}</th>
+                <th scope="col" class="num">{tr('dashboard.colCorrect')}</th>
+                <th scope="col" class="num">{tr('dashboard.colWrong')}</th>
+                <th scope="col" class="num">{tr('dashboard.colRate')}</th>
+              </tr>
+            </thead>
+            <tbody data-practice-rows></tbody>
+          </table>
+        </div>
+      </Card>
+
+      <Card padding="lg" as="section">
+        <h2>{tr('dashboard.activityTitle')}</h2>
+        <p class="dash__help" data-activity-empty>{tr('dashboard.activityEmpty')}</p>
+        <ul class="activity" data-activity></ul>
+      </Card>
+    </div>
 
     <div class="dash__cols">
       <Card padding="lg" as="section">
@@ -99,32 +183,124 @@ const messages = {
 
 <script>
   import { getAppStore } from '../lib/core/app-store.js';
+  import { BADGES, dailyProgress, localDay, recentDays, streakToday } from '../lib/gamification/engine.js';
 
   const root = document.querySelector<HTMLElement>('[data-dashboard]');
   if (root) {
     const store = getAppStore();
+    const lang = root.dataset.lang || 'en';
     const msg = JSON.parse(root.dataset.messages || '{}');
     const alt = JSON.parse(root.dataset.alternates || '{}');
     const status = root.querySelector<HTMLElement>('[data-status]')!;
+    const fill = (tpl: string, vars: Record<string, string | number>) => tpl.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ''));
+    const nf = new Intl.NumberFormat(lang);
+    const dateFmt = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', year: 'numeric' });
+    const dayFmt = new Intl.DateTimeFormat(lang, { weekday: 'short', day: 'numeric' });
+    const timeFmt = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
     const say = (text: string, tone: 'ok' | 'error' = 'ok') => {
       status.textContent = text;
       status.dataset.tone = tone;
     };
+    const el = (tag: string, cls?: string, text?: string) => {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text !== undefined) e.textContent = text;
+      return e;
+    };
+    const dayDate = (day: string) => { const [y, m, d] = day.split('-').map(Number); return new Date(y, m - 1, d); };
 
     if (!store.persistent) root.querySelector<HTMLElement>('[data-storage-warning]')!.hidden = false;
 
     const render = (s: any) => {
-      const set = (id: string, v: number) => { const el = document.getElementById(id); if (el) el.textContent = String(v); };
+      const today = localDay(new Date());
+      const set = (id: string, v: number) => { const e = document.getElementById(id); if (e) e.textContent = nf.format(v); };
+      const goal = dailyProgress(s, today);
       set('stat-xp', s.xp.total);
-      set('stat-streak', s.streak.current);
+      set('stat-today', goal.xp);
+      set('stat-streak', streakToday(s.streak, today));
       set('stat-best', s.streak.best);
       set('stat-lessons', Object.keys(s.progress.lessons).length);
+      set('stat-courses', Object.keys(s.progress.courses ?? {}).length);
+
+      // Daily goal
+      const track = root.querySelector<HTMLElement>('[data-goal] .glide__track');
+      if (track) {
+        track.style.setProperty('--v', `${goal.percent}%`);
+        track.setAttribute('aria-valuenow', String(goal.percent));
+        track.setAttribute('aria-valuetext', fill(msg.goalProgress, { xp: goal.xp, goal: goal.goal }));
+      }
+      const pv = root.querySelector<HTMLElement>('[data-goal] .glide__value');
+      if (pv) pv.textContent = `${goal.percent}%`;
+      root.querySelector<HTMLElement>('[data-goal-text]')!.textContent =
+        `${fill(msg.goalProgress, { xp: goal.xp, goal: goal.goal })}. ${goal.met ? msg.goalMet : fill(msg.goalTodo, { n: goal.goal - goal.xp })}`;
+      const g = root.querySelector<HTMLInputElement>(`input[name="dailyGoal"][value="${goal.goal}"]`);
+      if (g) g.checked = true;
+
+      // Last 7 days
+      const week = root.querySelector<HTMLElement>('[data-week]')!;
+      const days = recentDays(s, today, 7);
+      const max = Math.max(goal.goal, ...days.map((d) => d.xp));
+      week.replaceChildren(...days.map((d) => {
+        const li = el('li', 'week__day');
+        const label = dayFmt.format(dayDate(d.day));
+        li.setAttribute('aria-label', fill(msg.weekDay, { day: label, xp: d.xp }));
+        const bar = el('span', 'week__bar');
+        bar.style.setProperty('--h', `${Math.round((d.xp / max) * 100)}%`);
+        if (d.xp >= goal.goal) bar.dataset.met = 'true';
+        bar.setAttribute('aria-hidden', 'true');
+        const v = el('span', 'week__xp mono', nf.format(d.xp));
+        v.setAttribute('aria-hidden', 'true');
+        const name = el('span', 'week__label', label);
+        name.setAttribute('aria-hidden', 'true');
+        li.append(v, bar, name);
+        return li;
+      }));
+
+      // Badges
+      let earned = 0;
+      for (const b of BADGES) {
+        const card = root.querySelector<HTMLElement>(`[data-badge="${b.id}"]`);
+        if (!card) continue;
+        const e = s.badges[b.id];
+        card.classList.toggle('is-earned', Boolean(e));
+        card.querySelector<HTMLElement>('[data-badge-state]')!.textContent = e ? fill(msg.badgeEarned, { date: dateFmt.format(new Date(e.earnedAt)) }) : msg.badgeLocked;
+        if (e) earned++;
+      }
+      root.querySelector<HTMLElement>('[data-badge-count]')!.textContent = `${earned}/${BADGES.length}`;
+
+      // Practice results
+      const rows = Object.entries(msg.practices as Record<string, string>)
+        .map(([id, label]) => ({ id, label, p: s.practice?.[id] }))
+        .filter((r) => r.p && r.p.correct + r.p.wrong > 0);
+      root.querySelector<HTMLElement>('[data-practice-empty]')!.hidden = rows.length > 0;
+      root.querySelector<HTMLElement>('[data-practice-wrap]')!.hidden = rows.length === 0;
+      root.querySelector<HTMLElement>('[data-practice-rows]')!.replaceChildren(...rows.map((r) => {
+        const tr = el('tr');
+        const th = el('th', '', r.label); th.setAttribute('scope', 'row');
+        const n = r.p.correct + r.p.wrong;
+        tr.append(th, el('td', 'num mono', nf.format(r.p.correct)), el('td', 'num mono', nf.format(r.p.wrong)), el('td', 'num mono', `${Math.round((r.p.correct / n) * 100)} %`));
+        return tr;
+      }));
+
+      // Recent activity
+      const log = [...(s.xp.log ?? [])].reverse().slice(0, 8);
+      root.querySelector<HTMLElement>('[data-activity-empty]')!.hidden = log.length > 0;
+      root.querySelector<HTMLElement>('[data-activity]')!.replaceChildren(...log.map((a: any) => {
+        const li = el('li');
+        li.append(el('span', 'activity__xp mono', `+${a.amount} XP`), el('span', 'activity__what', msg.reasons[a.reason] ?? a.reason), el('time', 'activity__when', timeFmt.format(new Date(a.at))));
+        li.querySelector('time')!.setAttribute('datetime', a.at);
+        return li;
+      }));
+
       const theme = root.querySelector<HTMLInputElement>(`input[name="theme"][value="${s.prefs.theme}"]`);
       if (theme) theme.checked = true;
     };
     render(store.get());
     store.subscribe(render);
 
+    root.querySelectorAll<HTMLInputElement>('input[name="dailyGoal"]').forEach((input) =>
+      input.addEventListener('change', () => store.update((s) => { s.prefs.dailyGoal = Number(input.value); }))
+    );
     root.querySelectorAll<HTMLInputElement>('input[name="theme"]').forEach((input) =>
       input.addEventListener('change', () => store.update((s) => { s.prefs.theme = input.value; }))
     );
@@ -181,12 +357,45 @@ const messages = {
   .dash { padding-top: var(--space-6); }
   .dash__section { margin-bottom: var(--space-7); }
   .dash__warning { margin-bottom: var(--space-5); }
-  .dash__note { margin-top: var(--space-4); color: var(--text-muted); font-size: var(--text-sm); }
-  .dash__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); align-items: start; }
+  .dash__stats { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .dash__note { margin-top: var(--space-4); color: var(--text-muted); font-size: var(--text-sm); max-width: 80ch; }
+  .dash__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); align-items: start; margin-bottom: var(--space-7); }
   .dash__prefs { display: grid; gap: var(--space-5); }
   .dash__help { color: var(--text-muted); font-size: var(--text-sm); margin: var(--space-2) 0 0; }
+  .dash__goal-text { font-size: var(--text-sm); margin: var(--space-3) 0 var(--space-5); }
+  .dash__count { font-size: var(--text-base); color: var(--text-muted); font-weight: 400; }
   .dash__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
   .dash__status { min-height: 1.6em; margin: var(--space-4) 0 0; font-size: var(--text-sm); color: var(--green); }
   .dash__status[data-tone='error'] { color: var(--red); }
+
+  .week { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(7, 1fr); gap: var(--space-2); align-items: end; height: 170px; }
+  .week :global(.week__day) { margin: 0; display: grid; grid-template-rows: auto 1fr auto; justify-items: center; gap: var(--space-1); height: 100%; }
+  .week :global(.week__bar) { align-self: end; width: 70%; max-width: 36px; height: max(var(--h), 3px); border-radius: var(--radius-sm) var(--radius-sm) 2px 2px; background: var(--surface-2); border: 1px solid var(--border-strong); }
+  .week :global(.week__bar[data-met='true']) { background: var(--primary); border-color: var(--primary); }
+  .week :global(.week__xp) { font-size: var(--text-xs); color: var(--text-muted); }
+  .week :global(.week__label) { font-size: var(--text-xs); color: var(--text-muted); text-align: center; }
+
+  .badges { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-3); }
+  .badge { margin: 0; display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-4); border: 1px dashed var(--border-strong); border-radius: var(--radius-lg); background: var(--surface); }
+  .badge__icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: var(--surface-2); color: var(--text-muted); }
+  .badge__body { display: grid; gap: 0.15rem; }
+  .badge__name { font-size: var(--text-base); }
+  .badge__desc, .badge__state { font-size: var(--text-sm); color: var(--text-muted); }
+  .badge__state { font-size: var(--text-xs); }
+  .badge.is-earned { border-style: solid; border-color: var(--amber); }
+  .badge.is-earned .badge__icon { background: var(--amber); color: #1a1205; }
+  .badge.is-earned .badge__state { color: var(--text); font-weight: 600; }
+
+  .dash__table { overflow-x: auto; margin-top: var(--space-3); }
+  table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  table :global(th), table :global(td) { padding: 0.5rem 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+  thead th { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+  tbody :global(th) { font-weight: 500; }
+  table :global(.num) { text-align: right; }
+
+  .activity { list-style: none; padding: 0; margin: var(--space-3) 0 0; display: grid; gap: var(--space-2); font-size: var(--text-sm); }
+  .activity :global(li) { margin: 0; display: grid; grid-template-columns: 5.5rem 1fr auto; gap: var(--space-3); align-items: baseline; }
+  .activity :global(.activity__xp) { color: var(--magenta); font-weight: 600; }
+  .activity :global(.activity__when) { color: var(--text-muted); font-size: var(--text-xs); }
   @media (max-width: 860px) { .dash__cols { grid-template-columns: 1fr; } }
 </style>

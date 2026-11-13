@@ -1,0 +1,66 @@
+---
+/**
+ * Announces what a learning action earned (XP, daily goal, badges) in a small toast.
+ * It listens for the "aerolex:reward" event, uses a polite live region and hides itself
+ * after a few seconds; with reduced motion it appears without animation.
+ */
+import Icon from '../ui/Icon.astro';
+import { useT } from '../../i18n/index.js';
+import { BADGES } from '../../lib/gamification/engine.js';
+
+interface Props { lang: string }
+const { lang } = Astro.props;
+const tr = useT(lang);
+const texts = {
+  xp: tr('rewards.xp'),
+  goal: tr('rewards.goal'),
+  badge: tr('rewards.badge'),
+  badges: Object.fromEntries(BADGES.map((b) => [b.id, tr(`badges.${b.id}.name`)])),
+};
+---
+<div class="toast" role="status" aria-live="polite" aria-atomic="true" data-reward-toast data-texts={JSON.stringify(texts)}>
+  <div class="toast__box" hidden data-toast-box>
+    <Icon name="zap" size={18} class="toast__icon" />
+    <p class="toast__text" data-toast-text></p>
+  </div>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-reward-toast]');
+  if (root) {
+    const t = JSON.parse(root.dataset.texts || '{}');
+    const box = root.querySelector<HTMLElement>('[data-toast-box]')!;
+    const text = root.querySelector<HTMLElement>('[data-toast-text]')!;
+    let timer: number | undefined;
+    let pending = { xp: 0, badges: [] as string[], goalMet: false };
+    addEventListener('aerolex:reward', (e) => {
+      const r = (e as CustomEvent).detail ?? {};
+      // Several rewards in a row (e.g. last question + lesson) are shown together
+      if (box.hidden) pending = { xp: 0, badges: [], goalMet: false };
+      pending.xp += r.xp ?? 0;
+      pending.badges.push(...(r.badges ?? []));
+      pending.goalMet ||= Boolean(r.goalMet);
+      const parts = [];
+      if (pending.xp) parts.push(t.xp.replace('{n}', String(pending.xp)));
+      if (pending.goalMet) parts.push(t.goal);
+      for (const id of pending.badges) parts.push(t.badge.replace('{name}', t.badges[id] ?? id));
+      text.textContent = parts.join(' · ');
+      box.hidden = false;
+      box.dataset.big = String(pending.badges.length > 0 || pending.goalMet);
+      clearTimeout(timer);
+      timer = window.setTimeout(() => { box.hidden = true; }, pending.badges.length ? 6000 : 3000);
+    });
+  }
+</script>
+
+<style>
+  .toast { position: fixed; z-index: 90; left: 50%; bottom: calc(var(--space-5) + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); pointer-events: none; width: max-content; max-width: calc(100vw - 2 * var(--space-4)); }
+  .toast__box { display: flex; align-items: center; gap: var(--space-2); padding: 0.6rem 1rem; border-radius: 999px; background: var(--surface); border: 1px solid var(--border-strong); box-shadow: var(--shadow-lg, 0 8px 24px rgb(0 0 0 / 0.2)); animation: toast-in 0.2s ease-out; }
+  .toast__box[hidden] { display: none; }
+  .toast__box[data-big='true'] { border-color: var(--amber); }
+  .toast :global(.toast__icon) { color: var(--amber); flex-shrink: 0; }
+  .toast__text { margin: 0; font-size: var(--text-sm); font-weight: 600; }
+  @keyframes toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .toast__box { animation: none; } }
+  @media (max-width: 860px) { .toast { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); } }
+</style>

@@ -1,0 +1,15 @@
+---
+/**
+ * Publishes the course list (course → learning path and lesson keys) as JSON for the
+ * gamification engine, so completing a lesson can detect finished courses and path badges.
+ * Included on pages where lessons are completed.
+ */
+import { getCollection } from 'astro:content';
+import { lessonKey } from '../../lib/academy/progress.js';
+
+const courses = await getCollection('courses');
+const ctx = {
+  courses: Object.fromEntries(courses.map((c) => [c.id, { path: c.data.path, lessons: c.data.lessons.map((l) => lessonKey(c.id, l)) }])),
+};
+---
+<script type="application/json" id="aerolex-ctx" set:html={JSON.stringify(ctx)} />

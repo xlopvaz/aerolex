@@ -13,6 +13,7 @@ import '../styles/base.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MobileNav from '../components/MobileNav.astro';
+import RewardToast from '../components/gamification/RewardToast.astro';
 import { LOCALES, LOCALE_META } from '../i18n/config.js';
 import { alternates, href, t, withBase } from '../i18n/index.js';
 import { STORAGE_KEY } from '../lib/core/schema.js';
@@ -77,6 +78,7 @@ const canonical = abs(alt[lang] ?? href(routeKey, lang));
     </main>
     <Footer lang={lang} />
     <MobileNav lang={lang} routeKey={routeKey} />
+    <RewardToast lang={lang} />
   </body>
 </html>
 

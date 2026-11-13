@@ -8,6 +8,7 @@ import Callout from '../components/ui/Callout.astro';
 import Quiz from '../components/academy/Quiz.astro';
 import Term from '../components/academy/Term.astro';
 import MetarBreakdown from '../components/academy/MetarBreakdown.astro';
+import GameContext from '../components/gamification/GameContext.astro';
 import { childAlternates, childHref, href, useT } from '../i18n/index.js';
 import { lessonKey } from '../lib/academy/progress.js';
 
@@ -46,6 +47,7 @@ const lessonSources = L.sources.map((id) => {
 });
 ---
 <BaseLayout lang={lang} routeKey="academy" title={`${L.title} · ${course.title[lang]} · AeroLex`} description={L.summary} alt={childAlternates('academy', `${courseId}/${lessonId}`)}>
+  <GameContext />
   <header class="page-header">
     <div class="container">
       <Breadcrumbs
@@ -124,6 +126,7 @@ const lessonSources = L.sources.map((id) => {
 
 <script>
   import { getAppStore } from '../lib/core/app-store.js';
+  import { pageContext } from '../lib/gamification/client.js';
   import { completeLesson, uncompleteLesson, isLessonComplete } from '../lib/academy/progress.js';
   const root = document.querySelector<HTMLElement>('[data-lesson-page]');
   if (root) {
@@ -144,7 +147,7 @@ const lessonSources = L.sources.map((id) => {
     };
     btn.addEventListener('click', () => {
       if (isLessonComplete(store.get(), key)) uncompleteLesson(store, key);
-      else completeLesson(store, key);
+      else completeLesson(store, key, {}, pageContext());
     });
     render(store.get());
     store.subscribe(render);

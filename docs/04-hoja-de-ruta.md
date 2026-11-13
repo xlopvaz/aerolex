@@ -140,9 +140,16 @@ Fase 4 completa: las 18 herramientas del brief (§17) están disponibles en el L
 
 **Hecho cuando:** cada herramienta tiene tests unitarios de sus cálculos o de su parseo, el aviso "educativo, no operacional" y funciona sin conexión cuando es posible.
 
-## FASE 5 — Experiencia de usuario
+## FASE 5 — Experiencia de usuario 🚧
 
 Panel de usuario, XP, metas diarias, rachas, insignias (*First Flight*, *METAR Master*, *ATC Communicator*…), estadísticas, favoritos, historial, revisión de errores, cabina interactiva (Airbus y Boeing por separado), diagramas de aeropuerto y optimización móvil.
+
+**Progreso**
+- [x] **Bloque 1 — XP, meta diaria, rachas e insignias (13/11/2026):** motor puro en `src/lib/gamification/engine.js` (eventos `lesson`, `course`, `quiz`, `practice`, `flashcard`): 50 XP por lección y 100 por curso la primera vez, 10 por pregunta acertada por primera vez, 2 por acierto en las prácticas (máx. 40 al día por práctica) y 1 por flashcard repasada (máx. 30 al día), así que repetir no infla los puntos. Meta diaria configurable (20/50/100/200 XP), racha por días locales con XP y 9 insignias (*Primer vuelo*, *Entusiasta de la aviación*, *Piloto en formación*, *TCP preparado*, *Maestro del METAR*, *Comunicador ATC*, *Experto en aeronaves*, *Una semana en vuelo* y *Maestro de la aviación*) con reglas que leen solo el estado guardado. Esquema del almacenamiento v3 con migración (lo ya completado recibe sus XP una vez, sin contar para la racha). Aviso emergente accesible al ganar XP o insignias y panel con XP, XP de hoy, rachas, lecciones y cursos, meta diaria, últimos 7 días, insignias con cómo conseguirlas, aciertos por práctica y actividad reciente. 17 tests unitarios y e2e.
+- [ ] Revisión de errores e historial de estudio.
+- [ ] Cabina interactiva (Airbus y Boeing por separado).
+- [ ] Diagramas de aeropuerto.
+- [ ] Optimización móvil.
 
 ## FASE 6 — Publicación
 
