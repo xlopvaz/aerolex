@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Fuel jettison",
+    "es": "Vaciado rápido de combustible"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "flight-operations",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Dumping fuel overboard in flight through dedicated nozzles to reduce the aircraft's weight quickly, for example to get below the maximum landing weight after an early return.",
+    "es": "Expulsar combustible al exterior en vuelo por unas toberas específicas para reducir rápido el peso del avión, por ejemplo para quedar por debajo del peso máximo al aterrizaje tras un regreso prematuro."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Releasing fuel in flight to make the aircraft light enough to land.",
+    "es": "Soltar combustible en vuelo para que el avión pese poco como para aterrizar."
+  },
+  "example": {
+    "en": "The crew jettisoned fuel over the sea before returning.",
+    "es": "La tripulación vació combustible sobre el mar antes de regresar."
+  },
+  "pronunciation": {
+    "en": "FYOO-ul JET-ih-sun",
+    "es": "fiu-el ye-ti-son (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "fuel dumping"
+    ],
+    "es": [
+      "descarga de combustible"
+    ]
+  },
+  "related": [
+    "mlw",
+    "mtow"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-part-25",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

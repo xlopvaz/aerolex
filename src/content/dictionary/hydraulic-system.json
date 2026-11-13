@@ -1,0 +1,47 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Hydraulic system",
+    "es": "Sistema hidráulico"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A system that uses pressurised fluid to move heavy components such as flight control surfaces, landing gear, brakes and thrust reversers; airliners have several independent systems for redundancy.",
+    "es": "Sistema que usa líquido a presión para mover componentes pesados como las superficies de mando, el tren de aterrizaje, los frenos y los inversores de empuje; los aviones de línea tienen varios sistemas independientes por redundancia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"muscles\" of the aircraft, using fluid under pressure.",
+    "es": "Los «músculos» del avión, que funcionan con líquido a presión."
+  },
+  "example": {
+    "en": "After losing one hydraulic system, the crew lowered the gear by gravity.",
+    "es": "Tras perder un sistema hidráulico, la tripulación bajó el tren por gravedad."
+  },
+  "pronunciation": {
+    "en": "hy-DRAW-lik SIS-tem",
+    "es": "sis-te-ma i-dráu-li-co"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "landing-gear",
+    "fly-by-wire"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

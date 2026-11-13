@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Trailing edge",
+    "es": "Borde de salida"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The rear edge of a wing or other aerodynamic surface, where the airflow from the upper and lower surfaces meets again; flaps and ailerons are usually fitted there.",
+    "es": "Borde trasero de un ala u otra superficie aerodinámica, donde vuelven a unirse el aire del extradós y del intradós; allí suelen ir los flaps y los alerones."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The back edge of the wing.",
+    "es": "El borde trasero del ala."
+  },
+  "example": {
+    "en": "The flaps move back and down from the trailing edge.",
+    "es": "Los flaps se desplazan hacia atrás y hacia abajo desde el borde de salida."
+  },
+  "pronunciation": {
+    "en": "TRAY-ling ej",
+    "es": "trei-ling ech (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "leading-edge",
+    "flaps",
+    "aileron",
+    "airfoil"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

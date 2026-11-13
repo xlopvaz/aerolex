@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Nose landing gear",
+    "es": "Tren de morro"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The landing gear leg under the nose of the aircraft; on most airliners it can be steered from the flight deck to turn on the ground.",
+    "es": "Pata del tren de aterrizaje situada bajo el morro; en la mayoría de los aviones de línea puede orientarse desde la cabina de vuelo para girar en tierra."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The front wheels of the aircraft.",
+    "es": "Las ruedas delanteras del avión."
+  },
+  "example": {
+    "en": "The tug connects to the nose gear for pushback.",
+    "es": "El tractor se engancha al tren de morro para el retroceso."
+  },
+  "pronunciation": {
+    "en": "NOHZ geer",
+    "es": "nouz guir (en inglés), tren de morro"
+  },
+  "synonyms": {
+    "en": [
+      "nose gear",
+      "nosewheel"
+    ],
+    "es": [
+      "rueda de morro"
+    ]
+  },
+  "related": [
+    "landing-gear",
+    "pushback",
+    "taxi"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

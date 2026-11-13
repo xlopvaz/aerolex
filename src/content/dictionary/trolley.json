@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Trolley",
+    "es": "Carro de servicio"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A wheeled cart used by the cabin crew to serve food, drinks and duty-free items in the cabin; it must be stowed and locked for taxi, take-off, landing and turbulence.",
+    "es": "Carro con ruedas que usa la tripulación de cabina para servir comida, bebida y artículos libres de impuestos; debe ir estibado y bloqueado en el rodaje, el despegue, el aterrizaje y con turbulencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The cart used for the onboard service.",
+    "es": "El carro del servicio a bordo."
+  },
+  "example": {
+    "en": "\"Cabin crew, secure the trolleys, we are expecting turbulence.\"",
+    "es": "«Tripulación, aseguren los carros, esperamos turbulencia.»"
+  },
+  "pronunciation": {
+    "en": "TROL-ee",
+    "es": "tro-li (en inglés), carro"
+  },
+  "synonyms": {
+    "en": [
+      "cart (US)"
+    ],
+    "es": [
+      "trolley"
+    ]
+  },
+  "related": [
+    "galley",
+    "turbulence",
+    "cabin-crew"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

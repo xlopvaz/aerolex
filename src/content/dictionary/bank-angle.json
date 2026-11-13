@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Bank angle",
+    "es": "Ángulo de inclinación lateral"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The angle between the aircraft's lateral axis and the horizon during a turn; the steeper the bank, the higher the load factor and the stall speed.",
+    "es": "Ángulo entre el eje transversal de la aeronave y el horizonte durante un viraje; cuanto mayor es, más aumentan el factor de carga y la velocidad de pérdida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much the aircraft leans to one side in a turn.",
+    "es": "Cuánto se inclina el avión hacia un lado en un viraje."
+  },
+  "example": {
+    "en": "Airliners normally turn with no more than about 25–30 degrees of bank.",
+    "es": "Los aviones de línea suelen virar con no más de unos 25–30 grados de inclinación."
+  },
+  "pronunciation": {
+    "en": "BANK ANG-gul",
+    "es": "án-gu-lo de in-cli-na-ción"
+  },
+  "synonyms": {
+    "en": [
+      "bank"
+    ],
+    "es": [
+      "alabeo"
+    ]
+  },
+  "related": [
+    "roll",
+    "load-factor",
+    "stall"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

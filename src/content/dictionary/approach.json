@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Approach",
+    "es": "Aproximación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The phase of flight in which the aircraft follows a procedure or visual path towards the runway to land, ending at the flare or at a go-around.",
+    "es": "Fase del vuelo en la que la aeronave sigue un procedimiento o una trayectoria visual hacia la pista para aterrizar, que termina en la recogida o en un motor y al aire."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Lining up and descending towards the runway to land.",
+    "es": "Alinearse y descender hacia la pista para aterrizar."
+  },
+  "example": {
+    "en": "\"Cleared ILS approach runway 18R.\"",
+    "es": "«Autorizado aproximación ILS pista 18R.»"
+  },
+  "pronunciation": {
+    "en": "uh-PROHCH",
+    "es": "a-prouch (en inglés), aproximación"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ils",
+    "missed-approach",
+    "landing",
+    "descent"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cictt-phase-of-flight",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

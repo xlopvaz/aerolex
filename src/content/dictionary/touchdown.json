@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Touchdown",
+    "es": "Toma de contacto"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The moment when the aircraft's main landing gear first makes contact with the runway.",
+    "es": "Momento en que el tren de aterrizaje principal toca la pista por primera vez."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The moment the wheels touch the runway.",
+    "es": "El momento en que las ruedas tocan la pista."
+  },
+  "example": {
+    "en": "The pilot aimed to touch down at the aiming point markings, a few hundred metres beyond the threshold.",
+    "es": "El piloto buscó tomar contacto en las marcas de punto de visada, a unos cientos de metros del umbral."
+  },
+  "pronunciation": {
+    "en": "TUCH-down",
+    "es": "tach-daun (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "flare",
+    "landing",
+    "threshold"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

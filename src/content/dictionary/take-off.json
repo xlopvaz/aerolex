@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Take-off",
+    "es": "Despegue"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The phase of flight from the application of take-off power, through rotation, until the aircraft reaches 35 ft above the runway elevation (CAST/ICAO taxonomy).",
+    "es": "Fase del vuelo desde que se aplica la potencia de despegue, pasando por la rotación, hasta que la aeronave alcanza 35 ft sobre la elevación de la pista (taxonomía CAST/OACI)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Accelerating on the runway and leaving the ground.",
+    "es": "Acelerar por la pista y separarse del suelo."
+  },
+  "example": {
+    "en": "\"Cleared for take-off runway 36L.\"",
+    "es": "«Autorizado a despegar pista 36L.»"
+  },
+  "pronunciation": {
+    "en": "TAYK-off",
+    "es": "teik-of (en inglés), despegue"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "v1",
+    "vr",
+    "v2",
+    "runway",
+    "climb"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cictt-phase-of-flight",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

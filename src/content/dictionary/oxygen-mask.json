@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Oxygen mask",
+    "es": "Máscara de oxígeno"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety",
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A mask that supplies oxygen; in the cabin they drop automatically from the overhead units if the cabin altitude becomes too high, and the flight crew has quick-donning masks.",
+    "es": "Máscara que suministra oxígeno; en la cabina de pasajeros caen automáticamente de los paneles superiores si la altitud de cabina es demasiado alta, y la tripulación de vuelo tiene máscaras de colocación rápida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The masks that drop from the ceiling if the cabin loses pressure.",
+    "es": "Las máscaras que caen del techo si la cabina pierde presión."
+  },
+  "example": {
+    "en": "\"Put on your own mask before helping others.\"",
+    "es": "«Pónganse su máscara antes de ayudar a otros.»"
+  },
+  "pronunciation": {
+    "en": "OK-sih-jen mask",
+    "es": "ok-si-yen mask (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "decompression",
+    "psu",
+    "pbe"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-part-25",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

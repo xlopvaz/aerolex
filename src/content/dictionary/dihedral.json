@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Dihedral",
+    "es": "Diedro"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The upward angle of the wings from the root to the tip, seen from the front; it helps lateral stability.",
+    "es": "Ángulo hacia arriba de las alas desde el encastre hasta la punta, visto de frente; ayuda a la estabilidad lateral."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The slight \"V\" of the wings seen from the front.",
+    "es": "La ligera «V» que forman las alas vistas de frente."
+  },
+  "example": {
+    "en": "Low-wing airliners usually have a few degrees of dihedral.",
+    "es": "Los aviones de línea de ala baja suelen tener unos grados de diedro."
+  },
+  "pronunciation": {
+    "en": "dye-HEE-drul",
+    "es": "di-e-dro"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "wing",
+    "roll",
+    "wing-sweep"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

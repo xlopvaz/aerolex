@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Descent",
+    "es": "Descenso"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The phase of flight from the top of descent until the start of the approach.",
+    "es": "Fase del vuelo desde el punto de inicio del descenso hasta el comienzo de la aproximación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Coming down from cruise towards the destination.",
+    "es": "Bajar del crucero hacia el destino."
+  },
+  "example": {
+    "en": "\"Descend flight level 100.\"",
+    "es": "«Descienda a nivel de vuelo 100.»"
+  },
+  "pronunciation": {
+    "en": "dih-SENT",
+    "es": "di-sent (en inglés), descenso"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tod",
+    "cruise",
+    "approach"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cictt-phase-of-flight"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

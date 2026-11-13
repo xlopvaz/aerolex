@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Attitude indicator",
+    "es": "Indicador de actitud"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The flight instrument that shows the aircraft's pitch and bank relative to the horizon.",
+    "es": "Instrumento de vuelo que muestra el cabeceo y la inclinación lateral de la aeronave respecto al horizonte."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The instrument with the artificial horizon: blue sky above, brown ground below.",
+    "es": "El instrumento con el horizonte artificial: cielo azul arriba y tierra marrón abajo."
+  },
+  "example": {
+    "en": "In cloud, the pilot flew by reference to the attitude indicator.",
+    "es": "Dentro de las nubes, el piloto voló por referencia al indicador de actitud."
+  },
+  "pronunciation": {
+    "en": "AT-ih-tood IN-dih-kay-ter",
+    "es": "in-di-ca-dor de ac-ti-tud"
+  },
+  "synonyms": {
+    "en": [
+      "artificial horizon"
+    ],
+    "es": [
+      "horizonte artificial"
+    ]
+  },
+  "related": [
+    "pfd",
+    "pitch",
+    "roll",
+    "imc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

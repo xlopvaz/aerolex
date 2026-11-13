@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Centre of gravity",
+    "es": "Centro de gravedad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The point at which the whole weight of the aircraft can be considered to act; it must stay within certified limits for the aircraft to be stable and controllable.",
+    "es": "Punto en el que puede considerarse que actúa todo el peso de la aeronave; debe permanecer dentro de los límites certificados para que el avión sea estable y controlable."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The balance point of the aircraft.",
+    "es": "El punto de equilibrio del avión."
+  },
+  "example": {
+    "en": "The load sheet showed the centre of gravity within limits.",
+    "es": "La hoja de carga mostraba el centro de gravedad dentro de límites."
+  },
+  "pronunciation": {
+    "en": "SEN-ter uv GRAV-ih-tee",
+    "es": "cen-tro de gra-ve-dad"
+  },
+  "synonyms": {
+    "en": [
+      "CG",
+      "center of gravity (US)"
+    ],
+    "es": [
+      "CG"
+    ]
+  },
+  "related": [
+    "load-sheet",
+    "weight",
+    "trim"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

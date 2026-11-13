@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Leading edge",
+    "es": "Borde de ataque"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The front edge of a wing or other aerodynamic surface, which meets the airflow first.",
+    "es": "Borde delantero de un ala u otra superficie aerodinámica, que es el primero en encontrarse con el aire."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The front edge of the wing.",
+    "es": "El borde delantero del ala."
+  },
+  "example": {
+    "en": "Slats extend from the leading edge for landing.",
+    "es": "Los slats salen del borde de ataque para el aterrizaje."
+  },
+  "pronunciation": {
+    "en": "LEE-ding ej",
+    "es": "li-ding ech (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "trailing-edge",
+    "slats",
+    "airfoil",
+    "wing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

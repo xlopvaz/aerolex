@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Catering",
+    "es": "Catering"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "cabin-crew"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The supply of food, drinks and service equipment to the aircraft, loaded into the galleys during the turnaround.",
+    "es": "Suministro de comida, bebida y material de servicio al avión, que se carga en los galleys durante la escala."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The meals and drinks loaded onto the aircraft.",
+    "es": "Las comidas y bebidas que se cargan en el avión."
+  },
+  "example": {
+    "en": "The catering truck docked at the rear galley door.",
+    "es": "El camión de catering se acopló a la puerta del galley trasero."
+  },
+  "pronunciation": {
+    "en": "KAY-ter-ing",
+    "es": "kei-te-ring (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "galley",
+    "trolley",
+    "turnaround"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

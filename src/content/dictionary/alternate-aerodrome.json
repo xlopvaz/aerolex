@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Alternate aerodrome",
+    "es": "Aeródromo de alternativa"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An aerodrome to which an aircraft may proceed when it becomes impossible or inadvisable to proceed to or land at the aerodrome of intended landing.",
+    "es": "Aeródromo al que puede dirigirse una aeronave cuando resulta imposible o desaconsejable continuar hacia el aeródromo de aterrizaje previsto o aterrizar en él."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The backup airport if you cannot land at the destination.",
+    "es": "El aeropuerto de reserva si no se puede aterrizar en el destino."
+  },
+  "example": {
+    "en": "With fog at the destination, the flight diverted to its alternate.",
+    "es": "Con niebla en el destino, el vuelo se desvió a su alternativa."
+  },
+  "pronunciation": {
+    "en": "AWL-ter-nut AIR-oh-drohm",
+    "es": "ae-ró-dro-mo de al-ter-na-ti-va"
+  },
+  "synonyms": {
+    "en": [
+      "alternate"
+    ],
+    "es": [
+      "alternativo"
+    ]
+  },
+  "related": [
+    "flight-plan",
+    "final-reserve-fuel",
+    "aerodrome"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "icao-annex-2"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
