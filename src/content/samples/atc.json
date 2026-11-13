@@ -1,0 +1,126 @@
+{
+  "note": "Didactic scenarios written for AeroLex. The callsign LEXAIR, the SID ROSAL 1A and every frequency are fictitious. Not for operational use.",
+  "scenarios": [
+    {
+      "id": "departure-lest",
+      "title": { "es": "Salida de Santiago (LEST)", "en": "Departure from Santiago (LEST)" },
+      "steps": [
+        {
+          "id": "clearance",
+          "unit": { "es": "Autorizaciones", "en": "Clearance Delivery" },
+          "atc": "Lexair one two three, cleared to Madrid via ROSAL one alpha departure, climb flight level eight zero, squawk four five two one.",
+          "readback": "Cleared to Madrid via ROSAL one alpha departure, flight level eight zero, squawk four five two one, Lexair one two three.",
+          "elements": [{ "key": "route", "value": "rosal 1a" }, { "key": "level", "value": "fl 80" }, { "key": "squawk", "value": "4521" }],
+          "wrong": { "text": "Cleared to Madrid via ROSAL one alpha departure, flight level eight zero, squawk four two five one, Lexair one two three.", "key": "squawk" },
+          "note": { "es": "La autorización de ruta, el nivel y el código transpondedor se colacionan siempre.", "en": "The route clearance, the level and the transponder code are always read back." }
+        },
+        {
+          "id": "taxi",
+          "unit": { "es": "Rodadura", "en": "Ground" },
+          "atc": "Lexair one two three, taxi to holding point runway one seven via taxiway alpha, QNH one zero one three.",
+          "readback": "Taxi to holding point runway one seven via alpha, QNH one zero one three, Lexair one two three.",
+          "elements": [{ "key": "holdingPoint", "value": "holding point" }, { "key": "runway", "value": "runway 17" }, { "key": "taxiway", "value": "via a" }, { "key": "qnh", "value": "1013" }],
+          "wrong": { "text": "Taxi to holding point runway one seven via alpha, QNH one zero three one, Lexair one two three.", "key": "qnh" },
+          "note": { "es": "El reglaje altimétrico (QNH) y la pista en uso se colacionan siempre.", "en": "The altimeter setting (QNH) and the runway in use are always read back." }
+        },
+        {
+          "id": "line-up",
+          "unit": { "es": "Torre", "en": "Tower" },
+          "atc": "Lexair one two three, line up and wait runway one seven.",
+          "readback": "Line up and wait runway one seven, Lexair one two three.",
+          "elements": [{ "key": "lineUp", "value": "line up and wait" }, { "key": "runway", "value": "runway 17" }],
+          "wrong": { "text": "Line up and wait runway three five, Lexair one two three.", "key": "runway" },
+          "note": { "es": "Cualquier instrucción para entrar en una pista se colaciona con el número de pista.", "en": "Any instruction to enter a runway is read back with the runway designator." }
+        },
+        {
+          "id": "take-off",
+          "unit": { "es": "Torre", "en": "Tower" },
+          "atc": "Lexair one two three, wind one eight zero degrees eight knots, runway one seven, cleared for take-off.",
+          "readback": "Runway one seven, cleared for take-off, Lexair one two three.",
+          "elements": [{ "key": "runway", "value": "runway 17" }, { "key": "takeOff", "value": "cleared for take off" }],
+          "wrong": { "text": "Cleared for take-off, Lexair one two three.", "key": "runway" },
+          "note": { "es": "La autorización de despegue se colaciona con la pista; el viento es información y no hace falta repetirlo.", "en": "The take-off clearance is read back with the runway; the wind is information and does not need to be repeated." }
+        },
+        {
+          "id": "contact-departure",
+          "unit": { "es": "Torre", "en": "Tower" },
+          "atc": "Lexair one two three, contact Departure one two zero decimal four five.",
+          "readback": "Departure one two zero decimal four five, Lexair one two three.",
+          "elements": [{ "key": "frequency", "value": "120.45" }],
+          "wrong": { "text": "Departure one two one decimal four five, Lexair one two three.", "key": "frequency" },
+          "note": { "es": "Las frecuencias nuevas se colacionan para confirmar que se va a sintonizar la correcta.", "en": "New frequencies are read back to confirm the right one will be tuned." }
+        },
+        {
+          "id": "climb",
+          "unit": { "es": "Salidas", "en": "Departure" },
+          "atc": "Lexair one two three, identified, climb flight level one two zero.",
+          "readback": "Climb flight level one two zero, Lexair one two three.",
+          "elements": [{ "key": "level", "value": "fl 120" }],
+          "wrong": { "text": "Climb flight level one zero zero, Lexair one two three.", "key": "level" },
+          "note": { "es": "«Identified» es información; la instrucción de nivel es lo que se colaciona.", "en": "\"Identified\" is information; the level instruction is what gets read back." }
+        },
+        {
+          "id": "heading",
+          "unit": { "es": "Salidas", "en": "Departure" },
+          "atc": "Lexair one two three, turn left heading one three five.",
+          "readback": "Left heading one three five, Lexair one two three.",
+          "elements": [{ "key": "direction", "value": "left" }, { "key": "heading", "value": "heading 135" }],
+          "wrong": { "text": "Right heading one three five, Lexair one two three.", "key": "direction" },
+          "note": { "es": "En un cambio de rumbo se colacionan el sentido del giro y el rumbo.", "en": "For a heading change, both the direction of turn and the heading are read back." }
+        }
+      ]
+    },
+    {
+      "id": "arrival-lemd",
+      "title": { "es": "Llegada a Madrid (LEMD)", "en": "Arrival at Madrid (LEMD)" },
+      "steps": [
+        {
+          "id": "descend-speed",
+          "unit": { "es": "Aproximación", "en": "Approach" },
+          "atc": "Lexair one two three, descend flight level seven zero, reduce speed two five zero knots.",
+          "readback": "Descend flight level seven zero, speed two five zero knots, Lexair one two three.",
+          "elements": [{ "key": "level", "value": "fl 70" }, { "key": "speed", "value": "250" }],
+          "wrong": { "text": "Descend flight level seven zero, speed two zero five knots, Lexair one two three.", "key": "speed" },
+          "note": { "es": "Las instrucciones de nivel y de velocidad se colacionan siempre.", "en": "Level and speed instructions are always read back." }
+        },
+        {
+          "id": "descend-altitude",
+          "unit": { "es": "Aproximación", "en": "Approach" },
+          "atc": "Lexair one two three, descend altitude five thousand feet, QNH one zero one eight.",
+          "readback": "Descend altitude five thousand feet, QNH one zero one eight, Lexair one two three.",
+          "elements": [{ "key": "altitude", "value": "5000" }, { "key": "qnh", "value": "1018" }],
+          "wrong": { "text": "Descend altitude five thousand feet, QNH one zero zero eight, Lexair one two three.", "key": "qnh" },
+          "note": { "es": "Al autorizar por primera vez a una altitud por debajo del nivel de transición se da el QNH, que se colaciona.", "en": "When first cleared to an altitude below the transition level, the QNH is given and read back." }
+        },
+        {
+          "id": "approach",
+          "unit": { "es": "Aproximación", "en": "Approach" },
+          "atc": "Lexair one two three, cleared ILS approach runway three two right.",
+          "readback": "Cleared ILS approach runway three two right, Lexair one two three.",
+          "elements": [{ "key": "approach", "value": "ils" }, { "key": "runway", "value": "runway 32r" }],
+          "wrong": { "text": "Cleared ILS approach runway three two left, Lexair one two three.", "key": "runway" },
+          "note": { "es": "En la autorización de aproximación se colacionan el tipo de aproximación y la pista, incluida la letra L, C o R.", "en": "In an approach clearance, the type of approach and the runway, including the L, C or R letter, are read back." }
+        },
+        {
+          "id": "contact-tower",
+          "unit": { "es": "Aproximación", "en": "Approach" },
+          "atc": "Lexair one two three, contact Tower one one eight decimal one five.",
+          "readback": "Tower one one eight decimal one five, Lexair one two three.",
+          "elements": [{ "key": "frequency", "value": "118.15" }],
+          "wrong": { "text": "Tower one one eight decimal five one, Lexair one two three.", "key": "frequency" },
+          "note": { "es": "Las frecuencias nuevas se colacionan siempre.", "en": "New frequencies are always read back." }
+        },
+        {
+          "id": "landing",
+          "unit": { "es": "Torre", "en": "Tower" },
+          "atc": "Lexair one two three, wind three three zero degrees six knots, runway three two right, cleared to land.",
+          "readback": "Runway three two right, cleared to land, Lexair one two three.",
+          "elements": [{ "key": "runway", "value": "runway 32r" }, { "key": "land", "value": "cleared to land" }],
+          "wrong": { "text": "Cleared to land, Lexair one two three.", "key": "runway" },
+          "note": { "es": "La autorización de aterrizaje se colaciona con la pista.", "en": "The landing clearance is read back with the runway." }
+        }
+      ]
+    }
+  ],
+  "callsign": "lexair 123"
+}

@@ -1,0 +1,237 @@
+---
+/**
+ * ATC phraseology trainer (Phase 4). Two roles over the same didactic scenarios:
+ *  - pilot: type the read-back; checked element by element (src/lib/atc/readback.js)
+ *  - controller: decide whether a read-back is correct and which element is wrong
+ * Results are saved by practice ID (store.practice: atc-pilot, atc-controller).
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import { href, t, useT } from '../i18n/index.js';
+import data from '../content/samples/atc.json';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const ui = t(lang, 'atc');
+const first = data.scenarios[0].steps[0];
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('atc.metaTitle')} description={tr('atc.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.atcTrainer') }]} />
+      <h1>{tr('atc.title')}</h1>
+      <p class="lead">{tr('atc.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container mt atc" data-atc data-lang={lang}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+
+    <div class="atc-controls">
+      <fieldset class="pr-levels atc-modes">
+        <legend>{tr('atc.modeLabel')}</legend>
+        <button type="button" class="pr-level" data-mode="pilot" aria-pressed="true"><strong>{tr('atc.modes.pilot')}</strong></button>
+        <button type="button" class="pr-level" data-mode="controller" aria-pressed="false"><strong>{tr('atc.modes.controller')}</strong></button>
+      </fieldset>
+      <label class="atc-scenario">
+        <span class="mt-label">{tr('atc.scenarioLabel')}</span>
+        <select data-scenario>
+          {data.scenarios.map((s) => <option value={s.id}>{s.title[lang as 'es' | 'en']}</option>)}
+        </select>
+      </label>
+    </div>
+
+    <section class="mt-card atc-card" aria-live="polite">
+      <div class="atc-meta">
+        <Badge tone="amber" icon="book-open">{tr('practice.didactic')}</Badge>
+        <span class="mt-hint" data-progress>{tr('atc.stepOf', { n: 1, total: data.scenarios[0].steps.length })}</span>
+        <span class="mt-hint" data-unit>{first.unit[lang as 'es' | 'en']}</span>
+      </div>
+      <p class="atc-label">{tr('atc.atcSays')}</p>
+      <p class="mt-code atc-tx" lang="en" data-atc-text>{first.atc}</p>
+      <div data-speak-wrap hidden><Button variant="secondary" size="sm" icon="volume-2" data-speak>{tr('atc.listen')}</Button></div>
+
+      <div data-pilot-ui>
+        <label for="atc-rb" class="mt-label">{tr('atc.yourReadback')}</label>
+        <textarea id="atc-rb" rows="2" lang="en" spellcheck="false" autocomplete="off" placeholder={tr('atc.placeholder')} data-readback></textarea>
+        <div class="mt-actions">
+          <Button size="sm" icon="check" data-check>{tr('atc.check')}</Button>
+          <Button variant="secondary" size="sm" icon="eye" data-model>{tr('atc.showModel')}</Button>
+        </div>
+      </div>
+
+      <div data-controller-ui hidden>
+        <p class="atc-label">{tr('atc.pilotSays')}</p>
+        <p class="mt-code atc-tx" lang="en" data-pilot-text></p>
+        <h2 class="pr-prompt" id="atc-q">{tr('atc.isCorrect')}</h2>
+        <div class="pr-options" role="group" aria-labelledby="atc-q" data-options></div>
+      </div>
+
+      <div class="pr-feedback" data-feedback hidden></div>
+      <div class="pr-footer">
+        <Button size="sm" icon="arrow-right" data-next>{tr('atc.next')}</Button>
+        <span class="pr-score" data-score></span>
+      </div>
+    </section>
+
+    <details class="atc-rule">
+      <summary>{tr('atc.why')}</summary>
+      <p>{tr('atc.readbackRule')}</p>
+    </details>
+    <p class="mt-hint">{tr('atc.fictitious')}</p>
+    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+  </div>
+  <script type="application/json" id="atc-data" set:html={JSON.stringify({ ui, data })} />
+</BaseLayout>
+
+<style is:global>
+  .atc-controls { display: grid; gap: var(--space-4); grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: end; }
+  @media (max-width: 760px) { .atc-controls { grid-template-columns: 1fr; } }
+  .atc-scenario select { width: 100%; padding: var(--space-2) var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font: inherit; }
+  .atc-card { display: grid; gap: var(--space-3); }
+  .atc-meta { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .atc-label { margin: 0; font-weight: 600; }
+  .atc-tx { display: block; font-family: var(--font-body, inherit); font-size: 1.05rem; line-height: 1.6; }
+  .atc-card textarea { width: 100%; padding: var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font: inherit; }
+  .atc-card textarea:focus-visible, .atc-scenario select:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 2px; }
+  .atc-checks { list-style: none; padding: 0; margin: var(--space-2) 0 0; display: grid; gap: var(--space-1); }
+  .atc-checks .ok::before { content: '✓ '; color: var(--green); font-weight: 700; }
+  .atc-checks .ko::before { content: '✗ '; color: var(--red); font-weight: 700; }
+  .atc-rule summary { cursor: pointer; font-weight: 600; }
+</style>
+
+<script>
+  import { checkReadback } from '../lib/atc/readback.js';
+  import { esc } from '../lib/metar/render.js';
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { recordPractice } from '../lib/practice/stats.js';
+
+  const root = document.querySelector<HTMLElement>('[data-atc]');
+  if (root) {
+    const { ui, data } = JSON.parse(document.getElementById('atc-data')!.textContent!);
+    const lang = root.dataset.lang as 'es' | 'en';
+    const store = getAppStore();
+    const $ = <T extends HTMLElement = HTMLElement>(s: string) => root.querySelector<T>(s)!;
+    const fill = (s: string, v: Record<string, unknown>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+    let mode: 'pilot' | 'controller' = 'pilot';
+    let scenario = data.scenarios[0];
+    let index = 0;
+    let answered = false;
+    let score = { ok: 0, total: 0 };
+    let shownWrong = false;
+
+    const step = () => scenario.steps[index];
+    const label = (k: string) => ui.elements[k];
+
+    const showFeedback = (html: string) => {
+      const fb = $('[data-feedback]');
+      fb.innerHTML = html;
+      fb.hidden = false;
+    };
+    const record = (ok: boolean) => {
+      score.total += 1;
+      if (ok) score.ok += 1;
+      $('[data-score]').textContent = `${score.ok}/${score.total}`;
+      recordPractice(store, `atc-${mode}`, ok);
+    };
+
+    const render = () => {
+      const s = step();
+      answered = false;
+      $('[data-progress]').textContent = fill(ui.stepOf, { n: index + 1, total: scenario.steps.length });
+      $('[data-unit]').textContent = s.unit[lang];
+      $('[data-atc-text]').textContent = s.atc;
+      $('[data-feedback]').hidden = true;
+      $<HTMLTextAreaElement>('[data-readback]').value = '';
+      $('[data-pilot-ui]').hidden = mode !== 'pilot';
+      $('[data-controller-ui]').hidden = mode !== 'controller';
+      $('[data-next]').querySelector('span')!.textContent = index === scenario.steps.length - 1 ? ui.restart : ui.next;
+      if (mode === 'controller') {
+        shownWrong = Math.random() < 0.6;
+        $('[data-pilot-text]').textContent = shownWrong ? s.wrong.text : s.readback;
+        const keys = [...new Set(s.elements.map((e: any) => e.key))];
+        $('[data-options]').innerHTML = [
+          `<button type="button" class="pr-opt" data-answer="ok">${esc(ui.answerOk)}</button>`,
+          ...keys.map((k) => `<button type="button" class="pr-opt" data-answer="${esc(k)}">${esc(fill(ui.answerWrong, { element: label(k as string) }))}</button>`),
+        ].join('');
+      }
+    };
+
+    root.addEventListener('click', (e) => {
+      const el = e.target as HTMLElement;
+      const modeBtn = el.closest<HTMLElement>('[data-mode]');
+      if (modeBtn) {
+        mode = modeBtn.dataset.mode as typeof mode;
+        root.querySelectorAll('[data-mode]').forEach((b) => b.setAttribute('aria-pressed', String(b === modeBtn)));
+        index = 0;
+        score = { ok: 0, total: 0 };
+        $('[data-score]').textContent = '';
+        render();
+        return;
+      }
+      if (el.closest('[data-check]') && !answered) {
+        const s = step();
+        const r = checkReadback($<HTMLTextAreaElement>('[data-readback]').value, s, data.callsign);
+        const items = r.elements.map((x: any) => `<li class="${x.ok ? 'ok' : 'ko'}">${esc(label(x.key))}</li>`).join('');
+        const missing = r.elements.filter((x: any) => !x.ok).map((x: any) => label(x.key));
+        const lines = [
+          `<strong>${esc(r.ok ? ui.resultOk : fill(ui.resultMissing, { list: missing.join(', ') || '—' }))}</strong>`,
+          `<ul class="atc-checks">${items}</ul>`,
+          r.callsign ? (r.callsignLast ? '' : `<p>${esc(ui.callsignNotLast)}</p>`) : `<p>${esc(ui.callsignMissing)}</p>`,
+          `<p><strong>${esc(ui.model)}:</strong> <span lang="en">${esc(s.readback)}</span></p>`,
+          `<p>${esc(s.note[lang])}</p>`,
+        ];
+        showFeedback(lines.join(''));
+        answered = true;
+        record(r.ok);
+        return;
+      }
+      if (el.closest('[data-model]')) {
+        const s = step();
+        showFeedback(`<p><strong>${esc(ui.model)}:</strong> <span lang="en">${esc(s.readback)}</span></p><p>${esc(s.note[lang])}</p>`);
+        return;
+      }
+      const opt = el.closest<HTMLButtonElement>('[data-answer]');
+      if (opt && !answered) {
+        const s = step();
+        const correct = shownWrong ? s.wrong.key : 'ok';
+        const ok = opt.dataset.answer === correct;
+        root.querySelectorAll<HTMLButtonElement>('[data-answer]').forEach((b) => {
+          b.disabled = true;
+          if (b.dataset.answer === correct) b.classList.add('is-correct');
+        });
+        if (!ok) opt.classList.add('is-wrong');
+        const answerText = correct === 'ok' ? ui.answerOk : fill(ui.answerWrong, { element: label(correct) });
+        showFeedback(`<strong>${esc(ok ? ui.correct : ui.incorrect)}</strong>${ok ? '' : `<p>${esc(fill(ui.theAnswer, { answer: answerText }))}</p>`}<p><strong>${esc(ui.model)}:</strong> <span lang="en">${esc(s.readback)}</span></p><p>${esc(s.note[lang])}</p>`);
+        answered = true;
+        record(ok);
+        return;
+      }
+      if (el.closest('[data-next]')) {
+        index = index === scenario.steps.length - 1 ? 0 : index + 1;
+        render();
+        return;
+      }
+      if (el.closest('[data-speak]') && 'speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(step().atc);
+        u.lang = 'en-GB';
+        u.rate = 0.95;
+        speechSynthesis.cancel();
+        speechSynthesis.speak(u);
+      }
+    });
+
+    $<HTMLSelectElement>('[data-scenario]').addEventListener('change', (e) => {
+      scenario = data.scenarios.find((s: any) => s.id === (e.target as HTMLSelectElement).value);
+      index = 0;
+      render();
+    });
+    if ('speechSynthesis' in window) $('[data-speak-wrap]').hidden = false;
+    render();
+  }
+</script>

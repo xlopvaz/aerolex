@@ -31,7 +31,8 @@
     "practice": "METAR and TAF practice",
     "converter": "Unit converter",
     "liveWeather": "Live METAR and TAF",
-    "airportFinder": "Airport finder"
+    "airportFinder": "Airport finder",
+    "atcTrainer": "ATC phraseology trainer"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -662,6 +663,10 @@
       "airportFinder": {
         "title": "Airport finder",
         "text": "IATA and ICAO codes for more than 5,000 airports, with ICAO region, elevation and location."
+      },
+      "atcTrainer": {
+        "title": "ATC phraseology trainer",
+        "text": "Read back clearances as a pilot or spot read-back errors as a controller, with audio."
       }
     }
   },
@@ -1006,6 +1011,62 @@
       "W": "Maritime Southeast Asia",
       "Y": "Australia",
       "Z": "China, Mongolia and North Korea"
+    }
+  },
+  "atc": {
+    "metaTitle": "ATC phraseology trainer · AeroLex",
+    "metaDescription": "Practise reading back ATC clearances as a pilot and spotting read-back errors as a controller, with didactic scenarios.",
+    "title": "ATC phraseology trainer",
+    "lead": "Practise read-backs with complete didactic scenarios in English, the usual language of aviation radio. As a pilot, type the read-back; as a controller, spot the errors.",
+    "fictitious": "Didactic scenario: the LEXAIR call sign, the ROSAL 1A departure and the frequencies are fictitious.",
+    "modeLabel": "Choose your role",
+    "modes": {
+      "pilot": "Pilot: read back",
+      "controller": "Controller: check the read-back"
+    },
+    "scenarioLabel": "Scenario",
+    "stepOf": "Step {n} of {total}",
+    "atcSays": "The controller says",
+    "listen": "Listen",
+    "yourReadback": "Your read-back",
+    "placeholder": "Type your read-back in English, in words or figures",
+    "check": "Check",
+    "showModel": "Show the model read-back",
+    "model": "Model read-back",
+    "next": "Next step",
+    "restart": "Start again",
+    "done": "Scenario complete!",
+    "pilotSays": "The pilot reads back",
+    "isCorrect": "Is the read-back correct?",
+    "answerOk": "Yes, it is correct",
+    "answerWrong": "No: wrong {element}",
+    "resultOk": "Complete read-back.",
+    "resultMissing": "Missing or not matching: {list}.",
+    "callsignMissing": "The call sign is missing.",
+    "callsignNotLast": "Tip: the call sign goes at the end of the read-back.",
+    "correct": "Correct!",
+    "incorrect": "Not that one.",
+    "theAnswer": "The answer is: {answer}",
+    "why": "Why",
+    "readbackRule": "Under SERA.8015(e) and ICAO PANS-ATM, these are always read back: route clearances; instructions to enter, land on, take off from, hold short of, cross, taxi on or backtrack on a runway; runway in use, altimeter settings, SSR codes, new frequencies, level, heading and speed instructions, and transition levels. \"Roger\" or \"Wilco\" never replace a read-back.",
+    "noSpeech": "Your browser cannot read the message aloud.",
+    "elements": {
+      "route": "route clearance",
+      "level": "flight level",
+      "altitude": "altitude",
+      "squawk": "transponder code",
+      "holdingPoint": "holding point",
+      "runway": "runway",
+      "taxiway": "taxiway",
+      "qnh": "QNH",
+      "lineUp": "line up and wait",
+      "takeOff": "take-off clearance",
+      "frequency": "frequency",
+      "direction": "direction of turn",
+      "heading": "heading",
+      "speed": "speed",
+      "approach": "approach type",
+      "land": "landing clearance"
     }
   }
 }
