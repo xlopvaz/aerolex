@@ -2,7 +2,10 @@
   "meta": {
     "siteName": "AeroLex",
     "tagline": "Learn the language of the sky.",
-    "defaultDescription": "AeroLex is a bilingual (English/Spanish) aviation learning platform: academy, technical dictionary, aircraft encyclopedia and interactive tools."
+    "defaultDescription": "AeroLex is a bilingual (English/Spanish) aviation learning platform: academy, technical dictionary, aircraft encyclopedia and interactive tools.",
+    "ogImageAlt": "AeroLex: learn the language of aviation, in English and Spanish",
+    "ogTitle": "Learn the language of the sky",
+    "ogSubtitle": "Aviation academy, technical dictionary, aircraft encyclopedia and interactive tools, in English and Spanish."
   },
   "a11y": {
     "skipToContent": "Skip to content",
@@ -57,7 +60,7 @@
     "disclaimer": "AeroLex is an educational platform. It does not replace approved training, the AFM/POH, the operator's operations manual or current official documentation.",
     "source": "Source code on GitHub",
     "built": "Built in the open, one phase at a time.",
-    "phase": "Phase 5 · User experience"
+    "phase": "Phase 6 · Launch"
   },
   "home": {
     "metaTitle": "AeroLex · Learn the language of the sky",

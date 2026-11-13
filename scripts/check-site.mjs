@@ -5,6 +5,9 @@
  *  - a page is missing <html lang>, <title>, a description, or its hreflang alternates
  *  - an hreflang alternate points to a page that does not exist
  *  - a page under /es/ or /en/ has an empty <main> or placeholder text
+ *  - a page under /es/ or /en/ has no social preview image (og:image) or one that does not exist
+ *  - a JSON-LD block is not valid JSON or has no schema.org @type
+ *  - sitemap.xml is missing, empty or lists a page that does not exist
  *
  * Usage: node scripts/check-site.mjs [distDir] [base]
  */
@@ -83,10 +86,30 @@ for (const file of htmlFiles) {
     const text = main ? main[1].replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '';
     if (text.length < 80) fail(file, 'empty or near-empty <main>');
     if (PLACEHOLDERS.test(text)) fail(file, `placeholder text found: "${text.match(PLACEHOLDERS)[0]}"`);
+    const og = html.match(/<meta property="og:image" content="([^"]+)"/);
+    if (!og) fail(file, 'missing og:image');
+    else if (!og[1].startsWith(SITE) || !resolveInternal(new URL(og[1]).pathname).file) fail(file, `og:image does not exist: ${og[1]}`);
+  }
+
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      const d = JSON.parse(m[1]);
+      if (d['@context'] !== 'https://schema.org' || !d['@type']) fail(file, 'JSON-LD without schema.org @context/@type');
+    } catch {
+      fail(file, 'invalid JSON-LD');
+    }
   }
 }
 
 if (!fs.existsSync(path.join(DIST, '404.html'))) errors.push('404.html is missing');
+
+const sitemapFile = path.join(DIST, 'sitemap.xml');
+if (!fs.existsSync(sitemapFile)) errors.push('sitemap.xml is missing (npm run build writes it)');
+else {
+  const locs = [...fs.readFileSync(sitemapFile, 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&'));
+  if (locs.length < 100) errors.push(`sitemap.xml lists only ${locs.length} pages`);
+  for (const loc of locs) if (!loc.startsWith(SITE) || !resolveInternal(new URL(loc).pathname).file) errors.push(`sitemap.xml lists a missing page: ${loc}`);
+}
 
 if (errors.length) {
   console.error(`✗ Site check failed (${errors.length} problem${errors.length > 1 ? 's' : ''}):`);

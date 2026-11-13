@@ -1,8 +1,12 @@
 ---
 /** Breadcrumb trail. items: [{ label, href? }] — the last item is the current page. */
 import Icon from './Icon.astro';
+import { breadcrumbLd, jsonLdString } from '../../lib/seo/structured-data.js';
 interface Props { items: { label: string; href?: string }[]; label: string }
 const { items, label } = Astro.props;
+// Structured data (schema.org BreadcrumbList), with the current page as the last item
+const site = Astro.site ?? new URL('https://xlopvaz.github.io');
+const ld = breadcrumbLd(items, new URL(Astro.url.pathname, site).href, (p) => new URL(p, site).href);
 ---
 <nav class="crumbs" aria-label={label}>
   <ol>
@@ -16,6 +20,7 @@ const { items, label } = Astro.props;
     ))}
   </ol>
 </nav>
+<script type="application/ld+json" set:html={jsonLdString(ld)} />
 
 <style>
   ol { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); list-style: none; margin: 0 0 var(--space-4); padding: 0; font-size: var(--text-sm); }

@@ -8,6 +8,7 @@ import Icon from '../components/ui/Icon.astro';
 import FavoriteButton from '../components/dictionary/FavoriteButton.astro';
 import SpeakButton from '../components/dictionary/SpeakButton.astro';
 import { childAlternates, childHref, href, t, useT } from '../i18n/index.js';
+import { definedTermLd } from '../lib/seo/structured-data.js';
 
 interface Props { lang: string; routeKey: any; entryId: string }
 const { lang, entryId } = Astro.props;
@@ -33,8 +34,18 @@ const cols = [
 ];
 // Show the current language first
 if (lang === 'es') cols.reverse();
+const site = Astro.site ?? new URL('https://xlopvaz.github.io');
+const jsonLd = [definedTermLd({
+  name,
+  description: e.definition[lang],
+  url: new URL(childHref('dictionary', entryId, lang), site).href,
+  lang,
+  alternateName: e.expansion ? e.expansion[lang] : null,
+  setName: tr('dictionary.title'),
+  setUrl: new URL(href('dictionary', lang), site).href,
+})];
 ---
-<BaseLayout lang={lang} routeKey="dictionary" title={title} description={description} alt={childAlternates('dictionary', entryId)}>
+<BaseLayout lang={lang} routeKey="dictionary" title={title} description={description} alt={childAlternates('dictionary', entryId)} jsonLd={jsonLd}>
   <article class="entry" data-entry={entryId}>
     <header class="page-header">
       <div class="container">

@@ -10,6 +10,7 @@ import TermSearch from '../components/dictionary/TermSearch.astro';
 import { getCollection } from 'astro:content';
 import { childHref, href, pick, useT, withBase } from '../i18n/index.js';
 import roadmap from '../content/site/roadmap.json';
+import { websiteLd } from '../lib/seo/structured-data.js';
 
 interface Props { lang: string; routeKey: any }
 const { lang, routeKey } = Astro.props;
@@ -28,7 +29,7 @@ const rows = roadmap.flights.map((f) => ({
   status: { label: tr(`status.${f.status}`), tone: f.status },
 }));
 ---
-<BaseLayout lang={lang} routeKey={routeKey} title={tr('home.metaTitle')}>
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('home.metaTitle')} jsonLd={[websiteLd({ name: 'AeroLex', url: new URL(href('home', lang), Astro.site ?? 'https://xlopvaz.github.io').href, lang, description: tr('meta.defaultDescription') })]}>
   <!-- 1. Hero -->
   <section class="hero">
     <div class="container hero__grid">
