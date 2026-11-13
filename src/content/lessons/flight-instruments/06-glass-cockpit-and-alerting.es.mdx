@@ -1,0 +1,60 @@
+---
+lesson: glass-cockpit-and-alerting
+course: flight-instruments
+lang: es
+title: "Cabina digital y sistemas de alerta"
+summary: "Cómo llegan los datos a las pantallas (ADC, AHRS, sistemas inerciales), cómo se detecta un fallo, y los sistemas que avisan del terreno (TAWS) y del tráfico (TCAS)."
+objectives:
+  - "Describir la cadena de sensores, ordenadores y pantallas de una cabina digital"
+  - "Explicar qué hacer cuando dos fuentes no coinciden"
+  - "Distinguir los avisos de TAWS y de TCAS y saber cómo responder a un RA"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 14
+terms: [adc, ahrs, efis, pfd, nd, egpws, tcas, transponder]
+quiz: flight-instruments-final
+sources: [faa-phak, faa-ifh, faa-aim, icao-doc-8168]
+review:
+  status: draft
+---
+
+## De los sensores a las pantallas
+
+En una cabina digital, los instrumentos clásicos se sustituyen por pantallas alimentadas por ordenadores:
+
+- El <Term id="adc" /> convierte las presiones de pitot y estática y la temperatura en velocidad, altitud, velocidad vertical, Mach y TAS.
+- El <Term id="ahrs" /> da actitud y rumbo con sensores de estado sólido. En los aviones de transporte esa función la cumplen **sistemas inerciales**, que también calculan la posición y la velocidad respecto al suelo. Cuando un mismo equipo combina datos aire e inerciales se le llama ADIRU.
+- Las pantallas del sistema <Term id="efis">EFIS</Term> presentan los datos: el <Term id="pfd" /> (actitud, velocidad, altitud, velocidad vertical y rumbo) y el <Term id="nd" /> (ruta, radioayudas, tiempo y tráfico).
+
+Hay **varias fuentes** de cada dato (normalmente tres) y unos **instrumentos de reserva** independientes, con su propia alimentación.
+
+## Cuando algo falla
+
+Un dato que se pierde se muestra con una **bandera** o una **X roja** sobre la indicación: el sistema sabe que no es válido. El caso más peligroso es otro: un dato **erróneo pero aparentemente válido**, por ejemplo una velocidad falsa por un pitot obstruido.
+
+Por eso los sistemas **comparan** las fuentes y avisan si discrepan, y la tripulación aplica una regla sencilla:
+
+1. Volar el avión con **actitud y potencia** conocidas.
+2. **Comparar** las tres fuentes y el instrumento de reserva.
+3. Elegir la fuente fiable y **conmutar** a ella las pantallas afectadas.
+
+## TAWS: el terreno
+
+El **sistema de aviso y alarma de proximidad al terreno** (TAWS) avisa cuando el avión se acerca peligrosamente al suelo. Combina dos tipos de funciones:
+
+- Las **básicas** del antiguo GPWS, a partir del radioaltímetro y otros datos: velocidad de descenso excesiva, aproximación rápida al terreno, pérdida de altitud tras el despegue, proximidad al terreno sin estar configurado para aterrizar y desviación por debajo de la senda de planeo.
+- Las **predictivas** del <Term id="egpws">EGPWS</Term>: compara la posición del avión con una **base de datos del terreno** y mira hacia delante, lo que da aviso de un terreno que sube aunque el avión aún vuele alto sobre él.
+
+Ante un aviso «TERRAIN, TERRAIN, PULL UP» la respuesta es inmediata: potencia máxima, morro arriba hasta el límite de la protección contra la pérdida y alas niveladas, sin esperar a confirmar visualmente.
+
+## TCAS: el tráfico
+
+El <Term id="tcas" /> interroga a los <Term id="transponder">transpondedores</Term> de los aviones cercanos y calcula su trayectoria. El TCAS II da dos niveles de aviso:
+
+- **Aviso de tráfico** (TA, «TRAFFIC, TRAFFIC»): hay un tráfico cerca; hay que buscarlo y prepararse.
+- **Aviso de resolución** (RA): una maniobra **vertical** para evitar la colisión, por ejemplo «CLIMB, CLIMB» o «DESCEND, DESCEND».
+
+Los PANS-OPS de la OACI son claros: ante un RA, los pilotos deben **seguirlo de inmediato**, **aunque contradiga una instrucción del control** y salvo que hacerlo comprometa la seguridad. Nunca se maniobra en sentido contrario al RA. En cuanto sea posible se informa al control, y al terminar el conflicto se vuelve a la autorización.
+
+<Callout type="caution" label="Por qué no se discute un RA">
+Si los dos aviones tienen TCAS II, sus RA se coordinan: uno sube y el otro baja. Si un piloto sigue la instrucción del control en lugar del RA, puede anular esa coordinación y llevar ambos aviones al mismo nivel.
+</Callout>

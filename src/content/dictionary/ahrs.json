@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AHRS",
+    "es": "AHRS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Attitude and heading reference system",
+    "es": "Sistema de referencia de actitud y rumbo"
+  },
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A system of solid-state sensors (gyroscopes, accelerometers and a magnetometer) that supplies attitude and heading to electronic flight displays, without the tumbling limits of mechanical gyros.",
+    "es": "Sistema de sensores de estado sólido (giróscopos, acelerómetros y un magnetómetro) que proporciona actitud y rumbo a las pantallas de vuelo electrónicas, sin los límites de vuelco de los giróscopos mecánicos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The electronic box that tells the screens which way is up and where the nose points.",
+    "es": "La caja electrónica que dice a las pantallas dónde está el horizonte y hacia dónde apunta el morro."
+  },
+  "example": {
+    "en": "After an AHRS failure the PFD showed a red X over the attitude.",
+    "es": "Tras un fallo del AHRS, el PFD mostró una X roja sobre la actitud."
+  },
+  "pronunciation": {
+    "en": "AY-harz",
+    "es": "a-ache-erre-ese (en inglés: eiars)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "gyroscope",
+    "pfd",
+    "adc",
+    "attitude-indicator"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-ifh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

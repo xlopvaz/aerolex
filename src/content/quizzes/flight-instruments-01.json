@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El altímetro usa…",
+        "en": "The altimeter uses…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Pitot y estática",
+            "en": "Pitot and static"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo la presión estática",
+            "en": "Static pressure only"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo la presión del pitot",
+            "en": "Pitot pressure only"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La temperatura exterior",
+            "en": "Outside air temperature"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El anemómetro es el único de los tres que usa también el pitot.",
+        "en": "The airspeed indicator is the only one of the three that also uses the pitot."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Con el pitot obstruido y el drenaje abierto, el anemómetro…",
+        "en": "With the pitot blocked and the drain open, the airspeed indicator…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cae hacia cero",
+            "en": "Drops towards zero"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se congela en la última velocidad",
+            "en": "Freezes at the last speed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Marca más velocidad al subir",
+            "en": "Reads higher in a climb"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Funciona normalmente",
+            "en": "Works normally"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La presión de impacto se escapa por el drenaje.",
+        "en": "Ram pressure escapes through the drain."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Con el pitot y su drenaje obstruidos, al ascender el anemómetro…",
+        "en": "With the pitot and its drain blocked, in a climb the airspeed indicator…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Marca cada vez menos velocidad",
+            "en": "Shows decreasing airspeed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Marca cero",
+            "en": "Reads zero"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Marca cada vez más velocidad",
+            "en": "Shows increasing airspeed"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Actúa como un altímetro: la estática baja y la diferencia con la presión atrapada crece.",
+        "en": "It behaves like an altimeter: static falls and the difference from the trapped pressure grows."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con las tomas estáticas obstruidas, el variómetro…",
+        "en": "With the static ports blocked, the VSI…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Marca ascenso continuo",
+            "en": "Shows a continuous climb"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Funciona normalmente",
+            "en": "Works normally"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Marca cero constantemente",
+            "en": "Reads zero constantly"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Marca descenso continuo",
+            "en": "Shows a continuous descent"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Sin cambios de presión estática no hay velocidad vertical que medir.",
+        "en": "With no change in static pressure there is no vertical speed to measure."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Con las estáticas obstruidas, al descender por debajo de la altitud de la obstrucción, el anemómetro marca…",
+        "en": "With the static ports blocked, descending below the blockage altitude, the airspeed indicator reads…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Menos de lo real",
+            "en": "Lower than actual"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más de lo real",
+            "en": "Higher than actual"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cero",
+            "en": "Zero"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Exactamente lo real",
+            "en": "Exactly the actual speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por encima de la obstrucción marcaría menos de lo real.",
+        "en": "Above the blockage altitude it would read low."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Al seleccionar la fuente estática alternativa de cabina en un avión ligero, el altímetro…",
+        "en": "Selecting the cabin alternate static source on a light aircraft, the altimeter…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Marca algo más alto",
+            "en": "Reads slightly high"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Marca algo más bajo",
+            "en": "Reads slightly low"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se congela",
+            "en": "Freezes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Marca cero",
+            "en": "Reads zero"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La presión de cabina es algo más baja que la exterior; el anemómetro también marca más.",
+        "en": "Cabin pressure is slightly lower than outside; airspeed also reads high."
+      }
+    }
+  ]
+}

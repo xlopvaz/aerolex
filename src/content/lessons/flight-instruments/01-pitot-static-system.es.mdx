@@ -1,0 +1,67 @@
+---
+lesson: pitot-static-system
+course: flight-instruments
+lang: es
+title: "El sistema pitot-estático"
+summary: "De dónde salen la velocidad, la altitud y la velocidad vertical, y qué marca cada instrumento cuando se obstruyen el tubo pitot, su drenaje o las tomas estáticas."
+objectives:
+  - "Asociar cada instrumento con la presión que usa"
+  - "Predecir las indicaciones con el pitot o las estáticas obstruidos"
+  - "Explicar el efecto de la fuente estática alternativa"
+minutes: 13
+terms: [static-port, pitot-tube, altimeter, vsi, adc]
+quiz: flight-instruments-01
+sources: [faa-phak, faa-ifh]
+review:
+  status: draft
+---
+
+## Dos presiones
+
+- La **presión estática** es la del aire en reposo alrededor del avión. Se capta en las <Term id="static-port">tomas estáticas</Term>, a ras del fuselaje.
+- La **presión total** (o de impacto) es la estática más la **dinámica**, que se debe al movimiento del avión. Se capta en el <Term id="pitot-tube">tubo pitot</Term>, orientado hacia delante.
+
+| Instrumento | Usa |
+|---|---|
+| **Anemómetro** (velocidad) | Pitot y estática: mide la diferencia, es decir, la presión dinámica |
+| <Term id="altimeter">Altímetro</Term> | Solo estática |
+| <Term id="vsi">Variómetro</Term> (VSI) | Solo estática, y su variación |
+
+En los aviones con pantallas, un <Term id="adc">ordenador de datos aire</Term> (ADC) recibe esas presiones y la temperatura exterior, y calcula velocidad, altitud, velocidad vertical, número de Mach y velocidad verdadera para las pantallas, el piloto automático y otros sistemas. Las obstrucciones afectan igual al ADC que a los instrumentos clásicos.
+
+## Pitot obstruido
+
+**Con el drenaje abierto** (por ejemplo, hielo en la boca del pitot): la presión de impacto se escapa por el orificio de drenaje y el anemómetro **cae hacia cero**.
+
+**Con el pitot y el drenaje obstruidos**: el aire queda atrapado. El anemómetro ya no responde a los cambios de velocidad, pero **sí a los de altitud**, porque la presión estática sigue cambiando:
+
+- al **subir**, la estática baja y el anemómetro marca **más velocidad**, como si el avión acelerara;
+- al **bajar**, marca **menos**.
+
+Es una trampa peligrosa: un piloto que ve aumentar la velocidad en ascenso puede subir aún más el morro hasta entrar en pérdida.
+
+## Tomas estáticas obstruidas
+
+Con el pitot libre pero las estáticas obstruidas:
+
+- el **altímetro** se **congela** en la altitud en que se produjo la obstrucción;
+- el **variómetro** marca **cero** de forma constante;
+- el **anemómetro** sigue funcionando, pero marca **menos** de lo real por encima de la altitud de la obstrucción y **más** por debajo.
+
+## La fuente estática alternativa
+
+Muchos aviones tienen una **fuente estática alternativa**, que en los aviones ligeros toma la presión de dentro de la cabina, algo más baja que la exterior por el efecto del aire que pasa alrededor del fuselaje. Al seleccionarla:
+
+- el altímetro marca algo **más alto**;
+- el anemómetro marca **más** velocidad de la real;
+- el variómetro indica un **ascenso momentáneo** y luego se estabiliza.
+
+El manual de vuelo indica la corrección. Si no hay fuente alternativa, el PHAK menciona como último recurso **romper el cristal del variómetro**, el instrumento estático menos importante, para que los otros reciban la presión de la cabina.
+
+## Prevención
+
+Las sondas llevan **calefacción eléctrica**, y en la inspección previa se comprueba que no haya fundas, cinta adhesiva, insectos ni daños. En los aviones de transporte hay **varios sistemas** independientes y un instrumento de reserva, para poder comparar.
+
+<Callout type="caution" label="Si dos instrumentos no coinciden">
+Un anemómetro que no cuadra con la actitud y la potencia es la primera pista. Volar con una actitud y una potencia conocidas mientras se identifica la fuente fiable es la base de los procedimientos de velocidad no fiable.
+</Callout>

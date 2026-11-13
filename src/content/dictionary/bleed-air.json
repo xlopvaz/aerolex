@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Bleed air",
+    "es": "Aire sangrado"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Hot, compressed air taken from the compressor stages of a turbine engine (or from the APU) and used for air conditioning, pressurisation, wing and engine anti-ice and engine starting.",
+    "es": "Aire caliente y comprimido que se extrae de las etapas del compresor de un motor de turbina (o de la APU) y se usa para el aire acondicionado, la presurización, el antihielo de alas y motores y el arranque de los motores."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Hot air \"borrowed\" from the engines to run the air conditioning and de-icing.",
+    "es": "Aire caliente «prestado» de los motores para el aire acondicionado y el antihielo."
+  },
+  "example": {
+    "en": "\"Bleeds off for take-off\" — some operators take off without bleed air to get more thrust.",
+    "es": "«Bleeds fuera para el despegue»: algunos operadores despegan sin aire sangrado para tener más empuje."
+  },
+  "pronunciation": {
+    "en": "BLEED air",
+    "es": "blid er (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "bleed"
+    ],
+    "es": [
+      "bleed"
+    ]
+  },
+  "related": [
+    "apu",
+    "pressurization",
+    "icing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

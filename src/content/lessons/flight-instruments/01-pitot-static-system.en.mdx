@@ -1,0 +1,67 @@
+---
+lesson: pitot-static-system
+course: flight-instruments
+lang: en
+title: "The pitot-static system"
+summary: "Where airspeed, altitude and vertical speed come from, and what each instrument shows when the pitot tube, its drain or the static ports are blocked."
+objectives:
+  - "Match each instrument with the pressure it uses"
+  - "Predict the indications with a blocked pitot or static system"
+  - "Explain the effect of the alternate static source"
+minutes: 13
+terms: [static-port, pitot-tube, altimeter, vsi, adc]
+quiz: flight-instruments-01
+sources: [faa-phak, faa-ifh]
+review:
+  status: draft
+---
+
+## Two pressures
+
+- **Static pressure** is the pressure of the still air around the aircraft. It is sensed at the <Term id="static-port">static ports</Term>, flush with the fuselage.
+- **Total** (or ram) pressure is static plus **dynamic** pressure, which is due to the aircraft's motion. It is sensed by the forward-facing <Term id="pitot-tube">pitot tube</Term>.
+
+| Instrument | Uses |
+|---|---|
+| **Airspeed indicator** | Pitot and static: it measures the difference, that is, dynamic pressure |
+| <Term id="altimeter">Altimeter</Term> | Static only |
+| <Term id="vsi">VSI</Term> | Static only, and its rate of change |
+
+On aircraft with screens, an <Term id="adc">air data computer</Term> (ADC) takes those pressures and the outside air temperature, and calculates airspeed, altitude, vertical speed, Mach number and true airspeed for the displays, autopilot and other systems. Blockages affect the ADC just as they affect the traditional instruments.
+
+## Blocked pitot
+
+**With the drain hole open** (for example, ice over the pitot opening): ram pressure escapes through the drain and the airspeed indicator **drops towards zero**.
+
+**With both pitot and drain blocked**: the air is trapped. The airspeed indicator no longer responds to speed changes, but **does respond to altitude changes**, because static pressure still changes:
+
+- in a **climb**, static pressure falls and the indicator shows **more speed**, as if the aircraft were accelerating;
+- in a **descent**, it shows **less**.
+
+It is a dangerous trap: a pilot who sees airspeed increasing in a climb may raise the nose even further until the aircraft stalls.
+
+## Blocked static ports
+
+With a clear pitot but blocked static ports:
+
+- the **altimeter freezes** at the altitude where the blockage occurred;
+- the **VSI** reads **zero** constantly;
+- the **airspeed indicator** still works, but reads **low** above the blockage altitude and **high** below it.
+
+## The alternate static source
+
+Many aircraft have an **alternate static source**, which on light aircraft takes pressure from inside the cabin, slightly lower than outside because of the air flowing around the fuselage. When it is selected:
+
+- the altimeter reads slightly **high**;
+- the airspeed indicator reads **higher** than the real speed;
+- the VSI shows a **momentary climb** and then settles.
+
+The flight manual gives the correction. If there is no alternate source, the PHAK mentions **breaking the VSI glass** as a last resort, as it is the least important static instrument, so that the others get cabin pressure.
+
+## Prevention
+
+Probes are **electrically heated**, and the pre-flight inspection checks for covers, tape, insects or damage. Transport aircraft have **several independent systems** and a standby instrument, so that indications can be compared.
+
+<Callout type="caution" label="If two instruments disagree">
+An airspeed that does not match attitude and power is the first clue. Flying a known attitude and power setting while identifying the reliable source is the basis of unreliable airspeed procedures.
+</Callout>

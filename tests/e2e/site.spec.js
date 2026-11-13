@@ -211,7 +211,7 @@ test.describe('academy notes', () => {
     await page.goto('es/academia/');
     await page.locator('.academy__notes').click();
     await expect(page).toHaveURL(/\/es\/academia\/apuntes\/$/);
-    await expect(page.locator('.nidx__card')).toHaveCount(8);
+    await expect(page.locator('.nidx__card')).toHaveCount(11);
     await page.locator('.nidx__card', { hasText: 'Academia TAF' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/apuntes\/taf\/$/);
     await expect(page.locator('.cn__lesson')).toHaveCount(6);

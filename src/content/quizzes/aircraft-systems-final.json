@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Por qué los sistemas de detección de incendio de motor suelen tener dos lazos?",
+        "en": "Why do engine fire detection systems usually have two loops?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para evitar falsas alarmas y seguir funcionando si uno falla",
+            "en": "To avoid false alarms and keep working if one fails"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para apagar el incendio",
+            "en": "To put the fire out"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para medir la EGT",
+            "en": "To measure EGT"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para detectar humo en la cabina",
+            "en": "To detect smoke in the cabin"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El aviso suele darse cuando detectan los dos lazos.",
+        "en": "The warning is usually given when both loops detect."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Al tirar de la maneta de incendio de un motor, NO ocurre…",
+        "en": "Pulling an engine fire handle does NOT…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El cierre de la válvula de combustible",
+            "en": "Close the fuel valve"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La desconexión del generador",
+            "en": "Disconnect the generator"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El armado de las botellas",
+            "en": "Arm the bottles"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El arranque de la APU",
+            "en": "Start the APU"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "También cierra la hidráulica y el aire sangrado de ese motor.",
+        "en": "It also closes that engine's hydraulics and bleed air."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Cada lavabo de un avión de transporte debe tener…",
+        "en": "Each lavatory on a transport aircraft must have…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una botella de oxígeno",
+            "en": "An oxygen bottle"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un lazo de detección continuo",
+            "en": "A continuous detection loop"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un detector de humo y un extintor automático en cada papelera",
+            "en": "A smoke detector and an automatic extinguisher in each waste bin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una salida de emergencia",
+            "en": "An emergency exit"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Las colillas en las papeleras han provocado incendios.",
+        "en": "Cigarette ends in waste bins have caused fires."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Un regulador de presión a demanda…",
+        "en": "A pressure-demand regulator…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Da flujo continuo a los pasajeros",
+            "en": "Gives continuous flow to passengers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Da oxígeno a presión positiva por encima de unos 34.000 ft de cabina",
+            "en": "Supplies oxygen under positive pressure above about 34,000 ft cabin"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo es seguro hasta 25.000 ft",
+            "en": "Is only safe up to 25,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Funciona con generadores químicos",
+            "en": "Works with chemical generators"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Permite usarlo con seguridad por encima de 40.000 ft.",
+        "en": "It makes it safe to use above 40,000 ft."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un generador químico de oxígeno de pasajeros…",
+        "en": "A passenger chemical oxygen generator…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se activa al tirar de la máscara y no se puede apagar",
+            "en": "Starts when the mask is pulled and cannot be switched off"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se puede apagar desde la cabina de vuelo",
+            "en": "Can be switched off from the flight deck"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No produce calor",
+            "en": "Produces no heat"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Da oxígeno a presión positiva",
+            "en": "Gives oxygen under positive pressure"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La reacción con clorato sódico genera mucho calor.",
+        "en": "The sodium chlorate reaction generates a lot of heat."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Según las reglas de EE. UU. que recoge el PHAK, por encima de 15.000 ft de cabina…",
+        "en": "Under the US rules quoted in the PHAK, above 15,000 ft cabin…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo la tripulación necesita oxígeno tras 30 minutos",
+            "en": "Only the crew needs oxygen after 30 minutes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No hace falta oxígeno",
+            "en": "No oxygen is needed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo los pasajeros necesitan oxígeno",
+            "en": "Only passengers need oxygen"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Hay que proporcionar oxígeno a todos los ocupantes",
+            "en": "Oxygen must be provided to every occupant"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "De 12.500 a 14.000 ft: tripulación tras 30 min; por encima de 14.000 ft: tripulación siempre.",
+        "en": "12,500–14,000 ft: crew after 30 min; above 14,000 ft: crew at all times."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Un sistema de deshielo con botas neumáticas…",
+        "en": "A pneumatic boot de-icing system…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Impide que se forme hielo calentando el borde",
+            "en": "Prevents ice by heating the edge"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Usa aire sangrado caliente",
+            "en": "Uses hot bleed air"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Rompe el hielo que ya se ha formado inflando las botas",
+            "en": "Breaks ice that has already formed by inflating the boots"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo se usa en tierra",
+            "en": "Is only used on the ground"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es un sistema de deshielo, no de antihielo.",
+        "en": "It is a de-ice system, not anti-ice."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En un avión de transporte, la presión hidráulica de emergencia puede darla…",
+        "en": "On a transport aircraft, emergency hydraulic pressure can come from…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La TRU",
+            "en": "The TRU"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La RAT",
+            "en": "The RAT"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El inversor estático",
+            "en": "The static inverter"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La válvula de descarga",
+            "en": "The outflow valve"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La RAT sale al flujo de aire y mueve una bomba o un generador.",
+        "en": "The RAT extends into the airflow and drives a pump or a generator."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "¿Qué hace la válvula de descarga si la cabina debe subir de altitud?",
+        "en": "What does the outflow valve do if the cabin needs to climb?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se abre más para dejar salir más aire",
+            "en": "Opens further to let more air out"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se cierra",
+            "en": "Closes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Desconecta los packs",
+            "en": "Switches off the packs"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Descarga el halón",
+            "en": "Discharges the halon"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Más salida de aire = menos presión en cabina = más altitud de cabina.",
+        "en": "More outflow = lower cabin pressure = higher cabin altitude."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "¿Qué fuente eléctrica es el último recurso en un avión de transporte?",
+        "en": "Which electrical source is the last resort on a transport aircraft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los IDG",
+            "en": "The IDGs"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La toma de tierra",
+            "en": "Ground power"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El generador de la APU",
+            "en": "The APU generator"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Las baterías",
+            "en": "The batteries"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Las baterías mantienen lo esencial y permiten arrancar la APU.",
+        "en": "Batteries keep the essentials alive and allow the APU to be started."
+      }
+    }
+  ]
+}

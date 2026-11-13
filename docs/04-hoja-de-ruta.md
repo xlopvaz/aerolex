@@ -83,7 +83,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] 10 lecciones ES/EN y 48 preguntas tipo ATPL con evaluación final en cada módulo.
 - [x] Diccionario: 10 entradas nuevas (ISA, altitud de densidad, IAS, TAS, factor de carga, resistencia inducida, alargamiento, efecto suelo, estela turbulenta y número de Mach): 97 entradas.
 - [x] Orden de los cursos dentro de cada itinerario (`order` en el curso).
-- [ ] Módulos 3–17 de la Academia de pilotos.
+- [ ] Módulos 3–17 de la Academia de pilotos (en curso: ver «Ampliación de las academias»).
 
 **Bloque 7 — Academia de TCP, módulos 1–3 ✅ (13/11/2026)**
 - [x] Módulo 1 *Introducción a la profesión de TCP*: función de la tripulación de cabina y número mínimo (ORO.CC.100), certificado de TCP según la parte CC y formación del operador, autoridad a bordo y comunicación con la cabina de vuelo.
@@ -91,7 +91,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Módulo 3 *Seguridad en cabina*: comprobaciones previas y cabina asegurada, información de seguridad a los pasajeros (AMC1 CAT.OP.MPA.170), asientos junto a salidas y turbulencia.
 - [x] 9 lecciones ES/EN con el aviso «el manual del operador prevalece» y 42 preguntas con evaluación final por módulo.
 - [x] Diccionario: 8 entradas nuevas (SCCM, CCA, rampa de evacuación, PBE, posición de impacto, demostración de seguridad, PSU y turbulencia): 105 entradas.
-- [ ] Módulos 4–15 de la Academia de TCP.
+- [ ] Módulos 4–15 de la Academia de TCP (en curso: ver «Ampliación de las academias»).
 
 **Bloque 8 — Fuentes y bibliografía ✅ (13/11/2026)**
 - [x] Página global de fuentes (`/es/fuentes/`, `/en/sources/`): las 127 fuentes del registro agrupadas por tipo (norma, reglamento, AIP, manual, glosario, fabricante, página web), con editor, enlace, licencia y, desplegable, los contenidos que se apoyan en cada una (entradas del diccionario, lecciones, cursos, familias del Hangar, hitos de la cronología y códigos del glosario meteorológico) enlazados. Filtro por título o editor sin tildes y anclas por fuente (`#src-<id>`). Lógica en `src/lib/sources/bibliography.js` con 6 tests y e2e.
@@ -156,6 +156,14 @@ Objetivos de la fase cumplidos (13/11/2026). La fase 6 (publicación de la v1.0)
 **Apuntes de la Academia (13/11/2026, a petición del propietario)**
 - [x] Nuevo apartado `/es/academia/apuntes/` · `/en/academy/notes/`, enlazado desde la Academia y desde cada curso: para cada uno de los 8 cursos, la idea clave y de 3 a 5 puntos principales de cada una de sus 41 lecciones, en español e inglés, sin cuestionarios. Cada lección enlaza a la completa y a sus términos del diccionario; las fuentes son las de las lecciones. Versión para imprimir o guardar en PDF. Datos en `src/content/notes/` (colección `notes`, en borrador), con tests que exigen una entrada por lección en el orden del curso, y e2e.
 
+**Ampliación de las academias (13/11/2026, a petición del propietario)**
+
+Objetivo: cubrir todos los módulos del brief (§6 y §7) con un nivel más alto (examen teórico de piloto, preguntas tipo ATPL; situaciones prácticas y diálogos en TCP), cada uno con sus apuntes. Un PR por bloque.
+
+- [x] **Bloque A — Pilotos, módulos 3–5:** *Conocimiento general de la aeronave* (estructura y fatiga con cargas de la Parte 25, tren y frenos con antideslizante y freno automático, motores de pistón y hélices, turbinas de gas con N1/N2/EGT/EPR y sus fallos, operación de reactores con temperatura supuesta frente a derrateo), *Sistemas de la aeronave* (hidráulico, eléctrico, combustible, neumática y presurización, hielo y lluvia, incendios y oxígeno) e *Instrumentos de vuelo* (pitot-estático y obstrucciones, velocidades, altimetría con cálculos de error, giróscopos, brújula, cabina digital con TAWS y TCAS). 17 lecciones ES/EN, 114 preguntas, apuntes de cada lección y 18 entradas nuevas en el diccionario (12 términos y 6 siglas: aire sangrado, RAT, IDG, EGT, índice de derivación, antideslizante, freno automático, válvula de descarga, altitud de cabina, toma estática, VSI, brújula magnética, giróscopo, AHRS, ADC, EFIS, hélice de velocidad constante y pérdida del compresor). Fuentes: PHAK, AFH e Instrument Flying Handbook de la FAA, manual de técnicos de mantenimiento (célula y motor), 14 CFR Parte 25 y § 1.1, AC 25-13 y AC 120-60, PANS-OPS, SKYbrary, AOPA y la norma CAN/CGSB-3.23 del combustible.
+- [ ] Bloque B — TCP, módulos 4–6 (procedimientos de emergencia, primeros auxilios, seguridad de la aviación).
+- [ ] Bloques siguientes — Pilotos, módulos 6–17; TCP, módulos 7–15.
+
 ## FASE 6 — Publicación 🚧
 
 Auditoría completa (enlaces, JS, accesibilidad, responsive), SEO (sitemap, datos estructurados `DefinedTerm` para el diccionario, Open Graph por página), rendimiento, dominio propio opcional y versión 1.0.
@@ -163,7 +171,7 @@ Auditoría completa (enlaces, JS, accesibilidad, responsive), SEO (sitemap, dato
 **Progreso**
 - [x] **Bloque 1 — SEO (13/11/2026):** `sitemap.xml` con las 696 páginas y sus alternativas hreflang, generado tras cada build a partir de lo que declara cada página (`scripts/build-sitemap.mjs`); datos estructurados schema.org en JSON-LD: `DefinedTerm` en cada entrada del diccionario (con la expansión de los acrónimos como `alternateName`), `DefinedTermSet` en el diccionario, `Course` en los cursos, `WebSite` en la portada y `BreadcrumbList` en todas las páginas con migas; Open Graph completo con imagen de 1200×630 por idioma (`scripts/og-image.mjs`, `npm run og:image`) y la foto principal en cada familia del Hangar, `og:locale:alternate` y tarjeta grande de Twitter/X. `check:site` comprueba ahora que cada página tenga `og:image` existente, que el JSON-LD sea válido y que el sitemap solo liste páginas que existen. Nota: en un sitio de proyecto de GitHub Pages no se puede publicar `robots.txt` en la raíz del dominio; el sitemap se puede enviar a los buscadores cuando haya cuenta de Search Console (fuera de alcance por ahora).
 - [x] **Bloque 2 — Auditoría (13/11/2026):** axe-core (reglas WCAG 2.2 A/AA) sobre 187 páginas, una de cada plantilla y todas las que no son entradas del diccionario, en tema oscuro y claro, sin errores de JavaScript en consola. Único problema encontrado y corregido: zonas con desplazamiento horizontal sin acceso por teclado (tablas del Hangar, comparador, acrónimos, buscadores, decodificadores, glosario, panel y lecciones); ahora son regiones enfocables con nombre accesible, y los códigos METAR/TAF de cuestionarios y lecciones se parten en líneas en vez de desplazarse. Nueva prueba e2e `a11y.spec.js` con 19 páginas representativas en los dos temas. Enlaces internos e imágenes ya los vigila `check:site`; móvil, la prueba de 360 px de la fase 5; Lighthouse: 97–100 en rendimiento y 100 en accesibilidad, buenas prácticas y SEO en las páginas medidas.
-- [ ] Versión 1.0 (con la aprobación del propietario).
+- [ ] ~~Versión 1.0~~: descartada por ahora por decisión del propietario (13/11/2026). El sitio sigue en GitHub Pages sin lanzamiento formal ni etiqueta de versión; el trabajo continúa con la ampliación de las academias.
 
 ## Después de la 1.0
 

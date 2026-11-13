@@ -1,0 +1,63 @@
+---
+lesson: electrical-systems
+course: aircraft-systems
+lang: en
+title: "Electrical systems"
+summary: "From a light aircraft's DC system to a jet's 115 V, 400 Hz AC network: generators, IDGs, TRUs, static inverter, buses, priorities and emergency power."
+objectives:
+  - "Interpret a light aircraft's ammeter and loadmeter"
+  - "Explain why transport aircraft use 400 Hz AC"
+  - "Describe a jet's power sources and bus hierarchy"
+minutes: 12
+terms: [idg, apu, ram-air-turbine]
+quiz: aircraft-systems-02
+sources: [faa-phak, skybrary-electrical-systems, aopa-turbine-pilot-electrics-2000, faa-amt-airframe]
+review:
+  status: draft
+---
+
+## A light aircraft's system
+
+Most light aircraft have a **14 V or 28 V direct current** system. Its components are an **alternator** (or generator), a **battery**, the master and alternator switches, the **bus bar** that distributes current, **fuses** or **circuit breakers**, a **voltage regulator** and an **ammeter** or **loadmeter**.
+
+- The alternator gives enough current even at low rpm, which many DC generators cannot.
+- To charge the battery, the output must be slightly higher than the battery voltage: a 12 V battery is fed at about 14 V.
+- A blown fuse is replaced; a tripped circuit breaker is reset by hand.
+
+### Reading the ammeter
+
+| Indication | What it means |
+|---|---|
+| Plus | The battery is charging |
+| Minus | More is being used than replaced: the battery is discharging |
+| Full-scale minus | Alternator or generator failure |
+| Full-scale plus | Regulator failure |
+
+The **loadmeter** starts at zero and shows the percentage of the generator's capacity being used.
+
+## A transport aircraft's network
+
+A jet needs far more power: galley ovens, electric hydraulic pumps, windshield heat, avionics. That is why its main network is **three-phase alternating current at 115 V and 400 Hz**. A higher-voltage AC network gives several times more power per kilogram than a 28 V DC one, and at 400 Hz transformers and motors are smaller and lighter than at 50 or 60 Hz.
+
+### The sources
+
+- **Engine generators**: the engine turns at a variable speed, but the frequency must be constant. A **constant-speed drive** (CSD) between engine and generator solves this. When both are in a single unit it is called an <Term id="idg" />.
+- **<Term id="apu" /> generator**: on the ground and as a backup in flight.
+- **Ground power** (GPU): external 115 V, 400 Hz power at the stand.
+- **<Term id="ram-air-turbine">RAT</Term>**: on many aircraft it drives an emergency generator.
+- **Batteries**: the last resort, to start the APU and keep the essentials alive.
+
+### The conversions
+
+- **Transformer rectifier units** (TRU) convert 115 V AC into **28 V DC** for the DC buses.
+- The **static inverter** does the opposite: it converts battery DC into AC to power essential equipment if the generators are lost.
+
+### Buses and priorities
+
+Power is distributed through **buses**: generator buses, essential buses and ground service buses, among others. **Bus tie contactors** allow one generator to supply the other's buses if it fails. A control system decides automatically which source feeds each bus.
+
+If generation is lost, the system **sheds** non-essential loads, such as the galley, so as not to overload the remaining sources. In the worst case only the **essential buses** remain, with the minimum instruments and radios to complete the flight.
+
+<Callout type="info" label="A trend: the more-electric aircraft">
+Some recent designs replace part of the bleed air and hydraulics with electrical systems and more powerful generators. The principles of sources, conversions and priorities remain the same.
+</Callout>

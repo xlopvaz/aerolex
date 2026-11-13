@@ -1,0 +1,61 @@
+---
+lesson: gyroscopic-instruments
+course: flight-instruments
+lang: es
+title: "Instrumentos giroscópicos"
+summary: "Rigidez en el espacio y precesión, y cómo las aprovechan el indicador de actitud, el indicador de rumbo y el coordinador de viraje, con la regla del viraje estándar."
+objectives:
+  - "Explicar la rigidez en el espacio y la precesión"
+  - "Describir los límites y errores del indicador de actitud y del de rumbo"
+  - "Calcular la inclinación de un viraje estándar"
+minutes: 12
+terms: [gyroscope, attitude-indicator, ahrs]
+quiz: flight-instruments-04
+sources: [faa-phak, faa-ifh]
+review:
+  status: draft
+---
+
+## Dos propiedades
+
+Un <Term id="gyroscope">giróscopo</Term> es un rotor que gira muy deprisa. Tiene dos propiedades útiles:
+
+- **Rigidez en el espacio**: mantiene la orientación de su plano de giro aunque se mueva la caja que lo contiene. Cuanto más rápido gira y más masa tiene en el borde, más rígido es.
+- **Precesión**: si se le aplica una fuerza, el giróscopo responde **90° más adelante** en el sentido de giro. La precesión es proporcional a la fuerza e inversamente proporcional a la velocidad del rotor.
+
+La precesión causa errores: el rozamiento de los cojinetes hace que un giróscopo libre se desvíe poco a poco. Además, la Tierra gira bajo él, lo que puede producir hasta **15° por hora** de error de rumbo aparente.
+
+## El indicador de actitud
+
+El <Term id="attitude-indicator">indicador de actitud</Term> usa la rigidez en el espacio: el giróscopo mantiene un plano fijo que representa el horizonte, y el avión se mueve a su alrededor. Es el instrumento que da la imagen más realista del vuelo:
+
+- la **escala de inclinación** dice **cuánto** está inclinado el avión;
+- el **avión en miniatura** dice **hacia dónde**.
+
+Los indicadores mecánicos tienen límites, típicamente de unos **100° a 110°** de inclinación y **60° a 70°** de cabeceo. Si se superan, el giróscopo puede **volcarse** y dar indicaciones falsas hasta que se recupere o se reajuste.
+
+## El indicador de rumbo
+
+El **indicador de rumbo** usa también la rigidez, pero en un plano vertical, y no busca el norte por sí mismo: es un giróscopo libre que **deriva**. Por eso se compara con la brújula magnética **cada 15 minutos aproximadamente**, en vuelo recto y nivelado a velocidad constante, que es cuando la brújula es fiable. En los aviones modernos el rumbo lo da un sistema esclavizado a un sensor magnético o un sistema inercial.
+
+## Indicadores de viraje
+
+- El **indicador de viraje y deslizamiento** muestra solo el **régimen de viraje**.
+- El **coordinador de viraje** tiene el giróscopo inclinado. Al principio muestra la **velocidad de alabeo** y, cuando el alabeo se estabiliza, el **régimen de viraje**. No indica el ángulo de inclinación.
+
+Un **viraje estándar** (régimen 1) es de **3° por segundo**: un giro completo de 360° tarda **2 minutos**. Una regla práctica del Manual de vuelo instrumental de la FAA da la inclinación necesaria: **la velocidad en nudos dividida entre 10, más 7**.
+
+Ejemplo: a 120 kt, 120 / 10 + 7 = **19°** de inclinación.
+
+## La bola
+
+El **inclinómetro** (la bola) indica si el viraje está coordinado:
+
+- **Derrape hacia dentro** (*slip*): la bola se va hacia el **interior** del viraje; falta pie hacia ese lado.
+- **Derrape hacia fuera** (*skid*): la bola se va hacia el **exterior**; sobra pie.
+
+La corrección es la misma en los dos casos: **pisar la bola**, es decir, dar pie del lado al que se ha ido la bola.
+
+## Los giróscopos de hoy
+
+En las cabinas modernas, los giróscopos mecánicos se han sustituido por un <Term id="ahrs" /> con sensores de estado sólido, o por sistemas inerciales con giróscopos láser. No se vuelcan ni necesitan tiempo para ponerse en marcha a velocidad, pero siguen necesitando un instrumento de reserva independiente.

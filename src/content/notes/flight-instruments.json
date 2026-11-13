@@ -1,0 +1,200 @@
+{
+  "course": "flight-instruments",
+  "lessons": [
+    {
+      "lesson": "pitot-static-system",
+      "key": {
+        "es": "Anemómetro = pitot + estática; altímetro y variómetro = estática. Pitot con drenaje libre → cero; pitot y drenaje tapados → anemómetro como altímetro; estáticas tapadas → altímetro congelado y VSI a cero.",
+        "en": "ASI = pitot + static; altimeter and VSI = static. Blocked pitot, open drain → zero; pitot and drain blocked → ASI acts as an altimeter; static blocked → altimeter frozen and VSI at zero."
+      },
+      "points": [
+        {
+          "es": "Presión total = estática + dinámica. El anemómetro mide la dinámica (total − estática).",
+          "en": "Total pressure = static + dynamic. The ASI measures dynamic pressure (total − static)."
+        },
+        {
+          "es": "ADC: calcula velocidad, altitud, VS, Mach y TAS; las obstrucciones le afectan igual.",
+          "en": "ADC: calculates airspeed, altitude, VS, Mach and TAS; blockages affect it equally."
+        },
+        {
+          "es": "Pitot + drenaje tapados: más velocidad al subir, menos al bajar → riesgo de pérdida.",
+          "en": "Pitot + drain blocked: more speed in a climb, less in a descent → stall risk."
+        },
+        {
+          "es": "Estáticas tapadas: altímetro congelado, VSI a cero, anemómetro bajo por encima y alto por debajo.",
+          "en": "Static blocked: altimeter frozen, VSI at zero, ASI low above and high below."
+        },
+        {
+          "es": "Estática alternativa de cabina: altímetro y anemómetro marcan más; VSI, ascenso momentáneo.",
+          "en": "Cabin alternate static: altimeter and ASI read high; VSI shows a momentary climb."
+        }
+      ]
+    },
+    {
+      "lesson": "airspeed-indication",
+      "key": {
+        "es": "Arcos: blanco VS0–VFE, verde VS1–VNO, amarillo precaución, línea roja VNE. IAS → CAS → EAS → TAS (+2 %/1.000 ft) → velocidad respecto al suelo.",
+        "en": "Arcs: white VS0–VFE, green VS1–VNO, yellow caution, red line VNE. IAS → CAS → EAS → TAS (+2 %/1,000 ft) → groundspeed."
+      },
+      "points": [
+        {
+          "es": "Arco blanco VS0–VFE; verde VS1–VNO; amarillo solo aire en calma; roja VNE; azul VYSE.",
+          "en": "White arc VS0–VFE; green VS1–VNO; yellow smooth air only; red VNE; blue VYSE."
+        },
+        {
+          "es": "No marcadas: VA, VLO, VLE, VX, VY, VMC.",
+          "en": "Not marked: VA, VLO, VLE, VX, VY, VMC."
+        },
+        {
+          "es": "CAS = IAS corregida por instrumento e instalación (mayor error a baja velocidad). EAS = CAS corregida por compresibilidad.",
+          "en": "CAS = IAS corrected for instrument and installation (largest error at low speed). EAS = CAS corrected for compressibility."
+        },
+        {
+          "es": "TAS ≈ CAS + 2 % por cada 1.000 ft. Velocidad respecto al suelo = TAS ± viento.",
+          "en": "TAS ≈ CAS + 2 % per 1,000 ft. Groundspeed = TAS ± wind."
+        },
+        {
+          "es": "Aerodinámica en IAS/CAS; navegación en TAS y velocidad respecto al suelo.",
+          "en": "Aerodynamics in IAS/CAS; navigation in TAS and groundspeed."
+        },
+        {
+          "es": "VMO (estructura, abajo) y MMO (compresibilidad, arriba); en el PFD, barber pole.",
+          "en": "VMO (structure, low) and MMO (compressibility, high); on the PFD, the barber pole."
+        }
+      ]
+    },
+    {
+      "lesson": "altimetry",
+      "key": {
+        "es": "El altímetro es un barómetro: QNH da altitud, QFE altura y 1013,25 los niveles de vuelo; de alta a baja presión o de calor a frío, el avión está más bajo de lo indicado.",
+        "en": "The altimeter is a barometer: QNH gives altitude, QFE height and 1013.25 flight levels; from high to low pressure or warm to cold, the aircraft is lower than indicated."
+      },
+      "points": [
+        {
+          "es": "Cápsulas aneroides selladas, escala ISA, reglaje en la ventanilla.",
+          "en": "Sealed aneroid capsules, ISA scale, setting in the window."
+        },
+        {
+          "es": "Indicada, verdadera (MSL), absoluta (AGL), de presión (1013,25) y de densidad (presión + temperatura).",
+          "en": "Indicated, true (MSL), absolute (AGL), pressure (1013.25) and density (pressure + temperature)."
+        },
+        {
+          "es": "QNH: elevación en tierra. QFE: cero en tierra. Estándar por encima de la altitud de transición.",
+          "en": "QNH: elevation on the ground. QFE: zero on the ground. Standard above the transition altitude."
+        },
+        {
+          "es": "1 hPa ≈ 30 ft cerca del nivel del mar (1 inHg ≈ 1.000 ft).",
+          "en": "1 hPa ≈ 30 ft near sea level (1 inHg ≈ 1,000 ft)."
+        },
+        {
+          "es": "De alta a baja y de caliente a frío: más bajo de lo indicado. Con frío intenso, mínimos corregidos hacia arriba (PANS-OPS).",
+          "en": "High to low and hot to cold: lower than indicated. In severe cold, minimums corrected upwards (PANS-OPS)."
+        },
+        {
+          "es": "VSI: tendencia inmediata, cifra con 6–9 s de retraso; IVSI sin retraso.",
+          "en": "VSI: immediate trend, figure lags 6–9 s; IVSI has no lag."
+        }
+      ]
+    },
+    {
+      "lesson": "gyroscopic-instruments",
+      "key": {
+        "es": "Rigidez en el espacio (actitud, rumbo) y precesión (90° adelante, causa deriva); comparar el rumbo con la brújula cada ~15 min; viraje estándar 3°/s, inclinación ≈ velocidad/10 + 7.",
+        "en": "Rigidity in space (attitude, heading) and precession (90° on, causes drift); check heading against the compass every ~15 min; standard rate 3°/s, bank ≈ speed/10 + 7."
+      },
+      "points": [
+        {
+          "es": "Rigidez: mantiene su plano. Precesión: respuesta 90° adelante; ∝ fuerza, ∝ 1/velocidad del rotor.",
+          "en": "Rigidity: keeps its plane. Precession: response 90° on; ∝ force, ∝ 1/rotor speed."
+        },
+        {
+          "es": "Deriva por rozamiento y hasta 15°/h por la rotación terrestre.",
+          "en": "Drift from friction and up to 15°/h from Earth rotation."
+        },
+        {
+          "es": "Actitud: escala = cuánto, avión = hacia dónde. Límites típicos ~100–110° de alabeo y 60–70° de cabeceo.",
+          "en": "Attitude: scale = how much, aircraft = which way. Typical limits ~100–110° bank and 60–70° pitch."
+        },
+        {
+          "es": "Rumbo: giróscopo libre, comparar con la brújula cada ~15 min en vuelo recto y nivelado.",
+          "en": "Heading: free gyro, check against the compass every ~15 min in straight and level flight."
+        },
+        {
+          "es": "Régimen 1 = 3°/s = 360° en 2 min. Inclinación ≈ TAS/10 + 7.",
+          "en": "Rate one = 3°/s = 360° in 2 min. Bank ≈ TAS/10 + 7."
+        },
+        {
+          "es": "Bola: slip hacia dentro, skid hacia fuera; «pisar la bola».",
+          "en": "Ball: slip to the inside, skid to the outside; \"step on the ball\"."
+        }
+      ]
+    },
+    {
+      "lesson": "magnetic-compass",
+      "key": {
+        "es": "Verdadero → (variación: este se resta, oeste se suma) → magnético → (desvío, según rumbo) → brújula; ANDS; hacia el norte terminar antes y hacia el sur después (≈ 15° + latitud/2).",
+        "en": "True → (variation: east least, west best) → magnetic → (deviation, by heading) → compass; ANDS; towards north roll out early, towards south late (≈ 15° + latitude/2)."
+      },
+      "points": [
+        {
+          "es": "Variación: según el lugar; isógonas y agónica. Este se resta, oeste se suma.",
+          "en": "Variation: by location; isogonic and agonic lines. East is least, west is best."
+        },
+        {
+          "es": "Desvío: según el rumbo; compensación de la brújula y tarjeta de desvíos.",
+          "en": "Deviation: by heading; compass swing and deviation card."
+        },
+        {
+          "es": "Inclinación magnética → errores de aceleración y de viraje (hemisferio norte; en el sur, al revés).",
+          "en": "Magnetic dip → acceleration and turning errors (northern hemisphere; reversed in the south)."
+        },
+        {
+          "es": "ANDS con rumbos este u oeste: acelerar → norte, decelerar → sur.",
+          "en": "ANDS on east or west headings: accelerate → north, decelerate → south."
+        },
+        {
+          "es": "Viraje: hacia el norte se retrasa (terminar antes), hacia el sur se adelanta (terminar después); ≈ 15° + latitud/2.",
+          "en": "Turning: towards north it lags (roll out early), towards south it leads (roll out late); ≈ 15° + latitude/2."
+        }
+      ]
+    },
+    {
+      "lesson": "glass-cockpit-and-alerting",
+      "key": {
+        "es": "ADC + AHRS/inercial → EFIS (PFD y ND), con fuentes triples y reserva; ante datos dudosos, actitud y potencia y comparar; TAWS mira el terreno y el TCAS II da TA y RA, que se sigue siempre.",
+        "en": "ADC + AHRS/inertial → EFIS (PFD and ND), with triple sources and standby; with doubtful data, attitude and power, then compare; TAWS watches terrain and TCAS II gives TAs and RAs, which are always followed."
+      },
+      "points": [
+        {
+          "es": "ADC: velocidad, altitud, VS, Mach, TAS. AHRS o sistema inercial: actitud, rumbo (y posición). ADIRU = ambos.",
+          "en": "ADC: airspeed, altitude, VS, Mach, TAS. AHRS or inertial system: attitude, heading (and position). ADIRU = both."
+        },
+        {
+          "es": "PFD: actitud, velocidad, altitud, VS, rumbo. ND: ruta, radioayudas, tiempo, tráfico.",
+          "en": "PFD: attitude, airspeed, altitude, VS, heading. ND: route, navaids, weather, traffic."
+        },
+        {
+          "es": "Bandera o X roja = dato no válido. Lo peligroso es el dato falso que parece válido.",
+          "en": "Flag or red X = invalid data. The danger is false data that looks valid."
+        },
+        {
+          "es": "Datos dudosos: actitud y potencia → comparar fuentes y reserva → conmutar a la fiable.",
+          "en": "Doubtful data: attitude and power → compare sources and standby → switch to the reliable one."
+        },
+        {
+          "es": "TAWS: modos GPWS (descenso, aproximación al terreno, pérdida de altitud, configuración, senda) + terreno predictivo (EGPWS). PULL UP: respuesta inmediata.",
+          "en": "TAWS: GPWS modes (descent, closure, altitude loss, configuration, glideslope) + predictive terrain (EGPWS). PULL UP: immediate response."
+        },
+        {
+          "es": "TCAS II: TA (buscar el tráfico) y RA vertical. Seguir el RA aunque contradiga al control; nunca en sentido contrario; informar al control.",
+          "en": "TCAS II: TA (look for traffic) and vertical RA. Follow the RA even against ATC; never the opposite way; inform ATC."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

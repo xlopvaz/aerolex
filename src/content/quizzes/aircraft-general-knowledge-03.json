@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El interruptor general (master) de una avioneta alimenta todos los circuitos excepto…",
+        "en": "A light aircraft's master switch powers every circuit except…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La radio",
+            "en": "The radio"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Las luces",
+            "en": "The lights"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La bomba eléctrica de combustible",
+            "en": "The electric fuel pump"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El encendido por magnetos",
+            "en": "The magneto ignition"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Las magnetos generan su propia corriente con el giro del motor.",
+        "en": "Magnetos make their own current as the engine turns."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Según el PHAK, el hielo en el carburador es más probable con…",
+        "en": "According to the PHAK, carburettor ice is most likely with…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Menos de −20 °C y aire seco",
+            "en": "Below −20 °C and dry air"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más de 40 °C y humedad del 10 %",
+            "en": "Above 40 °C and 10 % humidity"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Menos de 21 °C y humedad relativa de más del 80 %",
+            "en": "Below 21 °C (70 °F) and relative humidity above 80 %"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo dentro de nubes",
+            "en": "Only inside cloud"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Y puede aparecer incluso a 38 °C con un 50 % de humedad.",
+        "en": "And it can appear even at 38 °C (100 °F) with 50 % humidity."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál NO es una causa típica de detonación?",
+        "en": "Which is NOT a typical cause of detonation?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Combustible de grado inferior al especificado",
+            "en": "A lower fuel grade than specified"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una mezcla rica a baja potencia",
+            "en": "A rich mixture at low power"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Mezcla demasiado pobre a alta potencia",
+            "en": "An over-lean mixture at high power"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Alta presión de admisión con pocas rpm",
+            "en": "High manifold pressure with low rpm"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La mezcla rica enfría los cilindros; la detonación va con calor y alta potencia.",
+        "en": "A rich mixture cools the cylinders; detonation goes with heat and high power."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "El AVGAS 100LL es de color…",
+        "en": "AVGAS 100LL is coloured…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Azul",
+            "en": "Blue"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Rojo",
+            "en": "Red"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Verde",
+            "en": "Green"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Incoloro",
+            "en": "Colourless"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "80 rojo, 100 verde, 100LL azul; el Jet A es incoloro o pajizo.",
+        "en": "80 red, 100 green, 100LL blue; Jet A is colourless or straw."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Con hélice de velocidad constante, la potencia del motor se lee en…",
+        "en": "With a constant-speed propeller, engine power is read on…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El tacómetro",
+            "en": "The tachometer"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El indicador de EGT",
+            "en": "The EGT gauge"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El indicador de cantidad de aceite",
+            "en": "The oil quantity gauge"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El indicador de presión de admisión",
+            "en": "The manifold pressure gauge"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El tacómetro marca las rpm que mantiene el regulador.",
+        "en": "The tachometer shows the rpm held by the governor."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Poner en bandera la hélice de un motor parado sirve para…",
+        "en": "Feathering the propeller of a failed engine…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Arrancar de nuevo el motor",
+            "en": "Restarts the engine"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumentar el empuje del otro motor",
+            "en": "Increases the other engine's thrust"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reducir mucho la resistencia",
+            "en": "Greatly reduces drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Enfriar el motor",
+            "en": "Cools the engine"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Las palas quedan de canto al viento y la hélice deja de girar en molinete.",
+        "en": "The blades are edge-on to the airflow and the propeller stops windmilling."
+      }
+    }
+  ]
+}

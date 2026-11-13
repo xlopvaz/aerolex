@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Gyroscope",
+    "es": "Giróscopo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A spinning rotor (or an equivalent solid-state or laser sensor) used in flight instruments for its rigidity in space and its precession, to sense attitude, heading and rate of turn.",
+    "es": "Rotor que gira (o un sensor equivalente de estado sólido o láser) que se usa en los instrumentos de vuelo por su rigidez en el espacio y su precesión, para detectar la actitud, el rumbo y el régimen de viraje."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A spinning wheel that keeps pointing the same way, used to show attitude.",
+    "es": "Una rueda que gira y mantiene su orientación, y sirve para mostrar la actitud."
+  },
+  "example": {
+    "en": "The attitude indicator's gyroscope tumbled in the extreme bank.",
+    "es": "El giróscopo del indicador de actitud se volcó con la inclinación extrema."
+  },
+  "pronunciation": {
+    "en": "JY-roh-skohp",
+    "es": "gi-rós-co-po"
+  },
+  "synonyms": {
+    "en": [
+      "gyro"
+    ],
+    "es": [
+      "giroscopio",
+      "giro"
+    ]
+  },
+  "related": [
+    "attitude-indicator",
+    "ahrs",
+    "heading"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

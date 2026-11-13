@@ -1,0 +1,204 @@
+{
+  "course": "aircraft-systems",
+  "lessons": [
+    {
+      "lesson": "hydraulic-systems",
+      "key": {
+        "es": "La hidráulica multiplica la fuerza (F = p × S); los aviones de transporte tienen varios sistemas independientes a 3.000 psi (o 5.000) con EDP, bombas eléctricas, PTU y RAT.",
+        "en": "Hydraulics multiplies force (F = p × A); transport aircraft have several independent systems at 3,000 psi (or 5,000) with EDPs, electric pumps, a PTU and a RAT."
+      },
+      "points": [
+        {
+          "es": "Pascal: la presión se transmite igual en todas direcciones; fuerza = presión × superficie.",
+          "en": "Pascal: pressure is transmitted equally in all directions; force = pressure × area."
+        },
+        {
+          "es": "Componentes: depósito, bomba, filtro, selectora, válvula de alivio, acumulador, actuador.",
+          "en": "Components: reservoir, pump, filter, selector valve, relief valve, accumulator, actuator."
+        },
+        {
+          "es": "Líquidos: mineral (rojo, aviación ligera) y éster fosfato (transporte, resistente al fuego). Nunca mezclar.",
+          "en": "Fluids: mineral (red, light aircraft) and phosphate ester (transport, fire-resistant). Never mix."
+        },
+        {
+          "es": "737 NG: A, B y standby a 3.000 psi. 777: izquierdo, central y derecho.",
+          "en": "737 NG: A, B and standby at 3,000 psi. 777: left, centre and right."
+        },
+        {
+          "es": "PTU: transfiere potencia, no líquido. RAT: presión de emergencia para los mandos esenciales.",
+          "en": "PTU: transfers power, not fluid. RAT: emergency pressure for the essential controls."
+        }
+      ]
+    },
+    {
+      "lesson": "electrical-systems",
+      "key": {
+        "es": "Avioneta: continua de 14/28 V con alternador y amperímetro. Reactor: alterna trifásica de 115 V/400 Hz con IDG, APU, GPU, RAT y baterías; TRU a 28 V DC e inversor estático.",
+        "en": "Light aircraft: 14/28 V DC with alternator and ammeter. Jet: three-phase 115 V/400 Hz AC with IDGs, APU, GPU, RAT and batteries; TRUs to 28 V DC and a static inverter."
+      },
+      "points": [
+        {
+          "es": "Amperímetro: + carga; − descarga; tope − fallo del alternador; tope + fallo del regulador. Loadmeter: % de capacidad usada.",
+          "en": "Ammeter: + charging; − discharging; full − alternator failure; full + regulator failure. Loadmeter: % of capacity used."
+        },
+        {
+          "es": "Fusible: se cambia. Disyuntor: se rearma. El regulador alimenta la batería de 12 V a unos 14 V.",
+          "en": "Fuse: replace. Circuit breaker: reset. The regulator feeds a 12 V battery at about 14 V."
+        },
+        {
+          "es": "400 Hz: más potencia por kilo y componentes más ligeros.",
+          "en": "400 Hz: more power per kilogram and lighter components."
+        },
+        {
+          "es": "IDG = CSD + generador. Fuentes: motores, APU, GPU, RAT, baterías.",
+          "en": "IDG = CSD + generator. Sources: engines, APU, GPU, RAT, batteries."
+        },
+        {
+          "es": "TRU: AC → 28 V DC. Inversor estático: DC → AC.",
+          "en": "TRU: AC → 28 V DC. Static inverter: DC → AC."
+        },
+        {
+          "es": "Bus tie para interconectar; desconexión de cargas no esenciales; en el peor caso, solo barras esenciales.",
+          "en": "Bus ties to interconnect; shedding of non-essential loads; worst case, essential buses only."
+        }
+      ]
+    },
+    {
+      "lesson": "fuel-systems",
+      "key": {
+        "es": "Combustible en alas y depósito central (este se gasta antes); bombas de refuerzo, válvulas de corte, alimentación cruzada; cantidad en masa; vigilar agua, microorganismos y fugas.",
+        "en": "Fuel in the wings and centre tank (the latter used first); boost pumps, shut-off valves, crossfeed; quantity by mass; watch for water, microorganisms and leaks."
+      },
+      "points": [
+        {
+          "es": "Depósitos integrales en las alas + central; algunos de largo radio, depósito de cola para el centro de gravedad.",
+          "en": "Integral wing tanks + centre; some long-haul types have a tail tank for CG."
+        },
+        {
+          "es": "Bombas de refuerzo → válvula de corte → bomba del motor → control de combustible. Intercambiador aceite-combustible contra el hielo.",
+          "en": "Boost pumps → shut-off valve → engine pump → fuel control. Oil-fuel heat exchanger against ice."
+        },
+        {
+          "es": "Alimentación cruzada para corregir desequilibrios, nunca sin descartar antes una fuga.",
+          "en": "Crossfeed to correct imbalance, never before ruling out a leak."
+        },
+        {
+          "es": "Sondas capacitivas, cantidad en masa; repostaje a presión con toma a tierra contra la estática.",
+          "en": "Capacitance probes, quantity by mass; pressure refuelling with bonding against static."
+        },
+        {
+          "es": "Contaminación: agua, microorganismos y combustible equivocado.",
+          "en": "Contamination: water, microorganisms and wrong fuel."
+        },
+        {
+          "es": "En vuelo: comparar combustible a bordo, previsto y consumido.",
+          "en": "In flight: compare fuel on board, planned and burned."
+        }
+      ]
+    },
+    {
+      "lesson": "pneumatics-and-pressurisation",
+      "key": {
+        "es": "El aire sangrado alimenta packs, presurización, antihielo y arranque; la válvula de descarga fija la altitud de cabina (máx. 8.000 ft, aviso a 10.000 ft); ante una descompresión, máscaras primero.",
+        "en": "Bleed air feeds packs, pressurisation, anti-ice and starting; the outflow valve sets cabin altitude (max 8,000 ft, warning at 10,000 ft); in a decompression, masks first."
+      },
+      "points": [
+        {
+          "es": "Aire sangrado: packs, presurización, antihielo, arranque, depósitos hidráulicos. Pasa por un preenfriador.",
+          "en": "Bleed air: packs, pressurisation, anti-ice, starting, hydraulic reservoirs. It goes through a precooler."
+        },
+        {
+          "es": "Pack: intercambiadores + máquina de ciclo de aire (expansión en turbina) + mezcla con aire recirculado.",
+          "en": "Pack: heat exchangers + air cycle machine (expansion through a turbine) + mixing with recirculated air."
+        },
+        {
+          "es": "Se controla la salida: válvula de descarga. Parte 25: cabina ≤ 8.000 ft; aviso por encima de 10.000 ft.",
+          "en": "Outflow is controlled: outflow valve. Part 25: cabin ≤ 8,000 ft; warning above 10,000 ft."
+        },
+        {
+          "es": "Presión de cabina = exterior + diferencial (28.000 ft: 4,8 + 6,1 = 10,9 psi ≈ 8.000 ft).",
+          "en": "Cabin pressure = outside + differential (28,000 ft: 4.8 + 6.1 = 10.9 psi ≈ 8,000 ft)."
+        },
+        {
+          "es": "Válvulas: alivio de presión, alivio de vacío, vaciado (dump).",
+          "en": "Valves: pressure relief, vacuum relief, dump."
+        },
+        {
+          "es": "Descompresión explosiva (menos de 0,5 s), rápida o lenta (la más traicionera). Máscaras de pasajeros automáticas antes de 15.000 ft de cabina.",
+          "en": "Explosive (under 0.5 s), rapid or slow decompression (the most insidious). Passenger masks automatic before 15,000 ft cabin."
+        }
+      ]
+    },
+    {
+      "lesson": "ice-and-rain-protection",
+      "key": {
+        "es": "Antihielo impide, deshielo elimina; reactores: aire sangrado en alas y motores; sondas y parabrisas eléctricos; en tierra, avión limpio con líquidos y tiempos de protección.",
+        "en": "Anti-ice prevents, de-ice removes; jets: bleed air on wings and engines; electric probes and windshields; on the ground, a clean aircraft with fluids and holdover times."
+      },
+      "points": [
+        {
+          "es": "Antihielo: se conecta antes del engelamiento. Deshielo: rompe la capa ya formada.",
+          "en": "Anti-ice: switched on before icing. De-ice: breaks a layer already formed."
+        },
+        {
+          "es": "Reactores: aire sangrado en bordes de ataque y labios de motor. Turbohélices: botas neumáticas.",
+          "en": "Jets: bleed air on leading edges and engine lips. Turboprops: pneumatic boots."
+        },
+        {
+          "es": "Eléctrico: parabrisas (también contra impacto de aves), pitot, estáticas, sondas AOA y TAT.",
+          "en": "Electric: windshield (also against bird strikes), pitot, static, AOA and TAT probes."
+        },
+        {
+          "es": "Detectores de hielo: sonda vibrante cuya frecuencia baja con el hielo.",
+          "en": "Ice detectors: vibrating probe whose frequency drops with ice."
+        },
+        {
+          "es": "En tierra: avión limpio. Tipo I caliente para deshelar; Tipo II/IV espesado para proteger.",
+          "en": "On the ground: clean aircraft. Hot Type I to de-ice; thickened Type II/IV to protect."
+        },
+        {
+          "es": "Tiempo de protección según líquido, temperatura y precipitación; si se agota, repetir.",
+          "en": "Holdover time depends on fluid, temperature and precipitation; if it runs out, repeat."
+        }
+      ]
+    },
+    {
+      "lesson": "fire-protection-and-oxygen",
+      "key": {
+        "es": "Lazos dobles detectan el fuego de motor; la maneta corta combustible, hidráulica, aire y generador y arma dos descargas; oxígeno de tripulación a demanda y de pasajeros químico.",
+        "en": "Dual loops detect engine fire; the handle cuts fuel, hydraulics, bleed and generator and arms two shots; crew oxygen on demand and passenger oxygen chemical."
+      },
+      "points": [
+        {
+          "es": "Lazo continuo doble (A y B) en motores y APU; detectores de humo en bodegas y lavabos.",
+          "en": "Dual continuous loops (A and B) in engines and APU; smoke detectors in holds and lavatories."
+        },
+        {
+          "es": "Maneta de incendio: corta combustible, hidráulica, aire sangrado y generador; arma las botellas. Normalmente dos descargas.",
+          "en": "Fire handle: cuts fuel, hydraulics, bleed air and generator; arms the bottles. Normally two shots."
+        },
+        {
+          "es": "Lavabos: detector de humo + extintor automático en cada papelera. Humo de origen desconocido: aterrizar cuanto antes.",
+          "en": "Lavatories: smoke detector + automatic extinguisher in each waste bin. Smoke of unknown origin: land as soon as possible."
+        },
+        {
+          "es": "Tripulación: dilución a demanda (hasta ~40.000 ft) y presión a demanda (positiva por encima de ~34.000 ft); 100 % en descompresión.",
+          "en": "Crew: diluter-demand (up to ~40,000 ft) and pressure-demand (positive above ~34,000 ft); 100 % in a decompression."
+        },
+        {
+          "es": "Pasajeros: flujo continuo; generadores químicos que se activan al tirar, se calientan y no se apagan.",
+          "en": "Passengers: continuous flow; chemical generators started by pulling, which get hot and cannot be stopped."
+        },
+        {
+          "es": "EE. UU. (PHAK): 12.500–14.000 ft tripulación tras 30 min; >14.000 ft tripulación siempre; >15.000 ft oxígeno para todos.",
+          "en": "US (PHAK): 12,500–14,000 ft crew after 30 min; >14,000 ft crew always; >15,000 ft oxygen for all."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

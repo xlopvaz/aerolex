@@ -1,0 +1,54 @@
+{
+  "path": "pilot-training",
+  "order": 4,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 4: Sistemas de la aeronave",
+    "en": "Pilot Academy · Module 4: Aircraft Systems"
+  },
+  "description": {
+    "es": "Los sistemas de un avión de transporte como los estudia un piloto profesional: hidráulica, electricidad, combustible, neumática y presurización, protección contra el hielo y la lluvia, incendios y oxígeno. Con preguntas tipo ATPL.",
+    "en": "Transport aircraft systems as a professional pilot studies them: hydraulics, electrics, fuel, pneumatics and pressurisation, ice and rain protection, fire and oxygen. With ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Explain the redundant architecture of the hydraulic and electrical systems",
+      "Manage fuel: crossfeed, imbalance and leaks",
+      "Work out cabin altitude and act in a decompression",
+      "Match each area with its ice protection and apply the clean-aircraft concept",
+      "Describe fire detection and extinguishing and the oxygen systems"
+    ],
+    "es": [
+      "Explicar la arquitectura redundante de los sistemas hidráulico y eléctrico",
+      "Gestionar el combustible: alimentación cruzada, desequilibrio y fugas",
+      "Calcular la altitud de cabina y actuar ante una descompresión",
+      "Asociar cada zona del avión con su protección contra el hielo y aplicar el concepto de avión limpio",
+      "Describir la detección y extinción de incendios y los sistemas de oxígeno"
+    ]
+  },
+  "lessons": [
+    "hydraulic-systems",
+    "electrical-systems",
+    "fuel-systems",
+    "pneumatics-and-pressurisation",
+    "ice-and-rain-protection",
+    "fire-protection-and-oxygen"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-airframe",
+    "skybrary-hydraulic-systems",
+    "skybrary-electrical-systems",
+    "aopa-turbine-pilot-electrics-2000",
+    "easa-ear-air-ops",
+    "cfr-14-part-25",
+    "icao-doc-7488",
+    "faa-ac-120-60"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

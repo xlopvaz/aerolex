@@ -1,0 +1,51 @@
+{
+  "path": "pilot-training",
+  "order": 5,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 5: Instrumentos de vuelo",
+    "en": "Pilot Academy · Module 5: Flight Instruments"
+  },
+  "description": {
+    "es": "Los instrumentos como herramienta de seguridad: el sistema pitot-estático y sus obstrucciones, las velocidades, la altimetría y sus errores, los giróscopos, la brújula y la cabina digital con TAWS y TCAS. Con cálculos y preguntas tipo ATPL.",
+    "en": "Instruments as a safety tool: the pitot-static system and its blockages, airspeeds, altimetry and its errors, gyros, the compass and the glass cockpit with TAWS and TCAS. With calculations and ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Predict indications with pitot or static blockages",
+      "Convert IAS to TAS and understand VMO and MMO",
+      "Calculate altimeter errors from pressure and temperature",
+      "Apply the rules of gyroscopes and the magnetic compass",
+      "Respond correctly to TAWS and TCAS alerts"
+    ],
+    "es": [
+      "Predecir las indicaciones ante obstrucciones del pitot o de las estáticas",
+      "Pasar de IAS a TAS y entender VMO y MMO",
+      "Calcular errores de altímetro por presión y temperatura",
+      "Aplicar las reglas de los giróscopos y de la brújula magnética",
+      "Responder correctamente a los avisos de TAWS y TCAS"
+    ]
+  },
+  "lessons": [
+    "pitot-static-system",
+    "airspeed-indication",
+    "altimetry",
+    "gyroscopic-instruments",
+    "magnetic-compass",
+    "glass-cockpit-and-alerting"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-phak",
+    "faa-ifh",
+    "faa-afh",
+    "icao-doc-8168",
+    "icao-doc-7488",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

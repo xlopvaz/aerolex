@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EGT",
+    "es": "EGT"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Exhaust gas temperature",
+    "es": "Temperatura de los gases de escape"
+  },
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The temperature of the gases in the turbine section of a turbine engine (or the exhaust of a piston engine); in turbines it is one of the main limiting parameters.",
+    "es": "Temperatura de los gases en la sección de turbina de un motor de turbina (o en el escape de un motor de pistón); en las turbinas es uno de los principales parámetros limitativos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How hot the engine is inside, shown on the engine display.",
+    "es": "Lo caliente que está el motor por dentro, que se ve en la pantalla de motores."
+  },
+  "example": {
+    "en": "During the start the EGT rose quickly towards the limit: a hot start.",
+    "es": "Durante el arranque la EGT subió deprisa hacia el límite: un arranque caliente."
+  },
+  "pronunciation": {
+    "en": "ee-jee-TEE",
+    "es": "e-ge-te"
+  },
+  "synonyms": {
+    "en": [
+      "TGT",
+      "ITT"
+    ],
+    "es": [
+      "TGT",
+      "ITT"
+    ]
+  },
+  "related": [
+    "turbofan",
+    "thrust",
+    "eicas"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

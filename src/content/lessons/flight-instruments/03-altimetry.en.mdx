@@ -1,0 +1,65 @@
+---
+lesson: altimetry
+course: flight-instruments
+lang: en
+title: "Altimetry"
+summary: "How the altimeter works, the types of altitude, altimeter settings and pressure and temperature errors, with worked examples, plus the VSI."
+objectives:
+  - "Distinguish indicated, true, absolute, pressure and density altitude"
+  - "Work out the effect of a wrong altimeter setting"
+  - "Explain temperature error and why cold air is dangerous"
+minutes: 14
+terms: [altimeter, flight-level, qnh, qfe, transition-altitude, vsi]
+quiz: flight-instruments-03
+sources: [faa-phak, icao-doc-8168, icao-doc-7488]
+review:
+  status: draft
+---
+
+## How it works
+
+The <Term id="altimeter">altimeter</Term> is a barometer: sealed **aneroid capsules** expand as static pressure falls and contract as it rises, and that movement drives the pointers. The scale is calibrated to the standard atmosphere (ISA). The **altimeter setting**, the reference pressure from which it measures, is set in a small window.
+
+## Types of altitude
+
+| Altitude | What it is |
+|---|---|
+| **Indicated** | What the altimeter reads with the local setting |
+| **True** | The real height above mean sea level |
+| **Absolute** | Height above the ground (AGL) |
+| **Pressure** | What it reads with the standard setting of **1013.25 hPa** (29.92 inHg) |
+| **Density** | Pressure altitude corrected for non-standard temperature; it is what the aircraft "feels" |
+
+Pressure altitude is the basis of <Term id="flight-level">flight levels</Term> and of performance calculations. Density altitude decides how well the wing, propeller and engine perform. The PHAK gives an example: an aerodrome at 5,048 ft at 30 °C has a density altitude of **7,855 ft**.
+
+## Settings
+
+- <Term id="qnh">QNH</Term>: the altimeter shows **altitude** above sea level. On the ground it reads the aerodrome elevation.
+- <Term id="qfe">QFE</Term>: it shows **height** above the aerodrome. On the ground it reads zero.
+- **Standard (1013.25 hPa)**: it shows pressure altitude. It is used above the <Term id="transition-altitude">transition altitude</Term> and gives flight levels.
+
+As a rule of thumb, near sea level **1 hPa is about 30 ft** (the PHAK gives 1 inHg ≈ 1,000 ft, and 1 inHg is about 34 hPa).
+
+## Pressure error: "high to low, look out below"
+
+Flying from high to low pressure **without changing the setting**, the altimeter reads **higher** than the real altitude: the aircraft is **lower** than indicated.
+
+Example: a pilot departs with QNH 1020 hPa and reaches an area with QNH 1005 without updating it. The difference is 15 hPa × 30 ft ≈ **450 ft**: if the altimeter reads 3,000 ft, the aircraft is at about **2,550 ft**.
+
+## Temperature error
+
+The setting corrects for pressure, **not temperature**. In air **colder** than standard, the pressure levels are closer together and the aircraft is **lower** than the altimeter shows; in warmer air, higher. The error grows with height above the station providing the setting.
+
+That is why, in very low temperatures, the minimum altitudes of approach procedures are **corrected upwards**: ICAO PANS-OPS explains how. The PHAK adds that in mountainous areas, in certain conditions, the altimeter may read **1,000 ft or more** above the real altitude.
+
+<Callout type="caution" label="High to low, or hot to cold">
+Both errors work in the same dangerous direction: the ground is closer than the altimeter says.
+</Callout>
+
+## Pre-flight check
+
+With QNH set, the altimeter should read the aerodrome elevation. In the US, the PHAK says an error of more than **75 ft** means it must be checked by an approved repair station.
+
+## The VSI
+
+The <Term id="vsi">VSI</Term> compares current static pressure with that in a chamber which fills through a small calibrated leak. It shows the **trend** immediately, but the **figure** for vertical speed takes about **6 to 9 seconds** to settle, longer in turbulence or with rough control inputs. The **instantaneous VSI** (IVSI) adds accelerometers to remove that lag.

@@ -1,0 +1,68 @@
+---
+lesson: magnetic-compass
+course: flight-instruments
+lang: en
+title: "The magnetic compass"
+summary: "Variation and deviation, from true heading to compass heading, and dip, acceleration and turning errors."
+objectives:
+  - "Convert from true to magnetic to compass heading"
+  - "Explain acceleration error (ANDS)"
+  - "Apply the correction for turns towards north and south"
+minutes: 12
+terms: [magnetic-compass, magnetic-variation]
+quiz: flight-instruments-05
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## A tool without electricity
+
+The <Term id="magnetic-compass">magnetic compass</Term> is a magnetised card floating in liquid that lines up with the Earth's magnetic field. It needs neither electricity nor air: that is why it remains in every cockpit as a standby instrument. In exchange, it has errors you need to know.
+
+## Variation
+
+Magnetic north is not the same as true north. <Term id="magnetic-variation">Variation</Term> is the angle between them and **depends on location**:
+
+- lines joining points of equal variation are called **isogonic lines**;
+- the line of zero variation is the **agonic line**.
+
+To go from **true** to **magnetic** heading: **east is subtracted** and **west is added** ("east is least, west is best").
+
+Example: true heading 090°, variation 3° E → magnetic heading **087°**.
+
+## Deviation
+
+The aircraft's own metal and electrical equipment deflect the compass. That error is **deviation**, and unlike variation it **depends on heading**, not location. It is measured and reduced in a process called **swinging the compass**, and what remains is written on a **deviation card** next to the instrument.
+
+The complete chain is: **true → (variation) → magnetic → (deviation) → compass**.
+
+## Magnetic dip
+
+The magnetic field lines are not horizontal: they dip towards the ground, more and more steeply nearer the poles. That **dip** pulls the card downwards and causes acceleration and turning errors. What follows applies to the **northern hemisphere**; in the south the effects are reversed.
+
+## Acceleration error: ANDS
+
+On **east or west** headings:
+
+- when you **Accelerate**, the compass shows a turn towards **North**;
+- when you **Decelerate**, it shows a turn towards **South**.
+
+The error goes away once speed is steady. On north or south headings it is minimal.
+
+## Turning error
+
+It is greatest when turning **from** or **towards** north or south:
+
+- **Towards north**, the compass **lags**: roll out **before** it shows the desired heading.
+- **Towards south**, the compass **leads**: roll out **after** it.
+
+The PHAK gives the approximate amount as **15° plus half the latitude**. Example at 40° N: 15 + 20 = **35°**. To end up heading north, start rolling the wings level when the compass reads about 035° (turning right from west) or 325° (turning left from east).
+
+## Oscillation
+
+In turbulence the card swings. To set the heading indicator, use the **average** of the swings.
+
+<Callout type="tip" label="To remember">
+ANDS: accelerate → north, decelerate → south. And for turns: towards north roll out early, towards south roll out late.
+</Callout>

@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Por qué en muchos aviones se consume primero el depósito central?",
+        "en": "Why is the centre tank used first on many aircraft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque es el más pequeño",
+            "en": "Because it is the smallest"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque está más caliente",
+            "en": "Because it is warmer"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque no tiene bombas",
+            "en": "Because it has no pumps"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque el combustible de las alas alivia la flexión del ala",
+            "en": "Because wing fuel relieves wing bending"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El peso del combustible en el ala contrarresta parte de la flexión que provoca la sustentación.",
+        "en": "Fuel weight in the wing counters part of the bending caused by lift."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La cantidad de combustible se indica en masa porque…",
+        "en": "Fuel quantity is shown as mass because…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los litros no se pueden medir en vuelo",
+            "en": "Litres cannot be measured in flight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Lo exige el control aéreo",
+            "en": "Air traffic control requires it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La energía depende de la masa y la densidad varía con la temperatura",
+            "en": "Energy depends on mass and density varies with temperature"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La masa no cambia al consumirse",
+            "en": "Mass does not change as fuel is burned"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Un litro de combustible frío pesa más que uno caliente.",
+        "en": "A litre of cold fuel weighs more than a warm one."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La válvula de alimentación cruzada se usa sobre todo para…",
+        "en": "The crossfeed valve is mainly used to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vaciar combustible en vuelo",
+            "en": "Jettison fuel in flight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Corregir un desequilibrio de combustible entre alas",
+            "en": "Correct a fuel imbalance between the wings"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Repostar a presión",
+            "en": "Pressure-refuel"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Calentar el combustible",
+            "en": "Heat the fuel"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Une los circuitos izquierdo y derecho.",
+        "en": "It connects the left and right systems."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Antes de abrir la alimentación cruzada por un desequilibrio, hay que…",
+        "en": "Before opening crossfeed for an imbalance, you must…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Descartar una fuga de combustible",
+            "en": "Rule out a fuel leak"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Apagar las bombas de refuerzo",
+            "en": "Switch off the boost pumps"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Bajar el tren",
+            "en": "Lower the gear"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desconectar el FADEC",
+            "en": "Disconnect the FADEC"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Con una fuga, la alimentación cruzada podría vaciar también el otro lado.",
+        "en": "With a leak, crossfeed could drain the other side too."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Los microorganismos en el combustible de reactor…",
+        "en": "Microorganisms in jet fuel…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Mejoran la combustión",
+            "en": "Improve combustion"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo aparecen en el AVGAS",
+            "en": "Only appear in AVGAS"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se eliminan con la alimentación cruzada",
+            "en": "Are removed by crossfeed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Forman lodos que obstruyen filtros y corroen los depósitos",
+            "en": "Form sludge that blocks filters and corrodes tanks"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Viven en la interfaz entre agua y combustible.",
+        "en": "They live at the boundary between water and fuel."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Para qué sirve el intercambiador de calor entre aceite y combustible?",
+        "en": "What is the fuel-oil heat exchanger for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Mide la cantidad de combustible",
+            "en": "It measures fuel quantity"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumenta la presión de repostaje",
+            "en": "It increases refuelling pressure"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Calienta el combustible, enfría el aceite y evita cristales de hielo en los filtros",
+            "en": "It warms the fuel, cools the oil and prevents ice crystals in the filters"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Vacía el combustible en vuelo",
+            "en": "It jettisons fuel in flight"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El agua disuelta en el combustible puede formar cristales de hielo con el frío.",
+        "en": "Water dissolved in fuel can form ice crystals in the cold."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Ram air turbine",
+    "es": "Turbina de aire de impacto"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A small propeller-driven turbine that extends into the airflow when normal power is lost and drives a hydraulic pump and/or an electrical generator for the essential systems.",
+    "es": "Pequeña turbina con hélice que sale al flujo de aire cuando se pierde la energía normal y mueve una bomba hidráulica o un generador eléctrico para los sistemas esenciales."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A little windmill that pops out to give emergency power.",
+    "es": "Un pequeño molino que sale del avión para dar energía de emergencia."
+  },
+  "example": {
+    "en": "After the dual engine failure the RAT deployed automatically.",
+    "es": "Tras el fallo de ambos motores, la RAT se desplegó automáticamente."
+  },
+  "pronunciation": {
+    "en": "ram AIR TUR-bine",
+    "es": "ra-te (en inglés: RAT)"
+  },
+  "synonyms": {
+    "en": [
+      "RAT"
+    ],
+    "es": [
+      "RAT"
+    ]
+  },
+  "related": [
+    "hydraulic-system",
+    "fly-by-wire",
+    "apu"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-hydraulic-systems",
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

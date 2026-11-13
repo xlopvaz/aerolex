@@ -1,0 +1,60 @@
+---
+lesson: glass-cockpit-and-alerting
+course: flight-instruments
+lang: en
+title: "Glass cockpit and alerting systems"
+summary: "How data reaches the screens (ADC, AHRS, inertial systems), how a failure is detected, and the systems that warn of terrain (TAWS) and traffic (TCAS)."
+objectives:
+  - "Describe the chain of sensors, computers and screens in a glass cockpit"
+  - "Explain what to do when two sources disagree"
+  - "Distinguish TAWS and TCAS alerts and know how to respond to an RA"
+  - "Check what you have learned in the final assessment"
+minutes: 14
+terms: [adc, ahrs, efis, pfd, nd, egpws, tcas, transponder]
+quiz: flight-instruments-final
+sources: [faa-phak, faa-ifh, faa-aim, icao-doc-8168]
+review:
+  status: draft
+---
+
+## From sensors to screens
+
+In a glass cockpit, traditional instruments are replaced by screens fed by computers:
+
+- The <Term id="adc" /> converts pitot and static pressure and temperature into airspeed, altitude, vertical speed, Mach and TAS.
+- The <Term id="ahrs" /> provides attitude and heading with solid-state sensors. On transport aircraft this job is done by **inertial systems**, which also calculate position and groundspeed. When one unit combines air data and inertial data it is called an ADIRU.
+- The <Term id="efis">EFIS</Term> screens present the data: the <Term id="pfd" /> (attitude, airspeed, altitude, vertical speed and heading) and the <Term id="nd" /> (route, navaids, weather and traffic).
+
+There are **several sources** of each piece of data (usually three) and independent **standby instruments** with their own power supply.
+
+## When something fails
+
+Data that is lost is shown with a **flag** or a **red X** over the indication: the system knows it is invalid. The most dangerous case is different: data that is **wrong but looks valid**, for example a false airspeed from a blocked pitot.
+
+That is why the systems **compare** sources and warn if they disagree, and the crew applies a simple rule:
+
+1. Fly the aircraft with a known **attitude and power setting**.
+2. **Compare** the three sources and the standby instrument.
+3. Identify the reliable source and **switch** the affected displays to it.
+
+## TAWS: terrain
+
+The **terrain awareness and warning system** (TAWS) warns when the aircraft gets dangerously close to the ground. It combines two kinds of function:
+
+- The **basic** functions of the older GPWS, based on the radio altimeter and other data: excessive descent rate, excessive closure rate with terrain, altitude loss after take-off, terrain proximity when not in landing configuration and deviation below the glideslope.
+- The **predictive** functions of <Term id="egpws">EGPWS</Term>: it compares the aircraft's position with a **terrain database** and looks ahead, giving warning of rising terrain even while the aircraft is still high above it.
+
+The response to a "TERRAIN, TERRAIN, PULL UP" warning is immediate: maximum thrust, nose up to the limit of stall protection and wings level, without waiting for visual confirmation.
+
+## TCAS: traffic
+
+<Term id="tcas" /> interrogates the <Term id="transponder">transponders</Term> of nearby aircraft and works out their trajectory. TCAS II gives two levels of alert:
+
+- **Traffic advisory** (TA, "TRAFFIC, TRAFFIC"): there is traffic nearby; look for it and get ready.
+- **Resolution advisory** (RA): a **vertical** manoeuvre to avoid a collision, for example "CLIMB, CLIMB" or "DESCEND, DESCEND".
+
+ICAO PANS-OPS is clear: when an RA is issued, pilots must **follow it immediately**, **even if it conflicts with an ATC instruction**, unless doing so would jeopardise safety. Never manoeuvre in the opposite sense to an RA. ATC is informed as soon as possible, and once clear of conflict the aircraft returns to its clearance.
+
+<Callout type="caution" label="Why an RA is not debated">
+If both aircraft have TCAS II, their RAs are coordinated: one climbs and the other descends. If a pilot follows the controller instead of the RA, that coordination can be cancelled and both aircraft can end up at the same level.
+</Callout>

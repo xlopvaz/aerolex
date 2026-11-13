@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En un amortiguador oleoneumático, la energía del impacto se disipa sobre todo…",
+        "en": "In an oleo-pneumatic strut, the energy of the impact is mainly absorbed by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Al pasar el aceite por un orificio calibrado",
+            "en": "Fluid being forced through a metering orifice"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Al comprimirse el neumático",
+            "en": "The tyre being compressed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En los frenos",
+            "en": "The brakes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al doblarse la pata",
+            "en": "The leg bending"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El gas hace de muelle; el aceite que pasa por el orificio es el que absorbe la energía.",
+        "en": "The gas is the spring; the fluid through the orifice absorbs the energy."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué función del antideslizante impide frenar antes de que las ruedas giren al tomar tierra?",
+        "en": "Which anti-skid function prevents braking before the wheels spin up at touchdown?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El control normal del deslizamiento",
+            "en": "Normal skid control"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La protección ante fallos",
+            "en": "Fail-safe protection"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El modo RTO",
+            "en": "RTO mode"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La protección en la toma de contacto",
+            "en": "Touchdown protection"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Con las ruedas paradas y los frenos aplicados, los neumáticos se destrozarían al tocar la pista.",
+        "en": "With the wheels stopped and brakes applied, the tyres would be destroyed on touchdown."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El freno automático en modo RTO…",
+        "en": "Autobrake in RTO mode…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Frena tras cada aterrizaje con deceleración media",
+            "en": "Brakes after every landing at medium deceleration"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Impide abortar el despegue",
+            "en": "Prevents a rejected take-off"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Frena con presión máxima si se aborta el despegue por encima de cierta velocidad",
+            "en": "Brakes with maximum pressure if the take-off is rejected above a certain speed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo actúa en rodaje",
+            "en": "Works only while taxiing"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "RTO = rejected take-off; se arma antes del despegue.",
+        "en": "RTO = rejected take-off; it is armed before take-off."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Por qué se inflan con nitrógeno seco los neumáticos con freno de los aviones de transporte grandes?",
+        "en": "Why are the braked tyres of large transport aircraft inflated with dry nitrogen?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque pesa más que el aire",
+            "en": "Because it is heavier than air"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque es inerte y no lleva humedad",
+            "en": "Because it is inert and carries no moisture"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque aumenta la adherencia",
+            "en": "Because it improves grip"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque es más barato",
+            "en": "Because it is cheaper"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "No alimenta un incendio de rueda y no forma hielo en altura.",
+        "en": "It does not feed a wheel fire and does not form ice at altitude."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Los tapones fusibles de las llantas sirven para…",
+        "en": "Fusible plugs in the wheels are there to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Desinflar la rueda de forma controlada si los frenos se calientan en exceso",
+            "en": "Deflate the wheel in a controlled way if the brakes overheat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Inflar la rueda en vuelo",
+            "en": "Inflate the wheel in flight"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Medir la presión del neumático",
+            "en": "Measure tyre pressure"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Bloquear la rueda en el aparcamiento",
+            "en": "Lock the wheel when parked"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Evitan que el neumático reviente por el calor.",
+        "en": "They stop the tyre bursting from the heat."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué impide que se retraiga el tren con el avión en tierra?",
+        "en": "What prevents the gear from retracting with the aircraft on the ground?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El antideslizante",
+            "en": "The anti-skid system"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El freno automático",
+            "en": "The autobrake"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los tapones fusibles",
+            "en": "The fusible plugs"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El interruptor de compresión (weight-on-wheels)",
+            "en": "The squat (weight-on-wheels) switch"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Detecta el peso sobre el tren y bloquea la palanca.",
+        "en": "It senses weight on the gear and locks the lever."
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Autobrake",
+    "es": "Freno automático"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A system that applies the wheel brakes automatically after touchdown to achieve a selected deceleration, or with maximum pressure if a take-off is rejected.",
+    "es": "Sistema que aplica automáticamente los frenos de las ruedas tras la toma de contacto para lograr una deceleración seleccionada, o con la máxima presión si se aborta el despegue."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Brakes that apply themselves after landing.",
+    "es": "Frenos que se aplican solos al aterrizar."
+  },
+  "example": {
+    "en": "\"Autobrake medium\" was set for the short wet runway.",
+    "es": "Se seleccionó «autobrake medium» para la pista corta y mojada."
+  },
+  "pronunciation": {
+    "en": "AW-toh-brayk",
+    "es": "au-to-breik (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "auto brake"
+    ],
+    "es": [
+      "autobrake"
+    ]
+  },
+  "related": [
+    "anti-skid",
+    "landing",
+    "v1"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

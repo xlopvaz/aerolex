@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La variación magnética depende de…",
+        "en": "Magnetic variation depends on…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El rumbo del avión",
+            "en": "The aircraft's heading"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El lugar",
+            "en": "Location"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La velocidad",
+            "en": "Airspeed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los equipos eléctricos conectados",
+            "en": "Which electrical equipment is on"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El que depende del rumbo es el desvío.",
+        "en": "Deviation is the one that depends on heading."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Rumbo verdadero 250°, variación 4° W. ¿Rumbo magnético?",
+        "en": "True heading 250°, variation 4° W. Magnetic heading?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "254°",
+            "en": "254°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "246°",
+            "en": "246°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "250°",
+            "en": "250°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "266°",
+            "en": "266°"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La variación oeste se suma.",
+        "en": "West variation is added."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La línea de variación cero se llama…",
+        "en": "The line of zero variation is called…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Isógona",
+            "en": "Isogonic"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Isobara",
+            "en": "Isobar"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ecuador magnético",
+            "en": "Magnetic equator"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Agónica",
+            "en": "Agonic"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Las isógonas unen puntos de igual variación.",
+        "en": "Isogonic lines join points of equal variation."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En el hemisferio norte, con rumbo oeste, al acelerar la brújula indica…",
+        "en": "In the northern hemisphere, heading west, accelerating makes the compass show…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un viraje hacia el sur",
+            "en": "A turn towards south"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ningún cambio",
+            "en": "No change"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un viraje hacia el norte",
+            "en": "A turn towards north"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un viraje hacia el este",
+            "en": "A turn towards east"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "ANDS: acelerar → norte, decelerar → sur.",
+        "en": "ANDS: accelerate → north, decelerate → south."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En el hemisferio norte, al virar hacia el norte con la brújula, hay que…",
+        "en": "In the northern hemisphere, turning towards north on the compass, you should…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Terminarlo después de que marque el norte",
+            "en": "Roll out after it reads north"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Terminar el viraje antes de que marque el norte",
+            "en": "Roll out before it reads north"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Terminarlo exactamente en el norte",
+            "en": "Roll out exactly on north"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No usar la brújula",
+            "en": "Not use the compass"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Hacia el norte la brújula se retrasa.",
+        "en": "Towards north the compass lags."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Según la regla del PHAK, a 30° de latitud el adelanto o retraso es de unos…",
+        "en": "Under the PHAK rule, at 30° latitude the lead or lag is about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "30°",
+            "en": "30°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "15°",
+            "en": "15°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "45°",
+            "en": "45°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "60°",
+            "en": "60°"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "15° + 30 / 2 = 30°.",
+        "en": "15° + 30 / 2 = 30°."
+      }
+    }
+  ]
+}

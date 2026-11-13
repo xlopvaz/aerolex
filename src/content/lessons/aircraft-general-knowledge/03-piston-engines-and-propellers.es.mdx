@@ -1,0 +1,65 @@
+---
+lesson: piston-engines-and-propellers
+course: aircraft-general-knowledge
+lang: es
+title: "Motores de pistón y hélices"
+summary: "El ciclo de cuatro tiempos, la mezcla, el hielo en el carburador, la detonación, los combustibles, la turboalimentación, la hélice de velocidad constante y el FADEC."
+objectives:
+  - "Explicar el ciclo de cuatro tiempos y el encendido por magnetos"
+  - "Reconocer las condiciones de hielo en el carburador y de detonación"
+  - "Manejar los conceptos de hélice de paso fijo, velocidad constante y puesta en bandera"
+minutes: 13
+terms: []
+quiz: aircraft-general-knowledge-03
+sources: [faa-phak, faa-amt-powerplant, faa-afh]
+review:
+  status: draft
+---
+
+## El ciclo de cuatro tiempos
+
+La mayoría de las avionetas usan motores de pistón de **cuatro tiempos**: **admisión** (entra la mezcla de aire y combustible), **compresión**, **explosión** (la bujía la enciende y el pistón baja empujado por los gases) y **escape**.
+
+El encendido viene de dos **magnetos** independientes, cada una con su juego de bujías. Las magnetos generan su propia corriente con el giro del motor, así que el motor sigue funcionando aunque falle el sistema eléctrico del avión: el interruptor general alimenta todos los circuitos **excepto el encendido**. Tener dos sistemas da redundancia y una combustión más completa.
+
+## La mezcla
+
+Al subir, el aire es menos denso y la misma cantidad de combustible da una mezcla demasiado **rica**: el motor pierde potencia, funciona irregular y ensucia las bujías. Por eso el piloto **empobrece** la mezcla con la altitud. Una mezcla demasiado **pobre** a alta potencia calienta en exceso los cilindros y favorece la detonación.
+
+## Hielo en el carburador
+
+En el carburador, la vaporización del combustible y la caída de presión en el venturi enfrían el aire. Si hay humedad, se forma hielo que estrangula el paso de la mezcla. Según el PHAK de la FAA:
+
+- es más probable con temperaturas **por debajo de 21 °C** y humedad relativa **por encima del 80 %**;
+- puede ocurrir incluso con **38 °C** y humedad del **50 %**.
+
+El síntoma en un motor con hélice de paso fijo es una **caída de rpm**. La calefacción del carburador lo previene o lo elimina. Al aplicarla con hielo ya formado, las rpm bajan aún más un momento (aire caliente menos denso y agua del hielo que se funde) y luego suben.
+
+## Detonación y preencendido
+
+- **Detonación**: la mezcla explota de forma brusca e incontrolada en el cilindro en lugar de quemarse progresivamente. Se asocia a temperaturas de culata altas y alta potencia. Sus causas típicas son un combustible de grado inferior al especificado, una presión de admisión muy alta con pocas rpm, una mezcla demasiado pobre a alta potencia y los ascensos prolongados con poca refrigeración.
+- **Preencendido**: la mezcla se enciende antes de tiempo por un punto caliente, como un depósito de carbonilla.
+
+Las dos pueden aparecer juntas y una puede provocar la otra.
+
+## Combustibles
+
+El combustible de aviación de pistón (AVGAS) se identifica por su color: **80 rojo**, **100 verde** y **100LL azul**. El combustible de reactor (Jet A) es **incoloro o pajizo**. Echar Jet A a un motor de pistón provoca detonación grave y la parada del motor, de ahí la importancia de comprobar el combustible antes de cada vuelo. El agua en el combustible, que se busca purgando los drenajes, puede congelarse y obstruir los conductos o parar el motor.
+
+## Turboalimentación
+
+El **turbocompresor** usa los gases de escape para mover una turbina que comprime el aire de admisión. Así el motor mantiene la presión de admisión, y por tanto la potencia, hasta mucha más altitud. Una válvula de descarga (*wastegate*) regula cuánto gas de escape pasa por la turbina.
+
+## Hélices
+
+- **De paso fijo**: el ángulo de pala es un compromiso entre ascenso y crucero.
+- **De velocidad constante**: un **regulador** cambia el paso automáticamente para mantener las rpm que elige el piloto. El piloto tiene dos mandos: la **palanca de gases** (potencia, que se lee en la **presión de admisión**) y la **palanca de la hélice** (rpm). Fuera del margen entre los topes de paso, las rpm vuelven a variar con la velocidad.
+- **Puesta en bandera**: en los bimotores, si falla un motor, se giran las palas hasta ponerlas de canto al viento. La hélice deja de girar empujada por el aire (*molinete*) y la resistencia baja mucho.
+
+## FADEC
+
+El **FADEC** es un ordenador digital que controla el motor (y la hélice) con una sola palanca. Elimina las magnetos, la calefacción del carburador, la palanca de mezcla y el cebado, y ajusta el combustible y el encendido de cada cilindro. Tiene **dos canales** idénticos y necesita una fuente eléctrica de reserva, porque su fallo total podría suponer perder el empuje.
+
+<Callout type="caution" label="Hielo con buen tiempo">
+El hielo en el carburador no necesita nubes ni frío: un día húmedo de primavera, con potencia reducida en el descenso, es una situación clásica.
+</Callout>

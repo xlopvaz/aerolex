@@ -1,0 +1,71 @@
+---
+lesson: pneumatics-and-pressurisation
+course: aircraft-systems
+lang: es
+title: "Neumática, aire acondicionado y presurización"
+summary: "El aire sangrado y sus usos, los packs de aire acondicionado, cómo se controla la altitud de cabina y qué ocurre en una descompresión."
+objectives:
+  - "Enumerar los usos del aire sangrado"
+  - "Explicar cómo la válvula de descarga fija la altitud de cabina"
+  - "Calcular la altitud de cabina a partir de la presión diferencial"
+  - "Distinguir descompresión explosiva, rápida y lenta"
+minutes: 14
+terms: [bleed-air, apu, cabin-altitude, outflow-valve, oxygen-mask]
+quiz: aircraft-systems-04
+sources: [faa-phak, faa-amt-airframe, cfr-14-part-25, icao-doc-7488]
+review:
+  status: draft
+---
+
+## El aire sangrado
+
+El <Term id="bleed-air">aire sangrado</Term> se toma de las etapas del compresor de los motores (o de la <Term id="apu" />). Sale muy caliente y a presión, así que pasa por un **preenfriador** antes de distribuirse. Se usa para:
+
+- el **aire acondicionado** y la **presurización**;
+- el **antihielo** de alas y motores;
+- el **arranque** de los motores;
+- presurizar los depósitos hidráulicos y, en algunos aviones, mover bombas hidráulicas.
+
+## Los packs de aire acondicionado
+
+Cada **pack** enfría el aire sangrado mediante intercambiadores de calor refrigerados por aire de impacto exterior y una **máquina de ciclo de aire**: el aire se comprime, se enfría, y después se expande en una turbina, lo que lo enfría mucho más. Luego se seca y se mezcla con aire caliente y con **aire recirculado** de la cabina para conseguir la temperatura deseada en cada zona.
+
+## La presurización
+
+A 35.000 ft la presión exterior es aproximadamente una cuarta parte de la del nivel del mar. Para mantener una <Term id="cabin-altitude">altitud de cabina</Term> cómoda, el avión se convierte en un recipiente a presión.
+
+El sistema no controla cuánto aire **entra** (lo dan los packs), sino cuánto **sale**: la <Term id="outflow-valve">válvula de descarga</Term> se abre o se cierra para mantener la altitud de cabina programada.
+
+La norma de certificación estadounidense exige que, en condiciones normales, la altitud de cabina no supere los **8.000 ft** a la altitud máxima de operación del avión. También exige un **aviso** a la tripulación si la altitud de cabina supera los **10.000 ft**.
+
+### Presión diferencial
+
+La **presión diferencial** es la diferencia entre la presión de la cabina y la exterior, y la estructura tiene un máximo. Un ejemplo del PHAK de la FAA:
+
+- a 28.000 ft la presión estándar es de **4,8 psi**;
+- con una diferencial de **6,1 psi**, la cabina queda a 4,8 + 6,1 = **10,9 psi**;
+- eso equivale a una altitud de cabina de unos **8.000 ft**.
+
+Por eso cuanto más alto vuela un avión, mayor diferencial necesita para mantener la misma cabina.
+
+### Válvulas de seguridad
+
+- La **válvula de alivio de presión** se abre si la diferencial supera el máximo.
+- La **válvula de alivio de vacío** evita que la presión exterior supere a la interior (presión diferencial negativa), por ejemplo en un descenso muy rápido.
+- La **válvula de vaciado** (*dump*) despresuriza la cabina a voluntad, por ejemplo antes de abrir las puertas en una evacuación.
+
+## La descompresión
+
+| Tipo | Qué ocurre |
+|---|---|
+| **Explosiva** | La cabina se despresuriza más rápido de lo que los pulmones pueden soltar el aire (menos de medio segundo) |
+| **Rápida** | La cabina se despresuriza en segundos, pero los pulmones pueden seguir el ritmo |
+| **Lenta** | Una fuga pequeña hace subir la cabina poco a poco. Es la más traicionera, porque la hipoxia puede llegar sin que nadie lo note |
+
+Una descompresión rápida puede reducir el **tiempo de conciencia útil** a entre un tercio y un cuarto de lo normal. Las acciones de la tripulación empiezan siempre igual: **ponerse la máscara de <Term id="oxygen-mask">oxígeno</Term>** y establecer la comunicación, y después, si es necesario, iniciar un **descenso de emergencia** hacia una altitud segura.
+
+En los aviones de transporte que vuelan por encima de 25.000 ft, las máscaras de los pasajeros deben **caer automáticamente** antes de que la altitud de cabina supere los **15.000 ft**.
+
+<Callout type="caution" label="La hipoxia no avisa">
+Los síntomas de la hipoxia (euforia, juicio alterado, visión reducida) pueden pasar desapercibidos para quien los sufre. Por eso los avisos de altitud de cabina y la disciplina de la máscara son tan importantes.
+</Callout>

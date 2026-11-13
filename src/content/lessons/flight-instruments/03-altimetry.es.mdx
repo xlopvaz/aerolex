@@ -1,0 +1,65 @@
+---
+lesson: altimetry
+course: flight-instruments
+lang: es
+title: "Altimetría"
+summary: "Cómo funciona el altímetro, los tipos de altitud, los reglajes y los errores por presión y temperatura, con ejemplos de cálculo, y el variómetro."
+objectives:
+  - "Distinguir altitud indicada, verdadera, absoluta, de presión y de densidad"
+  - "Calcular el efecto de un reglaje incorrecto"
+  - "Explicar el error por temperatura y por qué el aire frío es peligroso"
+minutes: 14
+terms: [altimeter, flight-level, qnh, qfe, transition-altitude, vsi]
+quiz: flight-instruments-03
+sources: [faa-phak, icao-doc-8168, icao-doc-7488]
+review:
+  status: draft
+---
+
+## Cómo funciona
+
+El <Term id="altimeter">altímetro</Term> es un barómetro: unas **cápsulas aneroides** selladas se dilatan al bajar la presión estática y se contraen al subir, y ese movimiento mueve las agujas. La escala está calibrada con la atmósfera estándar (ISA). En una ventanilla se introduce el **reglaje**, la presión de referencia desde la que se mide.
+
+## Tipos de altitud
+
+| Altitud | Qué es |
+|---|---|
+| **Indicada** | La que marca el altímetro con el reglaje local puesto |
+| **Verdadera** | La altura real sobre el nivel medio del mar |
+| **Absoluta** | La altura sobre el terreno (AGL) |
+| **De presión** | La que marca con el reglaje estándar de **1013,25 hPa** (29,92 inHg) |
+| **De densidad** | La altitud de presión corregida por temperatura no estándar; es la que «siente» el avión |
+
+La altitud de presión es la base de los <Term id="flight-level">niveles de vuelo</Term> y de los cálculos de actuaciones. La de densidad decide cuánto rinden el ala, la hélice y el motor. El PHAK pone un ejemplo: un aeródromo a 5.048 ft con 30 °C tiene una altitud de densidad de **7.855 ft**.
+
+## Los reglajes
+
+- <Term id="qnh">QNH</Term>: el altímetro marca la **altitud** sobre el nivel del mar. En tierra marca la elevación del aeródromo.
+- <Term id="qfe">QFE</Term>: marca la **altura** sobre el aeródromo. En tierra marca cero.
+- **Estándar (1013,25 hPa)**: marca la altitud de presión. Se usa por encima de la <Term id="transition-altitude">altitud de transición</Term> y da los niveles de vuelo.
+
+Como regla práctica, cerca del nivel del mar **1 hPa equivale a unos 30 ft** (el PHAK da 1 inHg ≈ 1.000 ft, y 1 inHg son unos 34 hPa).
+
+## El error por presión: «de alta a baja, cuidado abajo»
+
+Si se vuela de una zona de alta presión a una de baja **sin cambiar el reglaje**, el altímetro marca **más** altitud de la real: el avión está **más bajo** de lo que indica.
+
+Ejemplo: un piloto sale con QNH 1020 hPa y llega a una zona con QNH 1005 sin actualizarlo. La diferencia es de 15 hPa × 30 ft ≈ **450 ft**: si el altímetro marca 3.000 ft, el avión está a unos **2.550 ft**.
+
+## El error por temperatura
+
+El reglaje corrige la presión, **no la temperatura**. Con aire **más frío** que el estándar, las capas de presión se juntan y el avión está **más bajo** de lo que indica el altímetro; con aire más cálido, más alto. El error crece con la altura sobre la estación que da el reglaje.
+
+Por eso, con temperaturas muy bajas, las altitudes mínimas de los procedimientos de aproximación se **corrigen hacia arriba**: los PANS-OPS de la OACI explican cómo hacerlo. El PHAK añade que, en zonas montañosas y con ciertas condiciones, el altímetro puede marcar **1.000 ft o más** por encima de la altitud real.
+
+<Callout type="caution" label="De alta a baja, o de caliente a frío">
+Ambos errores van en el mismo sentido peligroso: el terreno está más cerca de lo que dice el altímetro.
+</Callout>
+
+## Comprobación antes del vuelo
+
+Con el QNH puesto, el altímetro debe marcar la elevación del aeródromo. En EE. UU., el PHAK indica que un error de más de **75 ft** exige revisarlo en un taller autorizado.
+
+## El variómetro
+
+El <Term id="vsi">variómetro</Term> compara la presión estática actual con la de una cámara que se llena a través de un pequeño orificio calibrado. Muestra la **tendencia** al instante, pero la **cifra** de velocidad vertical tarda unos **6 a 9 segundos** en estabilizarse, más con turbulencia o mandos bruscos. El **variómetro instantáneo** (IVSI) añade acelerómetros para eliminar ese retraso.

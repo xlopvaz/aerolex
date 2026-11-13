@@ -1,0 +1,52 @@
+{
+  "path": "pilot-training",
+  "order": 3,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de pilotos · Módulo 3: Conocimiento general de la aeronave",
+    "en": "Pilot Academy · Module 3: Aircraft General Knowledge"
+  },
+  "description": {
+    "es": "La aeronave por dentro: estructura y fatiga, tren y frenos, motores de pistón y hélices, turbinas de gas y lo que cambia al operar un reactor. Nivel de examen teórico de piloto, con preguntas tipo ATPL.",
+    "en": "The aircraft from the inside: structure and fatigue, landing gear and brakes, piston engines and propellers, gas turbines and what changes when operating a jet. Pilot theory exam level, with ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Explain how an airframe is built and certified",
+      "Describe landing gear, brakes, anti-skid and autobrake",
+      "Understand the piston engine, the propeller and their hazards (ice, detonation)",
+      "Interpret jet engine parameters and recognise typical malfunctions",
+      "Distinguish an assumed-temperature take-off from a derated one"
+    ],
+    "es": [
+      "Explicar cómo se construye y se certifica la estructura de un avión",
+      "Describir el tren, los frenos, el antideslizante y el freno automático",
+      "Comprender el motor de pistón, la hélice y sus riesgos (hielo, detonación)",
+      "Interpretar los parámetros de un reactor y reconocer sus fallos típicos",
+      "Distinguir el despegue con temperatura supuesta del despegue con derrateo"
+    ]
+  },
+  "lessons": [
+    "airframe-structures",
+    "landing-gear-and-brakes",
+    "piston-engines-and-propellers",
+    "gas-turbine-engines",
+    "operating-jet-engines"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-airframe",
+    "cfr-14-part-25",
+    "faa-amt-powerplant",
+    "faa-afh",
+    "cfr-14-1-1",
+    "faa-ac-25-13",
+    "cgsb-3-23-jet-fuel"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
