@@ -1,9 +1,4 @@
 {
-  "a220-family": ["\"Airbus A220\" incategory:Quality_images", "Airbus A220-300 side view", "Airbus A220 cockpit nose close-up", "Airbus A220 PW1500G engine"],
-  "a320neo-family": ["\"A320neo\" incategory:Quality_images", "\"A321neo\" incategory:Quality_images", "Airbus A320neo side view", "Airbus A320neo sharklet wingtip"],
-  "boeing-737": ["\"737 MAX\" incategory:Quality_images", "\"737-800\" incategory:Quality_images", "Boeing 737 MAX 8 side view", "Boeing 737 MAX winglet tail cone"],
-  "a330-family": ["\"A330\" incategory:Quality_images", "Airbus A330-900 side view", "Airbus A330-300 side view", "Airbus A330neo wingtip sharklet"],
-  "a350-family": ["\"A350\" incategory:Quality_images", "Airbus A350-900 side view", "Airbus A350 cockpit windows nose", "Airbus A350 wingtip"],
-  "boeing-787": ["\"787\" Dreamliner incategory:Quality_images", "Boeing 787-9 side view", "Boeing 787 engine chevrons", "Boeing 787 raked wingtip"],
-  "a380": ["\"A380\" incategory:Quality_images", "Airbus A380 side view", "Airbus A380 front view", "Airbus A380 takeoff"]
+  "boeing-767": ["\"767-300\" incategory:Quality_images", "\"767-400ER\" incategory:Quality_images", "Boeing 767-300ER side view", "Boeing 767-400ER raked wingtip", "Boeing 767-300F freighter", "Boeing 767 winglets landing"],
+  "boeing-777": ["\"777-300ER\" incategory:Quality_images", "\"777-200\" incategory:Quality_images", "Boeing 777-300ER side view", "Boeing 777F freighter", "Boeing 777 six-wheel main landing gear", "Boeing 777 GE90 engine"]
 }
