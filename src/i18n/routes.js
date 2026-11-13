@@ -28,6 +28,7 @@ export const ROUTES = {
   acronyms:   { slug: { es: 'diccionario/acronimos', en: 'dictionary/acronyms' }, nav: [], icon: 'case-upper' },
   dashboard:  { slug: { es: 'panel',          en: 'dashboard' },    nav: ['main', 'mobile'], icon: 'layout-dashboard' },
   about:      { slug: { es: 'acerca-de',      en: 'about' },        nav: ['main', 'footer'], icon: 'book-open' },
+  sources:    { slug: { es: 'fuentes',        en: 'sources' },      nav: ['footer'], icon: 'book-check' },
   styleguide: { slug: { es: 'guia-de-estilo', en: 'styleguide' },   nav: ['footer'], icon: 'palette' },
   legal:      { slug: { es: 'aviso-legal',    en: 'legal' },        nav: ['footer'], icon: 'shield-check' },
 };

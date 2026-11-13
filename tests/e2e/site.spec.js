@@ -4,11 +4,11 @@ const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/', 'es/academia/taf/', 'es/academia/taf/change-groups/',
-  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/',
+  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
   'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/', 'en/academy/taf/full-decode/',
-  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/',
+  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/',
 ];
 
 test.describe('language', () => {
@@ -140,4 +140,22 @@ test('@mobile bottom navigation replaces the header menu', async ({ page }) => {
   await page.locator('.mobile-nav a', { hasText: 'Panel' }).click();
   await expect(page).toHaveURL(/\/es\/panel\/$/);
   await expect(page.locator('.mobile-nav a[aria-current="page"]')).toHaveText('Panel');
+});
+
+test.describe('sources', () => {
+  test('lists every source with what cites it, and filters as you type', async ({ page }) => {
+    await page.goto('en/sources/');
+    await expect(page.locator('h1')).toHaveText('Sources and bibliography');
+    const all = await page.locator('[data-bib-item]').count();
+    expect(all).toBeGreaterThan(100);
+    await page.locator('[data-bib-q]').fill('icao annex 3');
+    await expect(page.locator('[data-bib-item]:visible')).toHaveCount(1);
+    const item = page.locator('#src-icao-annex-3');
+    await item.locator('summary').click();
+    await item.locator('.src__area a', { hasText: 'METAR' }).first().click();
+    await expect(page).toHaveURL(/\/en\/dictionary\/metar\/$/);
+    await page.goto('es/fuentes/');
+    await page.locator('[data-bib-q]').fill('zzzz');
+    await expect(page.locator('[data-bib-empty]')).toBeVisible();
+  });
 });

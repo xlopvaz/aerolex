@@ -36,7 +36,8 @@
     "aircraftGame": "¿Qué avión es?",
     "flashcards": "Flashcards",
     "weatherGlossary": "Glosario meteorológico",
-    "timeline": "Cronología"
+    "timeline": "Cronología",
+    "sources": "Fuentes"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -1235,5 +1236,34 @@
     "terms": "En el diccionario",
     "sources": "Fuentes",
     "draftNote": "Contenido en revisión: las fechas y los datos proceden de las fuentes citadas en cada hito. Cuando una fuente solo da el mes o el año, no se indica el día."
+  },
+  "sourcesPage": {
+    "metaTitle": "Fuentes y bibliografía · AeroLex",
+    "title": "Fuentes y bibliografía",
+    "lead": "Todas las fuentes que citan el diccionario, la academia, el Hangar, la cronología y el glosario meteorológico, con lo que se apoya en cada una.",
+    "statSources": "Fuentes",
+    "statKinds": "Tipos de fuente",
+    "statItems": "Contenidos con fuente",
+    "paraphrase": "Los textos de AeroLex parafrasean sus fuentes y no las sustituyen: para operar, consulta siempre la versión oficial vigente. El contenido está en borrador hasta que se revise frente a estas fuentes.",
+    "tocLabel": "Tipos de fuente",
+    "filterLabel": "Filtrar fuentes",
+    "filterPlaceholder": "Filtra por título o editor: OACI, EASA, Boeing…",
+    "count": "{n} fuentes",
+    "empty": "Ninguna fuente coincide con el filtro.",
+    "citedIn": "Citada en {n} contenidos",
+    "areas": {
+      "dictionary": "Diccionario",
+      "lessons": "Lecciones",
+      "courses": "Cursos",
+      "aircraft": "Hangar",
+      "timeline": "Cronología",
+      "weather": "Glosario meteorológico"
+    },
+    "licences": {
+      "copyright": "Con derechos de autor: se cita y se parafrasea",
+      "public-domain-us": "Dominio público (Gobierno de EE. UU.)",
+      "eu-reuse": "Reutilizable citando la fuente (información del sector público)",
+      "wmo": "© Organización Meteorológica Mundial"
+    }
   }
 }

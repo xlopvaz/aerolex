@@ -31,7 +31,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 
 **Hecho cuando:** se publica en `xlopvaz.github.io/aerolex/`, el cambio de idioma y de tema funciona en todas las páginas, no hay enlaces rotos y Lighthouse da ≥ 90.
 
-## FASE 3 — Contenido 🚧
+## FASE 3 — Contenido ✅
 
 **Bloque 1 — Diccionario ✅ (12/11/2026)**
 - [x] Colecciones validadas en compilación (`src/content.config.ts`): diccionario y registro de fuentes.
@@ -92,6 +92,11 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] 9 lecciones ES/EN con el aviso «el manual del operador prevalece» y 42 preguntas con evaluación final por módulo.
 - [x] Diccionario: 8 entradas nuevas (SCCM, CCA, rampa de evacuación, PBE, posición de impacto, demostración de seguridad, PSU y turbulencia): 105 entradas.
 - [ ] Módulos 4–15 de la Academia de TCP.
+
+**Bloque 8 — Fuentes y bibliografía ✅ (13/11/2026)**
+- [x] Página global de fuentes (`/es/fuentes/`, `/en/sources/`): las 127 fuentes del registro agrupadas por tipo (norma, reglamento, AIP, manual, glosario, fabricante, página web), con editor, enlace, licencia y, desplegable, los contenidos que se apoyan en cada una (entradas del diccionario, lecciones, cursos, familias del Hangar, hitos de la cronología y códigos del glosario meteorológico) enlazados. Filtro por título o editor sin tildes y anclas por fuente (`#src-<id>`). Lógica en `src/lib/sources/bibliography.js` con 6 tests y e2e.
+
+Objetivos mínimos de la fase cumplidos (13/11/2026). Quedan como ampliación continua los módulos 3+ de la Academia de pilotos, los módulos 4–15 de TCP, más términos y las versiones de aeronaves que aún no tienen fuente oficial comprobada.
 
 
 | Bloque | Objetivo mínimo de la fase |
