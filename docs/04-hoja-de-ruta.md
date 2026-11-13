@@ -66,7 +66,8 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] ATR 42-600 y ATR 72-600 (13/11/2026), con las cifras de las páginas y fichas oficiales de ATR, altura y motores según SKYbrary y EASA/FlightGlobal (PW127M y PW127XT-M), y 4 fotos (incluida una de Air Nostrum en Melilla). A330: plazas máximas del -300 (440) y del -800 (406) completadas con las páginas de Airbus.
 - [x] Embraer E-Jets E2 (E175-E2, E190-E2, E195-E2) (13/11/2026), con el manual de planificación aeroportuaria de Embraer (dimensiones, motores, plazas máximas) y sus fichas técnicas (alcance, configuraciones, MTOW), y 3 fotos.
 - [x] Boeing 777X (777-8, 777-9, 777-8 Freighter) (13/11/2026), con la página actual de Boeing (alcances actualizados) y sus notas de prensa, y 4 fotos (incluida la punta del ala plegable).
-- [ ] Resto de familias del brief (A340, 747, 757, 767 y los 777 anteriores), con sus fotos.
+- [x] A340 (A340-300, con la página histórica de Airbus) y Boeing 747 (747-8 Intercontinental y 747-8F, con el manual de planificación aeroportuaria de Boeing de enero de 2026) (13/11/2026), con 3 y 4 fotos. Las demás versiones del A340 y del 747 quedan pendientes de fuentes oficiales comprobadas.
+- [ ] Resto de familias del brief (757, 767 y los 777 anteriores), con sus fotos.
 
 **Bloque 5 — Introducción a la aviación ✅ (13/11/2026)**
 - [x] Curso *Fundamentos de la aviación* (nivel Beginner), primero del itinerario «Introducción a la aviación»: 7 lecciones ES/EN (qué es una aeronave, las cuatro fuerzas, ejes y mandos, fases del vuelo, el aeropuerto, quién dicta las normas, códigos y lenguaje), 32 preguntas y evaluación final.

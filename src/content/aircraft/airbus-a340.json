@@ -1,0 +1,68 @@
+{
+  "manufacturer": "Airbus",
+  "family": {
+    "en": "A340",
+    "es": "A340"
+  },
+  "category": "commercial",
+  "order": 11,
+  "summary": {
+    "en": "Airbus's four-engined long-range twin-aisle airliner, now out of production. The A340-300 has the same wingspan as the A330-300.",
+    "es": "El avión de largo radio y dos pasillos de Airbus con cuatro motores, ya fuera de producción. El A340-300 tiene la misma envergadura que el A330-300."
+  },
+  "history": {
+    "en": "Airbus now lists the A340 among its previous-generation aircraft. Thanks to its four engines, the A340-300 did not need ETOPS approval, which allowed airlines to start long-haul operations quickly; with smaller airlines it served as a flagship on long routes to and from less populous cities.",
+    "es": "Airbus incluye hoy el A340 entre sus aviones de generaciones anteriores. Gracias a sus cuatro motores, el A340-300 no necesitaba la certificación ETOPS, lo que permitía a las aerolíneas empezar rápido a volar largo radio; en aerolíneas pequeñas era el buque insignia en rutas largas desde y hacia ciudades menos pobladas."
+  },
+  "facts": [
+    {
+      "en": "The A340-300 is 63.69 m long and has the same 60.30 m wingspan as the A330-300.",
+      "es": "El A340-300 mide 63,69 m de largo y tiene la misma envergadura de 60,30 m que el A330-300."
+    },
+    {
+      "en": "The easiest way to tell an A340 from an A330: count the engines (four against two).",
+      "es": "La forma más fácil de distinguir un A340 de un A330: cuenta los motores (cuatro frente a dos)."
+    }
+  ],
+  "sources": [
+    "airbus-a340-300-history",
+    "airbus-a330-300-page"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "a340-300",
+      "name": "A340-300",
+      "status": "out-of-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 63.69,
+      "wingspanM": 60.3,
+      "heightM": 16.99,
+      "seatsTypical": "250–290",
+      "seatsMax": 440,
+      "rangeNm": 7300,
+      "rangeKm": 13500,
+      "mtowT": 276.5,
+      "engines": [
+        "CFM International"
+      ],
+      "note": {
+        "en": "Typical three-class seating; range with a typical passenger load. Airbus's page shows the aircraft with CFM engines but does not name the engine model. The other A340 versions will be added when their figures can be checked against official sources.",
+        "es": "Plazas típicas en tres clases; alcance con una carga típica de pasajeros. La página de Airbus muestra el avión con motores CFM, pero no indica el modelo. Las demás versiones del A340 se añadirán cuando sus cifras puedan comprobarse con fuentes oficiales."
+      },
+      "sources": [
+        "airbus-a340-300-history"
+      ]
+    }
+  ]
+}
