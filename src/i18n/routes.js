@@ -18,6 +18,7 @@ export const ROUTES = {
   liveWeather: { slug: { es: 'herramientas/metar-taf-en-directo', en: 'tools/live-metar-taf' }, nav: [], icon: 'radio-tower' },
   airportFinder: { slug: { es: 'herramientas/aeropuertos', en: 'tools/airports' }, nav: [], icon: 'map-pin' },
   atcTrainer: { slug: { es: 'herramientas/fraseologia-atc', en: 'tools/atc-phraseology' }, nav: [], icon: 'headset' },
+  aircraftGame: { slug: { es: 'herramientas/que-avion-es', en: 'tools/which-aircraft' }, nav: [], icon: 'plane' },
   converter:  { slug: { es: 'herramientas/conversor', en: 'tools/converter' }, nav: [], icon: 'arrow-left-right' },
   practice:   { slug: { es: 'herramientas/practica-metar-taf', en: 'tools/metar-taf-practice' }, nav: [], icon: 'target' },
   compare:    { slug: { es: 'hangar/comparador', en: 'hangar/compare' }, nav: [], icon: 'columns-3' },

@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(7);
+    await expect(page.locator('[data-tool]')).toHaveCount(8);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -167,5 +167,19 @@ test.describe('ATC phraseology trainer', () => {
     await expect(page.locator('.pr-opt.is-correct')).toHaveCount(1);
     await page.locator('[data-scenario]').selectOption('arrival-lemd');
     await expect(page.locator('[data-atc-text]')).toContainText('descend flight level seven zero');
+  });
+});
+
+test.describe('Aircraft identification game', () => {
+  test('plays rounds and links to the Hangar', async ({ page }) => {
+    await page.goto('es/herramientas/que-avion-es/');
+    for (let i = 0; i < 3; i++) {
+      await expect(page.locator('[data-opt]').first()).toBeVisible();
+      await page.locator('[data-opt]').first().click();
+      await expect(page.locator('.pr-opt.is-correct')).toHaveCount(1);
+      await expect(page.locator('[data-feedback] a').first()).toHaveAttribute('href', /\/es\/hangar\//);
+      await page.locator('[data-next]').click();
+    }
+    await expect(page.locator('[data-score]')).toContainText('de 3');
   });
 });

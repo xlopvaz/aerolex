@@ -32,7 +32,8 @@
     "converter": "Conversor de unidades",
     "liveWeather": "METAR y TAF en directo",
     "airportFinder": "Buscador de aeropuertos",
-    "atcTrainer": "Entrenador de fraseología ATC"
+    "atcTrainer": "Entrenador de fraseología ATC",
+    "aircraftGame": "¿Qué avión es?"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -667,6 +668,10 @@
       "atcTrainer": {
         "title": "Entrenador de fraseología ATC",
         "text": "Colaciona autorizaciones como piloto o detecta errores de colación como controlador, con audio."
+      },
+      "aircraftGame": {
+        "title": "¿Qué avión es?",
+        "text": "Identifica aeronaves por sus cifras oficiales y compara variantes, con los datos del Hangar."
       }
     }
   },
@@ -1068,5 +1073,44 @@
       "approach": "tipo de aproximación",
       "land": "autorización de aterrizaje"
     }
+  },
+  "aircraftGame": {
+    "metaTitle": "Juego de identificación de aeronaves · AeroLex",
+    "metaDescription": "¿Qué avión es? Identifica aeronaves por sus cifras oficiales y compara variantes, con los datos del Hangar.",
+    "title": "¿Qué avión es?",
+    "lead": "Identifica aeronaves por sus cifras y compara variantes. Todas las cifras salen de la documentación oficial de los fabricantes que usa el Hangar.",
+    "cluesPrompt": "¿Qué aeronave tiene estas cifras?",
+    "comparePrompt": "¿Cuál tiene {metric} mayor?",
+    "correct": "¡Correcto!",
+    "incorrect": "No es esa.",
+    "theAnswer": "Era: {answer}",
+    "next": "Otra ronda",
+    "score": "Aciertos: {ok} de {total}",
+    "openFamily": "Ver la familia en el Hangar",
+    "metrics": {
+      "lengthM": "longitud",
+      "wingspanM": "envergadura",
+      "heightM": "altura",
+      "seatsMax": "capacidad máxima de asientos",
+      "rangeNm": "alcance",
+      "mtowT": "peso máximo al despegue"
+    },
+    "labels": {
+      "lengthM": "Longitud",
+      "wingspanM": "Envergadura",
+      "heightM": "Altura",
+      "seatsMax": "Asientos (máximo)",
+      "rangeNm": "Alcance",
+      "mtowT": "Peso máximo al despegue"
+    },
+    "units": {
+      "lengthM": "m",
+      "wingspanM": "m",
+      "heightM": "m",
+      "seatsMax": "asientos",
+      "rangeNm": "NM",
+      "mtowT": "t"
+    },
+    "dataNote": "Las cifras son las publicadas por cada fabricante para cada variante; pueden cambiar según la configuración."
   }
 }
