@@ -63,7 +63,8 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Familias A220 (A220-100 y -300) y A330 (A330-200, -300, -800 y -900) con las cifras de los Facts & Figures de Airbus de enero y febrero de 2026 (13/11/2026). Donde la fuente no da un valor claro (plazas máximas pendientes de certificación o ilegibles, fechas solo con el año) se deja vacío y se explica en la nota.
 - [x] A380 con las cifras de los Facts & Figures de Airbus de enero y febrero de 2022 (fin de producción) y los hitos de entrega y entrada en servicio (13/11/2026).
 - [x] Fotografías reales en el Hangar (13/11/2026): 22 fotos con licencia libre de Wikimedia Commons (3–4 por familia), elegidas y revisadas una a una para aprender a reconocer cada avión (perfil, morro, puntas del ala, motores, vista desde abajo), con pie «En qué fijarte» ES/EN, autor y licencia. Las descarga `scripts/photos/fetch-commons.mjs` en GitHub Actions (solo licencias CC0, dominio público, CC BY y CC BY-SA) y se publican reducidas a 1280 y 640 px. Sustituyen a las siluetas genéricas.
-- [ ] Resto de familias del brief (A340, 747, 757, 767, 777, E-Jets, ATR 42/72), con sus fotos.
+- [x] ATR 42-600 y ATR 72-600 (13/11/2026), con las cifras de las páginas y fichas oficiales de ATR, altura y motores según SKYbrary y EASA/FlightGlobal (PW127M y PW127XT-M), y 4 fotos (incluida una de Air Nostrum en Melilla). A330: plazas máximas del -300 (440) y del -800 (406) completadas con las páginas de Airbus.
+- [ ] Resto de familias del brief (A340, 747, 757, 767, 777, E-Jets), con sus fotos.
 
 **Bloque 5 — Introducción a la aviación ✅ (13/11/2026)**
 - [x] Curso *Fundamentos de la aviación* (nivel Beginner), primero del itinerario «Introducción a la aviación»: 7 lecciones ES/EN (qué es una aeronave, las cuatro fuerzas, ejes y mandos, fases del vuelo, el aeropuerto, quién dicta las normas, códigos y lenguaje), 32 preguntas y evaluación final.

@@ -1,0 +1,119 @@
+{
+  "manufacturer": "ATR",
+  "family": {
+    "en": "ATR 42 and ATR 72",
+    "es": "ATR 42 y ATR 72"
+  },
+  "category": "regional",
+  "order": 8,
+  "summary": {
+    "en": "Twin-turboprop regional aircraft with a high wing and a T-tail, built by ATR. The current generation is the -600 series: the ATR 42-600 (30–50 seats) and the longer ATR 72-600 (up to 78 seats).",
+    "es": "Aviones regionales turbohélice bimotores de ala alta y cola en T, fabricados por ATR. La generación actual es la serie -600: el ATR 42-600 (de 30 a 50 plazas) y el ATR 72-600, más largo (hasta 78 plazas)."
+  },
+  "history": {
+    "en": "The PW127M engine chosen for the new -600 series was certified by Transport Canada and EASA in 2008, and the -600 series was due to reach the market in the second half of 2010; the ATR 42-600 has been in service since 2010. Later, EASA certified the ATR 42-600 and 72-600 with the new PW127XT-M engine, which has become standard on all new-build aircraft.",
+    "es": "El motor PW127M elegido para la nueva serie -600 recibió la certificación de Transport Canada y de EASA en 2008, y la serie -600 debía llegar al mercado en la segunda mitad de 2010; el ATR 42-600 está en servicio desde 2010. Más tarde, EASA certificó el ATR 42-600 y el 72-600 con el nuevo motor PW127XT-M, que es ya el estándar en todos los aviones nuevos."
+  },
+  "facts": [
+    {
+      "en": "ATR states that 90% of the spare parts are common to the ATR 42-600 and the ATR 72-600, and that a quarter of its operators fly both.",
+      "es": "Según ATR, el ATR 42-600 y el ATR 72-600 comparten el 90 % de las piezas de repuesto, y una cuarta parte de sus operadores vuela con los dos."
+    },
+    {
+      "en": "ATR describes the ATR 42-600 as the only regional aircraft in production in the 30–50 seat segment; it can use runways of about 1,000 m.",
+      "es": "ATR presenta el ATR 42-600 como el único avión regional en producción en el segmento de 30 a 50 plazas; puede operar en pistas de unos 1000 m."
+    },
+    {
+      "en": "Both are turboprops: the engines turn six-blade propellers.",
+      "es": "Los dos son turbohélices: los motores mueven hélices de seis palas."
+    }
+  ],
+  "sources": [
+    "atr-72-600-page",
+    "atr-42-600-page",
+    "atr-family-comparison",
+    "atr-72-600-booklet-2018",
+    "atr-42-600-factsheet",
+    "skybrary-at46",
+    "skybrary-at76",
+    "ain-pw127m-2008",
+    "flightglobal-pw127xt-m"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "atr-42-600",
+      "name": "ATR 42-600",
+      "status": "in-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 22.67,
+      "wingspanM": 24.57,
+      "heightM": 7.59,
+      "seatsTypical": "48",
+      "seatsMax": null,
+      "rangeNm": 726,
+      "rangeKm": 1345,
+      "mtowT": 18.6,
+      "engines": [
+        "Pratt & Whitney Canada PW127M",
+        "Pratt & Whitney Canada PW127XT-M"
+      ],
+      "note": {
+        "en": "ATR quotes 30–50 seats; its standard layout has 48 seats at 30-inch pitch. Range with maximum passengers. Height from SKYbrary. In service since 2010 (the source gives the year only).",
+        "es": "ATR indica de 30 a 50 plazas; su configuración estándar tiene 48 asientos con 30 pulgadas de separación. Alcance con el máximo de pasajeros. Altura según SKYbrary. En servicio desde 2010 (la fuente solo da el año)."
+      },
+      "sources": [
+        "atr-42-600-page",
+        "atr-42-600-factsheet",
+        "atr-family-comparison",
+        "skybrary-at46",
+        "flightglobal-pw127xt-m"
+      ]
+    },
+    {
+      "id": "atr-72-600",
+      "name": "ATR 72-600",
+      "status": "in-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 27.17,
+      "wingspanM": 27.05,
+      "heightM": 7.65,
+      "seatsTypical": "72",
+      "seatsMax": 78,
+      "rangeNm": 740,
+      "rangeKm": 1370,
+      "mtowT": 23.0,
+      "engines": [
+        "Pratt & Whitney Canada PW127M",
+        "Pratt & Whitney Canada PW127XT-M"
+      ],
+      "note": {
+        "en": "Typical layouts: 72 seats at 29-inch pitch or 78 at 28-inch pitch. Range with maximum passengers from ATR's current page (the 2018 booklet gave 825 NM). Height from ATR's 2018 booklet.",
+        "es": "Configuraciones típicas: 72 asientos con 29 pulgadas de separación o 78 con 28. Alcance con el máximo de pasajeros según la página actual de ATR (el folleto de 2018 indicaba 825 NM). Altura según el folleto de ATR de 2018."
+      },
+      "sources": [
+        "atr-72-600-page",
+        "atr-family-comparison",
+        "atr-72-600-booklet-2018",
+        "skybrary-at76",
+        "flightglobal-pw127xt-m"
+      ]
+    }
+  ]
+}

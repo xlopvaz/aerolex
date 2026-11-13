@@ -460,5 +460,89 @@
     "author": "Keta",
     "licence": "CC BY-SA 2.5",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "atr-42-72-1": {
+    "family": "atr-42-72",
+    "order": 1,
+    "file": "photos/hangar/atr-42-72-1.jpg",
+    "thumb": "photos/hangar/atr-42-72-1-640.jpg",
+    "width": 1280,
+    "height": 857,
+    "alt": {
+      "es": "ATR 72-600 de Air Nostrum aterrizando en Melilla",
+      "en": "Air Nostrum ATR 72-600 landing at Melilla"
+    },
+    "caption": {
+      "es": "Ala alta, por encima del fuselaje; cola en T, con el estabilizador horizontal arriba de la deriva, y dos hélices de seis palas. El tren principal se recoge en carenas a los lados del fuselaje, bajo el ala.",
+      "en": "High wing, above the fuselage; T-tail, with the horizontal stabiliser on top of the fin, and two six-blade propellers. The main landing gear retracts into fairings on the sides of the fuselage, under the wing."
+    },
+    "commonsTitle": "File:Air Nostrum ATR 72-600 (EC-LQV) landing at Melilla Airport.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Air_Nostrum_ATR_72-600_(EC-LQV)_landing_at_Melilla_Airport.jpg",
+    "author": "HTH9",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "atr-42-72-2": {
+    "family": "atr-42-72",
+    "order": 2,
+    "file": "photos/hangar/atr-42-72-2.jpg",
+    "thumb": "photos/hangar/atr-42-72-2-640.jpg",
+    "width": 1280,
+    "height": 777,
+    "alt": {
+      "es": "ATR 42-600 de pruebas despegando",
+      "en": "ATR 42-600 test aircraft taking off"
+    },
+    "caption": {
+      "es": "Mismo diseño que el ATR 72, pero mucho más corto: compara el número de ventanas con el de la foto anterior. En la cola se lee «ATR 600».",
+      "en": "Same design as the ATR 72, but much shorter: compare the number of windows with the previous photo. The tail reads 'ATR 600'."
+    },
+    "commonsTitle": "File:AirExpo 2015 - ATR42 (1).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:AirExpo_2015_-_ATR42_(1).jpg",
+    "author": "Gyrostat",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "atr-42-72-3": {
+    "family": "atr-42-72",
+    "order": 3,
+    "file": "photos/hangar/atr-42-72-3.jpg",
+    "thumb": "photos/hangar/atr-42-72-3-640.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": {
+      "es": "ATR 72-600 de IndiGo con pasajeros embarcando",
+      "en": "IndiGo ATR 72-600 with passengers boarding"
+    },
+    "caption": {
+      "es": "Los pasajeros suben por la puerta trasera con una escalera. El ala alta queda por encima de la cabina y las hélices, lejos del suelo.",
+      "en": "Passengers board through the rear door using stairs. The high wing sits above the cabin and the propellers are well clear of the ground."
+    },
+    "commonsTitle": "File:Indigo ATR72 600 VT-IYB Madurai Sep22 R16 06288.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Indigo_ATR72_600_VT-IYB_Madurai_Sep22_R16_06288.jpg",
+    "author": "Timothy A. Gonsalves",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "atr-42-72-4": {
+    "family": "atr-42-72",
+    "order": 4,
+    "file": "photos/hangar/atr-42-72-4.jpg",
+    "thumb": "photos/hangar/atr-42-72-4-640.jpg",
+    "width": 1280,
+    "height": 558,
+    "alt": {
+      "es": "ATR 42 de Halcyonair en el aeropuerto de Sal (Cabo Verde)",
+      "en": "Halcyonair ATR 42 at Sal airport (Cape Verde)"
+    },
+    "caption": {
+      "es": "En tierra se ve la gran puerta de carga delantera, justo detrás de la cabina de vuelo, y la escalera de la puerta trasera. El fuselaje queda muy cerca del suelo.",
+      "en": "On the ground you can see the large forward cargo door, just behind the flight deck, and the stairs at the rear door. The fuselage sits very close to the ground."
+    },
+    "commonsTitle": "File:Halcyonair ATR 42 Cape Verde 2011.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Halcyonair_ATR_42_Cape_Verde_2011.jpg",
+    "author": "Cayambe",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
   }
 }
