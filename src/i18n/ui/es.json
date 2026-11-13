@@ -27,7 +27,8 @@
     "compare": "Comparador de aeronaves",
     "tools": "Herramientas",
     "metarDecoder": "Decodificador METAR",
-    "tafDecoder": "Decodificador TAF"
+    "tafDecoder": "Decodificador TAF",
+    "practice": "Práctica METAR y TAF"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -642,6 +643,10 @@
       "tafDecoder": {
         "title": "Decodificador TAF",
         "text": "Convierte un TAF en una línea temporal y consulta las condiciones previstas a cualquier hora."
+      },
+      "practice": {
+        "title": "Práctica METAR y TAF",
+        "text": "Cuatro niveles de preguntas generadas al momento, de identificar un grupo a interpretar un TAF."
       }
     }
   },
@@ -775,5 +780,77 @@
     "noTimeline": "La línea temporal necesita un periodo de validez válido.",
     "learnMore": "¿Quieres aprender a leerlo tú? Prueba la Academia TAF.",
     "noscript": "El decodificador necesita JavaScript. Debajo tienes un ejemplo ya descodificado."
+  },
+  "practice": {
+    "metaTitle": "Práctica METAR y TAF · AeroLex",
+    "metaDescription": "Practica la lectura de METAR y TAF en cuatro niveles, con preguntas generadas a partir de mensajes didácticos.",
+    "title": "Práctica METAR y TAF",
+    "lead": "Cuatro niveles, de identificar un grupo a interpretar un TAF completo. Las preguntas se generan al momento a partir de mensajes didácticos, así que nunca se acaban.",
+    "levels": {
+      "1": {
+        "title": "Nivel 1 · Identifica el grupo",
+        "text": "¿Qué tipo de información da cada grupo?"
+      },
+      "2": {
+        "title": "Nivel 2 · Lee el valor",
+        "text": "¿Qué significa exactamente el grupo resaltado?"
+      },
+      "3": {
+        "title": "Nivel 3 · METAR completo",
+        "text": "Techo, tiempo presente, temperatura y tendencia."
+      },
+      "4": {
+        "title": "Nivel 4 · TAF",
+        "text": "Condiciones previstas, grupos de cambio y validez."
+      }
+    },
+    "levelsLabel": "Elige un nivel",
+    "didactic": "Mensaje didáctico",
+    "next": "Siguiente pregunta",
+    "correct": "¡Correcto!",
+    "incorrect": "No es esa.",
+    "correctWas": "La respuesta correcta es: {answer}",
+    "score": "Esta sesión: {correct} de {total}",
+    "saved": "Tu historial en este nivel: {correct} aciertos y {wrong} fallos.",
+    "optionsLabel": "Respuestas",
+    "prompts": {
+      "identify": "¿Qué información da el grupo resaltado ({group})?",
+      "meaning": "¿Qué significa el grupo resaltado ({group})?",
+      "ceiling": "¿Cuál es el techo de nubes (la capa BKN u OVC más baja, o la visibilidad vertical)?",
+      "weather": "¿Qué tiempo presente se observa?",
+      "spread": "¿Cuál es la diferencia entre la temperatura y el punto de rocío?",
+      "trend": "¿Qué dice el informe sobre las próximas 2 horas?",
+      "tafWind": "En general (sin contar TEMPO ni PROB), ¿qué viento se espera el día {day} a las {hh}:{mm} UTC?",
+      "tafVisibility": "En general (sin contar TEMPO ni PROB), ¿qué visibilidad se espera el día {day} a las {hh}:{mm} UTC?",
+      "change": "¿Qué indica el grupo resaltado ({group})?",
+      "validityEnd": "¿Cuándo termina la validez de este TAF?"
+    },
+    "answers": {
+      "noCeiling": "No hay techo",
+      "feet": "{v} ft",
+      "noWeather": "Ningún fenómeno de tiempo presente",
+      "degrees": "{v} °C",
+      "trend": {
+        "NOSIG": "No se esperan cambios significativos",
+        "BECMG": "Se espera un cambio gradual",
+        "TEMPO": "Se esperan fluctuaciones temporales",
+        "none": "El informe no incluye tendencia"
+      },
+      "change": {
+        "FM": "Desde esa hora, condiciones completamente nuevas",
+        "BECMG": "Un cambio gradual que se mantiene",
+        "TEMPO": "Fluctuaciones temporales",
+        "PROB": "Condiciones con una probabilidad del 30 % o 40 %"
+      },
+      "dayHour": "Día {day} a las {hh}:00 UTC"
+    },
+    "explain": {
+      "ceiling": "El techo es la base de la capa más baja con BKN u OVC, o la visibilidad vertical (VV). FEW y SCT no forman techo.",
+      "noWeather": "El informe no incluye ningún grupo de tiempo presente.",
+      "spreadSmall": "Una diferencia de 2 °C o menos indica aire casi saturado: posibilidad de niebla o neblina.",
+      "spreadLarge": "Con una diferencia grande, el aire está lejos de la saturación.",
+      "tafPrevailing": "Para la condición general se aplican la base, los FM y los BECMG ya terminados; los TEMPO y PROB son temporales o posibles."
+    },
+    "locale": "es-ES"
   }
 }

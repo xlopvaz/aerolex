@@ -3,6 +3,7 @@ import { createStore, ImportError } from '../../src/lib/core/store.js';
 import { createMemoryAdapter } from '../../src/lib/core/adapters/memory.js';
 import { createLocalAdapter } from '../../src/lib/core/adapters/local.js';
 import { STORAGE_KEY, SCHEMA_VERSION, normalizeState, defaultState } from '../../src/lib/core/schema.js';
+import { recordPractice, practiceStats } from '../../src/lib/practice/stats.js';
 
 const fixedNow = () => new Date('2026-11-12T10:00:00Z');
 const make = (initial) => createStore({ adapter: createMemoryAdapter(initial), now: fixedNow });
@@ -110,5 +111,25 @@ describe('local adapter', () => {
     adapter.set('a', '1');
     expect(data.a).toBe('1');
     expect(adapter.persistent).toBe(true);
+  });
+});
+
+
+describe('schema v2 — practice results', () => {
+  it('migrates a v1 state and keeps its data', () => {
+    const v1 = { schemaVersion: 1, prefs: { theme: 'dark', lang: 'es' }, progress: { lessons: { 'taf/what-is-taf': { completedAt: '2026-11-13T00:00:00.000Z' } }, paths: {} } };
+    const s = normalizeState(v1);
+    expect(s.schemaVersion).toBe(2);
+    expect(s.practice).toEqual({});
+    expect(s.prefs.theme).toBe('dark');
+    expect(s.progress.lessons['taf/what-is-taf']).toBeTruthy();
+  });
+  it('records practice answers by ID', () => {
+    const store = createStore({ adapter: createMemoryAdapter() });
+    recordPractice(store, 'metar-taf-1', true);
+    recordPractice(store, 'metar-taf-1', false);
+    recordPractice(store, 'metar-taf-1', true);
+    expect(practiceStats(store.get(), 'metar-taf-1')).toMatchObject({ correct: 2, wrong: 1 });
+    expect(practiceStats(store.get(), 'metar-taf-4')).toMatchObject({ correct: 0, wrong: 0 });
   });
 });

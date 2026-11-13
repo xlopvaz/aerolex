@@ -27,7 +27,8 @@
     "compare": "Aircraft comparator",
     "tools": "Tools",
     "metarDecoder": "METAR decoder",
-    "tafDecoder": "TAF decoder"
+    "tafDecoder": "TAF decoder",
+    "practice": "METAR and TAF practice"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -642,6 +643,10 @@
       "tafDecoder": {
         "title": "TAF decoder",
         "text": "Turn a TAF into a timeline and check the conditions forecast at any hour."
+      },
+      "practice": {
+        "title": "METAR and TAF practice",
+        "text": "Four levels of questions generated on the fly, from identifying a group to interpreting a TAF."
       }
     }
   },
@@ -775,5 +780,77 @@
     "noTimeline": "The timeline needs a valid validity period.",
     "learnMore": "Want to learn to read it yourself? Try the TAF Academy.",
     "noscript": "The decoder needs JavaScript. Below is an example that has already been decoded."
+  },
+  "practice": {
+    "metaTitle": "METAR and TAF practice · AeroLex",
+    "metaDescription": "Practise reading METAR and TAF at four levels, with questions generated from didactic messages.",
+    "title": "METAR and TAF practice",
+    "lead": "Four levels, from identifying a group to interpreting a whole TAF. Questions are generated on the fly from didactic messages, so they never run out.",
+    "levels": {
+      "1": {
+        "title": "Level 1 · Identify the group",
+        "text": "What kind of information does each group give?"
+      },
+      "2": {
+        "title": "Level 2 · Read the value",
+        "text": "What exactly does the highlighted group mean?"
+      },
+      "3": {
+        "title": "Level 3 · Full METAR",
+        "text": "Ceiling, present weather, temperature and trend."
+      },
+      "4": {
+        "title": "Level 4 · TAF",
+        "text": "Forecast conditions, change groups and validity."
+      }
+    },
+    "levelsLabel": "Choose a level",
+    "didactic": "Didactic message",
+    "next": "Next question",
+    "correct": "Correct!",
+    "incorrect": "Not that one.",
+    "correctWas": "The correct answer is: {answer}",
+    "score": "This session: {correct} of {total}",
+    "saved": "Your history at this level: {correct} right and {wrong} wrong.",
+    "optionsLabel": "Answers",
+    "prompts": {
+      "identify": "What information does the highlighted group ({group}) give?",
+      "meaning": "What does the highlighted group ({group}) mean?",
+      "ceiling": "What is the ceiling (the lowest BKN or OVC layer, or the vertical visibility)?",
+      "weather": "What present weather is observed?",
+      "spread": "What is the difference between temperature and dew point?",
+      "trend": "What does the report say about the next 2 hours?",
+      "tafWind": "Overall (not counting TEMPO or PROB), what wind is expected on day {day} at {hh}:{mm} UTC?",
+      "tafVisibility": "Overall (not counting TEMPO or PROB), what visibility is expected on day {day} at {hh}:{mm} UTC?",
+      "change": "What does the highlighted group ({group}) indicate?",
+      "validityEnd": "When does this TAF's validity end?"
+    },
+    "answers": {
+      "noCeiling": "There is no ceiling",
+      "feet": "{v} ft",
+      "noWeather": "No present weather phenomena",
+      "degrees": "{v} °C",
+      "trend": {
+        "NOSIG": "No significant change expected",
+        "BECMG": "A gradual change is expected",
+        "TEMPO": "Temporary fluctuations are expected",
+        "none": "The report has no trend"
+      },
+      "change": {
+        "FM": "From that time, completely new conditions",
+        "BECMG": "A gradual change that remains",
+        "TEMPO": "Temporary fluctuations",
+        "PROB": "Conditions with a 30 % or 40 % probability"
+      },
+      "dayHour": "Day {day} at {hh}:00 UTC"
+    },
+    "explain": {
+      "ceiling": "The ceiling is the base of the lowest BKN or OVC layer, or the vertical visibility (VV). FEW and SCT do not form a ceiling.",
+      "noWeather": "The report has no present weather group.",
+      "spreadSmall": "A difference of 2 °C or less means the air is almost saturated: fog or mist are possible.",
+      "spreadLarge": "With a large difference, the air is far from saturation.",
+      "tafPrevailing": "The prevailing conditions come from the base, the FM groups and any BECMG already completed; TEMPO and PROB are temporary or possible."
+    },
+    "locale": "en-GB"
   }
 }
