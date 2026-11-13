@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PF",
+    "es": "PF"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Pilot flying",
+    "es": "Piloto a los mandos"
+  },
+  "categories": [
+    "flight-operations",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The pilot responsible for controlling the flight path of the aircraft at a given time; the other pilot is the pilot monitoring.",
+    "es": "Piloto responsable de controlar la trayectoria de la aeronave en un momento dado; el otro piloto es el piloto que supervisa."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The pilot who is flying the aircraft at that moment.",
+    "es": "El piloto que está volando el avión en ese momento."
+  },
+  "example": {
+    "en": "On this leg the first officer is PF.",
+    "es": "En este tramo el primer oficial es el PF."
+  },
+  "pronunciation": {
+    "en": "P-F (pee-ef)",
+    "es": "pe-efe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "pm",
+    "crm",
+    "sop"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

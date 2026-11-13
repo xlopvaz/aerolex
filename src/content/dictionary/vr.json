@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "VR",
+    "es": "VR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Rotation speed",
+    "es": "Velocidad de rotación"
+  },
+  "categories": [
+    "flight-operations",
+    "aerodynamics",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The speed at which the pilot starts raising the nose wheel off the runway during take-off.",
+    "es": "Velocidad a la que el piloto empieza a levantar la rueda de morro de la pista durante el despegue."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The speed at which the pilot pulls back to lift the nose.",
+    "es": "La velocidad a la que el piloto tira para levantar el morro."
+  },
+  "example": {
+    "en": "\"Rotate\" is called at VR.",
+    "es": "«Rotación» se anuncia al alcanzar VR."
+  },
+  "pronunciation": {
+    "en": "VR (vee-r)",
+    "es": "uve-r"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "v1",
+    "v2",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-part-25",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

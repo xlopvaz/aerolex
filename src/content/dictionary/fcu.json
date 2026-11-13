@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FCU",
+    "es": "FCU"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Flight control unit",
+    "es": "Unidad de control de vuelo"
+  },
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "On Airbus aircraft, the panel on the glareshield used to select autopilot and autothrust targets and modes, such as speed, heading and altitude.",
+    "es": "En los aviones Airbus, el panel de la visera con el que se seleccionan los objetivos y modos del piloto automático y del empuje automático, como velocidad, rumbo y altitud."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Airbus's autopilot control panel.",
+    "es": "El panel de control del piloto automático de Airbus."
+  },
+  "example": {
+    "en": "The pilot set FL350 on the FCU.",
+    "es": "El piloto seleccionó FL350 en el FCU."
+  },
+  "pronunciation": {
+    "en": "F-C-U (ef-see-you)",
+    "es": "efe-ce-u"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mcp",
+    "fms"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

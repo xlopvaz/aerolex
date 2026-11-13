@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MCP",
+    "es": "MCP"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Mode control panel",
+    "es": "Panel de control de modos"
+  },
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "On Boeing aircraft, the glareshield panel used to select autopilot, flight director and autothrottle modes and targets.",
+    "es": "En los aviones Boeing, el panel de la visera con el que se seleccionan los modos y objetivos del piloto automático, el director de vuelo y el autoacelerador."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Boeing's autopilot control panel.",
+    "es": "El panel de control del piloto automático de Boeing."
+  },
+  "example": {
+    "en": "He selected heading 090 on the MCP.",
+    "es": "Seleccionó rumbo 090 en el MCP."
+  },
+  "pronunciation": {
+    "en": "M-C-P (em-see-pee)",
+    "es": "eme-ce-pe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "fcu",
+    "fms"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

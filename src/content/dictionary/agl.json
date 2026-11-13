@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AGL",
+    "es": "AGL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Above ground level",
+    "es": "Sobre el nivel del suelo"
+  },
+  "categories": [
+    "navigation",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Height measured from the ground or terrain directly below the aircraft.",
+    "es": "Altura medida desde el suelo o el terreno que hay justo debajo de la aeronave."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How high you are above the ground under you.",
+    "es": "A qué altura estás del suelo que tienes debajo."
+  },
+  "example": {
+    "en": "The radio altimeter shows height AGL: \"500 feet\".",
+    "es": "El radioaltímetro indica la altura AGL: «500 pies»."
+  },
+  "pronunciation": {
+    "en": "A-G-L (ay-jee-el)",
+    "es": "a-ge-ele"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "amsl",
+    "altimeter"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

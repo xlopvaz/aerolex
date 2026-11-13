@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ECAM",
+    "es": "ECAM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Electronic centralised aircraft monitoring",
+    "es": "Supervisión electrónica centralizada de la aeronave"
+  },
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The Airbus system that monitors aircraft systems, shows engine and system information on two screens and displays failure messages with the actions the crew must take.",
+    "es": "Sistema de Airbus que supervisa los sistemas del avión, muestra información de motores y sistemas en dos pantallas y presenta los mensajes de avería con las acciones que debe realizar la tripulación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Airbus's screens that show the systems and tell the crew what to do when something fails.",
+    "es": "Las pantallas de Airbus que muestran los sistemas y dicen a la tripulación qué hacer cuando algo falla."
+  },
+  "example": {
+    "en": "The crew followed the ECAM actions for the engine fire.",
+    "es": "La tripulación siguió las acciones del ECAM para el fuego de motor."
+  },
+  "pronunciation": {
+    "en": "EE-kam",
+    "es": "i-kam"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "eicas",
+    "flight-deck"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

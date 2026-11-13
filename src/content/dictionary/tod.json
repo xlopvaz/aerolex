@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TOD",
+    "es": "TOD"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Top of descent",
+    "es": "Punto de inicio del descenso"
+  },
+  "categories": [
+    "flight-operations",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The point on the planned route where the aircraft leaves the cruise level and starts its descent towards the destination.",
+    "es": "Punto de la ruta prevista en el que la aeronave abandona el nivel de crucero y empieza el descenso hacia el destino."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Where the cruise ends and the descent begins.",
+    "es": "Donde termina el crucero y empieza el descenso."
+  },
+  "example": {
+    "en": "The FMS shows the TOD 120 NM before the airport.",
+    "es": "El FMS muestra el TOD a 120 NM del aeropuerto."
+  },
+  "pronunciation": {
+    "en": "T-O-D (tee-oh-dee)",
+    "es": "te-o-de"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "fms",
+    "flight-level"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

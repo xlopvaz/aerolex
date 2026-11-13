@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "KT",
+    "es": "KT"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Knot",
+    "es": "Nudo"
+  },
+  "categories": [
+    "navigation",
+    "meteorology"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Unit of speed equal to one nautical mile per hour (1.852 km/h), used for aircraft speed and wind speed.",
+    "es": "Unidad de velocidad igual a una milla náutica por hora (1,852 km/h), usada para la velocidad de las aeronaves y del viento."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Aviation speed: one nautical mile per hour.",
+    "es": "La velocidad en aviación: una milla náutica por hora."
+  },
+  "example": {
+    "en": "Wind 270 degrees, 15 knots (27015KT).",
+    "es": "Viento de 270 grados y 15 nudos (27015KT)."
+  },
+  "pronunciation": {
+    "en": "K-T (kay-tee); \"knots\"",
+    "es": "ka-te; «nudos»"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "nm",
+    "ias",
+    "metar"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

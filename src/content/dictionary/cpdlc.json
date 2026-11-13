@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CPDLC",
+    "es": "CPDLC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Controller–pilot data link communications",
+    "es": "Comunicaciones por enlace de datos controlador-piloto"
+  },
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A means of communication between controller and pilot that uses data link for ATC communications instead of voice.",
+    "es": "Medio de comunicación entre controlador y piloto que utiliza el enlace de datos en lugar de la voz para las comunicaciones ATC."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Clearances sent as text messages instead of by radio.",
+    "es": "Autorizaciones enviadas como mensajes de texto en lugar de por radio."
+  },
+  "example": {
+    "en": "Over the ocean, the climb clearance came by CPDLC.",
+    "es": "Sobre el océano, la autorización de ascenso llegó por CPDLC."
+  },
+  "pronunciation": {
+    "en": "C-P-D-L-C (see-pee-dee-el-see)",
+    "es": "ce-pe-de-ele-ce"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "acars",
+    "atc",
+    "clearance"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

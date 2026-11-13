@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EICAS",
+    "es": "EICAS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Engine indicating and crew alerting system",
+    "es": "Sistema de indicación de motores y alerta a la tripulación"
+  },
+  "categories": [
+    "cockpit",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An integrated display system, used mainly on Boeing aircraft, that shows engine parameters and alerts the crew to system failures with warning, caution and advisory messages.",
+    "es": "Sistema integrado de pantallas, usado sobre todo en aviones Boeing, que muestra los parámetros de los motores y alerta a la tripulación de averías con mensajes de aviso, precaución e información."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The Boeing screen that shows the engines and tells the pilots what has failed.",
+    "es": "La pantalla de Boeing que muestra los motores y dice a los pilotos qué ha fallado."
+  },
+  "example": {
+    "en": "An EICAS message warned of low hydraulic pressure.",
+    "es": "Un mensaje del EICAS avisó de baja presión hidráulica."
+  },
+  "pronunciation": {
+    "en": "AY-kas",
+    "es": "ei-kas"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ecam",
+    "flight-deck"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

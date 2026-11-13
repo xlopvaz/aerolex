@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ACARS",
+    "es": "ACARS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Aircraft communications addressing and reporting system",
+    "es": "Sistema de direccionamiento y notificación para comunicaciones de aeronaves"
+  },
+  "categories": [
+    "aircraft-systems",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A digital data link that sends short text messages between aircraft and ground stations, for example operational, maintenance or weather messages.",
+    "es": "Enlace de datos digital que envía mensajes de texto cortos entre la aeronave y las estaciones de tierra, por ejemplo mensajes operacionales, de mantenimiento o meteorológicos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Text messaging between the aircraft and the airline.",
+    "es": "Mensajería de texto entre el avión y la aerolínea."
+  },
+  "example": {
+    "en": "The latest weather for the destination arrived by ACARS.",
+    "es": "El último parte del destino llegó por ACARS."
+  },
+  "pronunciation": {
+    "en": "AY-kars",
+    "es": "ei-kars"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cpdlc",
+    "selcal"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
