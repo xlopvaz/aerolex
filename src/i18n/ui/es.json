@@ -28,7 +28,8 @@
     "tools": "Herramientas",
     "metarDecoder": "Decodificador METAR",
     "tafDecoder": "Decodificador TAF",
-    "practice": "Práctica METAR y TAF"
+    "practice": "Práctica METAR y TAF",
+    "converter": "Conversor de unidades"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -647,6 +648,10 @@
       "practice": {
         "title": "Práctica METAR y TAF",
         "text": "Cuatro niveles de preguntas generadas al momento, de identificar un grupo a interpretar un TAF."
+      },
+      "converter": {
+        "title": "Conversor de unidades",
+        "text": "Velocidad, distancia, altitud, masa, presión, combustible y temperatura, con las definiciones exactas."
       }
     }
   },
@@ -852,5 +857,53 @@
       "tafPrevailing": "Para la condición general se aplican la base, los FM y los BECMG ya terminados; los TEMPO y PROB son temporales o posibles."
     },
     "locale": "es-ES"
+  },
+  "converter": {
+    "metaTitle": "Conversor de unidades aeronáuticas · AeroLex",
+    "metaDescription": "Convierte velocidad, distancia, altitud, masa, presión, volumen y temperatura entre las unidades que se usan en aviación.",
+    "title": "Conversor de unidades",
+    "lead": "Las unidades que más se mezclan en aviación, convertidas al instante: escribe un valor en cualquier campo y se actualizan los demás.",
+    "categories": {
+      "speed": "Velocidad",
+      "distance": "Distancia",
+      "altitude": "Altitud y altura",
+      "mass": "Masa",
+      "pressure": "Presión",
+      "volume": "Volumen de combustible",
+      "temperature": "Temperatura"
+    },
+    "units": {
+      "kt": "Nudos (kt)",
+      "kmh": "Kilómetros por hora (km/h)",
+      "mph": "Millas por hora (mph)",
+      "mps": "Metros por segundo (m/s)",
+      "nm": "Millas náuticas (NM)",
+      "km": "Kilómetros (km)",
+      "sm": "Millas terrestres (SM)",
+      "m": "Metros (m)",
+      "ft": "Pies (ft)",
+      "kg": "Kilogramos (kg)",
+      "lb": "Libras (lb)",
+      "t": "Toneladas (t)",
+      "hpa": "Hectopascales (hPa)",
+      "inhg": "Pulgadas de mercurio (inHg)",
+      "mmhg": "Milímetros de mercurio (mmHg)",
+      "l": "Litros (L)",
+      "usgal": "Galones EE. UU. (US gal)",
+      "impgal": "Galones imperiales (imp gal)",
+      "c": "Grados Celsius (°C)",
+      "f": "Grados Fahrenheit (°F)",
+      "k": "Kelvin (K)"
+    },
+    "notes": {
+      "speed": "1 kt = 1 NM por hora = 1,852 km/h exactos.",
+      "distance": "1 NM = 1852 m exactos; 1 SM = 1609,344 m.",
+      "altitude": "1 ft = 0,3048 m exactos (pie internacional).",
+      "mass": "1 lb = 0,45359237 kg exactos.",
+      "pressure": "1 inHg = 33,8639 hPa; la ISA al nivel del mar es 1013,25 hPa = 29,92 inHg.",
+      "volume": "Volumen, no masa: para pasar a kg hace falta la densidad del combustible, que cambia con la temperatura.",
+      "temperature": "°F = °C × 9/5 + 32; K = °C + 273,15."
+    },
+    "invalid": "Introduce un número válido."
   }
 }

@@ -15,6 +15,7 @@ export const ROUTES = {
   tools:      { slug: { es: 'herramientas',   en: 'tools' },        nav: ['main', 'mobile'], icon: 'flask-conical' },
   metarDecoder: { slug: { es: 'herramientas/decodificador-metar', en: 'tools/metar-decoder' }, nav: [], icon: 'cloud-sun' },
   tafDecoder: { slug: { es: 'herramientas/decodificador-taf', en: 'tools/taf-decoder' }, nav: [], icon: 'calendar-clock' },
+  converter:  { slug: { es: 'herramientas/conversor', en: 'tools/converter' }, nav: [], icon: 'arrow-left-right' },
   practice:   { slug: { es: 'herramientas/practica-metar-taf', en: 'tools/metar-taf-practice' }, nav: [], icon: 'target' },
   compare:    { slug: { es: 'hangar/comparador', en: 'hangar/compare' }, nav: [], icon: 'columns-3' },
   acronyms:   { slug: { es: 'diccionario/acronimos', en: 'dictionary/acronyms' }, nav: [], icon: 'case-upper' },

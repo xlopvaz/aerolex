@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(3);
+    await expect(page.locator('[data-tool]')).toHaveCount(4);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -79,5 +79,28 @@ test.describe('METAR/TAF practice', () => {
     await page.goto('en/tools/metar-taf-practice/');
     await page.locator('[data-level="4"]').click();
     await expect(page.locator('[data-saved]')).toContainText('Your history at this level:');
+  });
+});
+
+test.describe('Unit converter', () => {
+  test('converts in every direction and rejects invalid input', async ({ page }) => {
+    await page.goto('en/tools/converter/');
+    const speed = page.locator('[data-cat="speed"]');
+    await speed.locator('[data-unit="kt"]').fill('250');
+    await expect(speed.locator('[data-unit="kmh"]')).toHaveValue('463');
+    const pressure = page.locator('[data-cat="pressure"]');
+    await pressure.locator('[data-unit="inhg"]').fill('29.92');
+    await expect(pressure.locator('[data-unit="hpa"]')).toHaveValue('1013.2');
+    const temp = page.locator('[data-cat="temperature"]');
+    await temp.locator('[data-unit="f"]').fill('-40');
+    await expect(temp.locator('[data-unit="c"]')).toHaveValue('-40');
+    await temp.locator('[data-unit="c"]').fill('abc');
+    await expect(temp.locator('[data-error]')).toHaveText('Enter a valid number.');
+  });
+  test('accepts a decimal comma in Spanish', async ({ page }) => {
+    await page.goto('es/herramientas/conversor/');
+    const alt = page.locator('[data-cat="altitude"]');
+    await alt.locator('[data-unit="m"]').fill('304,8');
+    await expect(alt.locator('[data-unit="ft"]')).toHaveValue('1000');
   });
 });

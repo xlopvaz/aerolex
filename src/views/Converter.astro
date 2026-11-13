@@ -1,0 +1,92 @@
+---
+/** Unit converter (Phase 4). Every field converts to all the others in its category. */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import { href, useT } from '../i18n/index.js';
+import { CATEGORIES, convertAll, displayDecimals } from '../lib/units/converter.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const DEFAULTS: Record<string, [string, number]> = { speed: ['kt', 100], distance: ['nm', 100], altitude: ['ft', 10000], mass: ['t', 70], pressure: ['hpa', 1013.25], volume: ['l', 1000], temperature: ['c', 15] };
+const fmt = (v: number) => new Intl.NumberFormat(lang, { maximumFractionDigits: displayDecimals(v), useGrouping: false }).format(v);
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('converter.metaTitle')} description={tr('converter.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.converter') }]} />
+      <h1>{tr('converter.title')}</h1>
+      <p class="lead">{tr('converter.lead')}</p>
+    </div>
+  </header>
+  <div class="container cv" data-converter data-lang={lang} data-invalid={tr('converter.invalid')}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+    <div class="cv-grid">
+      {Object.keys(CATEGORIES).map((cat) => {
+        const [from, value] = DEFAULTS[cat];
+        const values = convertAll(cat as any, from, value);
+        return (
+          <fieldset class="cv-card" data-cat={cat}>
+            <legend>{tr(`converter.categories.${cat}`)}</legend>
+            {Object.keys(CATEGORIES[cat as keyof typeof CATEGORIES].units).map((u) => (
+              <label class="cv-field">
+                <span>{tr(`converter.units.${u}`)}</span>
+                <input type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-unit={u} value={fmt(values[u])} />
+              </label>
+            ))}
+            <p class="cv-note">{tr(`converter.notes.${cat}`)}</p>
+            <p class="cv-error" role="alert" data-error></p>
+          </fieldset>
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .cv { padding-block: var(--space-6) var(--space-9); display: grid; gap: var(--space-6); }
+  .cv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4); }
+  .cv-card { margin: 0; padding: var(--space-4) var(--space-5) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); display: grid; gap: var(--space-3); align-content: start; }
+  .cv-card legend { padding: 0 var(--space-2); font-family: var(--font-display); font-weight: 600; font-size: var(--text-lg, 1.15rem); }
+  .cv-field { display: grid; gap: var(--space-1); font-size: var(--text-sm); color: var(--text-muted); }
+  .cv-field input { padding: var(--space-2) var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--bg); color: var(--text); font: 600 1.05rem var(--font-mono); }
+  .cv-field input:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 1px; }
+  .cv-field input[aria-invalid='true'] { border-color: var(--red); }
+  .cv-note { margin: 0; color: var(--text-muted); font-size: var(--text-sm); }
+  .cv-error { margin: 0; color: var(--red); font-size: var(--text-sm); font-weight: 600; }
+  .cv-error:empty { display: none; }
+</style>
+
+<script>
+  import { convertAll, displayDecimals } from '../lib/units/converter.js';
+
+  const root = document.querySelector<HTMLElement>('[data-converter]');
+  if (root) {
+    const lang = root.dataset.lang!;
+    const invalid = root.dataset.invalid!;
+    const fmt = (v: number) => new Intl.NumberFormat(lang, { maximumFractionDigits: displayDecimals(v), useGrouping: false }).format(v);
+    const parse = (s: string) => Number(s.trim().replace(/\s/g, '').replace(',', '.'));
+    root.querySelectorAll<HTMLFieldSetElement>('[data-cat]').forEach((card) => {
+      const cat = card.dataset.cat!;
+      const error = card.querySelector<HTMLElement>('[data-error]')!;
+      card.addEventListener('input', (e) => {
+        const input = e.target as HTMLInputElement;
+        if (!input.dataset.unit) return;
+        if (input.value.trim() === '' || input.value.trim() === '-') return;
+        const v = parse(input.value);
+        if (!Number.isFinite(v)) {
+          input.setAttribute('aria-invalid', 'true');
+          error.textContent = invalid;
+          return;
+        }
+        input.removeAttribute('aria-invalid');
+        error.textContent = '';
+        const all = convertAll(cat as any, input.dataset.unit, v);
+        card.querySelectorAll<HTMLInputElement>('[data-unit]').forEach((other) => {
+          if (other !== input) other.value = fmt(all[other.dataset.unit!]);
+        });
+      });
+    });
+  }
+</script>
