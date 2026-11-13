@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(5);
+    await expect(page.locator('[data-tool]')).toHaveCount(6);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -122,5 +122,25 @@ test.describe('Live METAR/TAF', () => {
     await first.getByRole('link', { name: 'Descodificar' }).click();
     await expect(page).toHaveURL(/decodificador-metar\/\?m=.+&live=1/);
     await expect(page.locator('[data-source]')).toHaveText('En directo (NOAA/NWS)');
+  });
+});
+
+test.describe('Airport finder', () => {
+  test('finds airports by code and city, in both languages', async ({ page }) => {
+    await page.goto('es/herramientas/aeropuertos/');
+    const q = page.locator('[data-q]');
+    await q.fill('LEST');
+    const first = page.locator('[data-results] tbody tr').first();
+    await expect(first).toContainText('SCQ');
+    await expect(first).toContainText('España');
+    await q.fill('coruña');
+    await expect(page.locator('[data-results]')).toContainText('LCG');
+    await page.locator('[data-results] summary').first().click();
+    await expect(page.locator('[data-results] details').first()).toContainText('Región OACI (L)');
+    await q.fill('zzzzzz');
+    await expect(page.locator('[data-status]')).toHaveText('No se ha encontrado ningún aeropuerto.');
+    await page.goto('en/tools/airports/?q=JFK');
+    await expect(page.locator('[data-results] tbody tr').first()).toContainText('KJFK');
+    await expect(page.locator('[data-results] tbody tr').first()).toContainText('United States');
   });
 });

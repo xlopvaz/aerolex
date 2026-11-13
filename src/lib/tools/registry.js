@@ -8,4 +8,5 @@ export const TOOLS = [
   { key: 'liveWeather', icon: 'radio-tower' },
   { key: 'practice', icon: 'target' },
   { key: 'converter', icon: 'arrow-left-right' },
+  { key: 'airportFinder', icon: 'map-pin' },
 ];
