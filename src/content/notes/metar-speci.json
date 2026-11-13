@@ -1,0 +1,271 @@
+{
+  "course": "metar-speci",
+  "lessons": [
+    {
+      "lesson": "what-is-metar",
+      "key": {
+        "es": "El METAR es el tiempo observado ahora; el SPECI, el mismo formato emitido entre dos METAR cuando el tiempo cambia de forma significativa.",
+        "en": "A METAR is the weather observed now; a SPECI has the same format and is issued between two METARs when the weather changes significantly."
+      },
+      "points": [
+        {
+          "es": "Informe ordinario de aeródromo, normalmente cada 30 o 60 minutos, en código del Anexo 3 de la OACI y del Manual de claves de la OMM.",
+          "en": "Routine aerodrome report, normally every 30 or 60 minutes, coded according to ICAO Annex 3 and the WMO Manual on Codes."
+        },
+        {
+          "es": "Lo usan pilotos y despachadores para decidir, y los controladores para preparar la información, como el ATIS.",
+          "en": "Pilots and dispatchers use it to make decisions; controllers use it to prepare information such as the ATIS."
+        },
+        {
+          "es": "El orden de los grupos nunca cambia: tipo, lugar, hora, viento, visibilidad/RVR, tiempo, nubes, T/Td, QNH, suplementaria y tendencia.",
+          "en": "The group order never changes: type, location, time, wind, visibility/RVR, weather, cloud, T/Td, QNH, supplementary and trend."
+        },
+        {
+          "es": "Si un elemento no tiene nada que notificar, su grupo no aparece.",
+          "en": "If an element has nothing to report, its group is omitted."
+        },
+        {
+          "es": "El METAR observa; el TAF pronostica. Todas las horas, en UTC.",
+          "en": "The METAR observes; the TAF forecasts. All times are UTC."
+        }
+      ]
+    },
+    {
+      "lesson": "identification-and-time",
+      "key": {
+        "es": "Indicador OACI de 4 letras + DDHHMMZ: día, hora y minutos en UTC; sin mes ni año.",
+        "en": "4-letter ICAO indicator + DDHHMMZ: day, hours and minutes in UTC; no month or year."
+      },
+      "points": [
+        {
+          "es": "El indicador de lugar es el OACI (LEMD), no el IATA de la tarjeta de embarque (MAD).",
+          "en": "The location indicator is the ICAO one (LEMD), not the IATA code on the boarding pass (MAD)."
+        },
+        {
+          "es": "Las dos primeras letras suelen indicar el país: LE España, LF Francia, EG Reino Unido; K en EE. UU. contiguos.",
+          "en": "The first two letters usually show the country: LE Spain, LF France, EG United Kingdom; K in the contiguous USA."
+        },
+        {
+          "es": "121830Z = día 12 a las 18:30 UTC (19:30 en la península en invierno, 20:30 en verano).",
+          "en": "121830Z = day 12 at 18:30 UTC (19:30 mainland Spain in winter, 20:30 in summer)."
+        },
+        {
+          "es": "AUTO: totalmente automático. COR: informe corregido. NIL: informe que falta.",
+          "en": "AUTO: fully automatic. COR: corrected report. NIL: missing report."
+        },
+        {
+          "es": "Mira siempre la hora primero: un SPECI posterior manda sobre el METAR anterior.",
+          "en": "Always check the time first: a later SPECI overrides the previous METAR."
+        }
+      ]
+    },
+    {
+      "lesson": "wind",
+      "key": {
+        "es": "dddffKT: dirección desde la que sopla (grados verdaderos) y velocidad media en nudos.",
+        "en": "dddffKT: direction the wind blows from (degrees true) and mean speed in knots."
+      },
+      "points": [
+        {
+          "es": "24012KT = viento de 240° (suroeste) a 12 kt; promedios de los 10 minutos anteriores (OACI).",
+          "en": "24012KT = wind from 240° (south-west) at 12 kt; averages over the previous 10 minutes (ICAO)."
+        },
+        {
+          "es": "G = rachas, cuando superan la media en 10 kt o más: 03015G27KT.",
+          "en": "G = gusts, when they exceed the mean by 10 kt or more: 03015G27KT."
+        },
+        {
+          "es": "dddVddd = dirección variable entre dos extremos (variación de 60° a menos de 180°, con 3 kt o más).",
+          "en": "dddVddd = direction varying between two extremes (60° to under 180°, at 3 kt or more)."
+        },
+        {
+          "es": "VRB = variable (menos de 3 kt con 60° o más, o 180° o más). 00000KT = calma.",
+          "en": "VRB = variable (under 3 kt with 60° or more, or 180° or more). 00000KT = calm."
+        },
+        {
+          "es": "El METAR da el viento respecto al norte verdadero; la torre y el ATIS, respecto al magnético. En EE. UU.: media de 2 minutos.",
+          "en": "The METAR gives wind relative to true north; the tower and ATIS, relative to magnetic. In the USA: 2-minute mean."
+        }
+      ]
+    },
+    {
+      "lesson": "visibility-and-rvr",
+      "key": {
+        "es": "Visibilidad en metros con 4 cifras (9999 = 10 km o más); RVR por pista cuando la visibilidad o el RVR bajan de 1500 m.",
+        "en": "Visibility in metres with 4 digits (9999 = 10 km or more); RVR per runway when visibility or RVR is below 1,500 m."
+      },
+      "points": [
+        {
+          "es": "La visibilidad predominante es la que se alcanza en al menos la mitad del horizonte. 0000 = menos de 50 m.",
+          "en": "Prevailing visibility is reached in at least half of the horizon. 0000 = less than 50 m."
+        },
+        {
+          "es": "Puede añadirse la mínima con dirección (1400SW); las automáticas sin dirección ponen NDV.",
+          "en": "The minimum visibility with direction may be added (1400SW); automatic stations without direction add NDV."
+        },
+        {
+          "es": "RVR: R + pista / metros + tendencia: R35/1100U (U sube, D baja, N sin cambios).",
+          "en": "RVR: R + runway / metres + tendency: R35/1100U (U up, D down, N no change)."
+        },
+        {
+          "es": "P = mayor que el máximo medible; M = menor que el mínimo; V = variación entre dos valores.",
+          "en": "P = above the highest measurable value; M = below the lowest; V = variation between two values."
+        },
+        {
+          "es": "La visibilidad es del aeródromo; el RVR, de una pista concreta. En EE. UU.: millas terrestres (10SM) y RVR en pies.",
+          "en": "Visibility is for the aerodrome; RVR, for a specific runway. In the USA: statute miles (10SM) and RVR in feet."
+        }
+      ]
+    },
+    {
+      "lesson": "present-weather",
+      "key": {
+        "es": "Intensidad o proximidad + descriptor + fenómeno: -RA, +TSRA, FZFG, VCSH.",
+        "en": "Intensity or proximity + descriptor + phenomenon: -RA, +TSRA, FZFG, VCSH."
+      },
+      "points": [
+        {
+          "es": "- débil, sin signo moderado, + fuerte; VC = en las proximidades (unos 8–16 km).",
+          "en": "- light, no sign moderate, + heavy; VC = in the vicinity (about 8–16 km)."
+        },
+        {
+          "es": "Descriptores: MI baja, BC bancos, SH chubascos, TS tormenta, FZ engelante, BL/DR ventisca.",
+          "en": "Descriptors: MI shallow, BC patches, SH showers, TS thunderstorm, FZ freezing, BL/DR blowing/drifting."
+        },
+        {
+          "es": "Fenómenos frecuentes: DZ llovizna, RA lluvia, SN nieve, GR/GS granizo, BR neblina, FG niebla, HZ calima.",
+          "en": "Common phenomena: DZ drizzle, RA rain, SN snow, GR/GS hail, BR mist, FG fog, HZ haze."
+        },
+        {
+          "es": "BR con visibilidad entre 1000 y 5000 m; FG por debajo de 1000 m.",
+          "en": "BR with visibility between 1,000 and 5,000 m; FG below 1,000 m."
+        },
+        {
+          "es": "Peligrosos: TS, +TSRA, GR, SQ, FC, FZRA/FZDZ y VA. Si no hay fenómeno, el grupo no aparece.",
+          "en": "Hazardous: TS, +TSRA, GR, SQ, FC, FZRA/FZDZ and VA. With no phenomenon, the group is omitted."
+        }
+      ]
+    },
+    {
+      "lesson": "clouds",
+      "key": {
+        "es": "Cantidad en octas (FEW, SCT, BKN, OVC) + base en cientos de pies sobre el aeródromo; el techo es la capa BKN u OVC más baja.",
+        "en": "Amount in oktas (FEW, SCT, BKN, OVC) + base in hundreds of feet above the aerodrome; the ceiling is the lowest BKN or OVC layer."
+      },
+      "points": [
+        {
+          "es": "FEW 1–2 octas, SCT 3–4, BKN 5–7, OVC 8.",
+          "en": "FEW 1–2 oktas, SCT 3–4, BKN 5–7, OVC 8."
+        },
+        {
+          "es": "SCT030 = 3000 ft; BKN008 = 800 ft. Las capas van de abajo arriba.",
+          "en": "SCT030 = 3,000 ft; BKN008 = 800 ft. Layers go from lowest to highest."
+        },
+        {
+          "es": "Solo se indica el tipo de CB (cumulonimbo) y TCU (cúmulo en torre).",
+          "en": "Only two cloud types are given: CB (cumulonimbus) and TCU (towering cumulus)."
+        },
+        {
+          "es": "NSC: sin nubes significativas; NCD: no detectadas (automática); VV: cielo oscurecido con visibilidad vertical.",
+          "en": "NSC: no significant cloud; NCD: none detected (automatic); VV: sky obscured, with vertical visibility."
+        },
+        {
+          "es": "CAVOK: 10 km o más, sin nubes significativas ni CB/TCU y sin fenómenos; no es cielo despejado.",
+          "en": "CAVOK: 10 km or more, no significant cloud or CB/TCU and no weather; it does not mean a clear sky."
+        }
+      ]
+    },
+    {
+      "lesson": "temperature-and-pressure",
+      "key": {
+        "es": "TT/TdTd en °C (M = bajo cero) y QNH en hectopascales: Q1013.",
+        "en": "TT/TdTd in °C (M = minus) and QNH in hectopascals: Q1013."
+      },
+      "points": [
+        {
+          "es": "02/M01 = 2 °C y punto de rocío −1 °C.",
+          "en": "02/M01 = 2 °C and dew point −1 °C."
+        },
+        {
+          "es": "Temperatura y punto de rocío muy próximos anuncian posible niebla o nubes bajas.",
+          "en": "Temperature and dew point very close together warn of possible fog or low cloud."
+        },
+        {
+          "es": "Con calor el aire es menos denso: los motores rinden menos y se necesita más pista.",
+          "en": "Hot air is less dense: engines perform less well and more runway is needed."
+        },
+        {
+          "es": "QNH: ajuste para que el altímetro indique la altitud sobre el nivel medio del mar; se redondea por defecto. En EE. UU., A2992 en pulgadas.",
+          "en": "QNH: the setting that makes the altimeter read altitude above mean sea level; rounded down. In the USA, A2992 in inches."
+        },
+        {
+          "es": "De alta a baja presión sin actualizar el QNH, el altímetro marca más altura de la real. Cerca del mar, 1 hPa ≈ 27–30 ft.",
+          "en": "Flying from high to low pressure without updating QNH, the altimeter reads higher than you are. Near sea level, 1 hPa ≈ 27–30 ft."
+        }
+      ]
+    },
+    {
+      "lesson": "supplementary-and-trend",
+      "key": {
+        "es": "RE = tiempo reciente; WS = cizalladura; tendencia para 2 horas: NOSIG, BECMG o TEMPO.",
+        "en": "RE = recent weather; WS = wind shear; 2-hour trend: NOSIG, BECMG or TEMPO."
+      },
+      "points": [
+        {
+          "es": "RERA, RETSRA: fenómenos observados desde el informe anterior que ya no están presentes (pista posiblemente mojada).",
+          "en": "RERA, RETSRA: phenomena seen since the previous report that have now stopped (runway possibly wet)."
+        },
+        {
+          "es": "WS R24 o WS ALL RWY: cizalladura en la pista indicada o en todas.",
+          "en": "WS R24 or WS ALL RWY: wind shear on that runway or on all runways."
+        },
+        {
+          "es": "BECMG = cambio que se alcanza y se mantiene; TEMPO = fluctuaciones de menos de una hora cada vez.",
+          "en": "BECMG = a change that is reached and lasts; TEMPO = fluctuations lasting under an hour each time."
+        },
+        {
+          "es": "FM, TL y AT + hora: desde, hasta y a las. NSW: fin del tiempo significativo.",
+          "en": "FM, TL and AT + time: from, until and at. NSW: no significant weather."
+        },
+        {
+          "es": "EE. UU. no usa tendencia: termina con RMK (observaciones), por ejemplo AO2 o SLP199.",
+          "en": "The USA has no trend: reports end with RMK (remarks), for example AO2 or SLP199."
+        }
+      ]
+    },
+    {
+      "lesson": "full-decode",
+      "key": {
+        "es": "Método: qué/dónde/cuándo → viento → visibilidad y RVR → tiempo → nubes y techo → T/Td → QNH → suplementaria y tendencia.",
+        "en": "Method: what/where/when → wind → visibility and RVR → weather → cloud and ceiling → T/Td → QNH → supplementary and trend."
+      },
+      "points": [
+        {
+          "es": "Empieza comprobando que el informe es reciente.",
+          "en": "Start by checking that the report is recent."
+        },
+        {
+          "es": "Busca fenómenos peligrosos (TS, CB, FZ) y dónde está el techo.",
+          "en": "Look for hazardous weather (TS, CB, FZ) and where the ceiling is."
+        },
+        {
+          "es": "T y Td iguales (12/12, 05/05) = aire saturado: niebla o nubes bajas.",
+          "en": "Equal T and Td (12/12, 05/05) = saturated air: fog or low cloud."
+        },
+        {
+          "es": "Un SPECI suele indicar un cambio importante, como una tormenta que empieza.",
+          "en": "A SPECI usually signals an important change, such as a thunderstorm starting."
+        },
+        {
+          "es": "En informes de EE. UU., atención a millas (SM), pulgadas (A3012) y la sección RMK.",
+          "en": "In US reports, watch for miles (SM), inches (A3012) and the RMK section."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

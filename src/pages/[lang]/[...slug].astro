@@ -40,6 +40,8 @@ import Sources from '../../views/Sources.astro';
 import Review from '../../views/Review.astro';
 import AirportDiagram from '../../views/AirportDiagram.astro';
 import Cockpit from '../../views/Cockpit.astro';
+import AcademyNotes from '../../views/AcademyNotes.astro';
+import CourseNotes from '../../views/CourseNotes.astro';
 
 const VIEWS = {
   home: Home,
@@ -72,12 +74,15 @@ const VIEWS = {
   review: Review,
   airportDiagram: AirportDiagram,
   cockpit: Cockpit,
+  academyNotes: AcademyNotes,
+  courseNotes: CourseNotes,
 };
 
 export async function getStaticPaths() {
   const entries = await getCollection('dictionary');
   const courses = await getCollection('courses');
   const aircraft = await getCollection('aircraft');
+  const notes = await getCollection('notes');
   return LOCALES.flatMap((lang) => [
     ...routeKeys().map((routeKey) => ({
       params: { lang, slug: ROUTES[routeKey].slug[lang] || undefined },
@@ -97,6 +102,10 @@ export async function getStaticPaths() {
         props: { routeKey: 'lesson', courseId: course.id, lessonId },
       })),
     ]),
+    ...notes.map((n) => ({
+      params: { lang, slug: `${ROUTES.academyNotes.slug[lang]}/${n.data.course}` },
+      props: { routeKey: 'courseNotes', courseId: n.data.course },
+    })),
     ...aircraft.map((fam) => ({
       params: { lang, slug: `${ROUTES.hangar.slug[lang]}/${fam.id}` },
       props: { routeKey: 'aircraftFamily', familyId: fam.id },

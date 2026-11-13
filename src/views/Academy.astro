@@ -30,6 +30,11 @@ const paths = (await getCollection('paths'))
   </header>
 
   <div class="container academy">
+    <a class="academy__notes" href={href('academyNotes', lang)}>
+      <span class="academy__notes-icon"><Icon name="notebook-pen" size={24} /></span>
+      <span><strong>{tr('notes.title')}</strong><span>{tr('notes.cardText')}</span></span>
+      <Icon name="arrow-right" size={18} />
+    </a>
     <h2 class="academy__h">{tr('academy.pathsTitle')}</h2>
     {paths.map((p) => (
       <section class="path" aria-labelledby={`path-${p.id}`}>
@@ -104,4 +109,9 @@ const paths = (await getCollection('paths'))
   .course-card p { margin: 0; color: var(--text-muted); }
   .course-card__meta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
   @media (max-width: 640px) { .path__head { grid-template-columns: auto 1fr; } .path__count { grid-column: 1 / -1; } }
+  .academy__notes { display: flex; align-items: center; gap: var(--space-4); max-width: 640px; margin-bottom: var(--space-6); padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); color: var(--text); text-decoration: none; }
+  .academy__notes:hover { border-color: var(--primary); }
+  .academy__notes > span:nth-child(2) { display: grid; gap: 0.15rem; flex: 1; }
+  .academy__notes > span:nth-child(2) > span { color: var(--text-muted); font-size: var(--text-sm); }
+  .academy__notes-icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: var(--radius-md); background: var(--primary-soft); color: var(--primary); }
 </style>

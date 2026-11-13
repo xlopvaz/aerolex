@@ -1,0 +1,97 @@
+{
+  "course": "cabin-safety",
+  "lessons": [
+    {
+      "lesson": "pre-flight-and-boarding",
+      "key": {
+        "es": "Briefing → comprobaciones → embarque → cierre y armado de puertas → demostración → cabina asegurada.",
+        "en": "Briefing → checks → boarding → doors closed and armed → safety demonstration → cabin secured."
+      },
+      "points": [
+        {
+          "es": "Solo se lleva a cabina el equipaje que pueda estibarse de forma adecuada y segura (Reglamento 965/2012).",
+          "en": "Only baggage that can be stowed adequately and securely may be taken into the cabin (Regulation 965/2012)."
+        },
+        {
+          "es": "Equipaje en compartimentos o bajo el asiento delantero; nunca en el pasillo ni junto a una salida.",
+          "en": "Bags in the bins or under the seat in front; never in the aisle or next to an exit."
+        },
+        {
+          "es": "Cabina asegurada: pasajeros sentados con cinturón, respaldos rectos, mesas recogidas, pasillos y salidas libres.",
+          "en": "Cabin secured: passengers seated and belted, seatbacks upright, tables stowed, aisles and exits clear."
+        },
+        {
+          "es": "Además: galleys asegurados, carros bloqueados, lavabos desocupados y tripulación sentada con arnés.",
+          "en": "Also: galleys secured, carts locked, lavatories empty and crew seated with harnesses on."
+        },
+        {
+          "es": "El jefe de cabina lo comunica a la cabina de vuelo con la fórmula del operador.",
+          "en": "The senior cabin crew member reports it to the flight deck using the operator's wording."
+        }
+      ]
+    },
+    {
+      "lesson": "passenger-briefing",
+      "key": {
+        "es": "La demostración explica cinturones, salidas, oxígeno y, si procede, chalecos; la tarjeta de seguridad la completa.",
+        "en": "The demonstration covers seat belts, exits, oxygen and, where needed, life jackets; the safety card completes it."
+      },
+      "points": [
+        {
+          "es": "Base: AMC1 CAT.OP.MPA.170 de EASA; con oxígeno, apagar cualquier material de fumar.",
+          "en": "Basis: EASA AMC1 CAT.OP.MPA.170; with oxygen in use, put out any smoking materials."
+        },
+        {
+          "es": "La tarjeta de seguridad, preferentemente con pictogramas, muestra salidas, posición de impacto, oxígeno y chalecos.",
+          "en": "The safety card, preferably with pictograms, shows exits, brace position, oxygen and life jackets."
+        },
+        {
+          "es": "En las filas de salida no se sientan quienes necesiten ayuda, niños o pasajeros con bebés, ni quien no pueda o no quiera ayudar.",
+          "en": "Exit rows are not for people who need help, children or passengers with infants, or anyone unable or unwilling to help."
+        },
+        {
+          "es": "Quien se sienta junto a una salida recibe información adicional.",
+          "en": "Passengers in exit seats get an additional briefing."
+        },
+        {
+          "es": "En una despresurización, primero la propia máscara y después ayudar a otros.",
+          "en": "In a decompression, put on your own mask first, then help others."
+        }
+      ]
+    },
+    {
+      "lesson": "turbulence-in-the-cabin",
+      "key": {
+        "es": "La turbulencia puede llegar sin aviso y hiere sobre todo a la tripulación: cinturón siempre que se esté sentado y, si es fuerte, sentarse de inmediato.",
+        "en": "Turbulence can come without warning and mostly injures crew: belt on whenever seated and, if severe, sit down at once."
+      },
+      "points": [
+        {
+          "es": "Según la FAA, de 207 lesiones graves por turbulencia en EE. UU. desde 2009, 166 fueron de tripulantes.",
+          "en": "According to the FAA, of 207 serious turbulence injuries in the USA since 2009, 166 were crew members."
+        },
+        {
+          "es": "Ligera: se puede servir y caminar. Moderada: difícil. Fuerte: imposible y los objetos salen despedidos.",
+          "en": "Light: service and walking are possible. Moderate: difficult. Severe: impossible, and loose objects are thrown about."
+        },
+        {
+          "es": "La cabina de vuelo informa en el briefing de la turbulencia prevista y el servicio se planifica en consecuencia.",
+          "en": "The flight deck reports expected turbulence at the briefing and the service is planned accordingly."
+        },
+        {
+          "es": "Con la señal encendida: anuncio, comprobación de cinturones si es seguro, galleys y carros asegurados.",
+          "en": "With the sign on: announcement, belt checks if safe, galleys and carts secured."
+        },
+        {
+          "es": "Comunicación en ambos sentidos; la estela de otro avión también puede provocar sacudidas.",
+          "en": "Communication both ways; another aircraft's wake can also cause jolts."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

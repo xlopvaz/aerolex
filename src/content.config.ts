@@ -218,4 +218,18 @@ const photos = defineCollection({
   }),
 });
 
-export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft, timeline, weatherCodes, photos };
+/**
+ * Course notes ("apuntes"): the key idea and main points of every lesson, bilingual, for quick
+ * revision without quizzes. One file per course; lessons in the course's order. They summarise
+ * the lessons, so they rely on the lessons' sources and stay as drafts until reviewed.
+ */
+const notes = defineCollection({
+  loader: glob({ pattern: '*.json', base: './src/content/notes' }),
+  schema: z.object({
+    course: text,
+    lessons: z.array(z.object({ lesson: text, key: bilingual, points: z.array(bilingual).min(3).max(7) })).min(1),
+    review,
+  }),
+});
+
+export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft, timeline, weatherCodes, photos, notes };
