@@ -1,0 +1,164 @@
+---
+/**
+ * METAR & TAF practice (Phase 4): four levels of questions generated from the didactic library
+ * with the decoders. Results are saved by practice ID (store.practice), shared across languages.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import { href, t, useT } from '../i18n/index.js';
+import { createQuestion, rngFrom, LEVELS } from '../lib/practice/generate.js';
+import { tafMessages } from '../lib/taf/render.js';
+import { esc } from '../lib/metar/render.js';
+import library from '../content/samples/practice.json';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const M = tafMessages(t(lang, 'metar'), t(lang, 'taf'));
+const ui = t(lang, 'practice');
+const first = createQuestion(1, library, M, lang, ui, rngFrom(1));
+const messageHtml = (q: any) =>
+  q.highlight
+    ? `${esc(q.message.slice(0, q.highlight.start))}<mark>${esc(q.message.slice(q.highlight.start, q.highlight.end))}</mark>${esc(q.message.slice(q.highlight.end))}`
+    : esc(q.message);
+const payload = JSON.stringify({ M, ui, library: { metar: library.metar, taf: library.taf } });
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('practice.metaTitle')} description={tr('practice.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.practice') }]} />
+      <h1>{tr('practice.title')}</h1>
+      <p class="lead">{tr('practice.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container mt pr" data-practice data-lang={lang}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+
+    <fieldset class="pr-levels">
+      <legend>{tr('practice.levelsLabel')}</legend>
+      {LEVELS.map((l) => (
+        <button type="button" class="pr-level" data-level={l} aria-pressed={l === 1 ? 'true' : 'false'}>
+          <strong>{tr(`practice.levels.${l}.title`)}</strong>
+          <span>{tr(`practice.levels.${l}.text`)}</span>
+        </button>
+      ))}
+    </fieldset>
+
+    <section class="mt-card pr-q" aria-live="polite">
+      <Badge tone="amber" icon="book-open">{tr('practice.didactic')}</Badge>
+      <p class="mt-code mono pr-msg" data-msg set:html={messageHtml(first)} />
+      <h2 class="pr-prompt" id="pr-prompt" data-prompt>{first.prompt}</h2>
+      <div class="pr-options" role="group" aria-labelledby="pr-prompt" data-options>
+        {first.options.map((o) => <button type="button" class="pr-opt" data-opt={o.id}>{o.text}</button>)}
+      </div>
+      <div class="pr-feedback" data-feedback hidden></div>
+      <div class="pr-footer">
+        <Button size="sm" icon="arrow-right" data-next>{tr('practice.next')}</Button>
+        <span class="pr-score" data-score></span>
+      </div>
+      <p class="pr-saved" data-saved></p>
+    </section>
+    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+  </div>
+  <script type="application/json" id="pr-data" set:html={payload} />
+</BaseLayout>
+
+<style is:global>
+  .pr-levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: var(--space-3); border: 0; margin: 0; padding: 0; }
+  .pr-levels legend { font-weight: 600; margin-bottom: var(--space-3); padding: 0; }
+  .pr-level { display: grid; gap: var(--space-1); padding: var(--space-3) var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+  .pr-level span { color: var(--text-muted); font-size: var(--text-sm); }
+  .pr-level[aria-pressed='true'] { border-color: var(--primary); box-shadow: inset 0 0 0 1px var(--primary); background: var(--primary-soft); }
+  .pr-level:focus-visible, .pr-opt:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 2px; }
+  .pr-q { display: grid; gap: var(--space-3); justify-items: start; }
+  .pr-msg { width: 100%; display: block; }
+  .pr-msg mark { background: var(--amber-soft); color: var(--text); border-bottom: 3px solid var(--amber); padding: 0 0.2rem; }
+  .pr-prompt { font-size: var(--text-lg, 1.15rem); margin: 0; }
+  .pr-options { display: grid; gap: var(--space-2); width: 100%; }
+  .pr-opt { padding: var(--space-3) var(--space-4); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+  .pr-opt:hover:not(:disabled) { background: var(--surface-2); }
+  .pr-opt:disabled { cursor: default; }
+  .pr-opt.is-correct { border-color: var(--green); background: var(--green-soft); }
+  .pr-opt.is-wrong { border-color: var(--red); background: var(--red-soft); }
+  .pr-feedback { width: 100%; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); }
+  .pr-feedback strong { display: block; margin-bottom: var(--space-1); }
+  .pr-feedback p { margin: var(--space-1) 0 0; }
+  .pr-footer { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+  .pr-score, .pr-saved { color: var(--text-muted); font-size: var(--text-sm); margin: 0; }
+</style>
+
+<script>
+  import { createQuestion } from '../lib/practice/generate.js';
+  import { esc } from '../lib/metar/render.js';
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { recordPractice, practiceStats } from '../lib/practice/stats.js';
+
+  const root = document.querySelector<HTMLElement>('[data-practice]');
+  if (root) {
+    const { M, ui, library } = JSON.parse(document.getElementById('pr-data')!.textContent!);
+    const lang = root.dataset.lang!;
+    const store = getAppStore();
+    const fill = (s: string, v: Record<string, unknown>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? `{${k}}`));
+    const $ = (sel: string) => root.querySelector<HTMLElement>(sel)!;
+    let level = 1;
+    let question: any = null;
+    const session: Record<number, { correct: number; total: number }> = {};
+
+    const showSaved = () => {
+      const s = practiceStats(store.get(), `metar-taf-${level}`);
+      $('[data-saved]').textContent = s.correct + s.wrong > 0 ? fill(ui.saved, s) : '';
+      const sc = session[level] ?? { correct: 0, total: 0 };
+      $('[data-score]').textContent = sc.total ? fill(ui.score, sc) : '';
+    };
+
+    const show = () => {
+      question = createQuestion(level as 1 | 2 | 3 | 4, library, M, lang, ui);
+      const q = question;
+      $('[data-msg]').innerHTML = q.highlight
+        ? `${esc(q.message.slice(0, q.highlight.start))}<mark>${esc(q.message.slice(q.highlight.start, q.highlight.end))}</mark>${esc(q.message.slice(q.highlight.end))}`
+        : esc(q.message);
+      $('[data-prompt]').textContent = q.prompt;
+      $('[data-options]').innerHTML = q.options.map((o: any) => `<button type="button" class="pr-opt" data-opt="${o.id}">${esc(o.text)}</button>`).join('');
+      const fb = $('[data-feedback]');
+      fb.hidden = true;
+      fb.innerHTML = '';
+      showSaved();
+    };
+
+    root.addEventListener('click', (e) => {
+      const opt = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-opt]');
+      if (opt && !opt.disabled && question) {
+        const right = opt.dataset.opt === question.answer;
+        root.querySelectorAll<HTMLButtonElement>('[data-opt]').forEach((b) => {
+          b.disabled = true;
+          if (b.dataset.opt === question.answer) b.classList.add('is-correct');
+        });
+        if (!right) opt.classList.add('is-wrong');
+        const correctText = question.options.find((o: any) => o.id === question.answer).text;
+        const fb = $('[data-feedback]');
+        fb.innerHTML = `<strong>${esc(right ? ui.correct : ui.incorrect)}</strong>${right ? '' : `<p>${esc(fill(ui.correctWas, { answer: correctText }))}</p>`}<p>${esc(question.explanation)}</p>`;
+        fb.hidden = false;
+        const sc = (session[level] ??= { correct: 0, total: 0 });
+        sc.total += 1;
+        if (right) sc.correct += 1;
+        recordPractice(store, `metar-taf-${level}`, right);
+        showSaved();
+        root.querySelector<HTMLElement>('[data-next]')!.focus();
+        return;
+      }
+      const lv = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-level]');
+      if (lv) {
+        level = Number(lv.dataset.level);
+        root.querySelectorAll('[data-level]').forEach((b) => b.setAttribute('aria-pressed', String(b === lv)));
+        show();
+      }
+      if ((e.target as HTMLElement).closest('[data-next]')) show();
+    });
+    show();
+  }
+</script>

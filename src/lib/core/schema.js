@@ -8,7 +8,7 @@
  *    Never edit an existing migration.
  */
 export const STORAGE_KEY = 'aerolex:v1';
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export const THEMES = ['system', 'light', 'dark'];
 
@@ -33,6 +33,7 @@ export function defaultState(now = new Date()) {
     history: { searches: [], viewed: [] },
     quiz: { answers: {} },                           // { [questionId]: { correct, wrong, lastAt } }
     srs: { cards: {} },                              // spaced repetition, Phase 4–5
+    practice: {},                                    // { [practiceId]: { correct, wrong, lastAt } } (since v2)
   };
 }
 
@@ -41,7 +42,7 @@ export function defaultState(now = new Date()) {
  * @type {Record<number, (state: any) => any>}
  */
 export const MIGRATIONS = {
-  // 1: (s) => ({ ...s, schemaVersion: 2, newField: ... }),
+  1: (s) => ({ ...s, schemaVersion: 2, practice: {} }),
 };
 
 /**

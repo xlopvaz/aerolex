@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(2);
+    await expect(page.locator('[data-tool]')).toHaveCount(3);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -60,5 +60,24 @@ test.describe('TAF decoder', () => {
     await page.locator('[data-input]').fill('METAR LEMD 131030Z 24012KT 9999 18/09 Q1017');
     await expect(page.locator('[data-out="issues"]')).toContainText('Parece un METAR o SPECI, no un TAF.');
     await expect(page.locator('[data-source]')).toHaveText('Mensaje introducido por ti');
+  });
+});
+
+test.describe('METAR/TAF practice', () => {
+  test('answers a question in each level and keeps the history across languages', async ({ page }) => {
+    await page.goto('es/herramientas/practica-metar-taf/');
+    for (const level of ['1', '2', '3', '4']) {
+      await page.locator(`[data-level="${level}"]`).click();
+      await expect(page.locator(`[data-level="${level}"]`)).toHaveAttribute('aria-pressed', 'true');
+      await page.locator('[data-opt]').first().click();
+      await expect(page.locator('[data-feedback]')).toBeVisible();
+      await expect(page.locator('.pr-opt.is-correct')).toHaveCount(1);
+      await expect(page.locator('[data-score]')).toContainText('de 1');
+    }
+    await page.locator('[data-next]').click();
+    await expect(page.locator('[data-feedback]')).toBeHidden();
+    await page.goto('en/tools/metar-taf-practice/');
+    await page.locator('[data-level="4"]').click();
+    await expect(page.locator('[data-saved]')).toContainText('Your history at this level:');
   });
 });
