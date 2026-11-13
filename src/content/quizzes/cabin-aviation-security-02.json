@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Un TCP encuentra un objeto sospechoso al revisar la cabina. ¿Qué hace?",
+        "en": "A cabin crew member finds a suspicious item while checking the cabin. What do they do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No lo toca e informa al comandante",
+            "en": "Does not touch it and informs the commander"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Lo tira a la papelera",
+            "en": "Throws it in the bin"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Lo guarda en un compartimento",
+            "en": "Stows it in a bin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lo abre para ver qué es",
+            "en": "Opens it to see what it is"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Después se sigue el procedimiento del operador.",
+        "en": "Then the operator's procedure is followed."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Según el Anexo 6, la puerta de la cabina de vuelo debe estar cerrada con llave…",
+        "en": "Under Annex 6, the flight deck door must be locked…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo durante el despegue y el aterrizaje",
+            "en": "Only during take-off and landing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo de noche",
+            "en": "Only at night"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nunca en vuelo",
+            "en": "Never in flight"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desde que se cierran las puertas exteriores tras el embarque hasta que se abre una para desembarcar, salvo accesos autorizados",
+            "en": "From when the external doors close after boarding until one opens for disembarkation, except for authorised access"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Es una norma de la OACI tras los atentados de 2001.",
+        "en": "It is an ICAO rule introduced after the 2001 attacks."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué código de transpondedor indica interferencia ilícita?",
+        "en": "Which transponder code indicates unlawful interference?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "7600",
+            "en": "7600"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "7700",
+            "en": "7700"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "7500",
+            "en": "7500"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2000",
+            "en": "2000"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "7600 es fallo de radio y 7700 emergencia.",
+        "en": "7600 is radio failure and 7700 emergency."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "La puerta reforzada de la cabina de vuelo debe poder bloquearse y desbloquearse desde…",
+        "en": "The reinforced flight deck door must be lockable and unlockable from…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo la cabina de pasajeros",
+            "en": "The passenger cabin only"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cualquiera de los puestos de los pilotos",
+            "en": "Either pilot's station"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La galley delantera",
+            "en": "The forward galley"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El exterior del avión",
+            "en": "Outside the aircraft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Además debe haber un medio para vigilar la zona exterior a la puerta.",
+        "en": "There must also be a means to monitor the area outside the door."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Cómo avisa la tripulación de cabina a los pilotos de una actividad sospechosa?",
+        "en": "How do cabin crew alert the pilots to suspicious activity?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Con los medios discretos acordados",
+            "en": "Using the agreed discreet means"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Por la megafonía",
+            "en": "Over the PA"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Gritando desde el pasillo",
+            "en": "Shouting from the aisle"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Con un mensaje a un pasajero",
+            "en": "Through a passenger"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Así no se alerta a quien amenaza.",
+        "en": "That way the person making the threat is not alerted."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Cuál de estas zonas revisa normalmente la tripulación de cabina antes del vuelo?",
+        "en": "Which of these areas do cabin crew normally check before flight?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los motores",
+            "en": "The engines"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La bodega de carga",
+            "en": "The cargo hold"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El tren de aterrizaje",
+            "en": "The landing gear"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lavabos, compartimentos y bolsillos de asientos",
+            "en": "Lavatories, bins and seat pockets"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Según la lista del operador.",
+        "en": "Following the operator's list."
+      }
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El monóxido de carbono provoca una hipoxia…",
+        "en": "Carbon monoxide causes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hipóxica",
+            "en": "Hypoxic hypoxia"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Histotóxica",
+            "en": "Histotoxic hypoxia"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hipémica",
+            "en": "Hypemic hypoxia"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Estancada",
+            "en": "Stagnant hypoxia"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La sangre no puede transportar bien el oxígeno.",
+        "en": "The blood cannot carry oxygen properly."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El alcohol provoca una hipoxia…",
+        "en": "Alcohol causes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hipémica",
+            "en": "Hypemic hypoxia"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Histotóxica",
+            "en": "Histotoxic hypoxia"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hipóxica",
+            "en": "Hypoxic hypoxia"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Estancada",
+            "en": "Stagnant hypoxia"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Las células no pueden usar bien el oxígeno.",
+        "en": "The cells cannot use the oxygen properly."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un pasajero nervioso respira muy deprisa y nota hormigueo en las manos. Lo más probable es…",
+        "en": "A nervous passenger is breathing very fast and has tingling hands. Most likely it is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hiperventilación",
+            "en": "Hyperventilation"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Anafilaxia",
+            "en": "Anaphylaxis"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hipoglucemia",
+            "en": "Hypoglycaemia"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ictus",
+            "en": "Stroke"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Se le habla con calma y se le pide que respire más despacio; si hay dudas, se trata como hipoxia.",
+        "en": "Talk calmly and ask them to breathe more slowly; if in doubt, treat as hypoxia."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "El dolor de oídos aparece sobre todo…",
+        "en": "Ear pain mainly occurs…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En el crucero",
+            "en": "In cruise"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "En el ascenso inicial",
+            "en": "In the initial climb"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Con el avión parado",
+            "en": "With the aircraft parked"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En el descenso",
+            "en": "During the descent"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Al subir la presión de la cabina, el aire debe entrar en el oído medio.",
+        "en": "As cabin pressure rises, air must get into the middle ear."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Según el AIM, tras una inmersión sin paradas de descompresión se debe esperar para volar al menos…",
+        "en": "According to the AIM, after a dive with no decompression stops you should wait at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3 días",
+            "en": "3 days"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "12 horas",
+            "en": "12 hours"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hace falta esperar",
+            "en": "No wait is needed"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "24 horas si hubo paradas de descompresión o para volar por encima de 8.000 ft.",
+        "en": "24 hours if there were decompression stops or before flying above 8,000 ft."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Según el PHAK, unos 30 ml de alcohol equivalen a unos…",
+        "en": "According to the PHAK, about one ounce of alcohol is equivalent to about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "200 ft",
+            "en": "200 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2.000 ft más de altitud fisiológica",
+            "en": "2,000 ft of extra physiological altitude"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "20.000 ft",
+            "en": "20,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nada, no influye",
+            "en": "Nothing, it has no effect"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso el alcohol en vuelo afecta más.",
+        "en": "That is why alcohol in flight has a stronger effect."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Cuál es el problema médico más frecuente a bordo?",
+        "en": "What is the most frequent medical problem on board?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El desmayo o casi desmayo",
+            "en": "Fainting or near-fainting"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El infarto",
+            "en": "Heart attack"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El parto",
+            "en": "Childbirth"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Las fracturas",
+            "en": "Fractures"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Un 37,4 % de los casos en el estudio del NEJM de 2013.",
+        "en": "37.4 % of cases in the 2013 NEJM study."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En la RCP de un adulto, el ritmo de compresiones es de…",
+        "en": "In adult CPR, the compression rate is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "60 por minuto",
+            "en": "60 per minute"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "200 por minuto",
+            "en": "200 per minute"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "30 por minuto",
+            "en": "30 per minute"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "100 a 120 por minuto",
+            "en": "100 to 120 per minute"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Con una profundidad de 5 a 6 cm.",
+        "en": "With a depth of 5 to 6 cm."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Un pasajero con un autoinyector de adrenalina tiene una reacción alérgica grave. ¿Qué hace el TCP?",
+        "en": "A passenger with an adrenaline auto-injector has a severe allergic reaction. What does the cabin crew member do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Espera a ver si se le pasa",
+            "en": "Waits to see if it passes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Le da agua con azúcar",
+            "en": "Gives them sugary water"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Le ayuda a usarlo en el muslo y avisa al comandante",
+            "en": "Helps them use it in the thigh and informs the commander"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Le tumba boca abajo",
+            "en": "Lays them face down"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La adrenalina IM es el tratamiento de primera línea.",
+        "en": "IM adrenaline is the first-line treatment."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "En la UE, el botiquín médico de emergencia es obligatorio en aviones de más de 30 asientos cuando la ruta pasa a más de…",
+        "en": "In the EU, the emergency medical kit is required on aircraft with more than 30 seats when the route goes more than…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "10 minutos de cualquier aeródromo",
+            "en": "10 minutes from any aerodrome"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "60 minutos de un aeródromo con asistencia médica",
+            "en": "60 minutes from an aerodrome with medical assistance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 horas de vuelo",
+            "en": "5 hours' flying"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La frontera del país",
+            "en": "The country's border"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Lo usa un médico u otra persona cualificada.",
+        "en": "It is used by a doctor or other qualified person."
+      }
+    }
+  ]
+}

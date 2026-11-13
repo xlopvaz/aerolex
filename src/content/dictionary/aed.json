@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AED",
+    "es": "AED"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Automated external defibrillator",
+    "es": "Desfibrilador externo automático"
+  },
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A portable device that analyses the heart rhythm of a person in cardiac arrest and, if the rhythm is shockable, tells the user to deliver an electric shock; it gives spoken instructions so that it can be used by trained lay rescuers.",
+    "es": "Aparato portátil que analiza el ritmo cardíaco de una persona en parada cardíaca y, si el ritmo es desfibrilable, indica al usuario que administre una descarga eléctrica; da instrucciones habladas para que puedan usarlo reanimadores no sanitarios formados."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The device that talks you through giving a shock to a heart that has stopped.",
+    "es": "El aparato que te guía para dar una descarga a un corazón que se ha parado."
+  },
+  "example": {
+    "en": "The cabin crew started CPR and attached the AED within two minutes.",
+    "es": "La tripulación de cabina inició la RCP y colocó el DEA en dos minutos."
+  },
+  "pronunciation": {
+    "en": "ay-ee-DEE",
+    "es": "a-e-de (en español: DEA)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "DEA"
+    ]
+  },
+  "related": [
+    "cpr",
+    "first-aid-kit"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "erc-2021-bls"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

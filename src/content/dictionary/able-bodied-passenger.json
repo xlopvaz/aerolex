@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Able-bodied passenger",
+    "es": "Pasajero apto para colaborar"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A passenger selected and briefed by the cabin crew to help in an emergency, for example to hold back other passengers at the foot of a slide or to take over an exit if a crew member is incapacitated.",
+    "es": "Pasajero elegido e informado por la tripulación de cabina para ayudar en una emergencia, por ejemplo para retener a otros pasajeros al pie de una rampa o hacerse cargo de una salida si un tripulante queda incapacitado."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A passenger the crew picks to help them in an emergency.",
+    "es": "Un pasajero que la tripulación elige para que le ayude en una emergencia."
+  },
+  "example": {
+    "en": "Before the emergency landing the crew briefed two able-bodied passengers at each door.",
+    "es": "Antes del aterrizaje de emergencia, la tripulación informó a dos pasajeros aptos en cada puerta."
+  },
+  "pronunciation": {
+    "en": "AY-bul BOD-eed PAS-in-jer",
+    "es": "pa-sa-je-ro ap-to"
+  },
+  "synonyms": {
+    "en": [
+      "ABP"
+    ],
+    "es": [
+      "ABP"
+    ]
+  },
+  "related": [
+    "evacuation-slide",
+    "emergency-exit",
+    "brace-position"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-evacuation-land",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

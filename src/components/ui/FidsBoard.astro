@@ -59,8 +59,20 @@ const { caption, columns, rows } = Astro.props;
     text-align: center;
   }
   .fids__status--live { background: #0d3b2b; color: #4ff0b0; }
-  .fids__status--boarding { background: #3b2a06; color: #ffc44d; animation: fids-blink 1.6s steps(2, start) infinite; }
+  .fids__status--boarding { background: #3b2a06; color: #ffc44d; }
+  /* The blinking is on a decorative dot, never on the text, so the label keeps its contrast. */
+  .fids__status--boarding::before {
+    content: '';
+    display: inline-block;
+    width: 0.45em;
+    height: 0.45em;
+    margin-right: 0.4em;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: 0.12em;
+    animation: fids-blink 1.6s steps(2, start) infinite;
+  }
   .fids__status--scheduled { background: #142039; color: #a9bbd8; }
-  @keyframes fids-blink { 50% { opacity: 0.55; } }
-  @media (prefers-reduced-motion: reduce) { .fids__status--boarding { animation: none; } }
+  @keyframes fids-blink { 50% { opacity: 0.2; } }
+  @media (prefers-reduced-motion: reduce) { .fids__status--boarding::before { animation: none; } }
 </style>

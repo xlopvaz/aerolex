@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿En qué caso puede un TCP iniciar una evacuación por su cuenta?",
+        "en": "When may a cabin crew member start an evacuation on their own initiative?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Con fuego incontrolable, avión detenido y sin respuesta de la cabina de vuelo",
+            "en": "With uncontrollable fire, the aircraft stopped and no response from the flight deck"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Siempre que un pasajero lo pida",
+            "en": "Whenever a passenger asks"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Durante la carrera de aterrizaje",
+            "en": "During the landing roll"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Con cualquier retraso largo",
+            "en": "After any long delay"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Primero debe intentar contactar con los pilotos, y el avión debe estar parado.",
+        "en": "They must first try to contact the pilots, and the aircraft must be stopped."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La prueba de certificación de evacuación exige evacuar el avión en…",
+        "en": "The evacuation certification test requires the aircraft to be evacuated within…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3 minutos con todas las salidas",
+            "en": "3 minutes using all exits"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "60 segundos con todas las salidas",
+            "en": "60 seconds using all exits"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 minutos",
+            "en": "5 minutes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "90 segundos con la mitad de las salidas",
+            "en": "90 seconds using half of the exits"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Es una prueba de diseño, no una promesa para un accidente real.",
+        "en": "It is a design test, not a promise for a real accident."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Antes de abrir una salida en una evacuación hay que comprobar…",
+        "en": "Before opening an exit in an evacuation you must check…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que el equipaje esté guardado",
+            "en": "That the baggage is stowed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que los pasajeros tengan la tarjeta de embarque",
+            "en": "That passengers have their boarding passes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que fuera no haya fuego, agua, obstáculos ni una altura peligrosa",
+            "en": "That outside there is no fire, water, obstruction or dangerous height"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que la luz de cinturones esté apagada",
+            "en": "That the seat belt sign is off"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Si no es utilizable, se bloquea y se redirige a los pasajeros.",
+        "en": "If unusable, it is blocked and passengers are redirected."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Si la rampa no se infla al abrir la puerta armada, hay que…",
+        "en": "If the slide does not inflate when the armed door is opened, you must…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cerrar la puerta",
+            "en": "Close the door"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tirar del mando de inflado manual",
+            "en": "Pull the manual inflation handle"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Esperar a los bomberos",
+            "en": "Wait for the fire service"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desarmar la puerta",
+            "en": "Disarm the door"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Si aun así no funciona, la salida se bloquea y se redirige el flujo.",
+        "en": "If it still fails, the exit is blocked and the flow redirected."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Por qué es tan importante la orden «¡Dejen todo!»?",
+        "en": "Why is the command \"Leave everything!\" so important?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque el equipaje frena el flujo, bloquea salidas y puede dañar la rampa",
+            "en": "Because baggage slows the flow, blocks exits and can damage the slide"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque el equipaje es propiedad de la aerolínea",
+            "en": "Because baggage belongs to the airline"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque pesa demasiado para la rampa",
+            "en": "Because it is too heavy for the slide"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque lo exige la aduana",
+            "en": "Because customs requires it"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los estudios de accidentes muestran que muchos pasajeros intentan llevárselo.",
+        "en": "Accident studies show many passengers try to take it."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Fuera del avión, los pasajeros deben…",
+        "en": "Outside the aircraft, passengers should…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Esperar al pie de la rampa",
+            "en": "Wait at the foot of the slide"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Volver a por su equipaje",
+            "en": "Go back for their baggage"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Quedarse bajo el ala",
+            "en": "Stay under the wing"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Alejarse del avión",
+            "en": "Move away from the aircraft"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Después la tripulación los reúne y cuenta a los presentes.",
+        "en": "The crew then gathers them and counts who is there."
+      }
+    }
+  ]
+}

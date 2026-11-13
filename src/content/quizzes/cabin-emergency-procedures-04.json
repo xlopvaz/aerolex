@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En la respuesta en equipo a un incendio, ¿qué hace quien comunica?",
+        "en": "In the team response to a fire, what does the communicator do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Combate el fuego",
+            "en": "Fights the fire"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sirve agua a los pasajeros",
+            "en": "Serves water to passengers"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Informa a la cabina de vuelo de la situación y su evolución",
+            "en": "Reports the situation and its development to the flight deck"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Abre las salidas",
+            "en": "Opens the exits"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La cabina de vuelo necesita la información para preparar el aterrizaje.",
+        "en": "The flight deck needs the information to prepare the landing."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué extintor NO se usa sobre equipos eléctricos con corriente?",
+        "en": "Which extinguisher is NOT used on live electrical equipment?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El de halón",
+            "en": "Halon"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El de agua",
+            "en": "Water"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ninguno de los dos",
+            "en": "Neither"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ambos se pueden usar sin problema",
+            "en": "Both can be used without problem"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El halón sirve para fuegos de cualquier tipo, incluidos los eléctricos.",
+        "en": "Halon is suitable for any fire, including electrical ones."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Según la EASA, la capucha antihumo debe proteger durante al menos…",
+        "en": "According to EASA, the smoke hood must protect for at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "15 minutos",
+            "en": "15 minutes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2 minutos",
+            "en": "2 minutes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5 minutos",
+            "en": "5 minutes"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A la altitud normal de cabina; algunos modelos duran más.",
+        "en": "At normal cabin altitude; some models last longer."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Para buscar un fuego oculto detrás de un panel se recomienda…",
+        "en": "To look for a hidden fire behind a panel it is recommended to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Esperar a que salgan llamas",
+            "en": "Wait for flames to appear"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Abrir las ventanillas",
+            "en": "Open the windows"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Apagar las luces de la cabina",
+            "en": "Switch off the cabin lights"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tocar los paneles con el dorso de la mano para notar el calor",
+            "en": "Feel the panels with the back of the hand for heat"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Después se crea un acceso para aplicar el agente.",
+        "en": "Then an opening is made to apply the agent."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Las dos fases del procedimiento de la FAA para un fuego de batería de litio son…",
+        "en": "The two phases of the FAA procedure for a lithium battery fire are…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tirar el dispositivo al lavabo y cerrar la puerta",
+            "en": "Throw the device in the lavatory and close the door"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cubrirlo con una manta y moverlo a la galley",
+            "en": "Cover it with a blanket and move it to the galley"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Apagar el fuego y enfriar el dispositivo con agua u otros líquidos no alcohólicos",
+            "en": "Put out the fire and cool the device with water or other non-alcoholic liquids"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Esperar a que se apague solo",
+            "en": "Wait for it to go out by itself"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El enfriamiento evita que las demás celdas entren en embalamiento térmico.",
+        "en": "Cooling stops the other cells going into thermal runaway."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un dispositivo con batería de litio que humea…",
+        "en": "A lithium battery device that is smoking…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se debe llevar a la cabina de vuelo",
+            "en": "Must be taken to the flight deck"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No se debe mover",
+            "en": "Must not be moved"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se debe guardar en un compartimento superior",
+            "en": "Must be stowed in an overhead bin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se debe tirar a la papelera del lavabo",
+            "en": "Must be thrown in the lavatory bin"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La FAA mantiene esta recomendación incluso con bolsas de contención.",
+        "en": "The FAA maintains this even where containment bags are available."
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "course": "cabin-first-aid",
+  "lessons": [
+    {
+      "lesson": "medical-emergencies-on-board",
+      "key": {
+        "es": "Las emergencias médicas son habituales (1 de cada 604 vuelos, sobre todo desmayos); seguridad, valorar, pedir ayuda, buscar un sanitario, atender y registrar; el comandante decide el desvío.",
+        "en": "Medical emergencies are routine (1 in 604 flights, mostly fainting); safety, assess, call for help, find a healthcare professional, treat and record; the commander decides on a diversion."
+      },
+      "points": [
+        {
+          "es": "NEJM 2013: 1 cada 604 vuelos; desmayo 37,4 %, respiratorio 12,1 %, náuseas 9,5 %; médico pasajero en 48,1 %; desvío 7,3 %.",
+          "en": "NEJM 2013: 1 in 604 flights; fainting 37.4 %, respiratory 12.1 %, nausea 9.5 %; passenger doctor in 48.1 %; diversion 7.3 %."
+        },
+        {
+          "es": "Respuesta: seguridad → valorar → pedir ayuda (comandante) → buscar sanitario → atender con guantes → registrar.",
+          "en": "Response: safety → assess → call for help (commander) → find a professional → treat with gloves → record."
+        },
+        {
+          "es": "Desvío: lo decide el comandante, a menudo con asistencia médica en tierra.",
+          "en": "Diversion: the commander decides, often with ground-based medical advice."
+        },
+        {
+          "es": "UE: 1 botiquín hasta 100 asientos, +1 por cada 100 más, hasta 6.",
+          "en": "EU: 1 first-aid kit up to 100 seats, +1 per extra 100, up to 6."
+        },
+        {
+          "es": "Botiquín médico de emergencia: más de 30 asientos y ruta a más de 60 min de asistencia médica; lo usa personal cualificado.",
+          "en": "Emergency medical kit: more than 30 seats and route more than 60 min from medical help; used by qualified people."
+        }
+      ]
+    },
+    {
+      "lesson": "cpr-aed-and-choking",
+      "key": {
+        "es": "Parada = no responde y no respira con normalidad. Pedir ayuda y DEA, compresiones de 5–6 cm a 100–120/min (30:2 si se está formado), DEA cuanto antes; atragantamiento: tos, 5 golpes, 5 compresiones abdominales.",
+        "en": "Arrest = unresponsive and not breathing normally. Call for help and AED, 5–6 cm compressions at 100–120/min (30:2 if trained), AED as soon as possible; choking: cough, 5 back blows, 5 abdominal thrusts."
+      },
+      "points": [
+        {
+          "es": "Reconocer: no responde + no respira con normalidad (las respiraciones agónicas cuentan como parada).",
+          "en": "Recognise: unresponsive + not breathing normally (agonal breathing counts as arrest)."
+        },
+        {
+          "es": "Compresiones: centro del pecho, 5–6 cm, 100–120/min, reexpansión completa, mínimas pausas.",
+          "en": "Compressions: centre of the chest, 5–6 cm, 100–120/min, full recoil, minimal pauses."
+        },
+        {
+          "es": "30:2 si se está formado; turnarse; DEA en cuanto llegue y nadie toca durante análisis y descarga.",
+          "en": "30:2 if trained; take turns; AED as soon as it arrives and nobody touches during analysis and shock."
+        },
+        {
+          "es": "A bordo: en el suelo (superficie firme), avisar a la cabina de vuelo.",
+          "en": "On board: on the floor (firm surface), inform the flight deck."
+        },
+        {
+          "es": "Atragantamiento: animar a toser → 5 golpes en la espalda → 5 compresiones abdominales → alternar → RCP si pierde el conocimiento.",
+          "en": "Choking: encourage coughing → 5 back blows → 5 abdominal thrusts → alternate → CPR if unresponsive."
+        },
+        {
+          "es": "No responde pero respira: posición lateral de seguridad y vigilancia.",
+          "en": "Unresponsive but breathing: recovery position and monitoring."
+        }
+      ]
+    },
+    {
+      "lesson": "common-inflight-conditions",
+      "key": {
+        "es": "Desmayo: tumbar y vigilar. Hipoglucemia: 15–20 g de glucosa si traga. Anafilaxia: adrenalina IM (autoinyector), 2.ª dosis a los 5 min. Asma: su inhalador. Ictus: FAST y hora. Quemadura: agua ≥ 20 min.",
+        "en": "Fainting: lie down and monitor. Hypoglycaemia: 15–20 g glucose if able to swallow. Anaphylaxis: IM adrenaline (auto-injector), 2nd dose after 5 min. Asthma: own inhaler. Stroke: FAST and time. Burn: water ≥ 20 min."
+      },
+      "points": [
+        {
+          "es": "Desmayo (el más común): tumbar o reclinar, aflojar ropa, agua al recuperarse; si no responde, valorar la respiración.",
+          "en": "Fainting (most common): lie down or recline, loosen clothing, water once recovered; if unresponsive, check breathing."
+        },
+        {
+          "es": "Hipoglucemia: consciente y traga → 15–20 g de glucosa; repetir a los 15 min; si no traga, nada por boca.",
+          "en": "Hypoglycaemia: conscious and swallowing → 15–20 g glucose; repeat after 15 min; if unable to swallow, nothing by mouth."
+        },
+        {
+          "es": "Anafilaxia: adrenalina IM en el muslo; segunda dosis si no mejora en ~5 min; avisar al comandante.",
+          "en": "Anaphylaxis: IM adrenaline in the thigh; second dose if no improvement in ~5 min; inform the commander."
+        },
+        {
+          "es": "Asma: su inhalador, sentado; si no mejora, oxígeno y ayuda médica.",
+          "en": "Asthma: own inhaler, sitting up; if no better, oxygen and medical help."
+        },
+        {
+          "es": "Ictus: FAST (cara, brazos, habla, tiempo); anotar la hora de inicio.",
+          "en": "Stroke: FAST (face, arms, speech, time); note the start time."
+        },
+        {
+          "es": "Quemaduras: agua fresca ≥ 20 min, quitar anillos, apósito no adherente, sin hielo ni cremas.",
+          "en": "Burns: cool water ≥ 20 min, remove rings, non-stick dressing, no ice or creams."
+        }
+      ]
+    },
+    {
+      "lesson": "altitude-and-the-body",
+      "key": {
+        "es": "Cabina a ~8.000 ft y aire seco. Hipoxia hipóxica, hipémica (CO), estancada e histotóxica (alcohol); hiperventilación: respirar despacio, ante la duda oxígeno; oídos: tragar o Valsalva; buceo: 12/24 h.",
+        "en": "Cabin at ~8,000 ft and dry air. Hypoxic, hypemic (CO), stagnant and histotoxic (alcohol) hypoxia; hyperventilation: slow breathing, if in doubt oxygen; ears: swallow or Valsalva; diving: 12/24 h."
+      },
+      "points": [
+        {
+          "es": "Cabina hasta ~8.000 ft y aire muy seco: ofrecer agua.",
+          "en": "Cabin up to ~8,000 ft and very dry air: offer water."
+        },
+        {
+          "es": "Hipoxia: hipóxica (altitud), hipémica (CO, anemia), estancada (circulación), histotóxica (alcohol). 30 ml de alcohol ≈ +2.000 ft.",
+          "en": "Hypoxia: hypoxic (altitude), hypemic (CO, anaemia), stagnant (circulation), histotoxic (alcohol). 1 oz of alcohol ≈ +2,000 ft."
+        },
+        {
+          "es": "Hiperventilación: hormigueo y mareo; calmar y respirar despacio; si hay duda, tratar como hipoxia.",
+          "en": "Hyperventilation: tingling and dizziness; calm and slow breathing; if in doubt, treat as hypoxia."
+        },
+        {
+          "es": "Oídos en el descenso: tragar, bostezar, masticar, Valsalva suave; bebés, pecho, biberón o chupete.",
+          "en": "Ears on descent: swallow, yawn, chew, gentle Valsalva; babies, breast, bottle or dummy."
+        },
+        {
+          "es": "Buceo (AIM): 12 h sin paradas de descompresión (hasta 8.000 ft); 24 h con paradas o por encima de 8.000 ft.",
+          "en": "Diving (AIM): 12 h with no decompression stops (up to 8,000 ft); 24 h with stops or above 8,000 ft."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

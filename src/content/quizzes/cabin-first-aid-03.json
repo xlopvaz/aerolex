@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "A un pasajero con diabetes, consciente y que puede tragar, con síntomas de hipoglucemia, se le da…",
+        "en": "A passenger with diabetes, conscious and able to swallow, with signs of hypoglycaemia, is given…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Insulina",
+            "en": "Insulin"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nada hasta aterrizar",
+            "en": "Nothing until landing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Café",
+            "en": "Coffee"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15 a 20 g de glucosa o, si no hay, otro azúcar",
+            "en": "15 to 20 g of glucose or, failing that, another sugar"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Si no mejora en unos 15 minutos, se repite.",
+        "en": "If no improvement in about 15 minutes, repeat."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El tratamiento de primera línea de la anafilaxia es…",
+        "en": "The first-line treatment for anaphylaxis is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un vaso de agua",
+            "en": "A glass of water"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un antiácido",
+            "en": "An antacid"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La adrenalina intramuscular",
+            "en": "Intramuscular adrenaline"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tumbar a la persona y esperar",
+            "en": "Lying the person down and waiting"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "A menudo con el autoinyector del propio pasajero, en el muslo.",
+        "en": "Often with the passenger's own auto-injector, in the thigh."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Si la anafilaxia no mejora tras la primera dosis de adrenalina, se puede dar una segunda a los…",
+        "en": "If anaphylaxis does not improve after the first adrenaline dose, a second may be given after about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2 horas",
+            "en": "2 hours"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5 minutos",
+            "en": "5 minutes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "30 segundos",
+            "en": "30 seconds"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Y se avisa al comandante.",
+        "en": "And the commander is informed."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué significa la «T» de FAST?",
+        "en": "What does the \"T\" in FAST stand for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tiempo: anotar la hora de inicio y avisar",
+            "en": "Time: note when it started and report it"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Temperatura",
+            "en": "Temperature"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tensión arterial",
+            "en": "Blood pressure"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tos",
+            "en": "Cough"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "F cara, A brazos, S habla, T tiempo.",
+        "en": "F face, A arms, S speech, T time."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Una quemadura con café se enfría con agua fresca durante…",
+        "en": "A coffee burn is cooled with cool water for…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "10 segundos",
+            "en": "10 seconds"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1 minuto",
+            "en": "1 minute"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se enfría, se cubre",
+            "en": "It is not cooled, only covered"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al menos 20 minutos",
+            "en": "At least 20 minutes"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cuanto antes se empiece, mejor.",
+        "en": "The sooner it starts, the better."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Ante una crisis de asma se ayuda al pasajero a…",
+        "en": "In an asthma attack, the passenger is helped to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tumbarse boca abajo",
+            "en": "Lie face down"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Respirar en una bolsa",
+            "en": "Breathe into a bag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Usar su propio inhalador, sentado e incorporado",
+            "en": "Use their own inhaler, sitting upright"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Beber alcohol",
+            "en": "Drink alcohol"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Si no mejora, oxígeno y ayuda médica.",
+        "en": "If no improvement, oxygen and medical help."
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Hypoxia",
+    "es": "Hipoxia"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "cabin-crew",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A lack of sufficient oxygen in the body tissues; at altitude it is caused by the low partial pressure of oxygen and its early symptoms, such as euphoria and impaired judgement, may go unnoticed by the person affected.",
+    "es": "Falta de oxígeno suficiente en los tejidos del cuerpo; en altura la provoca la baja presión parcial del oxígeno, y sus primeros síntomas, como la euforia y el juicio alterado, pueden pasar desapercibidos para quien la sufre."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Not enough oxygen reaching the body, which can happen at altitude.",
+    "es": "No llega suficiente oxígeno al cuerpo, algo que puede pasar en altura."
+  },
+  "example": {
+    "en": "After the slow decompression both pilots showed signs of hypoxia.",
+    "es": "Tras la descompresión lenta, ambos pilotos mostraban signos de hipoxia."
+  },
+  "pronunciation": {
+    "en": "hy-POX-ee-uh",
+    "es": "hi-pok-sia"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "decompression",
+    "oxygen-mask",
+    "cabin-altitude"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

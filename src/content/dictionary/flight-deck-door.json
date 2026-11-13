@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Flight deck door",
+    "es": "Puerta de la cabina de vuelo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-security",
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The reinforced door between the cabin and the flight deck; on larger passenger aircraft it must resist forced entry and small-arms fire and be kept locked from the closing of the external doors until they are opened again, except when authorised persons need to pass.",
+    "es": "Puerta reforzada entre la cabina de pasajeros y la cabina de vuelo; en los aviones de pasajeros grandes debe resistir la intrusión forzada y los disparos de armas ligeras y permanecer cerrada con llave desde que se cierran las puertas exteriores hasta que se abren, salvo para el paso de personas autorizadas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The locked, bulletproof door to the pilots' compartment.",
+    "es": "La puerta blindada y cerrada con llave de la cabina de los pilotos."
+  },
+  "example": {
+    "en": "Before opening the flight deck door, the pilot checked the camera image.",
+    "es": "Antes de abrir la puerta de la cabina de vuelo, el piloto comprobó la imagen de la cámara."
+  },
+  "pronunciation": {
+    "en": "FLITE dek dor",
+    "es": "puer-ta de la ca-bi-na de vue-lo"
+  },
+  "synonyms": {
+    "en": [
+      "cockpit door"
+    ],
+    "es": [
+      "puerta del cockpit"
+    ]
+  },
+  "related": [
+    "flight-deck",
+    "sterile-flight-deck",
+    "unlawful-interference"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "icao-annex-17"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

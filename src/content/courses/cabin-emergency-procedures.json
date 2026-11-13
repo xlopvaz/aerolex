@@ -1,0 +1,58 @@
+{
+  "path": "cabin-crew-training",
+  "order": 4,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de TCP · Módulo 4: Procedimientos de emergencia",
+    "en": "Cabin Crew Academy · Module 4: Emergency Procedures"
+  },
+  "description": {
+    "es": "Lo que hace la tripulación de cabina cuando algo va mal: emergencias preparadas e imprevistas, la información NITS, la evacuación, el amerizaje, el fuego y el humo, las baterías de litio y la descompresión, con diálogos en español e inglés. El manual del operador prevalece siempre sobre este curso.",
+    "en": "What cabin crew do when something goes wrong: planned and unplanned emergencies, the NITS briefing, evacuation, ditching, fire and smoke, lithium batteries and decompression, with dialogues in English and Spanish. The operator's manual always prevails over this course."
+  },
+  "objectives": {
+    "en": [
+      "Prepare the cabin from a NITS briefing",
+      "Decide when to start an evacuation and direct it",
+      "Act in a ditching and in the water",
+      "Fight fire and smoke, including lithium battery fires",
+      "Apply the immediate actions in a decompression"
+    ],
+    "es": [
+      "Preparar la cabina a partir de una información NITS",
+      "Decidir cuándo iniciar una evacuación y dirigirla",
+      "Actuar en un amerizaje y en el agua",
+      "Combatir fuego y humo, incluidos los de baterías de litio",
+      "Aplicar las acciones inmediatas ante una descompresión"
+    ]
+  },
+  "lessons": [
+    "planned-emergencies",
+    "evacuation",
+    "ditching",
+    "fire-and-smoke-in-the-cabin",
+    "decompression-in-the-cabin"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "skybrary-nits",
+    "skybrary-evacuation-water",
+    "faa-ac-121-24",
+    "skybrary-evacuation-land",
+    "skybrary-cc-fc-emergency-communication",
+    "cfr-14-25-803",
+    "easa-ear-air-ops",
+    "faa-ac-120-80",
+    "faa-safo-09013",
+    "faa-info-17021",
+    "icao-doc-9481",
+    "easa-sib-2025-04",
+    "cfr-14-part-25",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
