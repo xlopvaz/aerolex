@@ -19,7 +19,7 @@ const STAGES = [
   { name: 'cor', parsers: [(t, i) => (t[i]?.text === 'COR' ? G.modifier(t, i) : null)] },
   { name: 'station', parsers: [G.station] },
   { name: 'time', parsers: [G.obsTime] },
-  { name: 'modifier', parsers: [(t, i) => (['AUTO', 'NIL', 'COR'].includes(t[i]?.text) ? G.modifier(t, i) : null)] },
+  { name: 'modifier', parsers: [(t, i) => (['AUTO', 'NIL', 'COR'].includes(t[i]?.text) ? G.modifier(t, i) : null)], repeat: true },
   { name: 'wind', parsers: [G.wind] },
   { name: 'windVariation', parsers: [G.windVariation] },
   { name: 'visibility', parsers: [G.cavok, G.visibility] },
