@@ -32,7 +32,8 @@
     "converter": "Unit converter",
     "liveWeather": "Live METAR and TAF",
     "airportFinder": "Airport finder",
-    "atcTrainer": "ATC phraseology trainer"
+    "atcTrainer": "ATC phraseology trainer",
+    "aircraftGame": "Which aircraft is it?"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -667,6 +668,10 @@
       "atcTrainer": {
         "title": "ATC phraseology trainer",
         "text": "Read back clearances as a pilot or spot read-back errors as a controller, with audio."
+      },
+      "aircraftGame": {
+        "title": "Which aircraft is it?",
+        "text": "Identify aircraft from their official figures and compare variants, using Hangar data."
       }
     }
   },
@@ -1068,5 +1073,44 @@
       "approach": "approach type",
       "land": "landing clearance"
     }
+  },
+  "aircraftGame": {
+    "metaTitle": "Aircraft identification game · AeroLex",
+    "metaDescription": "Which aircraft is it? Identify aircraft from their official figures and compare variants, using Hangar data.",
+    "title": "Which aircraft is it?",
+    "lead": "Identify aircraft from their figures and compare variants. Every figure comes from the manufacturers' official documentation used in the Hangar.",
+    "cluesPrompt": "Which aircraft has these figures?",
+    "comparePrompt": "Which one has the greater {metric}?",
+    "correct": "Correct!",
+    "incorrect": "Not that one.",
+    "theAnswer": "It was: {answer}",
+    "next": "Another round",
+    "score": "Score: {ok} of {total}",
+    "openFamily": "See the family in the Hangar",
+    "metrics": {
+      "lengthM": "length",
+      "wingspanM": "wingspan",
+      "heightM": "height",
+      "seatsMax": "maximum seating",
+      "rangeNm": "range",
+      "mtowT": "maximum take-off weight"
+    },
+    "labels": {
+      "lengthM": "Length",
+      "wingspanM": "Wingspan",
+      "heightM": "Height",
+      "seatsMax": "Seats (maximum)",
+      "rangeNm": "Range",
+      "mtowT": "Maximum take-off weight"
+    },
+    "units": {
+      "lengthM": "m",
+      "wingspanM": "m",
+      "heightM": "m",
+      "seatsMax": "seats",
+      "rangeNm": "NM",
+      "mtowT": "t"
+    },
+    "dataNote": "Figures are those published by each manufacturer for each variant; they may vary with the configuration."
   }
 }

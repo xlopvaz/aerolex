@@ -1,0 +1,121 @@
+---
+/** "Which aircraft is it?" (Phase 4): rounds generated from the Hangar's sourced figures. */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Button from '../components/ui/Button.astro';
+import { childHref, href, t, useT } from '../i18n/index.js';
+import { flattenVariants } from '../lib/aircraft/compare.js';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const families = (await getCollection('aircraft')).map((f) => ({ id: f.id, ...f.data }));
+const variants = flattenVariants(families).map((v: any) => ({
+  id: v.id, familyId: v.familyId, name: v.name, manufacturer: v.manufacturer,
+  lengthM: v.lengthM, wingspanM: v.wingspanM, heightM: v.heightM, seatsMax: v.seatsMax, rangeNm: v.rangeNm, mtowT: v.mtowT,
+  familyUrl: childHref('hangar', v.familyId, lang),
+}));
+const payload = JSON.stringify({ ui: t(lang, 'aircraftGame'), variants });
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('aircraftGame.metaTitle')} description={tr('aircraftGame.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.aircraftGame') }]} />
+      <h1>{tr('aircraftGame.title')}</h1>
+      <p class="lead">{tr('aircraftGame.lead')}</p>
+    </div>
+  </header>
+  <div class="container mt" data-game data-lang={lang}>
+    <Callout type="info" label={tr('styleguide.calloutLabels.info')}><p>{tr('aircraftGame.dataNote')}</p></Callout>
+    <section class="mt-card pr-q" aria-live="polite">
+      <h2 class="pr-prompt" id="ag-q" data-prompt>{tr('aircraftGame.cluesPrompt')}</h2>
+      <dl class="ag-clues" data-clues></dl>
+      <div class="pr-options" role="group" aria-labelledby="ag-q" data-options></div>
+      <div class="pr-feedback" data-feedback hidden></div>
+      <div class="pr-footer">
+        <Button size="sm" icon="shuffle" data-next>{tr('aircraftGame.next')}</Button>
+        <span class="pr-score" data-score></span>
+      </div>
+    </section>
+    <noscript><p>{tr('metarTool.noscript')}</p></noscript>
+  </div>
+  <script type="application/json" id="ag-data" set:html={payload} />
+</BaseLayout>
+
+<style is:global>
+  .ag-clues { display: grid; gap: var(--space-2); margin: 0; width: 100%; }
+  .ag-clues div { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); background: var(--surface-2); }
+  .ag-clues dt { color: var(--text-muted); }
+  .ag-clues dd { margin: 0; font-family: var(--font-mono); font-weight: 700; }
+  .ag-clues:empty { display: none; }
+</style>
+
+<script>
+  import { createRound } from '../lib/aircraft/game.js';
+  import { esc } from '../lib/metar/render.js';
+  import { getAppStore } from '../lib/core/app-store.js';
+  import { recordPractice } from '../lib/practice/stats.js';
+
+  const root = document.querySelector<HTMLElement>('[data-game]');
+  if (root) {
+    const { ui, variants } = JSON.parse(document.getElementById('ag-data')!.textContent!);
+    const lang = root.dataset.lang!;
+    const store = getAppStore();
+    const byKey: Record<string, any> = Object.fromEntries(variants.map((v: any) => [`${v.familyId}:${v.id}`, v]));
+    const $ = (s: string) => root.querySelector<HTMLElement>(s)!;
+    const fill = (s: string, v: Record<string, unknown>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+    const num = (v: number) => new Intl.NumberFormat(lang, { maximumFractionDigits: 2 }).format(v);
+    const value = (k: string, v: number) => `${num(v)}${ui.units[k] ? ` ${ui.units[k]}` : ''}`;
+    const name = (key: string) => `${byKey[key].manufacturer} ${byKey[key].name}`;
+    let round: any = null;
+    let answered = false;
+    const score = { ok: 0, total: 0 };
+
+    const show = () => {
+      round = createRound(variants);
+      answered = false;
+      $('[data-feedback]').hidden = true;
+      if (round.kind === 'clues') {
+        $('[data-prompt]').textContent = ui.cluesPrompt;
+        $('[data-clues]').innerHTML = round.clues.map((c: any) => `<div><dt>${esc(ui.labels[c.key])}</dt><dd>${esc(value(c.key, c.value))}</dd></div>`).join('');
+      } else {
+        $('[data-prompt]').textContent = fill(ui.comparePrompt, { metric: ui.metrics[round.metric] });
+        $('[data-clues]').innerHTML = '';
+      }
+      $('[data-options]').innerHTML = round.options.map((k: string) => `<button type="button" class="pr-opt" data-opt="${esc(k)}">${esc(name(k))}</button>`).join('');
+    };
+
+    root.addEventListener('click', (e) => {
+      const el = e.target as HTMLElement;
+      const opt = el.closest<HTMLButtonElement>('[data-opt]');
+      if (opt && !answered) {
+        answered = true;
+        const ok = opt.dataset.opt === round.answer;
+        root.querySelectorAll<HTMLButtonElement>('[data-opt]').forEach((b) => {
+          b.disabled = true;
+          if (b.dataset.opt === round.answer) b.classList.add('is-correct');
+        });
+        if (!ok) opt.classList.add('is-wrong');
+        const shownKeys = round.kind === 'compare' ? round.options : [round.answer];
+        const metricKeys = round.kind === 'compare' ? [round.metric] : round.metrics;
+        const details = shownKeys
+          .map((k: string) => `<p><strong>${esc(name(k))}</strong>: ${metricKeys.map((m: string) => `${esc(ui.labels[m])} ${esc(value(m, byKey[k][m]))}`).join(' · ')} — <a href="${byKey[k].familyUrl}">${esc(ui.openFamily)}</a></p>`)
+          .join('');
+        const fb = $('[data-feedback]');
+        fb.innerHTML = `<strong>${esc(ok ? ui.correct : ui.incorrect)}</strong>${ok ? '' : `<p>${esc(fill(ui.theAnswer, { answer: name(round.answer) }))}</p>`}${details}`;
+        fb.hidden = false;
+        score.total += 1;
+        if (ok) score.ok += 1;
+        $('[data-score]').textContent = fill(ui.score, score);
+        recordPractice(store, 'aircraft-game', ok);
+        root.querySelector<HTMLElement>('[data-next]')!.focus();
+        return;
+      }
+      if (el.closest('[data-next]')) show();
+    });
+    show();
+  }
+</script>
