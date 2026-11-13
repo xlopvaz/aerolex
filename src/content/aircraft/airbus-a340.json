@@ -22,11 +22,16 @@
     {
       "en": "The easiest way to tell an A340 from an A330: count the engines (four against two).",
       "es": "La forma más fácil de distinguir un A340 de un A330: cuenta los motores (cuatro frente a dos)."
+    },
+    {
+      "en": "The A340-600 is 75.36 m long, almost 12 m longer than the A340-300, with a wider wing (63.45 m) and Rolls-Royce Trent 500 engines.",
+      "es": "El A340-600 mide 75,36 m, casi 12 m más que el A340-300, con un ala más ancha (63,45 m) y motores Rolls-Royce Trent 500."
     }
   ],
   "sources": [
     "airbus-a340-300-history",
-    "airbus-a330-300-page"
+    "airbus-a330-300-page",
+    "airbus-a340-600-history"
   ],
   "review": {
     "status": "draft",
@@ -57,11 +62,41 @@
         "CFM International"
       ],
       "note": {
-        "en": "Typical three-class seating; range with a typical passenger load. Airbus's page shows the aircraft with CFM engines but does not name the engine model. The other A340 versions will be added when their figures can be checked against official sources.",
-        "es": "Plazas típicas en tres clases; alcance con una carga típica de pasajeros. La página de Airbus muestra el avión con motores CFM, pero no indica el modelo. Las demás versiones del A340 se añadirán cuando sus cifras puedan comprobarse con fuentes oficiales."
+        "en": "Typical three-class seating; range with a typical passenger load. Airbus's page shows the aircraft with CFM engines but does not name the engine model.",
+        "es": "Plazas típicas en tres clases; alcance con una carga típica de pasajeros. La página de Airbus muestra el avión con motores CFM, pero no indica el modelo."
       },
       "sources": [
         "airbus-a340-300-history"
+      ]
+    },
+    {
+      "id": "a340-600",
+      "name": "A340-600",
+      "status": "out-of-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 75.36,
+      "wingspanM": 63.45,
+      "heightM": 17.93,
+      "seatsTypical": "320–370",
+      "seatsMax": 475,
+      "rangeNm": 7800,
+      "rangeKm": 14450,
+      "mtowT": 380.0,
+      "engines": [
+        "Rolls-Royce Trent 500"
+      ],
+      "note": {
+        "en": "Typical three-class seating; 475 seats in high density. Range from the specification table (the page's text says 7,900 NM).",
+        "es": "Plazas típicas en tres clases; 475 en alta densidad. Alcance según la tabla de especificaciones (el texto de la página dice 7900 NM)."
+      },
+      "sources": [
+        "airbus-a340-600-history"
       ]
     }
   ]
