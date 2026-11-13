@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CVR",
+    "es": "CVR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Cockpit voice recorder",
+    "es": "Registrador de la voz en el puesto de pilotaje"
+  },
+  "categories": [
+    "safety",
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A crash-protected recorder that stores the flight crew's voices, radio communications and sounds on the flight deck for accident and incident investigation.",
+    "es": "Registrador protegido contra impactos que guarda las voces de la tripulación de vuelo, las comunicaciones por radio y los sonidos de la cabina de vuelo para la investigación de accidentes e incidentes."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The other \"black box\": it records what was said and heard in the cockpit.",
+    "es": "La otra «caja negra»: registra lo que se dijo y se oyó en la cabina de vuelo."
+  },
+  "example": {
+    "en": "The CVR showed that the crew had discussed the warning.",
+    "es": "El CVR mostró que la tripulación había comentado el aviso."
+  },
+  "pronunciation": {
+    "en": "C-V-R (see-vee-ar)",
+    "es": "ce-uve-erre"
+  },
+  "synonyms": {
+    "en": [
+      "black box"
+    ],
+    "es": [
+      "caja negra"
+    ]
+  },
+  "related": [
+    "fdr",
+    "flight-deck",
+    "sterile-flight-deck"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

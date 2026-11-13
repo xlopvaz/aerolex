@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SELCAL",
+    "es": "SELCAL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Selective calling system",
+    "es": "Sistema de llamada selectiva"
+  },
+  "categories": [
+    "air-traffic-control",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A system in which a ground station alerts one specific aircraft with a coded tone, so the crew does not have to listen to the frequency continuously.",
+    "es": "Sistema en el que una estación de tierra avisa a una aeronave concreta con un tono codificado, para que la tripulación no tenga que escuchar la frecuencia de forma continua."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A doorbell for the cockpit: the ground station \"rings\" one aircraft on long oceanic flights.",
+    "es": "Un timbre para la cabina: la estación de tierra «llama» a un avión concreto en vuelos oceánicos largos."
+  },
+  "example": {
+    "en": "Shanwick asked for a SELCAL check before the ocean crossing.",
+    "es": "Shanwick pidió una comprobación SELCAL antes de cruzar el océano."
+  },
+  "pronunciation": {
+    "en": "SEL-kal",
+    "es": "sel-cal"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vhf",
+    "atc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

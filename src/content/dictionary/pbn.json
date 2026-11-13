@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PBN",
+    "es": "PBN"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Performance-based navigation",
+    "es": "Navegación basada en la performance"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Area navigation based on performance requirements for aircraft operating along an ATS route, on an instrument approach procedure or in a designated airspace.",
+    "es": "Navegación de área basada en requisitos de performance para las aeronaves que vuelan por una ruta ATS, en un procedimiento de aproximación por instrumentos o en un espacio aéreo designado."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The modern way of defining navigation: instead of naming the equipment, it sets how accurate the navigation must be.",
+    "es": "La forma moderna de definir la navegación: en vez de exigir un equipo concreto, fija la precisión con que hay que navegar."
+  },
+  "example": {
+    "en": "The airline needs PBN approval to fly these RNP approaches.",
+    "es": "La aerolínea necesita la aprobación PBN para volar estas aproximaciones RNP."
+  },
+  "pronunciation": {
+    "en": "P-B-N (pee-bee-en)",
+    "es": "pe-be-ene"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "rnav",
+    "rnp",
+    "gnss"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

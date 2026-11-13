@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ADS-B",
+    "es": "ADS-B"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Automatic dependent surveillance — broadcast",
+    "es": "Vigilancia dependiente automática — radiodifusión"
+  },
+  "categories": [
+    "air-traffic-control",
+    "aircraft-systems",
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A means by which aircraft, aerodrome vehicles and other objects automatically transmit and/or receive data such as identification, position and other information by broadcast data link.",
+    "es": "Medio por el cual las aeronaves, los vehículos de aeródromo y otros objetos transmiten y/o reciben automáticamente datos como identificación y posición mediante un enlace de datos en modo de radiodifusión."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The aircraft broadcasts its own position (from satellites) every second so controllers and other aircraft can see it.",
+    "es": "El avión emite su propia posición (obtenida por satélite) cada segundo para que los controladores y otros aviones lo vean."
+  },
+  "example": {
+    "en": "Flight-tracking websites use ADS-B signals.",
+    "es": "Las webs de seguimiento de vuelos usan las señales ADS-B."
+  },
+  "pronunciation": {
+    "en": "A-D-S-B (ay-dee-es-bee)",
+    "es": "a-de-ese-be"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "squawk",
+    "tcas",
+    "gnss"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-4444",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "VHF",
+    "es": "VHF"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Very high frequency",
+    "es": "Muy alta frecuencia"
+  },
+  "categories": [
+    "air-traffic-control",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The radio frequency band from 30 to 300 MHz; air–ground voice communication uses part of it, around 118–137 MHz.",
+    "es": "Banda de radiofrecuencia de 30 a 300 MHz; las comunicaciones de voz aeroterrestres usan una parte, entre unos 118 y 137 MHz."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The radio band pilots and controllers use to talk to each other.",
+    "es": "La banda de radio que usan pilotos y controladores para hablar entre sí."
+  },
+  "example": {
+    "en": "Contact the tower on VHF 118.150.",
+    "es": "Contacte con la torre en VHF 118,150."
+  },
+  "pronunciation": {
+    "en": "V-H-F (vee-aych-ef)",
+    "es": "uve-hache-efe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "atc",
+    "atis",
+    "selcal"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

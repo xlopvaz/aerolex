@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RNP",
+    "es": "RNP"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Required navigation performance",
+    "es": "Performance de navegación requerida"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A navigation specification based on area navigation that requires on-board performance monitoring and alerting, so the crew is warned if the required accuracy is not being met.",
+    "es": "Especificación de navegación basada en la navegación de área que exige vigilancia y alerta de la performance a bordo, de modo que la tripulación recibe un aviso si no se alcanza la precisión requerida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "RNAV with an alarm: the aircraft checks its own accuracy and warns the pilots if it is not good enough.",
+    "es": "RNAV con alarma: el avión comprueba su propia precisión y avisa a los pilotos si no es suficiente."
+  },
+  "example": {
+    "en": "The procedure requires RNP 1.",
+    "es": "El procedimiento exige RNP 1."
+  },
+  "pronunciation": {
+    "en": "R-N-P (ar-en-pee)",
+    "es": "erre-ene-pe"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "rnav",
+    "pbn",
+    "gnss"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-doc-8168"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

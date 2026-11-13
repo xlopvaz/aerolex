@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ETOPS",
+    "es": "ETOPS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Extended-range operations by turbine-engined aeroplanes (US: extended operations)",
+    "es": "Operaciones de alcance extendido de aviones con motores de turbina"
+  },
+  "categories": [
+    "flight-operations",
+    "aviation-law",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Operations, especially by twin-engined aeroplanes, on routes where the aircraft is at times more than a set flying time from a suitable diversion aerodrome; they need a specific approval and additional requirements.",
+    "es": "Operaciones, sobre todo de aviones bimotores, en rutas en las que el avión está a veces a más de cierto tiempo de vuelo de un aeródromo de alternativa adecuado; requieren una aprobación específica y requisitos adicionales."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Permission for twin-engined jets to fly long routes far from airports, for example across oceans.",
+    "es": "Permiso para que los bimotores vuelen rutas largas lejos de los aeropuertos, por ejemplo sobre el océano."
+  },
+  "example": {
+    "en": "The A330 is approved for ETOPS 180 minutes on this route.",
+    "es": "El A330 tiene aprobación ETOPS de 180 minutos en esta ruta."
+  },
+  "pronunciation": {
+    "en": "EE-tops",
+    "es": "i-tops"
+  },
+  "synonyms": {
+    "en": [
+      "EDTO"
+    ],
+    "es": [
+      "EDTO"
+    ]
+  },
+  "related": [],
+  "regionalNote": {
+    "en": "ICAO now calls these operations EDTO (extended diversion time operations); ETOPS remains the usual term in the US and in industry.",
+    "es": "La OACI llama hoy a estas operaciones EDTO (operaciones con tiempo de desviación extendido); ETOPS sigue siendo el término habitual en EE. UU. y en la industria."
+  },
+  "sources": [
+    "icao-annex-6",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

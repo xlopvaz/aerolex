@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TMA",
+    "es": "TMA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Terminal control area",
+    "es": "Área de control terminal"
+  },
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A control area normally established at the confluence of ATS routes in the vicinity of one or more major aerodromes.",
+    "es": "Área de control establecida normalmente en la confluencia de rutas ATS en las cercanías de uno o varios aeródromos importantes."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The controlled airspace above and around big airports where arrivals and departures are sequenced.",
+    "es": "El espacio aéreo controlado sobre los grandes aeropuertos y a su alrededor, donde se ordenan llegadas y salidas."
+  },
+  "example": {
+    "en": "The Madrid TMA is one of the busiest in Spain.",
+    "es": "La TMA de Madrid es una de las más transitadas de España."
+  },
+  "pronunciation": {
+    "en": "T-M-A (tee-em-ay)",
+    "es": "te-eme-a"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ctr",
+    "fir",
+    "acc",
+    "star",
+    "sid"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-11"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AIRMET",
+    "es": "AIRMET"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "AIRMET information",
+    "es": "Información AIRMET"
+  },
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Information issued by a meteorological watch office about the occurrence or expected occurrence of specified en-route weather phenomena that may affect low-level flights and that are not already covered by the low-level forecast.",
+    "es": "Información que emite una oficina de vigilancia meteorológica sobre la existencia o la previsión de determinados fenómenos en ruta que pueden afectar a los vuelos a poca altura y que no figuran ya en el pronóstico para niveles bajos."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A weather warning like a SIGMET, but for low-level flights.",
+    "es": "Un aviso meteorológico parecido al SIGMET, pero para los vuelos a poca altura."
+  },
+  "example": {
+    "en": "Before the VFR flight, check whether there is an AIRMET for mountain obscuration.",
+    "es": "Antes del vuelo VFR, comprueba si hay un AIRMET por montañas oscurecidas."
+  },
+  "pronunciation": {
+    "en": "AIR-met",
+    "es": "eir-met"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "sigmet",
+    "vfr",
+    "metar"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "icao-annex-3"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

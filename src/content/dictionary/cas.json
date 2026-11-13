@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CAS",
+    "es": "CAS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Calibrated airspeed",
+    "es": "Velocidad calibrada"
+  },
+  "categories": [
+    "flight-operations",
+    "aerodynamics"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Indicated airspeed corrected for instrument and position (installation) errors.",
+    "es": "Velocidad indicada corregida por los errores del instrumento y de posición (instalación)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The indicated airspeed after correcting the small errors of the instrument and its installation.",
+    "es": "La velocidad indicada una vez corregidos los pequeños errores del instrumento y de su instalación."
+  },
+  "example": {
+    "en": "At low speed with flaps extended, CAS can differ from IAS by a few knots.",
+    "es": "A baja velocidad y con flaps extendidos, la CAS puede diferir de la IAS en unos nudos."
+  },
+  "pronunciation": {
+    "en": "C-A-S (see-ay-es)",
+    "es": "ce-a-ese"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ias",
+    "tas"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-8400",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

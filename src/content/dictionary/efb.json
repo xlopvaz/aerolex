@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EFB",
+    "es": "EFB"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Electronic flight bag",
+    "es": "Maletín de vuelo electrónico"
+  },
+  "categories": [
+    "cockpit",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An electronic information system for the flight crew, usually a tablet or installed display, that replaces paper charts, manuals and performance calculations.",
+    "es": "Sistema electrónico de información para la tripulación de vuelo, normalmente una tableta o una pantalla instalada, que sustituye a las cartas, los manuales y los cálculos de performance en papel."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The pilots' tablet with charts and manuals.",
+    "es": "La tableta de los pilotos con las cartas y los manuales."
+  },
+  "example": {
+    "en": "The crew calculated the take-off speeds on the EFB.",
+    "es": "La tripulación calculó las velocidades de despegue en el EFB."
+  },
+  "pronunciation": {
+    "en": "E-F-B (ee-ef-bee)",
+    "es": "e-efe-be"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "flight-deck",
+    "sop"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

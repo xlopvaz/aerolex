@@ -40,7 +40,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Una página por entrada en ES y EN: definición técnica separada de la explicación sencilla, ejemplo, pronunciación con audio (Web Speech API), sinónimos, relacionados, diferencias regionales y fuentes.
 - [x] Página de abreviaturas y acrónimos con filtro.
 - [x] Portada: buscador con autocompletado y término del día.
-- [ ] Ampliar hasta 150 términos y 100 acrónimos.
+- [ ] Ampliar hasta 150 términos y 100 acrónimos. Progreso (13/11/2026): 29 acrónimos nuevos de navegación (ADF, NDB, GNSS, RNAV, RNP, PBN), meteorología y reglas (VMC, IMC, SIGMET, AIRMET), aproximación (MDA/MDH, DA/DH), espacio aéreo (FIR, CTR, TMA, ACC, AIP), pesos (MTOW, MLW, MZFW), operaciones (ETOPS, EFB) y sistemas (ELT, FDR, CVR, ADS-B, SELCAL, VHF, CAS): 134 entradas, 78 acrónimos.
 
 **Bloque 2 — Academia y curso METAR y SPECI ✅ (13/11/2026)**
 - [x] Colecciones de itinerarios, cursos, lecciones (MDX, una por idioma) y cuestionarios, validadas en compilación.
