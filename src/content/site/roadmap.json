@@ -11,7 +11,7 @@
     { "flight": "AX 307", "phase": 3, "status": "live",      "destination": { "en": "TAF Academy",                        "es": "Academia TAF" } },
     { "flight": "AX 306", "phase": 3, "status": "live",      "destination": { "en": "Hangar · Aircraft encyclopedia",     "es": "Hangar · Enciclopedia de aeronaves" } },
     { "flight": "AX 401", "phase": 4, "status": "live",      "destination": { "en": "METAR & TAF decoders",               "es": "Decodificadores METAR y TAF" } },
-    { "flight": "AX 402", "phase": 4, "status": "scheduled", "destination": { "en": "ATC phraseology trainer",            "es": "Entrenador de fraseología ATC" } },
+    { "flight": "AX 402", "phase": 4, "status": "live",      "destination": { "en": "ATC phraseology trainer",            "es": "Entrenador de fraseología ATC" } },
     { "flight": "AX 403", "phase": 4, "status": "live",      "destination": { "en": "Unit converters & airport codes",    "es": "Conversores y códigos de aeropuerto" } },
     { "flight": "AX 501", "phase": 5, "status": "scheduled", "destination": { "en": "XP, streaks & badges",               "es": "XP, rachas e insignias" } },
     { "flight": "AX 502", "phase": 5, "status": "scheduled", "destination": { "en": "Interactive flight deck",            "es": "Cabina de vuelo interactiva" } },

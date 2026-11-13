@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(6);
+    await expect(page.locator('[data-tool]')).toHaveCount(7);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -142,5 +142,30 @@ test.describe('Airport finder', () => {
     await page.goto('en/tools/airports/?q=JFK');
     await expect(page.locator('[data-results] tbody tr').first()).toContainText('KJFK');
     await expect(page.locator('[data-results] tbody tr').first()).toContainText('United States');
+  });
+});
+
+test.describe('ATC phraseology trainer', () => {
+  test('pilot role: checks a read-back element by element', async ({ page }) => {
+    await page.goto('en/tools/atc-phraseology/');
+    await expect(page.locator('[data-atc-text]')).toContainText('cleared to Madrid via ROSAL one alpha departure');
+    await page.locator('[data-readback]').fill('Cleared Madrid ROSAL 1A, FL80, squawk 4512, Lexair 123');
+    await page.locator('[data-check]').click();
+    await expect(page.locator('[data-feedback]')).toContainText('Missing or not matching: transponder code.');
+    await page.locator('[data-next]').click();
+    await page.locator('[data-readback]').fill('Taxi holding point runway one seven via alpha, QNH one zero one three, Lexair one two three');
+    await page.locator('[data-check]').click();
+    await expect(page.locator('[data-feedback]')).toContainText('Complete read-back.');
+    await expect(page.locator('[data-score]')).toHaveText('1/2');
+  });
+  test('controller role and scenario change (Spanish)', async ({ page }) => {
+    await page.goto('es/herramientas/fraseologia-atc/');
+    await page.locator('[data-mode="controller"]').click();
+    await expect(page.locator('[data-pilot-text]')).not.toBeEmpty();
+    await page.locator('[data-answer]').first().click();
+    await expect(page.locator('[data-feedback]')).toContainText('Colación modelo');
+    await expect(page.locator('.pr-opt.is-correct')).toHaveCount(1);
+    await page.locator('[data-scenario]').selectOption('arrival-lemd');
+    await expect(page.locator('[data-atc-text]')).toContainText('descend flight level seven zero');
   });
 });

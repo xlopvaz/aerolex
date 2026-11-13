@@ -31,7 +31,8 @@
     "practice": "Práctica METAR y TAF",
     "converter": "Conversor de unidades",
     "liveWeather": "METAR y TAF en directo",
-    "airportFinder": "Buscador de aeropuertos"
+    "airportFinder": "Buscador de aeropuertos",
+    "atcTrainer": "Entrenador de fraseología ATC"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -662,6 +663,10 @@
       "airportFinder": {
         "title": "Buscador de aeropuertos",
         "text": "Códigos IATA y OACI de más de 5000 aeropuertos, con su región OACI, elevación y situación."
+      },
+      "atcTrainer": {
+        "title": "Entrenador de fraseología ATC",
+        "text": "Colaciona autorizaciones como piloto o detecta errores de colación como controlador, con audio."
       }
     }
   },
@@ -1006,6 +1011,62 @@
       "W": "Sudeste asiático marítimo",
       "Y": "Australia",
       "Z": "China, Mongolia y Corea del Norte"
+    }
+  },
+  "atc": {
+    "metaTitle": "Entrenador de fraseología ATC · AeroLex",
+    "metaDescription": "Practica la colación de autorizaciones ATC como piloto y la detección de errores de colación como controlador, con escenarios didácticos en inglés.",
+    "title": "Entrenador de fraseología ATC",
+    "lead": "Practica las colaciones con escenarios didácticos completos en inglés, la lengua habitual de la radio aeronáutica. Como piloto, escribe la colación; como controlador, detecta los errores.",
+    "fictitious": "Escenario didáctico: el indicativo LEXAIR, la salida ROSAL 1A y las frecuencias son ficticios.",
+    "modeLabel": "Elige tu papel",
+    "modes": {
+      "pilot": "Piloto: colaciona",
+      "controller": "Controlador: revisa la colación"
+    },
+    "scenarioLabel": "Escenario",
+    "stepOf": "Paso {n} de {total}",
+    "atcSays": "El controlador dice",
+    "listen": "Escuchar",
+    "yourReadback": "Tu colación",
+    "placeholder": "Escribe tu colación en inglés: con palabras o con cifras",
+    "check": "Comprobar",
+    "showModel": "Ver la colación modelo",
+    "model": "Colación modelo",
+    "next": "Siguiente paso",
+    "restart": "Volver a empezar",
+    "done": "¡Escenario completado!",
+    "pilotSays": "El piloto colaciona",
+    "isCorrect": "¿Es correcta la colación?",
+    "answerOk": "Sí, es correcta",
+    "answerWrong": "No: error en «{element}»",
+    "resultOk": "Colación completa.",
+    "resultMissing": "Falta o no coincide: {list}.",
+    "callsignMissing": "Falta el indicativo de llamada.",
+    "callsignNotLast": "Consejo: el indicativo va al final de la colación.",
+    "correct": "¡Correcto!",
+    "incorrect": "No es esa.",
+    "theAnswer": "La respuesta es: {answer}",
+    "why": "Por qué",
+    "readbackRule": "Según SERA.8015(e) y el PANS-ATM de la OACI se colacionan siempre: autorizaciones de ruta; instrucciones para entrar, aterrizar, despegar, mantenerse fuera, cruzar o rodar por una pista; pista en uso, reglajes altimétricos, códigos SSR, frecuencias nuevas, instrucciones de nivel, rumbo y velocidad, y niveles de transición. «Roger» o «Wilco» no sustituyen nunca a una colación.",
+    "noSpeech": "Tu navegador no puede leer el mensaje en voz alta.",
+    "elements": {
+      "route": "autorización de ruta",
+      "level": "nivel de vuelo",
+      "altitude": "altitud",
+      "squawk": "código transpondedor",
+      "holdingPoint": "punto de espera",
+      "runway": "pista",
+      "taxiway": "calle de rodaje",
+      "qnh": "QNH",
+      "lineUp": "entrar y mantener",
+      "takeOff": "autorización de despegue",
+      "frequency": "frecuencia",
+      "direction": "sentido del giro",
+      "heading": "rumbo",
+      "speed": "velocidad",
+      "approach": "tipo de aproximación",
+      "land": "autorización de aterrizaje"
     }
   }
 }

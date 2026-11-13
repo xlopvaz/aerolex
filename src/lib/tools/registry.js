@@ -7,6 +7,7 @@ export const TOOLS = [
   { key: 'tafDecoder', icon: 'calendar-clock' },
   { key: 'liveWeather', icon: 'radio-tower' },
   { key: 'practice', icon: 'target' },
+  { key: 'atcTrainer', icon: 'headset' },
   { key: 'converter', icon: 'arrow-left-right' },
   { key: 'airportFinder', icon: 'map-pin' },
 ];
