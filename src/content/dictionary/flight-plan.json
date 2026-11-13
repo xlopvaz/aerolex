@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Flight plan",
+    "es": "Plan de vuelo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "air-traffic-control",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Specified information provided to air traffic services units about an intended flight or portion of a flight of an aircraft.",
+    "es": "Información especificada que se facilita a las dependencias de los servicios de tránsito aéreo sobre un vuelo proyectado o parte de él."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The form telling ATC where, when, how and at what level you plan to fly.",
+    "es": "El formulario que indica al ATC adónde, cuándo, cómo y a qué nivel vas a volar."
+  },
+  "example": {
+    "en": "The flight plan was filed with EUROCONTROL two hours before departure.",
+    "es": "El plan de vuelo se presentó a EUROCONTROL dos horas antes de la salida."
+  },
+  "pronunciation": {
+    "en": "FLITE plan",
+    "es": "flait plan (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "FPL"
+    ],
+    "es": [
+      "FPL"
+    ]
+  },
+  "related": [
+    "atc",
+    "clearance",
+    "alternate-aerodrome"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

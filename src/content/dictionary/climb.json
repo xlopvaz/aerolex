@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Climb",
+    "es": "Ascenso"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The phase of flight in which the aircraft gains altitude after take-off until it reaches the cruise level.",
+    "es": "Fase del vuelo en la que la aeronave gana altitud tras el despegue hasta alcanzar el nivel de crucero."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Going up to cruising altitude.",
+    "es": "Subir hasta la altitud de crucero."
+  },
+  "example": {
+    "en": "\"Climb flight level 240.\"",
+    "es": "«Ascienda a nivel de vuelo 240.»"
+  },
+  "pronunciation": {
+    "en": "klime",
+    "es": "claim (en inglés), ascenso"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "subida"
+    ]
+  },
+  "related": [
+    "take-off",
+    "cruise",
+    "flight-level"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cictt-phase-of-flight"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

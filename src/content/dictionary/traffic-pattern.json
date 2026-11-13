@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Traffic circuit",
+    "es": "Circuito de tránsito"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "general-aviation",
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The standard rectangular path flown around an aerodrome for take-off and landing, made of the upwind, crosswind, downwind, base and final legs.",
+    "es": "Trayectoria rectangular normalizada que se vuela alrededor de un aeródromo para despegar y aterrizar, formada por los tramos de despegue, viento cruzado, viento en cola, base y final."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The rectangle light aircraft fly around the airfield before landing.",
+    "es": "El rectángulo que vuelan las avionetas alrededor del aeródromo antes de aterrizar."
+  },
+  "example": {
+    "en": "\"Report downwind runway 27.\"",
+    "es": "«Notifique viento en cola pista 27.»"
+  },
+  "pronunciation": {
+    "en": "TRAF-ik PAT-ern",
+    "es": "tra-fic pa-tern (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "traffic pattern (US)",
+      "circuit"
+    ],
+    "es": [
+      "circuito"
+    ]
+  },
+  "related": [
+    "touch-and-go",
+    "vfr",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh",
+    "icao-annex-2"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Wing sweep",
+    "es": "Flecha del ala"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The angle at which a wing is angled backwards (or forwards) from the fuselage; sweepback delays the effects of compressibility and allows higher cruise Mach numbers.",
+    "es": "Ángulo con el que el ala se inclina hacia atrás (o hacia delante) desde el fuselaje; la flecha hacia atrás retrasa los efectos de la compresibilidad y permite números de Mach de crucero más altos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much the wings point backwards.",
+    "es": "Lo inclinadas hacia atrás que están las alas."
+  },
+  "example": {
+    "en": "Jet airliners have around 25–35 degrees of wing sweep.",
+    "es": "Los reactores de línea tienen alrededor de 25–35 grados de flecha."
+  },
+  "pronunciation": {
+    "en": "WING sweep",
+    "es": "ying suip (en inglés), flecha"
+  },
+  "synonyms": {
+    "en": [
+      "sweepback"
+    ],
+    "es": [
+      "flecha"
+    ]
+  },
+  "related": [
+    "mach-number",
+    "wing",
+    "dihedral"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

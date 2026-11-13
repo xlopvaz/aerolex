@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Pilot-in-command",
+    "es": "Piloto al mando"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The pilot designated by the operator (or by the owner, in general aviation) as being in command and charged with the safe conduct of a flight.",
+    "es": "Piloto designado por el explotador (o por el propietario, en la aviación general) para estar al mando y encargado de la realización segura de un vuelo."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The pilot who is legally responsible for the flight: the captain.",
+    "es": "El piloto con la responsabilidad legal del vuelo: el comandante."
+  },
+  "example": {
+    "en": "The pilot-in-command decided to divert.",
+    "es": "El piloto al mando decidió desviarse."
+  },
+  "pronunciation": {
+    "en": "PIE-lut in kuh-MAND",
+    "es": "pai-lot in co-mand (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "PIC",
+      "captain",
+      "commander"
+    ],
+    "es": [
+      "PIC",
+      "comandante"
+    ]
+  },
+  "related": [
+    "pf",
+    "crm",
+    "type-rating"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

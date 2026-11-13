@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Refuelling",
+    "es": "Repostaje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Loading fuel into the aircraft tanks on the ground, usually from a fuel truck or a hydrant system, following safety precautions (special precautions apply if passengers are on board).",
+    "es": "Carga de combustible en los depósitos del avión en tierra, normalmente desde un camión cisterna o una red de hidrantes, siguiendo precauciones de seguridad (hay precauciones especiales si hay pasajeros a bordo)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Filling the aircraft's tanks.",
+    "es": "Llenar los depósitos del avión."
+  },
+  "example": {
+    "en": "Refuelling with passengers on board requires cabin crew at the doors.",
+    "es": "El repostaje con pasajeros a bordo exige tripulantes junto a las puertas."
+  },
+  "pronunciation": {
+    "en": "ree-FYOO-ul-ing",
+    "es": "ri-fiu-e-ling (en inglés), repostaje"
+  },
+  "synonyms": {
+    "en": [
+      "fuelling"
+    ],
+    "es": [
+      "carga de combustible"
+    ]
+  },
+  "related": [
+    "turnaround",
+    "load-sheet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Fly-by-wire",
+    "es": "Mandos eléctricos (fly-by-wire)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A flight control system in which the pilot's inputs are sent as electrical signals to computers, which move the control surfaces and can protect the aircraft from leaving its safe flight envelope.",
+    "es": "Sistema de mandos de vuelo en el que las órdenes del piloto se envían como señales eléctricas a ordenadores, que mueven las superficies de mando y pueden impedir que el avión salga de su envolvente de vuelo segura."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Flight controls connected by wires and computers instead of cables.",
+    "es": "Mandos de vuelo conectados por cables eléctricos y ordenadores en lugar de cables mecánicos."
+  },
+  "example": {
+    "en": "Airbus introduced fly-by-wire on airliners with the A320.",
+    "es": "Airbus llevó el fly-by-wire a los aviones de línea con el A320."
+  },
+  "pronunciation": {
+    "en": "FLY-by-wire",
+    "es": "flai-bai-uaier (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "FBW"
+    ],
+    "es": [
+      "FBW"
+    ]
+  },
+  "related": [
+    "autopilot",
+    "aileron",
+    "elevator"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

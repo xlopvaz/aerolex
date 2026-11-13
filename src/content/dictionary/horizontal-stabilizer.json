@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Horizontal stabiliser",
+    "es": "Estabilizador horizontal"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The fixed or trimmable horizontal surface of the tail that gives longitudinal (pitch) stability; the elevators are hinged to its rear.",
+    "es": "Superficie horizontal de la cola, fija o compensable, que da estabilidad longitudinal (en cabeceo); los timones de profundidad van articulados en su parte trasera."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The small \"wing\" at the tail.",
+    "es": "El pequeño «ala» de la cola."
+  },
+  "example": {
+    "en": "On airliners the whole horizontal stabiliser moves to trim the aircraft.",
+    "es": "En los aviones de línea, todo el estabilizador horizontal se mueve para compensar el avión."
+  },
+  "pronunciation": {
+    "en": "hor-ih-ZON-tul STAY-bih-lie-zer",
+    "es": "es-ta-bi-li-za-dor o-ri-zon-tal"
+  },
+  "synonyms": {
+    "en": [
+      "tailplane"
+    ],
+    "es": [
+      "plano de cola"
+    ]
+  },
+  "related": [
+    "elevator",
+    "trim",
+    "empennage",
+    "pitch"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

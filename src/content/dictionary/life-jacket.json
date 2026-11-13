@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Life jacket",
+    "es": "Chaleco salvavidas"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An inflatable vest stowed under or near each seat, worn after a ditching; it is inflated only after leaving the aircraft.",
+    "es": "Chaleco hinchable guardado bajo cada asiento o cerca de él que se usa tras un amerizaje; se hincha solo después de salir del avión."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The vest under your seat for landings on water.",
+    "es": "El chaleco bajo el asiento para los amerizajes."
+  },
+  "example": {
+    "en": "\"Do not inflate your life jacket inside the aircraft.\"",
+    "es": "«No hinchen el chaleco salvavidas dentro del avión.»"
+  },
+  "pronunciation": {
+    "en": "LYFE JAK-it",
+    "es": "laif ya-kit (en inglés), chaleco"
+  },
+  "synonyms": {
+    "en": [
+      "life vest"
+    ],
+    "es": [
+      "chaleco"
+    ]
+  },
+  "related": [
+    "ditching",
+    "safety-demonstration"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "cfr-14-part-25"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

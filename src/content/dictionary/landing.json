@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Landing",
+    "es": "Aterrizaje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The phase of flight from the beginning of the landing flare until the aircraft leaves the runway or comes to a stop.",
+    "es": "Fase del vuelo desde el inicio de la recogida hasta que la aeronave abandona la pista o se detiene."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Touching down and slowing down on the runway.",
+    "es": "Tomar tierra y frenar en la pista."
+  },
+  "example": {
+    "en": "\"Cleared to land runway 32L, wind 300 degrees 8 knots.\"",
+    "es": "«Autorizado a aterrizar pista 32L, viento 300 grados 8 nudos.»"
+  },
+  "pronunciation": {
+    "en": "LAN-ding",
+    "es": "lan-ding (en inglés), aterrizaje"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "flare",
+    "touchdown",
+    "approach",
+    "landing-gear"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cictt-phase-of-flight"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

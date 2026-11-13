@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Seat belt sign",
+    "es": "Señal de cinturones"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The illuminated sign in the cabin, controlled from the flight deck, that tells passengers to fasten their seat belts and remain seated.",
+    "es": "Señal luminosa de la cabina, controlada desde la cabina de vuelo, que indica a los pasajeros que se abrochen el cinturón y permanezcan sentados."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The light that tells you to fasten your seat belt.",
+    "es": "La luz que indica que te abroches el cinturón."
+  },
+  "example": {
+    "en": "The captain switched on the seat belt sign before the turbulence.",
+    "es": "El comandante encendió la señal de cinturones antes de la turbulencia."
+  },
+  "pronunciation": {
+    "en": "SEET belt syne",
+    "es": "sit belt sain (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "fasten seat belt sign"
+    ],
+    "es": [
+      "señal de abrocharse el cinturón"
+    ]
+  },
+  "related": [
+    "turbulence",
+    "safety-demonstration",
+    "cabin-crew"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "cfr-14-part-25"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

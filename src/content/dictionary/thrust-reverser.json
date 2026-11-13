@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Thrust reverser",
+    "es": "Inversor de empuje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A device on a jet engine that redirects part of the airflow forwards after landing to help slow the aircraft down.",
+    "es": "Dispositivo de un motor a reacción que desvía hacia delante parte del flujo de aire tras el aterrizaje para ayudar a frenar el avión."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The engine part that pushes air forwards to help brake on landing.",
+    "es": "La parte del motor que empuja el aire hacia delante para ayudar a frenar al aterrizar."
+  },
+  "example": {
+    "en": "\"Reversers green\" — both thrust reversers deployed.",
+    "es": "«Reversas en verde»: ambos inversores de empuje desplegados."
+  },
+  "pronunciation": {
+    "en": "THRUST ree-VUR-ser",
+    "es": "trast ri-ver-ser (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "reverser"
+    ],
+    "es": [
+      "reversa"
+    ]
+  },
+  "related": [
+    "thrust",
+    "turbofan",
+    "landing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-powerplant"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

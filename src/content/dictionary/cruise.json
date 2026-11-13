@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Cruise",
+    "es": "Crucero"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The phase of flight between the end of the climb and the start of the descent, flown at a planned level and speed.",
+    "es": "Fase del vuelo entre el final del ascenso y el inicio del descenso, que se vuela a un nivel y a una velocidad previstos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The long, level part of the flight.",
+    "es": "La parte larga y nivelada del vuelo."
+  },
+  "example": {
+    "en": "The cruise level was FL370.",
+    "es": "El nivel de crucero fue FL370."
+  },
+  "pronunciation": {
+    "en": "krooz",
+    "es": "cruis (en inglés), crucero"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "climb",
+    "descent",
+    "flight-level",
+    "mach-number"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cictt-phase-of-flight"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

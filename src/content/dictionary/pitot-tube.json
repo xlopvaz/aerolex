@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Pitot tube",
+    "es": "Tubo pitot"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "aerodynamics"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A small forward-facing tube that measures the total (ram) air pressure; together with static pressure, it is used to calculate the airspeed.",
+    "es": "Pequeño tubo orientado hacia delante que mide la presión total (de impacto) del aire; junto con la presión estática, sirve para calcular la velocidad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The little tube on the nose that measures airspeed.",
+    "es": "El tubito del morro que mide la velocidad."
+  },
+  "example": {
+    "en": "A blocked pitot tube can make the airspeed indication unreliable.",
+    "es": "Un tubo pitot obstruido puede hacer que la indicación de velocidad no sea fiable."
+  },
+  "pronunciation": {
+    "en": "PEE-toh toob",
+    "es": "tu-bo pi-tot"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ias",
+    "cas",
+    "icing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

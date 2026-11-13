@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Pilot licence",
+    "es": "Licencia de piloto"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The document issued by the aviation authority that allows its holder to act as a pilot within the privileges and ratings it contains (for example PPL, CPL or ATPL).",
+    "es": "Documento expedido por la autoridad aeronáutica que permite a su titular actuar como piloto dentro de las atribuciones y habilitaciones que contiene (por ejemplo, PPL, CPL o ATPL)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The official card that lets you fly as a pilot.",
+    "es": "La tarjeta oficial que te permite volar como piloto."
+  },
+  "example": {
+    "en": "The ATPL is the licence required to command an airliner.",
+    "es": "La ATPL es la licencia necesaria para ser comandante de un avión de línea."
+  },
+  "pronunciation": {
+    "en": "LIE-sens",
+    "es": "lai-sens (en inglés), licencia"
+  },
+  "synonyms": {
+    "en": [
+      "license (US)"
+    ],
+    "es": [
+      "licencia"
+    ]
+  },
+  "related": [
+    "ppl",
+    "cpl",
+    "atpl",
+    "type-rating"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-1",
+    "eu-1178-2011"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

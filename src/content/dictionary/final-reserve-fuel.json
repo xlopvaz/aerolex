@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Final reserve fuel",
+    "es": "Combustible de reserva final"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The minimum fuel that should remain on landing; for turbine aeroplanes it is typically the fuel for 30 minutes of flight at holding speed 1,500 ft above the aerodrome. Declaring \"MINIMUM FUEL\" or a fuel emergency is linked to it.",
+    "es": "Combustible mínimo que debería quedar al aterrizar; para aviones de turbina suele ser el necesario para 30 minutos de vuelo a velocidad de espera a 1500 ft sobre el aeródromo. Declarar «COMBUSTIBLE MÍNIMO» o una emergencia por combustible está ligado a él."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The fuel that must still be in the tanks when you land.",
+    "es": "El combustible que todavía debe quedar en los depósitos al aterrizar."
+  },
+  "example": {
+    "en": "\"MAYDAY MAYDAY MAYDAY, fuel\" — landing would leave less than final reserve fuel.",
+    "es": "«MAYDAY MAYDAY MAYDAY, combustible»: al aterrizar quedaría menos de la reserva final."
+  },
+  "pronunciation": {
+    "en": "FY-nul ree-ZURV FYOO-ul",
+    "es": "com-bus-ti-ble de re-ser-va fi-nal"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "alternate-aerodrome",
+    "mayday",
+    "holding"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

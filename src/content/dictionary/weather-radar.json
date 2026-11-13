@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Weather radar",
+    "es": "Radar meteorológico"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An airborne radar in the aircraft's nose that detects precipitation ahead, helping the crew avoid thunderstorms and heavy rain; returns are shown in colours on the navigation display.",
+    "es": "Radar de a bordo, situado en el morro, que detecta la precipitación por delante y ayuda a la tripulación a evitar tormentas y lluvia intensa; los ecos se muestran en colores en la pantalla de navegación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The radar in the nose that shows storms ahead.",
+    "es": "El radar del morro que muestra las tormentas que hay delante."
+  },
+  "example": {
+    "en": "The crew deviated 20 NM to avoid the red cells on the weather radar.",
+    "es": "La tripulación se desvió 20 NM para evitar las células rojas del radar meteorológico."
+  },
+  "pronunciation": {
+    "en": "WETH-er RAY-dar",
+    "es": "ra-dar me-te-o-ro-ló-gi-co"
+  },
+  "synonyms": {
+    "en": [
+      "WXR"
+    ],
+    "es": [
+      "WXR"
+    ]
+  },
+  "related": [
+    "nd",
+    "cumulonimbus",
+    "turbulence"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

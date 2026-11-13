@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Vertical stabiliser",
+    "es": "Estabilizador vertical"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The fixed vertical surface of the tail that gives directional (yaw) stability; the rudder is hinged to its rear.",
+    "es": "Superficie vertical fija de la cola que da estabilidad direccional (en guiñada); el timón de dirección va articulado en su parte trasera."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The tail fin.",
+    "es": "La aleta de cola."
+  },
+  "example": {
+    "en": "The airline logo is painted on the vertical stabiliser.",
+    "es": "El logotipo de la aerolínea va pintado en el estabilizador vertical."
+  },
+  "pronunciation": {
+    "en": "VUR-tih-kul STAY-bih-lie-zer",
+    "es": "es-ta-bi-li-za-dor ver-ti-cal"
+  },
+  "synonyms": {
+    "en": [
+      "fin",
+      "vertical tail"
+    ],
+    "es": [
+      "deriva"
+    ]
+  },
+  "related": [
+    "rudder",
+    "empennage",
+    "yaw"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

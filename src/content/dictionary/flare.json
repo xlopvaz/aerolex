@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Flare",
+    "es": "Recogida"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The manoeuvre just before touchdown in which the pilot raises the nose slightly to reduce the rate of descent for a smooth landing.",
+    "es": "Maniobra justo antes de la toma de contacto en la que el piloto levanta ligeramente el morro para reducir la velocidad de descenso y aterrizar con suavidad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Lifting the nose just above the runway to land softly.",
+    "es": "Levantar el morro justo sobre la pista para tomar tierra con suavidad."
+  },
+  "example": {
+    "en": "\"Thirty… twenty… ten\" — the pilot started the flare at about 30 ft.",
+    "es": "«Treinta… veinte… diez»: el piloto empezó la recogida a unos 30 ft."
+  },
+  "pronunciation": {
+    "en": "flair",
+    "es": "fler (en inglés), recogida"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "enderezamiento"
+    ]
+  },
+  "related": [
+    "touchdown",
+    "landing",
+    "pitch"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

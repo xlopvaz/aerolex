@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Touch-and-go",
+    "es": "Toma y despegue"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "general-aviation",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A training manoeuvre in which the aircraft lands and takes off again without stopping on the runway.",
+    "es": "Maniobra de instrucción en la que el avión aterriza y vuelve a despegar sin detenerse en la pista."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Landing and taking off again straight away, to practise.",
+    "es": "Aterrizar y volver a despegar en seguida, para practicar."
+  },
+  "example": {
+    "en": "The student did six touch-and-goes in the circuit.",
+    "es": "El alumno hizo seis tomas y despegues en el circuito."
+  },
+  "pronunciation": {
+    "en": "TUCH-and-goh",
+    "es": "tach-and-gou (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "toque y despegue"
+    ]
+  },
+  "related": [
+    "traffic-pattern",
+    "landing",
+    "take-off"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
