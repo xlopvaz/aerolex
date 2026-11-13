@@ -1,0 +1,193 @@
+---
+/**
+ * Global bibliography: every source in src/content/sources/sources.json, grouped by kind,
+ * with the dictionary entries, lessons, courses, aircraft, timeline events and weather codes
+ * that cite it. The text filter works on the client; without JavaScript the full list shows.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Icon from '../components/ui/Icon.astro';
+import StatTile from '../components/ui/StatTile.astro';
+import { childHref, href, useT } from '../i18n/index.js';
+import { USAGE_AREAS, buildUsage, groupByKind, usageCount } from '../lib/sources/bibliography.js';
+import timelineEvents from '../content/timeline/events.json';
+import weatherCodes from '../content/weather/codes.json';
+
+interface Props { lang: 'es' | 'en'; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+
+const sources = (await getCollection('sources')).map((s) => ({ id: s.id, ...s.data }));
+const dictionary = await getCollection('dictionary');
+const courses = await getCollection('courses');
+const lessons = (await getCollection('lessons')).filter((l) => l.data.lang === lang);
+const aircraft = await getCollection('aircraft');
+
+// Label and link of every citing item, per area, so each source can list them.
+type Item = { key: string; sources: string[]; label: string; url: string };
+const areas: Record<string, Item[]> = {
+  dictionary: dictionary.map((e) => ({ key: e.id, sources: e.data.sources, label: e.data.term[lang], url: childHref('dictionary', e.id, lang) })),
+  lessons: lessons.map((l) => ({
+    key: `${l.data.course}/${l.data.lesson}`,
+    sources: l.data.sources,
+    label: l.data.title,
+    url: childHref('academy', `${l.data.course}/${l.data.lesson}`, lang),
+  })),
+  courses: courses.map((c) => ({ key: c.id, sources: c.data.sources, label: c.data.title[lang], url: childHref('academy', c.id, lang) })),
+  aircraft: aircraft.map((a) => ({
+    key: a.id,
+    sources: [...a.data.sources, ...a.data.variants.flatMap((v) => v.sources)],
+    label: a.data.family[lang],
+    url: childHref('hangar', a.id, lang),
+  })),
+  timeline: Object.entries(timelineEvents as Record<string, any>).map(([id, e]) => ({ key: id, sources: e.sources, label: e.title[lang], url: `${href('timeline', lang)}#${id}` })),
+  weather: Object.entries(weatherCodes as Record<string, any>).map(([id, c]) => ({ key: id, sources: c.sources, label: c.code, url: `${href('weatherGlossary', lang)}#code-${id}` })),
+};
+const itemIndex = new Map(Object.entries(areas).map(([area, items]) => [area, new Map(items.map((i) => [i.key, i]))]));
+const usage = buildUsage(areas);
+const collator = new Intl.Collator(lang, { sensitivity: 'base', numeric: true });
+
+const groups = groupByKind(sources, lang).map((g) => ({
+  ...g,
+  items: g.items.map((s) => {
+    const u = usage.get(s.id) ?? {};
+    return {
+      ...s,
+      total: usageCount(u),
+      areas: USAGE_AREAS.filter((a) => u[a]?.length).map((a) => ({
+        area: a,
+        items: u[a].map((k: string) => itemIndex.get(a)!.get(k)!).sort((x, y) => collator.compare(x.label, y.label)),
+      })),
+    };
+  }),
+}));
+const citing = Object.values(areas).reduce((n, items) => n + items.length, 0);
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('sourcesPage.metaTitle')} description={tr('sourcesPage.lead')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.sources') }]} />
+      <h1>{tr('sourcesPage.title')}</h1>
+      <p class="lead">{tr('sourcesPage.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container bib" data-bib>
+    <div class="grid bib__stats">
+      <StatTile label={tr('sourcesPage.statSources')} value={String(sources.length)} icon="book-check" tone="cyan" />
+      <StatTile label={tr('sourcesPage.statKinds')} value={String(groups.length)} icon="layers" tone="magenta" />
+      <StatTile label={tr('sourcesPage.statItems')} value={String(citing)} icon="link" tone="green" />
+    </div>
+
+    <p class="bib__note">{tr('sourcesPage.paraphrase')}</p>
+
+    <nav class="bib__toc" aria-label={tr('sourcesPage.tocLabel')}>
+      <ul>
+        {groups.map((g) => (
+          <li><a href={`#kind-${g.kind}`}>{tr(`sourceKinds.${g.kind}`)} <span class="mono">{g.items.length}</span></a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <label for="bib-q" class="visually-hidden">{tr('sourcesPage.filterLabel')}</label>
+    <div class="bib__field">
+      <Icon name="list-filter" size={18} class="bib__icon" />
+      <input id="bib-q" type="search" autocomplete="off" placeholder={tr('sourcesPage.filterPlaceholder')} data-bib-q />
+    </div>
+    <p class="bib__count" role="status" aria-live="polite" data-bib-count>{tr('sourcesPage.count', { n: String(sources.length) })}</p>
+    <p class="bib__empty" hidden data-bib-empty>{tr('sourcesPage.empty')}</p>
+
+    {groups.map((g) => (
+      <section class="bib__group" aria-labelledby={`kind-${g.kind}`} data-bib-group>
+        <h2 id={`kind-${g.kind}`}>{tr(`sourceKinds.${g.kind}`)}</h2>
+        <ul class="bib__list">
+          {g.items.map((s) => (
+            <li class="src" id={`src-${s.id}`} data-bib-item data-search={`${s.title} ${s.publisher} ${s.id}`}>
+              <div class="src__head">
+                <span class="src__pub mono">{s.publisher}</span>
+                <span class="src__lic">{tr(`sourcesPage.licences.${s.licence}`)}</span>
+              </div>
+              <a class="src__title" href={s.url} rel="noopener">{s.title} <Icon name="external-link" size={13} /></a>
+              {s.total > 0 && (
+                <details class="src__used">
+                  <summary>{tr('sourcesPage.citedIn', { n: String(s.total) })}</summary>
+                  {s.areas.map((a) => (
+                    <div class="src__area">
+                      <h3>{tr(`sourcesPage.areas.${a.area}`)} <span class="mono">{a.items.length}</span></h3>
+                      <ul>
+                        {a.items.map((i) => <li><a href={i.url} class={a.area === 'weather' ? 'mono' : undefined}>{i.label}</a></li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </details>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<script>
+  import { matchesQuery } from '../lib/sources/bibliography.js';
+  const root = document.querySelector<HTMLElement>('[data-bib]');
+  if (root) {
+    const input = root.querySelector<HTMLInputElement>('[data-bib-q]')!;
+    const count = root.querySelector<HTMLElement>('[data-bib-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-bib-empty]')!;
+    const template = count.textContent!.replace(/\d+/, '{n}');
+    const groups = [...root.querySelectorAll<HTMLElement>('[data-bib-group]')].map((g) => ({
+      g,
+      items: [...g.querySelectorAll<HTMLElement>('[data-bib-item]')].map((el) => ({ el, src: { title: el.dataset.search!, publisher: '' } })),
+    }));
+    input.addEventListener('input', () => {
+      let n = 0;
+      for (const { g, items } of groups) {
+        let shown = 0;
+        for (const { el, src } of items) {
+          const show = matchesQuery(src, input.value);
+          el.hidden = !show;
+          if (show) shown++;
+        }
+        g.hidden = shown === 0;
+        n += shown;
+      }
+      count.textContent = template.replace('{n}', String(n));
+      empty.hidden = n > 0;
+    });
+  }
+</script>
+
+<style>
+  .bib { padding-top: var(--space-6); padding-bottom: var(--space-8); }
+  .bib__stats { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-bottom: var(--space-5); }
+  .bib__note { color: var(--text-muted); max-width: 70ch; }
+  .bib__toc ul { list-style: none; padding: 0; margin: var(--space-4) 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .bib__toc li { margin: 0; }
+  .bib__toc a { display: inline-flex; gap: 0.4rem; align-items: baseline; padding: 0.35rem 0.8rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); font-size: var(--text-sm); text-decoration: none; }
+  .bib__toc a:hover { border-color: var(--primary); }
+  .bib__toc .mono { color: var(--text-muted); font-size: var(--text-xs); }
+  .bib__field { position: relative; max-width: 480px; }
+  .bib :global(.bib__icon) { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+  .bib__field input { width: 100%; padding: 0.75rem 1rem 0.75rem 2.6rem; border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: var(--surface); }
+  .bib__field input:focus { outline: none; border-color: var(--primary); box-shadow: var(--glow); }
+  .bib__count, .bib__empty { color: var(--text-muted); font-size: var(--text-sm); margin: var(--space-3) 0; }
+  .bib__group { margin-top: var(--space-6); scroll-margin-top: calc(var(--header-h) + var(--space-4)); }
+  .bib__group h2 { scroll-margin-top: calc(var(--header-h) + var(--space-4)); }
+  .bib__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
+  .src { margin: 0; padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); scroll-margin-top: calc(var(--header-h) + var(--space-4)); }
+  .src:target { border-color: var(--primary); box-shadow: var(--glow); }
+  .src__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2); margin-bottom: var(--space-2); }
+  .src__pub { font-size: var(--text-xs); color: var(--cyan); font-weight: 600; }
+  .src__lic { font-size: var(--text-xs); color: var(--text-muted); }
+  .src__title { display: inline-flex; align-items: center; gap: 0.3rem; font-weight: 600; }
+  .src__used { margin-top: var(--space-3); }
+  .src__used summary { cursor: pointer; font-size: var(--text-sm); color: var(--text-muted); }
+  .src__area h3 { font-size: var(--text-sm); margin: var(--space-3) 0 var(--space-2); }
+  .src__area h3 .mono { color: var(--text-muted); font-weight: 400; }
+  .src__area ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); font-size: var(--text-sm); }
+  .src__area li { margin: 0; }
+  [hidden] { display: none !important; }
+</style>

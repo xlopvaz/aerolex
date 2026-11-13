@@ -36,7 +36,8 @@
     "aircraftGame": "Which aircraft is it?",
     "flashcards": "Flashcards",
     "weatherGlossary": "Weather glossary",
-    "timeline": "Timeline"
+    "timeline": "Timeline",
+    "sources": "Sources"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -1235,5 +1236,34 @@
     "terms": "In the dictionary",
     "sources": "Sources",
     "draftNote": "Content under review: dates and figures come from the sources cited in each milestone. When a source only gives the month or the year, no day is shown."
+  },
+  "sourcesPage": {
+    "metaTitle": "Sources and bibliography · AeroLex",
+    "title": "Sources and bibliography",
+    "lead": "Every source cited by the dictionary, the academy, the Hangar, the timeline and the weather glossary, with what relies on each one.",
+    "statSources": "Sources",
+    "statKinds": "Source types",
+    "statItems": "Items with sources",
+    "paraphrase": "AeroLex texts paraphrase their sources and do not replace them: for real operations, always check the current official version. Content stays a draft until it has been reviewed against these sources.",
+    "tocLabel": "Source types",
+    "filterLabel": "Filter sources",
+    "filterPlaceholder": "Filter by title or publisher: ICAO, EASA, Boeing…",
+    "count": "{n} sources",
+    "empty": "No source matches the filter.",
+    "citedIn": "Cited in {n} items",
+    "areas": {
+      "dictionary": "Dictionary",
+      "lessons": "Lessons",
+      "courses": "Courses",
+      "aircraft": "Hangar",
+      "timeline": "Timeline",
+      "weather": "Weather glossary"
+    },
+    "licences": {
+      "copyright": "Copyrighted: cited and paraphrased",
+      "public-domain-us": "Public domain (US Government)",
+      "eu-reuse": "Reusable with attribution (public-sector information)",
+      "wmo": "© World Meteorological Organization"
+    }
   }
 }
