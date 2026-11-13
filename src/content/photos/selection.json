@@ -1,112 +1,22 @@
 [
   {
-    "id": "a220-family-1",
-    "family": "a220-family",
-    "title": "File:Frankfurt Airport airBaltic Airbus A220-300 YL-ABL (DSC09548).jpg"
+    "id": "boeing-757-1",
+    "family": "boeing-757",
+    "title": "File:Delta Boeing 757-200 N699DL BWI MD1.jpg"
   },
   {
-    "id": "a220-family-2",
-    "family": "a220-family",
-    "title": "File:HB-JCS (45992719044).jpg"
+    "id": "boeing-757-2",
+    "family": "boeing-757",
+    "title": "File:TF-FIK, Tegel Airport, Berlin (IMG 9001).jpg"
   },
   {
-    "id": "a220-family-3",
-    "family": "a220-family",
-    "title": "File:HB-JBF in Zürich.jpg"
+    "id": "boeing-757-3",
+    "family": "boeing-757",
+    "title": "File:Delta - B752 - N649DL at DCA - 2012-07-16.jpg"
   },
   {
-    "id": "a320neo-family-1",
-    "family": "a320neo-family",
-    "title": "File:EZY A320NEO, GVA, Le Grand-Saconnex (BL7C0529) (cropped).jpg"
-  },
-  {
-    "id": "a320neo-family-2",
-    "family": "a320neo-family",
-    "title": "File:Hannover Airport Pegasus Airlines Airbus A321-251NX TC-RBE (DSC06319).jpg"
-  },
-  {
-    "id": "a320neo-family-3",
-    "family": "a320neo-family",
-    "title": "File:F-WXLR, ILA 2024, Schoenefeld (ILA45302).jpg"
-  },
-  {
-    "id": "boeing-737-1",
-    "family": "boeing-737",
-    "title": "File:Aeromexico Boeing 737-8 MAX N110JS IAD VA3.jpg"
-  },
-  {
-    "id": "boeing-737-2",
-    "family": "boeing-737",
-    "title": "File:Boeing 737 MAX 8-200 - 9H-VVI from Ryanair close view.jpg"
-  },
-  {
-    "id": "boeing-737-3",
-    "family": "boeing-737",
-    "title": "File:Southwest Boeing 737-8 MAX N8942L BWI MD2.jpg"
-  },
-  {
-    "id": "a330-family-1",
-    "family": "a330-family",
-    "title": "File:Lufthansa Airbus A330-343 D-AIKE MUC 2015 02.jpg"
-  },
-  {
-    "id": "a330-family-2",
-    "family": "a330-family",
-    "title": "File:Airbus A330neo F-WTTN 45.jpg"
-  },
-  {
-    "id": "a330-family-3",
-    "family": "a330-family",
-    "title": "File:Airbus A330neo F-WTTN 2.jpg"
-  },
-  {
-    "id": "a330-family-4",
-    "family": "a330-family",
-    "title": "File:Turkish.a330-200.tc-jnd.arp.jpg"
-  },
-  {
-    "id": "a350-family-1",
-    "family": "a350-family",
-    "title": "File:Paris Air Show 2019, Le Bourget (SIAE9586).jpg"
-  },
-  {
-    "id": "a350-family-2",
-    "family": "a350-family",
-    "title": "File:Airbus A350-941 F-WWCF MSN002 ILA Berlin 2016 17.jpg"
-  },
-  {
-    "id": "a350-family-3",
-    "family": "a350-family",
-    "title": "File:Airbus A350-1000 F-WMIL 15.jpg"
-  },
-  {
-    "id": "boeing-787-1",
-    "family": "boeing-787",
-    "title": "File:Qatar Airways Boeing 787-8 Dreamliner A7-BCA MUC 2015 06.jpg"
-  },
-  {
-    "id": "boeing-787-2",
-    "family": "boeing-787",
-    "title": "File:N1015X Air Tahiti Nui Boeing 787-9 Dreamliner 27.jpg"
-  },
-  {
-    "id": "boeing-787-3",
-    "family": "boeing-787",
-    "title": "File:Cockpit windows of a Boeing 787 (1).jpg"
-  },
-  {
-    "id": "a380-1",
-    "family": "a380",
-    "title": "File:Air France A380 F-HPJA.jpg"
-  },
-  {
-    "id": "a380-2",
-    "family": "a380",
-    "title": "File:ILA 2008 Airbus A380 body.jpg"
-  },
-  {
-    "id": "a380-3",
-    "family": "a380",
-    "title": "File:A380 F-WWEA LEGT 2.jpg"
+    "id": "boeing-757-4",
+    "family": "boeing-757",
+    "title": "File:United Airlines - N558UA - Boeing 757-222 - San Francisco International Airport-0713.jpg"
   }
 ]
