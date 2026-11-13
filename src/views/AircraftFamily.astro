@@ -62,7 +62,7 @@ const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) =
         <h2>{tr('hangar.specs')}</h2>
         <Button href={compareHref} variant="secondary" icon="columns-3" size="sm">{tr('hangar.compareCta')}</Button>
       </div>
-      <div class="cmp__wrap" set:html={table} />
+      <div class="cmp__wrap" tabindex="0" role="region" aria-label={tr('hangar.specs')} set:html={table} />
       <p class="family__note">{tr('hangar.dataNote')}</p>
     </section>
 

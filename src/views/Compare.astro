@@ -53,7 +53,7 @@ const table = compareTableHtml(initial, { lang, units: 'metric', labels });
     </div>
 
     <p class="cmp__empty" data-compare-empty hidden>{tr('hangar.compareEmpty')}</p>
-    <div class="cmp__wrap" data-compare-table set:html={table} aria-live="polite" />
+    <div class="cmp__wrap" tabindex="0" role="region" aria-label={tr('nav.compare')} data-compare-table set:html={table} aria-live="polite" />
     <p class="cmp__note">{tr('hangar.dataNote')}</p>
     <Callout type="official-procedure" label={tr('styleguide.calloutLabels.official-procedure')}><p>{tr('hangar.educational')}</p></Callout>
   </div>

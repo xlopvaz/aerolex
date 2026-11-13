@@ -30,7 +30,7 @@ const dateText = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', 
       <input id="af-q" type="search" class="af-input" autocomplete="off" spellcheck="false" placeholder={tr('airports.placeholder')} aria-describedby="af-status" data-q />
       <p id="af-status" class="mt-hint" role="status" data-status>{tr('airports.hint')}</p>
     </div>
-    <div class="mt-table-wrap" data-results></div>
+    <div class="mt-table-wrap" tabindex="0" role="region" aria-label={tr('airports.title')} data-results></div>
     <p class="mt-hint">{tr('airports.source', { date: dateText })}</p>
     <noscript><p>{tr('tools.noscript')}</p></noscript>
   </div>

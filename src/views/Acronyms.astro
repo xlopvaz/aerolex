@@ -39,7 +39,7 @@ const rows = entries
       <input id="acr-q" type="search" autocomplete="off" placeholder={tr('acronyms.filterPlaceholder')} data-acr-q />
     </div>
     <p class="acr__count" role="status" aria-live="polite" data-acr-count>{tr('dictionary.entriesCount').replace('{count}', String(rows.length))}</p>
-    <div class="acr__table">
+    <div class="acr__table" tabindex="0" role="region" aria-label={tr('acronyms.title')}>
       <table>
         <caption class="visually-hidden">{tr('acronyms.title')}</caption>
         <thead>

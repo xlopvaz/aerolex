@@ -114,7 +114,7 @@ const messages = {
       <Card padding="lg" as="section">
         <h2>{tr('dashboard.practiceTitle')}</h2>
         <p class="dash__help" data-practice-empty>{tr('dashboard.practiceEmpty')}</p>
-        <div class="dash__table" data-practice-wrap hidden>
+        <div class="dash__table" tabindex="0" role="region" aria-label={tr('dashboard.practiceTitle')} data-practice-wrap hidden>
           <table>
             <caption class="visually-hidden">{tr('dashboard.practiceTitle')}</caption>
             <thead>

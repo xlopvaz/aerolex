@@ -50,7 +50,7 @@ const payload = JSON.stringify({
     {groups.map((g) => (
       <section class="wg-group" data-group={g.group} aria-labelledby={`wg-${g.group}`}>
         <h2 id={`wg-${g.group}`}>{tr(`weatherGlossary.groups.${g.group}`)}</h2>
-        <div class="wg-table-wrap">
+        <div class="wg-table-wrap" tabindex="0" role="region" aria-labelledby={`wg-${g.group}`}>
           <table class="wg-table">
             <thead><tr><th scope="col">{tr('weatherGlossary.code')}</th><th scope="col">{tr('weatherGlossary.meaning')}</th><th scope="col">{tr('weatherGlossary.example')}</th></tr></thead>
             <tbody>

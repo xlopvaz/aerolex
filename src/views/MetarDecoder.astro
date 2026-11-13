@@ -80,7 +80,7 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
       </div>
 
       <h3>{tr('metarTool.groupsTitle')}</h3>
-      <div class="mt-table-wrap" data-out="table" set:html={out.table} />
+      <div class="mt-table-wrap" tabindex="0" role="region" aria-label={tr('metarTool.groupsTitle')} data-out="table" set:html={out.table} />
 
       <h3>{tr('metarTool.issuesTitle')}</h3>
       <div data-out="issues" set:html={out.issues} />
