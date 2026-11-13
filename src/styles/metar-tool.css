@@ -93,3 +93,4 @@
 .tf-box--becmg { --c: var(--green); } .tf-box--tempo { --c: var(--amber); } .tf-box--prob { --c: var(--magenta); }
 .tf-cond { margin: 0; padding-left: 1.1rem; }
 .tf-cond li { margin: 0.15rem 0; }
+.mt-source[data-kind='live'] { color: var(--green); }

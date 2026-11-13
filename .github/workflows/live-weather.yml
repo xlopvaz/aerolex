@@ -1,0 +1,66 @@
+# Refreshes the live METAR/TAF page: downloads the latest reports for the stations in
+# src/content/live/stations.json from aviationweather.gov (no key, US public domain),
+# rebuilds the site from main and publishes it. Code changes are tested by "CI & Deploy";
+# this workflow only refreshes data, so it runs the build and the site checker.
+name: Live weather
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-weather
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Fetch data & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch live METAR/TAF
+        run: node scripts/fetch-live-weather.mjs
+
+      - name: Build site
+        run: npm run build
+
+      - name: Check compiled site
+        run: npm run check:site
+
+      - name: Upload site for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

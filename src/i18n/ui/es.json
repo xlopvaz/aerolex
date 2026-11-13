@@ -29,7 +29,8 @@
     "metarDecoder": "Decodificador METAR",
     "tafDecoder": "Decodificador TAF",
     "practice": "Práctica METAR y TAF",
-    "converter": "Conversor de unidades"
+    "converter": "Conversor de unidades",
+    "liveWeather": "METAR y TAF en directo"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -652,6 +653,10 @@
       "converter": {
         "title": "Conversor de unidades",
         "text": "Velocidad, distancia, altitud, masa, presión, combustible y temperatura, con las definiciones exactas."
+      },
+      "liveWeather": {
+        "title": "METAR y TAF en directo",
+        "text": "Los últimos METAR y TAF reales de una selección de aeropuertos, descodificados y con aviso de datos antiguos."
       }
     }
   },
@@ -711,7 +716,8 @@
     "noCeiling": "Sin techo",
     "locale": "es-ES",
     "noscript": "El decodificador necesita JavaScript. Debajo tienes un ejemplo ya descodificado.",
-    "learnMore": "¿Quieres aprender a leerlo tú? Prueba la Academia METAR y SPECI."
+    "learnMore": "¿Quieres aprender a leerlo tú? Prueba la Academia METAR y SPECI.",
+    "sourceLive": "En directo (NOAA/NWS)"
   },
   "navShort": {
     "home": "Inicio",
@@ -905,5 +911,38 @@
       "temperature": "°F = °C × 9/5 + 32; K = °C + 273,15."
     },
     "invalid": "Introduce un número válido."
+  },
+  "live": {
+    "metaTitle": "METAR y TAF en directo · AeroLex",
+    "metaDescription": "Los últimos METAR y TAF de una selección de aeropuertos, descodificados, con la hora de emisión y aviso de datos antiguos.",
+    "title": "METAR y TAF en directo",
+    "lead": "Los últimos METAR y TAF de una selección de aeropuertos, descargados automáticamente del Aviation Weather Center (NOAA/NWS) y descodificados al momento.",
+    "warning": "Datos reales, pero solo con fines educativos: no aptos para uso operacional. La descarga es periódica y puede retrasarse; para volar, consulta siempre los servicios meteorológicos aeronáuticos oficiales.",
+    "fetched": "Última descarga: {time} UTC",
+    "fetchedAgo": "hace {min} min",
+    "updates": "Se actualiza aproximadamente cada 30 minutos; las ejecuciones programadas de GitHub pueden retrasarse.",
+    "noData": "Ahora mismo no hay datos en directo disponibles. Puedes pegar cualquier METAR o TAF en los decodificadores.",
+    "fetchErrors": "La última descarga tuvo problemas, así que algunos datos pueden faltar.",
+    "live": "En directo",
+    "stale": "Antiguo (más de 2 h)",
+    "issued": "Emitido: {time} UTC",
+    "age": "hace {min} min",
+    "metar": "METAR",
+    "taf": "TAF",
+    "noMetar": "No hay METAR en la última descarga.",
+    "noTaf": "No hay TAF en la última descarga (no todos los aeródromos emiten TAF).",
+    "decode": "Descodificar",
+    "timeline": "Ver línea temporal",
+    "summary": {
+      "wind": "Viento",
+      "visibility": "Visibilidad",
+      "ceiling": "Techo",
+      "temperature": "Temperatura",
+      "pressure": "Presión"
+    },
+    "noCeiling": "Sin techo",
+    "source": "Fuente: Aviation Weather Center (NOAA/NWS), datos de dominio público de EE. UU.",
+    "otherAirport": "¿Otro aeropuerto? Pega su METAR o TAF en el decodificador.",
+    "stationsTitle": "Aeropuertos"
   }
 }
