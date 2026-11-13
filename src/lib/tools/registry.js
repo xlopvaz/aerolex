@@ -14,4 +14,5 @@ export const TOOLS = [
   { key: 'timeline', icon: 'history' },
   { key: 'converter', icon: 'arrow-left-right' },
   { key: 'airportFinder', icon: 'map-pin' },
+  { key: 'airportDiagram', icon: 'route' },
 ];

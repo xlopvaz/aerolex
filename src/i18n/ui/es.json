@@ -38,7 +38,8 @@
     "weatherGlossary": "Glosario meteorológico",
     "timeline": "Cronología",
     "sources": "Fuentes",
-    "review": "Repaso de errores"
+    "review": "Repaso de errores",
+    "airportDiagram": "Diagramas de aeropuerto"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -737,6 +738,10 @@
       "timeline": {
         "title": "Cronología de la aviación",
         "text": "De los primeros globos al A380: hitos de vuelo, de las aerolíneas y de la normativa, con fuentes y filtro por tema."
+      },
+      "airportDiagram": {
+        "title": "Diagramas de aeropuerto",
+        "text": "Las pistas de más de 4000 aeropuertos a escala, con cómo se leen sus números."
       }
     },
     "noscript": "Esta herramienta necesita JavaScript para funcionar."
@@ -1082,7 +1087,8 @@
       "W": "Sudeste asiático marítimo",
       "Y": "Australia",
       "Z": "China, Mongolia y Corea del Norte"
-    }
+    },
+    "diagramLink": "Diagrama de pistas"
   },
   "atc": {
     "metaTitle": "Entrenador de fraseología ATC · AeroLex",
@@ -1370,5 +1376,57 @@
     "score": "{score}/{total} en el cuestionario",
     "dashLink": "Repasar errores e historial",
     "dashPending": "Preguntas falladas por repasar: {n}."
+  },
+  "diagram": {
+    "metaTitle": "Diagramas de aeropuerto · AeroLex",
+    "metaDescription": "Dibuja a escala las pistas de más de 4000 aeropuertos y aprende a leer sus números.",
+    "title": "Diagramas de aeropuerto",
+    "lead": "Busca un aeropuerto y verás sus pistas dibujadas a escala y con el norte arriba, con su longitud, anchura y orientación. Hay datos de pistas de {n} aeropuertos.",
+    "notAChart": "Esquema educativo generado con datos abiertos. No es una carta de aeródromo: no incluye calles de rodaje, umbrales desplazados ni restricciones. Para operar, usa siempre las cartas oficiales del AIP.",
+    "label": "Código, nombre o ciudad",
+    "placeholder": "Por ejemplo: MAD, LEBL, Santiago, Heathrow…",
+    "hint": "Escribe al menos 2 caracteres.",
+    "loading": "Cargando datos de aeropuertos…",
+    "loadError": "No se han podido cargar los datos. Inténtalo de nuevo más tarde.",
+    "none": "No se ha encontrado ningún aeropuerto.",
+    "pick": "Elige un aeropuerto para ver su diagrama.",
+    "noRunways": "No hay coordenadas de pistas de {iata} en los datos.",
+    "found": "{iata}: {n} pistas.",
+    "foundOne": "{iata}: 1 pista.",
+    "svgLabel": "Diagrama de pistas de {name}: {n} pistas ({list}). Norte arriba.",
+    "svgLabelOne": "Diagrama de pistas de {name}: 1 pista ({list}). Norte arriba.",
+    "caption": "Norte arriba, a escala. Cada número va junto a la cabecera de esa pista. Gris oscuro: asfalto u hormigón; verde: hierba; gris claro: grava u otras superficies.",
+    "north": "N",
+    "tableCaption": "Pistas del aeropuerto",
+    "osm": "Ver el aeropuerto en OpenStreetMap",
+    "cols": {
+      "runway": "Pista",
+      "length": "Longitud",
+      "width": "Anchura",
+      "surface": "Superficie",
+      "bearing": "Rumbo verdadero"
+    },
+    "metresFeet": "{m} m ({ft} ft)",
+    "surfaces": {
+      "asphalt": "Asfalto",
+      "concrete": "Hormigón",
+      "grass": "Hierba",
+      "gravel": "Grava",
+      "water": "Agua",
+      "other": "Otra",
+      "unknown": "Sin datos"
+    },
+    "learnTitle": "Cómo se leen los números de pista",
+    "learnExample": "Ejemplo: la pista {id} indica un rumbo magnético de unos {heading}°, y su rumbo verdadero calculado con las coordenadas es {bearing}°. Quien aterriza en sentido contrario usa la otra cabecera, la {other}.",
+    "learnNoNumbers": "Las pistas de este aeropuerto no usan designadores numéricos en los datos.",
+    "learnNumber": "El número es el rumbo magnético de la pista dividido entre 10 y redondeado: una pista orientada a unos 268° magnéticos es la 27.",
+    "learnSides": "Si hay pistas paralelas, se añade L (izquierda), C (centro) o R (derecha), tal como las ve el piloto que se acerca a esa cabecera.",
+    "learnReciprocal": "Cada pista tiene dos cabeceras cuyos números se diferencian en 18 (180°): 09 y 27, 14L y 32R. La L de un extremo es la R del otro.",
+    "learnTrue": "El rumbo de la tabla es el verdadero, calculado con las coordenadas. Puede diferir del número por la declinación magnética del lugar y por el redondeo.",
+    "seeAlso": "En el diccionario:",
+    "termRunway": "pista",
+    "termThreshold": "umbral",
+    "termVariation": "declinación magnética",
+    "source": "Pistas: OurAirports (dominio público), datos del {date}. Pueden contener errores o estar desactualizados. Designación de pistas según el Anexo 14 de la OACI."
   }
 }
