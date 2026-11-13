@@ -96,5 +96,10 @@
   "skybrary-at46": {"title": "ATR-42-600 (AT46)", "publisher": "SKYbrary Aviation Safety", "kind": "web", "url": "https://skybrary.aero/index.php/AT46", "licence": "copyright"},
   "skybrary-at76": {"title": "ATR-72-600 (AT76)", "publisher": "SKYbrary Aviation Safety", "kind": "web", "url": "https://skybrary.aero/index.php/AT76", "licence": "copyright"},
   "ain-pw127m-2008": {"title": "PW127M OK’d to boost ATRs (1 April 2008)", "publisher": "AIN", "kind": "web", "url": "https://ainonline.com/aviation-news/air-transport/2008-04-01/pw127m-okd-boost-atrs", "licence": "copyright"},
-  "flightglobal-pw127xt-m": {"title": "ATR gains approval for PW127XT-M upgrade", "publisher": "FlightGlobal", "kind": "web", "url": "https://flightglobal.com/engines/atr-gains-approval-for-pw127xt-m-upgrade/150532.article", "licence": "copyright"}
+  "flightglobal-pw127xt-m": {"title": "ATR gains approval for PW127XT-M upgrade", "publisher": "FlightGlobal", "kind": "web", "url": "https://flightglobal.com/engines/atr-gains-approval-for-pw127xt-m-upgrade/150532.article", "licence": "copyright"},
+  "embraer-e2-apm": {"title": "E-Jets E2 Airport Planning Manual (APM 5824, Rev 25, 29 November 2024)", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/media/vmsjxvk5/e-jets-e2_apm_e-jetse2.pdf", "licence": "copyright"},
+  "embraer-e2-overview": {"title": "E-Jets E2 — overview", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/e-jets-e2/en/", "licence": "copyright"},
+  "embraer-e195-e2-spec": {"title": "E195-E2 specifications sheet", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/media/ue1bdfnq/e195-e2-spec-1.pdf", "licence": "copyright"},
+  "embraer-e190-e2-spec": {"title": "E190-E2 specifications sheet", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraer.com/media/e5whgknk/e190-e2_spec.pdf", "licence": "copyright"},
+  "embraer-e175-e2-page": {"title": "E175-E2 — specifications", "publisher": "Embraer", "kind": "manufacturer", "url": "https://www.embraercommercialaviation.com/?p=175", "licence": "copyright"}
 }
