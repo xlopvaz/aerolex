@@ -37,7 +37,8 @@
     "flashcards": "Flashcards",
     "weatherGlossary": "Glosario meteorológico",
     "timeline": "Cronología",
-    "sources": "Fuentes"
+    "sources": "Fuentes",
+    "review": "Repaso de errores"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -1346,5 +1347,28 @@
       "name": "Maestro de la aviación",
       "desc": "Consigue todas las demás insignias."
     }
+  },
+  "review": {
+    "metaTitle": "Repaso de errores e historial · AeroLex",
+    "title": "Repaso de errores e historial",
+    "lead": "Vuelve a responder las preguntas que fallaste en los cuestionarios y repasa las lecciones que has completado.",
+    "statPending": "Preguntas por repasar",
+    "statAnswered": "Respuestas dadas",
+    "statAccuracy": "Acierto en cuestionarios",
+    "statLessons": "Lecciones completadas",
+    "errorsTitle": "Preguntas que fallaste",
+    "errorsHelp": "Aparecen aquí las preguntas cuya última respuesta fue incorrecta, de la más reciente a la más antigua. Si la aciertas, sale de la lista, igual que si la aciertas en la lección.",
+    "pending": "Preguntas por repasar: {n}.",
+    "fromLesson": "{course} ·",
+    "cleared": "Sale de tu lista de repaso.",
+    "stillWrong": "Sigue en tu lista: lee la explicación y vuelve a intentarlo más tarde.",
+    "emptyNone": "Todavía no has respondido ningún cuestionario. Las preguntas que falles en las lecciones aparecerán aquí.",
+    "emptyClean": "No tienes preguntas falladas pendientes.",
+    "toAcademy": "Ir a la Academia",
+    "historyTitle": "Historial de estudio",
+    "historyEmpty": "Las lecciones que completes aparecerán aquí, por días.",
+    "score": "{score}/{total} en el cuestionario",
+    "dashLink": "Repasar errores e historial",
+    "dashPending": "Preguntas falladas por repasar: {n}."
   }
 }

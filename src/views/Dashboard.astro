@@ -14,7 +14,7 @@ import ProgressGlide from '../components/ui/ProgressGlide.astro';
 import Callout from '../components/ui/Callout.astro';
 import Modal from '../components/ui/Modal.astro';
 import { LOCALES, LOCALE_META } from '../i18n/config.js';
-import { alternates, t, useT } from '../i18n/index.js';
+import { alternates, href, t, useT } from '../i18n/index.js';
 import { BADGES, DAILY_GOALS, DEFAULT_DAILY_GOAL } from '../lib/gamification/engine.js';
 
 interface Props { lang: string; routeKey: any }
@@ -37,6 +37,7 @@ const messages = {
   badgeEarned: tr('dashboard.badgeEarned'),
   badgeLocked: tr('dashboard.badgeLocked'),
   reasons: t(lang, 'dashboard.reasons'),
+  reviewPending: tr('review.dashPending'),
   practices,
 };
 ---
@@ -66,6 +67,10 @@ const messages = {
         <StatTile label={tr('dashboard.courses')} value="0" icon="graduation-cap" tone="green" id="stat-courses" />
       </div>
       <p class="dash__note">{tr('dashboard.statsLead')}</p>
+      <div class="dash__review">
+        <Button href={href('review', lang)} variant="secondary" icon="rotate-ccw">{tr('review.dashLink')}</Button>
+        <span class="dash__help" data-review-pending></span>
+      </div>
     </section>
 
     <div class="dash__cols">
@@ -184,6 +189,7 @@ const messages = {
 <script>
   import { getAppStore } from '../lib/core/app-store.js';
   import { BADGES, dailyProgress, localDay, recentDays, streakToday } from '../lib/gamification/engine.js';
+  import { questionsToReview } from '../lib/review/review.js';
 
   const root = document.querySelector<HTMLElement>('[data-dashboard]');
   if (root) {
@@ -292,6 +298,10 @@ const messages = {
         return li;
       }));
 
+      // Wrong answers waiting in the review page
+      const pending = questionsToReview(s.quiz.answers, { has: () => true }).length;
+      root.querySelector<HTMLElement>('[data-review-pending]')!.textContent = pending ? fill(msg.reviewPending, { n: pending }) : '';
+
       const theme = root.querySelector<HTMLInputElement>(`input[name="theme"][value="${s.prefs.theme}"]`);
       if (theme) theme.checked = true;
     };
@@ -358,6 +368,8 @@ const messages = {
   .dash__section { margin-bottom: var(--space-7); }
   .dash__warning { margin-bottom: var(--space-5); }
   .dash__stats { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .dash__review { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-4); }
+  .dash__review .dash__help { margin: 0; }
   .dash__note { margin-top: var(--space-4); color: var(--text-muted); font-size: var(--text-sm); max-width: 80ch; }
   .dash__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); align-items: start; margin-bottom: var(--space-7); }
   .dash__prefs { display: grid; gap: var(--space-5); }

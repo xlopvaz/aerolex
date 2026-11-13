@@ -4,11 +4,11 @@ const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/', 'es/academia/taf/', 'es/academia/taf/change-groups/',
-  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/',
+  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
   'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/', 'en/academy/taf/full-decode/',
-  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/',
+  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/',
 ];
 
 test.describe('language', () => {
@@ -123,6 +123,35 @@ test.describe('gamification', () => {
     await expect(page.locator('[data-goal-text]')).toContainText('50 of 100 XP today');
     await page.reload();
     await expect(page.locator('input[name="dailyGoal"][value="100"]')).toBeChecked();
+  });
+});
+
+test.describe('review', () => {
+  test('wrong answers can be answered again and leave the list; history lists completed lessons', async ({ page }) => {
+    await page.goto('en/dashboard/review/');
+    await expect(page.locator('[data-review-empty]')).toBeVisible();
+    await expect(page.locator('[data-history-empty]')).toBeVisible();
+
+    // Get one question wrong in a lesson, and complete the lesson
+    await page.goto('en/academy/aviation-fundamentals/what-is-an-aircraft/');
+    const q = page.locator('.quiz__q').first();
+    const answer = await q.getAttribute('data-answer');
+    await q.locator(`.quiz__opt:not([data-opt="${answer}"])`).first().click();
+    await page.locator('[data-complete]').click();
+
+    await page.goto('en/dashboard/');
+    await expect(page.locator('[data-review-pending]')).toHaveText('Wrong answers to review: 1.');
+    await page.locator('.dash__review a').click();
+    await expect(page).toHaveURL(/\/en\/dashboard\/review\/$/);
+    await expect(page.locator('#rv-pending')).toHaveText('1');
+    await expect(page.locator('.rq')).toHaveCount(1);
+    await expect(page.locator('.hd__list li')).toHaveCount(1);
+    await page.locator(`.rq .rq__opt[data-opt="${answer}"]`).click();
+    await expect(page.locator('.rq__verdict')).toContainText('It leaves your review list.');
+    await expect(page.locator('#rv-pending')).toHaveText('0');
+    await expect(page.locator('[data-review-empty]')).toBeVisible();
+    await page.reload();
+    await expect(page.locator('.rq')).toHaveCount(0);
   });
 });
 
