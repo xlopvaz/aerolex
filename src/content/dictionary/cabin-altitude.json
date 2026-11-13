@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Cabin altitude",
+    "es": "Altitud de cabina"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The pressure altitude that corresponds to the air pressure inside a pressurised cabin; airliners are designed to keep it at or below about 8,000 ft at their maximum operating altitude.",
+    "es": "Altitud de presión que corresponde a la presión del aire dentro de una cabina presurizada; los aviones de línea están diseñados para mantenerla en unos 8.000 ft o menos a su altitud máxima de operación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The altitude your body \"feels\" inside the cabin.",
+    "es": "La altitud que «siente» el cuerpo dentro de la cabina."
+  },
+  "example": {
+    "en": "At FL370 the cabin altitude was about 7,000 ft.",
+    "es": "A FL370 la altitud de cabina era de unos 7.000 ft."
+  },
+  "pronunciation": {
+    "en": "KAB-in AL-tih-tood",
+    "es": "al-ti-tud de ca-bi-na"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "pressurization",
+    "outflow-valve",
+    "decompression",
+    "oxygen-mask"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "cfr-14-part-25"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

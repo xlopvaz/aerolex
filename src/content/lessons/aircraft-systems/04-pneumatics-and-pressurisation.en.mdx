@@ -1,0 +1,71 @@
+---
+lesson: pneumatics-and-pressurisation
+course: aircraft-systems
+lang: en
+title: "Pneumatics, air conditioning and pressurisation"
+summary: "Bleed air and its uses, the air conditioning packs, how cabin altitude is controlled and what happens in a decompression."
+objectives:
+  - "List the uses of bleed air"
+  - "Explain how the outflow valve sets cabin altitude"
+  - "Work out cabin altitude from differential pressure"
+  - "Distinguish explosive, rapid and slow decompression"
+minutes: 14
+terms: [bleed-air, apu, cabin-altitude, outflow-valve, oxygen-mask]
+quiz: aircraft-systems-04
+sources: [faa-phak, faa-amt-airframe, cfr-14-part-25, icao-doc-7488]
+review:
+  status: draft
+---
+
+## Bleed air
+
+<Term id="bleed-air">Bleed air</Term> is taken from the engines' compressor stages (or from the <Term id="apu" />). It comes out very hot and under pressure, so it goes through a **precooler** before being distributed. It is used for:
+
+- **air conditioning** and **pressurisation**;
+- wing and engine **anti-ice**;
+- engine **starting**;
+- pressurising the hydraulic reservoirs and, on some aircraft, driving hydraulic pumps.
+
+## Air conditioning packs
+
+Each **pack** cools bleed air through heat exchangers cooled by outside ram air and an **air cycle machine**: the air is compressed, cooled, and then expanded through a turbine, which cools it much further. It is then dried and mixed with hot air and with **recirculated** cabin air to reach the temperature wanted in each zone.
+
+## Pressurisation
+
+At 35,000 ft the outside pressure is roughly a quarter of the sea-level value. To keep a comfortable <Term id="cabin-altitude">cabin altitude</Term>, the aircraft becomes a pressure vessel.
+
+The system does not control how much air comes **in** (the packs provide that), but how much goes **out**: the <Term id="outflow-valve">outflow valve</Term> opens or closes to hold the scheduled cabin altitude.
+
+The US certification standard requires that, under normal conditions, cabin altitude does not exceed **8,000 ft** at the aircraft's maximum operating altitude. It also requires a **warning** to the crew if cabin altitude exceeds **10,000 ft**.
+
+### Differential pressure
+
+**Differential pressure** is the difference between cabin and outside pressure, and the structure has a maximum. An example from the FAA PHAK:
+
+- at 28,000 ft the standard pressure is **4.8 psi**;
+- with a differential of **6.1 psi**, the cabin is at 4.8 + 6.1 = **10.9 psi**;
+- that corresponds to a cabin altitude of about **8,000 ft**.
+
+That is why the higher an aircraft flies, the greater the differential it needs to keep the same cabin.
+
+### Safety valves
+
+- The **pressure relief valve** opens if the differential exceeds the maximum.
+- The **vacuum (negative) relief valve** stops outside pressure exceeding inside pressure, for example in a very fast descent.
+- The **dump valve** depressurises the cabin at will, for example before opening the doors in an evacuation.
+
+## Decompression
+
+| Type | What happens |
+|---|---|
+| **Explosive** | The cabin loses pressure faster than the lungs can release air (under half a second) |
+| **Rapid** | The cabin loses pressure in seconds, but the lungs can keep up |
+| **Slow** | A small leak makes the cabin climb gradually. It is the most insidious, because hypoxia can set in unnoticed |
+
+A rapid decompression can cut the **time of useful consciousness** to between a third and a quarter of normal. The crew's actions always start the same way: **put on the <Term id="oxygen-mask">oxygen mask</Term>** and establish communication, then, if needed, start an **emergency descent** to a safe altitude.
+
+On transport aircraft flying above 25,000 ft, the passenger masks must **drop automatically** before cabin altitude exceeds **15,000 ft**.
+
+<Callout type="caution" label="Hypoxia gives no warning">
+The symptoms of hypoxia (euphoria, impaired judgement, reduced vision) can go unnoticed by the person suffering them. That is why cabin altitude warnings and mask discipline matter so much.
+</Callout>

@@ -1,0 +1,65 @@
+---
+lesson: hydraulic-systems
+course: aircraft-systems
+lang: es
+title: "Sistemas hidráulicos"
+summary: "El principio de Pascal, los componentes de un sistema hidráulico, los líquidos, la arquitectura redundante de los aviones de transporte, la PTU y la RAT."
+objectives:
+  - "Aplicar el principio de Pascal a un actuador"
+  - "Identificar los componentes de un sistema hidráulico y su función"
+  - "Describir la redundancia hidráulica de un avión de transporte"
+minutes: 12
+terms: [hydraulic-system, ram-air-turbine]
+quiz: aircraft-systems-01
+sources: [faa-phak, faa-amt-airframe, skybrary-hydraulic-systems]
+review:
+  status: draft
+---
+
+## Por qué hidráulica
+
+Un líquido apenas se comprime. Según el **principio de Pascal**, la presión aplicada a un líquido encerrado se transmite por igual en todas direcciones. Como **fuerza = presión × superficie**, una bomba pequeña puede mover un actuador grande con una fuerza enorme, a través de tuberías finas que llegan a cualquier rincón del avión.
+
+En un avión de línea, el <Term id="hydraulic-system">sistema hidráulico</Term> mueve las superficies de mando, los flaps y slats, los spoilers, el tren de aterrizaje, la dirección de la rueda de morro, los frenos y los inversores de empuje.
+
+## Componentes
+
+| Componente | Función |
+|---|---|
+| **Depósito** | Guarda el líquido; en los aviones grandes va presurizado para que la bomba no aspire burbujas |
+| **Bomba** | Da la presión; puede ser manual, eléctrica o movida por el motor |
+| **Filtro** | Retiene partículas que dañarían válvulas y bombas |
+| **Válvula selectora** | Dirige el líquido a un lado u otro del actuador |
+| **Válvula de alivio** | Protege el sistema de una presión excesiva |
+| **Acumulador** | Guarda líquido a presión para absorber picos y dar presión de reserva |
+| **Actuador** | Convierte la presión en movimiento; puede ser de simple o de doble efecto |
+
+## Los líquidos
+
+- Los aviones ligeros suelen usar líquido de **base mineral**, parecido al queroseno y teñido de rojo.
+- Los aviones de transporte usan líquidos de **éster fosfato**, resistentes al fuego. Irritan la piel y los ojos y atacan algunas pinturas y plásticos.
+
+Los líquidos **no se mezclan nunca**: cada avión usa el que especifica el fabricante, y las juntas del sistema están diseñadas para ese líquido.
+
+## La arquitectura de un avión de transporte
+
+Los sistemas trabajan normalmente a unos **3.000 psi**; algunos aviones recientes, a **5.000 psi**, lo que permite tuberías y actuadores más pequeños y ligeros. La clave es la **redundancia**: hay varios sistemas independientes, y cada superficie de mando importante recibe presión de más de uno.
+
+- El **Boeing 737 Next Generation** tiene tres sistemas a 3.000 psi: **A**, **B** y **reserva** (*standby*), que entra si se pierde la presión de A o B.
+- El **Boeing 777** tiene tres: **izquierdo**, **central** y **derecho**. El central se alimenta con bombas eléctricas y bombas movidas por aire sangrado.
+
+Las fuentes de presión habituales son:
+
+- **Bombas movidas por el motor** (EDP): la fuente principal.
+- **Bombas eléctricas**: de apoyo o de demanda, y para tener presión en tierra con los motores parados.
+- **Bombas movidas por aire** (ADP): en algunos aviones grandes.
+- **Unidad de transferencia de potencia** (PTU): un motor hidráulico de un sistema mueve una bomba del otro. Transfiere **potencia, no líquido**, así que los sistemas siguen aislados.
+- **<Term id="ram-air-turbine">Turbina de aire de impacto</Term>** (RAT): sale al flujo de aire en una emergencia y da presión a los mandos de vuelo esenciales.
+
+## Si se pierde un sistema
+
+Perder un sistema hidráulico rara vez deja el avión sin control, pero sí suele quitar algunas funciones: unos spoilers, un inversor, la dirección de la rueda de morro o la retracción normal del tren. La lista de comprobación indica qué se pierde y cómo afecta a la aproximación y al aterrizaje, por ejemplo, a la distancia de aterrizaje o a la necesidad de bajar el tren por gravedad.
+
+<Callout type="caution" label="Presión que corta">
+Un chorro de líquido a 3.000 psi por una fuga fina puede atravesar la piel. En tierra, el sistema se despresuriza antes de trabajar en él.
+</Callout>

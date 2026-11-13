@@ -1,0 +1,68 @@
+---
+lesson: magnetic-compass
+course: flight-instruments
+lang: es
+title: "La brújula magnética"
+summary: "Variación y desvío, de rumbo verdadero a rumbo de brújula, y los errores de inclinación magnética, aceleración y viraje."
+objectives:
+  - "Pasar de rumbo verdadero a magnético y a rumbo de brújula"
+  - "Explicar el error de aceleración (ANDS)"
+  - "Aplicar la corrección de los virajes hacia el norte y hacia el sur"
+minutes: 12
+terms: [magnetic-compass, magnetic-variation]
+quiz: flight-instruments-05
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Una herramienta sin electricidad
+
+La <Term id="magnetic-compass">brújula magnética</Term> es una rosa imantada que flota en líquido y se alinea con el campo magnético terrestre. No necesita electricidad ni aire: por eso sigue en todas las cabinas como instrumento de reserva. A cambio, tiene errores que hay que conocer.
+
+## Variación
+
+El norte magnético no coincide con el geográfico. La <Term id="magnetic-variation">variación</Term> es el ángulo entre ambos y **depende del lugar**:
+
+- las líneas que unen puntos de igual variación se llaman **isógonas**;
+- la línea de variación cero se llama **agónica**.
+
+Para pasar de rumbo **verdadero** a **magnético**: la variación **este se resta** y la **oeste se suma**.
+
+Ejemplo: rumbo verdadero 090°, variación 3° E → rumbo magnético **087°**.
+
+## Desvío
+
+Los metales y los equipos eléctricos del propio avión desvían la brújula. Ese error es el **desvío**, y a diferencia de la variación **depende del rumbo**, no del lugar. Se mide y se compensa en una operación llamada **compensación de la brújula**, y lo que queda se anota en una **tarjeta de desvíos** junto al instrumento.
+
+La cadena completa es: **verdadero → (variación) → magnético → (desvío) → de brújula**.
+
+## Inclinación magnética
+
+Las líneas del campo magnético no son horizontales: se inclinan hacia el suelo, cada vez más cerca de los polos. Esa **inclinación** tira de la rosa hacia abajo y es la causa de los errores de aceleración y de viraje. Lo que sigue vale para el **hemisferio norte**; en el sur los efectos se invierten.
+
+## Error de aceleración: ANDS
+
+Con rumbos **este u oeste**:
+
+- al **acelerar** (*Accelerate*), la brújula indica un viraje hacia el **norte** (*North*);
+- al **decelerar** (*Decelerate*), indica un viraje hacia el **sur** (*South*).
+
+El error desaparece al estabilizar la velocidad. Con rumbos norte o sur es mínimo.
+
+## Error de viraje
+
+Es mayor al virar **desde** o **hacia** el norte o el sur:
+
+- **Hacia el norte**, la brújula **se retrasa**: hay que terminar el viraje **antes** de que marque el rumbo deseado.
+- **Hacia el sur**, la brújula **se adelanta**: hay que terminarlo **después**.
+
+El PHAK da como cantidad aproximada **15° más la mitad de la latitud**. Ejemplo, a 40° N: 15 + 20 = **35°**. Para quedar al norte, se empieza a nivelar las alas cuando la brújula marca unos 035° (si se vira por la derecha desde el oeste) o 325° (si se vira por la izquierda desde el este).
+
+## Oscilación
+
+Con turbulencia, la rosa oscila. Para ajustar el indicador de rumbo se usa el **valor medio** de las oscilaciones.
+
+<Callout type="tip" label="Para recordar">
+ANDS: acelerar → norte, decelerar → sur. Y para los virajes, hacia el norte se termina antes y hacia el sur, después.
+</Callout>

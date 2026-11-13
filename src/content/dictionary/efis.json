@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EFIS",
+    "es": "EFIS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Electronic flight instrument system",
+    "es": "Sistema electrónico de instrumentos de vuelo"
+  },
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The set of flight deck displays, symbol generators and control panels that present flight and navigation information electronically, typically on a primary flight display (PFD) and a navigation display (ND) for each pilot.",
+    "es": "Conjunto de pantallas, generadores de símbolos y paneles de control de la cabina de vuelo que presentan electrónicamente la información de vuelo y de navegación, normalmente en una pantalla principal de vuelo (PFD) y una pantalla de navegación (ND) para cada piloto."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The screens that replaced the old round dials.",
+    "es": "Las pantallas que sustituyeron a los relojes redondos de siempre."
+  },
+  "example": {
+    "en": "The captain set the EFIS control panel to show the weather radar on her ND.",
+    "es": "La comandante ajustó el panel de control del EFIS para ver el radar meteorológico en su ND."
+  },
+  "pronunciation": {
+    "en": "EE-fiss",
+    "es": "e-fis"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "pfd",
+    "nd",
+    "ahrs",
+    "adc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-efis",
+    "faa-ifh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

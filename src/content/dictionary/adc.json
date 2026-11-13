@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ADC",
+    "es": "ADC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Air data computer",
+    "es": "Ordenador de datos aire"
+  },
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A computer that takes pitot pressure, static pressure and outside air temperature and calculates airspeed, Mach number, altitude, vertical speed and true airspeed for the displays, autopilot and other systems.",
+    "es": "Ordenador que recibe la presión de pitot, la presión estática y la temperatura exterior y calcula la velocidad, el número de Mach, la altitud, la velocidad vertical y la velocidad verdadera para las pantallas, el piloto automático y otros sistemas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The computer that turns air pressures into speed and altitude.",
+    "es": "El ordenador que convierte las presiones del aire en velocidad y altitud."
+  },
+  "example": {
+    "en": "With ADC 1 failed, the captain switched to ADC 3.",
+    "es": "Con el ADC 1 averiado, el comandante pasó al ADC 3."
+  },
+  "pronunciation": {
+    "en": "ay-dee-SEE",
+    "es": "a-de-ce"
+  },
+  "synonyms": {
+    "en": [
+      "ADIRU (with inertial reference)"
+    ],
+    "es": [
+      "ADIRU (con referencia inercial)"
+    ]
+  },
+  "related": [
+    "pitot-tube",
+    "static-port",
+    "ahrs",
+    "pfd"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-ifh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

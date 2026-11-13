@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En una turbina de gas, el compresor lo mueve…",
+        "en": "In a gas turbine, the compressor is driven by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un motor eléctrico",
+            "en": "An electric motor"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La tobera de escape",
+            "en": "The exhaust nozzle"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La turbina, a través de un eje",
+            "en": "The turbine, through a shaft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El fan",
+            "en": "The fan"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La turbina extrae energía de los gases y la devuelve al compresor.",
+        "en": "The turbine extracts energy from the gases and returns it to the compressor."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El índice de derivación de un turbofán es…",
+        "en": "A turbofan's bypass ratio is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La presión de salida entre la de entrada",
+            "en": "Outlet pressure divided by inlet pressure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La masa de aire que rodea el núcleo dividida entre la que pasa por él",
+            "en": "The mass of air going around the core divided by the mass going through it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "N1 dividido entre N2",
+            "en": "N1 divided by N2"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El empuje entre el peso del motor",
+            "en": "Thrust divided by engine weight"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La relación de presiones es el EPR, no el índice de derivación.",
+        "en": "The pressure ratio is EPR, not bypass ratio."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El EPR se define como…",
+        "en": "EPR is defined as…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Presión de descarga de la turbina / presión de entrada del compresor",
+            "en": "Turbine discharge pressure / compressor inlet pressure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Presión de admisión / presión ambiente",
+            "en": "Manifold pressure / ambient pressure"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "N2 / N1",
+            "en": "N2 / N1"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Temperatura de escape / temperatura exterior",
+            "en": "Exhaust temperature / outside temperature"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Algunos fabricantes fijan el empuje con el EPR.",
+        "en": "Some manufacturers set thrust with EPR."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Estampidos, vibración, oscilación de rpm y subida de EGT sugieren…",
+        "en": "Bangs, vibration, fluctuating rpm and rising EGT suggest…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un arranque colgado",
+            "en": "A hung start"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hielo en el carburador",
+            "en": "Carburettor ice"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un fallo del IDG",
+            "en": "An IDG failure"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una pérdida del compresor",
+            "en": "A compressor stall"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Se recupera reduciendo potencia, bajando el ángulo de ataque y ganando velocidad.",
+        "en": "Recover by reducing power, lowering angle of attack and gaining speed."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un motor que enciende pero no acelera hasta el ralentí ha tenido…",
+        "en": "An engine that lights but does not accelerate to idle has had…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un arranque caliente",
+            "en": "A hot start"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un apagado por mezcla rica",
+            "en": "A rich flameout"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un arranque colgado",
+            "en": "A hung start"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una pérdida del compresor",
+            "en": "A compressor stall"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El arranque caliente es el que supera el límite de EGT.",
+        "en": "A hot start is the one that exceeds the EGT limit."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un apagado por mezcla pobre es más probable…",
+        "en": "A lean flameout is most likely…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En una aceleración muy brusca",
+            "en": "During a very fast acceleration"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A gran altitud, con bajo régimen y poca presión de combustible",
+            "en": "At high altitude, with low engine speed and low fuel pressure"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En el despegue a plena potencia",
+            "en": "At full take-off power"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Con el motor parado en tierra",
+            "en": "With the engine stopped on the ground"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La aceleración brusca es la causa típica del apagado por mezcla rica.",
+        "en": "A very fast acceleration is the typical cause of a rich flameout."
+      }
+    }
+  ]
+}

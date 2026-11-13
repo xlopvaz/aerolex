@@ -1,0 +1,67 @@
+---
+lesson: airframe-structures
+course: aircraft-general-knowledge
+lang: es
+title: "Estructura del avión"
+summary: "Qué esfuerzos soporta la estructura, cómo se construye un fuselaje semimonocasco y un ala, qué cargas exige la certificación y cómo se diseña contra la fatiga."
+objectives:
+  - "Identificar los cinco esfuerzos básicos sobre la estructura"
+  - "Distinguir estructuras de celosía, monocasco y semimonocasco"
+  - "Explicar carga límite, carga última y factor de seguridad"
+  - "Comparar las filosofías de vida segura, a prueba de fallos y tolerancia al daño"
+minutes: 12
+terms: [load-factor]
+quiz: aircraft-general-knowledge-01
+sources: [faa-phak, faa-amt-airframe, cfr-14-part-25]
+review:
+  status: draft
+---
+
+## Los cinco esfuerzos
+
+Cualquier pieza de un avión trabaja con una combinación de cinco esfuerzos básicos:
+
+| Esfuerzo | Qué hace | Ejemplo |
+|---|---|---|
+| **Tracción** | Estira la pieza | El intradós del ala en vuelo |
+| **Compresión** | La aplasta | El extradós del ala en vuelo |
+| **Torsión** | La retuerce | El ala cuando se mueve un alerón |
+| **Cizalladura** | Hace deslizar una capa sobre otra | Los remaches que unen dos chapas |
+| **Flexión** | Combina tracción y compresión | El ala doblándose hacia arriba en vuelo |
+
+En vuelo el ala se dobla hacia arriba: su parte inferior trabaja a **tracción** y la superior a **compresión**. En tierra, con el peso del combustible y los motores colgando, ocurre al revés.
+
+## Celosía, monocasco y semimonocasco
+
+- **Celosía**: un armazón de tubos soldados soporta las cargas y el revestimiento (tela o chapa) solo da forma. Es típica de avionetas antiguas y ultraligeros.
+- **Monocasco**: el revestimiento lo soporta todo, como una lata. Es ligero, pero no tolera bien abolladuras ni recortes para puertas y ventanillas.
+- **Semimonocasco**: el revestimiento comparte las cargas con un esqueleto de **cuadernas** y **mamparos** (los anillos transversales) y de **larguerillos** y **largueros** (los perfiles longitudinales). Es la solución de casi todos los aviones actuales.
+
+El ala de un avión de línea se organiza alrededor de uno o varios **largueros** (las vigas principales que van de la raíz a la punta), unidos por **costillas** que le dan la forma del perfil. Largueros, costillas y revestimiento forman un **cajón de torsión**, cuyo interior suele hacer de depósito de combustible (*ala húmeda*). Ese combustible tiene una ventaja estructural: su peso en el ala contrarresta parte de la flexión que provoca la sustentación.
+
+## Materiales
+
+Las **aleaciones de aluminio** siguen siendo el material más común. El titanio aparece donde hay altas temperaturas o grandes esfuerzos concentrados, como en las fijaciones de los motores y el tren. Los **materiales compuestos** (fibras de carbono o de vidrio en una resina) son más ligeros a igual resistencia y no se corroen. En aviones como el Boeing 787 o el Airbus A350 forman buena parte del fuselaje y las alas. A cambio, sus daños pueden no verse por fuera y su inspección exige técnicas específicas.
+
+## Carga límite, carga última y factor de carga
+
+La certificación distingue dos niveles de carga:
+
+- **Carga límite**: la máxima que se espera encontrar en servicio. La estructura debe soportarla **sin deformación permanente perjudicial**.
+- **Carga última**: la carga límite multiplicada por un **factor de seguridad de 1,5**. La estructura debe soportarla **al menos 3 segundos sin romperse**, aunque quede deformada.
+
+Para un avión de transporte, la norma de certificación estadounidense (14 CFR Parte 25) exige que la estructura aguante en maniobra un <Term id="load-factor">factor de carga</Term> límite positivo de **al menos +2,5 g** y uno negativo de **−1 g** hasta la velocidad de crucero de diseño. Con flaps extendidos el límite baja a **+2 g**. Superar esos valores no rompe el avión en el acto, pero puede dañar la estructura y obliga a inspeccionarla.
+
+## La fatiga y cómo se combate
+
+Una carga muy inferior a la de rotura, repetida miles de veces, puede iniciar una grieta que crece poco a poco: es la **fatiga**. En un avión presurizado cada vuelo es un ciclo completo de inflado y desinflado del fuselaje. Por eso los aviones de corto radio, que hacen muchos vuelos al día, acumulan ciclos más deprisa que los de largo radio.
+
+Hay tres filosofías de diseño:
+
+- **Vida segura** (*safe-life*): la pieza se retira antes de una vida fijada en ciclos u horas. Se usa en piezas que no admiten caminos de carga alternativos, como algunos componentes del tren.
+- **A prueba de fallos** (*fail-safe*): la estructura tiene **caminos de carga redundantes**, de modo que si un elemento falla los demás soportan la carga hasta que se detecte la avería.
+- **Tolerancia al daño** (*damage tolerance*): se da por hecho que aparecerán grietas y se demuestra que crecen tan despacio que las inspecciones programadas las encontrarán mucho antes de que sean peligrosas. Es la base del programa de inspecciones de la estructura de los aviones de transporte.
+
+<Callout type="info" label="Del diseño al mantenimiento">
+Las inspecciones estructurales que verás en el programa de mantenimiento de un avión son la consecuencia directa del análisis de tolerancia al daño: dicen dónde mirar, con qué técnica y cada cuántos ciclos.
+</Callout>

@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Anti-skid system",
+    "es": "Sistema antideslizante"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A braking system that detects when a wheel is about to lock and releases brake pressure on it momentarily, so that the aircraft stops in the shortest distance without skidding.",
+    "es": "Sistema de frenado que detecta cuándo una rueda está a punto de bloquearse y le reduce momentáneamente la presión de frenado, para que el avión se detenga en la menor distancia sin patinar."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's ABS.",
+    "es": "El ABS del avión."
+  },
+  "example": {
+    "en": "On the wet runway the anti-skid kept the wheels turning.",
+    "es": "En la pista mojada, el antideslizante evitó que se bloquearan las ruedas."
+  },
+  "pronunciation": {
+    "en": "AN-tee-skid",
+    "es": "an-ti-es-kid (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "antiskid"
+    ],
+    "es": [
+      "antiskid"
+    ]
+  },
+  "related": [
+    "autobrake",
+    "landing-gear",
+    "landing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

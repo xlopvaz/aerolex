@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La altitud de presión es la que marca el altímetro con…",
+        "en": "Pressure altitude is what the altimeter reads with…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El QNH",
+            "en": "QNH"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El QFE",
+            "en": "QFE"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La temperatura corregida",
+            "en": "Temperature corrected"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El reglaje estándar de 1013,25 hPa",
+            "en": "The standard setting of 1013.25 hPa"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Es la base de los niveles de vuelo.",
+        "en": "It is the basis of flight levels."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Con QFE puesto, en tierra el altímetro marca…",
+        "en": "With QFE set, on the ground the altimeter reads…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La elevación del aeródromo",
+            "en": "The aerodrome elevation"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La altitud de presión",
+            "en": "Pressure altitude"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cero",
+            "en": "Zero"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La altitud de densidad",
+            "en": "Density altitude"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Con QNH marcaría la elevación del aeródromo.",
+        "en": "With QNH it would read the aerodrome elevation."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Sales con QNH 1018 y vuelas hacia una zona con QNH 1008 sin cambiar el reglaje. Con el altímetro en 2.500 ft, estás a unos…",
+        "en": "You depart with QNH 1018 and fly into an area with QNH 1008 without resetting. With the altimeter at 2,500 ft, you are at about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2.800 ft",
+            "en": "2,800 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2.200 ft",
+            "en": "2,200 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2.500 ft",
+            "en": "2,500 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "3.500 ft",
+            "en": "3,500 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "10 hPa × 30 ft = 300 ft; de alta a baja, el avión está más bajo de lo indicado.",
+        "en": "10 hPa × 30 ft = 300 ft; high to low, the aircraft is lower than indicated."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con aire mucho más frío que el estándar, el avión está…",
+        "en": "In air much colder than standard, the aircraft is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Más bajo de lo que indica el altímetro",
+            "en": "Lower than the altimeter shows"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más alto de lo que indica",
+            "en": "Higher than it shows"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Exactamente a la altitud indicada",
+            "en": "Exactly at the indicated altitude"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Más alto solo por encima de FL100",
+            "en": "Higher only above FL100"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Por eso las altitudes mínimas se corrigen hacia arriba con frío intenso.",
+        "en": "That is why minimum altitudes are corrected upwards in severe cold."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La altitud de densidad es…",
+        "en": "Density altitude is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La altura sobre el terreno",
+            "en": "Height above the ground"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La altitud indicada con QNH",
+            "en": "Indicated altitude with QNH"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La altitud verdadera",
+            "en": "True altitude"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La altitud de presión corregida por temperatura no estándar",
+            "en": "Pressure altitude corrected for non-standard temperature"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Es la que determina el rendimiento del ala y del motor.",
+        "en": "It determines wing and engine performance."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La cifra del variómetro clásico se estabiliza con un retraso de unos…",
+        "en": "The traditional VSI's figure settles after a lag of about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1 segundo",
+            "en": "1 second"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 segundos",
+            "en": "30 seconds"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6 a 9 segundos",
+            "en": "6 to 9 seconds"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2 minutos",
+            "en": "2 minutes"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La tendencia la muestra al instante; el IVSI elimina el retraso con acelerómetros.",
+        "en": "It shows the trend immediately; the IVSI removes the lag with accelerometers."
+      }
+    }
+  ]
+}

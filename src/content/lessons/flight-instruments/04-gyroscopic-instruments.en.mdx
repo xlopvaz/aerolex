@@ -1,0 +1,61 @@
+---
+lesson: gyroscopic-instruments
+course: flight-instruments
+lang: en
+title: "Gyroscopic instruments"
+summary: "Rigidity in space and precession, how the attitude indicator, heading indicator and turn coordinator use them, and the standard-rate turn rule."
+objectives:
+  - "Explain rigidity in space and precession"
+  - "Describe the limits and errors of the attitude and heading indicators"
+  - "Work out the bank angle for a standard-rate turn"
+minutes: 12
+terms: [gyroscope, attitude-indicator, ahrs]
+quiz: flight-instruments-04
+sources: [faa-phak, faa-ifh]
+review:
+  status: draft
+---
+
+## Two properties
+
+A <Term id="gyroscope">gyroscope</Term> is a rotor spinning very fast. It has two useful properties:
+
+- **Rigidity in space**: it keeps the orientation of its plane of rotation however the case around it moves. The faster it spins and the more mass it has at the rim, the more rigid it is.
+- **Precession**: if a force is applied to it, the gyroscope responds **90° further on** in the direction of rotation. Precession is proportional to the force and inversely proportional to rotor speed.
+
+Precession causes errors: bearing friction makes a free gyroscope wander slowly. In addition, the Earth turns beneath it, which can produce up to **15° per hour** of apparent heading error.
+
+## The attitude indicator
+
+The <Term id="attitude-indicator">attitude indicator</Term> uses rigidity in space: the gyroscope holds a fixed plane representing the horizon, and the aircraft moves around it. It is the instrument that gives the most realistic picture of flight:
+
+- the **bank scale** tells you **how much** the aircraft is banked;
+- the **miniature aircraft** tells you **which way**.
+
+Mechanical indicators have limits, typically around **100° to 110°** of bank and **60° to 70°** of pitch. If these are exceeded, the gyroscope may **tumble** and give false indications until it recovers or is reset.
+
+## The heading indicator
+
+The **heading indicator** also uses rigidity, but in a vertical plane, and it does not seek north by itself: it is a free gyroscope that **drifts**. That is why it is compared with the magnetic compass **about every 15 minutes**, in straight and level flight at a constant speed, which is when the compass is reliable. On modern aircraft heading comes from a system slaved to a magnetic sensor, or from an inertial system.
+
+## Turn indicators
+
+- The **turn and slip indicator** shows only the **rate of turn**.
+- The **turn coordinator** has its gyroscope canted. At first it shows the **rate of roll** and, once the roll stabilises, the **rate of turn**. It does not show bank angle.
+
+A **standard-rate turn** (rate one) is **3° per second**: a full 360° turn takes **2 minutes**. A rule of thumb from the FAA Instrument Flying Handbook gives the bank needed: **airspeed in knots divided by 10, plus 7**.
+
+Example: at 120 kt, 120 / 10 + 7 = **19°** of bank.
+
+## The ball
+
+The **inclinometer** (the ball) shows whether the turn is coordinated:
+
+- **Slip**: the ball moves to the **inside** of the turn; not enough rudder towards that side.
+- **Skid**: the ball moves to the **outside**; too much rudder.
+
+The correction is the same in both cases: **step on the ball**, that is, add rudder on the side the ball has moved to.
+
+## Today's gyroscopes
+
+In modern cockpits, mechanical gyros have been replaced by an <Term id="ahrs" /> with solid-state sensors, or by inertial systems with laser gyros. They do not tumble or need time to spin up, but they still need an independent standby instrument.

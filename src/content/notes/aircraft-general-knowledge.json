@@ -1,0 +1,171 @@
+{
+  "course": "aircraft-general-knowledge",
+  "lessons": [
+    {
+      "lesson": "airframe-structures",
+      "key": {
+        "es": "La estructura semimonocasco reparte cargas entre piel y esqueleto; se certifica a carga límite y última (×1,5) y se protege contra la fatiga con tolerancia al daño.",
+        "en": "The semi-monocoque airframe shares loads between skin and skeleton; it is certified to limit and ultimate (×1.5) loads and protected against fatigue by damage tolerance."
+      },
+      "points": [
+        {
+          "es": "Cinco esfuerzos: tracción, compresión, torsión, cizalladura y flexión. En vuelo, extradós a compresión e intradós a tracción.",
+          "en": "Five stresses: tension, compression, torsion, shear and bending. In flight, upper skin in compression and lower skin in tension."
+        },
+        {
+          "es": "Semimonocasco: piel + cuadernas, mamparos, larguerillos y largueros. Ala: largueros + costillas + piel = cajón de torsión, a menudo depósito de combustible.",
+          "en": "Semi-monocoque: skin + frames, bulkheads, stringers and longerons. Wing: spars + ribs + skin = torsion box, often a fuel tank."
+        },
+        {
+          "es": "Carga límite: sin deformación permanente perjudicial. Carga última = límite × 1,5, al menos 3 s sin rotura.",
+          "en": "Limit load: no detrimental permanent deformation. Ultimate load = limit × 1.5, at least 3 s without failure."
+        },
+        {
+          "es": "Parte 25: factor de carga límite en maniobra ≥ +2,5 g y −1 g (flaps arriba); +2 g con flaps.",
+          "en": "Part 25: manoeuvring limit load factor ≥ +2.5 g and −1 g (flaps up); +2 g with flaps."
+        },
+        {
+          "es": "Fatiga: cada vuelo presurizado es un ciclo. Vida segura, a prueba de fallos y tolerancia al daño (base de las inspecciones estructurales).",
+          "en": "Fatigue: each pressurised flight is a cycle. Safe-life, fail-safe and damage tolerance (the basis of structural inspections)."
+        }
+      ]
+    },
+    {
+      "lesson": "landing-gear-and-brakes",
+      "key": {
+        "es": "Tren triciclo retráctil con amortiguadores oleoneumáticos, frenos de discos (a menudo de carbono) con antideslizante y freno automático, y extensión de emergencia.",
+        "en": "Retractable tricycle gear with oleo-pneumatic struts, multi-disc brakes (often carbon) with anti-skid and autobrake, and an emergency extension."
+      },
+      "points": [
+        {
+          "es": "Amortiguador oleoneumático: el gas es el muelle; el aceite por el orificio absorbe la energía.",
+          "en": "Oleo-pneumatic strut: gas is the spring; fluid through the orifice absorbs the energy."
+        },
+        {
+          "es": "Dirección: tiller para giros cerrados, pedales para pequeñas correcciones; avionetas, frenado diferencial.",
+          "en": "Steering: tiller for tight turns, pedals for small corrections; light aircraft use differential braking."
+        },
+        {
+          "es": "Antideslizante: control normal, rueda bloqueada, toma de contacto y protección ante fallos.",
+          "en": "Anti-skid: normal skid control, locked wheel, touchdown and fail-safe protection."
+        },
+        {
+          "es": "Freno automático: deceleración seleccionada al aterrizar; RTO = presión máxima si se aborta el despegue.",
+          "en": "Autobrake: selected deceleration on landing; RTO = maximum pressure on a rejected take-off."
+        },
+        {
+          "es": "Neumáticos con freno: nitrógeno seco; tapones fusibles contra el reventón por calor.",
+          "en": "Braked tyres: dry nitrogen; fusible plugs against heat bursts."
+        },
+        {
+          "es": "Squat switch contra la retracción en tierra; extensión de emergencia por gravedad, bomba manual o gas.",
+          "en": "Squat switch against retraction on the ground; emergency extension by gravity, hand pump or gas."
+        }
+      ]
+    },
+    {
+      "lesson": "piston-engines-and-propellers",
+      "key": {
+        "es": "Motor de pistón: cuatro tiempos con doble magneto; vigilar mezcla, hielo en el carburador y detonación; la hélice de velocidad constante separa potencia (presión de admisión) y rpm.",
+        "en": "Piston engine: four strokes with dual magnetos; watch mixture, carburettor ice and detonation; the constant-speed propeller separates power (manifold pressure) from rpm."
+      },
+      "points": [
+        {
+          "es": "Admisión, compresión, explosión, escape. Dos magnetos independientes del sistema eléctrico.",
+          "en": "Intake, compression, power, exhaust. Two magnetos independent of the electrical system."
+        },
+        {
+          "es": "Empobrecer con la altitud; demasiado pobre a alta potencia = calor y detonación.",
+          "en": "Lean with altitude; too lean at high power = heat and detonation."
+        },
+        {
+          "es": "Hielo en carburador: más probable con menos de 21 °C y más del 80 % de humedad, posible hasta 38 °C. Síntoma: caída de rpm.",
+          "en": "Carb ice: most likely below 21 °C and above 80 % humidity, possible up to 38 °C. Symptom: rpm drop."
+        },
+        {
+          "es": "AVGAS 80 rojo, 100 verde, 100LL azul; Jet A incoloro o pajizo. Purgar drenajes antes de volar.",
+          "en": "AVGAS 80 red, 100 green, 100LL blue; Jet A colourless or straw. Sample the drains before flight."
+        },
+        {
+          "es": "Velocidad constante: gases = potencia (presión de admisión), palanca de hélice = rpm. Bandera: palas de canto, mínima resistencia.",
+          "en": "Constant speed: throttle = power (manifold pressure), prop lever = rpm. Feather: blades edge-on, minimum drag."
+        },
+        {
+          "es": "FADEC: una palanca, dos canales, necesita fuente eléctrica de reserva.",
+          "en": "FADEC: one lever, two channels, needs a backup electrical source."
+        }
+      ]
+    },
+    {
+      "lesson": "gas-turbine-engines",
+      "key": {
+        "es": "Turbina de gas: admisión, compresor, combustión, turbina y escape en continuo; en los turbofanes de alto índice el fan da la mayor parte del empuje y la EGT es el gran límite.",
+        "en": "Gas turbine: intake, compressor, combustion, turbine and exhaust, continuously; in high-bypass turbofans the fan gives most of the thrust and EGT is the great limit."
+      },
+      "points": [
+        {
+          "es": "Secciones: admisión, compresor, cámara de combustión, turbina, escape. La turbina mueve el compresor por un eje.",
+          "en": "Sections: intake, compressor, combustion chamber, turbine, exhaust. The turbine drives the compressor via a shaft."
+        },
+        {
+          "es": "Dos ejes: baja presión (fan + compresor y turbina de baja) = N1; alta presión = N2.",
+          "en": "Two spools: low pressure (fan + LP compressor and turbine) = N1; high pressure = N2."
+        },
+        {
+          "es": "Índice de derivación = aire que rodea el núcleo / aire por el núcleo. Alto = más eficiente y silencioso.",
+          "en": "Bypass ratio = air around the core / air through the core. High = more efficient and quieter."
+        },
+        {
+          "es": "EGT = parámetro limitativo (también TIT, TOT, ITT, TGT). EPR = presión salida turbina / entrada compresor. Par = turbohélices.",
+          "en": "EGT = limiting parameter (also TIT, TOT, ITT, TGT). EPR = turbine discharge / compressor inlet pressure. Torque = turboprops."
+        },
+        {
+          "es": "Pérdida del compresor: estampidos, vibración, rpm oscilantes, EGT alta → reducir potencia, bajar ángulo de ataque, ganar velocidad.",
+          "en": "Compressor stall: bangs, vibration, fluctuating rpm, high EGT → reduce power, lower angle of attack, gain speed."
+        },
+        {
+          "es": "Apagado rico (aceleración brusca) o pobre (gran altitud, bajo régimen). Arranque caliente = EGT excedida; colgado = no llega a ralentí.",
+          "en": "Rich flameout (fast acceleration) or lean (high altitude, low rpm). Hot start = EGT exceeded; hung start = does not reach idle."
+        }
+      ]
+    },
+    {
+      "lesson": "operating-jet-engines",
+      "key": {
+        "es": "Potencias de despegue (≤5 min) y máxima continua; despegue con temperatura supuesta (siempre se puede dar todo) o con derrateo (nuevas velocidades); el reactor responde lento y no frena solo.",
+        "en": "Take-off (≤5 min) and maximum continuous ratings; assumed-temperature take-off (full thrust always available) or derate (new speeds); a jet spools up slowly and does not slow itself."
+      },
+      "points": [
+        {
+          "es": "Empuje de despegue: como norma, máximo 5 minutos. Máximo continuo: sin límite de tiempo.",
+          "en": "Take-off thrust: normally 5 minutes maximum. Maximum continuous: no time limit."
+        },
+        {
+          "es": "Calor y altitud reducen la densidad y el empuje.",
+          "en": "Heat and altitude reduce density and thrust."
+        },
+        {
+          "es": "Temperatura supuesta / FLEX: velocidades con empuje máximo, se puede avanzar a tope. Derrateo: nueva potencia nominal y nuevas velocidades.",
+          "en": "Assumed temperature / FLEX: speeds based on maximum thrust, levers can go to the stop. Derate: new rating and new speeds."
+        },
+        {
+          "es": "Reactor: aceleración lenta desde ralentí, sin chorro de hélice ni resistencia de hélice → spoilers.",
+          "en": "Jet: slow spool-up from idle, no propeller slipstream or propeller drag → spoilers."
+        },
+        {
+          "es": "Reversas: más eficaces a alta velocidad; a ralentí al frenar por riesgo de reingestión.",
+          "en": "Reversers: most effective at high speed; to idle as speed drops because of re-ingestion risk."
+        },
+        {
+          "es": "Encendido continuo en despegue, aterrizaje y condiciones adversas. Jet A-1 congela a −47 °C máx.; Jet A a −40 °C.",
+          "en": "Continuous ignition for take-off, landing and adverse conditions. Jet A-1 freezes at −47 °C max; Jet A at −40 °C."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

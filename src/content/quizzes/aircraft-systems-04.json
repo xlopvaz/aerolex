@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El sistema de presurización controla la altitud de cabina regulando…",
+        "en": "The pressurisation system controls cabin altitude by regulating…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El aire que entra por los packs",
+            "en": "The air coming in through the packs"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La temperatura de la cabina",
+            "en": "Cabin temperature"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El aire que sale por la válvula de descarga",
+            "en": "The air leaving through the outflow valve"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El empuje de los motores",
+            "en": "Engine thrust"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La entrada la dan los packs; se controla la salida.",
+        "en": "The packs provide the inflow; the outflow is what is controlled."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Según la Parte 25, la altitud de cabina en condiciones normales no debe superar, a la altitud máxima de operación…",
+        "en": "Under Part 25, normal cabin altitude at maximum operating altitude must not exceed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "10.000 ft",
+            "en": "10,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "8.000 ft",
+            "en": "8,000 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "14.000 ft",
+            "en": "14,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "6.000 ft",
+            "en": "6,000 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "10.000 ft es el umbral del aviso de altitud de cabina.",
+        "en": "10,000 ft is the cabin altitude warning threshold."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "A 28.000 ft (4,8 psi) con una diferencial de 6,1 psi, la presión de cabina es…",
+        "en": "At 28,000 ft (4.8 psi) with a 6.1 psi differential, cabin pressure is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "10,9 psi, unos 8.000 ft",
+            "en": "10.9 psi, about 8,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1,3 psi",
+            "en": "1.3 psi"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6,1 psi, unos 20.000 ft",
+            "en": "6.1 psi, about 20,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "14,7 psi, nivel del mar",
+            "en": "14.7 psi, sea level"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Presión de cabina = presión exterior + diferencial.",
+        "en": "Cabin pressure = outside pressure + differential."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué válvula evita que la presión exterior supere a la interior?",
+        "en": "Which valve prevents outside pressure exceeding inside pressure?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La de alivio de presión",
+            "en": "The pressure relief valve"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La de alimentación cruzada",
+            "en": "The crossfeed valve"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La selectora",
+            "en": "The selector valve"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La de alivio de vacío (presión negativa)",
+            "en": "The vacuum (negative) relief valve"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La de alivio de presión actúa cuando la diferencial positiva es excesiva.",
+        "en": "The pressure relief valve acts when the positive differential is excessive."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué descompresión es la más traicionera?",
+        "en": "Which decompression is the most insidious?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La explosiva",
+            "en": "Explosive decompression"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La rápida",
+            "en": "Rapid decompression"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La lenta",
+            "en": "Slow decompression"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Todas son igual de evidentes",
+            "en": "They are all equally obvious"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La cabina sube poco a poco y la hipoxia puede llegar sin que nadie la note.",
+        "en": "The cabin climbs gradually and hypoxia can arrive unnoticed."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "En una descompresión, la primera acción de la tripulación de vuelo es…",
+        "en": "In a decompression, the flight crew's first action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Iniciar el descenso sin máscara",
+            "en": "Start the descent without masks"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ponerse las máscaras de oxígeno",
+            "en": "Put on the oxygen masks"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Llamar a la cabina",
+            "en": "Call the cabin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desconectar los packs",
+            "en": "Switch off the packs"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Sin oxígeno, el tiempo de conciencia útil puede ser muy corto.",
+        "en": "Without oxygen, the time of useful consciousness can be very short."
+      }
+    }
+  ]
+}

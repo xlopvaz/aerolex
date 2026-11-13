@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Static port",
+    "es": "Toma estática"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A small flush opening on the side of the fuselage that senses the static (ambient) air pressure for the altimeter, vertical speed indicator and airspeed indicator.",
+    "es": "Pequeño orificio a ras del fuselaje que capta la presión estática (ambiente) del aire para el altímetro, el variómetro y el anemómetro."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The tiny holes on the side of the aircraft that measure outside air pressure.",
+    "es": "Los agujeritos del costado del avión que miden la presión del aire exterior."
+  },
+  "example": {
+    "en": "The static ports were taped over during painting and the tape was not removed.",
+    "es": "Las tomas estáticas se taparon con cinta al pintar y la cinta no se retiró."
+  },
+  "pronunciation": {
+    "en": "STAT-ik port",
+    "es": "to-ma es-tá-ti-ca"
+  },
+  "synonyms": {
+    "en": [
+      "static vent"
+    ],
+    "es": [
+      "toma de presión estática"
+    ]
+  },
+  "related": [
+    "pitot-tube",
+    "altimeter",
+    "vsi"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

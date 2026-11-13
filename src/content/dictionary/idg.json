@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "IDG",
+    "es": "IDG"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Integrated drive generator",
+    "es": "Generador de accionamiento integrado"
+  },
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An engine-driven AC generator combined in one unit with a constant-speed drive, so that it delivers 115 V at a constant 400 Hz whatever the engine speed.",
+    "es": "Generador de corriente alterna movido por el motor y combinado en una sola unidad con un accionamiento de velocidad constante, de modo que entrega 115 V a 400 Hz constantes sea cual sea el régimen del motor."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The generator on each engine that makes the aircraft's electricity.",
+    "es": "El generador de cada motor que produce la electricidad del avión."
+  },
+  "example": {
+    "en": "\"IDG 1 fault\" — the crew disconnected it and the APU generator took over.",
+    "es": "«Fallo de IDG 1»: la tripulación lo desconectó y el generador de la APU tomó la carga."
+  },
+  "pronunciation": {
+    "en": "eye-dee-JEE",
+    "es": "i-de-ge (en inglés: ai-di-yi)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "apu",
+    "ram-air-turbine"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "aopa-turbine-pilot-electrics-2000",
+    "skybrary-electrical-systems"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

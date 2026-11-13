@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En vuelo, el revestimiento superior del ala trabaja sobre todo a…",
+        "en": "In flight, the upper wing skin works mainly in…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tracción",
+            "en": "Tension"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Compresión",
+            "en": "Compression"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Torsión pura",
+            "en": "Pure torsion"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ningún esfuerzo",
+            "en": "No stress at all"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El ala se flexiona hacia arriba: arriba compresión, abajo tracción.",
+        "en": "The wing bends upwards: compression on top, tension underneath."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En una estructura semimonocasco, las cargas las soportan…",
+        "en": "In a semi-monocoque structure the loads are carried by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El revestimiento junto con cuadernas, mamparos y larguerillos",
+            "en": "The skin together with frames, bulkheads and stringers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo el revestimiento",
+            "en": "The skin alone"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo un armazón de tubos",
+            "en": "A tube frame alone"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo los largueros del ala",
+            "en": "The wing spars alone"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es la diferencia con el monocasco puro, donde todo lo soporta la piel.",
+        "en": "That is the difference from pure monocoque, where the skin carries everything."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La carga última de certificación es…",
+        "en": "The certification ultimate load is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La carga límite multiplicada por 2,5",
+            "en": "Limit load multiplied by 2.5"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La mitad de la carga límite",
+            "en": "Half the limit load"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La máxima carga de servicio esperada",
+            "en": "The highest load expected in service"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La carga límite multiplicada por 1,5",
+            "en": "Limit load multiplied by 1.5"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La máxima carga esperada en servicio es la carga límite; la última añade el factor de seguridad de 1,5.",
+        "en": "The highest load expected in service is the limit load; ultimate adds the 1.5 factor of safety."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué factor de carga límite positivo mínimo exige la Parte 25 en maniobra, con flaps recogidos?",
+        "en": "Which minimum positive manoeuvring limit load factor does Part 25 require, flaps up?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "+1,5 g",
+            "en": "+1.5 g"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "+3,8 g siempre",
+            "en": "+3.8 g always"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "+2,5 g",
+            "en": "+2.5 g"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "+6 g",
+            "en": "+6 g"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Con flaps extendidos el valor baja a +2 g; en negativo se exige −1 g.",
+        "en": "With flaps extended it drops to +2 g; −1 g is required negative."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Una estructura con caminos de carga redundantes responde a la filosofía…",
+        "en": "A structure with redundant load paths follows the philosophy of…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vida segura (safe-life)",
+            "en": "Safe-life"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A prueba de fallos (fail-safe)",
+            "en": "Fail-safe"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Monocasco",
+            "en": "Monocoque"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Carga última",
+            "en": "Ultimate load"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Si un elemento falla, los demás soportan la carga hasta que se detecte.",
+        "en": "If one member fails, the others carry the load until it is found."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Por qué un avión de corto radio acumula fatiga en el fuselaje más deprisa que uno de largo radio?",
+        "en": "Why does a short-haul aircraft build up fuselage fatigue faster than a long-haul one?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque hace más ciclos de presurización al día",
+            "en": "Because it flies more pressurisation cycles a day"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque vuela más alto",
+            "en": "Because it flies higher"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque lleva más combustible",
+            "en": "Because it carries more fuel"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque vuela más horas",
+            "en": "Because it flies more hours"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Cada vuelo infla y desinfla el fuselaje una vez: lo que cuenta son los ciclos.",
+        "en": "Each flight inflates and deflates the fuselage once: cycles are what count."
+      }
+    }
+  ]
+}

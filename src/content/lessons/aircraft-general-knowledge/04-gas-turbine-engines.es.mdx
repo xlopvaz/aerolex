@@ -1,0 +1,73 @@
+---
+lesson: gas-turbine-engines
+course: aircraft-general-knowledge
+lang: es
+title: "Motores de turbina de gas"
+summary: "Cómo funciona una turbina de gas, los tipos de motor, el índice de derivación, los parámetros N1, N2, EGT y EPR, y los fallos típicos: pérdida del compresor, apagado y arranques anómalos."
+objectives:
+  - "Describir las secciones de una turbina de gas y los motores de dos ejes"
+  - "Comparar turborreactor, turbofán, turbohélice y turboeje"
+  - "Interpretar N1, N2, EGT, EPR y par motor"
+  - "Reconocer la pérdida del compresor, el apagado y los arranques caliente y colgado"
+minutes: 14
+terms: [turbofan, bypass-ratio, egt, compressor-stall]
+quiz: aircraft-general-knowledge-04
+sources: [faa-phak, faa-amt-powerplant, faa-afh]
+review:
+  status: draft
+---
+
+## Aspirar, comprimir, quemar, expulsar
+
+Una turbina de gas hace lo mismo que un motor de pistón, pero de forma **continua** y en secciones distintas en vez de en un único cilindro:
+
+1. **Admisión**: lleva el aire al compresor con el menor número de pérdidas posible.
+2. **Compresor**: eleva mucho la presión del aire. Puede ser **centrífugo**, **axial** o una combinación de ambos.
+3. **Cámara de combustión**: se inyecta combustible y se quema de forma continua a presión casi constante.
+4. **Turbina**: los gases calientes la hacen girar. La turbina mueve, por un eje, el compresor (y en su caso el fan o la hélice).
+5. **Escape**: los gases salen por la tobera y producen empuje.
+
+El empuje es una aplicación de la tercera ley de Newton: el motor acelera hacia atrás una gran masa de aire y recibe una fuerza igual y contraria hacia delante.
+
+Los motores de los aviones de línea tienen **dos o tres ejes** concéntricos que giran a velocidades distintas. En un motor de dos ejes, el **eje de baja presión** une el fan y el compresor de baja con la turbina de baja, y el **eje de alta presión** une el compresor de alta con la turbina de alta.
+
+## Tipos de motor
+
+| Tipo | Cómo produce el empuje o la potencia | Uso típico |
+|---|---|---|
+| **Turborreactor** | Todo el aire pasa por el núcleo y sale a gran velocidad | Aviones antiguos y militares |
+| **<Term id="turbofan">Turbofán</Term>** | Un gran fan acelera aire que rodea el núcleo | Casi todos los reactores de transporte |
+| **Turbohélice** | La turbina mueve una hélice a través de una reductora | Regionales como el ATR 72 |
+| **Turboeje** | La turbina entrega potencia a un eje, no empuje | Helicópteros y APU |
+
+El <Term id="bypass-ratio">índice de derivación</Term> es la masa de aire que pasa por el fan rodeando el núcleo dividida entre la que pasa por el núcleo. Un índice alto significa acelerar **mucho aire un poco** en lugar de **poco aire mucho**, lo que es más eficiente y más silencioso. En los turbofanes de alto índice, la mayor parte del empuje la produce el fan.
+
+## Los parámetros del motor
+
+- **N1**: velocidad del eje de baja presión (el fan), en **porcentaje** de las rpm de diseño. En muchos motores es el parámetro con el que se fija el empuje.
+- **N2**: velocidad del eje de alta presión, también en porcentaje.
+- <Term id="egt" />: temperatura de los gases en la turbina. Es un **parámetro limitativo**. Según dónde se mida recibe otros nombres: TIT, TOT, ITT o TGT.
+- **EPR** (*engine pressure ratio*): presión a la salida de la turbina dividida entre la presión a la entrada del compresor. Algunos fabricantes fijan el empuje con el EPR en vez de con el N1.
+- **Par motor** (*torque*): mide la potencia en el eje de los turbohélices y turboejes.
+
+## Cuando algo va mal
+
+### Pérdida del compresor
+
+Los álabes del compresor son pequeños perfiles. Si su ángulo de ataque supera el crítico, el flujo se desprende igual que en un ala: es una <Term id="compressor-stall">pérdida del compresor</Term>. Una pérdida pasajera produce un **estampido** aislado. Una pérdida mantenida produce **vibración** fuerte y un **rugido**, con oscilación de las rpm y **subida de la EGT**. La recuperación consiste en reducir la potencia rápidamente, disminuir el ángulo de ataque del avión y aumentar la velocidad.
+
+### Apagado (*flameout*)
+
+La llama se apaga en la cámara de combustión:
+
+- **por mezcla rica**: exceso de combustible, a menudo por una aceleración muy brusca;
+- **por mezcla pobre**: a gran altitud con poca presión de combustible y bajo régimen, o en un descenso con el motor reducido.
+
+### Arranques anómalos
+
+- **Arranque caliente**: la EGT supera el límite, por exceso de combustible o por pocas rpm de la turbina. El manual indica qué inspección requiere.
+- **Arranque colgado**: el motor se enciende pero **no acelera hasta el ralentí**, por falta de potencia del arranque o por un fallo del control de combustible.
+
+<Callout type="info" label="Por qué importa la EGT">
+La temperatura que soportan los álabes de la turbina es el gran límite de un reactor. Por eso la EGT se vigila de cerca en el arranque y en el despegue, y por eso los motores pierden margen de EGT con el uso.
+</Callout>

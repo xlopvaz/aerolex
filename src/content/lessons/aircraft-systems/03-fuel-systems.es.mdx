@@ -1,0 +1,58 @@
+---
+lesson: fuel-systems
+course: aircraft-systems
+lang: es
+title: "Sistemas de combustible"
+summary: "Depósitos, bombas de refuerzo, alimentación cruzada, medición en masa, repostaje a presión, contaminación y gestión del combustible en vuelo."
+objectives:
+  - "Describir los depósitos y el recorrido del combustible hasta el motor"
+  - "Explicar la alimentación cruzada y el orden de consumo de los depósitos"
+  - "Conocer los riesgos de contaminación y la gestión del combustible en vuelo"
+minutes: 12
+terms: [centre-of-gravity, fuel-jettison]
+quiz: aircraft-systems-03
+sources: [faa-amt-airframe, faa-phak, easa-ear-air-ops, cfr-14-part-25]
+review:
+  status: draft
+---
+
+## Los depósitos
+
+En los aviones de transporte el combustible va sobre todo en las **alas**, en depósitos integrales: es la propia estructura sellada la que hace de depósito. Hay además un **depósito central** en el fuselaje, entre las alas, y algunos aviones de largo radio llevan un depósito en el estabilizador horizontal que sirve también para ajustar el <Term id="centre-of-gravity">centro de gravedad</Term> en crucero.
+
+En muchos aviones se consume **primero el depósito central**. El combustible de las alas alivia la flexión que provoca la sustentación, así que conviene conservarlo el mayor tiempo posible.
+
+## Del depósito al motor
+
+1. **Bombas de refuerzo** eléctricas, dentro de los depósitos, envían el combustible a presión hacia los motores y evitan la cavitación y la formación de vapor en las tuberías.
+2. Una **válvula de corte** por motor, que se cierra también con el mando de incendio, aísla el motor del combustible.
+3. La **bomba del motor** eleva la presión y el **control de combustible** (hoy, el FADEC) dosifica el caudal.
+4. Un **intercambiador de calor** suele calentar el combustible con el aceite del motor, lo que a la vez enfría el aceite y evita que se formen cristales de hielo en los filtros.
+
+Si fallan las bombas de refuerzo, muchos motores pueden seguir aspirando combustible por **succión**, aunque con limitaciones de altitud que indica el manual.
+
+## Alimentación cruzada
+
+La **válvula de alimentación cruzada** (*crossfeed*) une los circuitos izquierdo y derecho, de modo que cualquier depósito puede alimentar cualquier motor. Se usa sobre todo para **corregir un desequilibrio** de combustible entre alas, por ejemplo tras volar con un motor parado. Los manuales fijan un **desequilibrio máximo** permitido.
+
+## Medir y cargar el combustible
+
+- Las sondas de los depósitos son **capacitivas** y la cantidad se indica en **masa** (kg o lb), no en volumen. La energía del combustible depende de su masa, y su densidad cambia con la temperatura.
+- El repostaje se hace a **presión** desde una toma única bajo el ala, y el sistema cierra cada depósito al llenarse.
+- Antes de repostar se conecta el avión a tierra para descargar la **electricidad estática** y evitar una chispa.
+
+## Contaminación
+
+- **Agua**: se condensa en los depósitos y puede congelarse en altura. Se purga por los drenajes.
+- **Microorganismos**: bacterias y hongos que viven en la interfaz entre el agua y el combustible. Forman lodos que obstruyen filtros y favorecen la corrosión de los depósitos.
+- **Combustible equivocado**: cargar un tipo de combustible distinto del previsto es un riesgo grave. Recuerda los colores del módulo 3.
+
+## Gestión en vuelo
+
+La tripulación compara a intervalos regulares el combustible a bordo con el **previsto en el plan de vuelo** y con el que han **consumido los motores**. Las normas de operaciones de la UE exigen esas comprobaciones durante el vuelo. Una diferencia entre lo que hay y lo que debería haber puede indicar una **fuga**, y abrir la alimentación cruzada sin haber descartado una fuga podría vaciar también el otro lado.
+
+Algunos aviones, sobre todo de largo radio, tienen un sistema de <Term id="fuel-jettison">vaciado rápido de combustible</Term> para bajar al peso máximo de aterrizaje si hay que regresar poco después del despegue.
+
+<Callout type="official-procedure" label="Procedimiento del tipo">
+El orden de consumo, el desequilibrio máximo y la lista de comprobación de fuga de combustible son propios de cada avión y de cada operador.
+</Callout>

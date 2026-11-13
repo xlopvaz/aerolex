@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Outflow valve",
+    "es": "Válvula de descarga"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The valve that controls how much air leaves a pressurised cabin; by opening or closing it the pressurisation system sets the cabin altitude.",
+    "es": "Válvula que controla cuánto aire sale de la cabina presurizada; al abrirla o cerrarla, el sistema de presurización fija la altitud de cabina."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"door\" that lets air out of the cabin to control its pressure.",
+    "es": "La «puerta» que deja salir el aire de la cabina para controlar su presión."
+  },
+  "example": {
+    "en": "With the outflow valve fully closed the cabin was still climbing: a leak.",
+    "es": "Con la válvula de descarga totalmente cerrada la cabina seguía subiendo: había una fuga."
+  },
+  "pronunciation": {
+    "en": "OWT-floh valv",
+    "es": "vál-vu-la de des-car-ga"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "válvula de salida"
+    ]
+  },
+  "related": [
+    "pressurization",
+    "cabin-altitude",
+    "decompression"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

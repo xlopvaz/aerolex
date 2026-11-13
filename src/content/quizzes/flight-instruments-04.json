@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Si se aplica una fuerza a un giróscopo, este responde…",
+        "en": "If a force is applied to a gyroscope, it responds…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En el mismo punto donde se aplica",
+            "en": "At the same point where it is applied"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "90° antes, contra el sentido de giro",
+            "en": "90° earlier, against the rotation"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "90° más adelante en el sentido de giro",
+            "en": "90° further on in the direction of rotation"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No responde",
+            "en": "It does not respond"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es la precesión.",
+        "en": "That is precession."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La rotación de la Tierra puede producir en un giróscopo libre un error de rumbo de hasta…",
+        "en": "The Earth's rotation can give a free gyroscope a heading error of up to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1° por hora",
+            "en": "1° per hour"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "15° por hora",
+            "en": "15° per hour"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "90° por hora",
+            "en": "90° per hour"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15° por minuto",
+            "en": "15° per minute"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Se suma a la deriva por rozamiento.",
+        "en": "It adds to drift from friction."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El indicador de rumbo se compara con la brújula aproximadamente cada…",
+        "en": "The heading indicator is checked against the compass about every…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "15 minutos, en vuelo recto y nivelado",
+            "en": "15 minutes, in straight and level flight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2 minutos, en viraje",
+            "en": "2 minutes, in a turn"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hora, durante el ascenso",
+            "en": "Hour, during the climb"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Vuelo, solo en tierra",
+            "en": "Flight, on the ground only"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La brújula solo es fiable en vuelo recto, nivelado y a velocidad constante.",
+        "en": "The compass is only reliable in straight, level, constant-speed flight."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Inclinación aproximada para un viraje estándar a 150 kt:",
+        "en": "Approximate bank for a standard-rate turn at 150 kt:"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "15°",
+            "en": "15°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30°",
+            "en": "30°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "45°",
+            "en": "45°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "22°",
+            "en": "22°"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "150 / 10 + 7 = 22°.",
+        "en": "150 / 10 + 7 = 22°."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En un viraje, la bola está desplazada hacia el exterior. Es…",
+        "en": "In a turn, the ball is displaced to the outside. It is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un derrape hacia dentro (slip): falta pie",
+            "en": "A slip: not enough rudder"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un viraje coordinado",
+            "en": "A coordinated turn"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un derrape hacia fuera (skid): sobra pie",
+            "en": "A skid: too much rudder"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un fallo del giróscopo",
+            "en": "A gyroscope failure"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Se corrige pisando la bola.",
+        "en": "Correct by stepping on the ball."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El coordinador de viraje NO indica…",
+        "en": "The turn coordinator does NOT show…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La velocidad de alabeo",
+            "en": "Rate of roll"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El ángulo de inclinación",
+            "en": "Bank angle"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El régimen de viraje",
+            "en": "Rate of turn"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La coordinación con la bola",
+            "en": "Coordination via the ball"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La inclinación la da el indicador de actitud.",
+        "en": "Bank angle comes from the attitude indicator."
+      }
+    }
+  ]
+}

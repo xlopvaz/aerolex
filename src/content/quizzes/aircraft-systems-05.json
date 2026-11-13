@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Un sistema de antihielo…",
+        "en": "An anti-ice system…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Elimina el hielo ya formado rompiéndolo",
+            "en": "Removes ice already formed by breaking it"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Impide que se forme hielo y se conecta antes de entrar en engelamiento",
+            "en": "Prevents ice forming and is switched on before entering icing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo funciona en tierra",
+            "en": "Only works on the ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Es lo mismo que el deshielo",
+            "en": "Is the same as de-ice"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El deshielo deja acumular una capa y luego la rompe.",
+        "en": "De-ice lets a layer build up and then breaks it."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En un reactor, los bordes de ataque de las alas suelen protegerse con…",
+        "en": "On a jet, wing leading edges are usually protected by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aire sangrado caliente",
+            "en": "Hot bleed air"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Botas neumáticas",
+            "en": "Pneumatic boots"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Alcohol",
+            "en": "Alcohol"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Limpiaparabrisas",
+            "en": "Wipers"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las botas son típicas de turbohélices y aviones ligeros.",
+        "en": "Boots are typical of turboprops and light aircraft."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Por qué la calefacción del parabrisas suele ir conectada todo el vuelo?",
+        "en": "Why is windshield heat usually on for the whole flight?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque calienta la cabina",
+            "en": "Because it heats the flight deck"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque mejora la radio",
+            "en": "Because it improves the radio"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque lo exige el control aéreo",
+            "en": "Because ATC requires it"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque el vidrio caliente resiste mejor el impacto de un ave",
+            "en": "Because warm glass resists a bird strike better"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Además de evitar el hielo, el vidrio caliente es más flexible.",
+        "en": "Besides preventing ice, warm glass is more flexible."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "El concepto de avión limpio significa que…",
+        "en": "The clean-aircraft concept means that…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El avión debe lavarse antes de cada vuelo",
+            "en": "The aircraft must be washed before every flight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se puede despegar con escarcha fina",
+            "en": "Taking off with thin frost is allowed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se despega con escarcha, hielo o nieve adheridos a las superficies críticas",
+            "en": "No take-off with frost, ice or snow adhering to critical surfaces"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El antihielo de a bordo protege el avión en tierra",
+            "en": "The on-board anti-ice protects the aircraft on the ground"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Incluso una capa fina y rugosa reduce mucho la sustentación.",
+        "en": "Even a thin, rough layer reduces lift considerably."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En el proceso de dos pasos, el líquido espesado de antihielo suele ser de…",
+        "en": "In the two-step process, the thickened anti-icing fluid is usually…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tipo I",
+            "en": "Type I"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tipo II o Tipo IV",
+            "en": "Type II or Type IV"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Agua caliente",
+            "en": "Hot water"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Líquido hidráulico",
+            "en": "Hydraulic fluid"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El Tipo I caliente se usa para deshelar.",
+        "en": "Hot Type I is used for de-icing."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El tiempo de protección (holdover) depende de…",
+        "en": "Holdover time depends on…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El tipo de líquido, la temperatura y el tipo e intensidad de la precipitación",
+            "en": "Fluid type, temperature and the type and intensity of precipitation"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo de la hora del día",
+            "en": "Only the time of day"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El peso del avión",
+            "en": "The aircraft's weight"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La longitud de la pista",
+            "en": "The runway length"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Si se agota antes del despegue, hay que repetir el tratamiento.",
+        "en": "If it runs out before take-off, the treatment must be repeated."
+      }
+    }
+  ]
+}

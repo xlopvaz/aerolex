@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El límite inferior del arco blanco del anemómetro es…",
+        "en": "The lower limit of the white arc on the airspeed indicator is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "VS0, pérdida en configuración de aterrizaje",
+            "en": "VS0, stall in landing configuration"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "VS1",
+            "en": "VS1"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "VFE",
+            "en": "VFE"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "VNO",
+            "en": "VNO"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El límite superior es VFE.",
+        "en": "The upper limit is VFE."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué velocidad NO está marcada en el anemómetro?",
+        "en": "Which speed is NOT marked on the airspeed indicator?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "VNE",
+            "en": "VNE"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "VNO",
+            "en": "VNO"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "VFE",
+            "en": "VFE"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "VA, velocidad de maniobra",
+            "en": "VA, manoeuvring speed"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "VA, VLO, VLE, VX, VY y VMC se consultan en letreros o en el manual.",
+        "en": "VA, VLO, VLE, VX, VY and VMC come from placards or the manual."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La CAS es la IAS corregida por…",
+        "en": "CAS is IAS corrected for…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La altitud y la temperatura",
+            "en": "Altitude and temperature"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El viento",
+            "en": "Wind"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los errores de instrumento e instalación",
+            "en": "Instrument and installation errors"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La compresibilidad",
+            "en": "Compressibility"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La corrección por altitud y temperatura da la TAS; la de compresibilidad, la EAS.",
+        "en": "The correction for altitude and temperature gives TAS; for compressibility, EAS."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con la regla del 2 % por 1.000 ft, a 8.000 ft una CAS de 125 kt equivale a una TAS de unos…",
+        "en": "With the 2 % per 1,000 ft rule, at 8,000 ft a CAS of 125 kt gives a TAS of about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "125 kt",
+            "en": "125 kt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "145 kt",
+            "en": "145 kt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "110 kt",
+            "en": "110 kt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "200 kt",
+            "en": "200 kt"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "125 × 1,16 = 145 kt.",
+        "en": "125 × 1.16 = 145 kt."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Por qué la velocidad de pérdida indicada es casi la misma a cualquier altitud?",
+        "en": "Why is the indicated stall speed almost the same at any altitude?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque la pérdida depende de la presión dinámica, que es lo que mide el anemómetro",
+            "en": "Because the stall depends on dynamic pressure, which is what the ASI measures"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque la TAS no cambia con la altitud",
+            "en": "Because TAS does not change with altitude"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque el ala se calienta",
+            "en": "Because the wing warms up"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque el viento la compensa",
+            "en": "Because the wind compensates for it"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La TAS de pérdida sí aumenta con la altitud.",
+        "en": "The true stall speed does increase with altitude."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Al ascender a IAS constante, un reactor pasa de estar limitado por…",
+        "en": "Climbing at constant IAS, a jet changes from being limited by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "MMO a VMO",
+            "en": "MMO to VMO"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "VNE a VNO",
+            "en": "VNE to VNO"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "VS1 a VS0",
+            "en": "VS1 to VS0"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "VMO a MMO",
+            "en": "VMO to MMO"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "A IAS constante el Mach aumenta con la altitud.",
+        "en": "At constant IAS the Mach number rises with altitude."
+      }
+    }
+  ]
+}

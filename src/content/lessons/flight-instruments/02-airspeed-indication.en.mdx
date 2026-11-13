@@ -1,0 +1,59 @@
+---
+lesson: airspeed-indication
+course: flight-instruments
+lang: en
+title: "Airspeeds: IAS, CAS, TAS and Mach"
+summary: "The colour markings on the airspeed indicator, the speeds not shown on it, the steps from IAS to TAS and groundspeed, and jets' VMO and MMO limits."
+objectives:
+  - "Interpret the arcs and lines on the airspeed indicator"
+  - "Go from IAS to CAS, TAS and groundspeed"
+  - "Explain why jets have an IAS limit and a Mach limit"
+minutes: 12
+terms: [ias, cas, tas, ground-speed, mach-number]
+quiz: flight-instruments-02
+sources: [faa-phak, faa-afh]
+review:
+  status: draft
+---
+
+## The airspeed indicator's colours
+
+On light aircraft, the airspeed indicator has standard markings:
+
+| Marking | Meaning |
+|---|---|
+| **White arc** | Flap operating range: from V<sub>S0</sub> (stall in landing configuration) to V<sub>FE</sub> (maximum flaps extended) |
+| **Green arc** | Normal operating range: from V<sub>S1</sub> (stall in a given configuration, usually clean) to V<sub>NO</sub> (maximum structural cruising speed) |
+| **Yellow arc** | Caution: smooth air only |
+| **Red line** | V<sub>NE</sub>, never-exceed speed |
+| **Blue line** (twins) | V<sub>YSE</sub>, best single-engine rate of climb |
+
+Other important speeds are **not** shown on the instrument and come from placards or the manual: manoeuvring speed (V<sub>A</sub>), gear speeds (V<sub>LO</sub>, V<sub>LE</sub>), best angle and best rate of climb (V<sub>X</sub>, V<sub>Y</sub>) and the minimum control speed with one engine (V<sub>MC</sub>).
+
+## From indicated to true
+
+1. **<Term id="ias">IAS</Term>**: the direct instrument reading.
+2. **<Term id="cas">CAS</Term>**: IAS corrected for instrument and installation errors. The error is greatest at low speed, when the angle of attack is high and the ports "see" the air at an angle.
+3. **EAS**: CAS corrected for air **compressibility**, which only matters at high speed and high altitude.
+4. **<Term id="tas">TAS</Term>**: the real speed through the air, corrected for altitude and temperature (that is, for density). A PHAK rule of thumb: TAS exceeds CAS by **2 % per 1,000 ft** of altitude.
+5. **<Term id="ground-speed">Groundspeed</Term>**: TAS plus or minus the effect of the wind. It falls with a headwind and rises with a tailwind.
+
+Example with the 2 % rule: at 10,000 ft with a CAS of 150 kt, the TAS is about 150 × 1.20 = **180 kt**. With a 30 kt headwind, the groundspeed is about **150 kt**.
+
+## Why each matters
+
+- **Aerodynamic performance** (stall, flap limits) depends on dynamic pressure: it is flown in **IAS/CAS**. That is why the indicated stall speed is almost the same at any altitude.
+- **Navigation** (times, fuel) depends on **TAS** and groundspeed.
+
+## VMO and MMO
+
+Jets have two speed limits:
+
+- **V<sub>MO</sub>**: maximum operating speed, in IAS/CAS. It limits at low and medium altitude, where the issue is **structural load**.
+- **M<sub>MO</sub>**: maximum operating <Term id="mach-number">Mach number</Term>. It limits at high altitude, where the issue is **compressibility**: shock waves, buffet and effects on control.
+
+Because Mach number increases with altitude at constant IAS, in a climb the limit changes from V<sub>MO</sub> to M<sub>MO</sub>. On modern displays the limit appears as a **red and black band** (*barber pole*) on the speed tape, which moves depending on which of the two is limiting.
+
+<Callout type="tip" label="What the tape tells you">
+On a PFD, the speed tape also shows an amber or red band at the bottom, the minimum or stall-protection speed, which changes with weight, configuration and load factor.
+</Callout>

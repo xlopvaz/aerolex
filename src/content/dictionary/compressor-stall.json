@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Compressor stall",
+    "es": "Pérdida del compresor"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A disruption of the airflow through a turbine engine's compressor when its blades exceed their critical angle of attack; it may cause bangs, vibration, rpm fluctuation and a rise in EGT, and in its severe form (surge) a reversal of the flow.",
+    "es": "Alteración del flujo de aire por el compresor de un motor de turbina cuando sus álabes superan su ángulo de ataque crítico; puede producir explosiones, vibración, oscilación de las rpm y subida de la EGT, y en su forma grave (bombeo o surge) la inversión del flujo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the engine's compressor blades \"stall\" like a wing and the engine bangs.",
+    "es": "Cuando los álabes del compresor entran en pérdida como un ala y el motor da estampidos."
+  },
+  "example": {
+    "en": "The crew heard a loud bang and saw the EGT rise: a compressor stall.",
+    "es": "La tripulación oyó un fuerte estampido y vio subir la EGT: una pérdida del compresor."
+  },
+  "pronunciation": {
+    "en": "kum-PRESS-er stawl",
+    "es": "com-pre-sor stol (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "compressor surge"
+    ],
+    "es": [
+      "bombeo del compresor",
+      "surge"
+    ]
+  },
+  "related": [
+    "egt",
+    "turbofan",
+    "stall"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-powerplant"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

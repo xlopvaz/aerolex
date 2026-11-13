@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Constant-speed propeller",
+    "es": "Hélice de velocidad constante"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "general-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A variable-pitch propeller whose blade angle is changed automatically by a governor to keep the rpm selected by the pilot, whatever the power and airspeed, within its pitch limits.",
+    "es": "Hélice de paso variable cuyo ángulo de pala cambia automáticamente un regulador para mantener las rpm elegidas por el piloto, sean cuales sean la potencia y la velocidad, dentro de sus límites de paso."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A propeller that changes its blade angle by itself to keep the same rpm.",
+    "es": "Una hélice que cambia sola el ángulo de sus palas para mantener las mismas rpm."
+  },
+  "example": {
+    "en": "Before take-off the pilot set the propeller lever fully forward.",
+    "es": "Antes del despegue el piloto llevó la palanca de la hélice totalmente adelante."
+  },
+  "pronunciation": {
+    "en": "KON-stunt speed proh-PEL-er",
+    "es": "hé-li-ce de ve-lo-ci-dad cons-tan-te"
+  },
+  "synonyms": {
+    "en": [
+      "variable-pitch propeller"
+    ],
+    "es": [
+      "hélice de paso variable"
+    ]
+  },
+  "related": [
+    "propeller",
+    "thrust"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

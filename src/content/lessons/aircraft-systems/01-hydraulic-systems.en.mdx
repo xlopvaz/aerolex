@@ -1,0 +1,65 @@
+---
+lesson: hydraulic-systems
+course: aircraft-systems
+lang: en
+title: "Hydraulic systems"
+summary: "Pascal's principle, the components of a hydraulic system, fluids, the redundant architecture of transport aircraft, the PTU and the RAT."
+objectives:
+  - "Apply Pascal's principle to an actuator"
+  - "Identify the components of a hydraulic system and what they do"
+  - "Describe the hydraulic redundancy of a transport aircraft"
+minutes: 12
+terms: [hydraulic-system, ram-air-turbine]
+quiz: aircraft-systems-01
+sources: [faa-phak, faa-amt-airframe, skybrary-hydraulic-systems]
+review:
+  status: draft
+---
+
+## Why hydraulics
+
+A liquid hardly compresses at all. According to **Pascal's principle**, pressure applied to an enclosed fluid is transmitted equally in all directions. Since **force = pressure × area**, a small pump can move a large actuator with enormous force, through thin pipes that reach every corner of the aircraft.
+
+On an airliner, the <Term id="hydraulic-system">hydraulic system</Term> moves the flight control surfaces, flaps and slats, spoilers, landing gear, nosewheel steering, brakes and thrust reversers.
+
+## Components
+
+| Component | What it does |
+|---|---|
+| **Reservoir** | Stores the fluid; on large aircraft it is pressurised so that the pump does not draw in bubbles |
+| **Pump** | Creates the pressure; it may be hand, electric or engine-driven |
+| **Filter** | Traps particles that would damage valves and pumps |
+| **Selector valve** | Sends fluid to one side or the other of the actuator |
+| **Relief valve** | Protects the system from excessive pressure |
+| **Accumulator** | Stores fluid under pressure to absorb surges and provide reserve pressure |
+| **Actuator** | Turns pressure into movement; it may be single- or double-acting |
+
+## Fluids
+
+- Light aircraft usually use a **mineral-based** fluid, kerosene-like and dyed red.
+- Transport aircraft use fire-resistant **phosphate ester** fluids. They irritate skin and eyes and attack some paints and plastics.
+
+Fluids are **never mixed**: each aircraft uses the one its manufacturer specifies, and the system seals are designed for that fluid.
+
+## Transport aircraft architecture
+
+Systems normally work at about **3,000 psi**; some recent aircraft use **5,000 psi**, which allows smaller, lighter pipes and actuators. The key is **redundancy**: there are several independent systems, and every important control surface is powered by more than one.
+
+- The **Boeing 737 Next Generation** has three 3,000 psi systems: **A**, **B** and **standby**, which comes in if A or B pressure is lost.
+- The **Boeing 777** has three: **left**, **centre** and **right**. The centre system is powered by electric pumps and bleed-air-driven pumps.
+
+The usual pressure sources are:
+
+- **Engine-driven pumps** (EDP): the main source.
+- **Electric pumps**: as backup or demand pumps, and to provide pressure on the ground with the engines off.
+- **Air-driven pumps** (ADP): on some large aircraft.
+- **Power transfer unit** (PTU): a hydraulic motor in one system drives a pump in another. It transfers **power, not fluid**, so the systems stay isolated.
+- **<Term id="ram-air-turbine">Ram air turbine</Term>** (RAT): extends into the airflow in an emergency and pressurises the essential flight controls.
+
+## If a system is lost
+
+Losing one hydraulic system rarely leaves the aircraft uncontrollable, but it usually removes some functions: some spoilers, a reverser, nosewheel steering or normal gear retraction. The checklist states what is lost and how it affects the approach and landing, for example the landing distance or the need to lower the gear by gravity.
+
+<Callout type="caution" label="Pressure that cuts">
+A jet of fluid at 3,000 psi from a pinhole leak can pierce the skin. On the ground, the system is depressurised before anyone works on it.
+</Callout>

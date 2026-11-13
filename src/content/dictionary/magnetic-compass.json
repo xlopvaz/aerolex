@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Magnetic compass",
+    "es": "Brújula magnética"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cockpit",
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A self-contained instrument with a magnetised card that aligns with the Earth's magnetic field and shows magnetic heading; it is subject to deviation, dip, acceleration and turning errors.",
+    "es": "Instrumento autónomo con una rosa imantada que se alinea con el campo magnético terrestre y muestra el rumbo magnético; está sujeto a desvío, inclinación magnética y errores de aceleración y de viraje."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The old-fashioned compass that works without electricity.",
+    "es": "La brújula de toda la vida, que funciona sin electricidad."
+  },
+  "example": {
+    "en": "The standby magnetic compass sits above the glareshield.",
+    "es": "La brújula magnética de reserva está encima del glareshield."
+  },
+  "pronunciation": {
+    "en": "mag-NET-ik KUM-pus",
+    "es": "brú-ju-la mag-né-ti-ca"
+  },
+  "synonyms": {
+    "en": [
+      "whiskey compass",
+      "standby compass"
+    ],
+    "es": [
+      "compás magnético"
+    ]
+  },
+  "related": [
+    "heading",
+    "magnetic-variation",
+    "glareshield"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

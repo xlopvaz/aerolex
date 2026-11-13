@@ -1,0 +1,63 @@
+---
+lesson: electrical-systems
+course: aircraft-systems
+lang: es
+title: "Sistemas eléctricos"
+summary: "Del sistema de corriente continua de una avioneta a la red de alterna de 115 V y 400 Hz de un reactor: generadores, IDG, TRU, inversor estático, barras, prioridades y alimentación de emergencia."
+objectives:
+  - "Interpretar el amperímetro y el indicador de carga de una avioneta"
+  - "Explicar por qué los aviones de transporte usan alterna a 400 Hz"
+  - "Describir las fuentes de energía y la jerarquía de barras de un reactor"
+minutes: 12
+terms: [idg, apu, ram-air-turbine]
+quiz: aircraft-systems-02
+sources: [faa-phak, skybrary-electrical-systems, aopa-turbine-pilot-electrics-2000, faa-amt-airframe]
+review:
+  status: draft
+---
+
+## El sistema de una avioneta
+
+La mayoría de los aviones ligeros tienen un sistema de **corriente continua de 14 o 28 V**. Sus componentes son un **alternador** (o generador), una **batería**, el interruptor general y el del alternador, la **barra** (*bus bar*) que reparte la corriente, los **fusibles** o **disyuntores**, un **regulador de tensión** y un **amperímetro** o **indicador de carga**.
+
+- El alternador da suficiente corriente incluso a bajas rpm, cosa que no consiguen muchos generadores de continua.
+- Para cargar la batería, la salida debe ser algo mayor que su tensión: una batería de 12 V se alimenta a unos 14 V.
+- Un fusible fundido se cambia; un disyuntor saltado se rearma a mano.
+
+### Leer el amperímetro
+
+| Indicación | Qué significa |
+|---|---|
+| Positiva | La batería se está cargando |
+| Negativa | Se consume más de lo que se repone: la batería se descarga |
+| A tope en negativo | Fallo del alternador o generador |
+| A tope en positivo | Fallo del regulador |
+
+El **indicador de carga** (*loadmeter*) empieza en cero y muestra el porcentaje de la capacidad del generador que se está usando.
+
+## La red de un avión de transporte
+
+Un reactor necesita mucha más potencia: hornos de galley, bombas hidráulicas eléctricas, calefacción de parabrisas, aviónica. Por eso su red principal es de **corriente alterna trifásica de 115 V y 400 Hz**. Una red de alterna de mayor tensión da varias veces más potencia por kilo que una de 28 V de continua, y a 400 Hz los transformadores y motores son más pequeños y ligeros que a 50 o 60 Hz.
+
+### Las fuentes
+
+- **Generadores de los motores**: el motor gira a velocidad variable, pero la frecuencia debe ser constante. Un **accionamiento de velocidad constante** (CSD) entre el motor y el generador lo resuelve. Cuando ambos van en una sola unidad se llama <Term id="idg" />.
+- **Generador de la <Term id="apu" />**: en tierra y como reserva en vuelo.
+- **Toma de tierra** (GPU): energía externa de 115 V y 400 Hz en el aparcamiento.
+- **<Term id="ram-air-turbine">RAT</Term>**: en muchos aviones mueve un generador de emergencia.
+- **Baterías**: el último recurso, para arrancar la APU y mantener lo esencial.
+
+### Las conversiones
+
+- Las **unidades transformador-rectificador** (TRU) convierten la alterna de 115 V en **continua de 28 V** para las barras de continua.
+- El **inversor estático** hace lo contrario: convierte continua de la batería en alterna para alimentar equipos esenciales si se pierden los generadores.
+
+### Barras y prioridades
+
+La energía se reparte por **barras**: barras de generador, barras esenciales y barras de servicio en tierra, entre otras. Los **contactores de interconexión** (*bus tie*) permiten que un generador alimente las barras del otro si este falla. Un sistema de control decide automáticamente qué fuente alimenta cada barra.
+
+Si se pierde generación, el sistema **desconecta cargas** no esenciales, como las de la galley, para no sobrecargar las fuentes que quedan. En el peor caso solo quedan las **barras esenciales**, con los instrumentos y las radios mínimos para terminar el vuelo.
+
+<Callout type="info" label="Una tendencia: el avión más eléctrico">
+Algunos diseños recientes sustituyen parte del aire sangrado y de la hidráulica por sistemas eléctricos, con generadores más potentes. Los principios de fuentes, conversiones y prioridades siguen siendo los mismos.
+</Callout>

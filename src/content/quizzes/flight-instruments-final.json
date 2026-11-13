@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué equipo calcula la velocidad y la altitud a partir de las presiones de pitot y estática?",
+        "en": "Which unit calculates airspeed and altitude from pitot and static pressure?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El ADC",
+            "en": "The ADC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El AHRS",
+            "en": "The AHRS"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El TCAS",
+            "en": "TCAS"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El ND",
+            "en": "The ND"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El AHRS da actitud y rumbo.",
+        "en": "The AHRS provides attitude and heading."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cuál es el fallo más peligroso en una cabina digital?",
+        "en": "What is the most dangerous failure in a glass cockpit?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una X roja sobre la velocidad",
+            "en": "A red X over the airspeed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una bandera de fallo",
+            "en": "A failure flag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una pantalla apagada",
+            "en": "A blank screen"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un dato erróneo que parece válido",
+            "en": "Wrong data that looks valid"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Una bandera o una X roja al menos dicen que el dato no es válido.",
+        "en": "A flag or red X at least tells you the data is invalid."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Ante dos velocidades que no coinciden, lo primero es…",
+        "en": "With two airspeeds that disagree, the first thing is to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Desconectar todas las pantallas",
+            "en": "Switch off all the screens"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Seguir la velocidad más alta",
+            "en": "Follow the higher airspeed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Volar con una actitud y una potencia conocidas",
+            "en": "Fly a known attitude and power setting"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Subir hasta salir de las nubes",
+            "en": "Climb out of the cloud"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Después se comparan las fuentes y se conmuta a la fiable.",
+        "en": "Then compare the sources and switch to the reliable one."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué añade el EGPWS a las funciones básicas del GPWS?",
+        "en": "What does EGPWS add to the basic GPWS functions?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El aviso de tráfico",
+            "en": "Traffic alerts"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una base de datos del terreno que permite mirar hacia delante",
+            "en": "A terrain database that lets it look ahead"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El radar meteorológico",
+            "en": "Weather radar"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El piloto automático",
+            "en": "The autopilot"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Así avisa de un terreno que sube aunque el avión aún vuele alto sobre él.",
+        "en": "That way it warns of rising terrain while the aircraft is still high above it."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un RA del TCAS pide «CLIMB» y el control acaba de ordenar descender. ¿Qué haces?",
+        "en": "A TCAS RA calls \"CLIMB\" and ATC has just told you to descend. What do you do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sigues el RA y lo comunicas al control en cuanto puedes",
+            "en": "Follow the RA and tell ATC as soon as you can"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sigues la instrucción del control",
+            "en": "Follow the ATC instruction"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Te quedas nivelado",
+            "en": "Stay level"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Pides confirmación al control antes de maniobrar",
+            "en": "Ask ATC to confirm before manoeuvring"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El RA prevalece sobre la instrucción del control salvo que comprometa la seguridad.",
+        "en": "The RA takes precedence over the ATC instruction unless it would jeopardise safety."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Los avisos de resolución del TCAS II son maniobras…",
+        "en": "TCAS II resolution advisories are manoeuvres…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Horizontales",
+            "en": "In the horizontal plane"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De velocidad",
+            "en": "Of speed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De rumbo y velocidad",
+            "en": "Of heading and speed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Verticales",
+            "en": "In the vertical plane"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Ejemplos: CLIMB, DESCEND, MONITOR VERTICAL SPEED.",
+        "en": "Examples: CLIMB, DESCEND, MONITOR VERTICAL SPEED."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Con las estáticas obstruidas, el altímetro…",
+        "en": "With the static ports blocked, the altimeter…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cae a cero",
+            "en": "Drops to zero"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Marca más al subir",
+            "en": "Reads higher in a climb"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se queda congelado",
+            "en": "Freezes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Funciona con normalidad",
+            "en": "Works normally"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Y el variómetro marca cero.",
+        "en": "And the VSI reads zero."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "La TAS a 6.000 ft con una CAS de 100 kt es de unos…",
+        "en": "TAS at 6,000 ft with a CAS of 100 kt is about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "100 kt",
+            "en": "100 kt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "112 kt",
+            "en": "112 kt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "94 kt",
+            "en": "94 kt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "160 kt",
+            "en": "160 kt"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Regla del 2 % por 1.000 ft: 100 × 1,12.",
+        "en": "2 % per 1,000 ft rule: 100 × 1.12."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "De una zona de alta presión a otra de baja sin cambiar el reglaje, el avión está…",
+        "en": "Flying from high to low pressure without resetting, the aircraft is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Más bajo de lo indicado",
+            "en": "Lower than indicated"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más alto de lo indicado",
+            "en": "Higher than indicated"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A la altitud indicada",
+            "en": "At the indicated altitude"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Más alto solo de noche",
+            "en": "Higher only at night"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "«De alta a baja, cuidado abajo».",
+        "en": "\"High to low, look out below\"."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "En el hemisferio norte, con rumbo este, al decelerar la brújula indica un viraje hacia…",
+        "en": "In the northern hemisphere, heading east, decelerating makes the compass show a turn towards…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El norte",
+            "en": "North"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El oeste",
+            "en": "West"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ningún lado",
+            "en": "Neither way"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El sur",
+            "en": "South"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "ANDS: decelerar → sur.",
+        "en": "ANDS: decelerate → south."
+      }
+    }
+  ]
+}

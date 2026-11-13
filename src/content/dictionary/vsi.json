@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "VSI",
+    "es": "VSI"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Vertical speed indicator",
+    "es": "Indicador de velocidad vertical"
+  },
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The instrument that shows the rate of climb or descent, usually in feet per minute, from the rate of change of static pressure.",
+    "es": "Instrumento que muestra la velocidad de ascenso o descenso, normalmente en pies por minuto, a partir de la variación de la presión estática."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The instrument that says how fast you are climbing or descending.",
+    "es": "El instrumento que indica lo rápido que se sube o se baja."
+  },
+  "example": {
+    "en": "The VSI showed 700 ft/min down on the ILS.",
+    "es": "El VSI marcaba 700 ft/min de descenso en el ILS."
+  },
+  "pronunciation": {
+    "en": "vee-ess-EYE",
+    "es": "uve-e-se-i"
+  },
+  "synonyms": {
+    "en": [
+      "VVI",
+      "variometer"
+    ],
+    "es": [
+      "variómetro",
+      "VVI"
+    ]
+  },
+  "related": [
+    "altimeter",
+    "static-port",
+    "pfd"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,59 @@
+---
+lesson: airspeed-indication
+course: flight-instruments
+lang: es
+title: "Velocidades: IAS, CAS, TAS y Mach"
+summary: "Las marcas de colores del anemómetro, las velocidades que no aparecen en él, el paso de IAS a TAS y a velocidad respecto al suelo, y los límites VMO y MMO de los reactores."
+objectives:
+  - "Interpretar los arcos y líneas del anemómetro"
+  - "Pasar de IAS a CAS, TAS y velocidad respecto al suelo"
+  - "Explicar por qué los reactores tienen un límite en IAS y otro en Mach"
+minutes: 12
+terms: [ias, cas, tas, ground-speed, mach-number]
+quiz: flight-instruments-02
+sources: [faa-phak, faa-afh]
+review:
+  status: draft
+---
+
+## Los colores del anemómetro
+
+En los aviones ligeros, el anemómetro lleva marcas normalizadas:
+
+| Marca | Significado |
+|---|---|
+| **Arco blanco** | Margen de uso de los flaps: de V<sub>S0</sub> (pérdida en configuración de aterrizaje) a V<sub>FE</sub> (máxima con flaps) |
+| **Arco verde** | Margen normal: de V<sub>S1</sub> (pérdida en una configuración dada, normalmente limpia) a V<sub>NO</sub> (máxima de crucero estructural) |
+| **Arco amarillo** | Precaución: solo con aire en calma |
+| **Línea roja** | V<sub>NE</sub>, velocidad que nunca se debe superar |
+| **Línea azul** (bimotores) | V<sub>YSE</sub>, mejor régimen de ascenso con un motor |
+
+Otras velocidades importantes **no** aparecen en el instrumento y se consultan en los letreros o el manual: la de maniobra (V<sub>A</sub>), las de tren (V<sub>LO</sub>, V<sub>LE</sub>), las de mejor ángulo y mejor régimen de ascenso (V<sub>X</sub>, V<sub>Y</sub>) y la mínima de control con un motor (V<sub>MC</sub>).
+
+## De la indicada a la verdadera
+
+1. **<Term id="ias">IAS</Term>**: la lectura directa del instrumento.
+2. **<Term id="cas">CAS</Term>**: la IAS corregida por los errores del instrumento y de la instalación. El error es mayor a baja velocidad, cuando el ángulo de ataque es alto y las tomas «ven» el aire de lado.
+3. **EAS**: la CAS corregida por la **compresibilidad** del aire, que solo es significativa a gran velocidad y gran altitud.
+4. **<Term id="tas">TAS</Term>**: la velocidad real a través del aire, corregida por altitud y temperatura (es decir, por densidad). Una regla práctica del PHAK: la TAS supera a la CAS en un **2 % por cada 1.000 ft** de altitud.
+5. **<Term id="ground-speed">Velocidad respecto al suelo</Term>**: la TAS más o menos el efecto del viento. Baja con viento de cara y sube con viento de cola.
+
+Ejemplo con la regla del 2 %: a 10.000 ft, con una CAS de 150 kt, la TAS es de unos 150 × 1,20 = **180 kt**. Con 30 kt de viento de cara, la velocidad respecto al suelo es de unos **150 kt**.
+
+## Por qué importa cada una
+
+- Las **actuaciones aerodinámicas** (pérdida, límites de flaps) dependen de la presión dinámica: se vuelan en **IAS/CAS**. Por eso la velocidad de pérdida indicada es casi la misma a cualquier altitud.
+- La **navegación** (tiempos, combustible) depende de la **TAS** y de la velocidad respecto al suelo.
+
+## VMO y MMO
+
+Los reactores tienen dos límites de velocidad:
+
+- **V<sub>MO</sub>**: velocidad máxima de operación, en IAS/CAS. Limita a baja y media altitud, donde el problema es la **carga estructural**.
+- **M<sub>MO</sub>**: número de <Term id="mach-number">Mach</Term> máximo de operación. Limita a gran altitud, donde el problema es la **compresibilidad**: ondas de choque, bataneo y efectos sobre el control.
+
+Como, a IAS constante, el número de Mach aumenta con la altitud, al subir se pasa de estar limitado por V<sub>MO</sub> a estarlo por M<sub>MO</sub>. En las pantallas modernas el límite aparece como una **franja roja y negra** (*barber pole*) en la cinta de velocidad, que se desplaza según cuál de los dos limita.
+
+<Callout type="tip" label="Lo que dice la cinta">
+En un PFD, la cinta de velocidad muestra además una franja ámbar o roja por la parte baja, la de la velocidad mínima o de protección contra la pérdida, que cambia con el peso, la configuración y el factor de carga.
+</Callout>

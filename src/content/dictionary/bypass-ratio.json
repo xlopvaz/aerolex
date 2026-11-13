@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Bypass ratio",
+    "es": "Índice de derivación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "In a turbofan, the mass of air that flows through the fan and around the core divided by the mass of air that flows through the core.",
+    "es": "En un turbofán, la masa de aire que pasa por el fan y rodea el núcleo dividida entre la masa de aire que pasa por el núcleo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much air goes around the engine core compared with through it.",
+    "es": "Cuánto aire rodea el núcleo del motor comparado con el que pasa por él."
+  },
+  "example": {
+    "en": "Modern airliner engines have bypass ratios above 10:1.",
+    "es": "Los motores de los aviones de línea actuales tienen índices de derivación de más de 10:1."
+  },
+  "pronunciation": {
+    "en": "BY-pass RAY-shee-oh",
+    "es": "ín-di-ce de de-ri-va-ción"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "relación de derivación"
+    ]
+  },
+  "related": [
+    "turbofan",
+    "thrust"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-powerplant"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

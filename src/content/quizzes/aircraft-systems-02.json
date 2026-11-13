@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En una avioneta, el amperímetro a tope en negativo indica…",
+        "en": "In a light aircraft, a full-scale minus ammeter reading indicates…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un fallo del alternador o generador",
+            "en": "An alternator or generator failure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un fallo del regulador",
+            "en": "A regulator failure"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que la batería está cargando",
+            "en": "That the battery is charging"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un funcionamiento normal",
+            "en": "Normal operation"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A tope en positivo sería un fallo del regulador.",
+        "en": "Full-scale plus would be a regulator failure."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Por qué los aviones de transporte usan alterna a 400 Hz?",
+        "en": "Why do transport aircraft use 400 Hz AC?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque es la frecuencia de la red eléctrica doméstica",
+            "en": "Because it is the domestic mains frequency"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque no necesita generadores",
+            "en": "Because it needs no generators"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque las baterías la producen",
+            "en": "Because batteries produce it"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque transformadores y motores son más pequeños y ligeros",
+            "en": "Because transformers and motors are smaller and lighter"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La red doméstica es de 50 o 60 Hz.",
+        "en": "Domestic mains is 50 or 60 Hz."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un IDG combina…",
+        "en": "An IDG combines…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un generador y una batería",
+            "en": "A generator and a battery"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una TRU y un inversor",
+            "en": "A TRU and an inverter"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un accionamiento de velocidad constante y un generador",
+            "en": "A constant-speed drive and a generator"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La APU y la RAT",
+            "en": "The APU and the RAT"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El CSD mantiene los 400 Hz aunque varíe el régimen del motor.",
+        "en": "The CSD holds 400 Hz whatever the engine speed."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Una TRU convierte…",
+        "en": "A TRU converts…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Continua de 28 V en alterna de 115 V",
+            "en": "28 V DC into 115 V AC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alterna de 115 V en continua de 28 V",
+            "en": "115 V AC into 28 V DC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "400 Hz en 50 Hz",
+            "en": "400 Hz into 50 Hz"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Presión hidráulica en electricidad",
+            "en": "Hydraulic pressure into electricity"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Lo contrario lo hace el inversor estático.",
+        "en": "The static inverter does the opposite."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Si se pierde un generador en vuelo, el sistema eléctrico suele…",
+        "en": "If a generator is lost in flight, the electrical system usually…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Desconectar cargas no esenciales, como las de la galley",
+            "en": "Shed non-essential loads, such as the galley"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Desconectar los instrumentos de vuelo",
+            "en": "Disconnect the flight instruments"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Desplegar siempre la RAT",
+            "en": "Always deploy the RAT"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Parar el otro motor",
+            "en": "Shut down the other engine"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Así no se sobrecargan las fuentes que quedan.",
+        "en": "That way the remaining sources are not overloaded."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué permite que un generador alimente las barras del otro?",
+        "en": "What allows one generator to supply the other's buses?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El inversor estático",
+            "en": "The static inverter"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El regulador de tensión",
+            "en": "The voltage regulator"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El amperímetro",
+            "en": "The ammeter"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los contactores de interconexión (bus tie)",
+            "en": "The bus tie contactors"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Un sistema de control decide automáticamente qué fuente alimenta cada barra.",
+        "en": "A control system decides automatically which source feeds each bus."
+      }
+    }
+  ]
+}

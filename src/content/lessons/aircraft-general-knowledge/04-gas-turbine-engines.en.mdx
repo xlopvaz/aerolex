@@ -1,0 +1,73 @@
+---
+lesson: gas-turbine-engines
+course: aircraft-general-knowledge
+lang: en
+title: "Gas turbine engines"
+summary: "How a gas turbine works, engine types, bypass ratio, the N1, N2, EGT and EPR parameters, and typical malfunctions: compressor stall, flameout and abnormal starts."
+objectives:
+  - "Describe the sections of a gas turbine and two-spool engines"
+  - "Compare turbojet, turbofan, turboprop and turboshaft"
+  - "Interpret N1, N2, EGT, EPR and torque"
+  - "Recognise compressor stall, flameout and hot and hung starts"
+minutes: 14
+terms: [turbofan, bypass-ratio, egt, compressor-stall]
+quiz: aircraft-general-knowledge-04
+sources: [faa-phak, faa-amt-powerplant, faa-afh]
+review:
+  status: draft
+---
+
+## Suck, squeeze, bang, blow
+
+A gas turbine does the same job as a piston engine, but **continuously** and in separate sections instead of in a single cylinder:
+
+1. **Intake**: brings air to the compressor with as little loss as possible.
+2. **Compressor**: raises the air pressure a great deal. It may be **centrifugal**, **axial** or a combination of both.
+3. **Combustion chamber**: fuel is injected and burned continuously at almost constant pressure.
+4. **Turbine**: the hot gases spin it. Through a shaft, the turbine drives the compressor (and the fan or propeller, if there is one).
+5. **Exhaust**: the gases leave through the nozzle and produce thrust.
+
+Thrust is an application of Newton's third law: the engine accelerates a large mass of air backwards and receives an equal and opposite force forwards.
+
+Airliner engines have **two or three concentric spools** turning at different speeds. In a two-spool engine, the **low-pressure spool** connects the fan and low-pressure compressor to the low-pressure turbine, and the **high-pressure spool** connects the high-pressure compressor to the high-pressure turbine.
+
+## Engine types
+
+| Type | How it produces thrust or power | Typical use |
+|---|---|---|
+| **Turbojet** | All the air goes through the core and leaves at high speed | Older and military aircraft |
+| **<Term id="turbofan">Turbofan</Term>** | A large fan accelerates air that goes around the core | Almost all transport jets |
+| **Turboprop** | The turbine drives a propeller through a gearbox | Regional aircraft such as the ATR 72 |
+| **Turboshaft** | The turbine delivers shaft power, not thrust | Helicopters and APUs |
+
+The <Term id="bypass-ratio">bypass ratio</Term> is the mass of air going through the fan around the core divided by the mass going through the core. A high ratio means accelerating **a lot of air a little** rather than **a little air a lot**, which is more efficient and quieter. In high-bypass turbofans, most of the thrust comes from the fan.
+
+## Engine parameters
+
+- **N1**: low-pressure spool (fan) speed, as a **percentage** of design rpm. On many engines it is the parameter used to set thrust.
+- **N2**: high-pressure spool speed, also as a percentage.
+- <Term id="egt" />: the temperature of the gases in the turbine. It is a **limiting parameter**. Depending on where it is measured it has other names: TIT, TOT, ITT or TGT.
+- **EPR** (*engine pressure ratio*): turbine discharge pressure divided by compressor inlet pressure. Some manufacturers set thrust with EPR instead of N1.
+- **Torque**: measures shaft power on turboprops and turboshafts.
+
+## When things go wrong
+
+### Compressor stall
+
+Compressor blades are small aerofoils. If their angle of attack exceeds the critical angle, the flow separates just as it does on a wing: this is a <Term id="compressor-stall">compressor stall</Term>. A transient stall gives a single **bang**. A steady stall gives strong **vibration** and a **roar**, with fluctuating rpm and **rising EGT**. Recovery is to reduce power quickly, decrease the aircraft's angle of attack and increase airspeed.
+
+### Flameout
+
+The flame goes out in the combustion chamber:
+
+- **rich flameout**: too much fuel, often from a very fast acceleration;
+- **lean flameout**: at high altitude with low fuel pressure and low engine speed, or in a descent with the engine throttled back.
+
+### Abnormal starts
+
+- **Hot start**: EGT exceeds the limit, from too much fuel or too little turbine rpm. The manual states which inspection is required.
+- **Hung start**: the engine lights but **does not accelerate to idle**, from insufficient starter power or a fuel control fault.
+
+<Callout type="info" label="Why EGT matters">
+The temperature the turbine blades can take is a jet engine's great limit. That is why EGT is watched closely during start and take-off, and why engines lose EGT margin as they age.
+</Callout>

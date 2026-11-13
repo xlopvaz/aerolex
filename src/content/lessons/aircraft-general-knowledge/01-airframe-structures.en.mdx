@@ -1,0 +1,67 @@
+---
+lesson: airframe-structures
+course: aircraft-general-knowledge
+lang: en
+title: "Airframe structure"
+summary: "What stresses the airframe carries, how a semi-monocoque fuselage and a wing are built, which loads certification requires and how designers deal with fatigue."
+objectives:
+  - "Identify the five basic stresses on the structure"
+  - "Tell truss, monocoque and semi-monocoque structures apart"
+  - "Explain limit load, ultimate load and factor of safety"
+  - "Compare the safe-life, fail-safe and damage-tolerance philosophies"
+minutes: 12
+terms: [load-factor]
+quiz: aircraft-general-knowledge-01
+sources: [faa-phak, faa-amt-airframe, cfr-14-part-25]
+review:
+  status: draft
+---
+
+## The five stresses
+
+Every part of an aircraft works under a combination of five basic stresses:
+
+| Stress | What it does | Example |
+|---|---|---|
+| **Tension** | Pulls the part apart | The lower wing skin in flight |
+| **Compression** | Squeezes it | The upper wing skin in flight |
+| **Torsion** | Twists it | The wing when an aileron moves |
+| **Shear** | Makes one layer slide over another | Rivets joining two sheets |
+| **Bending** | Combines tension and compression | The wing flexing upwards in flight |
+
+In flight the wing bends upwards: its lower side works in **tension** and its upper side in **compression**. On the ground, with fuel and engines hanging from it, the opposite happens.
+
+## Truss, monocoque and semi-monocoque
+
+- **Truss**: a frame of welded tubes carries the loads and the covering (fabric or sheet) only gives shape. It is typical of older light aircraft and microlights.
+- **Monocoque**: the skin carries everything, like a can. It is light but does not tolerate dents or cut-outs for doors and windows well.
+- **Semi-monocoque**: the skin shares the loads with a skeleton of **frames** and **bulkheads** (the transverse rings) and **stringers** and **longerons** (the longitudinal members). It is the solution used by almost every modern aircraft.
+
+An airliner wing is built around one or more **spars** (the main beams running from root to tip), joined by **ribs** that give it the aerofoil shape. Spars, ribs and skin form a **torsion box**, whose inside usually doubles as a fuel tank (a *wet wing*). That fuel has a structural benefit: its weight in the wing counters part of the bending caused by lift.
+
+## Materials
+
+**Aluminium alloys** are still the most common material. Titanium appears where temperatures or concentrated loads are high, such as engine mounts and landing gear fittings. **Composites** (carbon or glass fibres in a resin) are lighter for the same strength and do not corrode. On aircraft such as the Boeing 787 or the Airbus A350 they make up much of the fuselage and wings. On the other hand, their damage may not be visible from outside and they need specific inspection techniques.
+
+## Limit load, ultimate load and load factor
+
+Certification distinguishes two levels of load:
+
+- **Limit load**: the highest load expected in service. The structure must carry it **without detrimental permanent deformation**.
+- **Ultimate load**: limit load multiplied by a **factor of safety of 1.5**. The structure must carry it **for at least 3 seconds without failing**, even if it ends up deformed.
+
+For a transport aircraft, the US certification standard (14 CFR Part 25) requires the structure to withstand a manoeuvring limit <Term id="load-factor">load factor</Term> of **at least +2.5 g** and **−1 g** up to the design cruising speed. With flaps extended the limit drops to **+2 g**. Exceeding those values does not break the aircraft on the spot, but it can damage the structure and calls for an inspection.
+
+## Fatigue and how it is managed
+
+A load far below the breaking load, repeated thousands of times, can start a crack that grows slowly: this is **fatigue**. In a pressurised aircraft every flight is a full cycle of inflating and deflating the fuselage. That is why short-haul aircraft, flying many sectors a day, build up cycles faster than long-haul ones.
+
+There are three design philosophies:
+
+- **Safe-life**: the part is retired before a set life in cycles or hours. It is used for parts with no alternative load path, such as some landing gear components.
+- **Fail-safe**: the structure has **redundant load paths**, so that if one member fails the others carry the load until the damage is found.
+- **Damage tolerance**: cracks are assumed to appear, and it is shown that they grow so slowly that scheduled inspections will find them long before they become dangerous. It is the basis of the structural inspection programme of transport aircraft.
+
+<Callout type="info" label="From design to maintenance">
+The structural inspections in an aircraft's maintenance programme are a direct result of the damage-tolerance analysis: they say where to look, with which technique and how many cycles apart.
+</Callout>

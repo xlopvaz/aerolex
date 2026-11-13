@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según el principio de Pascal, un actuador con el doble de superficie a la misma presión ejerce…",
+        "en": "Under Pascal's principle, an actuator with twice the area at the same pressure exerts…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La mitad de fuerza",
+            "en": "Half the force"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El doble de fuerza",
+            "en": "Twice the force"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La misma fuerza",
+            "en": "The same force"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cuatro veces la fuerza",
+            "en": "Four times the force"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Fuerza = presión × superficie.",
+        "en": "Force = pressure × area."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué componente protege el sistema hidráulico de una presión excesiva?",
+        "en": "Which component protects the hydraulic system from excessive pressure?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La válvula de alivio",
+            "en": "The relief valve"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La válvula selectora",
+            "en": "The selector valve"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El filtro",
+            "en": "The filter"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El actuador",
+            "en": "The actuator"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La selectora solo dirige el líquido a un lado u otro del actuador.",
+        "en": "The selector valve only directs fluid to one side of the actuator or the other."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Una PTU…",
+        "en": "A PTU…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Bombea líquido de un depósito a otro",
+            "en": "Pumps fluid from one reservoir to another"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Genera electricidad en emergencia",
+            "en": "Generates electricity in an emergency"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Presuriza la cabina",
+            "en": "Pressurises the cabin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Transfiere potencia de un sistema a otro sin mezclar el líquido",
+            "en": "Transfers power from one system to another without mixing fluid"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Un motor hidráulico de un sistema mueve una bomba del otro.",
+        "en": "A hydraulic motor in one system drives a pump in the other."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "La presión de trabajo habitual de los sistemas hidráulicos de los aviones de transporte es de unos…",
+        "en": "The usual working pressure of transport aircraft hydraulic systems is about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "300 psi",
+            "en": "300 psi"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 psi",
+            "en": "30 psi"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "3.000 psi",
+            "en": "3,000 psi"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "30.000 psi",
+            "en": "30,000 psi"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Algunos aviones recientes trabajan a 5.000 psi.",
+        "en": "Some recent aircraft work at 5,000 psi."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Los sistemas hidráulicos del Boeing 737 NG se llaman…",
+        "en": "The Boeing 737 NG hydraulic systems are called…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Izquierdo, central y derecho",
+            "en": "Left, centre and right"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A, B y reserva (standby)",
+            "en": "A, B and standby"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1, 2, 3 y 4",
+            "en": "1, 2, 3 and 4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Principal y auxiliar",
+            "en": "Main and auxiliary"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Izquierdo, central y derecho son los del 777.",
+        "en": "Left, centre and right are the 777's."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Los líquidos hidráulicos de éster fosfato de los aviones de transporte…",
+        "en": "The phosphate ester hydraulic fluids of transport aircraft…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Son resistentes al fuego pero irritan la piel y los ojos",
+            "en": "Are fire-resistant but irritate skin and eyes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se pueden mezclar con líquido mineral",
+            "en": "Can be mixed with mineral fluid"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Son de color rojo y base mineral",
+            "en": "Are red and mineral-based"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No necesitan filtros",
+            "en": "Need no filters"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Nunca se mezclan líquidos distintos.",
+        "en": "Different fluids are never mixed."
+      }
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuánto tiempo, como norma, limita la definición de la FAA el uso del empuje de despegue?",
+        "en": "For how long does the FAA definition normally limit the use of take-off thrust?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No más de 30 segundos",
+            "en": "Not more than 30 seconds"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No más de 5 minutos",
+            "en": "Not more than 5 minutes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No más de 30 minutos",
+            "en": "Not more than 30 minutes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Sin límite de tiempo",
+            "en": "No time limit"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Sin límite de tiempo es el empuje máximo continuo.",
+        "en": "No time limit applies to maximum continuous thrust."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En un despegue con temperatura supuesta (FLEX)…",
+        "en": "On an assumed-temperature (FLEX) take-off…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El piloto puede aplicar todo el empuje en cualquier momento",
+            "en": "The pilot can apply full thrust at any time"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se usa una potencia nominal certificada inferior",
+            "en": "A lower certificated rating is used"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Las velocidades de control se calculan con el empuje reducido",
+            "en": "Control speeds are calculated with the reduced thrust"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Está prohibido aplicar el empuje máximo",
+            "en": "Applying maximum thrust is prohibited"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las otras opciones describen el derrateo.",
+        "en": "The other options describe a derate."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué ventaja tiene el derrateo frente a la temperatura supuesta?",
+        "en": "What advantage does a derate have over an assumed temperature?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Permite avanzar libremente las palancas tras un fallo de motor",
+            "en": "It lets you push the levers freely after an engine failure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No necesita cálculos de actuaciones",
+            "en": "It needs no performance calculation"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Da más empuje que el máximo",
+            "en": "It gives more than maximum thrust"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Permite despegar más pesado de pistas cortas o contaminadas",
+            "en": "It allows heavier take-offs from short or contaminated runways"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Sus velocidades de control más bajas, calculadas con menos empuje, mejoran las actuaciones en esas pistas.",
+        "en": "Its lower control speeds, calculated with less thrust, improve performance on those runways."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "El empuje disponible en el despegue disminuye con…",
+        "en": "Available take-off thrust decreases with…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Temperatura baja",
+            "en": "Low temperature"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Presión alta",
+            "en": "High pressure"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Temperatura alta y gran altitud del aeropuerto",
+            "en": "High temperature and high airport elevation"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Viento de cara",
+            "en": "A headwind"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Ambas reducen la densidad del aire y la masa que acelera el motor.",
+        "en": "Both reduce air density and the mass the engine accelerates."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Por qué se reduce la reversa a ralentí al bajar la velocidad en la carrera de aterrizaje?",
+        "en": "Why is reverse thrust brought back to idle as the aircraft slows on the landing roll?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque a baja velocidad es más eficaz",
+            "en": "Because it is more effective at low speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para evitar reingerir gases calientes y objetos del suelo",
+            "en": "To avoid re-ingesting hot exhaust and debris"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para cargar las baterías",
+            "en": "To charge the batteries"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque el antideslizante lo exige",
+            "en": "Because anti-skid requires it"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los inversores son más eficaces a alta velocidad.",
+        "en": "Reversers are most effective at high speed."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Por qué un reactor limpio tiene dificultades para bajar y frenar a la vez?",
+        "en": "Why does a clean jet struggle to descend and slow down at the same time?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque no tiene la resistencia de una hélice al reducir gases",
+            "en": "Because it has no propeller drag when the throttles are closed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque sus motores no tienen ralentí",
+            "en": "Because its engines have no idle"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque vuela siempre a Mach 1",
+            "en": "Because it always flies at Mach 1"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque no tiene flaps",
+            "en": "Because it has no flaps"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "De ahí los spoilers y aerofrenos.",
+        "en": "Hence spoilers and speed brakes."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "El punto de congelación máximo del Jet A-1 es…",
+        "en": "The maximum freezing point of Jet A-1 is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "−40 °C",
+            "en": "−40 °C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "0 °C",
+            "en": "0 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "−20 °C",
+            "en": "−20 °C"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "−47 °C",
+            "en": "−47 °C"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El Jet A, usado sobre todo en EE. UU., tiene −40 °C.",
+        "en": "Jet A, used mainly in the USA, has −40 °C."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En un motor de dos ejes, N1 es la velocidad de…",
+        "en": "In a two-spool engine, N1 is the speed of…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El eje de alta presión",
+            "en": "The high-pressure spool"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La hélice",
+            "en": "The propeller"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El eje de baja presión, con el fan",
+            "en": "The low-pressure spool, with the fan"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La APU",
+            "en": "The APU"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "N2 es el eje de alta presión.",
+        "en": "N2 is the high-pressure spool."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "¿Qué filosofía de diseño estructural asume que habrá grietas y fija inspecciones para encontrarlas a tiempo?",
+        "en": "Which structural design philosophy assumes cracks will appear and sets inspections to find them in time?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vida segura",
+            "en": "Safe-life"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tolerancia al daño",
+            "en": "Damage tolerance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Monocasco",
+            "en": "Monocoque"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Celosía",
+            "en": "Truss"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es la base de las inspecciones estructurales de los aviones de transporte.",
+        "en": "It is the basis of structural inspections on transport aircraft."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "¿Qué función del sistema antideslizante libera por completo el freno de una rueda bloqueada?",
+        "en": "Which anti-skid function fully releases the brake of a locked wheel?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La protección de rueda bloqueada",
+            "en": "Locked-wheel protection"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La protección en la toma de contacto",
+            "en": "Touchdown protection"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El modo RTO",
+            "en": "RTO mode"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El interruptor de compresión",
+            "en": "The squat switch"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El control normal libera presión parcialmente cuando la rueda empieza a patinar.",
+        "en": "Normal skid control releases pressure partly when the wheel starts to skid."
+      }
+    }
+  ]
+}

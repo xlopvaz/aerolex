@@ -1,0 +1,60 @@
+---
+lesson: operating-jet-engines
+course: aircraft-general-knowledge
+lang: es
+title: "Operar con motores a reacción"
+summary: "Qué cambia al volar un reactor: las potencias nominales, el empuje reducido y el derrateo, la respuesta lenta del motor, la ausencia de hélice, los dispositivos de resistencia y los inversores de empuje."
+objectives:
+  - "Explicar las potencias de despegue y máxima continua"
+  - "Distinguir el despegue con empuje reducido (temperatura supuesta) del despegue con derrateo"
+  - "Describir cómo afectan la temperatura y la altitud al empuje"
+  - "Explicar el uso de los inversores, el encendido continuo y los calentadores de combustible"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 13
+terms: [thrust-reverser]
+quiz: aircraft-general-knowledge-final
+sources: [faa-afh, cfr-14-1-1, faa-ac-25-13, cgsb-3-23-jet-fuel]
+review:
+  status: draft
+---
+
+## Potencias nominales
+
+Un motor de reacción certificado tiene varias potencias nominales. Las dos fundamentales son:
+
+- **Empuje de despegue**: el máximo aprobado, limitado en tiempo. La definición de la FAA lo restringe a periodos de **no más de 5 minutos** en la operación de despegue.
+- **Empuje máximo continuo**: el que se puede usar sin límite de tiempo. Es el que se emplea, por ejemplo, para mantener la altitud tras perder un motor.
+
+## El aire caliente y la altitud roban empuje
+
+El empuje depende de la **masa de aire** que el motor puede acelerar. Con **temperatura alta** o **gran altitud** el aire es menos denso y el empuje disponible baja. Por eso los despegues de verano en aeropuertos altos son los más exigentes y pueden limitar el peso al despegue.
+
+## Empuje reducido y derrateo
+
+Cuando la pista y el peso lo permiten, casi nunca se despega con todo el empuje: usar menos alarga la vida del motor y mejora su fiabilidad. La circular AC 25-13 de la FAA distingue dos métodos:
+
+- **Empuje reducido (temperatura supuesta)**: se indica al motor una temperatura exterior **más alta que la real**. El motor da el empuje que daría con ese calor, menor que el máximo. Las velocidades de control mínimo se siguen calculando con el empuje máximo, así que **el piloto puede aplicar todo el empuje en cualquier momento**. Airbus lo llama **FLEX**.
+- **Derrateo**: se usa una potencia nominal **inferior**, certificada como tal, con sus propias velocidades y limitaciones, calculadas con ese empuje menor. Como las velocidades de control dependen de él, no se puede aplicar el empuje máximo sin más si falla un motor a baja velocidad. Su ventaja es que permite despegar más pesado de pistas cortas, mojadas o contaminadas.
+
+<Callout type="caution" label="No son lo mismo">
+Con temperatura supuesta hay siempre margen para avanzar las palancas hasta el máximo. Con derrateo, avanzarlas a baja velocidad tras un fallo de motor puede dejar el avión por debajo de su velocidad mínima de control.
+</Callout>
+
+## Lo que se nota al pasar de hélice a reactor
+
+El Manual de vuelo de aviones de la FAA (*Airplane Flying Handbook*) resume las diferencias que más sorprenden:
+
+- **Respuesta lenta desde el ralentí**: un reactor tarda varios segundos en acelerar desde bajas rpm. Por eso, en la aproximación, se mantiene el motor con algo de empuje y no se le deja caer al ralentí demasiado pronto.
+- **Sin chorro de la hélice**: el ala no recibe el aire acelerado de la hélice, así que a baja velocidad no hay ese «extra» de sustentación al dar potencia.
+- **Sin resistencia de la hélice**: al reducir gases, una hélice frena el avión; un reactor no. Un avión limpio desacelera despacio y le cuesta bajar y frenar a la vez. De ahí los **spoilers** o aerofrenos.
+- **Márgenes de velocidad estrechos en altura**: a gran altitud se juntan la velocidad mínima y el bataneo por Mach (lo viste en el módulo 2).
+
+## Inversores de empuje
+
+Los <Term id="thrust-reverser">inversores de empuje</Term> desvían hacia delante parte del flujo tras la toma de contacto. Son **más eficaces a alta velocidad**, así que se usan nada más tocar tierra y se reducen a ralentí de reversa al bajar la velocidad. A baja velocidad pueden hacer que el motor vuelva a tragarse sus propios gases calientes o los objetos que levanta del suelo, con riesgo de pérdida del compresor o de daños por objetos extraños.
+
+## Encendido continuo y calentadores de combustible
+
+- El **encendido continuo** mantiene las bujías funcionando para reencender el motor al instante si la llama se apaga. Se usa en el despegue y el aterrizaje y con lluvia intensa, hielo o turbulencia, según el manual.
+- Los **calentadores de combustible** evitan que el agua disuelta en el combustible forme cristales de hielo que obstruyan los filtros.
+- El combustible también tiene un límite propio: el **Jet A-1** tiene un punto de congelación máximo de **−47 °C** y el **Jet A**, de **−40 °C**. En vuelos largos por zonas muy frías se vigila la temperatura del combustible.
