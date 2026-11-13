@@ -62,6 +62,13 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Hito «entrada en servicio» y filas vacías ocultas en las tablas de comparación.
 - [ ] Resto de familias del brief (A220, A330, A340, A380, 747, 757, 767, 777, E-Jets, ATR 42/72) y fotografías con licencia libre.
 
+**Bloque 5 — Introducción a la aviación ✅ (13/11/2026)**
+- [x] Curso *Fundamentos de la aviación* (nivel Beginner), primero del itinerario «Introducción a la aviación»: 7 lecciones ES/EN (qué es una aeronave, las cuatro fuerzas, ejes y mandos, fases del vuelo, el aeropuerto, quién dicta las normas, códigos y lenguaje), 32 preguntas y evaluación final.
+- [x] Fuentes nuevas: Anexo 7, Docs 7910, 8585 y 8643 de la OACI, taxonomía de fases de vuelo CICTT, historia de la OACI, EASA, FAA, RD 184/2008 (AESA) y buscador de códigos de IATA.
+- [x] Diccionario: 10 entradas nuevas (aeronave, empenaje, perfil aerodinámico, compensación, alfabeto fonético, OACI, IATA, EASA, FAA y AESA): 87 entradas.
+- [x] `<MetarBreakdown kind="summary">` para resúmenes de contenido real, sin la etiqueta de «ejemplo didáctico».
+- [ ] Más cursos del itinerario (historia de la aviación, carreras profesionales, el pasajero y el avión).
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

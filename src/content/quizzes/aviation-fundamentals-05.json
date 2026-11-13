@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué forma el área de maniobras?",
+        "en": "What makes up the manoeuvring area?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Pistas y calles de rodaje",
+            "en": "Runways and taxiways"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Pistas, calles de rodaje y plataformas",
+            "en": "Runways, taxiways and aprons"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo las plataformas",
+            "en": "Only the aprons"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La terminal y la torre",
+            "en": "The terminal and the tower"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El área de maniobras son las pistas y las calles de rodaje; si se le suman las plataformas, se obtiene el área de movimiento.",
+        "en": "The manoeuvring area is the runways and taxiways; add the aprons and you get the movement area."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Una pista está orientada a 273° magnéticos. ¿Cómo se numera?",
+        "en": "A runway is aligned on 273° magnetic. What is its number?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Pista 27",
+            "en": "Runway 27"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Pista 28",
+            "en": "Runway 28"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Pista 09",
+            "en": "Runway 09"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Pista 273",
+            "en": "Runway 273"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "273 entre 10 es 27,3, que se redondea a 27. Desde el otro extremo sería la 09.",
+        "en": "273 divided by 10 is 27.3, rounded to 27. From the other end it would be runway 09."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Desde el extremo opuesto, la pista 14L se llama…",
+        "en": "Seen from the opposite end, runway 14L is called…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "32L",
+            "en": "32L"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "32R",
+            "en": "32R"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "14R",
+            "en": "14R"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "04L",
+            "en": "04L"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El número cambia en 18 (14 + 18 = 32) y la izquierda pasa a ser la derecha al mirar desde el otro lado.",
+        "en": "The number changes by 18 (14 + 18 = 32) and left becomes right when seen from the other side."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Un letrero con letras blancas sobre fondo rojo indica…",
+        "en": "A sign with white letters on a red background indicates…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La calle de rodaje en la que estás",
+            "en": "The taxiway you are on"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una instrucción obligatoria, como la entrada a una pista",
+            "en": "A mandatory instruction, such as a runway entrance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La dirección hacia la terminal",
+            "en": "The direction to the terminal"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una zona de aparcamiento de vehículos",
+            "en": "A vehicle parking area"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los letreros de instrucción obligatoria son blancos sobre rojo y no se rebasan sin autorización.",
+        "en": "Mandatory instruction signs are white on red and must not be passed without a clearance."
+      }
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "flights": [
     { "flight": "AX 201", "phase": 2, "status": "live",      "destination": { "en": "Bilingual site · light & dark mode", "es": "Web bilingüe · modo claro y oscuro" } },
     { "flight": "AX 202", "phase": 2, "status": "live",      "destination": { "en": "Dashboard & progress backup",        "es": "Panel y copia de seguridad del progreso" } },
     { "flight": "AX 301", "phase": 3, "status": "live",      "destination": { "en": "Aviation dictionary EN/ES",          "es": "Diccionario aeronáutico EN/ES" } },
-    { "flight": "AX 302", "phase": 3, "status": "boarding",  "destination": { "en": "Introduction to Aviation",           "es": "Introducción a la aviación" } },
+    { "flight": "AX 302", "phase": 3, "status": "live",      "destination": { "en": "Introduction to Aviation",           "es": "Introducción a la aviación" } },
     { "flight": "AX 303", "phase": 3, "status": "boarding",  "destination": { "en": "Pilot Academy",                      "es": "Academia de pilotos" } },
     { "flight": "AX 304", "phase": 3, "status": "boarding",  "destination": { "en": "Cabin Crew Academy",                 "es": "Academia de TCP" } },
     { "flight": "AX 305", "phase": 3, "status": "live",      "destination": { "en": "METAR & SPECI Academy",              "es": "Academia METAR y SPECI" } },

@@ -1,0 +1,59 @@
+{
+  "type": "term",
+  "term": {
+    "en": "phonetic alphabet",
+    "es": "alfabeto fonético"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The radiotelephony spelling alphabet in which each letter is replaced by a standard code word (Alfa, Bravo, Charlie… Zulu) so that letters and codes are understood without confusion over the radio.",
+    "es": "Alfabeto de deletreo para radiotelefonía en el que cada letra se sustituye por una palabra clave normalizada (Alfa, Bravo, Charlie… Zulu) para que letras y códigos se entiendan sin confusión por radio."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The words pilots and controllers use instead of letters: \"E\" is Echo, \"M\" is Mike.",
+    "es": "Las palabras que usan pilotos y controladores en lugar de letras: la «E» es Echo y la «M», Mike."
+  },
+  "example": {
+    "en": "\"Information Bravo is current.\" A registration such as EC-ABC is read \"Echo Charlie Alfa Bravo Charlie\".",
+    "es": "«Información Bravo en vigor.» Una matrícula como EC-ABC se lee «Echo Charlie Alfa Bravo Charlie»."
+  },
+  "pronunciation": {
+    "en": "/fəˈnɛtɪk ˈælfəbɛt/",
+    "es": "alfabeto fonético"
+  },
+  "synonyms": {
+    "en": [
+      "ICAO spelling alphabet",
+      "radiotelephony spelling alphabet"
+    ],
+    "es": [
+      "alfabeto de deletreo",
+      "alfabeto ICAO"
+    ]
+  },
+  "related": [
+    "atis",
+    "readback",
+    "utc"
+  ],
+  "regionalNote": {
+    "en": "The words are the same in Spanish; \"Alfa\" and \"Juliett\" are deliberately spelt that way so speakers of other languages pronounce them correctly.",
+    "es": "Las palabras son las mismas en español; «Alfa» y «Juliett» se escriben así a propósito para que hablantes de otras lenguas las pronuncien bien."
+  },
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

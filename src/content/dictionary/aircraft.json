@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "aircraft",
+    "es": "aeronave"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Any machine that can obtain support in the atmosphere from reactions of the air, other than reactions of the air against the Earth's surface.",
+    "es": "Toda máquina que puede sustentarse en la atmósfera por reacciones del aire que no sean las reacciones del mismo contra la superficie de la Tierra."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Anything that flies thanks to the air: aeroplanes, helicopters, gliders, balloons… A hovercraft does not count, because it rides on air pushed against the ground.",
+    "es": "Todo lo que vuela gracias al aire: aviones, helicópteros, planeadores, globos… Un aerodeslizador no cuenta, porque se apoya en el aire que empuja contra el suelo."
+  },
+  "example": {
+    "en": "\"Both the airship and the helicopter are aircraft, but only one of them is an aeroplane.\"",
+    "es": "«Tanto el dirigible como el helicóptero son aeronaves, pero solo uno de ellos es un avión.»"
+  },
+  "pronunciation": {
+    "en": "/ˈeəkrɑːft/",
+    "es": "érkraft"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "fuselage",
+    "wing",
+    "icao"
+  ],
+  "regionalNote": {
+    "en": "In everyday Spanish \"avión\" is often used for any aircraft; technically, an avión (aeroplane) is only the power-driven, fixed-wing kind.",
+    "es": "En el lenguaje común se dice «avión» para cualquier aeronave; técnicamente, un avión es solo la aeronave de ala fija propulsada por motor."
+  },
+  "sources": [
+    "icao-annex-7",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

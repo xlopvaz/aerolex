@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FAA",
+    "es": "FAA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Federal Aviation Administration",
+    "es": "Administración Federal de Aviación (EE. UU.)"
+  },
+  "categories": [
+    "aviation-law",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "United States government agency, part of the Department of Transportation, responsible for civil aviation safety and for operating the national air traffic control system. It was created in 1958 as the Federal Aviation Agency and took its current name in 1967.",
+    "es": "Agencia del Gobierno de Estados Unidos, integrada en el Departamento de Transporte, responsable de la seguridad de la aviación civil y de gestionar el sistema nacional de control del tránsito aéreo. Se creó en 1958 como Federal Aviation Agency y adoptó su nombre actual en 1967."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The US aviation authority: it makes the rules, certifies aircraft and also runs air traffic control.",
+    "es": "La autoridad aeronáutica de EE. UU.: dicta las normas, certifica los aviones y además gestiona el control aéreo."
+  },
+  "example": {
+    "en": "\"The FAA publishes free handbooks for student pilots.\"",
+    "es": "«La FAA publica manuales gratuitos para estudiantes de piloto.»"
+  },
+  "pronunciation": {
+    "en": "F-A-A (eff-ay-ay)",
+    "es": "efe-a-a"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "icao",
+    "easa",
+    "atc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-brief-history"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

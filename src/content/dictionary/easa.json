@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EASA",
+    "es": "EASA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "European Union Aviation Safety Agency",
+    "es": "Agencia de la Unión Europea para la Seguridad Aérea"
+  },
+  "categories": [
+    "aviation-law",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "European Union agency responsible for civil aviation safety: it drafts common safety rules, certifies aircraft and other aviation products, and checks that the rules are applied uniformly in its Member States. It was created in 2002 and is based in Cologne.",
+    "es": "Agencia de la Unión Europea responsable de la seguridad de la aviación civil: elabora las normas comunes de seguridad, certifica aeronaves y otros productos aeronáuticos y vigila que las normas se apliquen de forma uniforme en los Estados miembros. Se creó en 2002 y tiene su sede en Colonia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The European \"aviation safety authority\": it writes the common rules that every EU country applies.",
+    "es": "La «autoridad europea de seguridad aérea»: redacta las normas comunes que aplican todos los países de la UE."
+  },
+  "example": {
+    "en": "\"The aircraft type was certified by EASA and by the FAA.\"",
+    "es": "«El tipo de avión fue certificado por EASA y por la FAA.»"
+  },
+  "pronunciation": {
+    "en": "/ˈiːzə/ (EE-za)",
+    "es": "éasa"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "icao",
+    "faa",
+    "aesa"
+  ],
+  "regionalNote": {
+    "en": "Until 2018 it was called the \"European Aviation Safety Agency\"; the acronym did not change.",
+    "es": "Hasta 2018 se llamaba «Agencia Europea de Seguridad Aérea»; la sigla no cambió."
+  },
+  "sources": [
+    "easa-20-years",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

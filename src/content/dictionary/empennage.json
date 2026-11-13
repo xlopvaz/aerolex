@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "empennage",
+    "es": "empenaje"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The tail section of an aeroplane, made up of the fixed vertical and horizontal stabilizers and their movable surfaces (rudder and elevator), together with any trim tabs.",
+    "es": "Conjunto de cola de un avión, formado por los estabilizadores vertical y horizontal fijos y sus superficies móviles (timón de dirección y timón de profundidad), junto con las aletas compensadoras."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The tail of the aeroplane: the fin and the small horizontal \"wings\" at the back that keep it stable and steer it.",
+    "es": "La cola del avión: la deriva y las pequeñas «alas» horizontales traseras que lo estabilizan y lo dirigen."
+  },
+  "example": {
+    "en": "\"During the walk-around, check the empennage for damage and free movement of the control surfaces.\"",
+    "es": "«Durante la inspección exterior, revisa que el empenaje no tenga daños y que las superficies de mando se muevan libremente.»"
+  },
+  "pronunciation": {
+    "en": "/ˈɛmpɪnɪdʒ/",
+    "es": "empenaje"
+  },
+  "synonyms": {
+    "en": [
+      "tail assembly",
+      "tail unit"
+    ],
+    "es": [
+      "cola",
+      "conjunto de cola"
+    ]
+  },
+  "related": [
+    "rudder",
+    "elevator",
+    "fuselage",
+    "trim"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
