@@ -922,5 +922,173 @@
     "author": "Raimond Spekking",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-767-1": {
+    "family": "boeing-767",
+    "order": 1,
+    "file": "photos/hangar/boeing-767-1.jpg",
+    "thumb": "photos/hangar/boeing-767-1-640.jpg",
+    "width": 1280,
+    "height": 468,
+    "alt": {
+      "es": "Boeing 767-300ER de Japan Airlines rodando, visto de lado",
+      "en": "Japan Airlines Boeing 767-300ER taxiing, seen from the side"
+    },
+    "caption": {
+      "es": "Fuselaje ancho pero esbelto y dos motores bajo un ala baja: es un bimotor de fuselaje ancho, aunque más estrecho que el A330 o el 777. Fíjate en el tren principal de cuatro ruedas por pata.",
+      "en": "A wide but slender fuselage and two engines under a low wing: it is a wide-body twinjet, though narrower than the A330 or the 777. Note the four-wheel main gear on each leg."
+    },
+    "commonsTitle": "File:Boeing 767-300ER (Japan Airlines) 01 crop.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Boeing_767-300ER_(Japan_Airlines)_01_crop.jpg",
+    "author": "221.20 (derivative work: Lämpel)",
+    "licence": "Public domain",
+    "licenceUrl": null
+  },
+  "boeing-767-2": {
+    "family": "boeing-767",
+    "order": 2,
+    "file": "photos/hangar/boeing-767-2.jpg",
+    "thumb": "photos/hangar/boeing-767-2-640.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": {
+      "es": "Boeing 767-300ER de Delta despegando",
+      "en": "Delta Boeing 767-300ER taking off"
+    },
+    "caption": {
+      "es": "Al despegar se ve el ala sin winglets, con la punta lisa, y los dos motores grandes. El tren principal tiene dos patas de cuatro ruedas, no de seis como el 777.",
+      "en": "On take-off you can see the wing without winglets, with a plain tip, and the two large engines. The main gear has two four-wheel legs, not six-wheel ones like the 777."
+    },
+    "commonsTitle": "File:Delta Air Lines B767-3P6-ER N1501P EDDS 2011.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Delta_Air_Lines_B767-3P6-ER_N1501P_EDDS_2011.jpg",
+    "author": "Julian Herzog",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "boeing-767-3": {
+    "family": "boeing-767",
+    "order": 3,
+    "file": "photos/hangar/boeing-767-3.jpg",
+    "thumb": "photos/hangar/boeing-767-3-640.jpg",
+    "width": 1280,
+    "height": 577,
+    "alt": {
+      "es": "Boeing 767-300 de United en aproximación, con winglets",
+      "en": "United Boeing 767-300 on approach, with winglets"
+    },
+    "caption": {
+      "es": "Algunos 767, como este, llevan winglets altos que suben curvándose desde la punta del ala; otros, como el de Delta, no. Que haya o no winglets no cambia el tipo de avión.",
+      "en": "Some 767s, like this one, have tall winglets curving up from the wingtip; others, like the Delta one, do not. Winglets or not, it is the same aircraft type."
+    },
+    "commonsTitle": "File:United Boeing 767-300 N642UA IAD VA1.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:United_Boeing_767-300_N642UA_IAD_VA1.jpg",
+    "author": "Acroterion",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-767-4": {
+    "family": "boeing-767",
+    "order": 4,
+    "file": "photos/hangar/boeing-767-4.jpg",
+    "thumb": "photos/hangar/boeing-767-4-640.jpg",
+    "width": 1280,
+    "height": 857,
+    "alt": {
+      "es": "Boeing 767-300ER de American Airlines en aproximación, visto desde abajo",
+      "en": "American Airlines Boeing 767-300ER on approach, seen from below"
+    },
+    "caption": {
+      "es": "Desde abajo: alas con flecha moderada, dos motores y dos bogies de cuatro ruedas. La cabina del 767 es más estrecha que la de otros aviones de fuselaje ancho, y se nota en lo fino que parece el fuselaje.",
+      "en": "From below: moderately swept wings, two engines and two four-wheel bogies. The 767's cabin is narrower than other wide-bodies', which shows in how slim the fuselage looks."
+    },
+    "commonsTitle": "File:American Airlines.Boeing 767-300ER.LHR.2009.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:American_Airlines.Boeing_767-300ER.LHR.2009.jpg",
+    "author": "Andrei Dimofte",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "boeing-777-1": {
+    "family": "boeing-777",
+    "order": 1,
+    "file": "photos/hangar/boeing-777-1.jpg",
+    "thumb": "photos/hangar/boeing-777-1-640.jpg",
+    "width": 1280,
+    "height": 673,
+    "alt": {
+      "es": "Boeing 777-300ER de Qatar Airways en vuelo, de perfil",
+      "en": "Qatar Airways Boeing 777-300ER in flight, in profile"
+    },
+    "caption": {
+      "es": "Fuselaje muy largo y ancho con solo dos motores enormes: es la silueta del 777-300ER. Las puntas del ala son inclinadas hacia atrás (raked), sin winglets.",
+      "en": "A very long, wide fuselage with only two huge engines: that is the 777-300ER silhouette. The wingtips are raked back, with no winglets."
+    },
+    "commonsTitle": "File:Qatar Airways Boeing 777-300ER A7-BEW MD1.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Qatar_Airways_Boeing_777-300ER_A7-BEW_MD1.jpg",
+    "author": "Acroterion",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-777-2": {
+    "family": "boeing-777",
+    "order": 2,
+    "file": "photos/hangar/boeing-777-2.jpg",
+    "thumb": "photos/hangar/boeing-777-2-640.jpg",
+    "width": 1280,
+    "height": 605,
+    "alt": {
+      "es": "Boeing 777-300ER de Qatar Airways en aproximación con el tren fuera",
+      "en": "Qatar Airways Boeing 777-300ER on approach with the gear down"
+    },
+    "caption": {
+      "es": "La clave del 777: cada pata del tren principal tiene seis ruedas (tres ejes). Es raro en un bimotor: el A350-1000 también las lleva, pero su cabina con ventanas oscuras en forma de antifaz lo delata.",
+      "en": "The key to the 777: each main gear leg has six wheels (three axles). That is rare on a twinjet: the A350-1000 has them too, but its dark, mask-shaped cockpit windows give it away."
+    },
+    "commonsTitle": "File:Qatar Boeing 777-300ER A7-BEP IAD VA2.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Qatar_Boeing_777-300ER_A7-BEP_IAD_VA2.jpg",
+    "author": "Acroterion",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-777-3": {
+    "family": "boeing-777",
+    "order": 3,
+    "file": "photos/hangar/boeing-777-3.jpg",
+    "thumb": "photos/hangar/boeing-777-3-640.jpg",
+    "width": 1280,
+    "height": 869,
+    "alt": {
+      "es": "Boeing 777-300ER de Qatar Airways visto desde abajo",
+      "en": "Qatar Airways Boeing 777-300ER seen from below"
+    },
+    "caption": {
+      "es": "Desde abajo destacan las alas largas con puntas inclinadas hacia atrás y la boca enorme de los motores GE90.",
+      "en": "From below you can see the long wings with raked tips and the huge intakes of the GE90 engines."
+    },
+    "commonsTitle": "File:Qatar Airways Boeing 777-300ER A7-BEH MD1.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Qatar_Airways_Boeing_777-300ER_A7-BEH_MD1.jpg",
+    "author": "Acroterion",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-777-4": {
+    "family": "boeing-777",
+    "order": 4,
+    "file": "photos/hangar/boeing-777-4.jpg",
+    "thumb": "photos/hangar/boeing-777-4-640.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": {
+      "es": "Boeing 777-300ER de Emirates en la plataforma, visto desde atrás",
+      "en": "Emirates Boeing 777-300ER on the apron, seen from behind"
+    },
+    "caption": {
+      "es": "Mira la cola: el cono termina en una «hoja» plana y vertical con la salida del APU, típica del 777. Y bajo el ala, de nuevo los bogies de seis ruedas.",
+      "en": "Look at the tail: the tail cone ends in a flat, vertical \"blade\" with the APU exhaust, typical of the 777. And under the wing, again the six-wheel bogies."
+    },
+    "commonsTitle": "File:Boeing 777-300ER, Geneva Airport, Le Grand-Saconnex (BL7C0540).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Boeing_777-300ER,_Geneva_Airport,_Le_Grand-Saconnex_(BL7C0540).jpg",
+    "author": "Matti Blume",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   }
 }

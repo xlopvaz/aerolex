@@ -1,0 +1,138 @@
+{
+  "manufacturer": "Boeing",
+  "family": {
+    "en": "Boeing 767",
+    "es": "Boeing 767"
+  },
+  "category": "commercial",
+  "order": 14,
+  "summary": {
+    "en": "Boeing's first wide-body twinjet, built in three fuselage lengths (767-200, -300 and -400ER), with extended-range versions and the 767-300 Freighter.",
+    "es": "El primer bimotor de fuselaje ancho de Boeing, fabricado con tres longitudes de fuselaje (767-200, -300 y -400ER), con versiones de largo alcance y el carguero 767-300 Freighter."
+  },
+  "history": {
+    "en": "Boeing's airport planning manual (December 2024 revision) covers the 767-200, 767-200ER, 767-300, 767-300ER, 767-300 Freighter and 767-400ER. The 767-300 and -300ER are 21 ft 1 in longer than the 767-200 and otherwise share its dimensions; the 767-400ER is 21 ft longer than the 767-300 and has a new-generation wing and new engines. Boeing's current page lists only the 767 Freighter.",
+    "es": "El manual de planificación aeroportuaria de Boeing (revisión de diciembre de 2024) cubre el 767-200, 767-200ER, 767-300, 767-300ER, 767-300 Freighter y 767-400ER. El 767-300 y el -300ER son 21 ft 1 in (unos 6,4 m) más largos que el 767-200 y, por lo demás, tienen sus mismas dimensiones; el 767-400ER es 21 ft más largo que el 767-300 y lleva un ala de nueva generación y motores nuevos. La página actual de Boeing solo muestra el 767 Freighter."
+  },
+  "facts": [
+    {
+      "en": "According to SKYbrary, the 767-200 entered airline service in 1982, the 767-300 in 1986, the 767-300F freighter in 1995 and the 767-400ER in 2000.",
+      "es": "Según SKYbrary, el 767-200 entró en servicio en 1982, el 767-300 en 1986, el carguero 767-300F en 1995 y el 767-400ER en 2000."
+    },
+    {
+      "en": "The 767-300 Freighter has a main-deck cargo door and no passenger windows or doors, apart from the left entry door for the crew.",
+      "es": "El 767-300 Freighter tiene una puerta de carga en la cubierta principal y no lleva ventanillas ni puertas de pasajeros, salvo la puerta de entrada izquierda para la tripulación."
+    }
+  ],
+  "sources": [
+    "boeing-767-acap",
+    "boeing-767-page",
+    "skybrary-b763",
+    "skybrary-b764"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "767-300ER",
+      "name": "767-300ER",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 54.9,
+      "wingspanM": 47.6,
+      "heightM": 15.9,
+      "seatsTypical": "261",
+      "seatsMax": 299,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 186.88,
+      "engines": [
+        "Pratt & Whitney PW4062",
+        "General Electric CF6-80C2B7F",
+        "Rolls-Royce RB211-524H"
+      ],
+      "note": {
+        "en": "Dimensions and engines from SKYbrary (rounded to 10 cm). Typical two-class seating in Boeing's manual: 24 first + 237 economy. FAA exit limit: 290 seats in one class, 299 with a second overwing exit door. Maximum design take-off weights range from 172.4 t to 186.9 t. The manual gives the range only in charts, so it is not shown.",
+        "es": "Dimensiones y motores según SKYbrary (redondeados a 10 cm). Plazas típicas en dos clases según el manual de Boeing: 24 en primera y 237 en turista. Límite de salidas de la FAA: 290 asientos en clase única, 299 con una segunda puerta de salida sobre el ala. Los pesos máximos de despegue de diseño van de 172,4 t a 186,9 t. El manual da el alcance solo en gráficos, así que no se muestra."
+      },
+      "sources": [
+        "boeing-767-acap",
+        "skybrary-b763"
+      ]
+    },
+    {
+      "id": "767-400ER",
+      "name": "767-400ER",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 61.4,
+      "wingspanM": 51.9,
+      "heightM": 16.8,
+      "seatsTypical": "243–296",
+      "seatsMax": null,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 204.12,
+      "engines": [
+        "Pratt & Whitney PW4062",
+        "General Electric CF6-80C2B8F"
+      ],
+      "note": {
+        "en": "Dimensions and engines from SKYbrary (rounded to 10 cm). Boeing's manual gives 243 seats in three classes, 296 in two classes and 409 in an all-economy layout, but no exit limit. The manual gives the range only in charts, so it is not shown.",
+        "es": "Dimensiones y motores según SKYbrary (redondeados a 10 cm). El manual de Boeing da 243 asientos en tres clases, 296 en dos y 409 en clase única, pero no el límite de salidas. El manual da el alcance solo en gráficos, así que no se muestra."
+      },
+      "sources": [
+        "boeing-767-acap",
+        "skybrary-b764"
+      ]
+    },
+    {
+      "id": "767-300F",
+      "name": "767-300F",
+      "status": null,
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 54.94,
+      "wingspanM": 47.57,
+      "heightM": 15.85,
+      "seatsTypical": null,
+      "seatsMax": null,
+      "rangeNm": 3255,
+      "rangeKm": null,
+      "mtowT": 186.88,
+      "engines": [
+        "General Electric CF6-80C2",
+        "Pratt & Whitney PW4000",
+        "Rolls-Royce RB211-524"
+      ],
+      "note": {
+        "en": "Freighter. Dimensions, range and payload (52,480 kg) from Boeing's 767 Freighter page; maximum design take-off weight (185.1 t or 186.9 t) and engine families from the airport planning manual.",
+        "es": "Carguero. Dimensiones, alcance y carga de pago (52 480 kg) según la página del 767 Freighter de Boeing; peso máximo de despegue de diseño (185,1 t o 186,9 t) y familias de motores según el manual de planificación aeroportuaria."
+      },
+      "sources": [
+        "boeing-767-page",
+        "boeing-767-acap"
+      ]
+    }
+  ]
+}
