@@ -10,7 +10,7 @@ interface Props {
 }
 const { caption, columns, rows } = Astro.props;
 ---
-<div class="fids">
+<div class="fids" tabindex="0" role="region" aria-label={caption}>
   <table>
     <caption class="visually-hidden">{caption}</caption>
     <thead>

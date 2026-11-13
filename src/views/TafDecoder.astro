@@ -69,7 +69,7 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
       <p class="mt-code mono" data-out="highlighted" set:html={out.highlighted} />
 
       <h3>{tr('tafTool.timelineTitle')}</h3>
-      <div class="mt-card tf-scroll" data-out="timeline" set:html={out.timeline} />
+      <div class="mt-card tf-scroll" tabindex="0" role="region" aria-label={tr('tafTool.timelineTitle')} data-out="timeline" set:html={out.timeline} />
 
       <h3>{tr('tafTool.atTitle')}</h3>
       <div class="mt-card">
@@ -81,7 +81,7 @@ const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw
       </div>
 
       <h3>{tr('metarTool.groupsTitle')}</h3>
-      <div class="mt-table-wrap" data-out="table" set:html={out.table} />
+      <div class="mt-table-wrap" tabindex="0" role="region" aria-label={tr('metarTool.groupsTitle')} data-out="table" set:html={out.table} />
 
       <h3>{tr('metarTool.issuesTitle')}</h3>
       <div data-out="issues" set:html={out.issues} />
