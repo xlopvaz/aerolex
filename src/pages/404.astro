@@ -39,7 +39,8 @@ import { href, t, withBase } from '../i18n/index.js';
 <style>
   .nf { min-height: 100vh; display: grid; place-content: center; justify-items: center; gap: var(--space-5); padding: var(--space-6); text-align: center; }
   .nf__code { color: var(--amber); letter-spacing: 0.2em; margin: 0; }
-  .nf__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-7); max-width: 720px; }
+  .nf > * { min-width: 0; max-width: 100%; }
+  .nf__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--space-7); max-width: 720px; }
   .nf__h { font-size: var(--text-3xl); }
   .nf p { color: var(--text-muted); }
   .nf a { font-weight: 600; }

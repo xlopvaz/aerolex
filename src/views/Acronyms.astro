@@ -83,12 +83,12 @@ const rows = entries
   .acr__field input { width: 100%; padding: 0.75rem 1rem 0.75rem 2.6rem; border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: var(--surface); }
   .acr__field input:focus { outline: none; border-color: var(--primary); box-shadow: var(--glow); }
   .acr__count { color: var(--text-muted); font-size: var(--text-sm); margin: var(--space-3) 0; }
-  .acr__table { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .acr__table { position: relative; overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
   table { width: 100%; border-collapse: collapse; }
   th, td { padding: 0.7rem 1rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
   thead th { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); background: var(--surface-2); }
   tbody tr:last-child > * { border-bottom: 0; }
-  tbody th a { font-weight: 600; font-size: var(--text-base); }
+  tbody th a { font-weight: 600; font-size: var(--text-base); display: inline-block; min-height: 24px; line-height: 24px; }
   tbody td { color: var(--text-muted); }
   tbody td:nth-child(2) { color: var(--text); }
   tr[hidden] { display: none; }

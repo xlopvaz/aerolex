@@ -184,7 +184,7 @@ const citing = Object.values(areas).reduce((n, items) => n + items.length, 0);
   .src__lic { font-size: var(--text-xs); color: var(--text-muted); }
   .src__title { display: inline-flex; align-items: center; gap: 0.3rem; font-weight: 600; }
   .src__used { margin-top: var(--space-3); }
-  .src__used summary { cursor: pointer; font-size: var(--text-sm); color: var(--text-muted); }
+  .src__used summary { cursor: pointer; min-height: 24px; padding-block: 0.15rem; font-size: var(--text-sm); color: var(--text-muted); }
   .src__area h3 { font-size: var(--text-sm); margin: var(--space-3) 0 var(--space-2); }
   .src__area h3 .mono { color: var(--text-muted); font-weight: 400; }
   .src__area ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); font-size: var(--text-sm); }

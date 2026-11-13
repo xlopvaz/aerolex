@@ -241,3 +241,18 @@ test.describe('sources', () => {
     await expect(page.locator('[data-bib-empty]')).toBeVisible();
   });
 });
+
+test('@mobile no page scrolls sideways on a 360 px screen', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  const paths = [
+    'es/', 'en/academy/taf/full-decode/', 'es/academia/metar-speci/full-decode/', 'es/hangar/boeing-737/', 'en/hangar/compare/',
+    'es/diccionario/acronimos/', 'es/herramientas/diagramas-de-aeropuerto/?q=AMS', 'en/tools/airports/?q=london', 'es/panel/',
+    'es/panel/repaso/', 'es/fuentes/', 'en/styleguide/', 'en/this-does-not-exist/', 'es/herramientas/cronologia/',
+  ];
+  for (const path of paths) {
+    await page.goto(path);
+    await page.waitForLoadState('networkidle');
+    const { scroll, width } = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, width: document.documentElement.clientWidth }));
+    expect(scroll, path).toBeLessThanOrEqual(width);
+  }
+});
