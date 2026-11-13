@@ -1,0 +1,30 @@
+{
+  "path": "pilot-training",
+  "order": 2,
+  "level": "intermediate",
+  "title": { "en": "Pilot Academy · Module 2: Aerodynamics", "es": "Academia de pilotos · Módulo 2: Aerodinámica" },
+  "description": {
+    "en": "A step beyond the basics: wing geometry, high-lift devices, the boundary layer and stall behaviour, ground effect, high-speed flight and wake turbulence. ATPL-style questions in every lesson.",
+    "es": "Un paso más allá de lo básico: geometría del ala, dispositivos hipersustentadores, capa límite y comportamiento en pérdida, efecto suelo, vuelo a alta velocidad y estela turbulenta. Preguntas tipo ATPL en cada lección."
+  },
+  "objectives": {
+    "en": [
+      "Relate aspect ratio, sweep, taper and washout to wing behaviour",
+      "Compare types of flaps and leading-edge devices and their effect on stall",
+      "Explain the boundary layer, stall progression and ground effect",
+      "Describe Mach number, critical Mach and why airliners have swept wings",
+      "Explain how wake turbulence forms and why aircraft are separated"
+    ],
+    "es": [
+      "Relacionar alargamiento, flecha, estrechamiento y torsión con el comportamiento del ala",
+      "Comparar tipos de flaps y dispositivos de borde de ataque y su efecto en la pérdida",
+      "Explicar la capa límite, la progresión de la pérdida y el efecto suelo",
+      "Describir el número de Mach, el Mach crítico y por qué los reactores tienen alas en flecha",
+      "Explicar cómo se forma la estela turbulenta y por qué se separa a los aviones"
+    ]
+  },
+  "lessons": ["wing-geometry", "high-lift-devices", "boundary-layer-and-stall", "high-speed-flight", "wake-turbulence"],
+  "finalQuiz": null,
+  "sources": ["faa-phak", "faa-afh", "faa-aim", "icao-doc-4444"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null }
+}

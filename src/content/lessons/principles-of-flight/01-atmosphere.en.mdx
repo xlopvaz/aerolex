@@ -1,0 +1,59 @@
+---
+lesson: atmosphere
+course: principles-of-flight
+lang: en
+title: "The standard atmosphere and density altitude"
+summary: "The ISA values, how pressure, temperature and density change with altitude, and why a hot day at a high airfield lengthens the take-off."
+objectives:
+  - "Recall the ISA values at sea level and at the tropopause"
+  - "Explain how pressure, temperature and density vary with altitude"
+  - "Define pressure altitude and density altitude and their effect on performance"
+minutes: 10
+terms: [isa, density-altitude, qnh, flight-level]
+quiz: principles-of-flight-01
+sources: [icao-doc-7488, faa-phak, aopa-density-altitude]
+review:
+  status: draft
+---
+
+## Why a "standard" atmosphere is needed
+
+The real atmosphere changes every day and everywhere. To calibrate instruments and compare aircraft performance, ICAO defines a reference model: the <Term id="isa">International Standard Atmosphere (ISA)</Term>.
+
+| Quantity | ISA value at mean sea level |
+|---|---|
+| Temperature | 15 °C |
+| Pressure | 1013.25 hPa (29.92 inHg) |
+| Density | 1.225 kg/m³ |
+| Temperature lapse rate | −6.5 °C/km (≈ −2 °C per 1,000 ft) up to 11 km |
+| Tropopause | 11 km (≈ 36,090 ft), with a constant −56.5 °C up to 20 km |
+
+Real temperatures are often described relative to ISA: if it is 15 °C at 5,000 ft, where ISA is 5 °C, the day is **ISA +10**.
+
+## Pressure, temperature and density with altitude
+
+- **Pressure:** always falls as you climb. Near sea level it drops roughly **1 inHg per 1,000 ft** (about 30 ft per hPa), and more slowly higher up.
+- **Temperature:** in ISA it falls linearly up to the tropopause; the real atmosphere can have inversions.
+- **Density:** falls as altitude increases, as **temperature rises** and, to a lesser extent, as **humidity rises** (water vapour is lighter than dry air).
+
+## Pressure altitude and density altitude
+
+- **Pressure altitude** is what the altimeter shows when set to 1013.25 hPa. It is the basis of <Term id="flight-level">flight levels</Term>; close to the ground, the <Term id="qnh" /> is used instead.
+- <Term id="density-altitude">Density altitude</Term> is pressure altitude corrected for non-standard temperature: the ISA altitude at which the air would have the same density as the actual air.
+
+No instrument shows density altitude, but the aircraft "feels" it. In less dense air:
+
+- the wing needs **more true airspeed** to produce the same lift, so the aircraft takes off and lands faster over the ground;
+- engines and propellers **produce less**;
+- the take-off run is **longer** and the rate of climb **lower**.
+
+<Callout type="caution" label="High, hot and humid">
+A high airfield on a hot, humid day is the worst case for performance. Each aircraft's flight manual charts show how much longer the take-off becomes; this lesson explains why, it does not replace that data.
+</Callout>
+
+<MetarBreakdown parts={[
+  ["Elevation 2,000 ft", "Example airfield with QNH 1013 hPa: pressure altitude 2,000 ft"],
+  ["ISA at 2,000 ft = 11 °C", "15 °C − 2 × 2 °C"],
+  ["Actual temperature 31 °C", "The day is ISA +20"],
+  ["Density altitude ≈ 4,400 ft", "Rule of thumb of about 120 ft per degree above ISA: 2,000 + 20 × 120"]
+]} caption="Didactic example of an approximate density altitude calculation." />

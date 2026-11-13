@@ -1,0 +1,65 @@
+---
+lesson: turns-and-load-factor
+course: principles-of-flight
+lang: es
+title: "Virajes y factor de carga"
+summary: "Las fuerzas en un viraje, cómo aumenta el factor de carga con el alabeo y cuánto sube la velocidad de pérdida."
+objectives:
+  - "Explicar qué fuerza hace virar al avión"
+  - "Calcular el factor de carga en un viraje nivelado"
+  - "Calcular el aumento de la velocidad de pérdida con el factor de carga"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 12
+terms: [load-factor, lift, stall, weight]
+quiz: principles-of-flight-final
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Qué hace virar a un avión
+
+Al alabear, la <Term id="lift" /> se inclina con las alas. Se puede descomponer en dos partes:
+
+- una **componente vertical**, que sostiene el <Term id="weight" />;
+- una **componente horizontal**, que empuja el avión hacia el centro del viraje: es la que lo hace girar.
+
+Como solo una parte de la sustentación sigue sosteniendo el peso, para virar **sin perder altura** el piloto tiene que aumentar la sustentación total, tirando de los mandos para aumentar el ángulo de ataque (y, si hace falta, añadiendo potencia).
+
+## El factor de carga
+
+El <Term id="load-factor" /> (n) es la relación entre la sustentación y el peso. En vuelo recto y nivelado vale 1 g. En un **viraje nivelado y coordinado**:
+
+**n = 1 / cos(ángulo de alabeo)**
+
+| Alabeo | Factor de carga | Aumento de la velocidad de pérdida |
+|---|---|---|
+| 0° | 1,00 g | — |
+| 30° | 1,15 g | ≈ 7 % |
+| 45° | 1,41 g | ≈ 19 % |
+| 60° | 2,00 g | ≈ 41 % |
+
+Por encima de 60° el factor de carga crece muy deprisa: a 75° ya son casi 4 g.
+
+## La velocidad de pérdida sube
+
+La velocidad de <Term id="stall">pérdida</Term> aumenta con la **raíz cuadrada** del factor de carga:
+
+**V<sub>S</sub> en viraje = V<sub>S</sub> · √n**
+
+<MetarBreakdown parts={[
+  ["VS = 50 kt", "Velocidad de pérdida de ejemplo en vuelo nivelado"],
+  ["Alabeo 60°", "n = 1 / cos 60° = 2 g"],
+  ["√2 ≈ 1,41", "La velocidad de pérdida se multiplica por 1,41"],
+  ["VS ≈ 71 kt", "Nueva velocidad de pérdida en ese viraje"]
+]} caption="Ejemplo didáctico: el mismo avión entra en pérdida a más velocidad en un viraje cerrado." />
+
+Por eso una pérdida puede aparecer a una velocidad que parecería segura en vuelo recto, por ejemplo en un viraje cerrado cerca del suelo.
+
+## Los límites estructurales
+
+Cada avión está certificado para unos **factores de carga límite**, positivos y negativos, según su categoría. La **velocidad de maniobra** (V<sub>A</sub>) es, de forma simplificada, la velocidad por debajo de la cual el avión entra en pérdida antes de superar su factor de carga límite con una deflexión brusca de los mandos; disminuye cuando el avión pesa menos.
+
+<Callout type="caution" label="Contenido educativo">
+Los factores de carga límite y las velocidades de maniobra de cada avión están en su manual de vuelo. Al final de esta lección está la evaluación del módulo.
+</Callout>

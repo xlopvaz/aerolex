@@ -1,0 +1,55 @@
+---
+lesson: drag
+course: principles-of-flight
+lang: es
+title: "Los tipos de resistencia"
+summary: "Resistencia parásita e inducida, cómo cambian con la velocidad y por qué existe una velocidad de resistencia mínima."
+objectives:
+  - "Clasificar los tipos de resistencia parásita"
+  - "Explicar el origen de la resistencia inducida"
+  - "Interpretar la curva de resistencia total y la velocidad de L/D máxima"
+minutes: 10
+terms: [drag, induced-drag, winglet, aspect-ratio]
+quiz: principles-of-flight-03
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Dos grandes familias
+
+La <Term id="drag">resistencia aerodinámica</Term> total es la suma de dos tipos con comportamientos opuestos.
+
+### Resistencia parásita
+
+Es la que produce cualquier objeto que se mueve por el aire, genere o no sustentación. Tiene tres componentes:
+
+- **De forma:** depende de la forma y del área frontal (un tren fuera, una antena, un motor).
+- **De interferencia:** aparece donde se juntan dos superficies, como el ala y el fuselaje, porque los flujos se mezclan.
+- **De fricción:** el rozamiento del aire con la superficie; la suciedad, el hielo o los remaches salientes la aumentan.
+
+La resistencia parásita **aumenta con el cuadrado de la velocidad**: al doble de velocidad, cuatro veces más.
+
+### Resistencia inducida
+
+La <Term id="induced-drag" /> es el «precio» de la sustentación. Como debajo del ala hay más presión que encima, el aire tiende a rodear las puntas de abajo arriba y forma **torbellinos de punta de ala**. Estos torbellinos inclinan hacia abajo el flujo detrás del ala (corriente descendente) y, con él, inclinan hacia atrás la sustentación: esa componente hacia atrás es la resistencia inducida.
+
+Es máxima cuando el ala trabaja con mucho ángulo de ataque, es decir, a **baja velocidad**, y disminuye aproximadamente con el cuadrado de la velocidad. También crece con el **peso**, porque hace falta más sustentación.
+
+Se reduce con alas de gran <Term id="aspect-ratio" /> (largas y estrechas) y con dispositivos en las puntas, como los <Term id="winglet">winglets</Term>.
+
+## La curva de resistencia total
+
+Si se suman las dos, se obtiene una curva en forma de «U»:
+
+<MetarBreakdown kind="summary" parts={[
+  ["Baja velocidad", "Domina la resistencia inducida: la total es alta"],
+  ["Velocidad de L/D máx", "Inducida = parásita: resistencia total mínima y mejor relación sustentación/resistencia"],
+  ["Alta velocidad", "Domina la resistencia parásita: la total vuelve a crecer"]
+]} caption="Cómo cambia la resistencia total con la velocidad." />
+
+La velocidad de **L/D máxima** es importante porque en ella el avión vuela con la menor resistencia posible para su peso. En un avión de hélice, por ejemplo, está relacionada con la mejor velocidad de planeo y con la de máximo alcance.
+
+<Callout type="tip" label="El lado de atrás de la curva">
+Por debajo de la velocidad de resistencia mínima, volar más despacio exige **más** empuje, no menos. Es la llamada **zona de mando invertido** (el «lado de atrás» de la curva), en la que se vuela, por ejemplo, durante una aproximación lenta.
+</Callout>

@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "density altitude",
+    "es": "altitud de densidad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Pressure altitude corrected for non-standard temperature: the altitude in the standard atmosphere at which the air would have the same density as the actual air.",
+    "es": "Altitud de presión corregida por la diferencia de temperatura respecto a la estándar: la altitud de la atmósfera tipo en la que el aire tendría la misma densidad que el aire real."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The altitude the aircraft \"feels\": on a hot day at a high airfield, the wings and engines perform as if they were much higher.",
+    "es": "La altitud que «siente» el avión: en un día caluroso en un aeródromo alto, alas y motores rinden como si estuvieran mucho más arriba."
+  },
+  "example": {
+    "en": "\"With 35 °C at this airfield the density altitude is well above its elevation, so expect a longer take-off run.\"",
+    "es": "«Con 35 °C en este aeródromo, la altitud de densidad es muy superior a su elevación: prevé una carrera de despegue más larga.»"
+  },
+  "pronunciation": {
+    "en": "/ˈdɛnsɪti ˈæltɪtjuːd/",
+    "es": "altitud de densidad"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "isa",
+    "tas",
+    "thrust"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

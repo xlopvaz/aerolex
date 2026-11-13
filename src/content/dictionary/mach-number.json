@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Mach number",
+    "es": "número de Mach"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The ratio of the aircraft's true airspeed to the local speed of sound. The speed of sound depends only on air temperature, so it decreases as the air gets colder with altitude.",
+    "es": "Relación entre la velocidad verdadera de la aeronave y la velocidad local del sonido. La velocidad del sonido depende solo de la temperatura del aire, así que disminuye a medida que el aire se enfría con la altitud."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Speed measured as a fraction of the speed of sound: Mach 0.80 is 80 % of it.",
+    "es": "La velocidad expresada como fracción de la del sonido: Mach 0,80 es el 80 % de ella."
+  },
+  "example": {
+    "en": "\"Cruise at Mach 0.78, flight level 360.\"",
+    "es": "«Crucero a Mach 0,78, nivel de vuelo 360.»"
+  },
+  "pronunciation": {
+    "en": "/mɑːk ˈnʌmbə/",
+    "es": "número de Mak"
+  },
+  "synonyms": {
+    "en": [
+      "Mach"
+    ],
+    "es": [
+      "Mach"
+    ]
+  },
+  "related": [
+    "tas",
+    "ias",
+    "flight-level"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

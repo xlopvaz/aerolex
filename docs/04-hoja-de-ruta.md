@@ -69,6 +69,14 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] `<MetarBreakdown kind="summary">` para resúmenes de contenido real, sin la etiqueta de «ejemplo didáctico».
 - [ ] Más cursos del itinerario (historia de la aviación, carreras profesionales, el pasajero y el avión).
 
+**Bloque 6 — Academia de pilotos, módulos 1–2 ✅ (13/11/2026)**
+- [x] Módulo 1 *Principios de vuelo* (Intermediate): atmósfera tipo y altitud de densidad, ecuación de la sustentación y velocidades, tipos de resistencia, estabilidad y centro de gravedad, virajes y factor de carga.
+- [x] Módulo 2 *Aerodinámica* (Intermediate): geometría del ala, dispositivos hipersustentadores, capa límite, pérdida y efecto suelo, vuelo a alta velocidad y estela turbulenta.
+- [x] 10 lecciones ES/EN y 48 preguntas tipo ATPL con evaluación final en cada módulo.
+- [x] Diccionario: 10 entradas nuevas (ISA, altitud de densidad, IAS, TAS, factor de carga, resistencia inducida, alargamiento, efecto suelo, estela turbulenta y número de Mach): 97 entradas.
+- [x] Orden de los cursos dentro de cada itinerario (`order` en el curso).
+- [ ] Módulos 3–17 de la Academia de pilotos.
+
 
 | Bloque | Objetivo mínimo de la fase |
 |---|---|

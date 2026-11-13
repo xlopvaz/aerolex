@@ -1,0 +1,59 @@
+---
+lesson: atmosphere
+course: principles-of-flight
+lang: es
+title: "La atmósfera tipo y la altitud de densidad"
+summary: "Los valores de la ISA, cómo cambian presión, temperatura y densidad con la altitud y por qué un día caluroso en un aeródromo alto alarga el despegue."
+objectives:
+  - "Recordar los valores de la ISA al nivel del mar y en la tropopausa"
+  - "Explicar cómo varían presión, temperatura y densidad con la altitud"
+  - "Definir la altitud de presión y la altitud de densidad y su efecto en las actuaciones"
+minutes: 10
+terms: [isa, density-altitude, qnh, flight-level]
+quiz: principles-of-flight-01
+sources: [icao-doc-7488, faa-phak, aopa-density-altitude]
+review:
+  status: draft
+---
+
+## Por qué hace falta una atmósfera «tipo»
+
+La atmósfera real cambia cada día y en cada lugar. Para poder calibrar instrumentos y comparar las actuaciones de los aviones, la OACI define un modelo de referencia: la <Term id="isa">atmósfera tipo internacional (ISA)</Term>.
+
+| Magnitud | Valor ISA al nivel medio del mar |
+|---|---|
+| Temperatura | 15 °C |
+| Presión | 1013,25 hPa (29,92 inHg) |
+| Densidad | 1,225 kg/m³ |
+| Gradiente de temperatura | −6,5 °C/km (≈ −2 °C por cada 1000 ft) hasta 11 km |
+| Tropopausa | 11 km (≈ 36 090 ft), con −56,5 °C constantes hasta 20 km |
+
+Una forma habitual de hablar de la temperatura real es en relación con la ISA: si a 5000 ft hay 15 °C, como la ISA allí es 5 °C, el día está a **ISA +10**.
+
+## Presión, temperatura y densidad con la altitud
+
+- **Presión:** disminuye siempre al subir. Cerca del nivel del mar baja aproximadamente **1 inHg por cada 1000 ft** (unos 30 ft por hPa), y cada vez más despacio con la altura.
+- **Temperatura:** en la ISA baja de forma lineal hasta la tropopausa; en la atmósfera real puede haber inversiones.
+- **Densidad:** disminuye al subir, al **aumentar la temperatura** y, en menor medida, al **aumentar la humedad** (el vapor de agua es más ligero que el aire seco).
+
+## Altitud de presión y altitud de densidad
+
+- La **altitud de presión** es la que marca el altímetro calado a 1013,25 hPa. Es la base de los <Term id="flight-level">niveles de vuelo</Term>; en cambio, para volar cerca del suelo se usa el <Term id="qnh" />.
+- La <Term id="density-altitude" /> es la altitud de presión corregida por la temperatura no estándar: la altitud de la ISA en la que el aire tendría la misma densidad que el real.
+
+La altitud de densidad no se lee en ningún instrumento, pero el avión la «siente». Con aire menos denso:
+
+- el ala necesita **más velocidad verdadera** para generar la misma sustentación, así que el avión despega y aterriza más rápido respecto al suelo;
+- los motores y las hélices **rinden menos**;
+- la carrera de despegue es **más larga** y el régimen de ascenso, **menor**.
+
+<Callout type="caution" label="Alto, caliente y húmedo">
+Un aeródromo elevado en un día caluroso y húmedo es el peor caso para las actuaciones. Las tablas del manual de vuelo de cada avión indican cuánto se alarga el despegue; esta lección explica el porqué, no sustituye esos datos.
+</Callout>
+
+<MetarBreakdown parts={[
+  ["Elevación 2000 ft", "Aeródromo de ejemplo con QNH 1013 hPa: altitud de presión 2000 ft"],
+  ["ISA a 2000 ft = 11 °C", "15 °C − 2 × 2 °C"],
+  ["Temperatura real 31 °C", "El día está a ISA +20"],
+  ["Altitud de densidad ≈ 4400 ft", "Regla práctica de unos 120 ft por cada grado sobre la ISA: 2000 + 20 × 120"]
+]} caption="Ejemplo didáctico de cálculo aproximado de la altitud de densidad." />

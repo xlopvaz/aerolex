@@ -1,0 +1,348 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué resistencia aumenta bruscamente por encima del Mach crítico?",
+        "en": "Which drag rises sharply above critical Mach?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La de onda",
+            "en": "Wave drag"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La inducida",
+            "en": "Induced drag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La de interferencia",
+            "en": "Interference drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguna",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las ondas de choque producen resistencia de onda y pueden desprender el flujo.",
+        "en": "Shock waves produce wave drag and can cause flow separation."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿En qué condiciones es más intensa la estela turbulenta?",
+        "en": "When is wake turbulence strongest?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Avión ligero, rápido y con flaps",
+            "en": "Light, fast, flaps extended"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Avión pesado, lento y en configuración limpia",
+            "en": "Heavy, slow and clean"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Avión pesado, rápido y con flaps",
+            "en": "Heavy, fast, flaps extended"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Siempre es igual",
+            "en": "It is always the same"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Pesado, limpio y lento significa mucho ángulo de ataque y torbellinos fuertes.",
+        "en": "Heavy, clean and slow means a high angle of attack and strong vortices."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuándo empieza un avión a generar estela en el despegue?",
+        "en": "When does an aircraft start generating a wake on take-off?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Al iniciar la carrera",
+            "en": "At the start of the take-off roll"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Al rotar",
+            "en": "At rotation"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A 1000 ft",
+            "en": "At 1,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al recoger los flaps",
+            "en": "When the flaps are retracted"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los torbellinos aparecen cuando el ala empieza a producir la sustentación que levanta el avión, en la rotación.",
+        "en": "The vortices appear when the wing starts producing the lift that raises the aircraft, at rotation."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Aterrizando detrás de un avión más grande, conviene…",
+        "en": "Landing behind a larger aircraft, you should…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Volar por debajo de su senda y aterrizar antes de su punto de toma",
+            "en": "Fly below its path and land before its touchdown point"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Mantenerse en su senda o por encima y aterrizar más allá de su punto de toma",
+            "en": "Stay at or above its path and land beyond its touchdown point"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aterrizar justo en su punto de toma",
+            "en": "Land exactly at its touchdown point"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aumentar mucho la velocidad",
+            "en": "Fly much faster"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los torbellinos descienden y terminan en su punto de toma; por encima y más allá se evitan.",
+        "en": "The vortices sink and end at its touchdown point; staying above and beyond avoids them."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Según la OACI, un avión con una masa máxima al despegue de 79 000 kg es de categoría de estela…",
+        "en": "Under ICAO, an aircraft with a maximum take-off mass of 79,000 kg is in wake category…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ligera",
+            "en": "Light"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Media",
+            "en": "Medium"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Pesada",
+            "en": "Heavy"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Superpesada",
+            "en": "Super"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Media: más de 7000 kg y menos de 136 000 kg.",
+        "en": "Medium: more than 7,000 kg and less than 136,000 kg."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué dispositivo se despliega desde la parte inferior del borde de ataque?",
+        "en": "Which device folds out from the underside of the leading edge?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El flap Fowler",
+            "en": "The Fowler flap"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El flap Krueger",
+            "en": "The Krueger flap"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El spoiler",
+            "en": "The spoiler"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El winglet",
+            "en": "The winglet"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El Krueger es un dispositivo de borde de ataque; el Fowler es de borde de salida.",
+        "en": "The Krueger is a leading-edge device; the Fowler is a trailing-edge flap."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Un avión que despega en efecto suelo con velocidad insuficiente…",
+        "en": "An aircraft that lifts off in ground effect at too low a speed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Subirá mejor al salir del efecto suelo",
+            "en": "Will climb better once out of ground effect"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Puede no ser capaz de subir al salir del efecto suelo",
+            "en": "May be unable to climb once out of ground effect"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se ve afectado",
+            "en": "Is not affected"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tendrá menos resistencia inducida al subir",
+            "en": "Will have less induced drag as it climbs"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Al salir del efecto suelo la resistencia inducida vuelve a su valor normal y puede faltar empuje o velocidad.",
+        "en": "Leaving ground effect, induced drag returns to normal and thrust or speed may be insufficient."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "Desde el punto de vista de la pérdida, ¿por dónde conviene que empiece en un ala?",
+        "en": "From a stall standpoint, where should a wing stall first?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Por la punta",
+            "en": "At the tip"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Por la raíz",
+            "en": "At the root"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Por el borde de salida de la punta",
+            "en": "At the trailing edge of the tip"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por toda el ala a la vez",
+            "en": "Across the whole wing at once"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Así los alerones, situados cerca de las puntas, conservan su eficacia.",
+        "en": "That way the ailerons, near the tips, keep their effectiveness."
+      }
+    }
+  ]
+}

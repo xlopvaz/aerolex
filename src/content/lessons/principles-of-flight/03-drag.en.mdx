@@ -1,0 +1,55 @@
+---
+lesson: drag
+course: principles-of-flight
+lang: en
+title: "Types of drag"
+summary: "Parasite and induced drag, how they change with speed and why there is a speed of minimum drag."
+objectives:
+  - "Classify the types of parasite drag"
+  - "Explain where induced drag comes from"
+  - "Interpret the total drag curve and the L/D max speed"
+minutes: 10
+terms: [drag, induced-drag, winglet, aspect-ratio]
+quiz: principles-of-flight-03
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Two big families
+
+Total <Term id="drag" /> is the sum of two types that behave in opposite ways.
+
+### Parasite drag
+
+It is produced by any object moving through the air, whether or not it makes lift. It has three components:
+
+- **Form drag:** depends on shape and frontal area (extended gear, an antenna, an engine).
+- **Interference drag:** appears where two surfaces meet, such as the wing and fuselage, because the airflows mix.
+- **Skin friction drag:** the friction of the air against the surface; dirt, ice or protruding rivets increase it.
+
+Parasite drag **increases with the square of airspeed**: twice the speed, four times the drag.
+
+### Induced drag
+
+<Term id="induced-drag">Induced drag</Term> is the "price" of lift. Because pressure is higher below the wing than above it, air tends to curl around the tips from bottom to top and forms **wingtip vortices**. These vortices tilt the airflow behind the wing downward (downwash) and, with it, tilt the lift rearward: that rearward component is induced drag.
+
+It is greatest when the wing works at a high angle of attack — that is, at **low speed** — and falls roughly with the square of airspeed. It also grows with **weight**, because more lift is needed.
+
+It is reduced by wings with a high <Term id="aspect-ratio" /> (long and slender) and by wingtip devices such as <Term id="winglet">winglets</Term>.
+
+## The total drag curve
+
+Add the two and you get a U-shaped curve:
+
+<MetarBreakdown kind="summary" parts={[
+  ["Low speed", "Induced drag dominates: total drag is high"],
+  ["L/D max speed", "Induced = parasite: minimum total drag and best lift-to-drag ratio"],
+  ["High speed", "Parasite drag dominates: total drag rises again"]
+]} caption="How total drag changes with airspeed." />
+
+The **L/D max** speed matters because the aircraft is then flying with the least possible drag for its weight. On a propeller aircraft, for example, it is linked to the best glide speed and the maximum range speed.
+
+<Callout type="tip" label="The back side of the curve">
+Below the minimum drag speed, flying slower requires **more** thrust, not less. This is the **region of reversed command** (the "back side" of the curve), where an aircraft flies, for example, during a slow approach.
+</Callout>

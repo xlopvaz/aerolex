@@ -1,0 +1,348 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué presión corresponde a la ISA al nivel medio del mar?",
+        "en": "What pressure corresponds to ISA at mean sea level?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1000 hPa",
+            "en": "1000 hPa"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1013,25 hPa",
+            "en": "1013.25 hPa"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1023 hPa",
+            "en": "1023 hPa"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "29,29 inHg",
+            "en": "29.29 inHg"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "ISA al nivel del mar: 15 °C, 1013,25 hPa (29,92 inHg) y 1,225 kg/m³.",
+        "en": "ISA at sea level: 15 °C, 1013.25 hPa (29.92 inHg) and 1.225 kg/m³."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "A IAS constante, al ascender la TAS…",
+        "en": "At constant IAS, as the aircraft climbs, TAS…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumenta",
+            "en": "Increases"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Disminuye",
+            "en": "Decreases"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se mantiene",
+            "en": "Stays the same"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se iguala a la GS",
+            "en": "Becomes equal to GS"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El aire es menos denso, así que hace falta más velocidad verdadera para la misma presión dinámica.",
+        "en": "The air is less dense, so more true airspeed is needed for the same dynamic pressure."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Los winglets reducen sobre todo la…",
+        "en": "Winglets mainly reduce…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Resistencia de forma",
+            "en": "Form drag"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Resistencia inducida",
+            "en": "Induced drag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Resistencia de fricción",
+            "en": "Skin friction drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Sustentación",
+            "en": "Lift"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Debilitan los torbellinos de punta de ala, origen de la resistencia inducida.",
+        "en": "They weaken the wingtip vortices that cause induced drag."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué es el balanceo del holandés?",
+        "en": "What is Dutch roll?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una oscilación combinada de alabeo y guiñada",
+            "en": "A combined rolling and yawing oscillation"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una barrena plana",
+            "en": "A flat spin"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un tipo de pérdida de punta de ala",
+            "en": "A type of tip stall"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El bataneo a alta velocidad",
+            "en": "High-speed buffet"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Aparece cuando la estabilidad lateral domina sobre la direccional.",
+        "en": "It appears when lateral stability outweighs directional stability."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Cuál es el factor de carga en un viraje nivelado y coordinado de 45°?",
+        "en": "What is the load factor in a level, coordinated 45° turn?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1,15 g",
+            "en": "1.15 g"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1,41 g",
+            "en": "1.41 g"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2,00 g",
+            "en": "2.00 g"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1,00 g",
+            "en": "1.00 g"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "n = 1 / cos 45° = 1 / 0,707 ≈ 1,41 g.",
+        "en": "n = 1 / cos 45° = 1 / 0.707 ≈ 1.41 g."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un avión entra en pérdida a 60 kt en vuelo nivelado. ¿A qué velocidad, aproximadamente, en un viraje nivelado de 60°?",
+        "en": "An aircraft stalls at 60 kt in level flight. At about what speed in a level 60° turn?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "60 kt",
+            "en": "60 kt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "70 kt",
+            "en": "70 kt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "85 kt",
+            "en": "85 kt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "120 kt",
+            "en": "120 kt"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "n = 2 y √2 ≈ 1,41: 60 × 1,41 ≈ 85 kt.",
+        "en": "n = 2 and √2 ≈ 1.41: 60 × 1.41 ≈ 85 kt."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Qué ocurre con la velocidad de maniobra (VA) cuando el avión pesa menos?",
+        "en": "What happens to manoeuvring speed (VA) when the aircraft is lighter?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumenta",
+            "en": "It increases"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Disminuye",
+            "en": "It decreases"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambia",
+            "en": "It does not change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se iguala a VNE",
+            "en": "It becomes equal to VNE"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Con menos peso, el avión alcanza su factor de carga límite antes de entrar en pérdida, así que VA es menor.",
+        "en": "When lighter, the aircraft reaches its limit load factor before stalling, so VA is lower."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "¿Qué fuerza hace virar a un avión?",
+        "en": "Which force makes an aeroplane turn?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La componente horizontal de la sustentación",
+            "en": "The horizontal component of lift"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El empuje de los motores",
+            "en": "Engine thrust"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La fuerza del timón de dirección",
+            "en": "The force of the rudder"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El peso",
+            "en": "Weight"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Al alabear, parte de la sustentación apunta hacia el centro del viraje.",
+        "en": "When banked, part of the lift points towards the centre of the turn."
+      }
+    }
+  ]
+}

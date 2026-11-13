@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "IAS",
+    "es": "IAS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Indicated airspeed",
+    "es": "Velocidad indicada"
+  },
+  "categories": [
+    "cockpit",
+    "aerodynamics"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The airspeed read directly from the airspeed indicator, uncorrected for instrument, position or density errors. It reflects dynamic pressure, which is why many aircraft limits and stall speeds are given in IAS.",
+    "es": "Velocidad leída directamente en el anemómetro, sin corregir errores de instrumento, de posición ni de densidad. Refleja la presión dinámica, y por eso muchas limitaciones y velocidades de pérdida se dan en IAS."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The speed the pilot sees on the airspeed indicator.",
+    "es": "La velocidad que el piloto ve en el anemómetro."
+  },
+  "example": {
+    "en": "\"Approach speed is 135 knots IAS.\"",
+    "es": "«La velocidad de aproximación es de 135 nudos IAS.»"
+  },
+  "pronunciation": {
+    "en": "I-A-S (eye-ay-ess)",
+    "es": "i-a-ese"
+  },
+  "synonyms": {
+    "en": [
+      "indicated airspeed"
+    ],
+    "es": [
+      "velocidad indicada"
+    ]
+  },
+  "related": [
+    "tas",
+    "stall",
+    "mach-number"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

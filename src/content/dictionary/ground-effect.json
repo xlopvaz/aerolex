@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "ground effect",
+    "es": "efecto suelo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The change in a wing's aerodynamic behaviour when it flies close to the surface, within about one wingspan: the ground restricts the wingtip vortices and downwash, reducing induced drag.",
+    "es": "Cambio en el comportamiento aerodinámico de un ala cuando vuela cerca de la superficie, a menos de una envergadura aproximadamente: el suelo limita los torbellinos de punta de ala y la corriente descendente, y reduce la resistencia inducida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Near the ground the aircraft seems to \"float\": that is why it can keep flying a little longer than expected before touchdown.",
+    "es": "Cerca del suelo el avión parece «flotar»: por eso puede seguir volando un poco más de lo previsto antes de tocar tierra."
+  },
+  "example": {
+    "en": "\"An aircraft can lift off in ground effect and then fail to climb once it leaves it.\"",
+    "es": "«Un avión puede despegar en efecto suelo y después no ser capaz de subir al salir de él.»"
+  },
+  "pronunciation": {
+    "en": "/ɡraʊnd ɪˈfɛkt/",
+    "es": "efecto suelo"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "induced-drag",
+    "wing",
+    "lift"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

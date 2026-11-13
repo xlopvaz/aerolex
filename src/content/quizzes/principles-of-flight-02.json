@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Si la velocidad verdadera se reduce a la mitad sin cambiar nada más, la sustentación…",
+        "en": "If true airspeed is halved and nothing else changes, lift…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se reduce a la mitad",
+            "en": "Halves"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se reduce a la cuarta parte",
+            "en": "Falls to a quarter"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se duplica",
+            "en": "Doubles"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La sustentación depende de V²: (½)² = ¼.",
+        "en": "Lift depends on V²: (½)² = ¼."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En vuelo nivelado, si el piloto reduce la velocidad, para mantener la altitud debe…",
+        "en": "In level flight, if the pilot reduces speed, to hold altitude they must…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Reducir el ángulo de ataque",
+            "en": "Reduce the angle of attack"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumentar el ángulo de ataque",
+            "en": "Increase the angle of attack"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Mantener el ángulo de ataque",
+            "en": "Keep the same angle of attack"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Retraer los flaps",
+            "en": "Retract the flaps"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Para que L siga igual al peso con menos V, el CL debe aumentar, y eso se consigue con más ángulo de ataque.",
+        "en": "For L to stay equal to weight with less V, CL must increase, which means a higher angle of attack."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La CAS corregida por altitud y temperatura es la…",
+        "en": "CAS corrected for altitude and temperature is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "IAS",
+            "en": "IAS"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "GS",
+            "en": "GS"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "TAS",
+            "en": "TAS"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "EAS",
+            "en": "EAS"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La TAS es la velocidad real respecto al aire; la GS añade el efecto del viento.",
+        "en": "TAS is the actual speed through the air; GS adds the effect of wind."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En el anemómetro, el extremo superior del arco blanco indica…",
+        "en": "On the airspeed indicator, the upper end of the white arc shows…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "VNE",
+            "en": "VNE"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "VNO",
+            "en": "VNO"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "VFE",
+            "en": "VFE"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "VS1",
+            "en": "VS1"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El arco blanco es el margen de uso de los flaps; su extremo superior es la velocidad máxima con flaps extendidos.",
+        "en": "The white arc is the flap operating range; its upper end is the maximum flap-extended speed."
+      }
+    }
+  ]
+}

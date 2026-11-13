@@ -16,7 +16,7 @@ const courses = await getCollection('courses');
 const lessons = await getCollection('lessons', (l) => l.data.lang === lang);
 const minutesOf = (courseId: string) => lessons.filter((l) => l.data.course === courseId).reduce((n, l) => n + l.data.minutes, 0);
 const paths = (await getCollection('paths'))
-  .map((p) => ({ ...p, courses: courses.filter((c) => c.data.path === p.id) }))
+  .map((p) => ({ ...p, courses: courses.filter((c) => c.data.path === p.id).sort((a, b) => a.data.order - b.data.order || a.id.localeCompare(b.id)) }))
   .filter((p) => p.courses.length > 0) // never show empty paths
   .sort((a, b) => a.data.order - b.data.order);
 ---

@@ -49,5 +49,7 @@
   "easa-20-years": {"title": "EASA — 20th Anniversary", "publisher": "European Union Aviation Safety Agency", "kind": "web", "url": "https://www.easa.europa.eu/en/20th-anniversary", "licence": "eu-reuse"},
   "faa-brief-history": {"title": "A Brief History of the FAA", "publisher": "Federal Aviation Administration", "kind": "web", "url": "https://www.faa.gov/about/history/brief_history", "licence": "public-domain-us"},
   "boe-rd-184-2008": {"title": "Real Decreto 184/2008, de 8 de febrero, por el que se aprueba el Estatuto de la Agencia Estatal de Seguridad Aérea", "publisher": "Boletín Oficial del Estado (España)", "kind": "regulation", "url": "https://www.boe.es/eli/es/rd/2008/02/08/184/con", "licence": "eu-reuse"},
-  "iata-code-search": {"title": "Airline and Airport Code Search", "publisher": "IATA", "kind": "web", "url": "https://www.iata.org/en/publications/directories/code-search/", "licence": "copyright"}
+  "iata-code-search": {"title": "Airline and Airport Code Search", "publisher": "IATA", "kind": "web", "url": "https://www.iata.org/en/publications/directories/code-search/", "licence": "copyright"},
+  "icao-doc-7488": {"title": "Doc 7488 — Manual of the ICAO Standard Atmosphere", "publisher": "ICAO", "kind": "standard", "url": "https://store.icao.int/", "licence": "copyright"},
+  "aopa-density-altitude": {"title": "Density Altitude (Air Safety Institute safety brief)", "publisher": "AOPA Air Safety Institute", "kind": "web", "url": "https://www.aopa.org/training-and-safety/air-safety-institute/safety-publications/density-altitude", "licence": "copyright"}
 }

@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué flap aumenta a la vez la curvatura y la superficie alar?",
+        "en": "Which flap increases both camber and wing area?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sencillo",
+            "en": "Plain"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De intradós",
+            "en": "Split"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Fowler",
+            "en": "Fowler"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguno",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El flap Fowler se desplaza hacia atrás antes de bajar, así que también aumenta la superficie.",
+        "en": "The Fowler flap moves aft before it drops, so it also increases the area."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Al extender los flaps de borde de salida, el ángulo de ataque de pérdida…",
+        "en": "When trailing-edge flaps are extended, the stalling angle of attack…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumenta mucho",
+            "en": "Increases greatly"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Disminuye ligeramente",
+            "en": "Decreases slightly"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se duplica",
+            "en": "Doubles"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los flaps aumentan el CL máximo, pero la pérdida llega con algo menos de ángulo de ataque.",
+        "en": "Flaps raise CL max, but the stall comes at a slightly lower angle of attack."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Los slats permiten…",
+        "en": "Slats allow…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Alcanzar un ángulo de ataque crítico mayor",
+            "en": "A higher critical angle of attack"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Volar más rápido en crucero",
+            "en": "Faster cruise"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reducir el peso",
+            "en": "A lower weight"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Eliminar la resistencia inducida",
+            "en": "Eliminating induced drag"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Dan energía a la capa límite y retrasan el desprendimiento.",
+        "en": "They energise the boundary layer and delay separation."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué efecto tiene el uso de flaps en la velocidad de pérdida?",
+        "en": "What effect do flaps have on stall speed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La aumentan",
+            "en": "They increase it"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La reducen",
+            "en": "They reduce it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No la cambian",
+            "en": "No change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo la cambian en vuelo invertido",
+            "en": "Only in inverted flight"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Al aumentar el CL máximo, el ala puede sostener el avión a menos velocidad.",
+        "en": "By increasing CL max, the wing can support the aircraft at a lower speed."
+      }
+    }
+  ]
+}

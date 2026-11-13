@@ -1,0 +1,56 @@
+{
+  "type": "term",
+  "term": {
+    "en": "wake turbulence",
+    "es": "estela turbulenta"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "air-traffic-control",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Turbulence created behind an aircraft in flight, mainly the pair of counter-rotating vortices that trail from its wingtips as a consequence of producing lift. It is strongest behind heavy aircraft flying slowly in a clean configuration.",
+    "es": "Turbulencia que se forma detrás de una aeronave en vuelo, principalmente el par de torbellinos que giran en sentidos opuestos desde las puntas de las alas como consecuencia de la sustentación. Es más intensa detrás de aviones pesados que vuelan despacio y en configuración limpia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The invisible \"whirlwinds\" a large aircraft leaves behind; ATC spaces aircraft apart to avoid them.",
+    "es": "Los «remolinos» invisibles que deja un avión grande; el control separa a los aviones para evitarlos."
+  },
+  "example": {
+    "en": "\"Caution, wake turbulence: preceding traffic is a heavy Boeing 777.\"",
+    "es": "«Precaución, estela turbulenta: el tráfico precedente es un Boeing 777 pesado.»"
+  },
+  "pronunciation": {
+    "en": "/weɪk ˈtɜːbjʊləns/",
+    "es": "estela turbulenta"
+  },
+  "synonyms": {
+    "en": [
+      "wake vortices"
+    ],
+    "es": [
+      "estela",
+      "turbulencia de estela"
+    ]
+  },
+  "related": [
+    "induced-drag",
+    "atc",
+    "wind-shear"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-aim",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
