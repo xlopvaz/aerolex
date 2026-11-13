@@ -9,6 +9,7 @@ import Callout from '../components/ui/Callout.astro';
 import ProgressGlide from '../components/ui/ProgressGlide.astro';
 import { childAlternates, childHref, href, useT } from '../i18n/index.js';
 import { lessonKey } from '../lib/academy/progress.js';
+import { courseLd } from '../lib/seo/structured-data.js';
 
 interface Props { lang: string; routeKey: any; courseId: string }
 const { lang, courseId } = Astro.props;
@@ -25,8 +26,17 @@ const lessons = c.lessons.map((id, i) => {
 const minutes = lessons.reduce((n, l) => n + l.minutes, 0);
 const sources = await getCollection('sources');
 const courseSources = c.sources.map((id) => sources.find((s) => s.id === id)!.data);
+const site = Astro.site ?? new URL('https://xlopvaz.github.io');
+const jsonLd = [courseLd({
+  name: c.title[lang],
+  description: c.description[lang],
+  url: new URL(childHref('academy', courseId, lang), site).href,
+  lang,
+  provider: 'AeroLex',
+  providerUrl: new URL(href('home', lang), site).href,
+})];
 ---
-<BaseLayout lang={lang} routeKey="academy" title={`${c.title[lang]} · AeroLex`} description={c.description[lang]} alt={childAlternates('academy', courseId)}>
+<BaseLayout lang={lang} routeKey="academy" title={`${c.title[lang]} · AeroLex`} description={c.description[lang]} alt={childAlternates('academy', courseId)} jsonLd={jsonLd}>
   <header class="page-header">
     <div class="container">
       <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.academy'), href: href('academy', lang) }, { label: c.title[lang] }]} />

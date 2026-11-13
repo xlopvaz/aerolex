@@ -7,7 +7,7 @@ import AircraftPhoto from '../components/hangar/AircraftPhoto.astro';
 import Button from '../components/ui/Button.astro';
 import Callout from '../components/ui/Callout.astro';
 import Icon from '../components/ui/Icon.astro';
-import { childAlternates, href, t, useT } from '../i18n/index.js';
+import { childAlternates, href, t, useT, withBase } from '../i18n/index.js';
 import { flattenVariants } from '../lib/aircraft/compare.js';
 import { compareTableHtml } from '../lib/aircraft/table.js';
 import '../styles/compare-table.css';
@@ -25,7 +25,7 @@ const labels = t(lang, 'hangar');
 const table = compareTableHtml(variants, { lang, units: 'metric', labels });
 const compareHref = `${href('compare', lang)}?v=${variants.slice(0, 3).map((v) => `${fam.id}:${v.id}`).join(',')}`;
 ---
-<BaseLayout lang={lang} routeKey="hangar" title={`${f.family[lang]} · ${tr('nav.hangar')} · AeroLex`} description={f.summary[lang]} alt={childAlternates('hangar', familyId)}>
+<BaseLayout lang={lang} routeKey="hangar" title={`${f.family[lang]} · ${tr('nav.hangar')} · AeroLex`} description={f.summary[lang]} alt={childAlternates('hangar', familyId)} image={photos[0] ? { src: withBase(photos[0].file), alt: photos[0].alt[lang], width: photos[0].width, height: photos[0].height } : undefined}>
   <header class="page-header">
     <div class="container">
       <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.hangar'), href: href('hangar', lang) }, { label: f.family[lang] }]} />

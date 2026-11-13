@@ -8,6 +8,7 @@ import Callout from '../components/ui/Callout.astro';
 import { childHref, href, t, useT, withBase } from '../i18n/index.js';
 import { CATEGORIES } from '../lib/dictionary/categories.js';
 import { initial } from '../lib/dictionary/search.js';
+import { termSetLd } from '../lib/seo/structured-data.js';
 
 interface Props { lang: string; routeKey: any }
 const { lang, routeKey } = Astro.props;
@@ -36,7 +37,7 @@ const messages = {
   entries: tr('dictionary.entriesCount'),
 };
 ---
-<BaseLayout lang={lang} routeKey={routeKey} title={tr('dictionary.metaTitle')} description={tr('dictionary.metaDescription')}>
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('dictionary.metaTitle')} description={tr('dictionary.metaDescription')} jsonLd={[termSetLd({ name: tr('dictionary.title'), url: new URL(href('dictionary', lang), Astro.site ?? 'https://xlopvaz.github.io').href, lang, description: tr('dictionary.metaDescription') })]}>
   <header class="page-header">
     <div class="container">
       <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.dictionary') }]} />

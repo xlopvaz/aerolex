@@ -153,9 +153,14 @@ Objetivos de la fase cumplidos (13/11/2026). La fase 6 (publicación de la v1.0)
 - [x] **Bloque 3 — Diagramas de aeropuerto (13/11/2026):** herramienta `/es/herramientas/diagramas-de-aeropuerto/` con las pistas de 4362 aeropuertos (6149 pistas abiertas con coordenadas de OurAirports, dominio público, generadas con `scripts/build-runways.mjs` y servidas en 26 ficheros por inicial del código IATA que se descargan solo al buscar). Dibujo SVG a escala con el norte arriba, designadores en cada cabecera sin solaparse, flecha de norte y escala; tabla con longitud y anchura (m y ft), superficie y rumbo verdadero calculado; explicación de cómo se numeran las pistas (Anexo 14 de la OACI) con un ejemplo del propio aeropuerto y enlaces al diccionario; enlace desde el buscador de aeropuertos. Aviso de que no es una carta de aeródromo. Geometría en `src/lib/airports/runways.js` con 8 tests y e2e.
 - [x] **Bloque 4 — Optimización móvil (13/11/2026):** revisión automática de las 681 páginas a 360 px de ancho: ninguna se desplaza en horizontal. Corregidos los textos ocultos para lectores de pantalla dentro de tablas con desplazamiento (ensanchaban la página del Hangar y del comparador), las rejillas y `fieldset` que no podían encogerse (lecciones de descodificación completa, buscador y diagramas, 404, guía de estilo) y los objetivos táctiles de menos de 24 px (pie, acrónimos, fuentes). Nueva prueba e2e móvil que lo vigila en 14 páginas representativas. Lighthouse móvil: 100 en rendimiento, accesibilidad, buenas prácticas y SEO en inicio, lección, diagramas y panel.
 
-## FASE 6 — Publicación
+## FASE 6 — Publicación 🚧
 
 Auditoría completa (enlaces, JS, accesibilidad, responsive), SEO (sitemap, datos estructurados `DefinedTerm` para el diccionario, Open Graph por página), rendimiento, dominio propio opcional y versión 1.0.
+
+**Progreso**
+- [x] **Bloque 1 — SEO (13/11/2026):** `sitemap.xml` con las 696 páginas y sus alternativas hreflang, generado tras cada build a partir de lo que declara cada página (`scripts/build-sitemap.mjs`); datos estructurados schema.org en JSON-LD: `DefinedTerm` en cada entrada del diccionario (con la expansión de los acrónimos como `alternateName`), `DefinedTermSet` en el diccionario, `Course` en los cursos, `WebSite` en la portada y `BreadcrumbList` en todas las páginas con migas; Open Graph completo con imagen de 1200×630 por idioma (`scripts/og-image.mjs`, `npm run og:image`) y la foto principal en cada familia del Hangar, `og:locale:alternate` y tarjeta grande de Twitter/X. `check:site` comprueba ahora que cada página tenga `og:image` existente, que el JSON-LD sea válido y que el sitemap solo liste páginas que existen. Nota: en un sitio de proyecto de GitHub Pages no se puede publicar `robots.txt` en la raíz del dominio; el sitemap se puede enviar a los buscadores cuando haya cuenta de Search Console (fuera de alcance por ahora).
+- [ ] Auditoría final (enlaces, JS, accesibilidad, responsive) y rendimiento.
+- [ ] Versión 1.0 (con la aprobación del propietario).
 
 ## Después de la 1.0
 

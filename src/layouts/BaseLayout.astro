@@ -17,6 +17,7 @@ import RewardToast from '../components/gamification/RewardToast.astro';
 import { LOCALES, LOCALE_META } from '../i18n/config.js';
 import { alternates, href, t, withBase } from '../i18n/index.js';
 import { STORAGE_KEY } from '../lib/core/schema.js';
+import { jsonLdString } from '../lib/seo/structured-data.js';
 
 interface Props {
   lang: string;
@@ -26,13 +27,18 @@ interface Props {
   description?: string;
   /** Equivalent URL in each language. Defaults to the route's alternates; pass it for dynamic pages. */
   alt?: Record<string, string>;
+  /** Social preview image (path inside the site, with base) and its text alternative. Defaults to the AeroLex card. */
+  image?: { src: string; alt: string; width: number; height: number };
+  /** schema.org objects to publish as JSON-LD. */
+  jsonLd?: object[];
 }
-const { lang, routeKey, title, description = t(lang, 'meta.defaultDescription'), alt: altProp } = Astro.props;
+const { lang, routeKey, title, description = t(lang, 'meta.defaultDescription'), alt: altProp, image: imageProp, jsonLd = [] } = Astro.props;
 
 const site = Astro.site ?? new URL('https://xlopvaz.github.io');
 const abs = (p: string) => new URL(p, site).href;
 const alt = altProp ?? alternates(routeKey);
 const canonical = abs(alt[lang] ?? href(routeKey, lang));
+const image = imageProp ?? { src: withBase(`og/aerolex-${lang}.png`), alt: t(lang, 'meta.ogImageAlt'), width: 1200, height: 630 };
 ---
 <!doctype html>
 <html lang={LOCALE_META[lang].htmlLang} data-theme="dark">
@@ -51,6 +57,13 @@ const canonical = abs(alt[lang] ?? href(routeKey, lang));
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={LOCALE_META[lang].ogLocale} />
+    {LOCALES.filter((l) => l !== lang).map((l) => <meta property="og:locale:alternate" content={LOCALE_META[l].ogLocale} />)}
+    <meta property="og:image" content={abs(image.src)} />
+    <meta property="og:image:width" content={String(image.width)} />
+    <meta property="og:image:height" content={String(image.height)} />
+    <meta property="og:image:alt" content={image.alt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonLd.map((d) => <script type="application/ld+json" set:html={jsonLdString(d)} />)}
     <meta name="theme-color" content="#0A1628" />
 
     <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />

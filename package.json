@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/build-sitemap.mjs",
     "preview": "astro preview",
     "test": "vitest run",
     "check:site": "node scripts/check-site.mjs",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "og:image": "node scripts/og-image.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^8.1.5",
