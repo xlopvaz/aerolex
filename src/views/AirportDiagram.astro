@@ -119,7 +119,7 @@ const terms = {
   .ad__table td:first-child { font-family: var(--font-mono); font-weight: 700; white-space: nowrap; }
   .ad__learn { margin-top: var(--space-6); padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); max-width: 80ch; }
   .ad__learn h3 { margin-top: 0; }
-  @media (max-width: 860px) { .ad__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 860px) { .ad__grid { grid-template-columns: minmax(0, 1fr); } }
 </style>
 
 <script>

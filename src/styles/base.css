@@ -117,6 +117,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .page-header h1 { margin-bottom: var(--space-3); }
 
+/* Fieldsets default to min-content width; let them shrink like other blocks on small screens */
+fieldset { min-width: 0; }
+
 .visually-hidden {
   position: absolute !important;
   width: 1px; height: 1px;

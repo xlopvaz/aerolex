@@ -215,6 +215,6 @@ const lessonSources = L.sources.map((id) => {
   .toc__dot { width: 0.7rem; height: 0.7rem; margin-top: 0.35rem; flex: none; border: 2px solid var(--border-strong); border-radius: 50%; }
   .toc .is-done .toc__dot { border-color: var(--green); background: var(--green); }
 
-  @media (max-width: 960px) { .lesson { grid-template-columns: 1fr; } .lesson__side { position: static; order: 2; } }
+  @media (max-width: 960px) { .lesson { grid-template-columns: minmax(0, 1fr); } .lesson__side { position: static; order: 2; } }
   @media (max-width: 560px) { .lesson__nav { grid-template-columns: 1fr; } }
 </style>

@@ -35,7 +35,9 @@
 .mt-card { margin: 0; padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
 .mt-card figcaption { margin-bottom: var(--space-3); font-weight: 600; }
 .mt-card figcaption span { color: var(--text-muted); font-weight: 400; }
-.mt-table-wrap { overflow-x: auto; }
+.mt-table-wrap { position: relative; overflow-x: auto; }
+/* Grid children may shrink below their content (wide tables scroll inside their wrapper) */
+.mt > * { min-width: 0; }
 .mt-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
 .mt-table th, .mt-table td { padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
 .mt-table thead th { color: var(--text-muted); font-weight: 600; }
