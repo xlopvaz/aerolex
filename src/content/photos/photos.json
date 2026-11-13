@@ -691,5 +691,152 @@
     "author": "Dan Nevill from Seattle, WA, United States",
     "licence": "CC BY 2.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "airbus-a340-1": {
+    "family": "airbus-a340",
+    "order": 1,
+    "file": "photos/hangar/airbus-a340-1.jpg",
+    "thumb": "photos/hangar/airbus-a340-1-640.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": {
+      "es": "Airbus A340-300 de South African Airways rodando en Múnich",
+      "en": "South African Airways Airbus A340-300 taxiing in Munich"
+    },
+    "caption": {
+      "es": "De perfil se parece mucho al A330-300, pero tiene cuatro motores bajo el ala en lugar de dos.",
+      "en": "From the side it looks very much like an A330-300, but it has four engines under the wing instead of two."
+    },
+    "commonsTitle": "File:South African Airways Airbus A340-313 ZS-SXE MUC 2015 06.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:South_African_Airways_Airbus_A340-313_ZS-SXE_MUC_2015_06.jpg",
+    "author": "Julian Herzog",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "airbus-a340-2": {
+    "family": "airbus-a340",
+    "order": 2,
+    "file": "photos/hangar/airbus-a340-2.jpg",
+    "thumb": "photos/hangar/airbus-a340-2-640.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": {
+      "es": "Airbus A340-300 de SWISS aterrizando en Zúrich",
+      "en": "SWISS Airbus A340-300 landing in Zurich"
+    },
+    "caption": {
+      "es": "Cuatro motores bajo un ala larga con winglets pequeños, y una pata de tren adicional en el centro del fuselaje, entre las dos principales.",
+      "en": "Four engines under a long wing with small winglets, and an extra landing gear leg in the centre of the fuselage, between the two main ones."
+    },
+    "commonsTitle": "File:2012-04-01 14-27-44 HB-JMH.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:2012-04-01_14-27-44_HB-JMH.jpg",
+    "author": "Hansueli Krapf",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "airbus-a340-3": {
+    "family": "airbus-a340",
+    "order": 3,
+    "file": "photos/hangar/airbus-a340-3.jpg",
+    "thumb": "photos/hangar/airbus-a340-3-640.jpg",
+    "width": 1280,
+    "height": 853,
+    "alt": {
+      "es": "Airbus A340-300 de Lufthansa aterrizando en Fráncfort",
+      "en": "Lufthansa Airbus A340-300 landing in Frankfurt"
+    },
+    "caption": {
+      "es": "De frente, las cuatro góndolas de motor bajo el ala son la pista más rápida para distinguirlo del A330.",
+      "en": "Seen from the front, the four engine nacelles under the wing are the quickest clue to tell it apart from the A330."
+    },
+    "commonsTitle": "File:Lufthansa A343 D-AIFA.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Lufthansa_A343_D-AIFA.jpg",
+    "author": "Lasse Fuss",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "boeing-747-1": {
+    "family": "boeing-747",
+    "order": 1,
+    "file": "photos/hangar/boeing-747-1.jpg",
+    "thumb": "photos/hangar/boeing-747-1-640.jpg",
+    "width": 1280,
+    "height": 571,
+    "alt": {
+      "es": "Boeing 747-8 Intercontinental de Lufthansa en aproximación",
+      "en": "Lufthansa Boeing 747-8 Intercontinental on approach"
+    },
+    "caption": {
+      "es": "La joroba delantera de la cubierta superior, cuatro motores y las puntas del ala inclinadas hacia atrás, sin winglets: así es el 747-8 de pasajeros.",
+      "en": "The hump of the upper deck at the front, four engines and swept-back wingtips with no winglets: that is the passenger 747-8."
+    },
+    "commonsTitle": "File:Lufthansa Boeing 747-8 D-ABYI IAD VA1.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Lufthansa_Boeing_747-8_D-ABYI_IAD_VA1.jpg",
+    "author": "Acroterion",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-747-2": {
+    "family": "boeing-747",
+    "order": 2,
+    "file": "photos/hangar/boeing-747-2.jpg",
+    "thumb": "photos/hangar/boeing-747-2-640.jpg",
+    "width": 1280,
+    "height": 768,
+    "alt": {
+      "es": "Boeing 747-8F de Cargolux tomando tierra en Anchorage",
+      "en": "Cargolux Boeing 747-8F touching down at Anchorage"
+    },
+    "caption": {
+      "es": "En el carguero la joroba de la cubierta superior es más corta y el fuselaje apenas tiene ventanas.",
+      "en": "On the freighter the upper-deck hump is shorter and the fuselage has hardly any windows."
+    },
+    "commonsTitle": "File:Cargolux 747-8F landing at PANC.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Cargolux_747-8F_landing_at_PANC.jpg",
+    "author": "Quintin Soloviev",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "boeing-747-3": {
+    "family": "boeing-747",
+    "order": 3,
+    "file": "photos/hangar/boeing-747-3.jpg",
+    "thumb": "photos/hangar/boeing-747-3-640.jpg",
+    "width": 1280,
+    "height": 1280,
+    "alt": {
+      "es": "Boeing 747-8F visto desde abajo",
+      "en": "Boeing 747-8F seen from below"
+    },
+    "caption": {
+      "es": "Desde abajo: cuatro motores bajo un ala muy en flecha y un fuselaje muy largo.",
+      "en": "From below: four engines under a sharply swept wing and a very long fuselage."
+    },
+    "commonsTitle": "File:Boeing 747-8F (6824578395).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Boeing_747-8F_(6824578395).jpg",
+    "author": "Artem Katranzhi from Bakashikha, Russia",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "boeing-747-4": {
+    "family": "boeing-747",
+    "order": 4,
+    "file": "photos/hangar/boeing-747-4.jpg",
+    "thumb": "photos/hangar/boeing-747-4-640.jpg",
+    "width": 1280,
+    "height": 960,
+    "alt": {
+      "es": "Tren de aterrizaje principal de un Boeing 747-8F",
+      "en": "Main landing gear of a Boeing 747-8F"
+    },
+    "caption": {
+      "es": "El tren principal del 747 tiene varias patas con cuatro ruedas cada una, bajo el ala y bajo el fuselaje.",
+      "en": "The 747's main landing gear has several legs with four wheels each, under the wing and under the fuselage."
+    },
+    "commonsTitle": "File:Main landing gear of 747-8F.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Main_landing_gear_of_747-8F.jpg",
+    "author": "Olivier Cleynen",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0"
   }
 }

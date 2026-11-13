@@ -1,0 +1,101 @@
+{
+  "manufacturer": "Boeing",
+  "family": {
+    "en": "Boeing 747",
+    "es": "Boeing 747"
+  },
+  "category": "commercial",
+  "order": 12,
+  "summary": {
+    "en": "Boeing's four-engined 'jumbo' with its characteristic hump: the upper deck at the front of the fuselage. The last version, the 747-8, came as the 747-8 Intercontinental passenger aircraft and the 747-8F freighter, with GEnx-2B engines and raked wingtips.",
+    "es": "El «jumbo» cuatrimotor de Boeing con su característica joroba: la cubierta superior delantera. La última versión, el 747-8, se fabricó como avión de pasajeros 747-8 Intercontinental y como carguero 747-8F, con motores GEnx-2B y puntas de ala inclinadas hacia atrás."
+  },
+  "history": {
+    "en": "The 747 first flew on 9 February 1969 and entered service with Pan Am on 22 January 1970. The 747-8 kept many key dimensions of the 747-400 so it could use existing airports, but its 68.4 m wingspan made it the first Boeing commercial airplane in ICAO code F. The 1,574th and last 747 was delivered to Atlas Air on 31 January 2023.",
+    "es": "El 747 voló por primera vez el 9 de febrero de 1969 y entró en servicio con Pan Am el 22 de enero de 1970. El 747-8 conservó muchas dimensiones clave del 747-400 para poder usar los aeropuertos existentes, pero su envergadura de 68,4 m lo convirtió en el primer avión comercial de Boeing de código F de la OACI. El 747 número 1574, el último, se entregó a Atlas Air el 31 de enero de 2023."
+  },
+  "facts": [
+    {
+      "en": "The 747-8 kept the 747-400's main gear span, engine span and tail height, but has a new, wider wing: 68.4 m.",
+      "es": "El 747-8 conservó la anchura del tren principal, la separación de los motores y la altura de la cola del 747-400, pero tiene un ala nueva y más ancha: 68,4 m."
+    },
+    {
+      "en": "The raised front of the fuselage is the upper deck, which on the 747-8 Intercontinental carries passengers: that hump makes the 747 easy to recognise from the side.",
+      "es": "La parte delantera elevada del fuselaje es la cubierta superior, que en el 747-8 Intercontinental lleva pasajeros: esa joroba hace que el 747 sea fácil de reconocer de perfil."
+    }
+  ],
+  "sources": [
+    "boeing-747-8-acap",
+    "boeing-747-8i-startup",
+    "boeing-aero-747-8-airports",
+    "boeing-747-8-design",
+    "globe-747-history",
+    "flightglobal-747-service"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  },
+  "variants": [
+    {
+      "id": "747-8",
+      "name": "747-8 Intercontinental",
+      "status": "out-of-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": 76.3,
+      "wingspanM": 68.4,
+      "heightM": 19.4,
+      "seatsTypical": null,
+      "seatsMax": null,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 447.7,
+      "engines": [
+        "GE GEnx-2B67"
+      ],
+      "note": null,
+      "sources": [
+        "boeing-747-8-acap",
+        "boeing-747-8i-startup"
+      ]
+    },
+    {
+      "id": "747-8f",
+      "name": "747-8F",
+      "status": "out-of-production",
+      "milestones": {
+        "firstFlight": null,
+        "certified": null,
+        "firstDelivery": null,
+        "entryIntoService": null,
+        "firstOperator": null
+      },
+      "lengthM": null,
+      "wingspanM": 68.4,
+      "heightM": null,
+      "seatsTypical": null,
+      "seatsMax": null,
+      "rangeNm": null,
+      "rangeKm": null,
+      "mtowT": 447.7,
+      "engines": [
+        "GE GEnx-2B67"
+      ],
+      "note": {
+        "en": "Freighter. Boeing's airport planning manual lists two maximum take-off weights: 442.3 t and 447.7 t.",
+        "es": "Carguero. El manual de planificación aeroportuaria de Boeing indica dos pesos máximos al despegue: 442,3 t y 447,7 t."
+      },
+      "sources": [
+        "boeing-747-8-acap",
+        "boeing-aero-747-8-airports"
+      ]
+    }
+  ]
+}
