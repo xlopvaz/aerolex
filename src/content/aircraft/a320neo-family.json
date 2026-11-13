@@ -3,7 +3,6 @@
   "family": { "en": "A320neo Family", "es": "Familia A320neo" },
   "category": "commercial",
   "order": 2,
-  "silhouette": { "body": "narrow", "engines": 2, "decks": 1 },
   "summary": {
     "en": "Airbus's single-aisle family for short- and medium-haul routes. The 'neo' (new engine option) generation pairs new-generation engines with Sharklet wingtips.",
     "es": "La familia de pasillo único de Airbus para rutas de corto y medio radio. La generación «neo» (new engine option, nueva opción de motor) combina motores de nueva generación con puntas de ala Sharklet."

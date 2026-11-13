@@ -1,0 +1,40 @@
+---
+/** One Hangar photo with its "what to look for" caption and the attribution its licence requires. */
+import { pick, t, withBase } from '../../i18n/index.js';
+
+interface Props { photo: any; lang: string; variant?: 'hero' | 'card' | 'gallery'; eager?: boolean }
+const { photo: p, lang, variant = 'gallery', eager = false } = Astro.props;
+const P = t(lang, 'hangar.photos');
+const src = withBase(p.file);
+const small = withBase(p.thumb);
+const sizes = variant === 'card' ? '(min-width: 1000px) 25vw, (min-width: 640px) 50vw, 100vw' : variant === 'hero' ? '(min-width: 1000px) 60vw, 100vw' : '(min-width: 900px) 50vw, 100vw';
+const licence = p.licence.toLowerCase() === 'public domain' ? P.publicDomain : p.licence;
+---
+{variant === 'card' ? (
+  <img class="ph ph--card" src={small} srcset={`${small} 640w, ${src} 1280w`} sizes={sizes} width={p.width} height={p.height} alt={pick(p.alt, lang)} loading="lazy" decoding="async" />
+) : (
+  <figure class:list={['ph', `ph--${variant}`]}>
+    <a href={src} class="ph__zoom"><img src={src} srcset={`${small} 640w, ${src} 1280w`} sizes={sizes} width={p.width} height={p.height} alt={pick(p.alt, lang)} loading={eager ? 'eager' : 'lazy'} decoding="async" /></a>
+    <figcaption>
+      <strong>{pick(p.alt, lang)}.</strong>
+      {variant !== 'card' && <span class="ph__look"><span class="ph__label">{P.lookFor}:</span> {pick(p.caption, lang)}</span>}
+      <span class="ph__credit">
+        <a href={p.pageUrl} rel="noopener">{P.credit.replace('{author}', p.author)}</a>{' · '}
+        {p.licenceUrl ? <a href={p.licenceUrl} rel="noopener license">{licence}</a> : <span>{licence}</span>} · {P.via}
+      </span>
+    </figcaption>
+  </figure>
+)}
+
+<style is:global>
+  .ph { margin: 0; }
+  .ph img { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); background: var(--surface-2); }
+  img.ph--card { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-lg); background: var(--surface-2); }
+  .ph__zoom { display: block; }
+  .ph__zoom:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 3px; border-radius: var(--radius-lg); }
+  .ph figcaption { display: grid; gap: var(--space-1); margin-top: var(--space-2); font-size: var(--text-sm); color: var(--text-muted); }
+  .ph figcaption strong { color: var(--text); font-weight: 600; }
+  .ph__look { color: var(--text); }
+  .ph__label { font-weight: 700; color: var(--cyan); }
+  .ph__credit { font-size: var(--text-xs); }
+</style>

@@ -133,8 +133,6 @@ const aircraft = defineCollection({
     family: bilingual,
     category: z.enum(['commercial', 'regional', 'business', 'general-aviation', 'military']),
     order: z.number(),
-    /** Generic, schematic illustration (src/lib/aircraft/silhouette.js): configuration only, not to scale. */
-    silhouette: z.object({ body: z.enum(['narrow', 'wide']), engines: z.union([z.literal(2), z.literal(4)]), decks: z.union([z.literal(1), z.literal(2)]) }),
     summary: bilingual,
     history: bilingual,
     facts: z.array(bilingual),
@@ -199,4 +197,25 @@ const weatherCodes = defineCollection({
   }),
 });
 
-export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft, timeline, weatherCodes };
+/** Hangar photos (free licences, Wikimedia Commons). Fetched by scripts/photos/fetch-commons.mjs in
+ *  GitHub Actions and reviewed by hand; captions say what to look at to recognise the aircraft. */
+const photos = defineCollection({
+  loader: file('./src/content/photos/photos.json'),
+  schema: z.object({
+    family: text,
+    order: z.number().int(),
+    file: text,
+    thumb: text,
+    width: z.number().int().positive(),
+    height: z.number().int().positive(),
+    alt: bilingual,
+    caption: bilingual,
+    commonsTitle: text,
+    pageUrl: z.string().url(),
+    author: text,
+    licence: text,
+    licenceUrl: z.string().url().nullable(),
+  }),
+});
+
+export const collections = { dictionary, sources, paths, courses, lessons, quizzes, aircraft, timeline, weatherCodes, photos };

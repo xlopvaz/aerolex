@@ -436,18 +436,15 @@
     "educational": "Educational tool. Figures are generic manufacturer data; actual aircraft vary by operator, configuration and engine. Not for operational use.",
     "statusLabel": "Status",
     "entryIntoService": "Entry into service",
-    "silhouette": {
-      "template": "Generic silhouette of a {engines} {body} airliner",
-      "templateTwoDecks": "Generic silhouette of a {engines} {body} airliner with two full decks",
-      "engines": {
-        "2": "twin-engined",
-        "4": "four-engined"
-      },
-      "body": {
-        "narrow": "single-aisle",
-        "wide": "twin-aisle"
-      },
-      "caption": "Generic illustration of the configuration: not to scale and not a photograph."
+    "photos": {
+      "title": "Learn to recognise it",
+      "lead": "Real photos chosen to show the details that set it apart from other aircraft: wingtips, engines, nose, tail and landing gear.",
+      "lookFor": "What to look for",
+      "credit": "Photo: {author}",
+      "via": "via Wikimedia Commons",
+      "publicDomain": "public domain",
+      "note": "Freely licensed photographs from Wikimedia Commons, resized. The airline and registration are those in each photo; the aircraft may wear different colours today.",
+      "count": "{n} photos"
     }
   },
   "metar": {

@@ -5,13 +5,15 @@ import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
 import Badge from '../components/ui/Badge.astro';
 import Button from '../components/ui/Button.astro';
 import Icon from '../components/ui/Icon.astro';
-import AircraftSilhouette from '../components/hangar/AircraftSilhouette.astro';
+import AircraftPhoto from '../components/hangar/AircraftPhoto.astro';
 import { childHref, href, useT } from '../i18n/index.js';
 
 interface Props { lang: string; routeKey: any }
 const { lang, routeKey } = Astro.props;
 const tr = useT(lang);
 const families = (await getCollection('aircraft')).sort((a, b) => a.data.order - b.data.order);
+const photos = (await getCollection('photos')).map((p) => ({ id: p.id, ...p.data }));
+const mainPhoto = (familyId: string) => photos.filter((p) => p.family === familyId).sort((a, b) => a.order - b.order)[0];
 ---
 <BaseLayout lang={lang} routeKey={routeKey} title={tr('hangar.metaTitle')} description={tr('hangar.metaDescription')}>
   <header class="page-header">
@@ -28,7 +30,7 @@ const families = (await getCollection('aircraft')).sort((a, b) => a.data.order -
     <div class="grid">
       {families.map((f) => (
         <a class="fam" href={childHref('hangar', f.id, lang)}>
-          <span class="fam__art"><AircraftSilhouette config={f.data.silhouette} lang={lang} /></span>
+          {mainPhoto(f.id) && <AircraftPhoto photo={mainPhoto(f.id)} lang={lang} variant="card" />}
           <span class="fam__maker mono">{f.data.manufacturer}</span>
           <span class="fam__name">{f.data.family[lang]}</span>
           <span class="fam__summary">{f.data.summary[lang]}</span>
@@ -39,7 +41,7 @@ const families = (await getCollection('aircraft')).sort((a, b) => a.data.order -
         </a>
       ))}
     </div>
-    <p class="hangar__note">{tr('hangar.dataNote')} {tr('hangar.silhouette.caption')}</p>
+    <p class="hangar__note">{tr('hangar.dataNote')} {tr('hangar.photos.note')}</p>
   </div>
 </BaseLayout>
 
@@ -53,7 +55,6 @@ const families = (await getCollection('aircraft')).sort((a, b) => a.data.order -
     transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
   }
   .fam:hover { transform: translateY(-2px); border-color: var(--border-strong); color: var(--text); }
-  .fam__art { display: block; padding: var(--space-2) var(--space-3); border-radius: var(--radius-lg); background: var(--surface-2); }
   .fam__maker { font-size: var(--text-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); }
   .fam__name { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; }
   .fam__summary { color: var(--text-muted); }

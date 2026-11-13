@@ -3,7 +3,6 @@
   "family": { "en": "A330 Family", "es": "Familia A330" },
   "category": "commercial",
   "order": 4,
-  "silhouette": { "body": "wide", "engines": 2, "decks": 1 },
   "summary": {
     "en": "Airbus's twin-aisle family for medium- and long-haul routes. The original A330 (now 'ceo') was followed by the A330neo generation (A330-800 and A330-900) with Rolls-Royce Trent 7000 engines and a larger wing.",
     "es": "La familia de dos pasillos de Airbus para rutas de medio y largo radio. Al A330 original (hoy «ceo») le siguió la generación A330neo (A330-800 y A330-900), con motores Rolls-Royce Trent 7000 y un ala de mayor envergadura."

@@ -1,0 +1,33 @@
+# Fetches aircraft photos from Wikimedia Commons (free licences only) for the Hangar.
+# Runs on pushes to photos/** branches. The result is pushed to a review branch
+# (review/<branch>) that is checked by hand before any photo is committed to the site.
+name: Commons photos
+
+on:
+  push:
+    branches: ['photos/**']
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch
+        run: |
+          MODE=$(cat scripts/photos/mode.txt 2>/dev/null || echo candidates)
+          if [ "$MODE" = "final" ]; then INPUT=src/content/photos/selection.json; else INPUT=scripts/photos/queries.json; fi
+          node scripts/photos/fetch-commons.mjs "$MODE" "$INPUT" out
+      - name: Push the result to a review branch
+        run: |
+          BR="review/${GITHUB_REF_NAME}"
+          cd out
+          git init -q -b "$BR"
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" add -A
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -q -m "Commons photos for review (${GITHUB_SHA})"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" "$BR"

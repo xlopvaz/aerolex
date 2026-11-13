@@ -3,7 +3,6 @@
   "family": { "en": "A220 Family", "es": "Familia A220" },
   "category": "commercial",
   "order": 1,
-  "silhouette": { "body": "narrow", "engines": 2, "decks": 1 },
   "summary": {
     "en": "Airbus's smallest single-aisle family, designed from a clean sheet for the 100–150 seat market, with Pratt & Whitney PW1500G geared turbofan engines.",
     "es": "La familia de pasillo único más pequeña de Airbus, diseñada desde cero para el mercado de 100 a 150 plazas, con motores turbofán con reductor Pratt & Whitney PW1500G."
