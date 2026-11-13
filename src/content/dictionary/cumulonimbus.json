@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Cumulonimbus",
+    "es": "Cumulonimbo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A heavy, dense cloud of great vertical extent, often with an anvil-shaped top, that produces thunderstorms, heavy showers, hail, severe turbulence and icing; written CB in METAR and TAF.",
+    "es": "Nube densa y potente de gran desarrollo vertical, a menudo con la cima en forma de yunque, que produce tormentas, chubascos fuertes, granizo, turbulencia fuerte y engelamiento; se escribe CB en el METAR y el TAF."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The thunderstorm cloud: pilots fly around it.",
+    "es": "La nube de tormenta: los pilotos la rodean."
+  },
+  "example": {
+    "en": "FEW030CB — a few cumulonimbus at 3,000 ft.",
+    "es": "FEW030CB: algunos cumulonimbos a 3000 ft."
+  },
+  "pronunciation": {
+    "en": "kyoo-myoo-loh-NIM-bus",
+    "es": "cu-mu-lo-nim-bo"
+  },
+  "synonyms": {
+    "en": [
+      "CB",
+      "thunderstorm cloud"
+    ],
+    "es": [
+      "CB",
+      "nube de tormenta"
+    ]
+  },
+  "related": [
+    "turbulence",
+    "icing",
+    "metar",
+    "wind-shear"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "wmo-306",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

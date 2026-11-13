@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Transponder",
+    "es": "Transpondedor"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An on-board radio that answers secondary surveillance radar interrogations with the aircraft's code (squawk), pressure altitude and, in Mode S, other data.",
+    "es": "Radio de a bordo que responde a las interrogaciones del radar secundario con el código de la aeronave (squawk), la altitud de presión y, en modo S, otros datos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The box that tells radar who you are and how high you fly.",
+    "es": "El equipo que dice al radar quién eres y a qué altitud vuelas."
+  },
+  "example": {
+    "en": "\"Squawk 4521\" — the pilot set 4521 on the transponder.",
+    "es": "«Squawk 4521»: el piloto puso 4521 en el transpondedor."
+  },
+  "pronunciation": {
+    "en": "tran-SPON-der",
+    "es": "trans-pon-de-dor"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "squawk",
+    "ssr",
+    "tcas",
+    "ads-b"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

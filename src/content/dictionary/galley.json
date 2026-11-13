@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Galley",
+    "es": "Galley (cocina de a bordo)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "aircraft"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The area of the cabin where food and drinks are stored and prepared and where the trolleys are stowed.",
+    "es": "Zona de la cabina donde se guardan y preparan las comidas y bebidas y se estiban los carros."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's kitchen.",
+    "es": "La cocina del avión."
+  },
+  "example": {
+    "en": "The service started from the forward galley.",
+    "es": "El servicio empezó desde el galley delantero."
+  },
+  "pronunciation": {
+    "en": "GAL-ee",
+    "es": "ga-li (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cabin-crew",
+    "psu"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "cfr-14-part-25"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

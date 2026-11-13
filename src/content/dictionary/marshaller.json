@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Marshaller",
+    "es": "Señalero"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A ground crew member who guides aircraft into or out of a stand using standard hand or wand signals.",
+    "es": "Miembro del personal de tierra que guía a las aeronaves al entrar en un puesto o al salir de él con señales normalizadas de manos o de bastones luminosos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The person with orange wands who guides the aircraft to its parking spot.",
+    "es": "La persona de las paletas naranjas que guía el avión hasta su plaza."
+  },
+  "example": {
+    "en": "The marshaller crossed the wands over his head: stop.",
+    "es": "El señalero cruzó los bastones sobre la cabeza: alto."
+  },
+  "pronunciation": {
+    "en": "MAR-shal-er",
+    "es": "mar-sha-ler (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "signalman"
+    ],
+    "es": [
+      "guía de aparcamiento"
+    ]
+  },
+  "related": [
+    "stand",
+    "apron",
+    "pushback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-2",
+    "iata-ahm"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

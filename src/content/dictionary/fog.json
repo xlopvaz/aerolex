@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Fog",
+    "es": "Niebla"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A suspension of very small water droplets in the air that reduces horizontal visibility at the surface to less than 1,000 m; coded FG in METAR.",
+    "es": "Suspensión de gotas de agua muy pequeñas en el aire que reduce la visibilidad horizontal en superficie a menos de 1000 m; se codifica FG en el METAR."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A cloud at ground level that hides everything beyond 1 km.",
+    "es": "Una nube a ras de suelo que lo oculta todo más allá de 1 km."
+  },
+  "example": {
+    "en": "Fog closed the airport until 10:00.",
+    "es": "La niebla cerró el aeropuerto hasta las 10:00."
+  },
+  "pronunciation": {
+    "en": "fog",
+    "es": "fog (en inglés), niebla"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "visibility",
+    "rvr",
+    "lvp",
+    "metar"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-3",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

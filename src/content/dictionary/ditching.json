@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Ditching",
+    "es": "Amerizaje forzoso"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "cabin-crew",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A planned emergency landing of a landplane on water.",
+    "es": "Aterrizaje de emergencia planificado de un avión terrestre sobre el agua."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "An emergency landing on water.",
+    "es": "Un aterrizaje de emergencia en el agua."
+  },
+  "example": {
+    "en": "The crew prepared the cabin for ditching.",
+    "es": "La tripulación preparó la cabina para un amerizaje."
+  },
+  "pronunciation": {
+    "en": "DITCH-ing",
+    "es": "di-ching (en inglés), amerizaje"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "brace-position",
+    "evacuation-slide",
+    "mayday"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "cfr-14-part-25",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

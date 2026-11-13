@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Icing",
+    "es": "Engelamiento"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety",
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The formation of ice on the aircraft structure, propellers, engine intakes or sensors when flying through visible moisture at temperatures near or below freezing; it degrades lift and increases drag and weight.",
+    "es": "Formación de hielo en la estructura, las hélices, las tomas de los motores o los sensores al volar a través de humedad visible con temperaturas cercanas o inferiores a 0 °C; reduce la sustentación y aumenta la resistencia y el peso."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Ice building up on the aircraft in flight, which is dangerous.",
+    "es": "Hielo que se acumula en el avión en vuelo, lo que es peligroso."
+  },
+  "example": {
+    "en": "Severe icing was reported between FL080 and FL140.",
+    "es": "Se notificó engelamiento fuerte entre FL080 y FL140."
+  },
+  "pronunciation": {
+    "en": "EYE-sing",
+    "es": "ai-sing (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "de-icing",
+    "sigmet",
+    "lift",
+    "drag"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

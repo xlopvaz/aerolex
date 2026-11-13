@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Autopilot",
+    "es": "Piloto automático"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aircraft-systems",
+    "cockpit"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A system that controls the aircraft's flight path automatically, following the heading, altitude, speed or route selected by the crew.",
+    "es": "Sistema que controla automáticamente la trayectoria de la aeronave siguiendo el rumbo, la altitud, la velocidad o la ruta que selecciona la tripulación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The system that flies the aircraft for the pilots, following their instructions.",
+    "es": "El sistema que vuela el avión por los pilotos siguiendo sus instrucciones."
+  },
+  "example": {
+    "en": "The captain engaged the autopilot at 1,000 ft.",
+    "es": "El comandante conectó el piloto automático a 1000 ft."
+  },
+  "pronunciation": {
+    "en": "AW-toh-pie-lot",
+    "es": "au-to-pai-lot (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "AP",
+      "autoflight"
+    ],
+    "es": [
+      "AP"
+    ]
+  },
+  "related": [
+    "fcu",
+    "mcp",
+    "fms"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-amt-airframe"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

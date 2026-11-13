@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Load sheet",
+    "es": "Hoja de carga"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "ground-handling",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The document that gives the final distribution of passengers, baggage, cargo and fuel on an aircraft, with its weights and centre of gravity, and which the commander checks and accepts before departure.",
+    "es": "Documento que recoge la distribución final de pasajeros, equipaje, carga y combustible en el avión, con sus pesos y centro de gravedad, y que el comandante revisa y acepta antes de la salida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The paper (or message) that says how much the aircraft weighs and where the load is.",
+    "es": "El papel (o mensaje) que dice cuánto pesa el avión y dónde va la carga."
+  },
+  "example": {
+    "en": "Departure was delayed waiting for the final load sheet.",
+    "es": "La salida se retrasó esperando la hoja de carga definitiva."
+  },
+  "pronunciation": {
+    "en": "LOHD-sheet",
+    "es": "lóud-shiit (en inglés), hoja de carga"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "loadsheet"
+    ]
+  },
+  "related": [
+    "weight",
+    "mtow",
+    "pax"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

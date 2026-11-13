@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Headwind",
+    "es": "Viento de cara"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Wind blowing against the direction of motion; on take-off and landing it reduces the ground speed and the runway length needed, and en route it lengthens the flight.",
+    "es": "Viento que sopla en contra del sentido de avance; en el despegue y el aterrizaje reduce la velocidad respecto al suelo y la pista necesaria, y en ruta alarga el vuelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Wind blowing in your face.",
+    "es": "El viento que te sopla de frente."
+  },
+  "example": {
+    "en": "With a 20-knot headwind, the landing roll was shorter.",
+    "es": "Con 20 nudos de viento de cara, la carrera de aterrizaje fue más corta."
+  },
+  "pronunciation": {
+    "en": "HED-wind",
+    "es": "jed-uind (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "viento en contra"
+    ]
+  },
+  "related": [
+    "tailwind",
+    "crosswind",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

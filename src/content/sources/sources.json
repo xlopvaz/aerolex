@@ -113,5 +113,6 @@
   "globe-747-history": {"title": "Boeing 747 jumbo jet history", "publisher": "The Globe and Mail", "kind": "web", "url": "https://arc-dev.theglobeandmail.com/business/article-boeing-747-jumbo-jet-history", "licence": "copyright"},
   "airbus-a340-600-history": {"title": "A340-600 — previous-generation aircraft", "publisher": "Airbus", "kind": "manufacturer", "url": "https://airbus.com/en/who-we-are/company-history/commercial-aircraft-history/previous-generation-aircraft/a340-family/a340-600", "licence": "copyright"},
   "boeing-757-acap": {"title": "757 Airplane Characteristics for Airport Planning (D6-58327, Rev H, December 2024)", "publisher": "Boeing", "kind": "manufacturer", "url": "https://boeing.com/content/dam/boeing/boeingdotcom/commercial/airports/acaps/757_Rev_H.pdf", "licence": "copyright"},
-  "icao-annex-15": {"title": "Annex 15 — Aeronautical Information Services", "publisher": "ICAO", "kind": "standard", "url": "https://store.icao.int/", "licence": "copyright"}
+  "icao-annex-15": {"title": "Annex 15 — Aeronautical Information Services", "publisher": "ICAO", "kind": "standard", "url": "https://store.icao.int/", "licence": "copyright"},
+  "icao-annex-8": {"title": "Annex 8 — Airworthiness of Aircraft", "publisher": "ICAO", "kind": "standard", "url": "https://store.icao.int/", "licence": "copyright"}
 }

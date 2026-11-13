@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Roll",
+    "es": "Alabeo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Rotation of the aircraft about its longitudinal axis, which raises one wing and lowers the other; it is controlled with the ailerons (and spoilers on many airliners).",
+    "es": "Giro de la aeronave alrededor de su eje longitudinal, que sube un ala y baja la otra; se controla con los alerones (y, en muchos aviones de línea, con los spoilers)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Tilting the wings to one side to start a turn.",
+    "es": "Inclinar las alas hacia un lado para empezar un viraje."
+  },
+  "example": {
+    "en": "The aircraft rolled into a 25-degree bank to the left.",
+    "es": "El avión alabeó hasta 25 grados de inclinación a la izquierda."
+  },
+  "pronunciation": {
+    "en": "roll",
+    "es": "rol (en inglés), alabeo"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "yaw",
+    "pitch",
+    "aileron",
+    "spoilers"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Passenger boarding bridge",
+    "es": "Pasarela de embarque"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "ground-handling"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An enclosed, movable bridge that connects the terminal gate to the aircraft door so that passengers can board and disembark without going down to the apron.",
+    "es": "Pasillo cerrado y móvil que une la puerta de embarque de la terminal con la puerta del avión para que los pasajeros embarquen y desembarquen sin bajar a la plataforma."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The tunnel you walk through from the terminal to the aircraft.",
+    "es": "El túnel por el que se pasa de la terminal al avión."
+  },
+  "example": {
+    "en": "The flight parked at a stand with a jet bridge.",
+    "es": "El vuelo estacionó en un puesto con pasarela."
+  },
+  "pronunciation": {
+    "en": "JET-brij",
+    "es": "yet brich (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "jet bridge",
+      "air bridge",
+      "jetway"
+    ],
+    "es": [
+      "finger",
+      "manga"
+    ]
+  },
+  "related": [
+    "stand",
+    "boarding",
+    "apron"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm",
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

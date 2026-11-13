@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Tailwind",
+    "es": "Viento de cola"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Wind blowing in the direction of motion; it increases the ground speed, lengthens the take-off and landing distances and shortens the en-route flight time.",
+    "es": "Viento que sopla en el mismo sentido de avance; aumenta la velocidad respecto al suelo, alarga las distancias de despegue y aterrizaje y acorta el tiempo de vuelo en ruta."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Wind pushing you from behind.",
+    "es": "El viento que te empuja desde atrás."
+  },
+  "example": {
+    "en": "The tailwind component exceeded the 10-knot limit for landing.",
+    "es": "La componente de viento de cola superó el límite de 10 nudos para aterrizar."
+  },
+  "pronunciation": {
+    "en": "TAYL-wind",
+    "es": "teil-uind (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "viento en popa"
+    ]
+  },
+  "related": [
+    "headwind",
+    "crosswind",
+    "jet-stream"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
