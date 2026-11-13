@@ -26,7 +26,8 @@
     "hangar": "Hangar",
     "compare": "Comparador de aeronaves",
     "tools": "Herramientas",
-    "metarDecoder": "Decodificador METAR"
+    "metarDecoder": "Decodificador METAR",
+    "tafDecoder": "Decodificador TAF"
   },
   "lang": {
     "switchTo": "Read in English",
@@ -637,6 +638,10 @@
       "metarDecoder": {
         "title": "Decodificador METAR",
         "text": "Pega un METAR o SPECI y obtén cada grupo explicado, con rosa de vientos, capas de nubes y avisos de formato."
+      },
+      "tafDecoder": {
+        "title": "Decodificador TAF",
+        "text": "Convierte un TAF en una línea temporal y consulta las condiciones previstas a cualquier hora."
       }
     }
   },
@@ -705,5 +710,70 @@
     "hangar": "Hangar",
     "dashboard": "Panel",
     "tools": "Lab"
+  },
+  "taf": {
+    "kinds": {
+      "validity": "Periodo de validez",
+      "changeFM": "Cambio (FM)",
+      "changeIndicator": "Grupo de cambio",
+      "changePeriod": "Periodo del cambio",
+      "extremeTemp": "Temperatura extrema"
+    },
+    "sections": {
+      "BASE": "Pronóstico de base",
+      "FM": "Desde el {from} (FM)",
+      "BECMG": "Cambio gradual: {from} → {to} (BECMG)",
+      "TEMPO": "Temporalmente: {from} → {to} (TEMPO)",
+      "PROB": "Probabilidad del {p} %: {from} → {to}",
+      "PROBTEMPO": "Probabilidad del {p} % a ratos: {from} → {to}"
+    },
+    "when": "día {day} {hh}:{mm}Z",
+    "explain": {
+      "issued": "Emitido el día {day} a las {hh}:{mm} UTC.",
+      "validity": "Válido desde el día {d1} a las {h1}:00 UTC hasta el día {d2} a las {h2}:00 UTC ({hours} horas).",
+      "changeFM": "FM: desde el día {day} a las {hh}:{mm} UTC empiezan condiciones completamente nuevas; todo lo anterior deja de aplicarse.",
+      "BECMG": "BECMG: los elementos que siguen cambian de forma gradual durante el periodo y se mantienen después.",
+      "TEMPO": "TEMPO: fluctuaciones temporales; cada una dura menos de una hora y, en total, menos de la mitad del periodo.",
+      "PROB": "PROB{p}: probabilidad del {p} % de que se den las condiciones que siguen.",
+      "PROBTEMPO": "PROB{p} TEMPO: probabilidad del {p} % de fluctuaciones temporales con las condiciones que siguen.",
+      "changePeriod": "Del día {d1} a las {h1}:00 al día {d2} a las {h2}:00 UTC.",
+      "TX": "Temperatura máxima prevista: {v} °C, el día {day} a las {hh}:00 UTC.",
+      "TN": "Temperatura mínima prevista: {v} °C, el día {day} a las {hh}:00 UTC.",
+      "type": "Pronóstico de aeródromo (TAF): las condiciones que se esperan en el aeródromo durante el periodo de validez."
+    },
+    "issues": {
+      "notTaf": "Parece un METAR o SPECI, no un TAF. Usa el decodificador METAR.",
+      "noValidity": "Falta el periodo de validez (DDHH/DDHH).",
+      "validityLength": "La validez es de {hours} horas; la OACI la fija entre 6 y 30 horas.",
+      "becmgTooLong": "El periodo de {group} supera las 4 horas, el máximo para un BECMG.",
+      "outsideValidity": "El cambio {group} cae fuera del periodo de validez.",
+      "periodReversed": "En {group}, el final del periodo es anterior al comienzo.",
+      "noChangePeriod": "Falta el periodo DDHH/DDHH después de {group}.",
+      "invalid": {
+        "prob": "En {group}: la OACI solo usa PROB30 y PROB40."
+      }
+    }
+  },
+  "tafTool": {
+    "metaTitle": "Decodificador TAF · AeroLex",
+    "metaDescription": "Decodifica un TAF grupo a grupo, con línea temporal y las condiciones previstas a cualquier hora, en español y en inglés.",
+    "title": "Decodificador TAF",
+    "lead": "Pega un TAF y conviértelo en una línea temporal: cada grupo explicado, los cambios FM, BECMG, TEMPO y PROB dibujados y las condiciones previstas a la hora que elijas.",
+    "inputLabel": "Mensaje TAF",
+    "placeholder": "TAF LEMD 121700Z 1218/1324 24012KT 9999 SCT030 BECMG 1220/1222 VRB03KT",
+    "timelineTitle": "Línea temporal",
+    "timelineAria": "Línea temporal del TAF: {periods}",
+    "atTitle": "¿Qué se espera a una hora concreta?",
+    "sliderLabel": "Hora (UTC)",
+    "atLabel": "Previsión para el día {day} a las {hh}:{mm} UTC",
+    "prevailing": "En general",
+    "becoming": "Cambio gradual en curso (BECMG)",
+    "temporary": "Temporalmente (TEMPO)",
+    "possible": "Posible: probabilidad del {p} %",
+    "possibleTempo": "Posible a ratos: probabilidad del {p} %",
+    "nothing": "Sin datos para este elemento",
+    "noTimeline": "La línea temporal necesita un periodo de validez válido.",
+    "learnMore": "¿Quieres aprender a leerlo tú? Prueba la Academia TAF.",
+    "noscript": "El decodificador necesita JavaScript. Debajo tienes un ejemplo ya descodificado."
   }
 }

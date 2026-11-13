@@ -26,7 +26,8 @@
     "hangar": "Hangar",
     "compare": "Aircraft comparator",
     "tools": "Tools",
-    "metarDecoder": "METAR decoder"
+    "metarDecoder": "METAR decoder",
+    "tafDecoder": "TAF decoder"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -637,6 +638,10 @@
       "metarDecoder": {
         "title": "METAR decoder",
         "text": "Paste a METAR or SPECI and get every group explained, with a wind rose, cloud layers and format warnings."
+      },
+      "tafDecoder": {
+        "title": "TAF decoder",
+        "text": "Turn a TAF into a timeline and check the conditions forecast at any hour."
       }
     }
   },
@@ -705,5 +710,70 @@
     "hangar": "Hangar",
     "dashboard": "Dashboard",
     "tools": "Lab"
+  },
+  "taf": {
+    "kinds": {
+      "validity": "Validity period",
+      "changeFM": "Change (FM)",
+      "changeIndicator": "Change group",
+      "changePeriod": "Change period",
+      "extremeTemp": "Extreme temperature"
+    },
+    "sections": {
+      "BASE": "Base forecast",
+      "FM": "From {from} (FM)",
+      "BECMG": "Becoming: {from} → {to} (BECMG)",
+      "TEMPO": "Temporarily: {from} → {to} (TEMPO)",
+      "PROB": "{p} % probability: {from} → {to}",
+      "PROBTEMPO": "{p} % probability, temporarily: {from} → {to}"
+    },
+    "when": "day {day} {hh}:{mm}Z",
+    "explain": {
+      "issued": "Issued on day {day} at {hh}:{mm} UTC.",
+      "validity": "Valid from day {d1} at {h1}:00 UTC to day {d2} at {h2}:00 UTC ({hours} hours).",
+      "changeFM": "FM: from day {day} at {hh}:{mm} UTC, completely new conditions begin; everything before stops applying.",
+      "BECMG": "BECMG: the elements that follow change gradually during the period and remain afterwards.",
+      "TEMPO": "TEMPO: temporary fluctuations; each lasts less than an hour and, in total, less than half the period.",
+      "PROB": "PROB{p}: a {p} % probability of the conditions that follow.",
+      "PROBTEMPO": "PROB{p} TEMPO: a {p} % probability of temporary fluctuations with the conditions that follow.",
+      "changePeriod": "From day {d1} at {h1}:00 to day {d2} at {h2}:00 UTC.",
+      "TX": "Forecast maximum temperature: {v} °C, on day {day} at {hh}:00 UTC.",
+      "TN": "Forecast minimum temperature: {v} °C, on day {day} at {hh}:00 UTC.",
+      "type": "Terminal aerodrome forecast (TAF): the conditions expected at the aerodrome during the validity period."
+    },
+    "issues": {
+      "notTaf": "This looks like a METAR or SPECI, not a TAF. Use the METAR decoder.",
+      "noValidity": "The validity period (DDHH/DDHH) is missing.",
+      "validityLength": "The validity is {hours} hours; ICAO sets it between 6 and 30 hours.",
+      "becmgTooLong": "The period in {group} is longer than 4 hours, the maximum for BECMG.",
+      "outsideValidity": "The change {group} falls outside the validity period.",
+      "periodReversed": "In {group}, the end of the period is before its start.",
+      "noChangePeriod": "The DDHH/DDHH period is missing after {group}.",
+      "invalid": {
+        "prob": "In {group}: ICAO only uses PROB30 and PROB40."
+      }
+    }
+  },
+  "tafTool": {
+    "metaTitle": "TAF decoder · AeroLex",
+    "metaDescription": "Decode a TAF group by group, with a timeline and the conditions forecast at any hour, in English and Spanish.",
+    "title": "TAF decoder",
+    "lead": "Paste a TAF and turn it into a timeline: every group explained, FM, BECMG, TEMPO and PROB changes drawn, and the conditions forecast at the hour you choose.",
+    "inputLabel": "TAF message",
+    "placeholder": "TAF LEMD 121700Z 1218/1324 24012KT 9999 SCT030 BECMG 1220/1222 VRB03KT",
+    "timelineTitle": "Timeline",
+    "timelineAria": "TAF timeline: {periods}",
+    "atTitle": "What is expected at a given time?",
+    "sliderLabel": "Time (UTC)",
+    "atLabel": "Forecast for day {day} at {hh}:{mm} UTC",
+    "prevailing": "Prevailing",
+    "becoming": "Gradual change in progress (BECMG)",
+    "temporary": "Temporarily (TEMPO)",
+    "possible": "Possible: {p} % probability",
+    "possibleTempo": "Possible at times: {p} % probability",
+    "nothing": "No data for this element",
+    "noTimeline": "The timeline needs a valid validity period.",
+    "learnMore": "Want to learn to read it yourself? Try the TAF Academy.",
+    "noscript": "The decoder needs JavaScript. Below is an example that has already been decoded."
   }
 }

@@ -1,0 +1,8 @@
+{
+  "note": "Didactic examples written for AeroLex (the same ones used in the TAF Academy). They are NOT real forecasts and must be labelled as didactic wherever they are shown.",
+  "examples": [
+    { "id": "madrid", "raw": "TAF LEMD 121700Z 1218/1324 24012KT 9999 SCT030 TX24/1315Z TN07/1306Z BECMG 1220/1222 VRB03KT TEMPO 1303/1308 3000 BR BKN008 BECMG 1310/1312 27015KT", "label": { "es": "Madrid: neblina temporal", "en": "Madrid: temporary mist" } },
+    { "id": "santiago", "raw": "TAF LEST 130500Z 1306/1406 21015KT 6000 -RA BKN012 TEMPO 1306/1312 3000 RA BKN006 PROB30 TEMPO 1312/1316 TSRA BKN015CB BECMG 1316/1318 30010KT 9999 NSW SCT025", "label": { "es": "Santiago: lluvia y posible tormenta", "en": "Santiago: rain and possible thunderstorm" } },
+    { "id": "jfk", "raw": "TAF KJFK 131130Z 1312/1418 31012KT P6SM FEW050 FM132200 VRB04KT P6SM SKC FM140600 18008KT 5SM BR OVC015", "label": { "es": "Nueva York-JFK: formato de EE. UU.", "en": "New York JFK: US format" } }
+  ]
+}

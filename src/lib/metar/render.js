@@ -14,6 +14,7 @@ const TONE = {
   wind: 'cyan', windVariation: 'cyan', cavok: 'green', visibility: 'green', minVisibility: 'green', rvr: 'green',
   weather: 'magenta', recent: 'magenta', clouds: 'amber', temperature: 'primary', pressure: 'primary',
   windShear: 'red', trend: 'muted', trendTime: 'muted', remarks: 'muted', unknown: 'red',
+  validity: 'primary', extremeTemp: 'primary',
 };
 
 /** The original message with each group highlighted. */

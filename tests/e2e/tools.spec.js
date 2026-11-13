@@ -4,7 +4,7 @@ test.describe('tools', () => {
   test('the tools hub only lists tools that exist', async ({ page }) => {
     await page.goto('es/herramientas/');
     await expect(page.locator('h1')).toHaveText('Laboratorio de herramientas');
-    await expect(page.locator('[data-tool]')).toHaveCount(1);
+    await expect(page.locator('[data-tool]')).toHaveCount(2);
     await page.locator('[data-tool="metarDecoder"]').click();
     await expect(page).toHaveURL(/\/es\/herramientas\/decodificador-metar\/$/);
   });
@@ -39,5 +39,26 @@ test.describe('tools', () => {
     await expect(page.locator('[data-out="table"]')).toContainText('Lluvia (intensidad ligera).');
     await page.locator('[data-clear]').click();
     await expect(page.locator('[data-out="issues"]')).toContainText('Escribe o pega un mensaje METAR o SPECI.');
+  });
+});
+
+test.describe('TAF decoder', () => {
+  test('timeline, conditions at a given hour and group table', async ({ page }) => {
+    await page.goto('en/tools/taf-decoder/');
+    await expect(page.locator('.tf-svg')).toBeVisible();
+    await expect(page.locator('[data-out="table"]')).toContainText('Valid from day 12 at 18:00 UTC to day 13 at 24:00 UTC (30 hours).');
+    const slider = page.locator('[data-hour]');
+    await slider.fill('12');
+    await expect(page.locator('[data-out="at"]')).toContainText('Forecast for day 13 at 06:00 UTC');
+    await expect(page.locator('[data-out="at"]')).toContainText('Temporarily (TEMPO)');
+    await page.locator('[data-example]', { hasText: 'New York' }).click();
+    await expect(page.locator('[data-out="table"]')).toContainText('FM: from day 13 at 22:00 UTC');
+  });
+
+  test('flags a METAR pasted by mistake (Spanish)', async ({ page }) => {
+    await page.goto('es/herramientas/decodificador-taf/');
+    await page.locator('[data-input]').fill('METAR LEMD 131030Z 24012KT 9999 18/09 Q1017');
+    await expect(page.locator('[data-out="issues"]')).toContainText('Parece un METAR o SPECI, no un TAF.');
+    await expect(page.locator('[data-source]')).toHaveText('Mensaje introducido por ti');
   });
 });

@@ -113,7 +113,8 @@ El contenido se sigue ampliando de forma continua después de esta fase.
 
 **Progreso**
 - [x] **Bloque 1 — Decodificador METAR (13/11/2026):** librería pura `src/lib/metar/` (tokenizador con posiciones, parsers por grupo, máquina de estados con avisos de orden, grupos desconocidos o imposibles señalados sin adivinar, formatos OACI y EE. UU., tendencias y RMK), explicaciones ES/EN desde `src/i18n`, rosa de vientos, perfil de nubes y techo, enlace compartible (`?m=`), ejemplos didácticos en `src/content/samples/metar.json`, 37 tests unitarios y e2e. Nueva sección «Herramientas» que solo lista las herramientas que existen.
-- [ ] Decodificador TAF · Práctica METAR/TAF · Conversor · METAR/TAF en directo · Buscador IATA/OACI · Fraseología ATC · Identificación de aeronaves · Flashcards · Glosario y cronología.
+- [x] **Bloque 2 — Decodificador TAF (13/11/2026):** `src/lib/taf/` (cabecera, validez, FM/BECMG/TEMPO/PROB30-40, TX/TN, NSW/NSC, cambio de mes), línea temporal SVG, «¿qué se espera a las HH?» aplicando las reglas de FM, BECMG y TEMPO/PROB, avisos (validez fuera de 6–30 h, BECMG de más de 4 h, cambios fuera de la validez, PROB distinto de 30/40), ejemplos didácticos de la Academia TAF, 14 tests unitarios y e2e.
+- [ ] Práctica METAR/TAF · Conversor · METAR/TAF en directo · Buscador IATA/OACI · Fraseología ATC · Identificación de aeronaves · Flashcards · Glosario y cronología.
 
 **Hecho cuando:** cada herramienta tiene tests unitarios de sus cálculos o de su parseo, el aviso "educativo, no operacional" y funciona sin conexión cuando es posible.
 

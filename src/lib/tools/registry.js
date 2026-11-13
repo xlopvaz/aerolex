@@ -4,4 +4,5 @@
  */
 export const TOOLS = [
   { key: 'metarDecoder', icon: 'cloud-sun' },
+  { key: 'tafDecoder', icon: 'calendar-clock' },
 ];
