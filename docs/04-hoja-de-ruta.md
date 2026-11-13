@@ -62,6 +62,7 @@ Cada fase se entrega mediante *pull requests* pequeños y revisables. Las cifras
 - [x] Hito «entrada en servicio» y filas vacías ocultas en las tablas de comparación.
 - [x] Familias A220 (A220-100 y -300) y A330 (A330-200, -300, -800 y -900) con las cifras de los Facts & Figures de Airbus de enero y febrero de 2026 (13/11/2026). Donde la fuente no da un valor claro (plazas máximas pendientes de certificación o ilegibles, fechas solo con el año) se deja vacío y se explica en la nota.
 - [x] A380 con las cifras de los Facts & Figures de Airbus de enero y febrero de 2022 (fin de producción) y los hitos de entrega y entrada en servicio (13/11/2026).
+- [x] Ilustraciones genéricas en el Hangar (13/11/2026): silueta lateral esquemática y original de cada familia (`src/lib/aircraft/silhouette.js`), generada solo con su configuración (pasillo único o dos pasillos, número de motores y de cubiertas), sin librea ni marcas, con texto alternativo ES/EN y el aviso «no está a escala y no es una fotografía». Las fotos reales con licencia libre siguen pendientes.
 - [ ] Resto de familias del brief (A340, 747, 757, 767, 777, E-Jets, ATR 42/72) y fotografías con licencia libre.
 
 **Bloque 5 — Introducción a la aviación ✅ (13/11/2026)**

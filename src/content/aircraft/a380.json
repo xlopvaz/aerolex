@@ -3,6 +3,7 @@
   "family": { "en": "A380", "es": "A380" },
   "category": "commercial",
   "order": 7,
+  "silhouette": { "body": "wide", "engines": 4, "decks": 2 },
   "summary": {
     "en": "Airbus's full double-deck airliner: a four-engined very large aircraft for high-density long-haul routes, powered by Rolls-Royce Trent 900 or Engine Alliance GP7200 engines. Production ended in 2021.",
     "es": "El avión de pasajeros de Airbus con dos cubiertas completas: un cuatrimotor muy grande para rutas de largo radio con mucha demanda, con motores Rolls-Royce Trent 900 o Engine Alliance GP7200. Su producción terminó en 2021."

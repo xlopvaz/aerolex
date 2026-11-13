@@ -133,6 +133,8 @@ const aircraft = defineCollection({
     family: bilingual,
     category: z.enum(['commercial', 'regional', 'business', 'general-aviation', 'military']),
     order: z.number(),
+    /** Generic, schematic illustration (src/lib/aircraft/silhouette.js): configuration only, not to scale. */
+    silhouette: z.object({ body: z.enum(['narrow', 'wide']), engines: z.union([z.literal(2), z.literal(4)]), decks: z.union([z.literal(1), z.literal(2)]) }),
     summary: bilingual,
     history: bilingual,
     facts: z.array(bilingual),
