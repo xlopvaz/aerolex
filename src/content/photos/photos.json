@@ -607,5 +607,89 @@
     "author": "Matti Blume",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-777x-1": {
+    "family": "boeing-777x",
+    "order": 1,
+    "file": "photos/hangar/boeing-777x-1.jpg",
+    "thumb": "photos/hangar/boeing-777x-1-640.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": {
+      "es": "Boeing 777-9 de ensayos aterrizando en Boeing Field (Seattle)",
+      "en": "Boeing 777-9 test aircraft landing at Boeing Field (Seattle)"
+    },
+    "caption": {
+      "es": "El 777-9 es larguísimo: cuenta las puertas y las ventanas. Lleva dos motores enormes bajo un ala muy larga y fina, y en la deriva un gran «9».",
+      "en": "The 777-9 is extremely long: count the doors and windows. It has two huge engines under a very long, slender wing, and a large '9' on the fin."
+    },
+    "commonsTitle": "File:N779XW BFI 22.03.2022 (54290535682).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:N779XW_BFI_22.03.2022_(54290535682).jpg",
+    "author": "Michael Steffen from Schweiz",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "boeing-777x-2": {
+    "family": "boeing-777x",
+    "order": 2,
+    "file": "photos/hangar/boeing-777x-2.jpg",
+    "thumb": "photos/hangar/boeing-777x-2-640.jpg",
+    "width": 1280,
+    "height": 960,
+    "alt": {
+      "es": "Boeing 777X en vuelo en el Dubai Airshow 2021",
+      "en": "Boeing 777X flying at the 2021 Dubai Airshow"
+    },
+    "caption": {
+      "es": "Desde abajo: un ala muy larga y estrecha, sin winglets, dos motores muy grandes y un fuselaje muy largo para un bimotor.",
+      "en": "From below: a very long, narrow wing with no winglets, two very large engines and a very long fuselage for a twin-engined aircraft."
+    },
+    "commonsTitle": "File:Boeing 777X at Dubai Airshow 2021 3.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Boeing_777X_at_Dubai_Airshow_2021_3.jpg",
+    "author": "Mztourist",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "boeing-777x-3": {
+    "family": "boeing-777x",
+    "order": 3,
+    "file": "photos/hangar/boeing-777x-3.jpg",
+    "thumb": "photos/hangar/boeing-777x-3-640.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": {
+      "es": "Punta del ala plegada de un Boeing 777X",
+      "en": "Folded wingtip of a Boeing 777X"
+    },
+    "caption": {
+      "es": "La punta del ala plegada hacia arriba, como queda en tierra para ocupar menos sitio en el aeropuerto. Es la seña más clara del 777X.",
+      "en": "The wingtip folded upwards, as it stays on the ground to take up less room at the airport. It is the clearest sign of the 777X."
+    },
+    "commonsTitle": "File:777X Roll-Out FoldingWingtip.jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:777X_Roll-Out_FoldingWingtip.jpg",
+    "author": "Dan Nevill from Seattle, WA, United States",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "boeing-777x-4": {
+    "family": "boeing-777x",
+    "order": 4,
+    "file": "photos/hangar/boeing-777x-4.jpg",
+    "thumb": "photos/hangar/boeing-777x-4-640.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": {
+      "es": "Motor GE9X de un Boeing 777-9 en su presentación",
+      "en": "GE9X engine of a Boeing 777-9 at its roll-out"
+    },
+    "caption": {
+      "es": "Compara el tamaño de la entrada del motor GE9X con el de las personas de abajo: es enorme.",
+      "en": "Compare the size of the GE9X engine intake with the people below: it is huge."
+    },
+    "commonsTitle": "File:777X Roll-Out (46649681164) (blurred).jpg",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:777X_Roll-Out_(46649681164)_(blurred).jpg",
+    "author": "Dan Nevill from Seattle, WA, United States",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0"
   }
 }
