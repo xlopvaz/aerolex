@@ -1,0 +1,30 @@
+{
+  "path": "pilot-training",
+  "order": 1,
+  "level": "intermediate",
+  "title": { "en": "Pilot Academy · Module 1: Principles of Flight", "es": "Academia de pilotos · Módulo 1: Principios de vuelo" },
+  "description": {
+    "en": "The theory behind every flight: the standard atmosphere, the lift equation and airspeeds, the types of drag, stability and the CG, and load factor in turns. ATPL-style questions in every lesson.",
+    "es": "La teoría que hay detrás de cada vuelo: la atmósfera tipo, la ecuación de la sustentación y las velocidades, los tipos de resistencia, la estabilidad y el centro de gravedad, y el factor de carga en los virajes. Preguntas tipo ATPL en cada lección."
+  },
+  "objectives": {
+    "en": [
+      "Use the ISA values and explain density altitude",
+      "Apply the lift equation and tell IAS, CAS, TAS and GS apart",
+      "Distinguish parasite and induced drag and find the speed of minimum drag",
+      "Explain static and dynamic stability and the effect of CG position",
+      "Calculate load factor in a turn and its effect on stall speed"
+    ],
+    "es": [
+      "Usar los valores de la ISA y explicar la altitud de densidad",
+      "Aplicar la ecuación de la sustentación y distinguir IAS, CAS, TAS y GS",
+      "Diferenciar la resistencia parásita y la inducida y localizar la velocidad de resistencia mínima",
+      "Explicar la estabilidad estática y dinámica y el efecto de la posición del centro de gravedad",
+      "Calcular el factor de carga en un viraje y su efecto en la velocidad de pérdida"
+    ]
+  },
+  "lessons": ["atmosphere", "lift-and-airspeed", "drag", "stability", "turns-and-load-factor"],
+  "finalQuiz": null,
+  "sources": ["icao-doc-7488", "faa-phak"],
+  "review": { "status": "draft", "reviewedBy": null, "date": null }
+}

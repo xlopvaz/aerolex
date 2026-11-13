@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál es la temperatura ISA a 8000 ft?",
+        "en": "What is the ISA temperature at 8,000 ft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "−1 °C",
+            "en": "−1 °C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "7 °C",
+            "en": "7 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "−9 °C",
+            "en": "−9 °C"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15 °C",
+            "en": "15 °C"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "15 °C − 8 × 2 °C = −1 °C (aproximadamente, con el gradiente de 1,98 °C por 1000 ft).",
+        "en": "15 °C − 8 × 2 °C = −1 °C (approximately, using the 1.98 °C per 1,000 ft lapse rate)."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En la ISA, la temperatura en la tropopausa es…",
+        "en": "In ISA, the temperature at the tropopause is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "−44,5 °C",
+            "en": "−44.5 °C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "−56,5 °C",
+            "en": "−56.5 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "−65 °C",
+            "en": "−65 °C"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "0 °C",
+            "en": "0 °C"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La tropopausa ISA está a 11 km con −56,5 °C, que se mantienen hasta 20 km.",
+        "en": "The ISA tropopause is at 11 km with −56.5 °C, constant up to 20 km."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué combinación da la mayor altitud de densidad?",
+        "en": "Which combination gives the highest density altitude?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aeródromo bajo, frío y seco",
+            "en": "Low, cold, dry airfield"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aeródromo alto, frío y seco",
+            "en": "High, cold, dry airfield"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aeródromo alto, caluroso y húmedo",
+            "en": "High, hot, humid airfield"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aeródromo bajo, caluroso y seco",
+            "en": "Low, hot, dry airfield"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La densidad baja con la altitud, la temperatura y la humedad: el caso alto, caluroso y húmedo es el peor.",
+        "en": "Density falls with altitude, temperature and humidity: high, hot and humid is the worst case."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con una altitud de densidad alta, ¿qué ocurre en el despegue?",
+        "en": "With a high density altitude, what happens on take-off?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La carrera de despegue es más corta",
+            "en": "The take-off run is shorter"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La TAS de despegue es mayor y la carrera, más larga",
+            "en": "Take-off TAS is higher and the run is longer"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La IAS de despegue es mucho mayor",
+            "en": "Take-off IAS is much higher"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No cambia nada",
+            "en": "Nothing changes"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El ala necesita la misma IAS, pero eso supone más TAS y más velocidad respecto al suelo, con menos rendimiento del motor.",
+        "en": "The wing needs the same IAS, but that means more TAS and ground speed, with less engine performance."
+      }
+    }
+  ]
+}

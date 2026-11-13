@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "load factor",
+    "es": "factor de carga"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The ratio of the total load supported by the wings to the aircraft's weight, expressed in \"g\". In a level, coordinated turn it equals 1 divided by the cosine of the bank angle: 2 g at 60° of bank.",
+    "es": "Relación entre la carga total que soportan las alas y el peso de la aeronave, expresada en «g». En un viraje nivelado y coordinado es 1 dividido entre el coseno del ángulo de alabeo: 2 g con 60° de alabeo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How many times heavier the aircraft \"feels\" than normal, for example in a tight turn.",
+    "es": "Cuántas veces más pesado «se siente» el avión de lo normal, por ejemplo en un viraje cerrado."
+  },
+  "example": {
+    "en": "\"In a 60° level turn the load factor is 2 g and the stall speed rises by about 41 %.\"",
+    "es": "«En un viraje nivelado de 60° el factor de carga es de 2 g y la velocidad de pérdida sube un 41 % aproximadamente.»"
+  },
+  "pronunciation": {
+    "en": "/ləʊd ˈfæktə/",
+    "es": "factor de carga"
+  },
+  "synonyms": {
+    "en": [
+      "g-load"
+    ],
+    "es": [
+      "carga g"
+    ]
+  },
+  "related": [
+    "stall",
+    "lift",
+    "weight"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

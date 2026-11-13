@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "aspect ratio",
+    "es": "alargamiento"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics",
+    "aircraft"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The ratio of a wing's span to its mean chord, equal to the span squared divided by the wing area. A high aspect ratio (long, slender wing) produces less induced drag.",
+    "es": "Relación entre la envergadura de un ala y su cuerda media, igual a la envergadura al cuadrado dividida entre la superficie alar. Un alargamiento alto (ala larga y estrecha) produce menos resistencia inducida."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How long and slender a wing is. Gliders have very high aspect ratios.",
+    "es": "Lo larga y estrecha que es un ala. Los planeadores tienen alargamientos muy altos."
+  },
+  "example": {
+    "en": "\"A glider's high aspect ratio gives it an excellent glide ratio.\"",
+    "es": "«El gran alargamiento de un planeador le da una excelente relación de planeo.»"
+  },
+  "pronunciation": {
+    "en": "/ˈæspɛkt ˈreɪʃiəʊ/",
+    "es": "alargamiento"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "relación de aspecto"
+    ]
+  },
+  "related": [
+    "wing",
+    "induced-drag",
+    "winglet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

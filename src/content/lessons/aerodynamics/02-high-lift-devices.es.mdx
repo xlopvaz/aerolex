@@ -1,0 +1,52 @@
+---
+lesson: high-lift-devices
+course: aerodynamics
+lang: es
+title: "Dispositivos hipersustentadores"
+summary: "Tipos de flaps y de dispositivos de borde de ataque, cómo cambian la curva de sustentación y por qué se usan en despegue y aterrizaje."
+objectives:
+  - "Comparar los tipos de flaps de borde de salida"
+  - "Describir slats, ranuras y flaps Krueger"
+  - "Explicar el efecto de cada dispositivo en el CL máximo y en el ángulo de pérdida"
+minutes: 10
+terms: [flaps, slats, spoilers, stall, angle-of-attack]
+quiz: aerodynamics-02
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Por qué hacen falta
+
+Un ala diseñada para volar rápido y con poca resistencia en crucero produce poca sustentación a baja velocidad. Para despegar y aterrizar en pistas de longitud razonable, el ala necesita **cambiar de forma**: aumentar su curvatura y, a veces, su superficie. Eso hacen los dispositivos hipersustentadores.
+
+## Flaps de borde de salida
+
+| Tipo | Cómo funciona | Característica |
+|---|---|---|
+| **Sencillo** (*plain*) | La parte trasera del ala gira hacia abajo | Aumenta la curvatura; simple, pero con bastante resistencia |
+| **De intradós** (*split*) | Baja solo una placa de la parte inferior | Mucha resistencia por la estela turbulenta que deja detrás |
+| **Ranurado** (*slotted*) | Al bajar, deja una ranura por la que pasa aire de alta presión hacia el extradós | Retrasa el desprendimiento: más sustentación con menos resistencia |
+| **Fowler** | Se desplaza hacia atrás y luego baja, a menudo con una o varias ranuras | Aumenta la curvatura **y** la superficie alar: el más eficaz, habitual en aviones de línea |
+
+Los <Term id="flaps" /> aumentan el C<sub>L</sub> máximo, lo que **reduce la velocidad de pérdida**. A cambio, aumentan la resistencia y, en general, la <Term id="stall">pérdida</Term> se produce con un <Term id="angle-of-attack" /> algo **menor** que con el ala limpia. Las primeras posiciones de flap aportan sobre todo sustentación; las últimas, sobre todo resistencia, útil para aproximaciones más pronunciadas.
+
+## Dispositivos de borde de ataque
+
+- **Ranuras fijas** (*slots*): conductos en el borde de ataque que llevan aire de la parte inferior a la superior.
+- <Term id="slats">Slats</Term>: secciones móviles del borde de ataque que se adelantan y abren una ranura.
+- **Flaps Krueger**: paneles que se despliegan desde la parte inferior del borde de ataque.
+
+Todos ellos dan energía a la capa límite del extradós y **retrasan el desprendimiento**, de modo que el ala puede alcanzar un **ángulo de ataque crítico mayor** antes de entrar en pérdida.
+
+<MetarBreakdown kind="summary" parts={[
+  ["Flaps de borde de salida", "Más CL máx · menor velocidad de pérdida · más resistencia · el ala entra en pérdida con algo menos de ángulo de ataque"],
+  ["Slats y ranuras", "Más CL máx · ángulo de ataque crítico mayor · poca resistencia añadida"],
+  ["Spoilers", "Lo contrario: menos sustentación y más resistencia"]
+]} caption="Efecto de cada dispositivo sobre la sustentación." />
+
+Los <Term id="spoilers" /> no son hipersustentadores, pero completan el sistema: destruyen sustentación cuando se quiere descender, frenar o pegar el avión a la pista tras el aterrizaje.
+
+<Callout type="caution" label="Velocidades máximas">
+Cada posición de flap tiene una velocidad máxima de extensión (V<sub>FE</sub>), porque las cargas sobre los dispositivos crecen con la velocidad. Los valores de cada avión están en su manual.
+</Callout>

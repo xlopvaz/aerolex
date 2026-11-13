@@ -73,6 +73,8 @@ const courses = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/courses' }),
   schema: z.object({
     path: text,
+    /** Display order inside its path (lower first); ties are broken by id. */
+    order: z.number().int().default(0),
     level: z.enum(LEVELS),
     title: bilingual,
     description: bilingual,

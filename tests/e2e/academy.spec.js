@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('academy', () => {
   test('academy lists the METAR course and only paths with content', async ({ page }) => {
     await page.goto('es/academia/');
-    await expect(page.locator('.path')).toHaveCount(2);
+    await expect(page.locator('.path')).toHaveCount(3);
     await page.locator('.course-card', { hasText: 'METAR' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/metar-speci\/$/);
     await expect(page.locator('.lesson-list li')).toHaveCount(9);
@@ -59,7 +59,7 @@ test.describe('academy', () => {
 test.describe('TAF academy', () => {
   test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
     await page.goto('en/academy/');
-    await expect(page.locator('.course-card')).toHaveCount(3);
+    await expect(page.locator('.course-card')).toHaveCount(5);
     await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
     await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
@@ -101,6 +101,23 @@ test.describe('Aviation Fundamentals', () => {
     const quiz = page.locator('[data-quiz="aviation-fundamentals-final"]');
     await expect(quiz.locator('.quiz__q')).toHaveCount(8);
     await quiz.locator('[data-q="q8"] [data-opt="c"]').click();
+    await expect(quiz.locator('[data-quiz-score]')).toHaveText('1/8 correct');
+  });
+});
+
+test.describe('Pilot Academy', () => {
+  test('lists modules 1 and 2 in order and opens an ATPL-style quiz', async ({ page }) => {
+    await page.goto('es/academia/');
+    const path = page.locator('.path', { hasText: 'Formación de pilotos' });
+    await expect(path.locator('.course-card')).toHaveCount(2);
+    await expect(path.locator('.course-card').first()).toContainText('Módulo 1');
+    await path.locator('.course-card', { hasText: 'Módulo 2' }).click();
+    await expect(page).toHaveURL(/\/es\/academia\/aerodynamics\/$/);
+    await expect(page.locator('.lesson-list li')).toHaveCount(5);
+    await page.goto('en/academy/principles-of-flight/turns-and-load-factor/');
+    const quiz = page.locator('[data-quiz="principles-of-flight-final"]');
+    await expect(quiz.locator('.quiz__q')).toHaveCount(8);
+    await quiz.locator('[data-q="q5"] [data-opt="b"]').click();
     await expect(quiz.locator('[data-quiz-score]')).toHaveText('1/8 correct');
   });
 });

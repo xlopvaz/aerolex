@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Un ala de 30 m de envergadura y 90 m² de superficie tiene un alargamiento de…",
+        "en": "A wing with a 30 m span and 90 m² area has an aspect ratio of…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10",
+            "en": "10"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "30",
+            "en": "30"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "0,33",
+            "en": "0.33"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Alargamiento = envergadura² / superficie = 900 / 90 = 10.",
+        "en": "Aspect ratio = span² / area = 900 / 90 = 10."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué consigue la torsión del ala (washout)?",
+        "en": "What does washout achieve?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que la punta entre en pérdida antes que la raíz",
+            "en": "Makes the tip stall before the root"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que la raíz entre en pérdida antes que la punta",
+            "en": "Makes the root stall before the tip"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aumentar el Mach crítico",
+            "en": "Raises critical Mach"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Reducir la resistencia parásita",
+            "en": "Reduces parasite drag"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Con menos incidencia en la punta, esta trabaja con menos ángulo de ataque y los alerones siguen siendo eficaces.",
+        "en": "With less incidence at the tip, it works at a lower angle of attack and the ailerons stay effective."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un ala de gran alargamiento produce…",
+        "en": "A high aspect ratio wing produces…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Más resistencia inducida",
+            "en": "More induced drag"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Menos resistencia inducida",
+            "en": "Less induced drag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Más resistencia de onda",
+            "en": "More wave drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Menos sustentación siempre",
+            "en": "Always less lift"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso los planeadores y los reactores de largo radio tienen alas largas y estrechas.",
+        "en": "That is why gliders and long-haul jets have long, slender wings."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué característica aporta estabilidad lateral además de retrasar la compresibilidad?",
+        "en": "Which feature adds lateral stability as well as delaying compressibility?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La flecha",
+            "en": "Sweepback"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El estrechamiento",
+            "en": "Taper"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La torsión",
+            "en": "Washout"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El alargamiento bajo",
+            "en": "Low aspect ratio"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La flecha sube el Mach crítico y, además, tiene un efecto estabilizador en alabeo.",
+        "en": "Sweep raises critical Mach and also has a stabilising effect in roll."
+      }
+    }
+  ]
+}

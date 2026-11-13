@@ -1,0 +1,65 @@
+---
+lesson: turns-and-load-factor
+course: principles-of-flight
+lang: en
+title: "Turns and load factor"
+summary: "The forces in a turn, how load factor grows with bank angle and how much the stall speed rises."
+objectives:
+  - "Explain which force makes the aircraft turn"
+  - "Calculate the load factor in a level turn"
+  - "Calculate the increase in stall speed with load factor"
+  - "Check what you have learned in the final assessment"
+minutes: 12
+terms: [load-factor, lift, stall, weight]
+quiz: principles-of-flight-final
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## What makes an aeroplane turn
+
+When the aircraft banks, the <Term id="lift" /> tilts with the wings. It can be split into two parts:
+
+- a **vertical component**, which supports the <Term id="weight" />;
+- a **horizontal component**, which pulls the aircraft towards the centre of the turn: this is what makes it turn.
+
+Because only part of the lift still supports the weight, to turn **without losing height** the pilot must increase total lift by pulling back to raise the angle of attack (and adding power if needed).
+
+## Load factor
+
+<Term id="load-factor">Load factor</Term> (n) is the ratio of lift to weight. In straight-and-level flight it is 1 g. In a **level, coordinated turn**:
+
+**n = 1 / cos(bank angle)**
+
+| Bank | Load factor | Stall speed increase |
+|---|---|---|
+| 0° | 1.00 g | — |
+| 30° | 1.15 g | ≈ 7 % |
+| 45° | 1.41 g | ≈ 19 % |
+| 60° | 2.00 g | ≈ 41 % |
+
+Beyond 60° the load factor climbs very quickly: at 75° it is almost 4 g.
+
+## Stall speed goes up
+
+<Term id="stall">Stall</Term> speed increases with the **square root** of load factor:
+
+**V<sub>S</sub> in a turn = V<sub>S</sub> · √n**
+
+<MetarBreakdown parts={[
+  ["VS = 50 kt", "Example stall speed in level flight"],
+  ["60° bank", "n = 1 / cos 60° = 2 g"],
+  ["√2 ≈ 1.41", "Stall speed is multiplied by 1.41"],
+  ["VS ≈ 71 kt", "New stall speed in that turn"]
+]} caption="Didactic example: the same aircraft stalls at a higher speed in a steep turn." />
+
+That is why a stall can happen at a speed that would seem safe in straight flight — for example, in a steep turn close to the ground.
+
+## Structural limits
+
+Each aircraft is certified for **limit load factors**, positive and negative, according to its category. **Manoeuvring speed** (V<sub>A</sub>) is, put simply, the speed below which the aircraft will stall before exceeding its limit load factor with an abrupt full control input; it decreases as the aircraft gets lighter.
+
+<Callout type="caution" label="Educational content">
+Each aircraft's limit load factors and manoeuvring speeds are in its flight manual. The module assessment is at the end of this lesson.
+</Callout>

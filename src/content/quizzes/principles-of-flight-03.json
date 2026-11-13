@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cómo varía la resistencia parásita con la velocidad?",
+        "en": "How does parasite drag vary with airspeed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Disminuye con V²",
+            "en": "It decreases with V²"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumenta con V²",
+            "en": "It increases with V²"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No depende de la velocidad",
+            "en": "It does not depend on speed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aumenta solo a baja velocidad",
+            "en": "It increases only at low speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La resistencia parásita es proporcional a la presión dinámica, que depende de V².",
+        "en": "Parasite drag is proportional to dynamic pressure, which depends on V²."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La resistencia inducida es máxima…",
+        "en": "Induced drag is greatest…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A alta velocidad",
+            "en": "At high speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A baja velocidad y gran ángulo de ataque",
+            "en": "At low speed and high angle of attack"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Con el avión en tierra",
+            "en": "With the aircraft on the ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "A la velocidad de L/D máxima",
+            "en": "At the L/D max speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es consecuencia de producir sustentación y crece cuando el ala trabaja con mucho ángulo de ataque.",
+        "en": "It is a by-product of lift and grows when the wing works at a high angle of attack."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "A la velocidad de resistencia total mínima…",
+        "en": "At the minimum total drag speed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La resistencia inducida es cero",
+            "en": "Induced drag is zero"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La resistencia parásita es el doble de la inducida",
+            "en": "Parasite drag is twice induced drag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La resistencia inducida y la parásita son iguales",
+            "en": "Induced and parasite drag are equal"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El avión entra en pérdida",
+            "en": "The aircraft stalls"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es el punto más bajo de la curva en «U», donde se cruzan las dos componentes: L/D máxima.",
+        "en": "It is the bottom of the U-shaped curve, where the two components cross: L/D max."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué tipo de resistencia aumenta en la unión entre el ala y el fuselaje?",
+        "en": "Which type of drag occurs where the wing meets the fuselage?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "De interferencia",
+            "en": "Interference drag"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Inducida",
+            "en": "Induced drag"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De onda",
+            "en": "Wave drag"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "De fricción únicamente",
+            "en": "Skin friction only"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La resistencia de interferencia aparece donde se mezclan los flujos de dos superficies.",
+        "en": "Interference drag appears where the airflows of two surfaces mix."
+      }
+    }
+  ]
+}

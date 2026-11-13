@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Tras una perturbación, el avión vuelve a su posición inicial oscilando cada vez menos. Tiene…",
+        "en": "After a disturbance, the aircraft returns to its original state with decreasing oscillations. It has…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Estabilidad estática y dinámica positivas",
+            "en": "Positive static and dynamic stability"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Estabilidad estática negativa",
+            "en": "Negative static stability"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Estabilidad dinámica neutra",
+            "en": "Neutral dynamic stability"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Estabilidad estática neutra",
+            "en": "Neutral static stability"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Tiende a volver (estática positiva) y las oscilaciones se amortiguan (dinámica positiva).",
+        "en": "It tends to return (positive static) and the oscillations die out (positive dynamic)."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué aporta principalmente estabilidad lateral?",
+        "en": "What mainly provides lateral stability?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La deriva",
+            "en": "The fin"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El diedro de las alas",
+            "en": "Wing dihedral"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El timón de profundidad",
+            "en": "The elevator"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los flaps",
+            "en": "The flaps"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El diedro, la flecha y el efecto quilla tienden a nivelar las alas tras un alabeo.",
+        "en": "Dihedral, sweepback and keel effect tend to level the wings after a roll."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Con el centro de gravedad en el límite delantero, la velocidad de pérdida…",
+        "en": "With the CG at the forward limit, stall speed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Es más baja",
+            "en": "Is lower"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Es más alta",
+            "en": "Is higher"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desaparece",
+            "en": "Disappears"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La cola debe empujar más hacia abajo, lo que equivale a más peso que sostener, y el ala necesita más velocidad.",
+        "en": "The tail must push down harder, which is like more weight to support, so the wing needs more speed."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuál es un riesgo de un centro de gravedad demasiado retrasado?",
+        "en": "What is a risk of a CG too far aft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Falta de timón de profundidad en la recogida",
+            "en": "Not enough elevator for the flare"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Exceso de estabilidad",
+            "en": "Too much stability"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Recuperación difícil o imposible de una pérdida o barrena",
+            "en": "Difficult or impossible stall or spin recovery"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Velocidad de pérdida más alta",
+            "en": "Higher stall speed"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Con el CG retrasado el avión es menos estable y la recuperación de pérdidas y barrenas puede complicarse mucho.",
+        "en": "With an aft CG the aircraft is less stable and stall and spin recovery can become very difficult."
+      }
+    }
+  ]
+}

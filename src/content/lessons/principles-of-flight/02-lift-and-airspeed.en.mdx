@@ -1,0 +1,62 @@
+---
+lesson: lift-and-airspeed
+course: principles-of-flight
+lang: en
+title: "The lift equation and airspeeds"
+summary: "What the equation L = CL · ½ρV² · S says, how it relates to angle of attack, and how IAS, CAS, TAS and GS differ."
+objectives:
+  - "Interpret each term of the lift equation"
+  - "Relate the lift coefficient to angle of attack"
+  - "Tell IAS, CAS, TAS and GS apart and read the airspeed indicator arcs"
+minutes: 11
+terms: [lift, angle-of-attack, ias, tas, stall]
+quiz: principles-of-flight-02
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## The lift equation
+
+The <Term id="lift" /> a wing produces is summed up in one equation:
+
+**L = C<sub>L</sub> · ½ · ρ · V² · S**
+
+| Term | What it is | Who controls it |
+|---|---|---|
+| C<sub>L</sub> | Lift coefficient | The pilot, through angle of attack and flaps |
+| ρ (rho) | Air density | The atmosphere (altitude, temperature, humidity) |
+| V | True airspeed | The pilot, with power and attitude |
+| S | Wing area | The design (and flaps that extend it) |
+
+The product **½ρV²** is the **dynamic pressure**: the "push" of the air reaching the wing. Because speed is squared, doubling it gives four times the lift.
+
+## Lift coefficient and angle of attack
+
+For a given airfoil, C<sub>L</sub> rises almost in a straight line with <Term id="angle-of-attack" /> up to a maximum, **C<sub>L</sub> max**, reached at the critical angle of attack. Beyond it the flow separates and the <Term id="stall" /> follows.
+
+This leads to a key idea: to keep the same lift (equal to weight in level flight), **if speed goes down, angle of attack must go up**. Flying slowly means flying at a high angle of attack, close to C<sub>L</sub> max.
+
+## Four different airspeeds
+
+| Speed | What it is |
+|---|---|
+| <Term id="ias">IAS</Term> | Indicated: what the airspeed indicator shows, uncorrected |
+| **CAS** | Calibrated: IAS corrected for instrument and position (pressure-port) errors |
+| <Term id="tas">TAS</Term> | True: CAS corrected for altitude and temperature (and, at high speed, compressibility) |
+| **GS** | Ground speed: TAS plus or minus the effect of the wind |
+
+The airspeed indicator measures dynamic pressure, which depends on both ρ and V. That is why **at the same IAS the wing behaves the same at any altitude**, even though TAS is much higher up high. It is also why many limits and stall speeds are published as indicated airspeeds.
+
+## The airspeed indicator arcs
+
+On many light aircraft the airspeed indicator has colour markings:
+
+- **White arc:** flap operating range. Its lower end is the stall speed with flaps and gear down (V<sub>S0</sub>) and its upper end the maximum flap-extended speed (V<sub>FE</sub>).
+- **Green arc:** normal operating range, from the clean stall speed (V<sub>S1</sub>) to the maximum structural cruising speed (V<sub>NO</sub>).
+- **Yellow arc:** caution range, smooth air only.
+- **Red line:** never-exceed speed (V<sub>NE</sub>).
+
+<Callout type="info" label="Educational content">
+Each aircraft's actual speeds and limits are in its approved flight manual.
+</Callout>

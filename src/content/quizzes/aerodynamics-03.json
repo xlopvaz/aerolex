@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Comparada con la laminar, la capa límite turbulenta…",
+        "en": "Compared with a laminar boundary layer, a turbulent one…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tiene menos fricción y se desprende antes",
+            "en": "Has less friction and separates sooner"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tiene más fricción pero se mantiene adherida más tiempo",
+            "en": "Has more friction but stays attached longer"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No produce fricción",
+            "en": "Produces no friction"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo existe a velocidad supersónica",
+            "en": "Only exists at supersonic speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Al mezclar el aire, tiene más energía y resiste mejor el gradiente de presión adverso.",
+        "en": "By mixing the air it has more energy and copes better with the adverse pressure gradient."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué hace falta para que se produzca una barrena?",
+        "en": "What is needed for a spin to develop?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo velocidad baja",
+            "en": "Only low speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Pérdida y guiñada",
+            "en": "A stall plus yaw"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Flaps extendidos",
+            "en": "Extended flaps"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Exceso de velocidad",
+            "en": "Excessive speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La barrena es una pérdida agravada con autorrotación, que necesita guiñada.",
+        "en": "A spin is an aggravated stall with autorotation, which needs yaw."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El efecto suelo se nota cuando el ala está a menos de…",
+        "en": "Ground effect is felt when the wing is within about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una envergadura del suelo",
+            "en": "One wingspan of the ground"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10 envergaduras",
+            "en": "10 wingspans"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1000 ft",
+            "en": "1,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La altura de la cola",
+            "en": "The height of the tail"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A menos de una envergadura, el suelo limita los torbellinos y la corriente descendente.",
+        "en": "Within about one wingspan, the ground restricts the vortices and downwash."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En efecto suelo, la resistencia inducida…",
+        "en": "In ground effect, induced drag…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumenta",
+            "en": "Increases"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Disminuye",
+            "en": "Decreases"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desaparece por completo",
+            "en": "Disappears completely"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso el avión flota en la recogida y puede despegar antes de tener velocidad suficiente para subir fuera del efecto suelo.",
+        "en": "That is why the aircraft floats in the flare and can lift off before it has enough speed to climb out of ground effect."
+      }
+    }
+  ]
+}

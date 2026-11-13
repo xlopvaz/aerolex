@@ -1,0 +1,62 @@
+---
+lesson: lift-and-airspeed
+course: principles-of-flight
+lang: es
+title: "La ecuación de la sustentación y las velocidades"
+summary: "Qué dice la ecuación L = CL · ½ρV² · S, cómo se relaciona con el ángulo de ataque y en qué se diferencian IAS, CAS, TAS y GS."
+objectives:
+  - "Interpretar cada término de la ecuación de la sustentación"
+  - "Relacionar el coeficiente de sustentación con el ángulo de ataque"
+  - "Distinguir IAS, CAS, TAS y GS y leer los arcos del anemómetro"
+minutes: 11
+terms: [lift, angle-of-attack, ias, tas, stall]
+quiz: principles-of-flight-02
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## La ecuación de la sustentación
+
+La <Term id="lift" /> que produce un ala se resume en una ecuación:
+
+**L = C<sub>L</sub> · ½ · ρ · V² · S**
+
+| Término | Qué es | Quién lo controla |
+|---|---|---|
+| C<sub>L</sub> | Coeficiente de sustentación | El piloto, a través del ángulo de ataque y de los flaps |
+| ρ (rho) | Densidad del aire | La atmósfera (altitud, temperatura, humedad) |
+| V | Velocidad verdadera | El piloto, con la potencia y la actitud |
+| S | Superficie alar | El diseño (y los flaps que la amplían) |
+
+El producto **½ρV²** es la **presión dinámica**: la «fuerza» del aire que llega al ala. Como la velocidad está al cuadrado, duplicarla multiplica por cuatro la sustentación.
+
+## El coeficiente de sustentación y el ángulo de ataque
+
+Para un perfil dado, el C<sub>L</sub> aumenta casi en línea recta con el <Term id="angle-of-attack" /> hasta llegar a un máximo, el **C<sub>L</sub> máx**, que se alcanza en el ángulo de ataque crítico. Pasado ese punto, el flujo se desprende y llega la <Term id="stall">pérdida</Term>.
+
+De aquí sale una idea clave: para mantener la misma sustentación (igual al peso, en vuelo nivelado), **si la velocidad baja, el ángulo de ataque tiene que subir**. Volar lento es volar con mucho ángulo de ataque, cerca del C<sub>L</sub> máx.
+
+## Cuatro velocidades distintas
+
+| Velocidad | Qué es |
+|---|---|
+| <Term id="ias">IAS</Term> | Indicada: la que marca el anemómetro, sin corregir |
+| **CAS** | Calibrada: la IAS corregida por errores de instrumento y de posición de las tomas |
+| <Term id="tas">TAS</Term> | Verdadera: la CAS corregida por altitud y temperatura (y, a alta velocidad, por compresibilidad) |
+| **GS** | Respecto al suelo: la TAS más o menos el efecto del viento |
+
+El anemómetro mide presión dinámica, que depende de ρ y V a la vez. Por eso, **a la misma IAS, el ala se comporta igual a cualquier altitud**, aunque la TAS sea mucho mayor arriba. Esa es la razón de que muchas limitaciones y velocidades de pérdida se publiquen en velocidad indicada.
+
+## Los arcos del anemómetro
+
+En muchos aviones ligeros, el anemómetro tiene marcas de colores:
+
+- **Arco blanco:** margen de uso de los flaps. Su extremo inferior es la velocidad de pérdida con flaps y tren extendidos (V<sub>S0</sub>) y el superior, la máxima con flaps extendidos (V<sub>FE</sub>).
+- **Arco verde:** margen normal de operación, desde la velocidad de pérdida en configuración limpia (V<sub>S1</sub>) hasta la máxima de crucero estructural (V<sub>NO</sub>).
+- **Arco amarillo:** margen de precaución, solo con aire en calma.
+- **Línea roja:** velocidad que nunca se debe superar (V<sub>NE</sub>).
+
+<Callout type="info" label="Contenido educativo">
+Las velocidades y los límites concretos de cada avión figuran en su manual de vuelo aprobado.
+</Callout>

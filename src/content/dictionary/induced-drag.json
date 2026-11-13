@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "induced drag",
+    "es": "resistencia inducida"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aerodynamics"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The part of drag that is a by-product of producing lift, linked to the wingtip vortices and the downwash they create. It is greatest at low airspeed and high angle of attack and decreases as speed increases.",
+    "es": "Parte de la resistencia que es consecuencia de producir sustentación, ligada a los torbellinos de punta de ala y a la corriente descendente que generan. Es máxima a baja velocidad y gran ángulo de ataque, y disminuye al aumentar la velocidad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"price\" of lift: the slower you fly, the more of it you pay.",
+    "es": "El «precio» de la sustentación: cuanto más despacio vuelas, más pagas."
+  },
+  "example": {
+    "en": "\"Winglets reduce induced drag and so save fuel in cruise.\"",
+    "es": "«Los winglets reducen la resistencia inducida y así ahorran combustible en crucero.»"
+  },
+  "pronunciation": {
+    "en": "/ɪnˈdjuːst dræɡ/",
+    "es": "resistencia inducida"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "drag",
+    "winglet",
+    "aspect-ratio",
+    "wake-turbulence"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

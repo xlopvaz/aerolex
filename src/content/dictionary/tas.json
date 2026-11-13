@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TAS",
+    "es": "TAS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "True airspeed",
+    "es": "Velocidad verdadera"
+  },
+  "categories": [
+    "navigation",
+    "aerodynamics"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The actual speed of the aircraft relative to the air mass it is flying through: calibrated airspeed corrected for altitude and non-standard temperature. At a constant IAS, TAS increases with altitude because the air is less dense.",
+    "es": "Velocidad real de la aeronave respecto a la masa de aire en la que vuela: la velocidad calibrada corregida por la altitud y la temperatura no estándar. A IAS constante, la TAS aumenta con la altitud porque el aire es menos denso."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How fast the aircraft really moves through the air. Add the wind and you get the ground speed.",
+    "es": "Lo rápido que se mueve de verdad el avión por el aire. Si le sumas el viento, obtienes la velocidad respecto al suelo."
+  },
+  "example": {
+    "en": "\"At FL370 we are indicating 260 knots, which is a TAS of more than 450 knots.\"",
+    "es": "«En FL370 llevamos 260 nudos indicados, que son más de 450 nudos de TAS.»"
+  },
+  "pronunciation": {
+    "en": "T-A-S (tee-ay-ess)",
+    "es": "te-a-ese"
+  },
+  "synonyms": {
+    "en": [
+      "true airspeed"
+    ],
+    "es": [
+      "velocidad verdadera"
+    ]
+  },
+  "related": [
+    "ias",
+    "density-altitude",
+    "isa"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

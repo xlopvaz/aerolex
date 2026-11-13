@@ -1,0 +1,176 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La velocidad del sonido depende…",
+        "en": "The speed of sound depends…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "De la presión",
+            "en": "On pressure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo de la temperatura",
+            "en": "Only on temperature"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De la altitud de presión",
+            "en": "On pressure altitude"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "De la humedad únicamente",
+            "en": "Only on humidity"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso es menor en el aire frío de gran altitud: unos 574 kt en la tropopausa ISA.",
+        "en": "That is why it is lower in cold air high up: about 574 kt at the ISA tropopause."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Al ascender a IAS constante, el número de Mach…",
+        "en": "Climbing at constant IAS, the Mach number…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Disminuye",
+            "en": "Decreases"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumenta",
+            "en": "Increases"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se hace cero",
+            "en": "Becomes zero"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La TAS aumenta y la velocidad del sonido disminuye: el cociente sube.",
+        "en": "TAS rises and the speed of sound falls: the ratio goes up."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué es el Mach crítico?",
+        "en": "What is critical Mach?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Mach al que el avión supera la barrera del sonido",
+            "en": "The Mach at which the aircraft breaks the sound barrier"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Mach del avión al que el flujo alcanza por primera vez Mach 1 en algún punto",
+            "en": "The aircraft Mach at which the flow first reaches Mach 1 somewhere"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Mach máximo de operación",
+            "en": "The maximum operating Mach"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Mach 1,20",
+            "en": "Mach 1.20"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Ocurre por debajo de Mach 1 porque el aire se acelera sobre el ala.",
+        "en": "It happens below Mach 1 because air speeds up over the wing."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Por qué tienen flecha las alas de los reactores?",
+        "en": "Why do jets have swept wings?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para aumentar la sustentación a baja velocidad",
+            "en": "To increase lift at low speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para subir el Mach crítico",
+            "en": "To raise the critical Mach number"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para reducir el peso",
+            "en": "To reduce weight"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para evitar la pérdida de punta",
+            "en": "To prevent tip stall"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Solo cuenta la componente del flujo perpendicular al borde de ataque, lo que retrasa la compresibilidad.",
+        "en": "Only the airflow component perpendicular to the leading edge counts, which delays compressibility."
+      }
+    }
+  ]
+}

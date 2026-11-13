@@ -1,0 +1,52 @@
+---
+lesson: high-lift-devices
+course: aerodynamics
+lang: en
+title: "High-lift devices"
+summary: "Types of flaps and leading-edge devices, how they change the lift curve and why they are used for take-off and landing."
+objectives:
+  - "Compare the types of trailing-edge flaps"
+  - "Describe slats, slots and Krueger flaps"
+  - "Explain each device's effect on CL max and on the stalling angle"
+minutes: 10
+terms: [flaps, slats, spoilers, stall, angle-of-attack]
+quiz: aerodynamics-02
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Why they are needed
+
+A wing designed to fly fast with little drag in cruise produces little lift at low speed. To take off and land on runways of reasonable length, the wing has to **change shape**: increase its camber and sometimes its area. That is what high-lift devices do.
+
+## Trailing-edge flaps
+
+| Type | How it works | Characteristic |
+|---|---|---|
+| **Plain** | The rear of the wing hinges downward | Increases camber; simple, but quite draggy |
+| **Split** | Only a plate on the lower surface drops | High drag from the turbulent wake behind it |
+| **Slotted** | When lowered, it opens a slot that lets high-pressure air flow to the upper surface | Delays separation: more lift with less drag |
+| **Fowler** | Moves rearward and then down, often with one or more slots | Increases camber **and** wing area: the most effective, common on airliners |
+
+<Term id="flaps">Flaps</Term> increase C<sub>L</sub> max, which **reduces stall speed**. In return they add drag and, in general, the <Term id="stall" /> occurs at a slightly **lower** <Term id="angle-of-attack" /> than with a clean wing. The first flap settings mainly add lift; the last ones mainly add drag, useful for steeper approaches.
+
+## Leading-edge devices
+
+- **Fixed slots:** ducts in the leading edge that lead air from the lower to the upper surface.
+- <Term id="slats">Slats</Term>: movable leading-edge sections that move forward and open a slot.
+- **Krueger flaps:** panels that fold out from the underside of the leading edge.
+
+All of them energise the boundary layer on the upper surface and **delay separation**, so the wing can reach a **higher critical angle of attack** before it stalls.
+
+<MetarBreakdown kind="summary" parts={[
+  ["Trailing-edge flaps", "Higher CL max · lower stall speed · more drag · the wing stalls at a slightly lower angle of attack"],
+  ["Slats and slots", "Higher CL max · higher critical angle of attack · little extra drag"],
+  ["Spoilers", "The opposite: less lift and more drag"]
+]} caption="Each device's effect on lift." />
+
+<Term id="spoilers">Spoilers</Term> are not high-lift devices, but they complete the system: they dump lift when the crew wants to descend, slow down or keep the aircraft on the runway after landing.
+
+<Callout type="caution" label="Maximum speeds">
+Each flap setting has a maximum extended speed (V<sub>FE</sub>), because the loads on the devices grow with speed. Each aircraft's values are in its manual.
+</Callout>
