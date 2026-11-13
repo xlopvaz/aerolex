@@ -4,11 +4,11 @@ const PAGES = [
   'es/', 'es/panel/', 'es/acerca-de/', 'es/guia-de-estilo/', 'es/aviso-legal/',
   'es/diccionario/', 'es/diccionario/acronimos/', 'es/diccionario/qnh/',
   'es/academia/', 'es/academia/metar-speci/', 'es/academia/metar-speci/full-decode/', 'es/academia/taf/', 'es/academia/taf/change-groups/',
-  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/',
+  'es/hangar/', 'es/hangar/comparador/', 'es/hangar/boeing-737/', 'es/fuentes/', 'es/panel/repaso/', 'es/herramientas/diagramas-de-aeropuerto/',
   'en/', 'en/dashboard/', 'en/about/', 'en/styleguide/', 'en/legal/',
   'en/dictionary/', 'en/dictionary/acronyms/', 'en/dictionary/go-around/',
   'en/academy/', 'en/academy/metar-speci/', 'en/academy/metar-speci/present-weather/', 'en/academy/taf/full-decode/',
-  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/',
+  'en/hangar/', 'en/hangar/compare/', 'en/hangar/a320neo-family/', 'en/sources/', 'en/dashboard/review/', 'en/tools/airport-diagrams/',
 ];
 
 test.describe('language', () => {
@@ -152,6 +152,28 @@ test.describe('review', () => {
     await expect(page.locator('[data-review-empty]')).toBeVisible();
     await page.reload();
     await expect(page.locator('.rq')).toHaveCount(0);
+  });
+});
+
+test.describe('airport diagrams', () => {
+  test('draws the runways of an airport found by code, and links from the finder', async ({ page }) => {
+    await page.goto('en/tools/airport-diagrams/?q=MAD');
+    await expect(page.locator('[data-title]')).toContainText('MAD · LEMD');
+    await expect(page.locator('[data-rows] tr')).toHaveCount(4);
+    await expect(page.locator('[data-svg] svg line.ad-rwy')).toHaveCount(4);
+    await expect(page.locator('[data-svg] svg')).toHaveAttribute('aria-label', /4 runways/);
+    await expect(page.locator('[data-svg] text.ad-lbl', { hasText: '36L' })).toHaveCount(1);
+    await expect(page.locator('[data-learn-example]')).toContainText('runway');
+
+    await page.locator('[data-q]').fill('heathrow');
+    await page.locator('.ad__match', { hasText: 'LHR' }).click();
+    await expect(page.locator('[data-rows] tr')).toHaveCount(2);
+    await expect(page).toHaveURL(/\?q=LHR$/);
+
+    await page.goto('en/tools/airports/?q=SCQ');
+    await page.locator('details summary').first().click();
+    await page.locator('details a', { hasText: 'Runway diagram' }).first().click();
+    await expect(page.locator('[data-title]')).toContainText('SCQ');
   });
 });
 

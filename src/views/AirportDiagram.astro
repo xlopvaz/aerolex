@@ -1,0 +1,283 @@
+---
+/**
+ * Educational airport diagrams (Phase 5): the runway layout of an airport drawn north-up to
+ * scale from the OurAirports runway ends (public domain), with a runway table and how to read
+ * runway numbers. Data is downloaded only when needed: the airport list on first search and
+ * one runway file per first letter of the IATA code. Not an aerodrome chart.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import { childHref, href, t, useT, withBase } from '../i18n/index.js';
+import data from '../content/airports/runways.json';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const ui = t(lang, 'diagram');
+const dateText = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${data.dataDate}T00:00:00Z`));
+const airportCount = Object.keys(data.runways).length;
+const terms = {
+  runway: childHref('dictionary', 'runway', lang),
+  threshold: childHref('dictionary', 'threshold', lang),
+  variation: childHref('dictionary', 'magnetic-variation', lang),
+};
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('diagram.metaTitle')} description={tr('diagram.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.airportDiagram') }]} />
+      <h1>{tr('diagram.title')}</h1>
+      <p class="lead">{tr('diagram.lead', { n: airportCount.toLocaleString(lang) })}</p>
+    </div>
+  </header>
+
+  <div class="container mt ad" data-diagram data-lang={lang} data-airports={withBase('data/airports.json')} data-runways={withBase('data/runways/')}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('diagram.notAChart')}</p></Callout>
+
+    <div class="ad__search">
+      <label for="ad-q" class="mt-label">{tr('diagram.label')}</label>
+      <input id="ad-q" type="search" class="ad__input" autocomplete="off" spellcheck="false" placeholder={tr('diagram.placeholder')} aria-describedby="ad-status" data-q />
+      <p id="ad-status" class="mt-hint" role="status" data-status>{tr('diagram.hint')}</p>
+      <ul class="ad__matches" data-matches></ul>
+    </div>
+
+    <section class="ad__result" data-result hidden aria-labelledby="ad-title">
+      <h2 id="ad-title" data-title></h2>
+      <p class="ad__sub" data-sub></p>
+      <div class="ad__grid">
+        <figure class="ad__figure">
+          <div data-svg></div>
+          <figcaption class="mt-hint" data-caption></figcaption>
+        </figure>
+        <div>
+          <div class="mt-table-wrap">
+            <table class="mt-table ad__table">
+              <caption class="visually-hidden">{tr('diagram.tableCaption')}</caption>
+              <thead>
+                <tr>
+                  <th scope="col">{tr('diagram.cols.runway')}</th>
+                  <th scope="col" class="num">{tr('diagram.cols.length')}</th>
+                  <th scope="col" class="num">{tr('diagram.cols.width')}</th>
+                  <th scope="col">{tr('diagram.cols.surface')}</th>
+                  <th scope="col" class="num">{tr('diagram.cols.bearing')}</th>
+                </tr>
+              </thead>
+              <tbody data-rows></tbody>
+            </table>
+          </div>
+          <p class="mt-hint" data-osm></p>
+        </div>
+      </div>
+
+      <div class="ad__learn">
+        <h3>{tr('diagram.learnTitle')}</h3>
+        <p data-learn-example></p>
+        <ul>
+          <li>{tr('diagram.learnNumber')}</li>
+          <li>{tr('diagram.learnSides')}</li>
+          <li>{tr('diagram.learnReciprocal')}</li>
+          <li>{tr('diagram.learnTrue')}</li>
+        </ul>
+        <p class="mt-hint">
+          {tr('diagram.seeAlso')} <a href={terms.runway}>{tr('diagram.termRunway')}</a> · <a href={terms.threshold}>{tr('diagram.termThreshold')}</a> · <a href={terms.variation}>{tr('diagram.termVariation')}</a>
+        </p>
+      </div>
+    </section>
+
+    <p class="mt-hint">{tr('diagram.source', { date: dateText })}</p>
+    <noscript><p>{tr('tools.noscript')}</p></noscript>
+  </div>
+  <script type="application/json" id="ad-i18n" set:html={JSON.stringify(ui)} />
+</BaseLayout>
+
+<style is:global>
+  .ad__input { width: 100%; max-width: 36rem; padding: var(--space-3) var(--space-4); border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font-size: 1.05rem; }
+  .ad__input:focus-visible { outline: 3px solid var(--focus, var(--cyan)); outline-offset: 2px; }
+  .ad__matches { list-style: none; padding: 0; margin: var(--space-2) 0 0; display: flex; flex-wrap: wrap; gap: var(--space-2); max-width: 60rem; }
+  .ad__matches li { margin: 0; }
+  .ad__match { display: inline-flex; gap: var(--space-2); align-items: baseline; padding: 0.45rem 0.8rem; border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--surface); color: var(--text); cursor: pointer; font: inherit; font-size: var(--text-sm); text-align: left; }
+  .ad__match:hover, .ad__match[aria-pressed='true'] { border-color: var(--primary); }
+  .ad__match .mono { font-weight: 700; color: var(--primary); }
+  .ad__result { margin-top: var(--space-6); }
+  .ad__result h2 { margin-bottom: var(--space-1); }
+  .ad__sub { color: var(--text-muted); margin-top: 0; }
+  .ad__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: var(--space-6); align-items: start; margin-top: var(--space-4); }
+  .ad__figure { margin: 0; }
+  .ad__figure svg { display: block; width: 100%; max-width: 520px; height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-2); }
+  .ad-rwy { stroke: var(--text); stroke-linecap: butt; }
+  .ad-rwy--grass { stroke: var(--green); }
+  .ad-rwy--gravel, .ad-rwy--other, .ad-rwy--unknown { stroke: var(--text-muted); }
+  .ad-rwy--water { stroke: var(--cyan); }
+  .ad-cl { stroke: var(--surface); stroke-width: 1; stroke-dasharray: 6 5; }
+  .ad-lbl { font-family: var(--font-mono); font-size: 13px; font-weight: 700; fill: var(--text); paint-order: stroke; stroke: var(--surface-2); stroke-width: 4px; }
+  .ad-north, .ad-scale { stroke: var(--text-muted); fill: none; stroke-width: 1.5; }
+  .ad-north-tri { fill: var(--text-muted); stroke: none; }
+  .ad-txt { font-family: var(--font-mono); font-size: 11px; fill: var(--text-muted); }
+  .ad__table td.num, .ad__table th.num { text-align: right; white-space: nowrap; }
+  .ad__ft { display: block; font-size: var(--text-xs); color: var(--text-muted); }
+  .ad__table td:first-child { font-family: var(--font-mono); font-weight: 700; white-space: nowrap; }
+  .ad__learn { margin-top: var(--space-6); padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); max-width: 80ch; }
+  .ad__learn h3 { margin-top: 0; }
+  @media (max-width: 860px) { .ad__grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import { buildAirportIndex, searchAirports } from '../lib/airports/search.js';
+  import { designatorHeading, layoutRunways, placeLabels } from '../lib/airports/runways.js';
+
+  const root = document.querySelector<HTMLElement>('[data-diagram]');
+  if (root) {
+    const ui = JSON.parse(document.getElementById('ad-i18n')!.textContent!);
+    const lang = root.dataset.lang!;
+    const $ = <T extends HTMLElement = HTMLElement>(s: string) => root.querySelector<T>(s)!;
+    const input = $<HTMLInputElement>('[data-q]');
+    const status = $('[data-status]');
+    const matches = $('[data-matches]');
+    const fill = (s: string, v: Record<string, unknown>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+    const nf0 = new Intl.NumberFormat(lang, { maximumFractionDigits: 0 });
+    const SVG = 'http://www.w3.org/2000/svg';
+    let regionNames: Intl.DisplayNames | null = null;
+    try { regionNames = new Intl.DisplayNames([lang], { type: 'region' }); } catch { regionNames = null; }
+    const countryName = (a: any) => { try { return regionNames?.of(a.country) ?? a.countryName; } catch { return a.countryName; } };
+
+    let index: ReturnType<typeof buildAirportIndex> | null = null;
+    let loading: Promise<void> | null = null;
+    const shards = new Map<string, Promise<any>>();
+    const loadAirports = () => {
+      loading ??= fetch(root.dataset.airports!)
+        .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+        .then((d) => { index = buildAirportIndex(d); })
+        .catch(() => { status.textContent = ui.loadError; });
+      return loading;
+    };
+    const loadRunways = (iata: string) => {
+      const letter = iata[0];
+      if (!shards.has(letter)) {
+        shards.set(letter, fetch(`${root.dataset.runways}${letter}.json`).then((r) => (r.ok ? r.json() : { runways: {} })).catch(() => null));
+      }
+      return shards.get(letter)!.then((d) => (d ? d.runways[iata] ?? [] : null));
+    };
+
+    const svgEl = (tag: string, attrs: Record<string, string | number>, text?: string) => {
+      const e = document.createElementNS(SVG, tag);
+      for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, String(v));
+      if (text !== undefined) e.textContent = text;
+      return e;
+    };
+
+    const draw = (layout: NonNullable<ReturnType<typeof layoutRunways>>, label: string) => {
+      const { size } = layout;
+      const svg = svgEl('svg', { viewBox: `0 0 ${size} ${size}`, role: 'img', 'aria-label': label });
+      for (const r of layout.runways) {
+        const w = Math.max((r.widthM ?? 45) / layout.metresPerUnit, 5);
+        svg.append(svgEl('line', { x1: r.x1, y1: r.y1, x2: r.x2, y2: r.y2, class: `ad-rwy ad-rwy--${r.surface}`, 'stroke-width': w }));
+        if (w >= 6) svg.append(svgEl('line', { x1: r.x1, y1: r.y1, x2: r.x2, y2: r.y2, class: 'ad-cl' }));
+      }
+      // Designators beyond each end, pushed apart where runways meet
+      for (const l of placeLabels(layout.runways, { size })) {
+        svg.append(svgEl('text', { x: l.x, y: l.y + 4, 'text-anchor': 'middle', class: 'ad-lbl' }, l.id));
+      }
+      // North arrow
+      svg.append(svgEl('path', { d: `M ${size - 26} 14 l 7 18 l -7 -5 l -7 5 z`, class: 'ad-north-tri' }));
+      svg.append(svgEl('text', { x: size - 26, y: 46, 'text-anchor': 'middle', class: 'ad-txt' }, ui.north));
+      // Scale bar
+      const sx = 16;
+      const sy = size - 18;
+      svg.append(svgEl('path', { d: `M ${sx} ${sy - 5} V ${sy} H ${sx + layout.scale.units} V ${sy - 5}`, class: 'ad-scale' }));
+      svg.append(svgEl('text', { x: sx, y: sy - 9, class: 'ad-txt' }, `${nf0.format(layout.scale.metres)} m`));
+      return svg;
+    };
+
+    const show = async (a: any) => {
+      matches.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.iata === a.iata)));
+      const rows = await loadRunways(a.iata);
+      const result = $('[data-result]');
+      if (rows === null) { status.textContent = ui.loadError; return; }
+      history.replaceState(null, '', `?q=${encodeURIComponent(a.iata)}`);
+      if (!rows.length) {
+        result.hidden = true;
+        status.textContent = fill(ui.noRunways, { iata: a.iata });
+        return;
+      }
+      const layout = layoutRunways(rows, { size: 420, pad: 52 })!;
+      const pairs = layout.runways.map((r) => `${r.le}/${r.he}`);
+      $('[data-title]').textContent = `${a.iata}${a.icao ? ` · ${a.icao}` : ''} — ${a.name}`;
+      $('[data-sub]').textContent = [a.city, countryName(a)].filter(Boolean).join(', ');
+      const label = fill(layout.runways.length === 1 ? ui.svgLabelOne : ui.svgLabel, { name: a.name, n: layout.runways.length, list: pairs.join(', ') });
+      $('[data-svg]').replaceChildren(draw(layout, label));
+      $('[data-caption]').textContent = ui.caption;
+      $('[data-rows]').replaceChildren(...layout.runways.map((r) => {
+        const tr = document.createElement('tr');
+        const cells = [
+          `${r.le}/${r.he}`,
+          r.lengthFt ? fill(ui.metresFeet, { m: nf0.format(r.lengthFt * 0.3048), ft: nf0.format(r.lengthFt) }) : '—',
+          r.widthFt ? fill(ui.metresFeet, { m: nf0.format(r.widthFt * 0.3048), ft: nf0.format(r.widthFt) }) : '—',
+          ui.surfaces[r.surface] ?? r.surface,
+          `${String(Math.round(r.bearing) % 360).padStart(3, '0')}°`,
+        ];
+        cells.forEach((c, i) => {
+          const td = document.createElement('td');
+          // Length and width: metres, with feet on a second line
+          const m = /^(.*) \((.*)\)$/.exec(c);
+          if ((i === 1 || i === 2) && m) td.append(document.createTextNode(m[1]), Object.assign(document.createElement('span'), { className: 'ad__ft', textContent: m[2] }));
+          else td.textContent = c;
+          if (i === 1 || i === 2 || i === 4) td.className = 'num mono';
+          tr.append(td);
+        });
+        return tr;
+      }));
+      const osm = $('[data-osm]');
+      osm.replaceChildren();
+      const link = Object.assign(document.createElement('a'), { href: `https://www.openstreetmap.org/?mlat=${a.lat}&mlon=${a.lon}#map=14/${a.lat}/${a.lon}`, rel: 'noopener', textContent: ui.osm });
+      osm.append(link);
+      // Worked example with the first numbered runway end
+      const ex = layout.runways.find((r) => designatorHeading(r.le) !== null);
+      $('[data-learn-example]').textContent = ex
+        ? fill(ui.learnExample, { id: ex.le, heading: String(designatorHeading(ex.le)).padStart(3, '0'), other: ex.he, bearing: String(Math.round(ex.bearing) % 360).padStart(3, '0') })
+        : ui.learnNoNumbers;
+      result.hidden = false;
+      status.textContent = fill(layout.runways.length === 1 ? ui.foundOne : ui.found, { n: layout.runways.length, iata: a.iata });
+    };
+
+    const search = async (q: string, autoPick: boolean) => {
+      if (q.trim().length < 2) {
+        matches.replaceChildren();
+        status.textContent = ui.hint;
+        return;
+      }
+      if (!index) {
+        status.textContent = ui.loading;
+        await loadAirports();
+        if (!index) return;
+      }
+      const found = searchAirports(index, q, 8);
+      matches.replaceChildren(...found.map((a: any) => {
+        const li = document.createElement('li');
+        const b = Object.assign(document.createElement('button'), { type: 'button', className: 'ad__match' });
+        b.dataset.iata = a.iata;
+        b.setAttribute('aria-pressed', 'false');
+        const code = Object.assign(document.createElement('span'), { className: 'mono', textContent: a.iata });
+        b.append(code, document.createTextNode(` ${a.name}${a.city ? ` · ${a.city}` : ''}`));
+        b.addEventListener('click', () => show(a));
+        li.append(b);
+        return li;
+      }));
+      status.textContent = found.length ? ui.pick : ui.none;
+      const exact = found.find((a: any) => a.iata === q.trim().toUpperCase() || a.icao === q.trim().toUpperCase());
+      if (autoPick && exact) show(exact);
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('focus', () => { loadAirports(); }, { once: true });
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(() => search(input.value, false), 120);
+    });
+    const initial = new URLSearchParams(location.search).get('q');
+    if (initial) {
+      input.value = initial;
+      search(initial, true);
+    }
+  }
+</script>

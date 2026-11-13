@@ -38,7 +38,8 @@
     "weatherGlossary": "Weather glossary",
     "timeline": "Timeline",
     "sources": "Sources",
-    "review": "Mistake review"
+    "review": "Mistake review",
+    "airportDiagram": "Airport diagrams"
   },
   "lang": {
     "switchTo": "Leer en español",
@@ -737,6 +738,10 @@
       "timeline": {
         "title": "Aviation timeline",
         "text": "From the first balloons to the A380: milestones in flight, airlines and regulation, with sources and a theme filter."
+      },
+      "airportDiagram": {
+        "title": "Airport diagrams",
+        "text": "The runways of more than 4,000 airports to scale, and how to read their numbers."
       }
     },
     "noscript": "This tool needs JavaScript to work."
@@ -1082,7 +1087,8 @@
       "W": "Maritime Southeast Asia",
       "Y": "Australia",
       "Z": "China, Mongolia and North Korea"
-    }
+    },
+    "diagramLink": "Runway diagram"
   },
   "atc": {
     "metaTitle": "ATC phraseology trainer · AeroLex",
@@ -1370,5 +1376,57 @@
     "score": "{score}/{total} in the quiz",
     "dashLink": "Review mistakes and history",
     "dashPending": "Wrong answers to review: {n}."
+  },
+  "diagram": {
+    "metaTitle": "Airport diagrams · AeroLex",
+    "metaDescription": "Draw the runways of more than 4,000 airports to scale and learn how to read their numbers.",
+    "title": "Airport diagrams",
+    "lead": "Search for an airport to see its runways drawn to scale with north up, with their length, width and orientation. Runway data is available for {n} airports.",
+    "notAChart": "Educational sketch generated from open data. It is not an aerodrome chart: it has no taxiways, displaced thresholds or restrictions. For real operations, always use the official AIP charts.",
+    "label": "Code, name or city",
+    "placeholder": "For example: MAD, LEBL, Santiago, Heathrow…",
+    "hint": "Type at least 2 characters.",
+    "loading": "Loading airport data…",
+    "loadError": "The data could not be loaded. Please try again later.",
+    "none": "No airport found.",
+    "pick": "Choose an airport to see its diagram.",
+    "noRunways": "There are no runway coordinates for {iata} in the data.",
+    "found": "{iata}: {n} runways.",
+    "foundOne": "{iata}: 1 runway.",
+    "svgLabel": "Runway diagram of {name}: {n} runways ({list}). North up.",
+    "svgLabelOne": "Runway diagram of {name}: 1 runway ({list}). North up.",
+    "caption": "North up, to scale. Each number sits next to the threshold of that runway. Dark grey: asphalt or concrete; green: grass; light grey: gravel or other surfaces.",
+    "north": "N",
+    "tableCaption": "Airport runways",
+    "osm": "See the airport on OpenStreetMap",
+    "cols": {
+      "runway": "Runway",
+      "length": "Length",
+      "width": "Width",
+      "surface": "Surface",
+      "bearing": "True bearing"
+    },
+    "metresFeet": "{m} m ({ft} ft)",
+    "surfaces": {
+      "asphalt": "Asphalt",
+      "concrete": "Concrete",
+      "grass": "Grass",
+      "gravel": "Gravel",
+      "water": "Water",
+      "other": "Other",
+      "unknown": "No data"
+    },
+    "learnTitle": "How to read runway numbers",
+    "learnExample": "Example: runway {id} indicates a magnetic heading of about {heading}°, and its true bearing calculated from the coordinates is {bearing}°. Aircraft landing the opposite way use the other end, {other}.",
+    "learnNoNumbers": "This airport's runways do not use numbered designators in the data.",
+    "learnNumber": "The number is the runway's magnetic heading divided by 10 and rounded: a runway pointing about 268° magnetic is runway 27.",
+    "learnSides": "Parallel runways add L (left), C (centre) or R (right), as seen by the pilot approaching that end.",
+    "learnReciprocal": "Each runway has two ends whose numbers differ by 18 (180°): 09 and 27, 14L and 32R. The L of one end is the R of the other.",
+    "learnTrue": "The bearing in the table is true, calculated from the coordinates. It can differ from the number because of the local magnetic variation and rounding.",
+    "seeAlso": "In the dictionary:",
+    "termRunway": "runway",
+    "termThreshold": "threshold",
+    "termVariation": "magnetic variation",
+    "source": "Runways: OurAirports (public domain), data of {date}. They may contain errors or be out of date. Runway designation as in ICAO Annex 14."
   }
 }

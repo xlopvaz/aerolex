@@ -23,7 +23,7 @@ const dateText = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', 
       <p class="lead">{tr('airports.lead')}</p>
     </div>
   </header>
-  <div class="container mt af" data-airports data-lang={lang} data-src={withBase('data/airports.json')}>
+  <div class="container mt af" data-airports data-lang={lang} data-src={withBase('data/airports.json')} data-diagram={href('airportDiagram', lang)}>
     <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
     <div>
       <label for="af-q" class="mt-label">{tr('airports.label')}</label>
@@ -78,6 +78,7 @@ const dateText = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', 
         a.elevationFt !== null ? `<p>${esc(fill(ui.elevation, { ft: a.elevationFt.toLocaleString(lang), m: Math.round(a.elevationFt * 0.3048).toLocaleString(lang) }))}</p>` : '',
         `<p>${esc(fill(ui.coords, { lat: a.lat.toFixed(4), lon: a.lon.toFixed(4) }))} · <a href="https://www.openstreetmap.org/?mlat=${a.lat}&mlon=${a.lon}#map=13/${a.lat}/${a.lon}" rel="noopener">${esc(ui.map)}</a></p>`,
         region ? `<p>${esc(fill(ui.region, { letter: region, region: ui.regions[region] }))}</p>` : `<p>${esc(ui.noIcao)}</p>`,
+        `<p><a href="${esc(root.dataset.diagram!)}?q=${encodeURIComponent(a.iata)}">${esc(ui.diagramLink)}</a></p>`,
       ].join('');
       return `<tr><td>${esc(a.iata)}</td><td>${esc(a.icao ?? '—')}</td><td>${esc(a.name)}<details><summary>${esc(ui.details)}</summary>${details}</details></td><td>${esc(a.city ?? '—')}</td><td>${esc(countryName(a))}</td></tr>`;
     };
