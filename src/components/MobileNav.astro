@@ -15,7 +15,7 @@ const items = navRoutes('mobile');
   {items.map((key) => (
     <a href={href(key, lang)} aria-current={key === routeKey ? 'page' : undefined}>
       <Icon name={ROUTES[key].icon} size={22} />
-      <span>{t(lang, `nav.${key}`)}</span>
+      <span>{t(lang, `navShort.${key}`)}</span>
     </a>
   ))}
 </nav>
@@ -47,7 +47,9 @@ const items = navRoutes('mobile');
       font-size: 0.72rem;
       font-weight: 500;
       text-decoration: none;
+      min-width: 0;
     }
+    .mobile-nav span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .mobile-nav a[aria-current='page'] { color: var(--primary); }
   }
 </style>

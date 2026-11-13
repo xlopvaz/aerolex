@@ -1,0 +1,158 @@
+---
+/**
+ * METAR / SPECI decoder (Phase 4). The first didactic example is decoded at build time, so the
+ * page is useful without JavaScript; in the browser every change is decoded locally.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Badge from '../components/ui/Badge.astro';
+import Button from '../components/ui/Button.astro';
+import { childHref, href, t, useT } from '../i18n/index.js';
+import { decodeMetar } from '../lib/metar/decode.js';
+import { renderMetar } from '../lib/metar/render.js';
+import samples from '../content/samples/metar.json';
+import '../styles/metar-tool.css';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+const M = t(lang, 'metar');
+const ui = t(lang, 'metarTool');
+const first = samples.examples[0];
+const out = renderMetar(decodeMetar(first.raw), M, lang, ui);
+const i18n = JSON.stringify({ M, ui, examples: samples.examples.map((e) => e.raw) });
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('metarTool.metaTitle')} description={tr('metarTool.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.tools'), href: href('tools', lang) }, { label: tr('nav.metarDecoder') }]} />
+      <h1>{tr('metarTool.title')}</h1>
+      <p class="lead">{tr('metarTool.lead')}</p>
+    </div>
+  </header>
+
+  <div class="container mt" data-metar data-lang={lang}>
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+
+    <div class="mt-input">
+      <label for="mt-input" class="mt-label">{tr('metarTool.inputLabel')}</label>
+      <textarea id="mt-input" class="mono" rows="3" spellcheck="false" autocomplete="off" autocapitalize="characters" placeholder={tr('metarTool.placeholder')} aria-describedby="mt-hint" data-input>{first.raw}</textarea>
+      <p id="mt-hint" class="mt-hint">{tr('metarTool.hint')}</p>
+      <div class="mt-actions">
+        <Button variant="secondary" size="sm" icon="eraser" data-clear>{tr('metarTool.clear')}</Button>
+        <Button variant="secondary" size="sm" icon="link" data-copy>{tr('metarTool.copyLink')}</Button>
+        <span class="mt-copied" role="status" data-copied></span>
+      </div>
+      <noscript><p class="mt-hint">{tr('metarTool.noscript')}</p></noscript>
+    </div>
+
+    <section class="mt-examples" aria-labelledby="mt-ex-title">
+      <h2 id="mt-ex-title">{tr('metarTool.examplesTitle')}</h2>
+      <div class="mt-examples__list">
+        {samples.examples.map((e) => (
+          <button type="button" class="mt-example" data-example={e.raw}>
+            <Badge tone="amber" icon="book-open">{tr('metarTool.sourceExample')}</Badge>
+            <span>{e.label[lang]}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-result" aria-labelledby="mt-res-title">
+      <div class="mt-result__head">
+        <h2 id="mt-res-title">{tr('metarTool.resultTitle')}</h2>
+        <span class="mt-source" data-source data-kind="example">{tr('metarTool.sourceExample')}</span>
+      </div>
+
+      <h3>{tr('metarTool.highlightTitle')}</h3>
+      <p class="mt-code mono" data-out="highlighted" aria-live="polite" set:html={out.highlighted} />
+
+      <div class="mt-visuals">
+        <figure class="mt-card">
+          <figcaption>{tr('metarTool.windTitle')}</figcaption>
+          <div data-out="rose" set:html={out.rose} />
+        </figure>
+        <figure class="mt-card">
+          <figcaption>{tr('metarTool.cloudsTitle')} · <span>{tr('metarTool.ceilingTitle')}:</span> <strong data-out="ceiling">{out.ceiling}</strong></figcaption>
+          <div data-out="clouds" set:html={out.clouds} />
+        </figure>
+      </div>
+
+      <h3>{tr('metarTool.groupsTitle')}</h3>
+      <div class="mt-table-wrap" data-out="table" set:html={out.table} />
+
+      <h3>{tr('metarTool.issuesTitle')}</h3>
+      <div data-out="issues" set:html={out.issues} />
+    </section>
+
+    <p class="mt-more"><a href={childHref('academy', 'metar-speci', lang)}>{tr('metarTool.learnMore')}</a></p>
+  </div>
+
+  <script type="application/json" id="mt-i18n" set:html={i18n} />
+</BaseLayout>
+
+<script>
+  import { decodeMetar } from '../lib/metar/decode.js';
+  import { renderMetar } from '../lib/metar/render.js';
+
+  const root = document.querySelector<HTMLElement>('[data-metar]');
+  const data = JSON.parse(document.getElementById('mt-i18n')!.textContent!);
+  if (root) {
+    const lang = root.dataset.lang!;
+    const input = root.querySelector<HTMLTextAreaElement>('[data-input]')!;
+    const source = root.querySelector<HTMLElement>('[data-source]')!;
+    const outs = Object.fromEntries([...root.querySelectorAll<HTMLElement>('[data-out]')].map((el) => [el.dataset.out!, el]));
+    const examples: string[] = data.examples;
+    const norm = (s: string) => s.trim().toUpperCase().replace(/\s+/g, ' ');
+
+    const render = () => {
+      const raw = input.value;
+      const out = renderMetar(decodeMetar(raw), data.M, lang, data.ui);
+      outs.highlighted.innerHTML = out.highlighted;
+      outs.rose.innerHTML = out.rose;
+      outs.clouds.innerHTML = out.clouds;
+      outs.table.innerHTML = out.table;
+      outs.issues.innerHTML = out.issues;
+      outs.ceiling.textContent = out.ceiling;
+      const isExample = examples.some((e) => norm(e) === norm(raw));
+      source.dataset.kind = isExample ? 'example' : 'user';
+      source.textContent = isExample ? data.ui.sourceExample : data.ui.sourceUser;
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(render, 120);
+    });
+    root.querySelectorAll<HTMLButtonElement>('[data-example]').forEach((b) =>
+      b.addEventListener('click', () => {
+        input.value = b.dataset.example!;
+        render();
+        input.focus();
+      })
+    );
+    root.querySelector('[data-clear]')!.addEventListener('click', () => {
+      input.value = '';
+      render();
+      input.focus();
+    });
+    const copied = root.querySelector<HTMLElement>('[data-copied]')!;
+    root.querySelector('[data-copy]')!.addEventListener('click', async () => {
+      const url = new URL(location.href);
+      url.searchParams.set('m', norm(input.value));
+      history.replaceState(null, '', url);
+      try {
+        await navigator.clipboard.writeText(url.toString());
+      } catch {
+        /* clipboard unavailable: the URL in the address bar is already updated */
+      }
+      copied.textContent = data.ui.copied;
+      setTimeout(() => (copied.textContent = ''), 2500);
+    });
+
+    const fromUrl = new URLSearchParams(location.search).get('m');
+    if (fromUrl) input.value = fromUrl.slice(0, 1000);
+    render();
+  }
+</script>

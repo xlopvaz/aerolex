@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Callout from '../components/ui/Callout.astro';
+import Icon from '../components/ui/Icon.astro';
+import { href, useT } from '../i18n/index.js';
+import { TOOLS } from '../lib/tools/registry.js';
+
+interface Props { lang: string; routeKey: any }
+const { lang, routeKey } = Astro.props;
+const tr = useT(lang);
+---
+<BaseLayout lang={lang} routeKey={routeKey} title={tr('tools.metaTitle')} description={tr('tools.metaDescription')}>
+  <header class="page-header">
+    <div class="container">
+      <Breadcrumbs label={tr('a11y.breadcrumbs')} items={[{ label: tr('nav.home'), href: href('home', lang) }, { label: tr('nav.tools') }]} />
+      <h1>{tr('tools.title')}</h1>
+      <p class="lead">{tr('tools.lead')}</p>
+    </div>
+  </header>
+  <div class="container tools">
+    <Callout type="caution" label={tr('styleguide.calloutLabels.caution')}><p>{tr('tools.educational')}</p></Callout>
+    <ul class="tools__grid" role="list">
+      {TOOLS.map((tool) => (
+        <li>
+          <a class="tool-card" href={href(tool.key, lang)} data-tool={tool.key}>
+            <span class="tool-card__icon"><Icon name={tool.icon} size={26} /></span>
+            <span class="tool-card__title">{tr(`tools.cards.${tool.key}.title`)}</span>
+            <span class="tool-card__text">{tr(`tools.cards.${tool.key}.text`)}</span>
+            <span class="tool-card__more">{tr('tools.open')} <Icon name="arrow-right" size={16} /></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .tools { padding-block: var(--space-6) var(--space-9); }
+  .tools__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-4); list-style: none; margin: var(--space-6) 0 0; padding: 0; }
+  .tools__grid li { margin: 0; }
+  .tool-card { display: flex; flex-direction: column; gap: var(--space-2); height: 100%; padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); color: var(--text); text-decoration: none; box-shadow: var(--shadow-sm); transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+  .tool-card:hover { transform: translateY(-2px); border-color: var(--border-strong); color: var(--text); }
+  .tool-card__icon { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--cyan-soft, var(--primary-soft)); color: var(--cyan); }
+  .tool-card__title { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; }
+  .tool-card__text { color: var(--text-muted); flex: 1; }
+  .tool-card__more { display: inline-flex; align-items: center; gap: var(--space-1); color: var(--primary); font-weight: 600; }
+  @media (prefers-reduced-motion: reduce) { .tool-card { transition: none; } .tool-card:hover { transform: none; } }
+</style>
