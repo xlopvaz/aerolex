@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Magnetic variation",
+    "es": "Declinación magnética"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The angle between true north and magnetic north at a given place; it changes from place to place and slowly over time.",
+    "es": "Ángulo entre el norte verdadero y el norte magnético en un lugar dado; cambia de un lugar a otro y, poco a poco, con el tiempo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The difference between the map's north and the compass's north.",
+    "es": "La diferencia entre el norte del mapa y el de la brújula."
+  },
+  "example": {
+    "en": "Runway numbers are based on magnetic headings, so they change when the variation changes.",
+    "es": "Los números de pista se basan en rumbos magnéticos, así que cambian cuando cambia la declinación."
+  },
+  "pronunciation": {
+    "en": "mag-NET-ik vair-ee-AY-shun",
+    "es": "mag-ne-tic va-ri-ei-shon (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "magnetic declination"
+    ],
+    "es": [
+      "variación magnética"
+    ]
+  },
+  "related": [
+    "heading",
+    "runway",
+    "bearing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

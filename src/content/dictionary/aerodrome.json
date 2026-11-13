@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Aerodrome",
+    "es": "Aeródromo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "airport-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A defined area on land or water, including buildings, installations and equipment, intended to be used wholly or in part for the arrival, departure and surface movement of aircraft.",
+    "es": "Área definida de tierra o de agua, con sus edificios, instalaciones y equipos, destinada total o parcialmente a la llegada, salida y movimiento en superficie de aeronaves."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "The official word for any airfield or airport.",
+    "es": "La palabra oficial para cualquier campo de vuelo o aeropuerto."
+  },
+  "example": {
+    "en": "The aerodrome elevation is published in the AIP.",
+    "es": "La elevación del aeródromo se publica en el AIP."
+  },
+  "pronunciation": {
+    "en": "AIR-oh-drohm",
+    "es": "e-ro-drom (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "airport",
+      "airfield"
+    ],
+    "es": [
+      "aeropuerto"
+    ]
+  },
+  "related": [
+    "runway",
+    "apron",
+    "aip"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

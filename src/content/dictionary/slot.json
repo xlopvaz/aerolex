@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Airport slot",
+    "es": "Slot (franja horaria)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "commercial-aviation",
+    "airport-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "At a congested (coordinated) airport, the permission given to an airline to use the full range of airport infrastructure to land or take off on a specific date and time.",
+    "es": "En un aeropuerto congestionado (coordinado), el permiso que se da a una aerolínea para usar toda la infraestructura del aeropuerto para aterrizar o despegar en una fecha y hora concretas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A time window an airline is given to take off or land at a busy airport.",
+    "es": "Un hueco horario que se asigna a una aerolínea para despegar o aterrizar en un aeropuerto saturado."
+  },
+  "example": {
+    "en": "The airline bought slots at Heathrow to start the route.",
+    "es": "La aerolínea compró slots en Heathrow para abrir la ruta."
+  },
+  "pronunciation": {
+    "en": "slot",
+    "es": "slot"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "atc"
+  ],
+  "regionalNote": {
+    "en": "Not to be confused with an ATC slot (calculated take-off time) given by air traffic flow management for a particular flight.",
+    "es": "No confundir con el slot ATC (hora calculada de despegue) que asigna la gestión de afluencia a un vuelo concreto."
+  },
+  "sources": [
+    "eu-95-93"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

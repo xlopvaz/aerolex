@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Overbooking",
+    "es": "Sobreventa"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "commercial-aviation",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Selling more tickets than there are seats on a flight, expecting some passengers not to show up; if too many come, some may be denied boarding, which in the EU gives rights to compensation and assistance.",
+    "es": "Vender más billetes que plazas tiene un vuelo, contando con que algunos pasajeros no se presenten; si se presentan demasiados, a algunos se les puede denegar el embarque, lo que en la UE da derecho a compensación y asistencia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the airline sells more seats than the aircraft has.",
+    "es": "Cuando la aerolínea vende más plazas de las que tiene el avión."
+  },
+  "example": {
+    "en": "Because of overbooking, two passengers were offered a later flight and compensation.",
+    "es": "Por la sobreventa, a dos pasajeros se les ofreció un vuelo posterior y una compensación."
+  },
+  "pronunciation": {
+    "en": "OH-ver-buk-ing",
+    "es": "o-ver-bu-king (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "overbooking"
+    ]
+  },
+  "related": [
+    "boarding",
+    "pax"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-261-2004"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

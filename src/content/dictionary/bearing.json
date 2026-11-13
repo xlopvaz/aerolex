@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Bearing",
+    "es": "Marcación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The horizontal direction from one point to another, measured clockwise from north (true or magnetic), usually in degrees.",
+    "es": "Dirección horizontal de un punto a otro, medida en el sentido de las agujas del reloj desde el norte (verdadero o magnético), normalmente en grados."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The direction to something, in degrees from north.",
+    "es": "La dirección hacia algo, en grados desde el norte."
+  },
+  "example": {
+    "en": "The NDB bears 270 degrees from the aircraft.",
+    "es": "El NDB está en marcación 270 grados desde la aeronave."
+  },
+  "pronunciation": {
+    "en": "BAIR-ing",
+    "es": "be-ring (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "demora"
+    ]
+  },
+  "related": [
+    "heading",
+    "track",
+    "adf",
+    "vor"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

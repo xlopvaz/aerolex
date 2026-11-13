@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Security screening",
+    "es": "Control de seguridad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-security",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The use of technical or other means to identify and detect weapons, explosives or other dangerous items that could be used to commit an act of unlawful interference, applied to passengers, cabin baggage, hold baggage and cargo.",
+    "es": "Aplicación de medios técnicos o de otro tipo para identificar y detectar armas, explosivos u otros artículos peligrosos que podrían usarse para cometer un acto de interferencia ilícita, aplicada a pasajeros, equipaje de mano, equipaje de bodega y carga."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The airport security check of people and bags.",
+    "es": "El control de seguridad del aeropuerto para personas y equipajes."
+  },
+  "example": {
+    "en": "Liquids in cabin baggage are checked at security screening.",
+    "es": "Los líquidos del equipaje de mano se revisan en el control de seguridad."
+  },
+  "pronunciation": {
+    "en": "sih-KYUR-ih-tee SKREE-ning",
+    "es": "si-kiu-ri-ti scri-ning (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "filtro de seguridad"
+    ]
+  },
+  "related": [
+    "unruly-passenger",
+    "boarding"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-17"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

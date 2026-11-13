@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Localizer",
+    "es": "Localizador"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The ILS component that provides lateral guidance along the extended runway centreline.",
+    "es": "Componente del ILS que proporciona guía lateral a lo largo de la prolongación del eje de pista."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The ILS signal that lines you up with the runway centre.",
+    "es": "La señal del ILS que te alinea con el centro de la pista."
+  },
+  "example": {
+    "en": "\"Localizer established runway 18R.\"",
+    "es": "«Establecido en el localizador de la pista 18R.»"
+  },
+  "pronunciation": {
+    "en": "LOH-kuh-lie-zer",
+    "es": "lo-ca-lai-zer (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "LOC",
+      "LLZ"
+    ],
+    "es": [
+      "LOC",
+      "LLZ"
+    ]
+  },
+  "related": [
+    "ils",
+    "glide-path"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

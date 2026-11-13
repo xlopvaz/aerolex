@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Unruly passenger",
+    "es": "Pasajero perturbador"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-security",
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A passenger who does not respect the rules of conduct on board or follow crew instructions, and so disturbs good order and discipline or endangers safety.",
+    "es": "Pasajero que no respeta las normas de conducta a bordo ni sigue las instrucciones de la tripulación, y con ello altera el orden y la disciplina o pone en peligro la seguridad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A passenger who behaves badly and causes trouble on board.",
+    "es": "Un pasajero que se comporta mal y causa problemas a bordo."
+  },
+  "example": {
+    "en": "The captain diverted because of an unruly passenger.",
+    "es": "El comandante se desvió por un pasajero perturbador."
+  },
+  "pronunciation": {
+    "en": "un-ROO-lee PAS-in-jer",
+    "es": "an-ru-li pa-sen-yer (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "disruptive passenger"
+    ],
+    "es": [
+      "pasajero conflictivo",
+      "pasajero disruptivo"
+    ]
+  },
+  "related": [
+    "cabin-crew",
+    "security-screening"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-17",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

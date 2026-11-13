@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Ground speed",
+    "es": "Velocidad respecto al suelo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The speed of the aircraft relative to the ground: true airspeed corrected for the effect of wind.",
+    "es": "Velocidad de la aeronave respecto al suelo: la velocidad verdadera corregida por el efecto del viento."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How fast you are moving over the ground.",
+    "es": "Lo rápido que avanzas sobre el suelo."
+  },
+  "example": {
+    "en": "TAS 450 kt with a 100-knot tailwind gives a ground speed of 550 kt.",
+    "es": "Una TAS de 450 kt con 100 nudos de viento de cola da 550 kt de velocidad respecto al suelo."
+  },
+  "pronunciation": {
+    "en": "GROWND speed",
+    "es": "graund spid (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "GS"
+    ],
+    "es": [
+      "GS"
+    ]
+  },
+  "related": [
+    "tas",
+    "headwind",
+    "tailwind"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

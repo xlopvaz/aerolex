@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Separation",
+    "es": "Separación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The minimum distance, vertical or horizontal, or the minimum time that air traffic control keeps between aircraft to prevent collisions.",
+    "es": "Distancia mínima, vertical u horizontal, o tiempo mínimo que el control de tránsito aéreo mantiene entre aeronaves para evitar colisiones."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The safety gap controllers keep between aircraft.",
+    "es": "El espacio de seguridad que los controladores mantienen entre los aviones."
+  },
+  "example": {
+    "en": "With RVSM, the vertical separation above FL290 is 1,000 ft.",
+    "es": "Con RVSM, la separación vertical por encima de FL290 es de 1000 ft."
+  },
+  "pronunciation": {
+    "en": "sep-uh-RAY-shun",
+    "es": "se-pa-ra-ción"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "rvsm",
+    "atc",
+    "tcas",
+    "wake-turbulence"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

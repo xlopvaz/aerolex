@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Wilco",
+    "es": "Wilco (cumpliré)"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Phraseology word (from \"will comply\") meaning \"I understand your message and will comply with it\".",
+    "es": "Palabra de la fraseología (de «will comply») que significa «Comprendo su mensaje y procederé de acuerdo con él»."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "\"Understood, I will do it.\"",
+    "es": "«Entendido, lo haré.»"
+  },
+  "example": {
+    "en": "\"Report the outer marker.\" — \"Wilco.\"",
+    "es": "«Notifique la radiobaliza exterior.» «Wilco.»"
+  },
+  "pronunciation": {
+    "en": "WIL-koh",
+    "es": "uil-co"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "roger",
+    "affirm",
+    "readback"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

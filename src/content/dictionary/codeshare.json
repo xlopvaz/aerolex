@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Codeshare",
+    "es": "Código compartido"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "commercial-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A commercial agreement under which an airline sells seats under its own flight number on a flight operated by another airline.",
+    "es": "Acuerdo comercial por el que una aerolínea vende plazas con su propio número de vuelo en un vuelo operado por otra aerolínea."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "One flight sold under several airlines' flight numbers.",
+    "es": "Un mismo vuelo vendido con números de vuelo de varias aerolíneas."
+  },
+  "example": {
+    "en": "The flight was sold as IB and BA codeshare, operated by Iberia.",
+    "es": "El vuelo se vendió en código compartido IB y BA, operado por Iberia."
+  },
+  "pronunciation": {
+    "en": "KOHD-shair",
+    "es": "coud-sher (en inglés)"
+  },
+  "synonyms": {
+    "en": [
+      "code sharing"
+    ],
+    "es": [
+      "codeshare"
+    ]
+  },
+  "related": [
+    "iata",
+    "pax"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9626"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
