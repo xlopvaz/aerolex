@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según el ERC, hay que sospechar una parada cardíaca si la persona…",
+        "en": "According to the ERC, suspect cardiac arrest if the person…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No responde y no respira con normalidad",
+            "en": "Is unresponsive and not breathing normally"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tiene frío",
+            "en": "Feels cold"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Está pálida pero habla",
+            "en": "Is pale but talking"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tose con fuerza",
+            "en": "Is coughing hard"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las respiraciones agónicas no son respiración normal.",
+        "en": "Agonal breathing is not normal breathing."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La profundidad de las compresiones en un adulto es…",
+        "en": "Chest compression depth in an adult is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "De 1 a 2 cm",
+            "en": "1 to 2 cm"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De 8 a 10 cm",
+            "en": "8 to 10 cm"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La que se pueda sin mover el pecho",
+            "en": "As much as possible without moving the chest"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "De al menos 5 cm y no más de 6 cm",
+            "en": "At least 5 cm but not more than 6 cm"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "A un ritmo de 100 a 120 por minuto.",
+        "en": "At a rate of 100 to 120 per minute."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El ritmo de compresiones recomendado es de…",
+        "en": "The recommended compression rate is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "60 por minuto",
+            "en": "60 per minute"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "150 a 180 por minuto",
+            "en": "150 to 180 per minute"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "100 a 120 por minuto",
+            "en": "100 to 120 per minute"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "30 por minuto",
+            "en": "30 per minute"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Con las mínimas interrupciones y dejando que el pecho vuelva del todo.",
+        "en": "With minimal interruptions and full chest recoil."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "La relación compresiones-ventilaciones para quien está formado es…",
+        "en": "The compression-to-breath ratio for a trained rescuer is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "15:1",
+            "en": "15:1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30:2",
+            "en": "30:2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5:1",
+            "en": "5:1"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "50:5",
+            "en": "50:5"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Si no se está formado o dispuesto, solo compresiones.",
+        "en": "If not trained or willing, compressions only."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un adulto atragantado deja de toser con eficacia. ¿Qué se hace primero?",
+        "en": "A choking adult stops coughing effectively. What do you do first?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hasta 5 golpes en la espalda",
+            "en": "Up to 5 back blows"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Empezar la RCP",
+            "en": "Start CPR"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Darle agua",
+            "en": "Give them water"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Esperar a que se pase",
+            "en": "Wait for it to pass"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Después, hasta 5 compresiones abdominales, alternando.",
+        "en": "Then up to 5 abdominal thrusts, alternating."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Una persona que no responde pero respira con normalidad se coloca…",
+        "en": "A person who is unresponsive but breathing normally is placed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sentada en su asiento",
+            "en": "Sitting in their seat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Boca abajo",
+            "en": "Face down"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De pie",
+            "en": "Standing"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En posición lateral de seguridad",
+            "en": "In the recovery position"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Y se vigila su respiración continuamente.",
+        "en": "And their breathing is monitored continuously."
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "course": "cabin-aviation-security",
+  "lessons": [
+    {
+      "lesson": "security-framework",
+      "key": {
+        "es": "La security protege frente a actos deliberados; Anexo 17 → Reg. 300/2008 y 2015/1998 → programas nacional, de aeropuerto y de operador; control de seguridad con seis categorías prohibidas; ninguna maleta vuela sin su pasajero.",
+        "en": "Security protects against deliberate acts; Annex 17 → Reg. 300/2008 and 2015/1998 → national, airport and operator programmes; screening with six prohibited categories; no bag flies without its passenger."
+      },
+      "points": [
+        {
+          "es": "Safety = accidentes; security = actos deliberados de interferencia ilícita.",
+          "en": "Safety = accidents; security = deliberate acts of unlawful interference."
+        },
+        {
+          "es": "Anexo 17 (OACI) → Reg. (CE) 300/2008 (básico) → Reg. (UE) 2015/1998 (detalle) → programas nacional, de aeropuerto y de operador.",
+          "en": "Annex 17 (ICAO) → Reg. (EC) 300/2008 (basic) → Reg. (EU) 2015/1998 (detail) → national, airport and operator programmes."
+        },
+        {
+          "es": "Prohibidos en cabina: armas de fuego, paralizantes, punzantes y cortantes, herramientas, contundentes, explosivos e incendiarios.",
+          "en": "Prohibited in the cabin: firearms, stunning devices, sharp items, tools, blunt instruments, explosives and incendiaries."
+        },
+        {
+          "es": "Líquidos: regla general UE de 100 ml en bolsa de 1 L.",
+          "en": "Liquids: general EU rule of 100 ml in a 1 L bag."
+        },
+        {
+          "es": "Conciliación: sin pasajero a bordo, su maleta facturada no vuela.",
+          "en": "Reconciliation: no passenger on board, their checked bag does not fly."
+        },
+        {
+          "es": "Tripulación: prevenir, detectar y comunicar.",
+          "en": "Crew: prevent, detect and report."
+        }
+      ]
+    },
+    {
+      "lesson": "aircraft-and-flight-deck-protection",
+      "key": {
+        "es": "Revisar la cabina antes del vuelo (lavabos, compartimentos, asientos, galleys) sin tocar lo sospechoso; puerta de la cabina de vuelo reforzada y cerrada de puertas cerradas a puertas abiertas; aviso discreto y código 7500.",
+        "en": "Check the cabin before flight (lavatories, bins, seats, galleys) without touching anything suspicious; reinforced flight deck door locked from doors closed to doors open; discreet alert and code 7500."
+      },
+      "points": [
+        {
+          "es": "Revisión de cabina: lavabos, compartimentos, asientos y bolsillos, galleys, zonas de descanso.",
+          "en": "Cabin check: lavatories, bins, seats and pockets, galleys, rest areas."
+        },
+        {
+          "es": "Objeto sospechoso: no tocar, informar al comandante, seguir el procedimiento.",
+          "en": "Suspicious item: do not touch, inform the commander, follow the procedure."
+        },
+        {
+          "es": "Puerta (Anexo 6): resistente a disparos e intrusión, mando desde ambos puestos, cerrada de puertas cerradas a puertas abiertas, vigilancia exterior.",
+          "en": "Door (Annex 6): resists gunfire and intrusion, controlled from both seats, locked from doors closed to doors open, outside monitoring."
+        },
+        {
+          "es": "Procedimiento de acceso de cada operador; aviso discreto de la cabina a los pilotos.",
+          "en": "Each operator's access procedure; discreet alert from cabin to pilots."
+        },
+        {
+          "es": "Transpondedor 7500 = interferencia ilícita (7600 radio, 7700 emergencia).",
+          "en": "Transponder 7500 = unlawful interference (7600 radio, 7700 emergency)."
+        }
+      ]
+    },
+    {
+      "lesson": "unruly-passengers",
+      "key": {
+        "es": "Cuatro niveles (1 perturbador, 2 agresivo, 3 peligro para la vida, 4 intento de entrar en la cabina de vuelo); el alcohol, factor clave; desescalar pronto; Tokio 1963 da al comandante medidas razonables incluida la inmovilización; Montreal 2014 amplía la jurisdicción.",
+        "en": "Four levels (1 disruptive, 2 physically abusive, 3 life-threatening, 4 flight deck breach); alcohol a key factor; de-escalate early; Tokyo 1963 gives the commander reasonable measures including restraint; Montreal 2014 extends jurisdiction."
+      },
+      "points": [
+        {
+          "es": "Niveles: 1 perturbador o amenaza verbal; 2 agresión física; 3 peligro para la vida; 4 intento o entrada en la cabina de vuelo.",
+          "en": "Levels: 1 disruptive or verbal threat; 2 physical abuse; 3 life-threatening; 4 attempted or actual flight deck breach."
+        },
+        {
+          "es": "Alcohol: negar embarque al ebrio, servir con responsabilidad, vigilar el alcohol propio.",
+          "en": "Alcohol: deny boarding to the intoxicated, serve responsibly, watch passengers' own alcohol."
+        },
+        {
+          "es": "Desescalada: calma, escuchar, explicar, opciones, no quedarse solo, anotar.",
+          "en": "De-escalation: calm, listen, explain, options, do not act alone, record."
+        },
+        {
+          "es": "Tokio 1963: el comandante puede inmovilizar, pedir ayuda, desembarcar y entregar; todos protegidos si actúan conforme al Convenio.",
+          "en": "Tokyo 1963: the commander can restrain, ask for help, disembark and hand over; all protected when acting under the Convention."
+        },
+        {
+          "es": "Montreal 2014: jurisdicción también del Estado de aterrizaje y del operador. Abril 2024: 187 partes en Tokio, 47 en el Protocolo.",
+          "en": "Montreal 2014: jurisdiction also for the State of landing and of the operator. April 2024: 187 parties to Tokyo, 47 to the Protocol."
+        }
+      ]
+    },
+    {
+      "lesson": "threats-on-board",
+      "key": {
+        "es": "Toda amenaza se toma en serio: informar al comandante, registro con lista y ubicación de menor riesgo; objeto sospechoso: no tocar, alejar, describir; apoderamiento: vidas primero, puerta cerrada, aviso discreto, 7500; después, informar.",
+        "en": "Every threat is taken seriously: inform the commander, search with a checklist and least-risk location; suspicious item: do not touch, move people away, describe; seizure: lives first, door closed, discreet alert, 7500; afterwards, report."
+      },
+      "points": [
+        {
+          "es": "Amenaza de bomba: informar al comandante → evaluación con tierra → registro con lista → preparar aterrizaje y posible evacuación.",
+          "en": "Bomb threat: inform the commander → assessment with the ground → search with a checklist → prepare landing and possible evacuation."
+        },
+        {
+          "es": "Anexo 6: lista de registro a bordo y ubicación de menor riesgo definida por el fabricante.",
+          "en": "Annex 6: search checklist on board and least-risk location defined by the manufacturer."
+        },
+        {
+          "es": "Objeto sospechoso: no tocar, no mover, no abrir; alejar a la gente; describir al comandante.",
+          "en": "Suspicious item: do not touch, move or open; move people away; describe it to the commander."
+        },
+        {
+          "es": "Apoderamiento: vidas primero, puerta cerrada, aviso discreto, 7500, observar para las autoridades.",
+          "en": "Seizure: lives first, door closed, discreet alert, 7500, observe for the authorities."
+        },
+        {
+          "es": "Todo suceso de seguridad se comunica y se registra.",
+          "en": "Every security occurrence is reported and recorded."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

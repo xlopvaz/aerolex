@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué significa la «T» de NITS?",
+        "en": "What does the \"T\" in NITS stand for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El tipo de avión",
+            "en": "Type of aircraft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El tiempo disponible",
+            "en": "Time available"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La temperatura exterior",
+            "en": "Outside temperature"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El tráfico",
+            "en": "Traffic"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Naturaleza, Intención, Tiempo e instrucciones eSpeciales.",
+        "en": "Nature, Intention, Time and Special instructions."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Tras recibir la información NITS, la jefa de cabina debe…",
+        "en": "After receiving the NITS briefing, the senior cabin crew member must…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Repetirla al comandante y sincronizar los relojes",
+            "en": "Read it back to the commander and synchronise watches"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hacer un anuncio sin repetirla",
+            "en": "Make an announcement without reading it back"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Armar las rampas inmediatamente",
+            "en": "Arm the slides immediately"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ir a la galley a preparar café",
+            "en": "Go to the galley to make coffee"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La repetición confirma que se ha entendido.",
+        "en": "The read-back confirms it has been understood."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un despegue abortado que termina fuera de pista es una emergencia…",
+        "en": "A rejected take-off that ends off the runway is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Preparada",
+            "en": "A planned emergency"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Médica",
+            "en": "A medical emergency"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De seguridad",
+            "en": "A security emergency"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Imprevista",
+            "en": "An unplanned emergency"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "No hay tiempo para informar ni preparar la cabina.",
+        "en": "There is no time to brief or prepare the cabin."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En la posición de protección con cinturón de cadera, los pies deben ir…",
+        "en": "In the brace position with a lap belt, the feet should be…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Estirados contra el asiento delantero",
+            "en": "Stretched out against the seat in front"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Encima del asiento",
+            "en": "Up on the seat"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En el suelo y lo más atrás posible",
+            "en": "On the floor and as far back as possible"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cruzados",
+            "en": "Crossed"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Así se evita que las piernas golpeen el asiento delantero.",
+        "en": "That stops the legs hitting the seat in front."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Por qué la posición de protección apoya la cabeza contra el respaldo delantero?",
+        "en": "Why does the brace position put the head against the seat in front?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para no ver el impacto",
+            "en": "So as not to see the impact"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque la coloca contra la superficie con la que chocaría de todos modos",
+            "en": "Because it places it against the surface it would hit anyway"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para respirar mejor",
+            "en": "To breathe better"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para oír las órdenes",
+            "en": "To hear the commands"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Reduce el recorrido y la violencia del golpe.",
+        "en": "It reduces the distance and violence of the blow."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué tarea suele cerrar la preparación de la cabina?",
+        "en": "Which task usually ends cabin preparation?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Informar al comandante y sentarse repasando las propias tareas",
+            "en": "Reporting to the commander and sitting down to review your own tasks"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Servir bebidas",
+            "en": "Serving drinks"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Desarmar las rampas",
+            "en": "Disarming the slides"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Abrir la puerta de la cabina de vuelo",
+            "en": "Opening the flight deck door"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es la revisión silenciosa.",
+        "en": "That is the silent review."
+      }
+    }
+  ]
+}

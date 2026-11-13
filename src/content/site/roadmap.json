@@ -17,7 +17,7 @@
     { "flight": "AX 404", "phase": 4, "status": "live",      "destination": { "en": "Flashcards, weather glossary & timeline", "es": "Flashcards, glosario meteorológico y cronología" } },
     { "flight": "AX 501", "phase": 5, "status": "live",      "destination": { "en": "XP, streaks & badges",               "es": "XP, rachas e insignias" } },
     { "flight": "AX 502", "phase": 5, "status": "live",      "destination": { "en": "Interactive flight deck",            "es": "Cabina de vuelo interactiva" } },
-    { "flight": "AX 308", "phase": 6, "status": "boarding",  "destination": { "en": "Pilot Academy · modules 3–17",       "es": "Academia de pilotos · módulos 3–17" } },
-    { "flight": "AX 309", "phase": 6, "status": "scheduled", "destination": { "en": "Cabin Crew Academy · modules 4–15",  "es": "Academia de TCP · módulos 4–15" } }
+    { "flight": "AX 601", "phase": 6, "status": "boarding",  "destination": { "en": "Pilot Academy · modules 3–17",       "es": "Academia de pilotos · módulos 3–17" } },
+    { "flight": "AX 602", "phase": 6, "status": "boarding",  "destination": { "en": "Cabin Crew Academy · modules 4–15",  "es": "Academia de TCP · módulos 4–15" } }
   ]
 }

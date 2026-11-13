@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "First-aid kit",
+    "es": "Botiquín de primeros auxilios"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A kit of dressings, bandages and basic items for first aid carried on board; EU rules set the number by passenger seats (one up to 100 seats, plus one for each further 100, up to six), separate from the emergency medical kit for use by qualified medical people.",
+    "es": "Botiquín con apósitos, vendas y material básico de primeros auxilios que se lleva a bordo; las normas de la UE fijan su número según los asientos (uno hasta 100 asientos y uno más por cada 100 adicionales, hasta seis), distinto del botiquín médico de emergencia para personal sanitario cualificado."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's first-aid box.",
+    "es": "La caja de primeros auxilios del avión."
+  },
+  "example": {
+    "en": "The cabin crew used the first-aid kit to dress the passenger's cut.",
+    "es": "La tripulación usó el botiquín de primeros auxilios para curar el corte del pasajero."
+  },
+  "pronunciation": {
+    "en": "furst AYD kit",
+    "es": "bo-ti-quín"
+  },
+  "synonyms": {
+    "en": [
+      "FAK"
+    ],
+    "es": [
+      "FAK"
+    ]
+  },
+  "related": [
+    "aed",
+    "cpr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

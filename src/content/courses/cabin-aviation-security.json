@@ -1,0 +1,52 @@
+{
+  "path": "cabin-crew-training",
+  "order": 6,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de TCP · Módulo 6: Seguridad de la aviación",
+    "en": "Cabin Crew Academy · Module 6: Aviation Security"
+  },
+  "description": {
+    "es": "La seguridad frente a actos deliberados: el marco de la OACI y la UE, el control de seguridad y los artículos prohibidos, la protección del avión y de la cabina de vuelo, los pasajeros conflictivos con los niveles de amenaza y los Convenios de Tokio y Montreal, y las amenazas a bordo. Solo principios públicos: los procedimientos detallados son confidenciales y los fija cada operador.",
+    "en": "Security against deliberate acts: the ICAO and EU framework, screening and prohibited articles, protecting the aircraft and the flight deck, unruly passengers with the threat levels and the Tokyo and Montreal instruments, and threats on board. Public principles only: detailed procedures are confidential and set by each operator."
+  },
+  "objectives": {
+    "en": [
+      "Explain the regulatory framework of aviation security",
+      "Check the cabin and apply the flight deck door rules",
+      "Classify and de-escalate incidents with unruly passengers",
+      "Apply the principles for threats and suspicious items"
+    ],
+    "es": [
+      "Explicar el marco normativo de la seguridad de la aviación",
+      "Revisar la cabina y aplicar las reglas de la puerta de la cabina de vuelo",
+      "Clasificar y desactivar incidentes con pasajeros conflictivos",
+      "Aplicar los principios ante amenazas y objetos sospechosos"
+    ]
+  },
+  "lessons": [
+    "security-framework",
+    "aircraft-and-flight-deck-protection",
+    "unruly-passengers",
+    "threats-on-board"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-annex-17",
+    "eu-300-2008",
+    "eu-2015-1998",
+    "icao-annex-6",
+    "icao-doc-4444",
+    "africanpilot-unruly-levels-2026",
+    "icao-doc-8364",
+    "icao-doc-10034",
+    "icao-doc-10117",
+    "icao-unruly-media-2024",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

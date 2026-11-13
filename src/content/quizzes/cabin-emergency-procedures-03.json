@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuándo se infla el chaleco salvavidas?",
+        "en": "When is the life jacket inflated?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Antes del impacto",
+            "en": "Before the impact"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nada más ponérselo",
+            "en": "As soon as it is put on"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al empezar el descenso",
+            "en": "When the descent begins"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al salir del avión",
+            "en": "When leaving the aircraft"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Dentro de la cabina dificulta la salida y puede dejar atrapada a la persona.",
+        "en": "Inside the cabin it hinders escape and can trap the person."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En un amerizaje hay que esperar…",
+        "en": "In a ditching you should expect…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un solo impacto muy suave",
+            "en": "A single very gentle impact"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ningún impacto",
+            "en": "No impact at all"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Más de un impacto",
+            "en": "More than one impact"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que todas las salidas queden secas",
+            "en": "All exits to stay dry"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El avión puede rebotar o tocar primero con la cola.",
+        "en": "The aircraft may bounce or touch tail first."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Una salida cuyo umbral queda por debajo del nivel del agua…",
+        "en": "An exit whose sill is below the waterline…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se abre con más fuerza",
+            "en": "Is opened with more force"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No se debe abrir",
+            "en": "Must not be opened"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Es la mejor salida",
+            "en": "Is the best exit"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se usa solo para la tripulación",
+            "en": "Is used only by crew"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Inundaría la cabina.",
+        "en": "It would flood the cabin."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Una rampa-balsa es…",
+        "en": "A slide-raft is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una rampa que, en el agua, se suelta del avión y sirve de balsa",
+            "en": "A slide that, on water, is detached from the aircraft and used as a raft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un chaleco para niños",
+            "en": "A child life jacket"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un asiento flotante",
+            "en": "A flotation seat cushion"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una balsa que se guarda en la bodega",
+            "en": "A raft stored in the hold"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Otros aviones llevan balsas independientes.",
+        "en": "Other aircraft carry separate rafts."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Cuál es la primera prioridad una vez en la balsa?",
+        "en": "What is the first priority once in the raft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Repartir comida",
+            "en": "Handing out food"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Encender las bengalas",
+            "en": "Lighting the flares"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hacer un recuento de equipaje",
+            "en": "Counting baggage"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Alejarla del avión",
+            "en": "Moving it away from the aircraft"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Después: recoger a quien esté en el agua, protegerse del frío, señalizar.",
+        "en": "Then: pick up people in the water, protect from cold, signal."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El gran enemigo de los supervivientes en el agua es…",
+        "en": "The great enemy of survivors in the water is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El hambre",
+            "en": "Hunger"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El sol",
+            "en": "The sun"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La hipotermia",
+            "en": "Hypothermia"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El aburrimiento",
+            "en": "Boredom"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El agua fría reduce muy deprisa la capacidad de nadar y agarrarse.",
+        "en": "Cold water very quickly reduces the ability to swim and hold on."
+      }
+    }
+  ]
+}

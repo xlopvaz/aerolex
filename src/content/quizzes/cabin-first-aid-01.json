@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según el estudio del NEJM de 2013, ¿con qué frecuencia hubo emergencias médicas en vuelo?",
+        "en": "According to the 2013 NEJM study, how often did in-flight medical emergencies occur?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una por cada 60.000 vuelos",
+            "en": "One every 60,000 flights"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una por cada 604 vuelos",
+            "en": "One every 604 flights"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una por cada 6 vuelos",
+            "en": "One every 6 flights"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una al año por aerolínea",
+            "en": "One a year per airline"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Casi siempre se resuelven a bordo.",
+        "en": "They are almost always resolved on board."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cuál fue el problema médico más común en ese estudio?",
+        "en": "What was the most common medical problem in that study?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El desmayo o casi desmayo",
+            "en": "Fainting or near-fainting"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La parada cardíaca",
+            "en": "Cardiac arrest"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El parto",
+            "en": "Childbirth"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Las quemaduras",
+            "en": "Burns"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "37,4 % de los casos; después, síntomas respiratorios y náuseas.",
+        "en": "37.4 % of cases; then respiratory symptoms and nausea."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Quién decide si el avión se desvía por una emergencia médica?",
+        "en": "Who decides whether the aircraft diverts for a medical emergency?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El médico que viaja como pasajero",
+            "en": "The doctor travelling as a passenger"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La jefa de cabina",
+            "en": "The senior cabin crew member"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El control aéreo",
+            "en": "Air traffic control"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El comandante",
+            "en": "The commander"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Lo decide con la información médica, la situación del vuelo y los aeropuertos disponibles.",
+        "en": "They decide with the medical information, the flight situation and the airports available."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En la UE, un avión de 180 asientos debe llevar…",
+        "en": "In the EU, an aircraft with 180 seats must carry…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Uno",
+            "en": "One"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tres",
+            "en": "Three"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Dos botiquines de primeros auxilios",
+            "en": "Two first-aid kits"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Seis",
+            "en": "Six"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Uno hasta 100 asientos, dos de 101 a 200.",
+        "en": "One up to 100 seats, two from 101 to 200."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "El botiquín médico de emergencia está pensado para que lo use…",
+        "en": "The emergency medical kit is intended to be used by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cualquier pasajero",
+            "en": "Any passenger"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un médico u otra persona cualificada",
+            "en": "A doctor or other qualified person"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo el comandante",
+            "en": "Only the commander"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El personal de tierra",
+            "en": "Ground staff"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El comandante puede limitar el acceso a él.",
+        "en": "The commander may restrict access to it."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué se hace después de atender a un pasajero?",
+        "en": "What is done after treating a passenger?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Registrar síntomas, horas, tratamiento y quién lo dio",
+            "en": "Record symptoms, times, treatment and who gave it"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nada, si ya se encuentra bien",
+            "en": "Nothing, if they now feel well"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Devolver el botiquín sin anotar nada",
+            "en": "Return the kit without noting anything"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Pedirle que firme un pago",
+            "en": "Ask them to sign a payment"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El registro sirve a los servicios médicos y a la aerolínea.",
+        "en": "The record helps the medical services and the airline."
+      }
+    }
+  ]
+}

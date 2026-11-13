@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Thermal runaway",
+    "es": "Embalamiento térmico"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "cabin-crew"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A self-sustaining chain reaction inside a battery cell, usually lithium, in which rising temperature releases more heat, gases and sometimes flames, and can spread to neighbouring cells.",
+    "es": "Reacción en cadena que se mantiene sola dentro de una celda de batería, normalmente de litio, en la que el aumento de temperatura libera más calor, gases y a veces llamas, y puede propagarse a las celdas vecinas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When a battery overheats and keeps heating itself up until it smokes or catches fire.",
+    "es": "Cuando una batería se recalienta y sigue calentándose sola hasta echar humo o arder."
+  },
+  "example": {
+    "en": "Water cooled the laptop and stopped thermal runaway spreading to the other cells.",
+    "es": "El agua enfrió el portátil y evitó que el embalamiento térmico pasara a las demás celdas."
+  },
+  "pronunciation": {
+    "en": "THUR-mul RUN-uh-way",
+    "es": "em-ba-la-mien-to tér-mi-co"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "dangerous-goods",
+    "pbe"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-safo-09013",
+    "icao-doc-9481"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

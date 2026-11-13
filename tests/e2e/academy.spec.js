@@ -59,7 +59,7 @@ test.describe('academy', () => {
 test.describe('TAF academy', () => {
   test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
     await page.goto('en/academy/');
-    await expect(page.locator('.course-card')).toHaveCount(11);
+    await expect(page.locator('.course-card')).toHaveCount(14);
     await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
     await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
@@ -142,15 +142,31 @@ test.describe('Pilot Academy', () => {
 });
 
 test.describe('Cabin Crew Academy', () => {
-  test('lists modules 1–3 in order, shows the operator-manual notice and links terms', async ({ page }) => {
+  test('lists modules 1–6 in order, shows the operator-manual notice and links terms', async ({ page }) => {
     await page.goto('en/academy/');
     const path = page.locator('.path', { hasText: 'Cabin Crew Training' });
-    await expect(path.locator('.course-card')).toHaveCount(3);
+    await expect(path.locator('.course-card')).toHaveCount(6);
     await expect(path.locator('.course-card').nth(0)).toContainText('Module 1');
     await expect(path.locator('.course-card').nth(2)).toContainText('Module 3');
+    await expect(path.locator('.course-card').nth(5)).toContainText('Module 6');
     await page.goto('es/academia/cabin-crew-aircraft/doors-and-exits/');
     await expect(page.locator('.callout').first()).toContainText('El manual del operador prevalece');
     await page.locator('.prose a.term', { hasText: 'rampa de evacuación' }).first().click();
     await expect(page).toHaveURL(/\/es\/diccionario\/evacuation-slide\/$/);
+  });
+});
+
+test.describe('Cabin Crew Academy · advanced modules', () => {
+  test('emergency procedures: notice, dialogue, term link and a 10-question final', async ({ page }) => {
+    await page.goto('en/academy/cabin-emergency-procedures/');
+    await expect(page.locator('.lesson-list li')).toHaveCount(5);
+    await page.locator('.lesson-list a', { hasText: 'Fire and smoke' }).click();
+    await expect(page.locator('.callout').first()).toContainText("The operator's manual prevails");
+    await expect(page.locator('.callout', { hasText: 'Dialogue' })).toBeVisible();
+    await page.locator('.prose a.term', { hasText: 'thermal runaway' }).first().click();
+    await expect(page).toHaveURL(/\/en\/dictionary\/thermal-runaway\/$/);
+    await page.goto('es/academia/cabin-emergency-procedures/decompression-in-the-cabin/');
+    const quiz = page.locator('[data-quiz="cabin-emergency-procedures-final"]');
+    await expect(quiz.locator('.quiz__q')).toHaveCount(10);
   });
 });

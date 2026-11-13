@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Dangerous goods",
+    "es": "Mercancías peligrosas"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew",
+    "ground-handling",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Any article or substance that could endanger health, safety, property or the environment and that is either listed as dangerous goods in the ICAO Technical Instructions or meets the criteria those Instructions use to classify it.",
+    "es": "Cualquier artículo o sustancia que pueda poner en peligro la salud, la seguridad, los bienes o el medio ambiente y que figure como mercancía peligrosa en las Instrucciones Técnicas de la OACI o cumpla los criterios con que estas la clasifican."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "Things that can be dangerous in an aircraft, such as some batteries, gases or flammable liquids.",
+    "es": "Cosas que pueden ser peligrosas en un avión, como algunas baterías, gases o líquidos inflamables."
+  },
+  "example": {
+    "en": "The passenger's spare lithium batteries had to go in the cabin, not in the hold.",
+    "es": "Las baterías de litio de repuesto del pasajero tenían que ir en cabina, no en bodega."
+  },
+  "pronunciation": {
+    "en": "DAYN-jer-us goodz",
+    "es": "mer-can-cí-as pe-li-gro-sas"
+  },
+  "synonyms": {
+    "en": [
+      "DG",
+      "hazardous materials (US)"
+    ],
+    "es": [
+      "MMPP"
+    ]
+  },
+  "related": [
+    "thermal-runaway",
+    "security-screening"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-18",
+    "icao-doc-9481"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CPR",
+    "es": "CPR"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Cardiopulmonary resuscitation",
+    "es": "Reanimación cardiopulmonar"
+  },
+  "categories": [
+    "cabin-crew",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Chest compressions, combined with rescue breaths when trained and willing, given to a person in cardiac arrest to keep blood flowing to the brain and heart until normal circulation returns or advanced help arrives.",
+    "es": "Compresiones torácicas, combinadas con ventilaciones de rescate si se está formado y dispuesto, que se dan a una persona en parada cardíaca para mantener el flujo de sangre al cerebro y al corazón hasta que vuelva la circulación o llegue ayuda avanzada."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Pushing hard and fast on the chest of someone whose heart has stopped.",
+    "es": "Comprimir fuerte y rápido el pecho de alguien cuyo corazón se ha parado."
+  },
+  "example": {
+    "en": "Two cabin crew members took turns at CPR every two minutes.",
+    "es": "Dos TCP se turnaron en la RCP cada dos minutos."
+  },
+  "pronunciation": {
+    "en": "see-pee-AR",
+    "es": "e-rre-ce-pe (en español: RCP)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": [
+      "RCP"
+    ]
+  },
+  "related": [
+    "aed",
+    "first-aid-kit"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "erc-2021-bls"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

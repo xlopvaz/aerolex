@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Por qué aparece niebla en la cabina en una descompresión rápida?",
+        "en": "Why does fog appear in the cabin in a rapid decompression?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque hay un incendio",
+            "en": "Because there is a fire"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque el aire se enfría de golpe y la humedad se condensa",
+            "en": "Because the air cools suddenly and moisture condenses"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque se activan los extintores",
+            "en": "Because the extinguishers go off"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por el aire acondicionado",
+            "en": "Because of the air conditioning"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "No es humo, aunque a veces se confunda.",
+        "en": "It is not smoke, although it is sometimes mistaken for it."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Al caer las máscaras, lo primero que hace un TCP en el pasillo es…",
+        "en": "When the masks drop, the first thing a cabin crew member in the aisle does is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ponerse la máscara más cercana",
+            "en": "Put on the nearest mask"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ir a ayudar a los niños",
+            "en": "Go and help the children"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Llamar a la cabina de vuelo",
+            "en": "Call the flight deck"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ir a su transportín aunque esté lejos",
+            "en": "Go to their jump seat even if it is far away"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Después, sentarse y sujetarse.",
+        "en": "Then sit down and hold on."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuándo empieza la tripulación a moverse por la cabina tras una descompresión?",
+        "en": "When does the crew start moving around the cabin after a decompression?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Inmediatamente",
+            "en": "Immediately"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tras el aterrizaje",
+            "en": "After landing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cuando un pasajero lo pide",
+            "en": "When a passenger asks"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cuando el avión está a una altitud segura y el comandante lo indica",
+            "en": "When the aircraft is at a safe altitude and the commander says so"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Un tripulante inconsciente no ayuda a nadie.",
+        "en": "An unconscious crew member helps no one."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Un síntoma típico de hipoxia es…",
+        "en": "A typical symptom of hypoxia is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El hambre",
+            "en": "Hunger"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Las ganas de dormir solo de noche",
+            "en": "Sleepiness only at night"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La euforia y el juicio alterado",
+            "en": "Euphoria and impaired judgement"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La fiebre alta",
+            "en": "High fever"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Por eso quien la sufre puede no darse cuenta.",
+        "en": "That is why the person affected may not notice."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Las máscaras de los pasajeros deben caer automáticamente antes de que la altitud de cabina supere…",
+        "en": "Passenger masks must drop automatically before cabin altitude exceeds…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "8.000 ft",
+            "en": "8,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "15.000 ft",
+            "en": "15,000 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "25.000 ft",
+            "en": "25,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "41.000 ft",
+            "en": "41,000 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es un requisito de certificación para los aviones que vuelan por encima de 25.000 ft.",
+        "en": "It is a certification requirement for aircraft flying above 25,000 ft."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "En la información NITS, la «I» se refiere a…",
+        "en": "In the NITS briefing, the \"I\" refers to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La intención del comandante",
+            "en": "The commander's intention"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La información a los pasajeros",
+            "en": "Passenger information"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El interfono",
+            "en": "The interphone"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los incidentes anteriores",
+            "en": "Previous incidents"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Por ejemplo, regresar al aeropuerto de salida.",
+        "en": "For example, returning to the departure airport."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Un TCP ve fuego fuera de la salida que le toca. ¿Qué hace?",
+        "en": "A crew member sees fire outside their exit. What do they do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La abre rápido para salir antes",
+            "en": "Opens it quickly to get out sooner"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Espera instrucciones de los pasajeros",
+            "en": "Waits for passengers' instructions"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La abre y desarma la rampa",
+            "en": "Opens it and disarms the slide"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No la abre, la bloquea y envía a los pasajeros a otra",
+            "en": "Does not open it, blocks it and sends passengers to another"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Valorar la salida es el primer paso antes de abrirla.",
+        "en": "Assessing the exit is the first step before opening it."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En un amerizaje, el chaleco salvavidas se infla…",
+        "en": "In a ditching, the life jacket is inflated…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En el asiento",
+            "en": "In the seat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Antes del impacto",
+            "en": "Before impact"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al salir del avión",
+            "en": "When leaving the aircraft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En el pasillo",
+            "en": "In the aisle"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Inflado dentro dificulta la salida.",
+        "en": "Inflated inside it hinders escape."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Tras apagar un fuego de batería de litio, el dispositivo se…",
+        "en": "After putting out a lithium battery fire, the device is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Guarda en el compartimento superior",
+            "en": "Stowed in the overhead bin"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Enfría con agua u otros líquidos no alcohólicos",
+            "en": "Cooled with water or other non-alcoholic liquids"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Devuelve al pasajero",
+            "en": "Returned to the passenger"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lleva a la cabina de vuelo",
+            "en": "Taken to the flight deck"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Así se evita que otras celdas entren en embalamiento térmico.",
+        "en": "This stops other cells going into thermal runaway."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "La posición de protección busca sobre todo…",
+        "en": "The brace position mainly aims to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Limitar el movimiento violento y apoyar la cabeza en la superficie de choque",
+            "en": "Limit violent movement and rest the head on the impact surface"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que los pasajeros no vean el exterior",
+            "en": "Stop passengers seeing outside"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Facilitar el servicio",
+            "en": "Make the service easier"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que los pasajeros duerman",
+            "en": "Help passengers sleep"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Reduce las lesiones en el impacto.",
+        "en": "It reduces injuries on impact."
+      }
+    }
+  ]
+}

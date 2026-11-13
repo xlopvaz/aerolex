@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Act of unlawful interference",
+    "es": "Acto de interferencia ilícita"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-security",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Any act, or attempt, that endangers the security of civil aviation: for example seizing an aircraft, destroying an aircraft in service, taking hostages on board or at an airport, forcing entry into a restricted area, bringing a weapon or dangerous device on board for criminal purposes, or passing on false information that puts an aircraft at risk.",
+    "es": "Cualquier acto, o tentativa, que ponga en peligro la seguridad de la aviación civil: por ejemplo, apoderarse de una aeronave, destruir una aeronave en servicio, tomar rehenes a bordo o en un aeropuerto, entrar por la fuerza en una zona restringida, introducir a bordo un arma o artefacto peligroso con fines delictivos o difundir información falsa que ponga en riesgo una aeronave."
+  },
+  "definitionBasis": "official",
+  "simple": {
+    "en": "A deliberate attack or threat against an aircraft or airport, such as a hijacking.",
+    "es": "Un ataque o amenaza deliberados contra un avión o un aeropuerto, como un secuestro."
+  },
+  "example": {
+    "en": "Squawk 7500 indicates that the aircraft is subject to unlawful interference.",
+    "es": "El código transpondedor 7500 indica que la aeronave es objeto de interferencia ilícita."
+  },
+  "pronunciation": {
+    "en": "ak-tuv un-LAW-ful in-ter-FEER-uns",
+    "es": "ac-to de in-ter-fe-ren-cia i-lí-ci-ta"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "squawk",
+    "flight-deck-door",
+    "security-screening"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-17",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

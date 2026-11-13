@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Un pasajero empuja y golpea a un TCP. ¿Qué nivel de amenaza es?",
+        "en": "A passenger pushes and hits a crew member. Which threat level is it?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Nivel 1",
+            "en": "Level 1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nivel 3",
+            "en": "Level 3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nivel 4",
+            "en": "Level 4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nivel 2",
+            "en": "Level 2"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Nivel 2 = conducta físicamente agresiva.",
+        "en": "Level 2 = physically abusive behaviour."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El nivel 4 de amenaza corresponde a…",
+        "en": "Threat level 4 is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un insulto",
+            "en": "An insult"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Fumar en el lavabo",
+            "en": "Smoking in the lavatory"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un intento de entrar en la cabina de vuelo o una entrada efectiva",
+            "en": "An attempted or actual breach of the flight crew compartment"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Negarse a abrocharse el cinturón",
+            "en": "Refusing to fasten a seat belt"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es el nivel más alto.",
+        "en": "It is the highest level."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál es una buena técnica de desescalada?",
+        "en": "Which is a good de-escalation technique?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Gritar más fuerte que el pasajero",
+            "en": "Shouting louder than the passenger"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Escuchar, reconocer el problema y explicar la norma con calma",
+            "en": "Listening, acknowledging the problem and calmly explaining the rule"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ridiculizarlo delante de otros",
+            "en": "Ridiculing them in front of others"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ignorarlo hasta el aterrizaje",
+            "en": "Ignoring them until landing"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Y no quedarse solo: avisar a la jefa de cabina y, si sigue, al comandante.",
+        "en": "And do not handle it alone: inform the senior cabin crew member and, if it continues, the commander."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Según el Convenio de Tokio, ¿quién puede ordenar la inmovilización de un pasajero?",
+        "en": "Under the Tokyo Convention, who can order a passenger to be restrained?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El comandante",
+            "en": "The commander"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cualquier pasajero, en cualquier caso",
+            "en": "Any passenger, in any case"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El control aéreo",
+            "en": "Air traffic control"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo la policía en tierra",
+            "en": "Only the police on the ground"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Y cualquiera puede actuar sin autorización si es inmediatamente necesario para la seguridad.",
+        "en": "And anyone may act without authorisation if immediately necessary for safety."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué cambió el Protocolo de Montreal de 2014?",
+        "en": "What did the 2014 Montreal Protocol change?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Prohibió el alcohol a bordo",
+            "en": "It banned alcohol on board"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Creó los niveles de amenaza",
+            "en": "It created the threat levels"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Derogó el Convenio de Tokio",
+            "en": "It repealed the Tokyo Convention"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Amplió la jurisdicción al Estado de aterrizaje y al del operador",
+            "en": "It extended jurisdiction to the State of landing and the State of the operator"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Antes, la jurisdicción era sobre todo del Estado de matrícula.",
+        "en": "Before, jurisdiction lay mainly with the State of registration."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Las normas de la UE sobre alcohol obligan al operador a…",
+        "en": "EU rules on alcohol require the operator to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No servir nunca alcohol",
+            "en": "Never serve alcohol"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hacer pruebas de alcoholemia a todos los pasajeros",
+            "en": "Breath-test every passenger"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tomar medidas razonables para que nadie que ponga en peligro la seguridad por alcohol o drogas embarque o siga a bordo",
+            "en": "Take reasonable steps so that nobody endangering safety through alcohol or drugs boards or stays on board"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Servir alcohol sin límite",
+            "en": "Serve unlimited alcohol"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "En la práctica: negar el embarque a quien está ebrio y servir con responsabilidad.",
+        "en": "In practice: deny boarding to the intoxicated and serve responsibly."
+      }
+    }
+  ]
+}

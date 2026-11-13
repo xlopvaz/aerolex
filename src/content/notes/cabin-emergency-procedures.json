@@ -1,0 +1,159 @@
+{
+  "course": "cabin-emergency-procedures",
+  "lessons": [
+    {
+      "lesson": "planned-emergencies",
+      "key": {
+        "es": "Emergencia preparada o imprevista; el comandante informa con NITS (naturaleza, intención, tiempo, especial), se repite y se sincronizan relojes; preparar galley, pasajeros, ABP y cabina; posición de protección con pies atrás y cabeza apoyada.",
+        "en": "Planned or unplanned emergency; the commander briefs with NITS (nature, intention, time, special), it is read back and watches synchronised; prepare galley, passengers, ABPs and cabin; brace with feet back and head supported."
+      },
+      "points": [
+        {
+          "es": "Preparada: hay tiempo para informar y preparar. Imprevista: no lo hay.",
+          "en": "Planned: there is time to brief and prepare. Unplanned: there is not."
+        },
+        {
+          "es": "NITS: Naturaleza, Intención, Tiempo, instrucciones eSpeciales. Repetir y sincronizar relojes.",
+          "en": "NITS: Nature, Intention, Time, Special instructions. Read back and synchronise watches."
+        },
+        {
+          "es": "Preparación: galley, anuncio, ABP, objetos y equipaje, informe al comandante, revisión silenciosa.",
+          "en": "Preparation: galley, announcement, ABPs, items and baggage, report to the commander, silent review."
+        },
+        {
+          "es": "Rampas armadas; los pasajeros dejan todo el equipaje.",
+          "en": "Slides armed; passengers leave all their baggage."
+        },
+        {
+          "es": "Posición de protección: pies en el suelo y atrás, cabeza contra el respaldo; asientos hacia atrás, espalda y cabeza apoyadas.",
+          "en": "Brace: feet on the floor and back, head against the seat in front; rear-facing seats, back and head supported."
+        }
+      ]
+    },
+    {
+      "lesson": "evacuation",
+      "key": {
+        "es": "Decide el comandante; el TCP puede iniciar la evacuación ante un peligro evidente con el avión detenido y sin respuesta de la cabina de vuelo. Valorar la salida, órdenes cortas y fuertes, dejar el equipaje y alejarse.",
+        "en": "The commander decides; cabin crew may start an evacuation for an obvious danger with the aircraft stopped and no response from the flight deck. Assess the exit, short loud commands, leave the baggage and move away."
+      },
+      "points": [
+        {
+          "es": "Criterios para iniciarla el TCP: fuego o humo incontrolables, daño estructural grave, amerizaje, actitud anormal, sin respuesta de la cabina de vuelo; avión detenido.",
+          "en": "Criteria for cabin crew to start it: uncontrollable fire or smoke, severe structural damage, ditching, abnormal attitude, no response from the flight deck; aircraft stopped."
+        },
+        {
+          "es": "Certificación: 90 s con la mitad de las salidas.",
+          "en": "Certification: 90 s with half of the exits."
+        },
+        {
+          "es": "Valorar la salida: fuego, agua, obstáculos, altura. Si no sirve, bloquear y redirigir.",
+          "en": "Assess the exit: fire, water, obstruction, height. If unusable, block and redirect."
+        },
+        {
+          "es": "Rampa: inflado automático; si falla, mando de inflado manual. El TCP se sujeta al asidero.",
+          "en": "Slide: automatic inflation; if it fails, manual inflation handle. Crew member holds the assist handle."
+        },
+        {
+          "es": "Órdenes cortas, fuertes y repetidas: «¡Suelten los cinturones! ¡Salgan! ¡Dejen todo!»",
+          "en": "Short, loud, repeated commands: \"Release your seat belts! Get out! Leave everything!\""
+        },
+        {
+          "es": "Fuera: alejarse, reunir, contar y atender a los heridos.",
+          "en": "Outside: move away, gather, count and care for the injured."
+        }
+      ]
+    },
+    {
+      "lesson": "ditching",
+      "key": {
+        "es": "Amerizaje: varios impactos posibles, salidas bajo el agua cerradas; chaleco puesto en el asiento e inflado al salir; rampas-balsa o balsas; alejarse, recoger, protegerse del frío y señalizar.",
+        "en": "Ditching: several impacts possible, exits below the waterline kept closed; life jacket on in the seat and inflated on leaving; slide-rafts or rafts; move away, pick up, protect from cold and signal."
+      },
+      "points": [
+        {
+          "es": "Esperar más de un impacto. No abrir salidas por debajo del nivel del agua.",
+          "en": "Expect more than one impact. Do not open exits below the waterline."
+        },
+        {
+          "es": "Chaleco: ponérselo en el asiento, inflarlo al salir. Inflado dentro puede atrapar a la persona.",
+          "en": "Life jacket: put on in the seat, inflate on leaving. Inflated inside it can trap the person."
+        },
+        {
+          "es": "Medios: rampas-balsa, balsas independientes o chalecos y asientos flotantes, según avión y ruta.",
+          "en": "Equipment: slide-rafts, separate rafts or life jackets and flotation cushions, by aircraft and route."
+        },
+        {
+          "es": "En el agua: alejarse, recoger, proteger del frío (hipotermia), señalizar, mantener la moral.",
+          "en": "In the water: move away, pick up, protect from cold (hypothermia), signal, keep up morale."
+        }
+      ]
+    },
+    {
+      "lesson": "fire-and-smoke-in-the-cabin",
+      "key": {
+        "es": "Ante el fuego: actuar de inmediato y avisar a la cabina de vuelo; equipo de tres (combatir, comunicar, apoyar); halón para todo, agua solo para sólidos; capucha ≥ 15 min; litio: apagar, enfriar con líquido y no mover.",
+        "en": "With fire: act at once and inform the flight deck; three-person team (fight, communicate, support); halon for everything, water only for solids; hood ≥ 15 min; lithium: extinguish, cool with liquid and do not move."
+      },
+      "points": [
+        {
+          "es": "Actuar de inmediato y comunicar sin demora con la cabina de vuelo (AC 120-80B).",
+          "en": "Act immediately and communicate without delay with the flight deck (AC 120-80B)."
+        },
+        {
+          "es": "Equipo: combatir, comunicar, traer equipo; alejar a los pasajeros.",
+          "en": "Team: fight, communicate, bring equipment; move passengers away."
+        },
+        {
+          "es": "Halón: cualquier fuego, también eléctrico. Agua: sólidos, nunca sobre electricidad ni grasa.",
+          "en": "Halon: any fire, electrical too. Water: solids, never on electrics or grease."
+        },
+        {
+          "es": "Capucha antihumo: al menos 15 min (EASA). Ponérsela antes de acercarse al humo.",
+          "en": "Smoke hood: at least 15 min (EASA). Put it on before approaching the smoke."
+        },
+        {
+          "es": "Fuego oculto: dorso de la mano en los paneles, abrir acceso. Horno: cortar corriente y puerta cerrada.",
+          "en": "Hidden fire: back of the hand on panels, make an opening. Oven: cut power and keep the door shut."
+        },
+        {
+          "es": "Litio (SAFO 09013): apagar con halón o agua, enfriar con agua o líquido no alcohólico, desconectar, no mover, avisar al comandante y vigilar.",
+          "en": "Lithium (SAFO 09013): extinguish with halon or water, cool with water or non-alcoholic liquid, unplug, do not move, inform the commander and monitor."
+        }
+      ]
+    },
+    {
+      "lesson": "decompression-in-the-cabin",
+      "key": {
+        "es": "Descompresión: ruido, niebla, frío y caída de máscaras; la lenta, por síntomas de hipoxia. Máscara más cercana, sentarse y sujetarse, órdenes a los pasajeros; moverse solo a altitud segura; después, oxígeno, heridos y daños.",
+        "en": "Decompression: noise, fog, cold and masks dropping; slow ones, through hypoxia symptoms. Nearest mask, sit and hold on, commands to passengers; move only at a safe altitude; then oxygen, injuries and damage."
+      },
+      "points": [
+        {
+          "es": "Signos: ruido, niebla (condensación), frío, objetos que se mueven, máscaras que caen.",
+          "en": "Signs: noise, fog (condensation), cold, objects moving, masks dropping."
+        },
+        {
+          "es": "Hipoxia: euforia, cansancio, cefalea, cianosis, juicio alterado; quien la sufre puede no notarla.",
+          "en": "Hypoxia: euphoria, tiredness, headache, cyanosis, impaired judgement; the person may not notice."
+        },
+        {
+          "es": "Máscaras automáticas antes de 15.000 ft de cabina (Parte 25).",
+          "en": "Automatic masks before 15,000 ft cabin (Part 25)."
+        },
+        {
+          "es": "Acciones: máscara más cercana → sentarse y sujetarse → órdenes a los pasajeros (adultos primero).",
+          "en": "Actions: nearest mask → sit and hold on → commands to passengers (adults first)."
+        },
+        {
+          "es": "A altitud segura y con permiso del comandante: compañeros y pasajeros, oxígeno portátil y de primeros auxilios, daños, informe.",
+          "en": "At a safe altitude and with the commander's permission: colleagues and passengers, portable and first-aid oxygen, damage, report."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

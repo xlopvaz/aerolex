@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Ante un objeto sospechoso a bordo, lo correcto es…",
+        "en": "With a suspicious item on board, the right thing is to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Abrirlo para comprobar qué es",
+            "en": "Open it to check what it is"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tirarlo por la puerta",
+            "en": "Throw it out of the door"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No tocarlo, alejar a los pasajeros e informar al comandante",
+            "en": "Not touch it, move passengers away and inform the commander"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Llevarlo a la galley",
+            "en": "Take it to the galley"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El procedimiento decide si se traslada a la ubicación de menor riesgo y cómo.",
+        "en": "The procedure decides whether and how it is moved to the least-risk location."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué exige el Anexo 6 que lleve el avión para casos de bomba?",
+        "en": "What does Annex 6 require the aircraft to carry for bomb cases?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un detector de explosivos",
+            "en": "An explosives detector"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una lista de registro y orientación, con la ubicación de menor riesgo",
+            "en": "A search checklist and guidance, including the least-risk location"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un agente de seguridad",
+            "en": "A security officer"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una caja blindada en cada fila",
+            "en": "An armoured box in each row"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La ubicación de menor riesgo la define el fabricante.",
+        "en": "The least-risk location is defined by the manufacturer."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En un apoderamiento ilícito, la prioridad es…",
+        "en": "In an unlawful seizure, the priority is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La vida de las personas",
+            "en": "People's lives"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El horario del vuelo",
+            "en": "The flight schedule"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El equipaje",
+            "en": "The baggage"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El servicio a bordo",
+            "en": "The in-flight service"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La puerta de la cabina de vuelo se mantiene cerrada.",
+        "en": "The flight deck door stays closed."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Un pasajero dice en broma que lleva una bomba. ¿Cómo se trata?",
+        "en": "A passenger jokes that they have a bomb. How is it treated?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se ignora porque es una broma",
+            "en": "Ignored because it is a joke"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se le regaña y nada más",
+            "en": "They are told off and nothing more"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se anuncia por megafonía",
+            "en": "It is announced over the PA"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se toma en serio y se informa al comandante",
+            "en": "It is taken seriously and the commander is informed"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Todas las amenazas se evalúan.",
+        "en": "Every threat is assessed."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué se debe hacer después de cualquier suceso de seguridad?",
+        "en": "What should be done after any security occurrence?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Olvidarlo si acabó bien",
+            "en": "Forget it if it ended well"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Contarlo solo a los compañeros",
+            "en": "Only tell colleagues"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Comunicarlo y registrarlo",
+            "en": "Report and record it"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Publicarlo en redes sociales",
+            "en": "Post it on social media"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Los informes ayudan a mejorar las medidas.",
+        "en": "Reports help improve the measures."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué diferencia la *security* de la *safety*?",
+        "en": "What distinguishes security from safety?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La security solo existe en tierra",
+            "en": "Security only exists on the ground"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La security protege frente a actos deliberados",
+            "en": "Security protects against deliberate acts"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Son exactamente lo mismo",
+            "en": "They are exactly the same"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La safety solo trata de los pasajeros",
+            "en": "Safety only concerns passengers"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La safety se ocupa de los accidentes.",
+        "en": "Safety deals with accidents."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Un pasajero ebrio insulta a los TCP pero no agrede a nadie. ¿Qué nivel de amenaza es?",
+        "en": "An intoxicated passenger insults the crew but does not attack anyone. Which threat level is it?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Nivel 1",
+            "en": "Level 1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nivel 2",
+            "en": "Level 2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nivel 3",
+            "en": "Level 3"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nivel 4",
+            "en": "Level 4"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Conducta perturbadora o amenaza verbal.",
+        "en": "Disruptive behaviour or verbal threat."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "¿Qué Estado tenía jurisdicción principal según el Convenio de Tokio original?",
+        "en": "Which State had primary jurisdiction under the original Tokyo Convention?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Estado de nacionalidad del pasajero",
+            "en": "The passenger's State of nationality"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Estado de salida",
+            "en": "The State of departure"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ninguno",
+            "en": "None"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Estado de matrícula del avión",
+            "en": "The State of registration of the aircraft"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El Protocolo de Montreal de 2014 añadió el de aterrizaje y el del operador.",
+        "en": "The 2014 Montreal Protocol added the State of landing and of the operator."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "La puerta de la cabina de vuelo se mantiene cerrada con llave…",
+        "en": "The flight deck door is kept locked…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo durante el aterrizaje",
+            "en": "Only during landing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo si hay turbulencia",
+            "en": "Only in turbulence"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Desde que se cierran las puertas exteriores hasta que se abren, salvo accesos autorizados",
+            "en": "From when the external doors close until they open, except for authorised access"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es una norma del Anexo 6.",
+        "en": "It is an Annex 6 rule."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "Un pasajero facturado no se presenta al embarque. Su maleta…",
+        "en": "A checked-in passenger does not show up for boarding. Their bag…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vuela igualmente",
+            "en": "Flies anyway"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se descarga, salvo que pase controles adicionales",
+            "en": "Is offloaded, unless it undergoes additional controls"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se entrega a otro pasajero",
+            "en": "Is given to another passenger"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se abre en la puerta de embarque",
+            "en": "Is opened at the gate"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es la conciliación del equipaje.",
+        "en": "That is baggage reconciliation."
+      }
+    }
+  ]
+}

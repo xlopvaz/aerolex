@@ -1,0 +1,48 @@
+{
+  "path": "cabin-crew-training",
+  "order": 5,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de TCP · Módulo 5: Primeros auxilios",
+    "en": "Cabin Crew Academy · Module 5: First Aid"
+  },
+  "description": {
+    "es": "La atención médica a bordo: con qué frecuencia surgen las emergencias, cómo se organiza la respuesta, el material del avión, la RCP con DEA y el atragantamiento según las guías europeas, los problemas más frecuentes y cómo afecta la altitud al cuerpo. No sustituye a un curso práctico acreditado y el manual del operador prevalece siempre.",
+    "en": "Medical care on board: how often emergencies arise, how the response is organised, the aircraft's equipment, CPR with an AED and choking according to the European guidelines, the most common problems and how altitude affects the body. It does not replace an accredited hands-on course and the operator's manual always prevails."
+  },
+  "objectives": {
+    "en": [
+      "Organise the response to an in-flight medical emergency",
+      "Apply CPR with an AED and deal with choking",
+      "Recognise and handle the most common medical problems",
+      "Explain how altitude and pressure affect the body"
+    ],
+    "es": [
+      "Organizar la respuesta a una emergencia médica en vuelo",
+      "Aplicar la RCP con DEA y actuar ante un atragantamiento",
+      "Reconocer y atender los problemas médicos más frecuentes",
+      "Explicar cómo afectan la altitud y la presión al cuerpo"
+    ]
+  },
+  "lessons": [
+    "medical-emergencies-on-board",
+    "cpr-aed-and-choking",
+    "common-inflight-conditions",
+    "altitude-and-the-body"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "nejm-2013-inflight-emergencies",
+    "easa-ear-air-ops",
+    "icao-annex-6",
+    "erc-2021-bls",
+    "erc-2021-first-aid",
+    "faa-phak",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

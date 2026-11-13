@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En aviación, *security* se refiere a…",
+        "en": "In aviation, security refers to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La prevención de fallos técnicos",
+            "en": "Preventing technical failures"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La protección frente a actos deliberados de interferencia ilícita",
+            "en": "Protection against deliberate acts of unlawful interference"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El mantenimiento de los aviones",
+            "en": "Aircraft maintenance"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La meteorología",
+            "en": "Weather"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Safety es la seguridad operacional frente a accidentes.",
+        "en": "Safety is about preventing accidents."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué anexo de la OACI trata la seguridad de la aviación?",
+        "en": "Which ICAO Annex deals with aviation security?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Anexo 17",
+            "en": "Annex 17"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Anexo 6",
+            "en": "Annex 6"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Anexo 14",
+            "en": "Annex 14"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Anexo 2",
+            "en": "Annex 2"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "En la UE lo desarrollan el Reglamento 300/2008 y el 2015/1998.",
+        "en": "In the EU it is developed by Regulations 300/2008 and 2015/1998."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué reglamento de la UE contiene las medidas detalladas de seguridad?",
+        "en": "Which EU regulation contains the detailed security measures?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Reglamento 261/2004",
+            "en": "Regulation 261/2004"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Reglamento 965/2012",
+            "en": "Regulation 965/2012"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Reglamento 923/2012",
+            "en": "Regulation 923/2012"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Reglamento de Ejecución (UE) 2015/1998",
+            "en": "Implementing Regulation (EU) 2015/1998"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El 300/2008 fija las normas básicas comunes.",
+        "en": "300/2008 sets the common basic standards."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuál de estas NO es una categoría de artículos prohibidos en cabina en la UE?",
+        "en": "Which of these is NOT an EU category of articles prohibited in the cabin?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Objetos punzantes o cortantes",
+            "en": "Objects with a sharp point or edge"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Instrumentos contundentes",
+            "en": "Blunt instruments"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Libros y revistas",
+            "en": "Books and magazines"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Dispositivos paralizantes",
+            "en": "Stunning devices"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Las seis categorías: armas de fuego, paralizantes, punzantes, herramientas, contundentes y explosivos o incendiarios.",
+        "en": "The six categories: firearms, stunning devices, sharp objects, tools, blunt instruments and explosives or incendiaries."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un pasajero facturado no embarca. ¿Qué pasa con su maleta?",
+        "en": "A checked-in passenger does not board. What happens to their bag?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vuela igualmente",
+            "en": "It flies anyway"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se localiza y se descarga, salvo controles adicionales",
+            "en": "It is found and offloaded, unless it undergoes additional controls"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se abre en la cabina",
+            "en": "It is opened in the cabin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se envía en el siguiente vuelo sin más",
+            "en": "It is simply sent on the next flight"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es la conciliación del equipaje.",
+        "en": "That is baggage reconciliation."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La regla general de la UE para líquidos en el equipaje de mano es…",
+        "en": "The general EU rule for liquids in cabin baggage is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Envases de hasta 100 ml en una bolsa transparente de un litro",
+            "en": "Containers of up to 100 ml in a transparent one-litre bag"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sin límite",
+            "en": "No limit"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Envases de hasta 1 litro sueltos",
+            "en": "Loose containers of up to 1 litre"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Prohibidos todos los líquidos",
+            "en": "All liquids banned"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Algunos aeropuertos con equipos modernos aplican condiciones distintas.",
+        "en": "Some airports with modern equipment apply different conditions."
+      }
+    }
+  ]
+}
