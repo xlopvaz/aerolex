@@ -1,0 +1,175 @@
+{
+  "course": "meteorology",
+  "lessons": [
+    {
+      "lesson": "atmosphere-stability-and-clouds",
+      "key": {
+        "es": "ISA: 15 °C, 1013,25 hPa, −2 °C/1.000 ft, tropopausa a 36.090 ft y −56,5 °C. Aire ambiente que se enfría más deprisa que la burbuja = inestable. Base de cúmulos ≈ (T − Td) / 2,5 × 1.000 ft.",
+        "en": "ISA: 15 °C, 1013.25 hPa, −2 °C/1,000 ft, tropopause at 36,090 ft and −56.5 °C. Surrounding air cooling faster than the parcel = unstable. Cumulus base ≈ (T − Td) / 2.5 × 1,000 ft."
+      },
+      "points": [
+        {
+          "es": "ISA: 15 °C y 1013,25 hPa al nivel del mar; −2 °C/1.000 ft; tropopausa 11 km (36.090 ft), −56,5 °C.",
+          "en": "ISA: 15 °C and 1013.25 hPa at sea level; −2 °C/1,000 ft; tropopause 11 km (36,090 ft), −56.5 °C."
+        },
+        {
+          "es": "Gradientes: ambiental (medido), adiabático seco ~3 °C/1.000 ft, saturado menor (calor de condensación).",
+          "en": "Lapse rates: environmental (measured), dry adiabatic ~3 °C/1,000 ft, saturated lower (heat of condensation)."
+        },
+        {
+          "es": "Inestable: el ambiente se enfría más deprisa que la burbuja. Estable: más despacio. Inversión: lo más estable.",
+          "en": "Unstable: environment cools faster than the parcel. Stable: more slowly. Inversion: the most stable."
+        },
+        {
+          "es": "Estable: estratos, lluvia continua, mala visibilidad, aire en calma. Inestable: cúmulos, chubascos, buena visibilidad, turbulencia.",
+          "en": "Stable: stratus, steady rain, poor visibility, smooth air. Unstable: cumulus, showers, good visibility, turbulence."
+        },
+        {
+          "es": "Base de cúmulos ≈ (T − Td) / 2,5 × 1.000 ft.",
+          "en": "Cumulus base ≈ (T − Td) / 2.5 × 1,000 ft."
+        },
+        {
+          "es": "TCU y CB: las únicas nubes que se notifican expresamente en los METAR.",
+          "en": "TCU and CB: the only cloud types specifically reported in METARs."
+        }
+      ]
+    },
+    {
+      "lesson": "pressure-and-wind",
+      "key": {
+        "es": "Viento de altas a bajas, más fuerte con isobaras juntas; Coriolis desvía a la derecha en el hemisferio norte (bajas antihorarias, altas horarias); Buys Ballot: de espaldas al viento, baja a la izquierda; el rozamiento frena y desvía hacia la baja; chorro más fuerte en invierno.",
+        "en": "Wind from highs to lows, stronger with close isobars; Coriolis deflects right in the northern hemisphere (lows anticlockwise, highs clockwise); Buys Ballot: back to the wind, low on the left; friction slows and turns towards the low; jet stronger in winter."
+      },
+      "points": [
+        {
+          "es": "Isobaras juntas = viento fuerte.",
+          "en": "Close isobars = strong wind."
+        },
+        {
+          "es": "Coriolis: derecha en el hemisferio norte. En altura, viento paralelo a las isobaras (geostrófico).",
+          "en": "Coriolis: right in the northern hemisphere. Aloft, wind parallel to the isobars (geostrophic)."
+        },
+        {
+          "es": "Hemisferio norte: bajas antihorarias, altas horarias. Buys Ballot: de espaldas al viento, baja a la izquierda.",
+          "en": "Northern hemisphere: lows anticlockwise, highs clockwise. Buys Ballot: back to the wind, low on the left."
+        },
+        {
+          "es": "Rozamiento: viento más flojo y hacia la baja cerca del suelo; al subir aumenta y gira a la derecha.",
+          "en": "Friction: weaker wind turning towards the low near the ground; climbing, it increases and veers."
+        },
+        {
+          "es": "Brisas: marina de día, terrestre de noche; de valle de día, de montaña de noche.",
+          "en": "Breezes: sea by day, land by night; valley by day, mountain by night."
+        },
+        {
+          "es": "Chorro: cerca de la tropopausa, de oeste a este, más fuerte en invierno; viento de cola y CAT en sus bordes.",
+          "en": "Jet: near the tropopause, west to east, stronger in winter; tailwinds and CAT at its edges."
+        }
+      ]
+    },
+    {
+      "lesson": "air-masses-fronts-and-fog",
+      "key": {
+        "es": "Masas: marítima/continental y polar/tropical. Frente frío: pendiente fuerte, CB, chubascos y cambio brusco; cálido: pendiente suave, estratos, lluvia continua, techos bajos, lluvia engelante en invierno. Niebla (FG) < 1.000 m: radiación, advección, orográfica, vapor, frontal.",
+        "en": "Air masses: maritime/continental and polar/tropical. Cold front: steep, CB, showers, sharp shift; warm front: gentle, stratus, steady rain, low ceilings, freezing rain in winter. Fog (FG) < 1,000 m: radiation, advection, upslope, steam, frontal."
+      },
+      "points": [
+        {
+          "es": "Masa de aire: marítima (húmeda) o continental (seca); polar (fría) o tropical (cálida).",
+          "en": "Air mass: maritime (moist) or continental (dry); polar (cold) or tropical (warm)."
+        },
+        {
+          "es": "Frente frío: cuña fría, pendiente fuerte, cúmulos y CB, chubascos estrechos, cambio brusco de viento, buena visibilidad detrás.",
+          "en": "Cold front: cold wedge, steep slope, cumulus and CB, narrow showers, sharp wind shift, good visibility behind."
+        },
+        {
+          "es": "Frente cálido: ascenso suave, cirros → estratos, lluvia continua ancha, techos bajos, lluvia engelante delante en invierno.",
+          "en": "Warm front: gentle ascent, cirrus → stratus, wide steady rain, low ceilings, freezing rain ahead in winter."
+        },
+        {
+          "es": "Oclusión: el aire cálido queda elevado; puede esconder CB.",
+          "en": "Occlusion: warm air lifted off the ground; may hide CB."
+        },
+        {
+          "es": "FG < 1.000 m; BR 1.000–5.000 m.",
+          "en": "FG < 1,000 m; BR 1,000–5,000 m."
+        },
+        {
+          "es": "Nieblas: radiación (noche clara y calma), advección (aire húmedo sobre superficie fría, con viento), orográfica, de vapor, frontal.",
+          "en": "Fog: radiation (clear calm night), advection (moist air over cold surface, with wind), upslope, steam, frontal."
+        }
+      ]
+    },
+    {
+      "lesson": "thunderstorms-and-wind-shear",
+      "key": {
+        "es": "Tormenta = humedad + inestabilidad + ascenso; fases cúmulo, madurez (la peor) y disipación; evitar por 20 millas las fuertes; microrráfaga: <1 milla, hasta 6.000 ft/min, 45 kt (90 kt de cizalladura), ≤ 15 min; viento de cara, descendente y viento de cola; escape con potencia máxima y morro arriba.",
+        "en": "Thunderstorm = moisture + instability + lift; stages cumulus, mature (worst) and dissipating; avoid severe ones by 20 miles; microburst: <1 mile, up to 6,000 ft/min, 45 kt (90 kt shear), ≤ 15 min; headwind, downdraft then tailwind; escape with maximum thrust and nose up."
+      },
+      "points": [
+        {
+          "es": "Ingredientes: humedad, aire inestable y mecanismo de ascenso.",
+          "en": "Ingredients: moisture, unstable air and a lifting mechanism."
+        },
+        {
+          "es": "Fases: cúmulo (ascendentes), madurez (precipitación al suelo, ascendentes y descendentes; la peor), disipación (descendentes).",
+          "en": "Stages: cumulus (updrafts), mature (rain at the surface, up- and downdrafts; the worst), dissipating (downdrafts)."
+        },
+        {
+          "es": "Peligros: turbulencia, granizo (también bajo el yunque), hielo, rayos, lluvia, cizalladura y microrráfagas.",
+          "en": "Hazards: turbulence, hail (also under the anvil), icing, lightning, rain, wind shear and microbursts."
+        },
+        {
+          "es": "Evitar por ≥ 20 millas las tormentas fuertes o con eco intenso; no despegar ni aterrizar con una tormenta cerca; no volar por debajo.",
+          "en": "Avoid severe storms or intense echoes by ≥ 20 miles; no take-off or landing with a storm nearby; never fly underneath."
+        },
+        {
+          "es": "Microrráfaga (AIM): < 1 milla, salida hasta ~2,5 millas, 6.000 ft/min, 45 kt → 90 kt de cizalladura, ≤ 15 min.",
+          "en": "Microburst (AIM): < 1 mile, outflow to ~2.5 miles, 6,000 ft/min, 45 kt → 90 kt shear, ≤ 15 min."
+        },
+        {
+          "es": "Secuencia: viento de cara (IAS sube) → descendente → viento de cola (IAS cae). Escape: potencia máxima, morro arriba, sin cambiar configuración.",
+          "en": "Sequence: headwind (IAS rises) → downdraft → tailwind (IAS drops). Escape: maximum thrust, nose up, no configuration change."
+        }
+      ]
+    },
+    {
+      "lesson": "icing-and-turbulence",
+      "key": {
+        "es": "Hielo: humedad visible + superficie ≤ 0 °C; máximo riesgo de 0 a −20 °C; granulado (gotas pequeñas), claro (grandes, el peor), mixto; traza, ligero, moderado, fuerte. Turbulencia convectiva, mecánica, de montaña, CAT y estela; ligera, moderada, fuerte, extrema.",
+        "en": "Ice: visible moisture + surface ≤ 0 °C; highest risk 0 to −20 °C; rime (small drops), clear (large, the worst), mixed; trace, light, moderate, severe. Turbulence convective, mechanical, mountain wave, CAT and wake; light, moderate, severe, extreme."
+      },
+      "points": [
+        {
+          "es": "Engelamiento: humedad visible y superficie a 0 °C o menos; agua subfundida, sobre todo de 0 a −20 °C.",
+          "en": "Icing: visible moisture and surface at 0 °C or below; supercooled water, mostly 0 to −20 °C."
+        },
+        {
+          "es": "Granulado: gotas pequeñas, blanco y quebradizo. Claro: gotas grandes, transparente y pesado (el peor). Mixto.",
+          "en": "Rime: small drops, white and brittle. Clear: large drops, transparent and heavy (the worst). Mixed."
+        },
+        {
+          "es": "Lluvia engelante: capa cálida en altura sobre aire bajo cero; hielo claro rápido, incluso tras las zonas protegidas.",
+          "en": "Freezing rain: warm layer aloft over sub-zero air; fast clear ice, even behind protected areas."
+        },
+        {
+          "es": "Intensidades de hielo (AIM): traza, ligero, moderado, fuerte (salir de inmediato).",
+          "en": "Icing intensities (AIM): trace, light, moderate, severe (exit immediately)."
+        },
+        {
+          "es": "Turbulencia: convectiva, mecánica, onda de montaña (lenticulares, rotores), CAT (chorro, invisible al radar), estela.",
+          "en": "Turbulence: convective, mechanical, mountain wave (lenticulars, rotors), CAT (jet, invisible to radar), wake."
+        },
+        {
+          "es": "Intensidades: ligera, moderada, fuerte, extrema. Velocidad de penetración, actitud, cinturones, PIREP.",
+          "en": "Intensities: light, moderate, severe, extreme. Penetration speed, attitude, seat belts, PIREP."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

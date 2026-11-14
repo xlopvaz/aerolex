@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Una batería de litio de repuesto de 130 Wh…",
+        "en": "A 130 Wh spare lithium battery…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Necesita aprobación de la aerolínea y va en cabina",
+            "en": "Needs airline approval and goes in the cabin"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Está prohibida siempre",
+            "en": "Is always forbidden"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Puede ir en la maleta facturada",
+            "en": "May go in checked baggage"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No tiene ninguna limitación",
+            "en": "Has no limitation"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Entre 101 y 160 Wh, máximo dos de repuesto con aprobación.",
+        "en": "Between 101 and 160 Wh, maximum two spares with approval."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Cuántos Wh tiene una batería de 10.000 mAh a 3,7 V?",
+        "en": "How many Wh does a 10,000 mAh battery at 3.7 V have?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "370 Wh",
+            "en": "370 Wh"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3,7 Wh",
+            "en": "3.7 Wh"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "100 Wh",
+            "en": "100 Wh"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "37 Wh",
+            "en": "37 Wh"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "10.000 × 3,7 / 1.000 = 37 Wh.",
+        "en": "10,000 × 3.7 / 1,000 = 37 Wh."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Por qué los power banks no pueden ir en la bodega?",
+        "en": "Why may power banks not go in the hold?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque pesan mucho",
+            "en": "Because they are heavy"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque interfieren con la radio",
+            "en": "Because they interfere with the radio"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque en cabina la tripulación puede detectar y combatir un embalamiento térmico",
+            "en": "Because in the cabin the crew can detect and fight thermal runaway"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por el frío de la bodega",
+            "en": "Because of the cold in the hold"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Y deben llevar los terminales protegidos.",
+        "en": "And their terminals must be protected."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Un cigarrillo electrónico…",
+        "en": "An e-cigarette…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Va solo en la maleta facturada",
+            "en": "Goes in checked baggage only"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Va solo en equipaje de mano y no se puede cargar a bordo",
+            "en": "Goes in cabin baggage only and may not be charged on board"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se puede usar en el lavabo",
+            "en": "May be used in the lavatory"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No tiene restricciones",
+            "en": "Has no restrictions"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Tiene una batería de litio.",
+        "en": "It contains a lithium battery."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué bebidas alcohólicas están prohibidas en el equipaje?",
+        "en": "Which alcoholic drinks are forbidden in baggage?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Las de más del 70 % de alcohol",
+            "en": "Those over 70 % alcohol"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Las de más del 24 %",
+            "en": "Those over 24 %"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Todas",
+            "en": "All of them"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguna",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Entre el 24 y el 70 %, hasta 5 L por persona en envases cerrados.",
+        "en": "Between 24 and 70 %, up to 5 L per person in closed packaging."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué equipaje puede ocultar mercancías peligrosas?",
+        "en": "Which baggage may hide dangerous goods?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ropa de verano",
+            "en": "Summer clothes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Libros",
+            "en": "Books"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un abrigo",
+            "en": "A coat"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Material de camping con bombonas de gas",
+            "en": "Camping gear with gas cylinders"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "También el equipo de buceo o las piezas de coche.",
+        "en": "So can diving equipment or car parts."
+      }
+    }
+  ]
+}

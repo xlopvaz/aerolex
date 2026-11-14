@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Freezing rain",
+    "es": "Lluvia engelante"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Rain that falls as liquid, supercooled below 0 °C, and freezes on impact; it usually forms when rain from a warm layer aloft falls into a sub-freezing layer below and produces rapid clear ice on aircraft.",
+    "es": "Lluvia que cae líquida, subfundida por debajo de 0 °C, y se congela al impactar; suele formarse cuando la lluvia de una capa cálida en altura cae en una capa más baja bajo cero, y produce hielo claro muy rápido en los aviones."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Rain that turns to ice the moment it hits something.",
+    "es": "Lluvia que se convierte en hielo al tocar algo."
+  },
+  "example": {
+    "en": "FZRA in the METAR closed the airport to departures until de-icing.",
+    "es": "La FZRA del METAR cerró el aeropuerto a las salidas hasta deshelar."
+  },
+  "pronunciation": {
+    "en": "FREE-zing rayn",
+    "es": "llu-via en-ge-lan-te"
+  },
+  "synonyms": {
+    "en": [
+      "FZRA"
+    ],
+    "es": [
+      "FZRA"
+    ]
+  },
+  "related": [
+    "icing",
+    "de-icing",
+    "warm-front"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh",
+    "wmo-306"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

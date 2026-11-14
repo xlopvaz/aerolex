@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Warm front",
+    "es": "Frente cálido"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The leading edge of an advancing warmer air mass that slides gently up over colder air; it brings widespread layered cloud, steady precipitation and low visibility, and in winter freezing rain ahead of it.",
+    "es": "Borde delantero de una masa de aire más cálido que avanza y asciende suavemente sobre el aire frío; trae nubosidad estratiforme extensa, precipitación continua y baja visibilidad, y en invierno lluvia engelante por delante."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The line where warm air rides up over cold air, with long grey rain.",
+    "es": "La línea donde el aire cálido sube sobre el frío, con lluvia gris y larga."
+  },
+  "example": {
+    "en": "Ahead of the warm front the ceiling lowered steadily for hours.",
+    "es": "Por delante del frente cálido, el techo de nubes fue bajando durante horas."
+  },
+  "pronunciation": {
+    "en": "warm frunt",
+    "es": "fren-te cá-li-do"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cold-front",
+    "freezing-rain",
+    "fog"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

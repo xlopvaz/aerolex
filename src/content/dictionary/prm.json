@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "PRM",
+    "es": "PRM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Person with reduced mobility",
+    "es": "Persona con movilidad reducida"
+  },
+  "categories": [
+    "cabin-crew",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A passenger whose mobility is reduced because of a physical, sensory or intellectual disability, age or another cause, and who needs adapted assistance; in the EU their rights are set by Regulation 1107/2006.",
+    "es": "Pasajero cuya movilidad está reducida por una discapacidad física, sensorial o intelectual, por la edad o por otra causa, y que necesita una asistencia adaptada; en la UE sus derechos los fija el Reglamento 1107/2006."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A passenger who needs extra help to get around.",
+    "es": "Un pasajero que necesita ayuda para desplazarse."
+  },
+  "example": {
+    "en": "Two PRMs in row 3 will disembark last with airport assistance.",
+    "es": "Dos PRM de la fila 3 desembarcarán los últimos con la asistencia del aeropuerto."
+  },
+  "pronunciation": {
+    "en": "pee-ar-EM",
+    "es": "pe-erre-eme"
+  },
+  "synonyms": {
+    "en": [
+      "PRM passenger"
+    ],
+    "es": [
+      "PMR"
+    ]
+  },
+  "related": [
+    "boarding",
+    "emergency-exit"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-1107-2006"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

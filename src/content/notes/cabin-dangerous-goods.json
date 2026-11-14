@@ -1,0 +1,101 @@
+{
+  "course": "cabin-dangerous-goods",
+  "lessons": [
+    {
+      "lesson": "dangerous-goods-basics",
+      "key": {
+        "es": "Mercancías peligrosas: Anexo 18 (principios), Instrucciones Técnicas de la OACI (obligatorias) y reglamentación IATA; nueve clases con etiquetas en rombo (la 9 incluye las baterías de litio); NOTOC al comandante; toda la tripulación recibe formación.",
+        "en": "Dangerous goods: Annex 18 (principles), ICAO Technical Instructions (mandatory) and IATA regulations; nine classes with diamond labels (class 9 includes lithium batteries); NOTOC to the commander; all crew are trained."
+      },
+      "points": [
+        {
+          "es": "Definición: riesgo para la salud, la seguridad, los bienes o el medio ambiente; muchas son objetos cotidianos.",
+          "en": "Definition: risk to health, safety, property or the environment; many are everyday items."
+        },
+        {
+          "es": "Normas: Anexo 18 + Doc 9284 (obligatorio); en la práctica, reglamentación IATA.",
+          "en": "Rules: Annex 18 + Doc 9284 (mandatory); in practice, IATA regulations."
+        },
+        {
+          "es": "Clases: 1 explosivos, 2 gases, 3 líquidos inflamables, 4 sólidos inflamables, 5 comburentes, 6 tóxicos e infecciosos, 7 radiactivos, 8 corrosivos, 9 varios (litio, hielo seco).",
+          "en": "Classes: 1 explosives, 2 gases, 3 flammable liquids, 4 flammable solids, 5 oxidisers, 6 toxic and infectious, 7 radioactive, 8 corrosives, 9 miscellaneous (lithium, dry ice)."
+        },
+        {
+          "es": "NOTOC: información escrita al comandante sobre qué, cuánto y dónde.",
+          "en": "NOTOC: written information to the commander on what, how much and where."
+        },
+        {
+          "es": "Toda la tripulación recibe formación, aunque la aerolínea no acepte carga peligrosa.",
+          "en": "All crew are trained, even if the airline does not accept dangerous cargo."
+        }
+      ]
+    },
+    {
+      "lesson": "passengers-and-dangerous-goods",
+      "key": {
+        "es": "Litio: hasta 100 Wh permitido; 101–160 Wh con aprobación y máximo 2 de repuesto; más de 160 Wh prohibido. Wh = mAh × V / 1.000. Repuestos y power banks solo en cabina. Aerolíneas más estrictas (Lufthansa 2026: ni uso ni carga). Ojo con equipajes que ocultan mercancías peligrosas.",
+        "en": "Lithium: up to 100 Wh allowed; 101–160 Wh with approval and maximum 2 spares; over 160 Wh forbidden. Wh = mAh × V / 1,000. Spares and power banks cabin only. Stricter airlines (Lufthansa 2026: no use or charging). Watch for baggage hiding dangerous goods."
+      },
+      "points": [
+        {
+          "es": "Litio: ≤ 100 Wh sí; 101–160 Wh con aprobación, máx. 2 repuestos; > 160 Wh no.",
+          "en": "Lithium: ≤ 100 Wh yes; 101–160 Wh with approval, max 2 spares; > 160 Wh no."
+        },
+        {
+          "es": "Wh = mAh × V / 1.000 (20.000 mAh × 3,7 V = 74 Wh).",
+          "en": "Wh = mAh × V / 1,000 (20,000 mAh × 3.7 V = 74 Wh)."
+        },
+        {
+          "es": "Repuestos y power banks: solo cabina, terminales protegidos.",
+          "en": "Spares and power banks: cabin only, terminals protected."
+        },
+        {
+          "es": "Aerolíneas más estrictas: p. ej., Lufthansa (15/01/2026) prohíbe usar y cargar power banks, máx. 2, no en compartimentos superiores.",
+          "en": "Stricter airlines: e.g. Lufthansa (15/01/2026) bans using and charging power banks, max 2, not in overhead bins."
+        },
+        {
+          "es": "E-cigarrillos: solo cabina, sin cargar. Un encendedor encima. Alcohol > 70 % prohibido; 24–70 % hasta 5 L. Hielo seco hasta 2,5 kg con aprobación.",
+          "en": "E-cigarettes: cabin only, no charging. One lighter on the person. Alcohol > 70 % forbidden; 24–70 % up to 5 L. Dry ice up to 2.5 kg with approval."
+        },
+        {
+          "es": "Ocultas: camping, buceo, piezas de coche, limpieza, mudanzas. Notificar las no declaradas.",
+          "en": "Hidden: camping, diving, car parts, cleaning, house moves. Report undeclared goods."
+        }
+      ]
+    },
+    {
+      "lesson": "dangerous-goods-incidents",
+      "key": {
+        "es": "Ante un incidente: informar al comandante, identificar, proteger, contener, vigilar e informar a tierra (Doc 9481). Derrames: guantes, alejar, absorber, embolsar, sin agua si se desconoce el producto. Baterías: procedimiento de fuego. Después, informe a la autoridad.",
+        "en": "In an incident: inform the commander, identify, protect, contain, monitor and inform the ground (Doc 9481). Spills: gloves, move people away, absorb, bag, no water if the product is unknown. Batteries: fire procedure. Afterwards, report to the authority."
+      },
+      "points": [
+        {
+          "es": "Principios (Doc 9481): comandante → identificar → proteger → contener → vigilar → tierra.",
+          "en": "Principles (Doc 9481): commander → identify → protect → contain → monitor → ground."
+        },
+        {
+          "es": "Derrame: guantes (capucha si hay vapores), alejar pasajeros, absorber, embolsar y cerrar, guardar lejos de pasajeros.",
+          "en": "Spill: gloves (hood if fumes), move passengers away, absorb, bag and seal, stow away from passengers."
+        },
+        {
+          "es": "Sin agua sobre un producto desconocido.",
+          "en": "No water on an unknown product."
+        },
+        {
+          "es": "Baterías: extintor, enfriar con agua o líquido no alcohólico, no mover (SAFO 09013).",
+          "en": "Batteries: extinguisher, cool with water or non-alcoholic liquid, do not move (SAFO 09013)."
+        },
+        {
+          "es": "Antes del aterrizaje, informar a tierra; después, señalar el artículo e informar a la autoridad.",
+          "en": "Before landing, inform the ground; afterwards, point out the item and report to the authority."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

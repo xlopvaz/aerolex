@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En la ISA, la temperatura al nivel del mar y la presión son…",
+        "en": "In the ISA, sea-level temperature and pressure are…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "0 °C y 1000 hPa",
+            "en": "0 °C and 1000 hPa"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "15 °C y 1013,25 hPa",
+            "en": "15 °C and 1013.25 hPa"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "20 °C y 1013,25 hPa",
+            "en": "20 °C and 1013.25 hPa"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15 °C y 1000 hPa",
+            "en": "15 °C and 1000 hPa"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La tropopausa ISA está a 11 km con −56,5 °C.",
+        "en": "The ISA tropopause is at 11 km at −56.5 °C."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué temperatura ISA corresponde a 10.000 ft?",
+        "en": "What is the ISA temperature at 10,000 ft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Unos −5 °C",
+            "en": "About −5 °C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Unos +5 °C",
+            "en": "About +5 °C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Unos −15 °C",
+            "en": "About −15 °C"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "0 °C",
+            "en": "0 °C"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "15 − 10 × 2 = −5 °C.",
+        "en": "15 − 10 × 2 = −5 °C."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Si el aire ambiente se enfría con la altura más deprisa que una burbuja que asciende, el aire es…",
+        "en": "If the surrounding air cools with height faster than a rising parcel, the air is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Estable",
+            "en": "Stable"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Neutro siempre",
+            "en": "Always neutral"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Saturado",
+            "en": "Saturated"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Inestable",
+            "en": "Unstable"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La burbuja queda más caliente y sigue subiendo.",
+        "en": "The parcel stays warmer and keeps rising."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué es típico del aire estable?",
+        "en": "What is typical of stable air?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Chubascos y buena visibilidad",
+            "en": "Showers and good visibility"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cumulonimbos y turbulencia",
+            "en": "Cumulonimbus and turbulence"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nubes en capas, precipitación continua y mala visibilidad",
+            "en": "Layered cloud, steady precipitation and poor visibility"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Granizo",
+            "en": "Hail"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El aire inestable da nubes de desarrollo vertical y chubascos.",
+        "en": "Unstable air gives towering cloud and showers."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Temperatura 25 °C y punto de rocío 15 °C. ¿Base aproximada de los cúmulos?",
+        "en": "Temperature 25 °C and dew point 15 °C. Approximate cumulus base?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1.000 ft",
+            "en": "1,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "4.000 ft",
+            "en": "4,000 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "10.000 ft",
+            "en": "10,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2.500 ft",
+            "en": "2,500 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "(25 − 15) / 2,5 × 1.000 = 4.000 ft.",
+        "en": "(25 − 15) / 2.5 × 1,000 = 4,000 ft."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El gradiente adiabático saturado es menor que el seco porque…",
+        "en": "The saturated adiabatic lapse rate is lower than the dry one because…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La condensación libera calor",
+            "en": "Condensation releases heat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El aire saturado pesa menos",
+            "en": "Saturated air weighs less"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El sol calienta las nubes",
+            "en": "The sun warms the clouds"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La presión aumenta",
+            "en": "Pressure increases"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Ese calor latente frena el enfriamiento.",
+        "en": "That latent heat slows the cooling."
+      }
+    }
+  ]
+}

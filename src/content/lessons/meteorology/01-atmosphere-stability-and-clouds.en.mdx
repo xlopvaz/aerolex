@@ -1,0 +1,70 @@
+---
+lesson: atmosphere-stability-and-clouds
+course: meteorology
+lang: en
+title: "The atmosphere, stability and clouds"
+summary: "The standard atmosphere, lapse rates, how to tell whether air is stable or unstable, humidity and dew point, and how to estimate cloud base."
+objectives:
+  - "Remember the standard atmosphere values"
+  - "Compare lapse rates to judge stability"
+  - "Estimate cumuliform cloud base from temperature and dew point"
+minutes: 13
+terms: [isa, tropopause, lapse-rate, temperature-inversion, dew-point, cumulonimbus]
+quiz: meteorology-01
+sources: [icao-doc-7488, faa-awh]
+review:
+  status: draft
+---
+
+## The standard atmosphere
+
+The <Term id="isa" /> (International Standard Atmosphere) is a reference model used to calibrate instruments and calculate performance:
+
+| Parameter | ISA value |
+|---|---|
+| Sea-level temperature | **15 °C** |
+| Sea-level pressure | **1013.25 hPa** (29.92 inHg) |
+| Temperature decrease in the troposphere | About **2 °C per 1,000 ft** (6.5 °C per km) |
+| <Term id="tropopause" /> | **11 km (36,090 ft)**, at **−56.5 °C** |
+
+The real atmosphere almost never matches the ISA: the difference is expressed as "ISA + 10" or "ISA − 5".
+
+## Three different lapse rates
+
+It is worth not mixing them up:
+
+- The **environmental lapse rate**: how temperature actually falls with height at a given place and time. It is measured with radiosondes.
+- The **dry adiabatic lapse rate**: how a parcel of **unsaturated** air cools as it rises. About **3 °C per 1,000 ft**.
+- The **saturated adiabatic lapse rate**: how a **saturated** parcel cools as it rises. It is **lower** (on average about half the dry rate), because condensing vapour releases heat.
+
+## Stable or unstable
+
+Comparing <Term id="lapse-rate">lapse rates</Term> tells you whether a rising parcel of air will keep rising or sink back:
+
+- If the surrounding air cools with height **faster** than the parcel, the parcel stays warmer and lighter and **keeps rising**: the air is **unstable**.
+- If it cools **more slowly**, the parcel ends up colder and heavier and **sinks back**: the air is **stable**.
+
+A <Term id="temperature-inversion">temperature inversion</Term> (temperature increasing with height) is the most stable situation of all.
+
+| Stable air | Unstable air |
+|---|---|
+| **Stratiform** (layered) cloud | **Cumuliform** (towering) cloud |
+| **Steady** precipitation | **Showers** |
+| **Poor** visibility (haze, fog) | **Good** visibility outside showers |
+| **Smooth** air | **Turbulence** |
+
+## Humidity and dew point
+
+The <Term id="dew-point" /> is the temperature at which air would become saturated if it cooled without changing its water vapour content. The closer the temperature and dew point (the **spread**), the closer the air is to saturation, and the more likely low cloud and fog become.
+
+## Estimating cloud base
+
+A parcel rising by convection cools at about 3 °C per 1,000 ft while its dew point falls by just over half a degree: the gap between the two closes by about **2.5 °C per 1,000 ft**. Hence the rule in the FAA Aviation Weather Handbook:
+
+> cumuliform cloud base (ft above ground) ≈ (temperature − dew point) / 2.5 × 1,000
+
+Example: temperature 22 °C and dew point 12 °C → 10 / 2.5 × 1,000 = **4,000 ft**.
+
+## Clouds
+
+Clouds are grouped by height (low, middle and high) and by shape (stratus, cumulus, cirrus). For a pilot, the two most important are **towering cumulus** (TCU), a convective cloud with great vertical development, and <Term id="cumulonimbus" /> (CB), the thunderstorm cloud. They are the only cloud types specifically reported in METARs.

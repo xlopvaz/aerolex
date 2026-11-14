@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Lapse rate",
+    "es": "Gradiente térmico vertical"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The rate at which air temperature decreases with height; the ISA assumes about 2 °C per 1,000 ft in the troposphere, while rising dry air cools at about 3 °C per 1,000 ft and saturated air more slowly.",
+    "es": "Ritmo al que disminuye la temperatura del aire con la altura; la ISA supone unos 2 °C por cada 1.000 ft en la troposfera, mientras que el aire seco que asciende se enfría unos 3 °C por cada 1.000 ft y el saturado, más despacio."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How fast it gets colder as you go up.",
+    "es": "Lo rápido que hace más frío según subes."
+  },
+  "example": {
+    "en": "A steep lapse rate on a summer afternoon means unstable air and bumps.",
+    "es": "Un gradiente fuerte una tarde de verano significa aire inestable y baches."
+  },
+  "pronunciation": {
+    "en": "LAPS rayt",
+    "es": "gra-dien-te tér-mi-co"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "isa",
+    "temperature-inversion",
+    "tropopause"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh",
+    "icao-doc-7488"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

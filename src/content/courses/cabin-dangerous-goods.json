@@ -1,0 +1,46 @@
+{
+  "path": "cabin-crew-training",
+  "order": 7,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de TCP · Módulo 7: Mercancías peligrosas",
+    "en": "Cabin Crew Academy · Module 7: Dangerous Goods"
+  },
+  "description": {
+    "es": "Las mercancías peligrosas desde la cabina: qué son y cómo se regulan, las nueve clases, lo que pueden llevar los pasajeros (baterías de litio, power banks, cigarrillos electrónicos), las mercancías ocultas y cómo actuar ante un incidente a bordo. El manual del operador prevalece siempre.",
+    "en": "Dangerous goods from the cabin: what they are and how they are regulated, the nine classes, what passengers may carry (lithium batteries, power banks, e-cigarettes), hidden goods and how to act in an on-board incident. The operator's manual always prevails."
+  },
+  "objectives": {
+    "en": [
+      "Recognise dangerous goods and their classes",
+      "Apply the rules for lithium batteries and other passenger items",
+      "Act on a spill, leak or battery fire"
+    ],
+    "es": [
+      "Reconocer las mercancías peligrosas y sus clases",
+      "Aplicar las reglas de baterías de litio y otros artículos de los pasajeros",
+      "Actuar ante un derrame, una fuga o un fuego de batería"
+    ]
+  },
+  "lessons": [
+    "dangerous-goods-basics",
+    "passengers-and-dangerous-goods",
+    "dangerous-goods-incidents"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-annex-18",
+    "icao-doc-9284",
+    "easa-ear-air-ops",
+    "faa-packsafe-batteries",
+    "faa-packsafe",
+    "lufthansa-powerbanks-2026",
+    "icao-doc-9481",
+    "faa-safo-09013"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

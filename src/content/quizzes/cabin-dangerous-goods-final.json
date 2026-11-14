@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál es el primer paso ante un incidente con mercancías peligrosas en la cabina?",
+        "en": "What is the first step in a dangerous goods incident in the cabin?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Abrir una ventanilla",
+            "en": "Open a window"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tirar el artículo al lavabo",
+            "en": "Throw the item in the lavatory"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Esperar al aterrizaje",
+            "en": "Wait until landing"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Informar al comandante",
+            "en": "Inform the commander"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Después: identificar, proteger, contener, vigilar e informar a tierra.",
+        "en": "Then: identify, protect, contain, monitor and inform the ground."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Ante un derrame de un producto desconocido…",
+        "en": "With a spill of an unknown product…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se echa agua inmediatamente",
+            "en": "Water is poured on at once"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se huele para identificarlo",
+            "en": "It is smelled to identify it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se usa agua sin saber qué es",
+            "en": "Water is not used without knowing what it is"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se deja como está",
+            "en": "It is left as it is"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Se absorbe con el kit y se embolsa.",
+        "en": "It is absorbed with the kit and bagged."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué documento de la OACI contiene la orientación de respuesta de emergencia con mercancías peligrosas?",
+        "en": "Which ICAO document contains emergency response guidance for dangerous goods?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Doc 4444",
+            "en": "Doc 4444"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Doc 9481",
+            "en": "Doc 9481"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Anexo 2",
+            "en": "Annex 2"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Doc 8400",
+            "en": "Doc 8400"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los operadores adaptan sus listas a cada avión.",
+        "en": "Operators adapt its checklists to each aircraft."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué se pone el TCP antes de manipular un derrame?",
+        "en": "What does the crew member put on before handling a spill?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Guantes, y la capucha si hay humo o vapores",
+            "en": "Gloves, and the hood if there is smoke or fumes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nada",
+            "en": "Nothing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El chaleco salvavidas",
+            "en": "The life jacket"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La máscara de oxígeno de pasajero",
+            "en": "A passenger oxygen mask"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Protegerse es parte de proteger a los demás.",
+        "en": "Protecting yourself is part of protecting others."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Tras un incidente con mercancías peligrosas, el comandante informa a tierra…",
+        "en": "After a dangerous goods incident, the commander informs the ground…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo si hay heridos",
+            "en": "Only if there are injuries"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Al día siguiente",
+            "en": "The next day"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Antes del aterrizaje",
+            "en": "Before landing"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Así los servicios de emergencia saben qué esperar.",
+        "en": "So the emergency services know what to expect."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un dispositivo con batería de litio que humea…",
+        "en": "A lithium battery device that is smoking…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se lleva corriendo a la galley",
+            "en": "Is rushed to the galley"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se guarda en una bolsa en la bodega",
+            "en": "Is bagged in the hold"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se mueve y se enfría tras apagar el fuego",
+            "en": "Is not moved and is cooled after the fire is out"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se devuelve al pasajero",
+            "en": "Is handed back to the passenger"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Procedimiento del módulo 4 y SAFO 09013.",
+        "en": "Module 4 procedure and SAFO 09013."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿A qué clase pertenecen los aerosoles?",
+        "en": "Which class do aerosols belong to?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2, gases",
+            "en": "2, gases"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "8",
+            "en": "8"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "9",
+            "en": "9"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Clase 2: gases.",
+        "en": "Class 2: gases."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "Un power bank de 25.000 mAh a 3,7 V tiene…",
+        "en": "A 25,000 mAh power bank at 3.7 V has…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "92,5 Wh: permitido sin aprobación",
+            "en": "92.5 Wh: allowed without approval"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "925 Wh: prohibido",
+            "en": "925 Wh: forbidden"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "9,25 Wh",
+            "en": "9.25 Wh"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "150 Wh: con aprobación",
+            "en": "150 Wh: with approval"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "25.000 × 3,7 / 1.000 = 92,5 Wh, menos de 100.",
+        "en": "25,000 × 3.7 / 1,000 = 92.5 Wh, under 100."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "La NOTOC se entrega…",
+        "en": "The NOTOC is given…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A los pasajeros",
+            "en": "To passengers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Por megafonía",
+            "en": "Over the PA"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo al control aéreo",
+            "en": "Only to ATC"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por escrito al comandante",
+            "en": "In writing to the commander"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Indica qué mercancías peligrosas lleva la carga, cuántas y dónde.",
+        "en": "It shows which dangerous goods are in the cargo, how many and where."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "Los casos de mercancías peligrosas no declaradas…",
+        "en": "Cases of undeclared dangerous goods…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se ignoran si no hubo problema",
+            "en": "Are ignored if nothing happened"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo se comentan entre la tripulación",
+            "en": "Are only discussed among the crew"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se notifican a la autoridad",
+            "en": "Are reported to the authority"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se resuelven con una multa a bordo",
+            "en": "Are settled with an on-board fine"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Los informes ayudan a mejorar los controles.",
+        "en": "Reports help improve the checks."
+      }
+    }
+  ]
+}

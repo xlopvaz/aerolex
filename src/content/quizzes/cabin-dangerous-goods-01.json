@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué documento de la OACI contiene los detalles obligatorios sobre mercancías peligrosas?",
+        "en": "Which ICAO document contains the mandatory details on dangerous goods?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Anexo 17",
+            "en": "Annex 17"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Las Instrucciones Técnicas (Doc 9284)",
+            "en": "The Technical Instructions (Doc 9284)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Anexo 6",
+            "en": "Annex 6"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Doc 4444",
+            "en": "Doc 4444"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El Anexo 18 fija los principios.",
+        "en": "Annex 18 sets out the principles."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Las baterías de litio pertenecen a la clase…",
+        "en": "Lithium batteries belong to class…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "9, varios",
+            "en": "9, miscellaneous"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1, explosivos",
+            "en": "1, explosives"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "3, líquidos inflamables",
+            "en": "3, flammable liquids"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "8, corrosivos",
+            "en": "8, corrosives"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También el hielo seco y los imanes potentes.",
+        "en": "So do dry ice and strong magnets."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un aerosol pertenece a la clase…",
+        "en": "An aerosol belongs to class…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "4, sólidos inflamables",
+            "en": "4, flammable solids"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "7, radiactivos",
+            "en": "7, radioactive"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6, tóxicos",
+            "en": "6, toxic"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2, gases",
+            "en": "2, gases"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Igual que las bombonas de camping y los extintores.",
+        "en": "As do camping gas cylinders and fire extinguishers."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "La NOTOC informa al comandante de…",
+        "en": "The NOTOC tells the commander about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los pasajeros especiales",
+            "en": "Special passengers"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El combustible a bordo",
+            "en": "Fuel on board"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Las mercancías peligrosas de la carga, su cantidad y su ubicación",
+            "en": "The dangerous goods in the cargo, their quantity and location"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El menú del vuelo",
+            "en": "The flight menu"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Se entrega por escrito.",
+        "en": "It is given in writing."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Por qué recibe formación en mercancías peligrosas la tripulación de una aerolínea que no las acepta como carga?",
+        "en": "Why are the crew of an airline that does not accept dangerous goods as cargo trained in them?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No la recibe",
+            "en": "They are not"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque llegan a bordo en el equipaje de los pasajeros",
+            "en": "Because they come on board in passengers' baggage"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo por tradición",
+            "en": "Only by tradition"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para venderlas a bordo",
+            "en": "To sell them on board"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Baterías, aerosoles, encendedores…",
+        "en": "Batteries, aerosols, lighters…"
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un bulto con una etiqueta de riesgo en forma de rombo en la cabina…",
+        "en": "A package with a diamond hazard label in the cabin…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No debería estar allí y hay que comunicarlo",
+            "en": "Should not be there and must be reported"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Es normal",
+            "en": "Is normal"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se guarda en el compartimento superior",
+            "en": "Is stowed in the overhead bin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se abre para comprobarlo",
+            "en": "Is opened to check it"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las etiquetas de riesgo identifican mercancías peligrosas declaradas.",
+        "en": "Hazard labels identify declared dangerous goods."
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Microburst",
+    "es": "Microrráfaga"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A small, intense downdraft from a convective cloud that spreads out on reaching the ground; according to the FAA AIM its downdraft can reach 6,000 ft/min and an individual microburst seldom lasts more than 15 minutes after reaching the ground.",
+    "es": "Corriente descendente pequeña e intensa de una nube convectiva que se extiende al llegar al suelo; según el AIM de la FAA, puede alcanzar 6.000 ft/min y rara vez dura más de 15 minutos desde que toca el suelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A sudden burst of air pushing down from a storm cloud.",
+    "es": "Un golpe de aire repentino que baja de una nube de tormenta."
+  },
+  "example": {
+    "en": "The crew went around after a microburst warning on short final.",
+    "es": "La tripulación hizo motor y al aire tras un aviso de microrráfaga en final corta."
+  },
+  "pronunciation": {
+    "en": "MY-kroh-burst",
+    "es": "mi-cro-rrá-fa-ga"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "wind-shear",
+    "thunderstorm",
+    "go-around"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-aim",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
