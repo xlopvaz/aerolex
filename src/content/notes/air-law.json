@@ -1,0 +1,171 @@
+{
+  "course": "air-law",
+  "lessons": [
+    {
+      "lesson": "chicago-convention-and-icao",
+      "key": {
+        "es": "Chicago 1944: soberanía sobre el espacio aéreo, nacionalidad por matrícula, creación de la OACI; Anexos con normas (necesarias) y métodos recomendados (convenientes); diferencias notificadas; libertades 1.ª–5.ª; documentos del artículo 29.",
+        "en": "Chicago 1944: sovereignty over airspace, nationality by registration, creation of ICAO; Annexes with standards (necessary) and recommended practices (desirable); differences notified; freedoms 1st–5th; Article 29 documents."
+      },
+      "points": [
+        {
+          "es": "Art. 1: soberanía plena y exclusiva sobre el espacio aéreo. Nacionalidad = Estado de matrícula; nunca doble matrícula.",
+          "en": "Art. 1: complete and exclusive sovereignty over airspace. Nationality = State of registration; never dual registration."
+        },
+        {
+          "es": "OACI: creada por el convenio, operativa desde 1947, agencia de la ONU en Montreal.",
+          "en": "ICAO: created by the Convention, working since 1947, UN agency in Montreal."
+        },
+        {
+          "es": "Anexos: norma = necesaria; método recomendado = conveniente. Diferencias: art. 38, publicadas en el AIP.",
+          "en": "Annexes: standard = necessary; recommended practice = desirable. Differences: Art. 38, published in the AIP."
+        },
+        {
+          "es": "Libertades: 1.ª sobrevolar, 2.ª escala técnica, 3.ª ida, 4.ª vuelta, 5.ª entre dos países extranjeros. Cabotaje muy restringido.",
+          "en": "Freedoms: 1st overfly, 2nd technical stop, 3rd outbound, 4th inbound, 5th between two foreign countries. Cabotage heavily restricted."
+        },
+        {
+          "es": "Art. 29: matrícula, aeronavegabilidad, licencias, diario de a bordo, licencia de radio, lista de pasajeros y manifiesto de carga.",
+          "en": "Art. 29: registration, airworthiness, licences, journey log, radio licence, passenger list and cargo manifest."
+        }
+      ]
+    },
+    {
+      "lesson": "eu-rules-and-licensing",
+      "key": {
+        "es": "Pirámide: Reglamento base 2018/1139 → reglamentos de ejecución (Partes) → AMC y GM (presunción de cumplimiento). Aircrew 1178/2011, Air Ops 965/2012, SERA 923/2012. Licencias LAPL/PPL 17, CPL 18, ATPL 21 (1.500 h). CAT: 60–64 solo multipiloto; 65 fin. Médico clase 1: 12 meses.",
+        "en": "Pyramid: Basic Regulation 2018/1139 → implementing regulations (Parts) → AMC and GM (presumption of compliance). Aircrew 1178/2011, Air Ops 965/2012, SERA 923/2012. Licences LAPL/PPL 17, CPL 18, ATPL 21 (1,500 h). CAT: 60–64 multi-pilot only; 65 end. Class 1 medical: 12 months."
+      },
+      "points": [
+        {
+          "es": "Reglamento base (UE) 2018/1139 → reglamentos de ejecución obligatorios → AMC y GM no obligatorios.",
+          "en": "Basic Regulation (EU) 2018/1139 → binding implementing regulations → non-binding AMC and GM."
+        },
+        {
+          "es": "AMC: presunción de cumplimiento; medio alternativo, con aprobación.",
+          "en": "AMC: presumption of compliance; alternative means, with approval."
+        },
+        {
+          "es": "1178/2011: FCL y MED. 965/2012: CAT, ORO, SPA. 923/2012: SERA. 1321/2014: aeronavegabilidad.",
+          "en": "1178/2011: FCL and MED. 965/2012: CAT, ORO, SPA. 923/2012: SERA. 1321/2014: airworthiness."
+        },
+        {
+          "es": "Edades: LAPL y PPL 17, CPL 18, ATPL 21 (con 1.500 h).",
+          "en": "Ages: LAPL and PPL 17, CPL 18, ATPL 21 (with 1,500 h)."
+        },
+        {
+          "es": "CAT: 60–64 solo multipiloto y con el otro piloto menor de 60; 65, fin.",
+          "en": "CAT: 60–64 multi-pilot only with the other pilot under 60; 65, end."
+        },
+        {
+          "es": "Médico: clase 1 profesional (12 meses, 6 en algunos casos como ≥ 60), clase 2 privado.",
+          "en": "Medical: Class 1 professional (12 months, 6 in some cases such as ≥ 60), Class 2 private."
+        }
+      ]
+    },
+    {
+      "lesson": "rules-of-the-air",
+      "key": {
+        "es": "Derecho de paso: de frente, ambos a la derecha; convergiendo, cede quien tiene al otro a la derecha; la alcanzada tiene paso; el más maniobrable cede. VMC: 8 km a FL100 o más, 5 km debajo; 1.500 m y 1.000 ft de nubes; en F/G bajo 3.000 ft, libre de nubes con suelo a la vista. Señales: verde fija, aterrizar o despegar.",
+        "en": "Right of way: head-on, both right; converging, the one with the other on its right gives way; the overtaken has priority; the more manoeuvrable gives way. VMC: 8 km at FL100 or above, 5 km below; 1,500 m and 1,000 ft from cloud; in F/G below 3,000 ft, clear of cloud with surface in sight. Signals: steady green, land or take off."
+      },
+      "points": [
+        {
+          "es": "De frente: ambos a la derecha. Convergiendo: cede quien tiene al otro a la derecha. Alcance: adelantar por la derecha.",
+          "en": "Head-on: both right. Converging: the one with the other on its right gives way. Overtaking: pass on the right."
+        },
+        {
+          "es": "Prioridad: aeronave en vuelo sobre la que está en tierra; la más baja en la aproximación. Motor → dirigible → planeador → globo.",
+          "en": "Priority: aircraft in flight over those on the ground; the lower on approach. Powered → airship → glider → balloon."
+        },
+        {
+          "es": "VMC SERA: ≥ FL100 8 km; < FL100 5 km; nubes 1.500 m / 1.000 ft; F y G ≤ 3.000 ft: 5 km, libre de nubes y suelo a la vista.",
+          "en": "SERA VMC: ≥ FL100 8 km; < FL100 5 km; cloud 1,500 m / 1,000 ft; F and G ≤ 3,000 ft: 5 km, clear of cloud and surface in sight."
+        },
+        {
+          "es": "Alturas: VFR ciudad 1.000 ft en 600 m; VFR resto 500 ft; IFR 1.000 ft en 8 km (2.000 ft en montaña).",
+          "en": "Heights: VFR city 1,000 ft within 600 m; VFR elsewhere 500 ft; IFR 1,000 ft within 8 km (2,000 ft over mountains)."
+        },
+        {
+          "es": "Luces: verde fija (aterrizar / despegar), roja fija (ceder / parar), verde intermitente (regresar / rodar), roja intermitente (no aterrizar / despejar pista), blanca intermitente (aterrizar aquí / volver al punto de partida).",
+          "en": "Lights: steady green (land / take off), steady red (give way / stop), flashing green (return / taxi), flashing red (do not land / clear runway), flashing white (land here / return to start)."
+        },
+        {
+          "es": "Interceptación: seguir al interceptor, 121,5 MHz, 7700; alabear las alas = sígame.",
+          "en": "Interception: follow the interceptor, 121.5 MHz, 7700; rocking wings = follow me."
+        }
+      ]
+    },
+    {
+      "lesson": "airspace-and-air-traffic-services",
+      "key": {
+        "es": "Servicios: control, información de vuelo y alerta; dependencias TWR, APP, ACC. FIR, CTR (desde el suelo) y CTA/TMA. Clases: A solo IFR; B todos separados; C IFR separados de todos; D IFR de IFR; E VFR sin autorización; F asesoramiento; G solo FIS. 250 kt bajo FL100 (C para VFR, D–G). Zonas P, R, D, RMZ y TMZ.",
+        "en": "Services: control, flight information and alerting; units TWR, APP, ACC. FIR, CTR (from the surface) and CTA/TMA. Classes: A IFR only; B all separated; C IFR separated from all; D IFR from IFR; E VFR without clearance; F advisory; G FIS only. 250 kt below FL100 (C for VFR, D–G). Areas P, R, D, RMZ and TMZ."
+      },
+      "points": [
+        {
+          "es": "ATS: control (autorizaciones), FIS (información) y alerta (búsqueda y salvamento).",
+          "en": "ATS: control (clearances), FIS (information) and alerting (search and rescue)."
+        },
+        {
+          "es": "ATC: torre, aproximación (TMA) y centro de control de área (en ruta). FIR, CTR desde el suelo, CTA desde una altura.",
+          "en": "ATC: tower, approach (TMA) and area control centre (en route). FIR, CTR from the surface, CTA from a set height."
+        },
+        {
+          "es": "A: solo IFR. B: todos separados. C: IFR de todos, VFR de IFR. D: IFR de IFR. E: IFR de IFR, VFR sin autorización. F: asesoramiento. G: FIS.",
+          "en": "A: IFR only. B: all separated. C: IFR from all, VFR from IFR. D: IFR from IFR. E: IFR from IFR, VFR without clearance. F: advisory. G: FIS."
+        },
+        {
+          "es": "A–E controlado; F y G no controlado.",
+          "en": "A–E controlled; F and G uncontrolled."
+        },
+        {
+          "es": "250 kt IAS por debajo de FL100 en C (VFR), D, E, F y G.",
+          "en": "250 kt IAS below FL100 in C (VFR), D, E, F and G."
+        },
+        {
+          "es": "Zonas: P prohibida, R restringida, D peligrosa; RMZ radio, TMZ transpondedor; en AIP, cartas y NOTAM.",
+          "en": "Areas: P prohibited, R restricted, D danger; RMZ radio, TMZ transponder; in the AIP, charts and NOTAM."
+        }
+      ]
+    },
+    {
+      "lesson": "accidents-and-occurrence-reporting",
+      "key": {
+        "es": "Accidente (lesiones graves, daños importantes o desaparición), incidente grave (alta probabilidad de accidente) e incidente. Investigar es prevenir, no culpar (Anexo 13; Reg. 996/2010, autoridad independiente). Notificación obligatoria en 72 h (Reg. 376/2014) con cultura justa.",
+        "en": "Accident (serious injury, substantial damage or missing aircraft), serious incident (high probability of accident) and incident. Investigation is to prevent, not blame (Annex 13; Reg. 996/2010, independent authority). Mandatory reporting within 72 h (Reg. 376/2014) with just culture."
+      },
+      "points": [
+        {
+          "es": "Accidente: lesiones mortales o graves, daños importantes o aeronave desaparecida, entre embarque y desembarque.",
+          "en": "Accident: fatal or serious injury, substantial damage or missing aircraft, between boarding and disembarkation."
+        },
+        {
+          "es": "Incidente grave: alta probabilidad de accidente (casi colisión, despegue desde pista cerrada, incendio). Incidente: el resto.",
+          "en": "Serious incident: high probability of accident (near collision, take-off from a closed runway, fire). Incident: the rest."
+        },
+        {
+          "es": "Objetivo: prevención, no culpa; independiente de la justicia.",
+          "en": "Aim: prevention, not blame; independent of the courts."
+        },
+        {
+          "es": "Reg. 996/2010: autoridad de investigación independiente en cada Estado (CIAIAC en España); recomendaciones de seguridad.",
+          "en": "Reg. 996/2010: independent investigation authority in each State (CIAIAC in Spain); safety recommendations."
+        },
+        {
+          "es": "Reg. 376/2014: notificación obligatoria en 72 h y voluntaria; análisis y base de datos europea.",
+          "en": "Reg. 376/2014: mandatory reporting within 72 h and voluntary reporting; analysis and European database."
+        },
+        {
+          "es": "Cultura justa: sin sanción por errores honestos, confidencialidad; no ampara negligencia grave, infracciones deliberadas ni actos destructivos.",
+          "en": "Just culture: no penalty for honest mistakes, confidentiality; no cover for gross negligence, wilful violations or destructive acts."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

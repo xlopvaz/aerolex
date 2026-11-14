@@ -1,0 +1,62 @@
+---
+lesson: fuel-planning
+course: flight-planning
+lang: es
+title: "Planificación del combustible"
+summary: "Las partidas de combustible de un vuelo de transporte según las normas europeas, cómo se calcula una carga de combustible y qué significan «MINIMUM FUEL» y «MAYDAY FUEL»."
+objectives:
+  - "Enumerar las partidas de combustible de un vuelo"
+  - "Calcular una carga de combustible"
+  - "Saber cuándo declarar combustible mínimo y emergencia por combustible"
+minutes: 13
+terms: [trip-fuel, contingency-fuel, alternate-aerodrome, final-reserve-fuel, minimum-fuel]
+quiz: flight-planning-02
+sources: [easa-ear-air-ops, icao-annex-6, icao-doc-4444]
+review:
+  status: draft
+---
+
+## Las partidas
+
+Las normas de operaciones de la UE exigen que el combustible de un vuelo de transporte comercial incluya, como mínimo:
+
+| Partida | Para qué |
+|---|---|
+| **Rodaje** | Arrancar, rodar y usar la APU antes del despegue |
+| <Term id="trip-fuel">Trayecto</Term> | Del despegue al aterrizaje en el destino |
+| <Term id="contingency-fuel">Contingencias</Term> | Imprevistos: viento, ruta o nivel distintos de los previstos. Normalmente el **5 % del trayecto**, con un mínimo de **5 minutos de espera a 1.500 ft** sobre el destino |
+| **Alternativo** | Desde el destino hasta el <Term id="alternate-aerodrome">aeródromo alternativo</Term>: frustrada, ascenso, crucero, descenso y aproximación |
+| <Term id="final-reserve-fuel">Reserva final</Term> | Para los aviones de turbina, **30 minutos de espera a 1.500 ft** sobre el aeródromo, en condiciones estándar |
+| **Adicional** | Cuando las partidas anteriores no bastan para casos concretos, como un fallo de motor o de presurización en el punto más crítico de una ruta sobre el agua |
+| **Extra** | Lo que decida el operador o el comandante por encima del mínimo: tormentas previstas, esperas habituales |
+
+La **reserva final** es la última línea de defensa: no se planifica gastarla.
+
+## Un ejemplo
+
+Un vuelo con estos datos:
+
+| Partida | kg |
+|---|---|
+| Rodaje | 200 |
+| Trayecto | 6.000 |
+| Contingencias (5 % del trayecto) | 300 |
+| Alternativo | 1.400 |
+| Reserva final (30 min) | 1.100 |
+| **Combustible mínimo al despegue** | **8.800** (sin contar el rodaje) |
+| **Combustible mínimo en rampa** | **9.000** |
+
+Si el comandante añade 500 kg de extra por tormentas previstas, cargará **9.500 kg**.
+
+## Vigilar el combustible en vuelo
+
+Durante el vuelo se compara el combustible real con el previsto en los puntos de la ruta. Si la previsión de llegada con combustible cae, la tripulación replanifica: ruta más directa, aeródromo alternativo más cercano o desvío.
+
+Hay dos avisos al control, normalizados por la OACI:
+
+- <Term id="minimum-fuel">«MINIMUM FUEL»</Term>: la aeronave se ha comprometido a aterrizar en un aeródromo concreto y **cualquier cambio** en su autorización podría hacerla aterrizar con **menos de la reserva final**. **No** es una emergencia, pero avisa al control de que no puede aceptar más retrasos.
+- **«MAYDAY, MAYDAY, MAYDAY, FUEL»**: el combustible calculado al aterrizar en el aeródromo adecuado más cercano es **menor que la reserva final**. Es una **emergencia**.
+
+<Callout type="caution" label="No esperar al último minuto">
+Los dos avisos existen para que el control pueda ayudar a tiempo. Declarar demasiado tarde reduce las opciones.
+</Callout>

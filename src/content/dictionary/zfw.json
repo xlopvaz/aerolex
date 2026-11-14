@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ZFM",
+    "es": "ZFM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Zero fuel mass",
+    "es": "Masa sin combustible"
+  },
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The dry operating mass plus the traffic load: the mass of the loaded aircraft before usable fuel is added. It is limited by the maximum zero fuel mass, set to protect the wing structure.",
+    "es": "Masa operativa en seco más la carga de pago: la masa del avión cargado antes de añadir el combustible utilizable. La limita la masa máxima sin combustible, fijada para proteger la estructura del ala."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The weight of the loaded aircraft with empty tanks.",
+    "es": "El peso del avión cargado con los depósitos vacíos."
+  },
+  "example": {
+    "en": "The ZFM was 300 kg below the MZFM, so the load was acceptable.",
+    "es": "La ZFM estaba 300 kg por debajo de la MZFM, así que la carga era aceptable."
+  },
+  "pronunciation": {
+    "en": "zed-ef-EM",
+    "es": "ze-ta-e-fe-e-me"
+  },
+  "synonyms": {
+    "en": [
+      "ZFW (zero fuel weight)"
+    ],
+    "es": [
+      "ZFW"
+    ]
+  },
+  "related": [
+    "mzfw",
+    "dom",
+    "mtow"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-wbh",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

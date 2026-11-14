@@ -1,0 +1,47 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Just culture",
+    "es": "Cultura justa"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A culture in which people are not punished for actions, omissions or decisions in line with their experience and training, while gross negligence, wilful violations and destructive acts are not tolerated; it encourages the reporting of errors.",
+    "es": "Cultura en la que no se sanciona a las personas por acciones, omisiones o decisiones acordes con su experiencia y formación, pero no se toleran la negligencia grave, las infracciones deliberadas ni los actos destructivos; fomenta que se notifiquen los errores."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A culture where honest mistakes can be reported without fear.",
+    "es": "Una cultura en la que los errores honestos se pueden notificar sin miedo."
+  },
+  "example": {
+    "en": "Thanks to just culture, the pilot reported his own altitude deviation.",
+    "es": "Gracias a la cultura justa, el piloto notificó su propia desviación de altitud."
+  },
+  "pronunciation": {
+    "en": "just KUL-chur",
+    "es": "cul-tu-ra jus-ta"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "serious-incident",
+    "crm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-376-2014"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

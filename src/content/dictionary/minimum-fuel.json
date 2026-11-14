@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Minimum fuel",
+    "es": "Combustible mínimo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A call made to ATC when the aircraft has committed to land at a specific aerodrome and any change to its clearance could result in landing with less than the planned final reserve fuel; it is not an emergency, unlike MAYDAY FUEL.",
+    "es": "Aviso al control cuando la aeronave se ha comprometido a aterrizar en un aeródromo concreto y cualquier cambio en su autorización podría hacerla aterrizar con menos del combustible de reserva final previsto; no es una emergencia, a diferencia de MAYDAY FUEL."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Telling ATC you can't accept any more delays.",
+    "es": "Avisar al control de que no puedes aceptar más retrasos."
+  },
+  "example": {
+    "en": "\"Minimum fuel\" warned the controller not to give more holding.",
+    "es": "«Minimum fuel» avisó al controlador de que no diera más esperas."
+  },
+  "pronunciation": {
+    "en": "MIN-ih-mum FYOO-ul",
+    "es": "com-bus-ti-ble mí-ni-mo"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mayday",
+    "final-reserve-fuel"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-6",
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

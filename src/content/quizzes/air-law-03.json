@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Dos aviones vuelan de frente a la misma altura. ¿Qué hacen?",
+        "en": "Two aircraft are flying head-on at the same level. What do they do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ambos viran a la izquierda",
+            "en": "Both turn left"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El más grande sube",
+            "en": "The larger one climbs"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El más lento baja",
+            "en": "The slower one descends"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ambos viran a la derecha",
+            "en": "Both turn right"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Igual que en carretera en la mayoría de países.",
+        "en": "Much like driving on the right."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Dos aviones convergen a la misma altura. Cede el paso…",
+        "en": "Two aircraft are converging at the same level. The one that gives way is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El que tiene al otro a su izquierda",
+            "en": "The one that has the other on its left"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El más rápido",
+            "en": "The faster one"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El que tiene al otro a su derecha",
+            "en": "The one that has the other on its right"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El más alto",
+            "en": "The higher one"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El que llega por la derecha tiene derecho de paso.",
+        "en": "The one coming from the right has right of way."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un avión con motor y un planeador convergen. Cede el paso…",
+        "en": "A powered aeroplane and a glider converge. The one that gives way is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El planeador",
+            "en": "The glider"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El avión con motor",
+            "en": "The powered aeroplane"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El que va más alto",
+            "en": "The higher one"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguno",
+            "en": "Neither"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El más maniobrable cede al menos maniobrable.",
+        "en": "The more manoeuvrable gives way to the less."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En SERA, la visibilidad VMC mínima a FL100 o por encima es…",
+        "en": "Under SERA, the minimum VMC visibility at or above FL100 is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "8 km",
+            "en": "8 km"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5 km",
+            "en": "5 km"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1.500 m",
+            "en": "1,500 m"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "10 km",
+            "en": "10 km"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Por debajo de FL100, 5 km.",
+        "en": "Below FL100, 5 km."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un VFR sobre una ciudad debe volar al menos…",
+        "en": "A VFR flight over a city must fly at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "500 ft sobre el suelo",
+            "en": "500 ft above the ground"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2.000 ft sobre el terreno en 8 km",
+            "en": "2,000 ft above terrain within 8 km"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "100 ft sobre los tejados",
+            "en": "100 ft above the rooftops"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1.000 ft sobre el obstáculo más alto en 600 m",
+            "en": "1,000 ft above the highest obstacle within 600 m"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "En otras zonas, 500 ft sobre el suelo o el agua.",
+        "en": "Elsewhere, 500 ft above the ground or water."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "En vuelo, la torre te dirige una luz roja intermitente. Significa…",
+        "en": "In flight, the tower shows you a flashing red light. It means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Autorizado a aterrizar",
+            "en": "Cleared to land"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Regrese para aterrizar",
+            "en": "Return for landing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aeródromo peligroso: no aterrice",
+            "en": "Aerodrome unsafe: do not land"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ceda el paso y siga en el circuito",
+            "en": "Give way and continue circling"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La roja fija es ceder el paso y seguir en el circuito.",
+        "en": "Steady red is give way and continue circling."
+      }
+    }
+  ]
+}

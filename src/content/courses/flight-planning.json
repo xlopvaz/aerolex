@@ -1,0 +1,45 @@
+{
+  "path": "pilot-training",
+  "order": 10,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 10: Planificación del vuelo",
+    "en": "Pilot Academy · Module 10: Flight Planning"
+  },
+  "description": {
+    "es": "Cómo se prepara un vuelo de transporte: masa y centrado con sus límites, la planificación del combustible según las normas europeas con MINIMUM FUEL y MAYDAY FUEL, y el plan de vuelo OACI con la preparación del vuelo. Con cálculos y preguntas tipo ATPL.",
+    "en": "How a transport flight is prepared: mass and balance with its limits, fuel planning under European rules with MINIMUM FUEL and MAYDAY FUEL, and the ICAO flight plan with the pre-flight briefing. With calculations and ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Calculate masses and centre of gravity and check their limits",
+      "Calculate a fuel load and manage fuel in flight",
+      "Fill in and interpret an ICAO flight plan"
+    ],
+    "es": [
+      "Calcular masas y centro de gravedad y comprobar sus límites",
+      "Calcular una carga de combustible y gestionar el combustible en vuelo",
+      "Rellenar e interpretar un plan de vuelo OACI"
+    ]
+  },
+  "lessons": [
+    "mass-and-balance",
+    "fuel-planning",
+    "flight-plan-and-briefing"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-wbh",
+    "easa-ear-air-ops",
+    "icao-annex-6",
+    "icao-doc-4444",
+    "eu-923-2012",
+    "icao-annex-3",
+    "icao-annex-15"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

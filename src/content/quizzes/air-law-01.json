@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El artículo 1 del Convenio de Chicago reconoce…",
+        "en": "Article 1 of the Chicago Convention recognises…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El libre sobrevuelo de todos los Estados",
+            "en": "Free overflight of all States"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La soberanía plena y exclusiva de cada Estado sobre su espacio aéreo",
+            "en": "Each State's complete and exclusive sovereignty over its airspace"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La creación de la EASA",
+            "en": "The creation of EASA"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El derecho de cabotaje",
+            "en": "The right of cabotage"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es el principio básico del derecho aéreo.",
+        "en": "It is the basic principle of air law."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Un Estado que no puede cumplir una norma de un Anexo debe…",
+        "en": "A State that cannot comply with an Annex standard must…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Notificar la diferencia a la OACI",
+            "en": "Notify the difference to ICAO"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Abandonar la OACI",
+            "en": "Leave ICAO"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ignorarla",
+            "en": "Ignore it"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Pedir permiso a la EASA",
+            "en": "Ask EASA for permission"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Artículo 38; las diferencias se publican en el AIP.",
+        "en": "Article 38; differences are published in the AIP."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un «método recomendado» de la OACI es una disposición cuya aplicación se considera…",
+        "en": "An ICAO \"recommended practice\" is a provision whose application is considered…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Necesaria",
+            "en": "Necessary"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Prohibida",
+            "en": "Prohibited"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Obligatoria solo en Europa",
+            "en": "Mandatory only in Europe"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Conveniente",
+            "en": "Desirable"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La norma (standard) se considera necesaria.",
+        "en": "A standard is considered necessary."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Una escala técnica para repostar sin embarcar ni desembarcar pasajeros usa la…",
+        "en": "A technical stop to refuel without boarding or offloading passengers uses the…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1.ª libertad",
+            "en": "1st freedom"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5.ª libertad",
+            "en": "5th freedom"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2.ª libertad",
+            "en": "2nd freedom"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "3.ª libertad",
+            "en": "3rd freedom"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La 1.ª es solo sobrevolar.",
+        "en": "The 1st is overflight only."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Una aerolínea española que vende el tramo Bogotá–Lima de un vuelo Madrid–Bogotá–Lima usa la…",
+        "en": "A Spanish airline selling the Bogotá–Lima leg of a Madrid–Bogotá–Lima flight uses the…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "4.ª libertad",
+            "en": "4th freedom"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5.ª libertad",
+            "en": "5th freedom"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2.ª libertad",
+            "en": "2nd freedom"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguna, es cabotaje",
+            "en": "None, it is cabotage"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Transporte entre dos países extranjeros dentro de un vuelo que empieza en el propio.",
+        "en": "Carriage between two foreign countries on a flight that starts in its own."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Cuál NO es un documento del artículo 29?",
+        "en": "Which is NOT an Article 29 document?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El menú del vuelo",
+            "en": "The flight menu"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El certificado de aeronavegabilidad",
+            "en": "The certificate of airworthiness"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El certificado de matrícula",
+            "en": "The certificate of registration"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El diario de a bordo",
+            "en": "The journey log book"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También las licencias, la licencia de radio y las listas de pasajeros y carga.",
+        "en": "Also licences, the radio licence and passenger and cargo lists."
+      }
+    }
+  ]
+}

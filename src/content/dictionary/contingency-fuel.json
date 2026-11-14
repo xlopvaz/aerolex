@@ -1,0 +1,47 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Contingency fuel",
+    "es": "Combustible para contingencias"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Fuel carried to compensate for unforeseen factors such as deviations from the planned wind, routing or level; in EU rules it is typically 5 % of the trip fuel, with a minimum equivalent to 5 minutes' holding at 1,500 ft above the destination.",
+    "es": "Combustible que se lleva para compensar factores imprevistos, como desviaciones del viento, la ruta o el nivel previstos; en las normas de la UE suele ser el 5 % del combustible del trayecto, con un mínimo equivalente a 5 minutos de espera a 1.500 ft sobre el destino."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Extra fuel in case things don't go to plan.",
+    "es": "Combustible extra por si las cosas no salen como se planeó."
+  },
+  "example": {
+    "en": "Contingency fuel was 340 kg, 5 % of the trip fuel.",
+    "es": "El combustible para contingencias era de 340 kg, el 5 % del trayecto."
+  },
+  "pronunciation": {
+    "en": "kun-TIN-jun-see FYOO-ul",
+    "es": "com-bus-ti-ble pa-ra con-tin-gen-cias"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "trip-fuel",
+    "final-reserve-fuel"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

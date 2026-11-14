@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuáles son los tres servicios de tránsito aéreo?",
+        "en": "What are the three air traffic services?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Control, meteorología y mantenimiento",
+            "en": "Control, weather and maintenance"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Torre, aproximación y área",
+            "en": "Tower, approach and area"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Control, información de vuelo y alerta",
+            "en": "Control, flight information and alerting"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Radar, radio y GNSS",
+            "en": "Radar, radio and GNSS"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Torre, aproximación y área son dependencias de control.",
+        "en": "Tower, approach and area are control units."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿En qué clase de espacio aéreo solo se permiten vuelos IFR?",
+        "en": "In which airspace class are only IFR flights allowed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "B",
+            "en": "B"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A",
+            "en": "A"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "E",
+            "en": "E"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "G",
+            "en": "G"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "En la B se permiten IFR y VFR, todos separados.",
+        "en": "Class B allows IFR and VFR, all separated."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En clase D, el control separa…",
+        "en": "In class D, ATC separates…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los IFR de los IFR",
+            "en": "IFR from IFR"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Todos de todos",
+            "en": "Everyone from everyone"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los VFR de los VFR",
+            "en": "VFR from VFR"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nadie",
+            "en": "No one"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Al resto le da información de tráfico.",
+        "en": "Everyone else gets traffic information."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿En qué clase controlada los VFR no necesitan autorización?",
+        "en": "In which controlled class do VFR flights need no clearance?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "C",
+            "en": "C"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "D",
+            "en": "D"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "B",
+            "en": "B"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "E",
+            "en": "E"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Los IFR sí necesitan autorización y se separan entre sí.",
+        "en": "IFR flights do need a clearance and are separated from each other."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Por debajo de FL100 en clase D, la velocidad máxima es…",
+        "en": "Below FL100 in class D, the maximum speed is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "200 kt IAS",
+            "en": "200 kt IAS"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "300 kt IAS",
+            "en": "300 kt IAS"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "250 kt IAS",
+            "en": "250 kt IAS"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hay límite",
+            "en": "There is no limit"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Salvo autorización de la autoridad.",
+        "en": "Unless the authority approves otherwise."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Una zona en la que no se puede volar es…",
+        "en": "An area in which flight is not allowed is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una zona peligrosa (D)",
+            "en": "A danger area (D)"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una zona prohibida (P)",
+            "en": "A prohibited area (P)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una RMZ",
+            "en": "An RMZ"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una CTR",
+            "en": "A CTR"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La restringida (R) permite volar con condiciones.",
+        "en": "A restricted area (R) allows flight under conditions."
+      }
+    }
+  ]
+}

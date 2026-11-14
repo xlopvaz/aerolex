@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MAC",
+    "es": "MAC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Mean aerodynamic chord",
+    "es": "Cuerda aerodinámica media"
+  },
+  "categories": [
+    "flight-operations",
+    "aerodynamics"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The chord of an imaginary rectangular wing with the same aerodynamic characteristics as the real wing; on transport aircraft the centre of gravity is expressed as a percentage of it.",
+    "es": "Cuerda de un ala rectangular imaginaria con las mismas características aerodinámicas que el ala real; en los aviones de transporte el centro de gravedad se expresa como porcentaje de ella."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A reference length of the wing used to say where the CG is.",
+    "es": "Una longitud de referencia del ala que sirve para decir dónde está el centro de gravedad."
+  },
+  "example": {
+    "en": "The loadsheet showed the CG at 27 % MAC.",
+    "es": "La hoja de carga mostraba el centro de gravedad al 27 % de la MAC."
+  },
+  "pronunciation": {
+    "en": "em-ay-SEE",
+    "es": "e-me-a-ce"
+  },
+  "synonyms": {
+    "en": [
+      "% MAC"
+    ],
+    "es": [
+      "% MAC"
+    ]
+  },
+  "related": [
+    "centre-of-gravity",
+    "load-sheet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-wbh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En la casilla 15 del plan de vuelo, N0450F350 significa…",
+        "en": "In item 15 of the flight plan, N0450F350 means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "450 NM de distancia a FL350",
+            "en": "450 NM distance at FL350"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Número de vuelo 450",
+            "en": "Flight number 450"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Mach 0,45 a 3.500 ft",
+            "en": "Mach 0.45 at 3,500 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "450 kt de TAS a FL350",
+            "en": "450 kt TAS at FL350"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "N = nudos; F = nivel de vuelo.",
+        "en": "N = knots; F = flight level."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En la casilla 8, «IS» indica…",
+        "en": "In item 8, \"IS\" indicates…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vuelo VFR internacional",
+            "en": "International VFR flight"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Vuelo IFR militar",
+            "en": "IFR military flight"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Vuelo IFR regular",
+            "en": "IFR scheduled flight"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Vuelo especial",
+            "en": "Special flight"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "I = reglas IFR; S = regular.",
+        "en": "I = IFR rules; S = scheduled."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿En qué casilla va la categoría de estela turbulenta?",
+        "en": "In which item does the wake turbulence category go?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "7",
+            "en": "7"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "9",
+            "en": "9"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "15",
+            "en": "15"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "19",
+            "en": "19"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Junto al tipo de aeronave, p. ej. A320/M.",
+        "en": "With the aircraft type, e.g. A320/M."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Según SERA, un plan de vuelo para un vuelo con servicio de control se presenta al menos…",
+        "en": "Under SERA, a flight plan for a flight receiving ATC service is submitted at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "60 minutos antes de la salida",
+            "en": "60 minutes before departure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10 minutos antes",
+            "en": "10 minutes before"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "24 horas antes",
+            "en": "24 hours before"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Después del despegue",
+            "en": "After take-off"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "En Europa se procesa de forma centralizada.",
+        "en": "In Europe it is processed centrally."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué información NO forma parte normalmente de la preparación del vuelo?",
+        "en": "Which information is NOT normally part of the pre-flight briefing?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los NOTAM",
+            "en": "NOTAMs"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Los TAF del destino y alternativos",
+            "en": "Destination and alternate TAFs"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los elementos diferidos de la MEL",
+            "en": "MEL deferred items"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La lista de canciones del entretenimiento a bordo",
+            "en": "The in-flight entertainment playlist"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "También la masa y el centrado y el plan operacional.",
+        "en": "Also mass and balance and the operational flight plan."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La casilla 19 incluye…",
+        "en": "Item 19 includes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La ruta",
+            "en": "The route"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El tipo de aeronave",
+            "en": "The aircraft type"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La autonomía y las personas a bordo",
+            "en": "Endurance and persons on board"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La hora de salida",
+            "en": "The departure time"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es información suplementaria para búsqueda y salvamento.",
+        "en": "It is supplementary information for search and rescue."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "La masa permitida al despegue es la menor de…",
+        "en": "The allowed take-off mass is the lowest of…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "MTOM y MLM",
+            "en": "MTOM and MLM"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "MTOM, MZFM + combustible al despegue y MLM + combustible del trayecto",
+            "en": "MTOM, MZFM + take-off fuel and MLM + trip fuel"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "DOM y ZFM",
+            "en": "DOM and ZFM"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "MZFM y DOM",
+            "en": "MZFM and DOM"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Y puede limitarla además la performance.",
+        "en": "And performance may limit it further."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "La reserva final de un reactor es de…",
+        "en": "A jet's final reserve is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "30 minutos de espera a 1.500 ft",
+            "en": "30 minutes' holding at 1,500 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10 minutos",
+            "en": "10 minutes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1 hora de crucero",
+            "en": "1 hour of cruise"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 5 % del trayecto",
+            "en": "5 % of trip fuel"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El 5 % del trayecto es el combustible para contingencias.",
+        "en": "5 % of trip is contingency fuel."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Masa 2.000 kg y momento total 4.400 kg·m. ¿CG?",
+        "en": "Mass 2,000 kg and total moment 4,400 kg·m. CG?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "0,45 m",
+            "en": "0.45 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "4,4 m",
+            "en": "4.4 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "22 m",
+            "en": "22 m"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2,2 m del datum",
+            "en": "2.2 m from the datum"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "4.400 / 2.000 = 2,2 m.",
+        "en": "4,400 / 2,000 = 2.2 m."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "«MINIMUM FUEL»…",
+        "en": "\"MINIMUM FUEL\"…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Es una emergencia",
+            "en": "Is an emergency"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Pide combustible en vuelo",
+            "en": "Requests in-flight refuelling"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No es una emergencia, pero avisa de que no se aceptan más retrasos",
+            "en": "Is not an emergency, but warns that no more delay can be accepted"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Significa que no queda combustible",
+            "en": "Means no fuel is left"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La emergencia es MAYDAY FUEL.",
+        "en": "The emergency is MAYDAY FUEL."
+      }
+    }
+  ]
+}

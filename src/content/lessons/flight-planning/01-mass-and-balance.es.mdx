@@ -1,0 +1,75 @@
+---
+lesson: mass-and-balance
+course: flight-planning
+lang: es
+title: "Masa y centrado"
+summary: "Las masas de un avión de transporte y sus límites, cómo se calcula el centro de gravedad con momentos, y qué ocurre si queda demasiado adelantado o atrasado."
+objectives:
+  - "Distinguir DOM, ZFM, masa al despegue y al aterrizaje y sus máximos"
+  - "Calcular el centro de gravedad con momentos"
+  - "Explicar los efectos de un centro de gravedad adelantado o atrasado"
+minutes: 14
+terms: [dom, zfw, mzfw, mtow, mlw, centre-of-gravity, mac, load-sheet]
+quiz: flight-planning-01
+sources: [faa-wbh, easa-ear-air-ops]
+review:
+  status: draft
+---
+
+## La cadena de masas
+
+Cada vuelo se planifica con una serie de masas que se van sumando:
+
+| Masa | Qué incluye |
+|---|---|
+| **Masa básica en vacío** | El avión con su equipo fijo, fluidos no consumibles y combustible no utilizable |
+| <Term id="dom" /> (masa operativa en seco) | La anterior más tripulación, catering y equipo de la operación |
+| <Term id="zfw">ZFM</Term> (masa sin combustible) | DOM + **carga de pago** (pasajeros, equipaje, carga) |
+| **Masa al despegue** (TOM) | ZFM + combustible al despegue |
+| **Masa al aterrizaje** (LM) | TOM − combustible del trayecto |
+
+Y cada una tiene su **máximo estructural**:
+
+- <Term id="mzfw">MZFM</Term>: protege el **encastre del ala**. El combustible de las alas alivia la flexión que provoca la sustentación; la carga del fuselaje no. Por encima de la MZFM, el resto del peso solo puede ser combustible.
+- <Term id="mtow">MTOM</Term>: la máxima al despegue.
+- <Term id="mlw">MLM</Term>: la máxima al aterrizaje, para el tren y la estructura en la toma de contacto.
+
+La masa al despegue permitida en un vuelo es la **menor** de tres: MTOM, MZFM + combustible, y MLM + combustible del trayecto. A menudo, además, la limitan las actuaciones (pista, temperatura, obstáculos: módulo 11).
+
+## El centro de gravedad
+
+El <Term id="centre-of-gravity">centro de gravedad</Term> (CG) es el punto en el que se puede considerar concentrada toda la masa. Se calcula con **momentos**:
+
+> momento = masa × brazo
+
+donde el **brazo** es la distancia a un punto de referencia (el *datum*). Entonces:
+
+> CG = suma de momentos / suma de masas
+
+### Ejemplo
+
+| Elemento | Masa (kg) | Brazo (m) | Momento (kg·m) |
+|---|---|---|---|
+| Avión vacío | 900 | 2,0 | 1.800 |
+| Piloto y pasajero delanteros | 160 | 1,8 | 288 |
+| Equipaje | 40 | 3,2 | 128 |
+| **Total** | **1.100** | | **2.216** |
+
+CG = 2.216 / 1.100 ≈ **2,01 m** del *datum*. Se compara con los límites del manual de vuelo.
+
+En los aviones de transporte el CG se expresa como **porcentaje de la** <Term id="mac" /> (cuerda aerodinámica media) y lo calcula la <Term id="load-sheet">hoja de carga</Term>.
+
+## Delante o detrás
+
+| CG adelantado | CG atrasado |
+|---|---|
+| Más **estable** | Menos estable |
+| Mandos más **pesados**; puede faltar autoridad del timón de profundidad para rotar y para el enderezamiento | Mandos más **ligeros**; riesgo de sobrecontrol y de **pérdida de control** |
+| **Mayor** velocidad de pérdida (la cola empuja más hacia abajo y el ala debe sustentar más) | Menor velocidad de pérdida, pero recuperación más difícil |
+| Más resistencia y **más consumo** | Algo menos de consumo |
+
+Fuera de los límites, en cualquiera de los dos sentidos, el avión **no está certificado** para volar.
+
+<Callout type="caution" label="Un error clásico">
+Cargar el equipaje en la bodega equivocada o sentar a los pasajeros de forma muy desigual puede llevar el CG fuera de límites. Por eso la hoja de carga se basa en la distribución real y los cambios de última hora se comunican al comandante.
+</Callout>
