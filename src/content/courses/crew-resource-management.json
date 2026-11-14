@@ -1,0 +1,43 @@
+{
+  "path": "pilot-training",
+  "order": 17,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 17: CRM",
+    "en": "Pilot Academy · Module 17: CRM"
+  },
+  "description": {
+    "es": "La gestión de recursos de la tripulación: su origen en accidentes como Tenerife 1977, la gestión de amenazas y errores, los briefings, la comunicación en bucle cerrado, el gradiente de autoridad y la asertividad escalonada, el reparto PF y PM, la automatización y los modos, la cabina estéril y las nueve competencias de la OACI.",
+    "en": "Crew resource management: its origin in accidents such as Tenerife 1977, threat and error management, briefings, closed-loop communication, the authority gradient and graded assertiveness, PF and PM roles, automation and modes, the sterile flight deck and the nine ICAO competencies."
+  },
+  "objectives": {
+    "en": [
+      "Apply threat and error management on a flight",
+      "Communicate effectively and voice concerns",
+      "Manage automation and know the ICAO competencies"
+    ],
+    "es": [
+      "Aplicar la gestión de amenazas y errores en un vuelo",
+      "Comunicarse con eficacia y expresar preocupaciones",
+      "Gestionar la automatización y conocer las competencias de la OACI"
+    ]
+  },
+  "lessons": [
+    "crm-origins-and-tem",
+    "communication-leadership-and-assertiveness",
+    "automation-monitoring-and-competencies"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-doc-9683",
+    "faa-ac-120-51",
+    "eu-965-2012",
+    "icao-doc-9995",
+    "cfr-14-121-542"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

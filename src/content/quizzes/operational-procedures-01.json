@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿En qué parte del manual de operaciones están los procedimientos del tipo de avión?",
+        "en": "In which part of the operations manual are the aircraft type procedures?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Parte A",
+            "en": "Part A"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Parte B",
+            "en": "Part B"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Parte C",
+            "en": "Part C"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Parte D",
+            "en": "Part D"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "A general, C rutas y aeródromos, D formación.",
+        "en": "A general, C routes and aerodromes, D training."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La MEL de un operador…",
+        "en": "An operator's MEL…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No puede ser menos restrictiva que la MMEL",
+            "en": "May not be less restrictive than the MMEL"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Puede permitir más que la MMEL",
+            "en": "May allow more than the MMEL"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La aprueba el fabricante sin la autoridad",
+            "en": "Is approved by the manufacturer without the authority"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo vale para vuelos de prueba",
+            "en": "Only applies to test flights"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Se basa en la MMEL del tipo.",
+        "en": "It is based on the type's MMEL."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un elemento de categoría C de la MEL se descubre el lunes. ¿Hasta cuándo puede seguir sin reparar?",
+        "en": "A category C MEL item is discovered on a Monday. How long may it stay unrepaired?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3 días",
+            "en": "3 days"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "120 días",
+            "en": "120 days"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hasta la siguiente revisión anual",
+            "en": "Until the next annual check"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "10 días naturales sin contar el lunes",
+            "en": "10 calendar days, not counting the Monday"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "B: 3 días; C: 10; D: 120.",
+        "en": "B: 3 days; C: 10; D: 120."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué categoría de la MEL no se puede ampliar nunca?",
+        "en": "Which MEL category can never be extended?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La B",
+            "en": "B"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La C",
+            "en": "C"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La A",
+            "en": "A"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La D",
+            "en": "D"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "B, C y D admiten una ampliación con procedimiento aprobado.",
+        "en": "B, C and D allow one extension under an approved procedure."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La CDL trata…",
+        "en": "The CDL covers…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Equipo de cabina averiado",
+            "en": "Inoperative cabin equipment"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Piezas exteriores que faltan, como tapas o carenados",
+            "en": "Missing external parts, such as panels or fairings"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La formación de la tripulación",
+            "en": "Crew training"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los documentos a bordo",
+            "en": "Documents on board"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Normalmente con penalización de actuaciones.",
+        "en": "Normally with a performance penalty."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un procedimiento (O) de la MEL es…",
+        "en": "An (O) procedure in the MEL is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Uno que aplica la tripulación",
+            "en": "One applied by the flight crew"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Uno que aplica mantenimiento",
+            "en": "One applied by maintenance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una opción comercial",
+            "en": "A commercial option"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una orden de la autoridad",
+            "en": "An authority order"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "(M) es para mantenimiento.",
+        "en": "(M) is for maintenance."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Qué certificados se llevan a bordo en original?",
+        "en": "Which certificates are carried on board in original?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El AOC",
+            "en": "The AOC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Las licencias de todos los mecánicos",
+            "en": "All engineers' licences"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El manual completo del fabricante",
+            "en": "The full manufacturer manual"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los de matrícula y aeronavegabilidad",
+            "en": "Registration and airworthiness"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Del AOC se lleva una copia.",
+        "en": "A copy of the AOC is carried."
+      }
+    }
+  ]
+}

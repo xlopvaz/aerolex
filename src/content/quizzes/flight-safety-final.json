@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál de estas situaciones es una actitud anormal?",
+        "en": "Which of these is an upset?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cabeceo de 15° en el despegue",
+            "en": "Pitch of 15° on take-off"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alabeo de 25° en un viraje normal",
+            "en": "Bank of 25° in a normal turn"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cabeceo de 3° abajo en el descenso",
+            "en": "Pitch 3° down in descent"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Alabeo de 55° no intencionado",
+            "en": "Unintended bank of 55°"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Más de 45° de alabeo, más de 25° arriba o 10° abajo.",
+        "en": "More than 45° bank, more than 25° up or 10° down."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El primer paso para recuperar una pérdida es…",
+        "en": "The first step to recover from a stall is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumentar el empuje al máximo y tirar",
+            "en": "Apply full thrust and pull"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Bajar el tren",
+            "en": "Lower the gear"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reducir el ángulo de ataque",
+            "en": "Reduce the angle of attack"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Sacar flaps",
+            "en": "Extend flaps"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Tras desconectar el piloto automático.",
+        "en": "After disconnecting the autopilot."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En un avión con motores bajo las alas, un aumento brusco de empuje…",
+        "en": "On an aircraft with engines under the wings, a sharp thrust increase…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Baja el morro",
+            "en": "Pitches the nose down"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tiende a levantar el morro",
+            "en": "Tends to pitch the nose up"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No afecta al cabeceo",
+            "en": "Has no effect on pitch"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Provoca alabeo",
+            "en": "Causes roll"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso el empuje se ajusta con cuidado en la recuperación.",
+        "en": "That is why thrust is adjusted carefully during recovery."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con el morro bajo y mucho alabeo, ¿qué se hace antes de tirar?",
+        "en": "Nose low with a lot of bank, what comes before pulling?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Nivelar las alas",
+            "en": "Level the wings"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Subir los flaps",
+            "en": "Retract flaps"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aumentar empuje",
+            "en": "Increase thrust"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Llamar al control",
+            "en": "Call ATC"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Tirar antes cierra la espiral.",
+        "en": "Pulling first tightens the spiral."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Con el morro alto y la velocidad bajando, una técnica general es…",
+        "en": "Nose high with speed decreasing, a general technique is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tirar más",
+            "en": "Pull harder"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sacar aerofrenos",
+            "en": "Extend speed brakes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Bajar el tren",
+            "en": "Lower the gear"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Empujar para descargar el ala y, si hace falta, alabear",
+            "en": "Push to unload the wing and, if needed, bank"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cada fabricante fija sus procedimientos.",
+        "en": "Each manufacturer sets its procedures."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La regla de oro ante una situación inesperada es…",
+        "en": "The golden rule in an unexpected situation is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Actuar sin pensar",
+            "en": "Act without thinking"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Esperar a que pase",
+            "en": "Wait for it to pass"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reconocer, confirmar y recuperar",
+            "en": "Recognise, confirm and recover"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Leer el manual completo primero",
+            "en": "Read the full manual first"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El sobresalto dificulta pensar unos segundos.",
+        "en": "Startle makes thinking hard for a few seconds."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Qué componente del SMS incluye la formación y la comunicación?",
+        "en": "Which SMS component includes training and communication?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La gestión del riesgo",
+            "en": "Risk management"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La promoción de la seguridad",
+            "en": "Safety promotion"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La garantía de la seguridad",
+            "en": "Safety assurance"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La política y los objetivos",
+            "en": "Policy and objectives"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es el cuarto componente.",
+        "en": "It is the fourth component."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En la matriz de riesgo, un 1E es…",
+        "en": "In the risk matrix, 1E is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sumamente improbable e insignificante",
+            "en": "Extremely improbable and negligible"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Frecuente y catastrófico",
+            "en": "Frequent and catastrophic"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Remoto y grave",
+            "en": "Remote and major"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ocasional y peligroso",
+            "en": "Occasional and hazardous"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es la zona aceptable.",
+        "en": "It is the acceptable zone."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "«DON'T SINK» avisa de…",
+        "en": "\"DON'T SINK\" warns of…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ir por debajo de la senda",
+            "en": "Being below the glide slope"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alabeo excesivo",
+            "en": "Excessive bank"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tren arriba",
+            "en": "Gear up"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Pérdida de altura tras el despegue",
+            "en": "Height loss after take-off"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Es el modo 3 del EGPWS.",
+        "en": "It is EGPWS mode 3."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "El régimen de descenso máximo en una aproximación estabilizada (FSF) es…",
+        "en": "The maximum descent rate on a stabilised approach (FSF) is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2.000 ft/min",
+            "en": "2,000 ft/min"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "500 ft/min",
+            "en": "500 ft/min"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1.000 ft/min",
+            "en": "1,000 ft/min"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hay límite",
+            "en": "No limit"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Si hace falta más, briefing especial.",
+        "en": "If more is needed, a special briefing."
+      }
+    }
+  ]
+}

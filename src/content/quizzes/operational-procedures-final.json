@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál es el orden de prioridades ante un fallo?",
+        "en": "What is the order of priorities in a failure?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Comunicar, navegar, volar",
+            "en": "Communicate, navigate, aviate"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Leer la lista, volar, comunicar",
+            "en": "Read the checklist, aviate, communicate"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Navegar, comunicar, volar",
+            "en": "Navigate, communicate, aviate"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Volar, navegar, comunicar",
+            "en": "Aviate, navigate, communicate"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Primero se controla el avión.",
+        "en": "Control the aircraft first."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La primera acción tras una despresurización a FL370 es…",
+        "en": "The first action after a depressurisation at FL370 is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Llamar al control",
+            "en": "Call ATC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Leer la lista completa",
+            "en": "Read the full checklist"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ponerse las máscaras de oxígeno",
+            "en": "Don oxygen masks"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Avisar a la cabina",
+            "en": "Warn the cabin"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El tiempo de consciencia útil es de segundos.",
+        "en": "Time of useful consciousness is seconds."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un descenso de emergencia suele terminar en…",
+        "en": "An emergency descent usually ends at…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "FL250",
+            "en": "FL250"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10.000 ft o la altitud mínima de seguridad si es mayor",
+            "en": "10,000 ft or the minimum safe altitude if higher"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El suelo",
+            "en": "The ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1.000 ft",
+            "en": "1,000 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Donde se puede respirar sin oxígeno suplementario.",
+        "en": "Where people can breathe without supplemental oxygen."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Ante un aviso de cizalladura en el despegue…",
+        "en": "With a wind shear warning on take-off…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Empuje máximo y no cambiar la configuración hasta salir",
+            "en": "Maximum thrust and no configuration change until clear"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Recoger los flaps enseguida",
+            "en": "Retract flaps at once"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reducir empuje",
+            "en": "Reduce thrust"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Bajar el morro para ganar velocidad",
+            "en": "Lower the nose to gain speed"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La actitud la fija el procedimiento del fabricante.",
+        "en": "The attitude is set by the manufacturer's procedure."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Con humo que no se controla enseguida, lo correcto es…",
+        "en": "With smoke that is not quickly controlled, the right action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Seguir al destino",
+            "en": "Continue to destination"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Esperar a entender el problema",
+            "en": "Wait to understand the problem"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Subir para enfriar la cabina",
+            "en": "Climb to cool the cabin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aterrizar lo antes posible en el aeródromo adecuado más cercano",
+            "en": "Land as soon as possible at the nearest suitable aerodrome"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El fuego puede volverse incontrolable en minutos.",
+        "en": "Fire can become uncontrollable within minutes."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Para aterrizar poco después del despegue por debajo de la masa máxima de aterrizaje, un avión con el sistema puede…",
+        "en": "To land soon after take-off below maximum landing mass, an aircraft with the system can…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tirar equipaje",
+            "en": "Drop baggage"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Despresurizar",
+            "en": "Depressurise"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Lanzar combustible en la zona que indique el control",
+            "en": "Jettison fuel in the area given by ATC"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Bajar el tren antes",
+            "en": "Lower the gear earlier"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Si la urgencia lo exige, se aterriza con sobrepeso.",
+        "en": "If urgency demands, it lands overweight."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Tras un aterrizaje con sobrepeso…",
+        "en": "After an overweight landing…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No hace falta nada",
+            "en": "Nothing is needed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Mantenimiento hace una inspección especial",
+            "en": "Maintenance carries out a special inspection"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El avión queda dado de baja",
+            "en": "The aircraft is withdrawn from service"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se repite el vuelo vacío",
+            "en": "The flight is repeated empty"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Se comprueba la estructura y el tren.",
+        "en": "Structure and gear are checked."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "Un elemento de categoría B de la MEL debe repararse en…",
+        "en": "A category B MEL item must be repaired within…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3 días naturales",
+            "en": "3 calendar days"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10 días",
+            "en": "10 days"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "120 días",
+            "en": "120 days"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "24 horas",
+            "en": "24 hours"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Sin contar el día de descubrimiento.",
+        "en": "Excluding the day of discovery."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Una aproximación con DH de 50 ft es…",
+        "en": "An approach with a 50 ft DH is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "CAT I",
+            "en": "CAT I"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "CAT II",
+            "en": "CAT II"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Visual",
+            "en": "Visual"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "CAT III",
+            "en": "CAT III"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "CAT III: DH menor de 100 ft o sin DH.",
+        "en": "CAT III: DH below 100 ft or no DH."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "En el espacio RVSM la separación vertical mínima es…",
+        "en": "In RVSM airspace the minimum vertical separation is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2.000 ft",
+            "en": "2,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "500 ft",
+            "en": "500 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1.000 ft",
+            "en": "1,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "4.000 ft",
+            "en": "4,000 ft"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Entre FL290 y FL410.",
+        "en": "Between FL290 and FL410."
+      }
+    }
+  ]
+}

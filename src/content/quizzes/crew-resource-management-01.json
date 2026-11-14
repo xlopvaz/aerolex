@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué tuvieron en común los accidentes que impulsaron el CRM?",
+        "en": "What did the accidents that drove CRM have in common?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Todos fueron fallos de motor",
+            "en": "They were all engine failures"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Los aviones funcionaban, pero falló la tripulación como equipo",
+            "en": "The aircraft worked, but the crew failed as a team"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Todos ocurrieron de noche",
+            "en": "They all happened at night"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Los pilotos no tenían licencia",
+            "en": "The pilots had no licence"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Comunicación, liderazgo y decisiones.",
+        "en": "Communication, leadership and decisions."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El accidente de Tenerife de 1977…",
+        "en": "The 1977 Tenerife accident…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Fue una colisión de dos Boeing 747 en pista con niebla",
+            "en": "Was a collision of two Boeing 747s on the runway in fog"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Fue un fallo estructural en vuelo",
+            "en": "Was a structural failure in flight"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Fue un amerizaje",
+            "en": "Was a ditching"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No causó víctimas",
+            "en": "Caused no casualties"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Murieron 583 personas.",
+        "en": "583 people died."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En TEM, una pista corta y mojada es…",
+        "en": "In TEM, a short wet runway is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un error",
+            "en": "An error"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un estado no deseado",
+            "en": "An undesired state"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una contramedida",
+            "en": "A countermeasure"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una amenaza",
+            "en": "A threat"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Es externa a la tripulación.",
+        "en": "It is external to the crew."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Seleccionar un nivel equivocado en el panel es…",
+        "en": "Selecting the wrong level on the panel is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una amenaza",
+            "en": "A threat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un estado no deseado",
+            "en": "An undesired state"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un error",
+            "en": "An error"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un accidente",
+            "en": "An accident"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Si no se detecta, puede llevar a un estado no deseado.",
+        "en": "If not caught, it can lead to an undesired state."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Ir alto y rápido en final es…",
+        "en": "Being high and fast on final is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una amenaza",
+            "en": "A threat"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un estado no deseado de la aeronave",
+            "en": "An undesired aircraft state"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un error de comunicación",
+            "en": "A communication error"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Algo normal sin riesgo",
+            "en": "Normal and risk-free"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Reduce los márgenes de seguridad.",
+        "en": "It reduces safety margins."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Ante un estado no deseado, la prioridad es…",
+        "en": "With an undesired state, the priority is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Recuperar el avión, no seguir arreglando el error",
+            "en": "Recover the aircraft, not keep fixing the error"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Buscar al culpable",
+            "en": "Find who is to blame"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Seguir como estaba previsto",
+            "en": "Continue as planned"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Informar a la compañía antes de actuar",
+            "en": "Report to the company before acting"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Ejemplo: motor y al aire con una aproximación inestable.",
+        "en": "Example: go around from an unstable approach."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "El CRM incluye…",
+        "en": "CRM includes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo al comandante",
+            "en": "Only the captain"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo a los pilotos",
+            "en": "Only the pilots"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo el piloto automático",
+            "en": "Only the autopilot"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "A toda la tripulación y otros recursos como el control y mantenimiento",
+            "en": "The whole crew and other resources such as ATC and maintenance"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Por eso pasó de cockpit a crew.",
+        "en": "That is why it changed from cockpit to crew."
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Operations manual",
+    "es": "Manual de operaciones"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The operator's manual containing the policies, instructions and procedures that operations personnel must follow; under EU rules it is normally divided into Part A (general), Part B (aircraft type), Part C (routes and aerodromes) and Part D (training).",
+    "es": "Manual del operador con las políticas, instrucciones y procedimientos que debe seguir el personal de operaciones; en las normas de la UE suele dividirse en Parte A (general), Parte B (tipo de avión), Parte C (rutas y aeródromos) y Parte D (formación)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The airline's rulebook for how it flies.",
+    "es": "El reglamento interno de la aerolínea sobre cómo vuela."
+  },
+  "example": {
+    "en": "The fuel policy is in Part A of the operations manual.",
+    "es": "La política de combustible está en la Parte A del manual de operaciones."
+  },
+  "pronunciation": {
+    "en": "op-uh-RAY-shunz MAN-yoo-ul",
+    "es": "ma-nual de o-pe-ra-cio-nes"
+  },
+  "synonyms": {
+    "en": [
+      "OM"
+    ],
+    "es": [
+      "OM"
+    ]
+  },
+  "related": [
+    "aoc",
+    "sop",
+    "mel"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

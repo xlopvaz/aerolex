@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TEM",
+    "es": "TEM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Threat and error management",
+    "es": "Gestión de amenazas y errores"
+  },
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A safety framework that treats threats (external events), errors (crew actions or inactions) and undesired aircraft states as normal parts of operations to be anticipated, detected and managed.",
+    "es": "Marco de seguridad que trata las amenazas (sucesos externos), los errores (acciones u omisiones de la tripulación) y los estados no deseados de la aeronave como parte normal de la operación, que hay que anticipar, detectar y gestionar."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Expecting problems and mistakes and catching them early.",
+    "es": "Esperar problemas y errores y pillarlos a tiempo."
+  },
+  "example": {
+    "en": "The briefing used TEM to identify the short runway and the tailwind as threats.",
+    "es": "El briefing usó la TEM para identificar como amenazas la pista corta y el viento de cola."
+  },
+  "pronunciation": {
+    "en": "tee-ee-EM",
+    "es": "te-e-me"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "crm",
+    "undesired-aircraft-state"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683",
+    "faa-ac-120-51"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

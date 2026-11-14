@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SMS",
+    "es": "SMS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Safety management system",
+    "es": "Sistema de gestión de la seguridad"
+  },
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A systematic approach to managing safety, including the organisational structure, accountabilities, policies and procedures; ICAO Annex 19 organises it in four components: safety policy and objectives, safety risk management, safety assurance and safety promotion.",
+    "es": "Enfoque sistemático para gestionar la seguridad que incluye la estructura organizativa, las responsabilidades, las políticas y los procedimientos; el Anexo 19 de la OACI lo organiza en cuatro componentes: política y objetivos, gestión del riesgo, garantía de la seguridad y promoción de la seguridad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The organised way a company finds and controls its risks.",
+    "es": "La forma organizada en que una empresa encuentra y controla sus riesgos."
+  },
+  "example": {
+    "en": "The SMS flagged a rise in unstable approaches at one airport.",
+    "es": "El SMS detectó un aumento de aproximaciones no estabilizadas en un aeropuerto."
+  },
+  "pronunciation": {
+    "en": "es-em-ES",
+    "es": "e-se-e-me-e-se"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "fdm",
+    "just-culture",
+    "hazard"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-19",
+    "icao-doc-9859"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "path": "pilot-training",
+  "order": 16,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 16: Seguridad de vuelo",
+    "en": "Pilot Academy · Module 16: Flight Safety"
+  },
+  "description": {
+    "es": "Cómo se gestiona la seguridad en la aviación comercial: el SMS con sus cuatro componentes, la matriz de riesgo y la supervisión de datos de vuelo; las grandes áreas de riesgo con el EGPWS, la aproximación estabilizada y el TCAS; y la prevención y recuperación de actitudes anormales y pérdidas.",
+    "en": "How safety is managed in commercial aviation: the SMS with its four components, the risk matrix and flight data monitoring; the key risk areas with EGPWS, the stabilised approach and TCAS; and upset and stall prevention and recovery."
+  },
+  "objectives": {
+    "en": [
+      "Explain how a safety management system works",
+      "Recognise the key risk areas and their defences",
+      "Describe stall and upset recovery"
+    ],
+    "es": [
+      "Explicar cómo funciona un sistema de gestión de la seguridad",
+      "Reconocer las grandes áreas de riesgo y sus defensas",
+      "Describir la recuperación de pérdidas y actitudes anormales"
+    ]
+  },
+  "lessons": [
+    "safety-management",
+    "key-risk-areas",
+    "upset-prevention-and-recovery"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-annex-19",
+    "icao-doc-9859",
+    "eu-965-2012",
+    "skybrary-stabilised-approach",
+    "faa-aim",
+    "icao-annex-6",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

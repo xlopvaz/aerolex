@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Authority gradient",
+    "es": "Gradiente de autoridad"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The difference in perceived authority, experience or status between crew members; too steep a gradient discourages the junior member from speaking up, and too flat a gradient weakens leadership.",
+    "es": "Diferencia de autoridad, experiencia o estatus percibidos entre miembros de la tripulación; un gradiente demasiado pronunciado impide que el más joven hable, y uno demasiado plano debilita el liderazgo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much one crew member feels \"above\" the other.",
+    "es": "Cuánto se siente un tripulante «por encima» del otro."
+  },
+  "example": {
+    "en": "A steep authority gradient stopped the first officer from questioning the captain.",
+    "es": "Un gradiente de autoridad pronunciado impidió al copiloto cuestionar al comandante."
+  },
+  "pronunciation": {
+    "en": "uh-THOR-ih-tee GRAY-dee-unt",
+    "es": "gra-dien-te de au-to-ri-dad"
+  },
+  "synonyms": {
+    "en": [
+      "trans-cockpit authority gradient"
+    ],
+    "es": []
+  },
+  "related": [
+    "crm",
+    "tem"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683",
+    "faa-ac-120-51"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

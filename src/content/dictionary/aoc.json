@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AOC",
+    "es": "AOC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Air operator certificate",
+    "es": "Certificado de operador aéreo"
+  },
+  "categories": [
+    "aviation-law",
+    "commercial-aviation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The certificate issued by the competent authority that authorises an operator to carry out commercial air transport operations under the conditions in its operations specifications.",
+    "es": "Certificado emitido por la autoridad competente que autoriza a un operador a realizar operaciones de transporte aéreo comercial en las condiciones de sus especificaciones de operación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The licence an airline needs to carry paying passengers or cargo.",
+    "es": "La licencia que necesita una aerolínea para llevar pasajeros o carga de pago."
+  },
+  "example": {
+    "en": "A copy of the AOC must be carried on board.",
+    "es": "A bordo debe llevarse una copia del AOC."
+  },
+  "pronunciation": {
+    "en": "ay-oh-SEE",
+    "es": "a-o-ce"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "operations-manual",
+    "easa"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

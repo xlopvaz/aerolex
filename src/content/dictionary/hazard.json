@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Hazard",
+    "es": "Peligro"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A condition or object with the potential to cause or contribute to an aircraft incident or accident; risk is the assessment of how likely and how severe its consequences are.",
+    "es": "Condición u objeto que puede causar o contribuir a un incidente o accidente de aviación; el riesgo es la evaluación de la probabilidad y la gravedad de sus consecuencias."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Something that could lead to an accident.",
+    "es": "Algo que podría llevar a un accidente."
+  },
+  "example": {
+    "en": "Birds near the runway are a hazard; the risk depends on how many and how often.",
+    "es": "Las aves cerca de la pista son un peligro; el riesgo depende de cuántas y con qué frecuencia."
+  },
+  "pronunciation": {
+    "en": "HAZ-urd",
+    "es": "pe-li-gro"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "sms",
+    "bird-strike"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9859",
+    "icao-annex-19"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

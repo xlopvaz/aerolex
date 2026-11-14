@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "FDM",
+    "es": "FDM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Flight data monitoring",
+    "es": "Supervisión de datos de vuelo"
+  },
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The proactive, non-punitive analysis of recorded flight data to improve safety; EU rules require it for commercial operators of aeroplanes with a maximum certificated take-off mass above 27,000 kg.",
+    "es": "Análisis proactivo y no punitivo de los datos de vuelo grabados para mejorar la seguridad; las normas de la UE lo exigen a los operadores comerciales de aviones con masa máxima certificada al despegue superior a 27.000 kg."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Studying the data from every flight to find risks before they become accidents.",
+    "es": "Estudiar los datos de cada vuelo para encontrar riesgos antes de que haya un accidente."
+  },
+  "example": {
+    "en": "FDM showed several hard landings on the same runway.",
+    "es": "El FDM mostró varios aterrizajes duros en la misma pista."
+  },
+  "pronunciation": {
+    "en": "ef-dee-EM",
+    "es": "e-fe-de-e-me"
+  },
+  "synonyms": {
+    "en": [
+      "FOQA",
+      "FDA"
+    ],
+    "es": [
+      "FOQA"
+    ]
+  },
+  "related": [
+    "sms",
+    "fdr"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

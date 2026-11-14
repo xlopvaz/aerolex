@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Runway excursion",
+    "es": "Salida de pista"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An event in which an aircraft veers off the side of the runway or overruns its end during take-off or landing.",
+    "es": "Suceso en el que una aeronave se sale por el lateral de la pista o rebasa su extremo durante el despegue o el aterrizaje."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When an aircraft goes off the side or the end of the runway.",
+    "es": "Cuando un avión se sale por el lado o por el final de la pista."
+  },
+  "example": {
+    "en": "The long, fast landing on a wet runway ended in a runway excursion.",
+    "es": "El aterrizaje largo y rápido en pista mojada acabó en una salida de pista."
+  },
+  "pronunciation": {
+    "en": "RUN-way ek-SKUR-zhun",
+    "es": "sa-li-da de pis-ta"
+  },
+  "synonyms": {
+    "en": [
+      "overrun",
+      "veer-off"
+    ],
+    "es": [
+      "salida por el extremo",
+      "salida lateral"
+    ]
+  },
+  "related": [
+    "runway-incursion",
+    "stabilised-approach"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-stabilised-approach",
+    "icao-doc-9859"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

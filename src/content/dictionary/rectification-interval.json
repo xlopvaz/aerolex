@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Rectification interval",
+    "es": "Plazo de reparación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "maintenance",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The maximum time an item listed in the MEL may stay inoperative; in EASA rules category B items must be rectified within 3 calendar days, C within 10 and D within 120, excluding the day of discovery, while category A sets its own limit.",
+    "es": "Tiempo máximo que un elemento de la MEL puede seguir inoperativo; en las normas de EASA, la categoría B debe repararse en 3 días naturales, la C en 10 y la D en 120, sin contar el día en que se descubre, y la categoría A fija su propio límite."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How long a deferred fault may stay unrepaired.",
+    "es": "Cuánto tiempo puede quedar sin reparar una avería diferida."
+  },
+  "example": {
+    "en": "The cabin light was a category C item, with a 10-day rectification interval.",
+    "es": "La luz de cabina era un elemento de categoría C, con un plazo de reparación de 10 días."
+  },
+  "pronunciation": {
+    "en": "rek-tih-fih-KAY-shun IN-ter-vul",
+    "es": "pla-zo de re-pa-ra-ción"
+  },
+  "synonyms": {
+    "en": [
+      "RI",
+      "repair interval"
+    ],
+    "es": [
+      "RI"
+    ]
+  },
+  "related": [
+    "mel",
+    "mmel"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-cs-mmel"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

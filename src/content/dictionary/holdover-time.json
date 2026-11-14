@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Holdover time",
+    "es": "Tiempo de protección"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "ground-handling"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The estimated time during which an anti-icing fluid will prevent ice, frost or snow from forming or accumulating on treated surfaces; it starts at the beginning of the final application of fluid.",
+    "es": "Tiempo estimado durante el que un fluido antihielo impide que se forme o acumule hielo, escarcha o nieve en las superficies tratadas; empieza a contar al inicio de la última aplicación del fluido."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How long the de-icing fluid keeps the wings clean.",
+    "es": "Cuánto tiempo mantiene limpias las alas el fluido antihielo."
+  },
+  "example": {
+    "en": "With moderate snow, the Type IV holdover time was about 40 minutes.",
+    "es": "Con nieve moderada, el tiempo de protección del fluido tipo IV era de unos 40 minutos."
+  },
+  "pronunciation": {
+    "en": "HOHLD-oh-ver TIME",
+    "es": "tiem-po de pro-tec-ción"
+  },
+  "synonyms": {
+    "en": [
+      "HOT"
+    ],
+    "es": [
+      "HOT"
+    ]
+  },
+  "related": [
+    "de-icing",
+    "icing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-ac-120-60",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

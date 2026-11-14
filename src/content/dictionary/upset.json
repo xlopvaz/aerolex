@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Upset",
+    "es": "Actitud anormal"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An aircraft in flight unintentionally exceeding the parameters normally experienced in line operations: pitch more than 25° nose up or 10° nose down, bank more than 45°, or an airspeed inappropriate for the conditions.",
+    "es": "Aeronave en vuelo que supera sin querer los parámetros habituales de la operación: cabeceo de más de 25° hacia arriba o 10° hacia abajo, alabeo de más de 45° o una velocidad inadecuada para las condiciones."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the aircraft ends up in an attitude or speed far from normal.",
+    "es": "Cuando el avión acaba en una actitud o velocidad muy lejos de lo normal."
+  },
+  "example": {
+    "en": "The wake encounter caused an upset with 50° of bank.",
+    "es": "El encuentro con la estela provocó una actitud anormal con 50° de alabeo."
+  },
+  "pronunciation": {
+    "en": "UP-set",
+    "es": "ac-ti-tud a-nor-mal"
+  },
+  "synonyms": {
+    "en": [
+      "UPRT (upset prevention and recovery training)"
+    ],
+    "es": [
+      "UPRT"
+    ]
+  },
+  "related": [
+    "loc-i",
+    "stall",
+    "wake-turbulence"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

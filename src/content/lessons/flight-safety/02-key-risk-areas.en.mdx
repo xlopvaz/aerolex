@@ -1,0 +1,65 @@
+---
+lesson: key-risk-areas
+course: flight-safety
+lang: en
+title: "The key risk areas"
+summary: "The accident categories of most concern in commercial aviation and their defences: controlled flight into terrain and EGPWS, runway excursions and incursions with the stabilised approach, and mid-air collision with TCAS."
+objectives:
+  - "Explain CFIT, LOC-I and runway excursions"
+  - "Apply stabilised approach criteria"
+  - "Recognise the EGPWS modes and the response to a PULL UP"
+minutes: 14
+terms: [loc-i, cfit, runway-excursion, runway-incursion, egpws, stabilised-approach, tcas]
+quiz: flight-safety-02
+sources: [skybrary-stabilised-approach, icao-doc-9859, faa-aim, icao-annex-6]
+review:
+  status: draft
+---
+
+## The accident categories
+
+| Category | What it is | Main defence |
+|---|---|---|
+| <Term id="loc-i" /> | Loss of control in flight | Upset prevention and recovery (Lesson 3) |
+| <Term id="cfit" /> | Hitting terrain with a controllable aircraft | Height awareness, charts, EGPWS |
+| <Term id="runway-excursion" /> | Going off the side or the end | Stabilised approach, performance calculation |
+| <Term id="runway-incursion" /> | Incorrect presence on an active runway | Phraseology, readback, stop bars |
+| **Mid-air collision** | Two aircraft at the same point | ATC, lookout, TCAS |
+
+## CFIT and EGPWS
+
+CFIT almost always comes from losing **position or height awareness**: a wrong QNH, an early descent, a misread chart. The <Term id="egpws" /> warns with several modes:
+
+| Mode | Warns of… | Typical alert |
+|---|---|---|
+| **1** | Excessive descent rate | "SINK RATE", "PULL UP" |
+| **2** | Excessive closure with terrain | "TERRAIN TERRAIN", "PULL UP" |
+| **3** | Height loss after take-off | "DON'T SINK" |
+| **4** | Low height without landing configuration | "TOO LOW GEAR", "TOO LOW FLAPS", "TOO LOW TERRAIN" |
+| **5** | Below the glide slope | "GLIDESLOPE" |
+| **6** | Altitude callouts and excessive bank | "BANK ANGLE", height callouts |
+
+The enhanced version adds a **look-ahead** function with a terrain database: it warns earlier, with "TERRAIN AHEAD".
+
+With a **PULL UP**, the response is **immediate** and unquestioned: maximum thrust, wings level, pitch up to the limit given in the procedure and speed brakes retracted; held until the warning stops.
+
+## The stabilised approach
+
+Many runway excursions start with an **unstable** approach. The Flight Safety Foundation recommends that the aircraft be stabilised by **1,000 ft** above the aerodrome in IMC and **500 ft** in VMC. It is <Term id="stabilised-approach">stabilised</Term> if:
+
+- it is on the **correct path** and needs only small heading and pitch changes;
+- speed is no more than **VREF + 20 kt** and no less than **VREF**;
+- it is in **landing configuration**;
+- descent rate is no more than **1,000 ft/min**;
+- **thrust** is appropriate;
+- **briefings and checklists** are complete.
+
+If the approach becomes unstabilised below that height: **go around**, no exceptions. Many operators use a single height for all conditions, which makes it easier to track with FDM.
+
+## Mid-air collision and TCAS
+
+<Term id="tcas" /> first gives a **traffic advisory (TA)** and, if the risk grows, a **resolution advisory (RA)** with a vertical command. An RA is followed **always and immediately**, even against ATC, and reported (Module 14). Both aircraft coordinate their RAs so they manoeuvre in opposite directions: if one does not follow it, the protection is lost.
+
+<Callout type="caution" label="Pressure to land">
+The most common reason for continuing an unstable approach is pressure to get in: schedule, fatigue, "almost there". The go-around is a normal manoeuvre, not a failure.
+</Callout>

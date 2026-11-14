@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál NO es uno de los cuatro componentes del SMS según la OACI?",
+        "en": "Which is NOT one of the four ICAO SMS components?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La gestión del riesgo",
+            "en": "Risk management"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La política comercial",
+            "en": "Commercial policy"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La garantía de la seguridad",
+            "en": "Safety assurance"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La promoción de la seguridad",
+            "en": "Safety promotion"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El cuarto es la política y los objetivos de seguridad.",
+        "en": "The fourth is safety policy and objectives."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Una pista corta y mojada es…",
+        "en": "A short wet runway is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un peligro",
+            "en": "A hazard"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un riesgo",
+            "en": "A risk"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un accidente",
+            "en": "An accident"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un indicador",
+            "en": "An indicator"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El riesgo es la evaluación de sus consecuencias.",
+        "en": "Risk is the assessment of its consequences."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En la matriz de la OACI, la gravedad «A» es…",
+        "en": "In the ICAO matrix, severity \"A\" is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Insignificante",
+            "en": "Negligible"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Leve",
+            "en": "Minor"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aceptable",
+            "en": "Acceptable"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Catastrófica",
+            "en": "Catastrophic"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "E es insignificante.",
+        "en": "E is negligible."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Analizar notificaciones voluntarias de las tripulaciones es un método…",
+        "en": "Analysing voluntary crew reports is a … method"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Reactivo",
+            "en": "Reactive"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Predictivo",
+            "en": "Predictive"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Proactivo",
+            "en": "Proactive"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Punitivo",
+            "en": "Punitive"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Reactivo es investigar sucesos ya ocurridos.",
+        "en": "Reactive means investigating events that have happened."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En la UE, el FDM es obligatorio para aviones comerciales de más de…",
+        "en": "In the EU, FDM is mandatory for commercial aeroplanes above…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "5.700 kg",
+            "en": "5,700 kg"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "27.000 kg",
+            "en": "27,000 kg"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "100.000 kg",
+            "en": "100,000 kg"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ningún peso",
+            "en": "No mass limit"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Masa máxima certificada al despegue.",
+        "en": "Maximum certificated take-off mass."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El programa FDM debe ser…",
+        "en": "An FDM programme must be…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No punitivo y proteger la identidad de las tripulaciones",
+            "en": "Non-punitive and protect crew identity"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Público, con nombres",
+            "en": "Public, with names"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Opcional para todos",
+            "en": "Optional for all"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo para accidentes",
+            "en": "Only for accidents"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Busca tendencias, no culpables.",
+        "en": "It looks for trends, not culprits."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Un riesgo intolerable exige…",
+        "en": "An intolerable risk requires…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Nada",
+            "en": "Nothing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo informar al año siguiente",
+            "en": "Only reporting next year"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aumentar los vuelos",
+            "en": "Increasing flights"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Actuar antes de continuar la operación",
+            "en": "Action before continuing the operation"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Tolerable exige mitigación; aceptable, no.",
+        "en": "Tolerable requires mitigation; acceptable does not."
+      }
+    }
+  ]
+}

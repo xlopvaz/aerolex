@@ -1,0 +1,51 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "EBT",
+    "es": "EBT"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Evidence-based training",
+    "es": "Formación basada en evidencias"
+  },
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Recurrent pilot training and assessment built on operational data and on a set of core competencies, rather than on repeating a fixed list of manoeuvres.",
+    "es": "Formación y evaluación periódica de pilotos basada en datos operacionales y en un conjunto de competencias básicas, en lugar de repetir una lista fija de maniobras."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Training pilots on what real operations show matters most.",
+    "es": "Entrenar a los pilotos en lo que la operación real muestra que más importa."
+  },
+  "example": {
+    "en": "The airline's EBT simulator session focused on surprise and workload.",
+    "es": "La sesión de simulador EBT de la aerolínea se centró en la sorpresa y la carga de trabajo."
+  },
+  "pronunciation": {
+    "en": "ee-bee-TEE",
+    "es": "e-be-te"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "crm",
+    "type-rating"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9995",
+    "eu-2021-2237"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

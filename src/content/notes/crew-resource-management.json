@@ -1,0 +1,97 @@
+{
+  "course": "crew-resource-management",
+  "lessons": [
+    {
+      "lesson": "crm-origins-and-tem",
+      "key": {
+        "es": "CRM nació tras accidentes con aviones que funcionaban (Tenerife 1977, Portland 1978) y el taller de la NASA de 1979. Uso eficaz de todos los recursos; obligatorio en la UE. TEM: amenazas (externas), errores (de la tripulación), estados no deseados; cadena amenaza → error → estado → suceso. Contramedidas: briefings, vigilancia, comprobación cruzada; ante un estado no deseado, recuperar el avión.",
+        "en": "CRM was born after accidents with working aircraft (Tenerife 1977, Portland 1978) and NASA's 1979 workshop. Effective use of all resources; mandatory in the EU. TEM: threats (external), errors (crew), undesired states; chain threat → error → state → event. Countermeasures: briefings, monitoring, cross-checking; with an undesired state, recover the aircraft."
+      },
+      "points": [
+        {
+          "es": "Origen: Tenerife 1977 (583 muertos), Portland 1978 (sin combustible), taller de la NASA de 1979.",
+          "en": "Origin: Tenerife 1977 (583 dead), Portland 1978 (fuel exhaustion), NASA workshop 1979."
+        },
+        {
+          "es": "CRM: uso eficaz de personas, equipo e información; formación obligatoria en la UE, en parte conjunta con TCP.",
+          "en": "CRM: effective use of people, equipment and information; mandatory training in the EU, partly joint with cabin crew."
+        },
+        {
+          "es": "TEM: amenaza (externa), error (acción u omisión de la tripulación), estado no deseado (márgenes reducidos).",
+          "en": "TEM: threat (external), error (crew action or inaction), undesired state (reduced margins)."
+        },
+        {
+          "es": "Contramedidas: briefing de amenazas, vigilancia y comprobación cruzada, recuperación del estado no deseado.",
+          "en": "Countermeasures: threat briefing, monitoring and cross-checking, recovery from the undesired state."
+        },
+        {
+          "es": "LOSA: observación no punitiva de vuelos normales.",
+          "en": "LOSA: non-punitive observation of normal flights."
+        }
+      ]
+    },
+    {
+      "lesson": "communication-leadership-and-assertiveness",
+      "key": {
+        "es": "Briefing: breve, amenazas del día, plan alternativo, invitación a hablar; también con la cabina. Bucle cerrado: orden, confirmación, comprobación. Gradiente de autoridad: ni muy pronunciado ni muy plano; lo marca el comandante. Asertividad escalonada PACE: Probe, Alert, Challenge, Emergency. Liderazgo: escuchar, delegar, visión de conjunto, decidir; seguidores activos.",
+        "en": "Briefing: short, today's threats, alternative plan, invitation to speak; also with the cabin. Closed loop: instruction, confirmation, check. Authority gradient: neither too steep nor too flat; set by the captain. Graded assertiveness PACE: Probe, Alert, Challenge, Emergency. Leadership: listen, delegate, big picture, decide; active followers."
+      },
+      "points": [
+        {
+          "es": "Briefing útil: breve, amenazas de hoy y su gestión, qué hacer si algo falla, invitación a preguntar.",
+          "en": "Useful briefing: short, today's threats and their management, what to do if things go wrong, invitation to ask."
+        },
+        {
+          "es": "Bucle cerrado: mensaje → confirmación → comprobación.",
+          "en": "Closed loop: message → confirmation → check."
+        },
+        {
+          "es": "Gradiente de autoridad: pronunciado (nadie habla), plano (nadie decide), adecuado (el comandante dirige y todos hablan).",
+          "en": "Authority gradient: steep (nobody speaks), flat (nobody decides), appropriate (captain leads and everyone speaks)."
+        },
+        {
+          "es": "PACE: Probe (sondear), Alert (alertar), Challenge (desafiar), Emergency (emergencia, actuar según el procedimiento).",
+          "en": "PACE: Probe, Alert, Challenge, Emergency (act per procedure)."
+        },
+        {
+          "es": "Liderazgo: escuchar, delegar, visión de conjunto, decidir. Seguidores: apoyar, vigilar, hablar.",
+          "en": "Leadership: listen, delegate, big picture, decide. Followers: support, monitor, speak up."
+        }
+      ]
+    },
+    {
+      "lesson": "automation-monitoring-and-competencies",
+      "key": {
+        "es": "PF controla la trayectoria; PM vigila, radio y listas; se alternan, el comandante sigue siendo responsable. Vigilar = saber qué debe pasar, comprobar y cantar desviaciones. Automatización: cantar y confirmar los modos del FMA; nivel adecuado; si no se entiende, bajar de nivel. Cabina estéril por debajo de 10.000 ft salvo crucero. Nueve competencias OACI: KNO, PRO, COM, FPA, FPM, LTW, PSD, SAW, WLM; base de la EBT.",
+        "en": "PF controls the flight path; PM monitors, radio and checklists; they alternate, the captain remains responsible. Monitoring = knowing what should happen, checking and calling deviations. Automation: call and confirm FMA modes; appropriate level; if not understood, step down. Sterile flight deck below 10,000 ft except cruise. Nine ICAO competencies: KNO, PRO, COM, FPA, FPM, LTW, PSD, SAW, WLM; the basis of EBT."
+      },
+      "points": [
+        {
+          "es": "PF: trayectoria y cambios de modo. PM: vigilancia, radio, listas, configuración. El comandante siempre es responsable.",
+          "en": "PF: flight path and mode changes. PM: monitoring, radio, checklists, configuration. The captain is always responsible."
+        },
+        {
+          "es": "Vigilancia activa: saber qué debe pasar, comprobarlo, cantar desviaciones (Speed, Sink rate, Glide slope).",
+          "en": "Active monitoring: know what should happen, check it, call deviations (Speed, Sink rate, Glide slope)."
+        },
+        {
+          "es": "FMA: cada cambio se canta y se confirma. Nivel de automatización adecuado; si no se entiende, bajar de nivel.",
+          "en": "FMA: every change is called and confirmed. Appropriate automation level; if not understood, step down."
+        },
+        {
+          "es": "Cabina estéril: fases críticas, en la práctica por debajo de 10.000 ft salvo crucero.",
+          "en": "Sterile flight deck: critical phases, in practice below 10,000 ft except cruise."
+        },
+        {
+          "es": "Competencias OACI: KNO, PRO, COM, FPA, FPM, LTW, PSD, SAW, WLM; base de la formación basada en evidencias.",
+          "en": "ICAO competencies: KNO, PRO, COM, FPA, FPM, LTW, PSD, SAW, WLM; basis of evidence-based training."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
