@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Radial",
+    "es": "Radial"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A magnetic bearing extending outwards from a VOR station; the 090 radial is the line of positions due magnetic east of the station.",
+    "es": "Marcación magnética que sale de una estación VOR; el radial 090 es la línea de posiciones situadas al este magnético de la estación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A line going out from a VOR in a given direction.",
+    "es": "Una línea que sale de un VOR en una dirección determinada."
+  },
+  "example": {
+    "en": "\"Intercept the 270 radial and track outbound.\"",
+    "es": "«Intercepte el radial 270 y sígalo alejándose.»"
+  },
+  "pronunciation": {
+    "en": "RAY-dee-ul",
+    "es": "ra-dial"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vor",
+    "bearing",
+    "track"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

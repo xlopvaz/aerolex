@@ -1,0 +1,55 @@
+---
+lesson: radar-and-surveillance
+course: radio-navigation
+lang: es
+title: "Radar y vigilancia"
+summary: "Radar primario y secundario, los modos A, C y S del transpondedor, los códigos especiales y la vigilancia dependiente automática (ADS-B)."
+objectives:
+  - "Distinguir radar primario, secundario y ADS-B"
+  - "Explicar los modos A, C y S del transpondedor"
+  - "Recordar los códigos de transpondedor de emergencia"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 12
+terms: [transponder, squawk, unlawful-interference, ads-b, tcas, weather-radar]
+quiz: radio-navigation-final
+sources: [faa-aim, icao-doc-4444, icao-annex-10]
+review:
+  status: draft
+---
+
+## Radar primario
+
+El **radar primario** emite pulsos y recibe el **eco** que rebota en los objetos. No necesita colaboración del avión: ve cualquier cosa que refleje la señal, también aves, lluvia o vehículos. Pero no sabe **quién** es cada eco ni a qué **altitud** vuela.
+
+## Radar secundario
+
+El **radar secundario de vigilancia** (SSR) **interroga** al avión y el <Term id="transponder">transpondedor</Term> de a bordo **responde** con datos:
+
+| Modo | Qué responde |
+|---|---|
+| **A** | Un código de **4 cifras** del 0 al 7 (4.096 combinaciones) que asigna el control |
+| **C** | Además, la **altitud de presión** |
+| **S** | Además, una **dirección única de 24 bits** del avión, que permite interrogarlo de forma selectiva, y otros datos |
+
+El código lo asigna el control con la orden <Term id="squawk" />, por ejemplo «squawk 4521».
+
+## Los códigos especiales
+
+Según los procedimientos de la OACI, tres códigos tienen un significado reservado:
+
+| Código | Significado |
+|---|---|
+| **7500** | <Term id="unlawful-interference">Interferencia ilícita</Term> |
+| **7600** | Fallo de **comunicaciones** por radio |
+| **7700** | **Emergencia** |
+
+Al seleccionarlos, el control recibe un aviso inmediato en su pantalla.
+
+## ADS-B
+
+En la **vigilancia dependiente automática por radiodifusión** (<Term id="ads-b" />), el avión **difunde por sí mismo** su posición (calculada normalmente con GNSS), su altitud, su velocidad y su identificación, varias veces por segundo. Lo reciben estaciones en tierra y otros aviones equipados. Su precisión es muy alta, pero **depende del GNSS**: con interferencia o suplantación, la información de ADS-B puede degradarse o ser falsa.
+
+## A bordo: el TCAS y el radar meteorológico
+
+- El <Term id="tcas" /> usa el mismo principio que el SSR: interroga a los transpondedores de los aviones cercanos para detectar conflictos (lo viste en el módulo 5).
+- El <Term id="weather-radar">radar meteorológico</Term> de a bordo es un radar primario: detecta la **precipitación** delante del avión, no las nubes ni la turbulencia en aire claro.

@@ -1,0 +1,79 @@
+---
+lesson: the-wind-triangle
+course: navigation
+lang: en
+title: "Headings, tracks and the wind triangle"
+summary: "The difference between heading and track, how to work out the wind correction and groundspeed, and the chain from true to compass."
+objectives:
+  - "Distinguish heading, track, drift and wind correction angle"
+  - "Calculate headwind and crosswind components"
+  - "Estimate the wind correction and groundspeed"
+minutes: 14
+terms: [track, heading, wind-correction-angle, ground-speed]
+quiz: navigation-02
+sources: [faa-phak, faa-aim]
+review:
+  status: draft
+---
+
+## Heading and track are not the same
+
+- <Term id="track" /> is the aircraft's path **over the ground**.
+- <Term id="heading" /> is where the **nose points**.
+
+With no wind they coincide. With a crosswind the aircraft is pushed sideways: **drift** is the angle between heading and track. To follow the desired track, the pilot points the nose slightly into the wind: this is the <Term id="wind-correction-angle" />.
+
+## The wind triangle
+
+Three vectors form a triangle:
+
+1. The **aircraft through the air**: heading and TAS.
+2. The **wind**: the direction it blows **from** and its speed.
+3. The **result over the ground**: track and <Term id="ground-speed">groundspeed</Term>.
+
+It used to be solved by drawing it or with an E6B-type flight computer. Today the FMS calculates it, but understanding it lets you check that the result makes sense.
+
+<Callout type="info" label="True or magnetic?">
+Forecast winds are given relative to **true** north. Winds given by the tower or ATIS for take-off and landing are relative to **magnetic** north, like the runways.
+</Callout>
+
+## Wind components
+
+If the angle between the wind and the track is α:
+
+- **headwind (or tailwind) component** = wind × cos α;
+- **crosswind component** = wind × sin α.
+
+Values worth remembering:
+
+| α | sin α | cos α |
+|---|---|---|
+| 30° | 0.5 | ≈ 0.9 |
+| 45° | ≈ 0.7 | ≈ 0.7 |
+| 60° | ≈ 0.9 | 0.5 |
+| 90° | 1 | 0 |
+
+Example: a 20 kt wind at 60° to the track → about **18 kt of crosswind** and **10 kt of headwind**.
+
+## Working out drift in your head
+
+A useful approximation: **maximum drift** (with a full crosswind) is
+
+> maximum drift (°) ≈ wind (kt) × 60 / TAS (kt)
+
+and for other angles you multiply by sin α.
+
+Full example: true track **090°**, TAS **120 kt**, wind **360/20** (from the north):
+
+1. The wind is a full crosswind from the left: α = 90°.
+2. Maximum drift ≈ 20 × 60 / 120 = **10°**.
+3. Correct 10° into the wind: true heading **080°**.
+4. With no headwind component, groundspeed is almost the TAS: about **118 kt**.
+
+## From true to compass
+
+The complete chain to get the heading read on the compass is:
+
+**true track → (wind correction) → true heading → (variation) → magnetic heading → (deviation) → compass heading**
+
+Remember from the instruments module: **east** variation is **subtracted** and **west** is **added**.

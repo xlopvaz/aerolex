@@ -1,0 +1,55 @@
+---
+lesson: levels-and-descent-planning
+course: navigation
+lang: es
+title: "Niveles de crucero y planificación del descenso"
+summary: "Las reglas semicirculares de niveles de crucero, el RVSM, y cómo calcular cuándo empezar el descenso y a qué velocidad vertical bajar."
+objectives:
+  - "Elegir un nivel de crucero IFR o VFR según la derrota"
+  - "Calcular el punto de inicio del descenso"
+  - "Calcular la velocidad vertical para una senda de 3°"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 12
+terms: [flight-level, rvsm]
+quiz: navigation-final
+sources: [eu-923-2012, icao-annex-2, faa-aim]
+review:
+  status: draft
+---
+
+## Los niveles semicirculares
+
+Para separar el tráfico que vuela en sentidos opuestos, las reglas del aire asignan los <Term id="flight-level">niveles de crucero</Term> según la **derrota magnética**:
+
+| Derrota magnética | IFR | VFR |
+|---|---|---|
+| De **000° a 179°** | Miles **impares**: FL 70, 90, 110… | Impares **+ 500 ft**: FL 75, 95, 115… |
+| De **180° a 359°** | Miles **pares**: FL 80, 100, 120… | Pares **+ 500 ft**: FL 85, 105, 125… |
+
+Así, un IFR hacia el este y otro hacia el oeste quedan separados verticalmente, y los VFR quedan a medio camino entre los IFR. Algunos Estados aplican otras tablas en ciertas zonas, que se publican en su AIP.
+
+## El RVSM
+
+Entre **FL290 y FL410**, en el espacio aéreo de **separación vertical mínima reducida** (<Term id="rvsm" />), la separación entre niveles es de **1.000 ft** en lugar de 2.000. La tabla se mantiene: FL 290, 310, 330… hacia el este y FL 300, 320, 340… hacia el oeste. Para volar en RVSM, el avión y el operador necesitan una aprobación específica, con altímetros y piloto automático de mayor precisión.
+
+## ¿Cuándo empezar a bajar?
+
+Una senda de descenso de **3°** pierde unos **318 ft por cada milla náutica**. La regla práctica habitual redondea la cuenta:
+
+> distancia de descenso (NM) ≈ altura que hay que perder (en miles de pies) × 3
+
+que equivale a una senda algo más pronunciada que 3° y deja así un pequeño margen.
+
+Ejemplo: de **FL350** a **3.000 ft**, hay que perder unos 32.000 ft → 32 × 3 ≈ **96 NM** antes del punto en que se quiere estar a 3.000 ft. En la práctica se añade un margen para reducir velocidad y para el viento de cola.
+
+## ¿A qué velocidad vertical?
+
+Para mantener una senda de 3°:
+
+> velocidad vertical (ft/min) ≈ velocidad respecto al suelo (kt) × 5
+
+Ejemplo: en una aproximación ILS con **140 kt** respecto al suelo → unos **700 ft/min**. Con viento de cara, la velocidad respecto al suelo es menor y hace falta menos velocidad vertical; con viento de cola, más.
+
+<Callout type="tip" label="Por qué funcionan">
+3° equivalen a una pendiente de algo más del 5 %: unos 318 ft por milla náutica. A 60 kt se recorre 1 NM por minuto, así que a cualquier velocidad respecto al suelo la velocidad vertical es unas 5 veces esa velocidad.
+</Callout>

@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Rumbo magnético 120°, marcación relativa 270°. ¿QDM?",
+        "en": "Magnetic heading 120°, relative bearing 270°. QDM?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "390°",
+            "en": "390°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "030°",
+            "en": "030°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "150°",
+            "en": "150°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "210°",
+            "en": "210°"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "120 + 270 = 390 − 360 = 030°.",
+        "en": "120 + 270 = 390 − 360 = 030°."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Si el QDM es 075°, el QDR es…",
+        "en": "If the QDM is 075°, the QDR is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "255°",
+            "en": "255°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "075°",
+            "en": "075°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "165°",
+            "en": "165°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "345°",
+            "en": "345°"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Siempre difieren en 180°.",
+        "en": "They always differ by 180°."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En un RMI, la cabeza de la aguja indica…",
+        "en": "On an RMI, the needle's head shows…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El QDR",
+            "en": "The QDR"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La marcación relativa",
+            "en": "The relative bearing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La deriva",
+            "en": "The drift"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El QDM",
+            "en": "The QDM"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La cola marca el QDR.",
+        "en": "The tail shows the QDR."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué error del ADF aparece sobre todo al anochecer y de noche?",
+        "en": "Which ADF error appears mainly at dusk and at night?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La refracción costera",
+            "en": "Coastal refraction"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El error de desvío",
+            "en": "Deviation error"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El efecto nocturno",
+            "en": "Night effect"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El cono de silencio",
+            "en": "The cone of confusion"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Las ondas reflejadas en la ionosfera interfieren con la onda directa.",
+        "en": "Waves reflected off the ionosphere interfere with the direct wave."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Cerca de una tormenta, la aguja del ADF puede…",
+        "en": "Near a thunderstorm, the ADF needle may…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Quedarse fija",
+            "en": "Freeze"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Apuntar a las descargas eléctricas",
+            "en": "Point to the lightning"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Mostrar TO/FROM",
+            "en": "Show TO/FROM"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Indicar la distancia",
+            "en": "Show the distance"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Las descargas emiten en las mismas frecuencias.",
+        "en": "Lightning emits on the same frequencies."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Volando con la aguja siempre en el morro y viento cruzado…",
+        "en": "Flying with the needle always on the nose in a crosswind…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se llega a la estación siguiendo una curva",
+            "en": "You reach the station along a curve"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se sigue una derrota recta",
+            "en": "You follow a straight track"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se llega nunca",
+            "en": "You never get there"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se aleja de la estación",
+            "en": "You move away from the station"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Para una derrota recta hay que corregir la deriva.",
+        "en": "For a straight track you must correct for drift."
+      }
+    }
+  ]
+}

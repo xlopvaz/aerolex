@@ -1,0 +1,68 @@
+---
+lesson: dead-reckoning
+course: navigation
+lang: es
+title: "Navegación a estima y la regla del 1 en 60"
+summary: "Tiempo, velocidad, distancia y combustible; la hoja de navegación; cómo corregir un error de derrota con la regla del 1 en 60; y qué hacer si se pierde la orientación."
+objectives:
+  - "Resolver problemas de tiempo, velocidad, distancia y combustible"
+  - "Aplicar la regla del 1 en 60 para corregir la derrota"
+  - "Combinar la navegación a estima y la observada"
+minutes: 13
+terms: [dead-reckoning]
+quiz: navigation-03
+sources: [faa-phak]
+review:
+  status: draft
+---
+
+## Estima y navegación observada
+
+El PHAK de la FAA distingue dos formas básicas de navegar sin radioayudas:
+
+- La **navegación observada** (*pilotage*): seguir referencias visibles en el suelo, como ríos, carreteras o pueblos.
+- La <Term id="dead-reckoning">navegación a estima</Term>: calcular la posición a partir de un punto conocido con el rumbo, la velocidad, el viento y el tiempo.
+
+En la práctica se combinan: la estima dice **dónde deberías estar** y la observación confirma **dónde estás**.
+
+## Tiempo, velocidad y distancia
+
+Todo se reduce a **distancia = velocidad × tiempo**:
+
+- 84 NM a 126 kt de velocidad respecto al suelo → 84 / 126 = 0,67 h = **40 minutos**.
+- Si el avión consume 30 litros por hora, en esos 40 minutos gastará **20 litros**.
+
+Un truco útil: a 120 kt se recorren **2 NM por minuto**; a 180 kt, 3 NM por minuto.
+
+## La hoja de navegación
+
+Antes del vuelo se prepara una **hoja de navegación** con cada tramo: derrota, distancia, viento previsto, rumbo, velocidad respecto al suelo, tiempo y combustible. En vuelo se anota la **hora real** de paso por cada punto de control y se compara con la prevista. Si llegas antes o después, la velocidad respecto al suelo real es distinta de la prevista: el viento no es el pronosticado, y se corrigen las estimas siguientes.
+
+## La regla del 1 en 60
+
+Un error de **1°** mantenido durante **60 NM** desplaza el avión aproximadamente **1 NM** lateralmente. De ahí:
+
+> error de derrota (°) ≈ desplazamiento (NM) × 60 / distancia recorrida (NM)
+
+y, para ir directamente al destino,
+
+> ángulo de cierre (°) ≈ desplazamiento (NM) × 60 / distancia que falta (NM)
+
+**La corrección total para ir al destino es la suma de los dos.**
+
+Ejemplo: tras **30 NM**, te encuentras **3 NM a la derecha** de la derrota y te faltan **60 NM**.
+
+1. Error de derrota ≈ 3 × 60 / 30 = **6°**.
+2. Ángulo de cierre ≈ 3 × 60 / 60 = **3°**.
+3. Gira **9° a la izquierda** para llegar directamente al destino.
+
+Si en cambio quieres **volver a la derrota** en la misma distancia que has recorrido, corriges el **doble** del error (12° en el ejemplo) y, al alcanzarla, dejas solo la corrección del error (6°).
+
+## Si te pierdes
+
+Los principios son sencillos:
+
+- **No entrar en pánico** y seguir volando el avión con un rumbo fijo.
+- **Subir** si es seguro, para ver más lejos y mejorar la recepción de radio.
+- Usar todos los medios disponibles: **radioayudas**, **GNSS** y **pedir ayuda** al control, que puede localizar el avión.
+- Tener presente el **combustible** y no esperar demasiado para pedir ayuda.

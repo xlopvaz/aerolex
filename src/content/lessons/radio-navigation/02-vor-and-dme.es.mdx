@@ -1,0 +1,64 @@
+---
+lesson: vor-and-dme
+course: radio-navigation
+lang: es
+title: "VOR y DME"
+summary: "Los radiales del VOR, la lectura del CDI con TO/FROM y la sensibilidad inversa, las comprobaciones de precisión, y el DME con su error de distancia oblicua."
+objectives:
+  - "Interpretar el CDI y la indicación TO/FROM"
+  - "Evitar la sensibilidad inversa"
+  - "Explicar el error de distancia oblicua del DME"
+minutes: 13
+terms: [vor, radial, dme]
+quiz: radio-navigation-02
+sources: [faa-aim, faa-phak, faa-ifh]
+review:
+  status: draft
+---
+
+## Los radiales
+
+Un <Term id="vor" /> emite en **VHF**, entre **108,0 y 117,95 MHz**, una señal que permite al receptor saber en qué **radial** está. Un <Term id="radial" /> es una marcación **magnética desde** la estación: el radial 090 es la línea de posiciones al este magnético del VOR.
+
+Por ser VHF, la señal llega en **línea recta**: el alcance aumenta con la altitud y las montañas lo bloquean.
+
+## El CDI y la indicación TO/FROM
+
+En el selector (OBS) se elige un curso. El indicador muestra:
+
+- la **barra** del CDI: cuánto te separas del curso. Desviación máxima de unos **10°**, cada punto unos **2°**;
+- el indicador **TO/FROM**: si el curso seleccionado te lleva **hacia** la estación o te **aleja** de ella.
+
+Con el OBS en 090 y la indicación **FROM**, estás sobre el radial 090. Con 090 y **TO**, estás sobre el radial 270, volando hacia la estación.
+
+## La sensibilidad inversa
+
+La barra indica correctamente hacia dónde corregir solo si el **rumbo** del avión es parecido al **curso seleccionado**. Si vuelas en sentido contrario (por ejemplo, curso 090 seleccionado y rumbo 270), la barra parece indicar lo contrario de lo que debe hacerse: es la **sensibilidad inversa**. La solución es seleccionar siempre un curso cercano al rumbo que se vuela.
+
+Un HSI, que gira la rosa con el rumbo, evita este problema.
+
+## Sobre la estación
+
+Justo encima del VOR hay un **cono de confusión**: la barra oscila y el TO cambia a FROM. Es la señal de que se ha pasado sobre la estación.
+
+## Comprobar el receptor
+
+Según el AIM de la FAA, el receptor VOR se comprueba con tolerancias de:
+
+| Comprobación | Tolerancia |
+|---|---|
+| Estación de prueba (VOT) o punto de control en tierra | **± 4°** |
+| Punto de control en vuelo | **± 6°** |
+| Dos receptores sintonizados en el mismo VOR | **4°** de diferencia máxima |
+
+Si un VOR está en mantenimiento, se **retira su identificación** Morse: una estación sin identificador no debe usarse.
+
+## El DME
+
+El <Term id="dme" /> mide la **distancia** al equipo de tierra midiendo el tiempo que tarda una pregunta del avión en recibir respuesta. Trabaja en **UHF** y suele ir asociado a un VOR o un ILS.
+
+Mide la **distancia oblicua** (en línea recta hasta la antena), no la distancia sobre el suelo. Encima de la estación, un avión a **6.000 ft** marca alrededor de **1 NM** aunque esté en la vertical. El AIM indica que el error es pequeño si el avión está al menos a **1 NM de la estación por cada 1.000 ft** de altura sobre ella.
+
+<Callout type="info" label="Ejemplo de orientación">
+OBS en 330, barra desplazada a la izquierda, indicación TO, rumbo 330. El curso que lleva a la estación está a tu izquierda: corrige a la izquierda. Estás al este del radial 150, que es el que lleva a la estación con rumbo 330.
+</Callout>

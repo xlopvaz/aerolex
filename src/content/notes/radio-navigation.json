@@ -1,0 +1,167 @@
+{
+  "course": "radio-navigation",
+  "lessons": [
+    {
+      "lesson": "ndb-and-adf",
+      "key": {
+        "es": "NDB en onda larga/media; el ADF apunta a la estación; QDM = rumbo M + marcación relativa; QDR = QDM ± 180; el RMI lo da directo; errores: tormentas, noche, costa, montaña.",
+        "en": "NDB on long/medium wave; the ADF points to the station; QDM = magnetic heading + relative bearing; QDR = QDM ± 180; the RMI shows it directly; errors: storms, night, coast, mountains."
+      },
+      "points": [
+        {
+          "es": "NDB: onda larga y media; ADF: aguja a la estación; identificar siempre el Morse.",
+          "en": "NDB: long and medium wave; ADF: needle to the station; always identify the Morse."
+        },
+        {
+          "es": "Marcación relativa: desde el morro, sentido horario. QDM = rumbo magnético + RB (− 360 si hace falta).",
+          "en": "Relative bearing: from the nose, clockwise. QDM = magnetic heading + RB (− 360 if needed)."
+        },
+        {
+          "es": "QDM: rumbo hacia la estación; QDR: marcación desde la estación; difieren 180°.",
+          "en": "QDM: heading to the station; QDR: bearing from the station; they differ by 180°."
+        },
+        {
+          "es": "RMI: cabeza = QDM, cola = QDR.",
+          "en": "RMI: head = QDM, tail = QDR."
+        },
+        {
+          "es": "Errores: tormentas, efecto nocturno, refracción costera, efecto montaña.",
+          "en": "Errors: thunderstorms, night effect, coastal refraction, mountain effect."
+        },
+        {
+          "es": "Homing con viento: trayectoria curva; para una derrota recta, corregir la deriva.",
+          "en": "Homing in wind: curved path; for a straight track, correct for drift."
+        }
+      ]
+    },
+    {
+      "lesson": "vor-and-dme",
+      "key": {
+        "es": "VOR en VHF (108–117,95 MHz): radiales magnéticos desde la estación; CDI ±10°, 2° por punto; TO/FROM; evitar la sensibilidad inversa; comprobaciones ±4°/±6°; DME en UHF con distancia oblicua.",
+        "en": "VOR on VHF (108–117.95 MHz): magnetic radials from the station; CDI ±10°, 2° per dot; TO/FROM; avoid reverse sensing; checks ±4°/±6°; DME on UHF with slant range."
+      },
+      "points": [
+        {
+          "es": "Radial = marcación magnética desde el VOR. Línea recta: alcance según altitud.",
+          "en": "Radial = magnetic bearing from the VOR. Line of sight: range depends on altitude."
+        },
+        {
+          "es": "CDI: desviación máxima ~10°, 2°/punto. TO/FROM indica si el curso lleva hacia o desde la estación.",
+          "en": "CDI: full scale ~10°, 2°/dot. TO/FROM shows whether the course goes to or from the station."
+        },
+        {
+          "es": "Sensibilidad inversa: rumbo opuesto al curso seleccionado. El HSI la evita.",
+          "en": "Reverse sensing: heading opposite to the selected course. An HSI avoids it."
+        },
+        {
+          "es": "Cono de confusión sobre la estación: TO cambia a FROM.",
+          "en": "Cone of confusion over the station: TO changes to FROM."
+        },
+        {
+          "es": "Comprobaciones (AIM): ±4° VOT o tierra, ±6° en vuelo, 4° entre receptores. Sin identificador = no usar.",
+          "en": "Checks (AIM): ±4° VOT or ground, ±6° airborne, 4° between receivers. No identifier = do not use."
+        },
+        {
+          "es": "DME: UHF, distancia oblicua; error pequeño a ≥ 1 NM por cada 1.000 ft de altura.",
+          "en": "DME: UHF, slant range; error small at ≥ 1 NM for every 1,000 ft of height."
+        }
+      ]
+    },
+    {
+      "lesson": "ils-approaches",
+      "key": {
+        "es": "ILS: localizador (VHF, lateral, ±2,5°) y senda (UHF, vertical, 3°, ±0,7°), ~4 veces más sensible que el VOR; interceptar la senda desde abajo; DA/DH; Tipo A ≥ 250 ft y Tipo B en CAT I, II y III.",
+        "en": "ILS: localizer (VHF, lateral, ±2.5°) and glide slope (UHF, vertical, 3°, ±0.7°), ~4 times more sensitive than a VOR; intercept the slope from below; DA/DH; Type A ≥ 250 ft and Type B in CAT I, II and III."
+      },
+      "points": [
+        {
+          "es": "LOC: VHF 108,10–111,95 MHz, antena al final de la pista, 700 ft de anchura en el umbral (~5°).",
+          "en": "LOC: VHF 108.10–111.95 MHz, antenna at the far end, 700 ft wide at the threshold (~5°)."
+        },
+        {
+          "es": "GS: UHF, normalmente 3°, grosor 1,4° (±0,7°). Radiobaliza exterior ~1.400 ft, intermedia ~200 ft.",
+          "en": "GS: UHF, normally 3°, 1.4° thick (±0.7°). Outer marker ~1,400 ft, middle ~200 ft."
+        },
+        {
+          "es": "Falsas sendas a ángulos más altos (la más baja, ~9°–12°): interceptar desde abajo.",
+          "en": "False paths at higher angles (lowest ~9°–12°): intercept from below."
+        },
+        {
+          "es": "DA/DH: sin referencias visuales, frustrada. CAT I barométrica; CAT II/III radioaltímetro.",
+          "en": "DA/DH: no visual references, go around. CAT I barometric; CAT II/III radio altimeter."
+        },
+        {
+          "es": "Tipo A ≥ 75 m (250 ft). Tipo B: CAT I ≥ 200 ft y RVR 550 m; CAT II ≥ 100 ft y 300 m; CAT IIIA 175 m; IIIB ≥ 50 m; IIIC sin límites.",
+          "en": "Type A ≥ 75 m (250 ft). Type B: CAT I ≥ 200 ft and RVR 550 m; CAT II ≥ 100 ft and 300 m; CAT IIIA 175 m; IIIB ≥ 50 m; IIIC no limits."
+        }
+      ]
+    },
+    {
+      "lesson": "gnss-and-pbn",
+      "key": {
+        "es": "GNSS: 4 satélites para la posición; RAIM 5 para detectar y 6 para excluir; SBAS (EGNOS) permite LPV; PBN: RNAV = precisión, RNP = precisión + vigilancia y alerta; vigilar la interferencia y la suplantación.",
+        "en": "GNSS: 4 satellites for position; RAIM 5 to detect and 6 to exclude; SBAS (EGNOS) enables LPV; PBN: RNAV = accuracy, RNP = accuracy + monitoring and alerting; watch for jamming and spoofing."
+      },
+      "points": [
+        {
+          "es": "GPS: 24 satélites base, ≥ 5 visibles; 4 para posición 3D. Otros: Galileo, GLONASS, BeiDou.",
+          "en": "GPS: 24 base satellites, ≥ 5 visible; 4 for a 3D position. Others: Galileo, GLONASS, BeiDou."
+        },
+        {
+          "es": "RAIM: 5 satélites detectan un fallo; 6 (o 5 + baro) lo excluyen.",
+          "en": "RAIM: 5 satellites detect a fault; 6 (or 5 + baro) exclude it."
+        },
+        {
+          "es": "SBAS (EGNOS, WAAS): correcciones e integridad; aproximaciones LPV.",
+          "en": "SBAS (EGNOS, WAAS): corrections and integrity; LPV approaches."
+        },
+        {
+          "es": "RNAV X: dentro de X NM el 95 % del tiempo. RNP: además, vigilancia y alerta a bordo.",
+          "en": "RNAV X: within X NM 95 % of the time. RNP: also on-board monitoring and alerting."
+        },
+        {
+          "es": "Especificaciones: RNAV 10/RNP 4 oceánico, RNAV 5 en ruta, RNAV 1/RNP 1 SID/STAR, RNP APCH, RNP AR.",
+          "en": "Specifications: RNAV 10/RNP 4 oceanic, RNAV 5 en route, RNAV 1/RNP 1 SID/STAR, RNP APCH, RNP AR."
+        },
+        {
+          "es": "Jamming bloquea, spoofing engaña (más peligroso). Síntomas: posiciones discrepantes, GS/TAS anómala, saltos de hora, TAWS falso.",
+          "en": "Jamming blocks, spoofing deceives (more dangerous). Symptoms: discrepant positions, abnormal GS/TAS, time jumps, false TAWS."
+        }
+      ]
+    },
+    {
+      "lesson": "radar-and-surveillance",
+      "key": {
+        "es": "Primario: eco sin colaboración; secundario: el transpondedor responde (A código, C altitud, S dirección de 24 bits); 7500/7600/7700; ADS-B difunde la posición GNSS; el radar meteorológico ve precipitación.",
+        "en": "Primary: echo with no cooperation; secondary: the transponder replies (A code, C altitude, S 24-bit address); 7500/7600/7700; ADS-B broadcasts the GNSS position; weather radar sees precipitation."
+      },
+      "points": [
+        {
+          "es": "Radar primario: eco, sin identidad ni altitud. SSR: interroga y el transpondedor responde.",
+          "en": "Primary radar: echo, no identity or altitude. SSR: interrogates and the transponder replies."
+        },
+        {
+          "es": "Modo A: código de 4 cifras (0–7, 4.096). Modo C: altitud de presión. Modo S: dirección de 24 bits e interrogación selectiva.",
+          "en": "Mode A: 4-digit code (0–7, 4,096). Mode C: pressure altitude. Mode S: 24-bit address and selective interrogation."
+        },
+        {
+          "es": "7500 interferencia ilícita, 7600 fallo de radio, 7700 emergencia.",
+          "en": "7500 unlawful interference, 7600 radio failure, 7700 emergency."
+        },
+        {
+          "es": "ADS-B: el avión difunde posición GNSS, altitud, velocidad e identidad; vulnerable a la interferencia GNSS.",
+          "en": "ADS-B: the aircraft broadcasts GNSS position, altitude, speed and identity; vulnerable to GNSS interference."
+        },
+        {
+          "es": "TCAS: interroga transpondedores. Radar meteorológico: primario, ve precipitación, no turbulencia en aire claro.",
+          "en": "TCAS: interrogates transponders. Weather radar: primary, sees precipitation, not clear-air turbulence."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

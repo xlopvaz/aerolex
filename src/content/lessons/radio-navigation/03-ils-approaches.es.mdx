@@ -1,0 +1,54 @@
+---
+lesson: ils-approaches
+course: radio-navigation
+lang: es
+title: "El ILS y las categorías de aproximación"
+summary: "Los componentes del ILS, la sensibilidad del localizador y la senda, las falsas sendas, la altitud de decisión y las categorías de operación I, II y III."
+objectives:
+  - "Describir el localizador, la senda de planeo y las radiobalizas"
+  - "Explicar por qué el ILS es más sensible que el VOR"
+  - "Distinguir las categorías de operación por altura de decisión y RVR"
+minutes: 14
+terms: [ils, localizer, glide-path, missed-approach, rvr]
+quiz: radio-navigation-03
+sources: [faa-aim, faa-ifh, eu-923-2012, icao-annex-6, skybrary-precision-approach]
+review:
+  status: draft
+---
+
+## Los componentes
+
+El <Term id="ils" /> guía al avión hasta la pista en los dos planos:
+
+- El <Term id="localizer">localizador</Term> (LOC) da la guía **lateral**. Emite en VHF, entre **108,10 y 111,95 MHz**, desde una antena situada al **final** de la pista.
+- La <Term id="glide-path">senda de planeo</Term> (GS o GP) da la guía **vertical**. Emite en UHF desde una antena junto a la pista, a unos 750–1.250 ft del umbral. La senda suele ser de **3°**.
+- Las **radiobalizas** (o un DME) indican la distancia: la exterior está donde se intercepta la senda, a unos 1.400 ft sobre la pista, y la intermedia donde la senda pasa a unos 200 ft.
+
+## Mucho más sensible que un VOR
+
+El haz del localizador se ajusta para tener unos **700 ft de anchura en el umbral** de pista de lado a lado, lo que suele dar un ángulo total de unos **5°**: la desviación máxima del indicador corresponde a unos **2,5°** a cada lado. La senda tiene un grosor de unos **1,4°**, es decir, unos **0,7°** por encima y por debajo. Comparado con los 10° de un VOR, el ILS es **unas cuatro veces más sensible**: hay que hacer correcciones pequeñas y tempranas.
+
+## Las falsas sendas
+
+La antena de la senda produce también **sendas falsas a ángulos más altos** (la más baja, según el Manual de vuelo instrumental de la FAA, a unos 9°–12°). Por eso la senda se intercepta **desde abajo**, a la altitud publicada, y se comprueba la altura al pasar el punto de aproximación final.
+
+## La altitud de decisión
+
+En una aproximación de precisión, al llegar a la **altitud (o altura) de decisión** (DA/DH) el piloto debe tener las **referencias visuales** necesarias para continuar. Si no las tiene, inicia la <Term id="missed-approach">aproximación frustrada</Term>. En CAT I la DA se lee en el altímetro barométrico; en CAT II y III, la DH se mide con el radioaltímetro.
+
+## Tipos y categorías de operación
+
+Las reglas de la OACI clasifican las aproximaciones instrumentales en:
+
+- **Tipo A**: altura mínima de descenso o de decisión de **75 m (250 ft) o más**.
+- **Tipo B**: altura de decisión **por debajo de 75 m (250 ft)**, dividida en categorías:
+
+| Categoría | Altura de decisión | Visibilidad o <Term id="rvr" /> |
+|---|---|---|
+| **CAT I** | No menos de **60 m (200 ft)** | Visibilidad ≥ 800 m o RVR ≥ **550 m** |
+| **CAT II** | Menos de 60 m y no menos de **30 m (100 ft)** | RVR ≥ **300 m** |
+| **CAT IIIA** | Menos de 30 m o sin DH | RVR ≥ **175 m** |
+| **CAT IIIB** | Menos de 15 m (50 ft) o sin DH | RVR menor de 175 m y ≥ **50 m** |
+| **CAT IIIC** | Sin DH | Sin límite de RVR |
+
+Las CAT II y III exigen además la aprobación del operador, tripulaciones entrenadas, aviones certificados y aeropuertos con procedimientos de baja visibilidad.

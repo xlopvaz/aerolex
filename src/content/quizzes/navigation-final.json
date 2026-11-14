@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Un vuelo IFR con derrota magnética 095° fuera de RVSM debería elegir…",
+        "en": "An IFR flight on magnetic track 095° outside RVSM should choose…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "FL 100",
+            "en": "FL 100"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "FL 115",
+            "en": "FL 115"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "FL 110",
+            "en": "FL 110"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "FL 105",
+            "en": "FL 105"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "De 000° a 179°, IFR en miles impares.",
+        "en": "000° to 179°, IFR at odd thousands."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Un vuelo VFR con derrota magnética 250° podría volar a…",
+        "en": "A VFR flight on magnetic track 250° could fly at…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "FL 75",
+            "en": "FL 75"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "FL 85",
+            "en": "FL 85"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "FL 80",
+            "en": "FL 80"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "FL 90",
+            "en": "FL 90"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "De 180° a 359°, VFR en pares + 500 ft.",
+        "en": "180° to 359°, VFR at even + 500 ft."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En RVSM, la separación vertical entre FL290 y FL410 es de…",
+        "en": "In RVSM, vertical separation between FL290 and FL410 is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1.000 ft",
+            "en": "1,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2.000 ft",
+            "en": "2,000 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "500 ft",
+            "en": "500 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "4.000 ft",
+            "en": "4,000 ft"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Requiere aprobación específica del avión y del operador.",
+        "en": "It requires a specific aircraft and operator approval."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Para bajar de FL300 a 2.000 ft con una senda de 3°, hay que empezar a unos…",
+        "en": "To descend from FL300 to 2,000 ft on a 3° path, you start about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "28 NM antes",
+            "en": "28 NM before"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "300 NM antes",
+            "en": "300 NM before"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "9 NM antes",
+            "en": "9 NM before"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "84 NM antes",
+            "en": "84 NM before"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Hay que perder 28.000 ft: 28 × 3 = 84 NM.",
+        "en": "You need to lose 28,000 ft: 28 × 3 = 84 NM."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Velocidad respecto al suelo de 120 kt en un ILS de 3°. ¿Velocidad vertical aproximada?",
+        "en": "Groundspeed 120 kt on a 3° ILS. Approximate rate of descent?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "300 ft/min",
+            "en": "300 ft/min"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1.200 ft/min",
+            "en": "1,200 ft/min"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "600 ft/min",
+            "en": "600 ft/min"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "360 ft/min",
+            "en": "360 ft/min"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "120 × 5 = 600 ft/min.",
+        "en": "120 × 5 = 600 ft/min."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Con viento de cola en la aproximación, para mantener la senda la velocidad vertical debe ser…",
+        "en": "With a tailwind on the approach, to hold the path the rate of descent must be…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Menor",
+            "en": "Lower"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Mayor",
+            "en": "Higher"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Igual",
+            "en": "The same"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cero",
+            "en": "Zero"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La velocidad respecto al suelo es mayor.",
+        "en": "Groundspeed is higher."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "En una carta a escala 1:500.000, 10 cm representan…",
+        "en": "On a 1:500,000 chart, 10 cm represent…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "50 km",
+            "en": "50 km"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5 km",
+            "en": "5 km"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "500 km",
+            "en": "500 km"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "100 km",
+            "en": "100 km"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "1 cm = 5 km.",
+        "en": "1 cm = 5 km."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "TAS 100 kt, viento cruzado de 20 kt. ¿Deriva máxima aproximada?",
+        "en": "TAS 100 kt, 20 kt full crosswind. Approximate maximum drift?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "20°",
+            "en": "20°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5°",
+            "en": "5°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2°",
+            "en": "2°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "12°",
+            "en": "12°"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "20 × 60 / 100 = 12°.",
+        "en": "20 × 60 / 100 = 12°."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Tras 20 NM estás 1 NM a la derecha de la derrota. ¿Error de derrota?",
+        "en": "After 20 NM you are 1 NM right of track. Track error?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1°",
+            "en": "1°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "6°",
+            "en": "6°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "3°",
+            "en": "3°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "20°",
+            "en": "20°"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "1 × 60 / 20 = 3°.",
+        "en": "1 × 60 / 20 = 3°."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "El camino más corto entre Madrid y Nueva York sigue…",
+        "en": "The shortest route between Madrid and New York follows…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Una loxodrómica",
+            "en": "A rhumb line"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un círculo máximo",
+            "en": "A great circle"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un paralelo",
+            "en": "A parallel"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un meridiano",
+            "en": "A meridian"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "En un mapa corriente parece una curva hacia el norte.",
+        "en": "On an ordinary map it looks like a curve towards the north."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Wind correction angle",
+    "es": "Ángulo de corrección de deriva"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The angle between the heading flown and the desired track, applied into the wind so that the aircraft's actual path over the ground follows the track.",
+    "es": "Ángulo entre el rumbo que se vuela y la derrota deseada, aplicado hacia el lado del que viene el viento para que la trayectoria real sobre el suelo siga la derrota."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much you point the nose into the wind to stay on your line.",
+    "es": "Cuánto apuntas el morro hacia el viento para seguir tu línea."
+  },
+  "example": {
+    "en": "With a wind from the left, the wind correction angle was 8° left.",
+    "es": "Con viento de la izquierda, el ángulo de corrección fue de 8° a la izquierda."
+  },
+  "pronunciation": {
+    "en": "wind kuh-REK-shun ANG-gul",
+    "es": "án-gu-lo de co-rrec-ción de de-ri-va"
+  },
+  "synonyms": {
+    "en": [
+      "WCA",
+      "drift correction"
+    ],
+    "es": [
+      "corrección de deriva"
+    ]
+  },
+  "related": [
+    "heading",
+    "track",
+    "crosswind",
+    "dead-reckoning"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

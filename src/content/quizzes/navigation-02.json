@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La derrota es…",
+        "en": "Track is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La trayectoria del avión sobre el suelo",
+            "en": "The aircraft's path over the ground"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hacia dónde apunta el morro",
+            "en": "Where the nose points"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La dirección del viento",
+            "en": "The wind direction"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El rumbo de brújula",
+            "en": "The compass heading"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Hacia dónde apunta el morro es el rumbo.",
+        "en": "Where the nose points is the heading."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Viento de 30 kt a 30° de la derrota. ¿Componente cruzada aproximada?",
+        "en": "A 30 kt wind at 30° to the track. Approximate crosswind component?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "26 kt",
+            "en": "26 kt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 kt",
+            "en": "30 kt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 kt",
+            "en": "5 kt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15 kt",
+            "en": "15 kt"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "30 × sen 30° = 30 × 0,5 = 15 kt.",
+        "en": "30 × sin 30° = 30 × 0.5 = 15 kt."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "TAS 150 kt y viento totalmente cruzado de 25 kt. ¿Deriva máxima aproximada?",
+        "en": "TAS 150 kt and a full crosswind of 25 kt. Approximate maximum drift?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "25°",
+            "en": "25°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5°",
+            "en": "5°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "10°",
+            "en": "10°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2,5°",
+            "en": "2.5°"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "25 × 60 / 150 = 10°.",
+        "en": "25 × 60 / 150 = 10°."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Derrota 180°, viento de la derecha que exige 6° de corrección. ¿Rumbo?",
+        "en": "Track 180°, wind from the right requiring 6° of correction. Heading?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "174°",
+            "en": "174°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "186°",
+            "en": "186°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "180°",
+            "en": "180°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "354°",
+            "en": "354°"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Se corrige hacia el viento: hacia la derecha, rumbo mayor.",
+        "en": "Correct into the wind: to the right, a higher heading."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Los vientos de los pronósticos meteorológicos se dan respecto al norte…",
+        "en": "Winds in weather forecasts are given relative to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Verdadero",
+            "en": "True north"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Magnético",
+            "en": "Magnetic north"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De brújula",
+            "en": "Compass north"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "De la cuadrícula",
+            "en": "Grid north"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los de la torre y el ATIS, respecto al magnético.",
+        "en": "Tower and ATIS winds are relative to magnetic north."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El orden correcto de la cadena es…",
+        "en": "The correct order of the chain is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Rumbo de brújula → derrota verdadera → rumbo magnético",
+            "en": "Compass heading → true track → magnetic heading"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Rumbo magnético → derrota verdadera → rumbo de brújula",
+            "en": "Magnetic heading → true track → compass heading"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Rumbo verdadero → rumbo de brújula → rumbo magnético",
+            "en": "True heading → compass heading → magnetic heading"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Derrota verdadera → rumbo verdadero → rumbo magnético → rumbo de brújula",
+            "en": "True track → true heading → magnetic heading → compass heading"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Deriva, variación y desvío, en ese orden.",
+        "en": "Wind correction, variation and deviation, in that order."
+      }
+    }
+  ]
+}

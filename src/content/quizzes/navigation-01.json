@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Un minuto de arco de latitud equivale aproximadamente a…",
+        "en": "One minute of arc of latitude is approximately…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un kilómetro",
+            "en": "One kilometre"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una milla náutica",
+            "en": "One nautical mile"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una milla terrestre",
+            "en": "One statute mile"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Diez millas náuticas",
+            "en": "Ten nautical miles"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por eso 1° de latitud ≈ 60 NM.",
+        "en": "Hence 1° of latitude ≈ 60 NM."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Dos puntos están en el mismo meridiano, uno a 40° N y otro a 42° N. ¿Distancia aproximada?",
+        "en": "Two points lie on the same meridian, one at 40° N and one at 42° N. Approximate distance?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "120 NM",
+            "en": "120 NM"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "60 NM",
+            "en": "60 NM"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "200 NM",
+            "en": "200 NM"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2 NM",
+            "en": "2 NM"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "2° × 60 NM = 120 NM.",
+        "en": "2° × 60 NM = 120 NM."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El camino más corto entre dos puntos de la Tierra es…",
+        "en": "The shortest path between two points on Earth is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La loxodrómica",
+            "en": "The rhumb line"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un paralelo",
+            "en": "A parallel"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La recta en una carta Mercator",
+            "en": "The straight line on a Mercator chart"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El arco de círculo máximo",
+            "en": "The great-circle arc"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La loxodrómica mantiene el rumbo pero es más larga.",
+        "en": "The rhumb line keeps a constant track but is longer."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En una carta Mercator, una línea recta es…",
+        "en": "On a Mercator chart, a straight line is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un círculo máximo",
+            "en": "A great circle"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Siempre un meridiano",
+            "en": "Always a meridian"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una loxodrómica",
+            "en": "A rhumb line"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una isógona",
+            "en": "An isogonic line"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "En la cónica de Lambert, la recta se aproxima al círculo máximo.",
+        "en": "On a Lambert conic, a straight line approximates a great circle."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En una carta a escala 1:500.000, 4 cm representan…",
+        "en": "On a 1:500,000 chart, 4 cm represent…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2 km",
+            "en": "2 km"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "20 km",
+            "en": "20 km"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "200 km",
+            "en": "200 km"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "500 km",
+            "en": "500 km"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "1 cm = 500.000 cm = 5 km.",
+        "en": "1 cm = 500,000 cm = 5 km."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Cuántos grados gira la Tierra en una hora?",
+        "en": "How many degrees does the Earth turn in one hour?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "15°",
+            "en": "15°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1°",
+            "en": "1°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "30°",
+            "en": "30°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "60°",
+            "en": "60°"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "360° / 24 h = 15° por hora.",
+        "en": "360° / 24 h = 15° per hour."
+      }
+    }
+  ]
+}

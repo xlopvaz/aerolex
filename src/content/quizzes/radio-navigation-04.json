@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuántos satélites hacen falta para una posición GNSS en tres dimensiones?",
+        "en": "How many satellites are needed for a three-dimensional GNSS position?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2",
+            "en": "2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "4",
+            "en": "4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "24",
+            "en": "24"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Tres para la posición y uno para el reloj del receptor.",
+        "en": "Three for position and one for the receiver clock."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Para que el RAIM excluya un satélite defectuoso hacen falta al menos…",
+        "en": "For RAIM to exclude a faulty satellite, at least… are needed"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "4 satélites",
+            "en": "4 satellites"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "6 satélites (o 5 con ayuda barométrica)",
+            "en": "6 satellites (or 5 with baro aiding)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 satélites",
+            "en": "5 satellites"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "3 satélites",
+            "en": "3 satellites"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Con 5 solo se detecta el fallo.",
+        "en": "With 5 the fault is only detected."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "EGNOS es…",
+        "en": "EGNOS is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El SBAS europeo",
+            "en": "The European SBAS"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un tipo de VOR",
+            "en": "A type of VOR"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El GNSS ruso",
+            "en": "The Russian GNSS"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un sistema de aterrizaje por radar",
+            "en": "A radar landing system"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Permite aproximaciones LPV.",
+        "en": "It enables LPV approaches."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué añade una especificación RNP respecto a una RNAV?",
+        "en": "What does an RNP specification add compared with RNAV?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Más satélites",
+            "en": "More satellites"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un VOR adicional",
+            "en": "An extra VOR"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un piloto más",
+            "en": "An extra pilot"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La vigilancia y alerta a bordo de la precisión de navegación",
+            "en": "On-board performance monitoring and alerting"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El avión avisa si deja de cumplir la precisión exigida.",
+        "en": "The aircraft alerts if it no longer meets the required accuracy."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "RNAV 5 significa mantenerse dentro de…",
+        "en": "RNAV 5 means staying within…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "5 m de la derrota siempre",
+            "en": "5 m of the track at all times"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5° de la derrota",
+            "en": "5° of the track"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 NM de la derrota al menos el 95 % del tiempo",
+            "en": "5 NM of the track at least 95 % of the time"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5 minutos del horario",
+            "en": "5 minutes of schedule"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La cifra es la precisión lateral en millas náuticas.",
+        "en": "The number is the lateral accuracy in nautical miles."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Según la EASA, un síntoma típico de suplantación de GNSS es…",
+        "en": "According to EASA, a typical symptom of GNSS spoofing is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un fallo hidráulico",
+            "en": "A hydraulic failure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un aviso falso del TAWS",
+            "en": "A false TAWS alert"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Más consumo de combustible",
+            "en": "Higher fuel burn"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una descompresión",
+            "en": "A decompression"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "También discrepancias de posición y saltos de hora.",
+        "en": "Also position discrepancies and time jumps."
+      }
+    }
+  ]
+}

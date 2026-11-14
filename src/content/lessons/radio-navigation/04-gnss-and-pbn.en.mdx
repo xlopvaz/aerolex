@@ -1,0 +1,62 @@
+---
+lesson: gnss-and-pbn
+course: radio-navigation
+lang: en
+title: "GNSS and performance-based navigation"
+summary: "How a GNSS receiver works out its position, what RAIM and SBAS are, the difference between RNAV and RNP, navigation specifications and the threat of jamming and spoofing."
+objectives:
+  - "Explain how many satellites are needed for position, fault detection and exclusion"
+  - "Distinguish RNAV and RNP and interpret a navigation specification"
+  - "Recognise the symptoms of GNSS jamming and spoofing"
+minutes: 14
+terms: [gnss, raim, sbas, rnav, pbn, rnp, gnss-spoofing]
+quiz: radio-navigation-04
+sources: [faa-aim, icao-doc-9613, easa-gnss-interference]
+review:
+  status: draft
+---
+
+## How GNSS works
+
+A <Term id="gnss" /> receiver measures how long the signals from several satellites take to arrive and works out its distance to each. According to the FAA AIM:
+
+- the GPS constellation is based on **24 satellites**, arranged so that at least **5 are always visible** from any point;
+- a three-dimensional position needs **4 satellites** (three for the position and one more to correct the receiver's clock).
+
+Besides the US GPS there are other systems, such as Galileo (European), GLONASS (Russian) and BeiDou (Chinese).
+
+## Integrity: RAIM and SBAS
+
+A position alone is not enough for navigation: you need to know whether you can **trust** it.
+
+- The receiver's <Term id="raim" /> uses extra satellites to check that they all agree. It needs at least **5 satellites** to **detect** a fault and **6** (or 5 with barometric aiding) to **exclude** the faulty satellite and keep navigating.
+- <Term id="sbas" /> systems (EGNOS in Europe, WAAS in the USA) broadcast **corrections and integrity information** for a wide area from geostationary satellites. They allow approaches with vertical guidance such as **LPV**, with minima similar to an ILS CAT I.
+
+## RNAV and RNP
+
+<Term id="rnav">Area navigation</Term> lets an aircraft fly any path between points defined by coordinates, without having to fly from radio aid to radio aid. ICAO's performance-based navigation (<Term id="pbn" />) concept defines **what accuracy** that navigation must achieve in each phase:
+
+- An **RNAV** specification requires an accuracy, for example **RNAV 5**: staying within **5 NM** of the track for at least **95 %** of the flight time.
+- An <Term id="rnp" /> specification also requires the aircraft to **monitor its own performance and alert** the crew if it no longer meets it.
+
+| Specification | Typical use |
+|---|---|
+| RNAV 10 / RNP 4 | Oceanic and remote routes |
+| RNAV 5 | Continental routes |
+| RNAV 1 / RNP 1 | Departures (SID) and arrivals (STAR) |
+| RNP APCH | RNP approaches: LNAV, LNAV/VNAV, LPV |
+| RNP AR APCH | Approaches needing special authorisation, in demanding environments |
+
+## Jamming and spoofing
+
+Since 2022, cases of **jamming** (the signal is blocked) and <Term id="gnss-spoofing">spoofing</Term> (false signals are broadcast) have risen sharply, especially near conflict zones. EASA has published and updated a safety information bulletin on the subject, whose fourth revision dates from July 2026. It warns that **spoofing is more dangerous** than jamming, because it is harder to detect and can mislead several systems at once.
+
+Symptoms highlighted by EASA:
+
+- **discrepancies** between the positions of different navigation systems;
+- **abnormal** differences between groundspeed and TAS;
+- **time jumps**;
+- **false** TAWS alerts;
+- deviations in the hybrid inertial/GNSS position.
+
+The response is to **detect** the problem, **inform** ATC, rely on **inertial navigation and conventional radio aids** (VOR, DME, ILS) and know the operator's procedures.

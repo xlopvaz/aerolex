@@ -1,0 +1,65 @@
+---
+lesson: ndb-and-adf
+course: radio-navigation
+lang: es
+title: "NDB y ADF"
+summary: "Cómo funciona la radiobaliza no direccional, cómo se lee el ADF y el RMI, la marcación relativa y magnética, y los errores que afectan a esta señal."
+objectives:
+  - "Calcular la marcación magnética a la estación a partir del rumbo y la marcación relativa"
+  - "Distinguir QDM y QDR"
+  - "Reconocer los errores del ADF"
+minutes: 12
+terms: [ndb, adf]
+quiz: radio-navigation-01
+sources: [faa-aim, faa-ifh, faa-phak, icao-doc-8400]
+review:
+  status: draft
+---
+
+## La radioayuda más sencilla
+
+Un <Term id="ndb">NDB</Term> emite en todas direcciones en **onda larga y media** (en EE. UU., normalmente entre 190 y 535 kHz). En el avión, el <Term id="adf">ADF</Term> tiene una aguja que **apunta a la estación**. No hay radiales ni indicación TO/FROM: solo la dirección hacia la baliza.
+
+Como cualquier radioayuda, se **identifica** escuchando su código Morse antes de usarla.
+
+## La marcación relativa
+
+La **marcación relativa** (RB) es el ángulo entre el **morro** del avión y la estación, medido en sentido horario. Un ADF de rosa fija la muestra directamente: si la aguja marca 090, la estación está a la derecha del avión, a 90° del morro.
+
+Para saber hacia dónde está la estación respecto al norte magnético:
+
+> marcación magnética a la estación (QDM) = rumbo magnético + marcación relativa
+
+(restando 360 si pasa de 360).
+
+Ejemplo: rumbo magnético **300°**, marcación relativa **090°** → 300 + 90 = 390 − 360 = **030°**. Para ir a la estación sin viento habría que volar con rumbo 030°.
+
+## QDM y QDR
+
+Son códigos Q de la OACI que se siguen usando:
+
+- **QDM**: rumbo magnético que hay que seguir (sin viento) para llegar **a** la estación.
+- **QDR**: marcación magnética del avión **desde** la estación.
+
+Siempre difieren en **180°**: si el QDM es 030°, el QDR es 210°.
+
+## El RMI
+
+El **indicador radiomagnético** (RMI) combina una rosa que gira con el rumbo del avión y una o dos agujas para el ADF o el VOR. Así la **cabeza** de la aguja marca directamente el **QDM** y la **cola**, el **QDR**, sin cálculos.
+
+## Errores del ADF
+
+Las ondas largas y medias tienen limitaciones que el piloto debe conocer:
+
+| Error | Qué ocurre |
+|---|---|
+| **Tormentas** | La aguja puede apuntar a las descargas eléctricas en lugar de a la estación |
+| **Efecto nocturno** | De noche, las ondas reflejadas en la ionosfera interfieren con la onda directa y la aguja oscila |
+| **Refracción costera** | La onda cambia de dirección al cruzar la línea de costa |
+| **Efecto montaña** | Las montañas reflejan la señal y desvían la indicación |
+
+Además, no hay aviso de fallo fiable en todos los equipos: si no se oye el identificador, la indicación no es fiable.
+
+<Callout type="tip" label="Seguir una aguja no es seguir una derrota">
+Si se vuela siempre con la aguja en el morro (*homing*), con viento cruzado se llega a la estación siguiendo una curva. Para seguir una derrota recta hay que aplicar una corrección de deriva y mantener la aguja desplazada hacia el lado contrario.
+</Callout>

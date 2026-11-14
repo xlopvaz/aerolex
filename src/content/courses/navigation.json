@@ -1,0 +1,45 @@
+{
+  "path": "pilot-training",
+  "order": 6,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de pilotos · Módulo 6: Navegación",
+    "en": "Pilot Academy · Module 6: Navigation"
+  },
+  "description": {
+    "es": "La navegación general como base de todo lo demás: la Tierra y las cartas, el triángulo de velocidades, la navegación a estima con la regla del 1 en 60, los niveles de crucero y la planificación del descenso. Con cálculos y preguntas tipo ATPL.",
+    "en": "General navigation as the basis for everything else: the Earth and charts, the wind triangle, dead reckoning with the 1-in-60 rule, cruising levels and descent planning. With calculations and ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Work with latitude, longitude, nautical miles and projections",
+      "Solve the wind triangle and wind components",
+      "Navigate by dead reckoning and correct the track with 1 in 60",
+      "Choose cruising levels and plan the descent"
+    ],
+    "es": [
+      "Trabajar con latitud, longitud, millas náuticas y proyecciones",
+      "Resolver el triángulo de velocidades y las componentes del viento",
+      "Navegar a estima y corregir la derrota con el 1 en 60",
+      "Elegir niveles de crucero y planificar el descenso"
+    ]
+  },
+  "lessons": [
+    "earth-and-charts",
+    "the-wind-triangle",
+    "dead-reckoning",
+    "levels-and-descent-planning"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-phak",
+    "icao-annex-2",
+    "faa-aim",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

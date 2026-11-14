@@ -1,0 +1,55 @@
+{
+  "path": "pilot-training",
+  "order": 7,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 7: Radionavegación",
+    "en": "Pilot Academy · Module 7: Radio Navigation"
+  },
+  "description": {
+    "es": "Las ayudas a la navegación que usa un piloto profesional: NDB y ADF, VOR y DME, ILS con las categorías de aproximación, GNSS con RNAV y RNP y la amenaza de la suplantación, y radar y vigilancia. Con cálculos de marcaciones y preguntas tipo ATPL.",
+    "en": "The navigation aids a professional pilot uses: NDB and ADF, VOR and DME, ILS with approach categories, GNSS with RNAV and RNP and the spoofing threat, and radar and surveillance. With bearing calculations and ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Work out bearings with ADF and RMI",
+      "Orient yourself with VOR and DME and avoid reverse sensing",
+      "Explain the ILS and approach categories",
+      "Distinguish RNAV and RNP and recognise GNSS interference",
+      "Describe primary radar, secondary radar and ADS-B"
+    ],
+    "es": [
+      "Calcular marcaciones con ADF y RMI",
+      "Orientarse con VOR y DME y evitar la sensibilidad inversa",
+      "Explicar el ILS y las categorías de aproximación",
+      "Distinguir RNAV y RNP y reconocer la interferencia GNSS",
+      "Describir el radar primario, el secundario y el ADS-B"
+    ]
+  },
+  "lessons": [
+    "ndb-and-adf",
+    "vor-and-dme",
+    "ils-approaches",
+    "gnss-and-pbn",
+    "radar-and-surveillance"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-aim",
+    "faa-ifh",
+    "faa-phak",
+    "icao-doc-8400",
+    "eu-923-2012",
+    "icao-annex-6",
+    "skybrary-precision-approach",
+    "icao-doc-9613",
+    "easa-gnss-interference",
+    "icao-doc-4444",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
