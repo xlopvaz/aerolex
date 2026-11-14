@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Cost index",
+    "es": "Índice de coste"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A number entered in the flight management system that expresses the ratio between time-related costs and fuel cost; a low value gives a slower, fuel-saving flight and a high value a faster one.",
+    "es": "Número que se introduce en el sistema de gestión de vuelo y expresa la relación entre los costes que dependen del tiempo y el coste del combustible; un valor bajo da un vuelo más lento y económico, y uno alto, más rápido."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A setting that tells the FMS whether to save fuel or save time.",
+    "es": "Un ajuste que dice al FMS si ahorrar combustible o tiempo."
+  },
+  "example": {
+    "en": "With cost index 0 the FMS flies at maximum range speed.",
+    "es": "Con índice de coste 0, el FMS vuela a la velocidad de máximo alcance."
+  },
+  "pronunciation": {
+    "en": "KOST IN-deks",
+    "es": "ín-di-ce de cos-te"
+  },
+  "synonyms": {
+    "en": [
+      "CI"
+    ],
+    "es": [
+      "CI"
+    ]
+  },
+  "related": [
+    "fms",
+    "cruise"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

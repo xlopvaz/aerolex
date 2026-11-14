@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En el modelo SHELL, ¿qué elemento está en el centro?",
+        "en": "In the SHELL model, which element is at the centre?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El equipo (Hardware)",
+            "en": "The equipment (Hardware)"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El entorno",
+            "en": "The environment"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los procedimientos",
+            "en": "The procedures"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La persona (Liveware)",
+            "en": "The person (Liveware)"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Se estudian sus relaciones con los demás elementos.",
+        "en": "Its interfaces with the other elements are studied."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Dos interruptores iguales uno junto al otro son un problema de la relación…",
+        "en": "Two identical switches side by side are a problem in the interface…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Persona – Software",
+            "en": "Person – Software"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Persona – Entorno",
+            "en": "Person – Environment"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Persona – Hardware",
+            "en": "Person – Hardware"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Persona – Persona",
+            "en": "Person – Person"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El hardware es el equipo.",
+        "en": "Hardware is the equipment."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En el modelo del queso suizo, una condición latente es…",
+        "en": "In the Swiss cheese model, a latent condition is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un error del piloto en ese momento",
+            "en": "A pilot error at that moment"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una debilidad presente en el sistema mucho antes del accidente",
+            "en": "A weakness present in the system long before the accident"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un fallo de motor",
+            "en": "An engine failure"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una tormenta",
+            "en": "A thunderstorm"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los fallos activos son los de primera línea.",
+        "en": "Active failures are those at the front line."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué efecto tiene un estrés excesivo?",
+        "en": "What is the effect of excessive stress?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Visión de túnel, olvidos y fijación",
+            "en": "Tunnel vision, forgetting and fixation"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Mejora siempre el rendimiento",
+            "en": "It always improves performance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Elimina la fatiga",
+            "en": "It removes fatigue"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No tiene efecto",
+            "en": "It has no effect"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Un poco de estrés ayuda; mucho, no.",
+        "en": "A little stress helps; a lot does not."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La atención suele ser mínima…",
+        "en": "Alertness is usually lowest…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A mediodía",
+            "en": "At midday"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Justo después de despertar por la mañana",
+            "en": "Right after waking in the morning"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Por la tarde",
+            "en": "In the afternoon"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "De madrugada, entre las 2 y las 6 de la hora del cuerpo",
+            "en": "In the early hours, between 2 and 6 body time"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Lo marca el ritmo circadiano.",
+        "en": "The circadian rhythm sets it."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Cuál es el antídoto de la actitud de invulnerabilidad?",
+        "en": "What is the antidote to the invulnerability attitude?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«Las normas suelen tener razón»",
+            "en": "\"Rules are usually right\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Pensar antes de actuar»",
+            "en": "\"Think before acting\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Me puede pasar»",
+            "en": "\"It could happen to me\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Puedo cambiar las cosas»",
+            "en": "\"I can make a difference\""
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Los otros antídotos corresponden a otras actitudes.",
+        "en": "The other antidotes belong to other attitudes."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "En FORDEC, la «O» significa…",
+        "en": "In FORDEC, the \"O\" stands for…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Oxígeno",
+            "en": "Oxygen"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Opciones",
+            "en": "Options"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Orden",
+            "en": "Order"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Operación",
+            "en": "Operation"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Facts, Options, Risks and benefits, Decision, Execution, Check.",
+        "en": "Facts, Options, Risks and benefits, Decision, Execution, Check."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "El tiempo de consciencia útil a 25.000 ft es de unos…",
+        "en": "The time of useful consciousness at 25,000 ft is about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3–5 minutos",
+            "en": "3–5 minutes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 segundos",
+            "en": "30 seconds"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15 segundos",
+            "en": "15 seconds"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A 35.000 ft, 30–60 segundos.",
+        "en": "At 35,000 ft, 30–60 seconds."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Una pista estrecha tiende a hacer volar…",
+        "en": "A narrow runway tends to make you fly…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Alto",
+            "en": "High"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Rápido",
+            "en": "Fast"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Desviado a la izquierda",
+            "en": "Off to the left"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Bajo",
+            "en": "Low"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El piloto se cree más alto de lo que está.",
+        "en": "The pilot thinks they are higher than they are."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "Los tres niveles de la conciencia situacional son…",
+        "en": "The three levels of situational awareness are…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ver, oír y tocar",
+            "en": "See, hear and touch"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Planificar, volar y aterrizar",
+            "en": "Plan, fly and land"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Percibir, comprender y anticipar",
+            "en": "Perceive, understand and anticipate"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aviar, navegar y comunicar",
+            "en": "Aviate, navigate and communicate"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El tercer nivel es el que permite adelantarse.",
+        "en": "The third level lets you stay ahead."
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+---
+lesson: take-off-performance
+course: flight-performance
+lang: es
+title: "Actuaciones de despegue"
+summary: "Las distancias declaradas de la pista, las velocidades V1, VR y V2, cómo se calcula la distancia de despegue de un avión de transporte y qué factores limitan la masa al despegue."
+objectives:
+  - "Distinguir TORA, TODA, ASDA y LDA"
+  - "Explicar el significado de V1, VR y V2 y su orden"
+  - "Enumerar los factores que limitan la masa al despegue"
+minutes: 15
+terms: [tora, toda, clearway, asda, stopway, lda, v1, vr, v2, density-altitude, assumed-temperature]
+quiz: flight-performance-01
+sources: [eu-965-2012, cfr-14-part-25, icao-annex-14, faa-phak]
+review:
+  status: draft
+---
+
+## Las distancias declaradas
+
+Cada pista publica cuatro distancias:
+
+| Distancia | Qué es |
+|---|---|
+| <Term id="tora" /> | Recorrido de despegue disponible: la pista apta para rodar |
+| <Term id="toda" /> | TORA + <Term id="clearway">zona libre de obstáculos</Term> |
+| <Term id="asda" /> | TORA + <Term id="stopway">zona de parada</Term> |
+| <Term id="lda" /> | Distancia de aterrizaje disponible (puede ser menor si hay umbral desplazado) |
+
+Así, una pista puede ser corta para frenar pero suficiente para despegar si tiene una zona libre de obstáculos detrás, o al revés.
+
+## Las velocidades del despegue
+
+- **VMCG**: la velocidad mínima a la que, si falla un motor en tierra, se puede mantener el control direccional solo con los mandos aerodinámicos.
+- <Term id="v1" />: la **velocidad de decisión**. Si el fallo se reconoce antes de V1, se **interrumpe** el despegue; a partir de V1, se **continúa**. V1 no puede ser menor que VMCG.
+- <Term id="vr" />: la velocidad de **rotación**. V1 no puede ser mayor que VR.
+- <Term id="v2" />: la velocidad de **seguridad en el despegue**, que se alcanza a 35 ft con un motor parado. Según las normas de certificación, para la mayoría de los aviones de transporte no es menor que **1,13 veces la velocidad de pérdida** de referencia ni que **1,10 veces la velocidad mínima de control en el aire**.
+
+El orden es siempre: **VMCG ≤ V1 ≤ VR ≤ V2**.
+
+## La distancia de despegue
+
+Para un avión de transporte en pista seca, la distancia de despegue es la **mayor** de:
+
+1. la distancia hasta **35 ft** con un **fallo de motor** reconocido en V1; y
+2. el **115 %** de la distancia hasta 35 ft con **todos los motores**.
+
+La **distancia de aceleración-parada** es la necesaria para acelerar hasta V1 y frenar hasta pararse. El despegue es posible si:
+
+- recorrido de despegue ≤ TORA;
+- distancia de despegue ≤ TODA;
+- distancia de aceleración-parada ≤ ASDA.
+
+Cuando la distancia de despegue con fallo y la de aceleración-parada son iguales, se habla de **pista equilibrada**.
+
+## Qué limita la masa al despegue
+
+| Factor | Efecto |
+|---|---|
+| **Masa** | Más masa, más distancia y peor ascenso |
+| <Term id="density-altitude">Altitud de densidad</Term> | Calor y elevación reducen el empuje y la sustentación: más distancia |
+| **Viento** | El de cara acorta la distancia; el de cola la alarga. En la UE se cuenta solo el **50 %** del viento de cara notificado y al menos el **150 %** del de cola |
+| **Pendiente** | Cuesta arriba, más distancia de despegue |
+| **Estado de la pista** | Agua, nieve o hielo alargan la aceleración y sobre todo la frenada |
+| **Flaps** | Más flap acorta la carrera pero empeora el ascenso |
+
+Además limitan la masa el **gradiente de ascenso** y los **obstáculos** (lección 2), la **velocidad de los neumáticos** y la **energía de los frenos**. La masa al despegue máxima es la menor de todas.
+
+Cuando la masa real es menor que la permitida, se puede despegar con **empuje reducido**, por ejemplo con una <Term id="assumed-temperature">temperatura supuesta</Term>: se calcula como si hiciera más calor y los motores sufren menos.
+
+<Callout type="info" label="La altitud de densidad en números">
+Una regla práctica: cada grado por encima de la temperatura ISA añade unos 120 ft de altitud de densidad. A 2.000 ft con 30 °C (ISA +19), el avión se comporta como a unos 4.300 ft.
+</Callout>

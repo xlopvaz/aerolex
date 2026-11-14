@@ -1,0 +1,46 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Hyperventilation",
+    "es": "Hiperventilación"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Breathing faster or deeper than the body needs, often from stress or anxiety, which lowers the carbon dioxide in the blood and causes dizziness, tingling and symptoms similar to hypoxia.",
+    "es": "Respirar más rápido o más profundo de lo que el cuerpo necesita, a menudo por estrés o ansiedad, lo que reduce el dióxido de carbono en la sangre y produce mareo, hormigueo y síntomas parecidos a la hipoxia."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Breathing too fast, which makes you dizzy and tingly.",
+    "es": "Respirar demasiado rápido, lo que da mareo y hormigueo."
+  },
+  "example": {
+    "en": "The student slowed her breathing and the hyperventilation symptoms went away.",
+    "es": "La alumna respiró más despacio y desaparecieron los síntomas de hiperventilación."
+  },
+  "pronunciation": {
+    "en": "hy-per-ven-tih-LAY-shun",
+    "es": "hi-per-ven-ti-la-ción"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "hypoxia"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

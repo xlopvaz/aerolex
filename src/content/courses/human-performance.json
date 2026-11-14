@@ -1,0 +1,44 @@
+{
+  "path": "pilot-training",
+  "order": 12,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 12: Factores humanos",
+    "en": "Pilot Academy · Module 12: Human Performance"
+  },
+  "description": {
+    "es": "El piloto como parte del sistema: la hipoxia y el tiempo de consciencia útil, los gases atrapados y el buceo, la aptitud para volar con IMSAFE, la desorientación espacial y las ilusiones vestibulares y visuales, y el error humano con SHELL, el queso suizo, el estrés, la fatiga, las actitudes peligrosas y FORDEC.",
+    "en": "The pilot as part of the system: hypoxia and time of useful consciousness, trapped gases and diving, fitness to fly with IMSAFE, spatial disorientation and vestibular and visual illusions, and human error with SHELL, Swiss cheese, stress, fatigue, hazardous attitudes and FORDEC."
+  },
+  "objectives": {
+    "en": [
+      "Recognise the physiological effects of flight and fitness to fly",
+      "Prevent spatial disorientation and approach illusions",
+      "Explain human error and apply decision methods"
+    ],
+    "es": [
+      "Reconocer los efectos fisiológicos del vuelo y la aptitud para volar",
+      "Prevenir la desorientación espacial y las ilusiones en la aproximación",
+      "Explicar el error humano y aplicar métodos de decisión"
+    ]
+  },
+  "lessons": [
+    "the-body-in-flight",
+    "senses-and-illusions",
+    "human-error-stress-and-decisions"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "faa-phak",
+    "faa-aim",
+    "easa-ear-aircrew",
+    "faa-afh",
+    "icao-doc-9683",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

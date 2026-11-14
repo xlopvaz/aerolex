@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Los canales semicirculares dejan de notar un giro constante tras unos…",
+        "en": "The semicircular canals stop sensing a constant turn after about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "20 segundos",
+            "en": "20 seconds"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2 segundos",
+            "en": "2 seconds"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 minutos",
+            "en": "5 minutes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nunca dejan de notarlo",
+            "en": "They never stop sensing it"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Por eso un giro mantenido se siente como vuelo recto.",
+        "en": "That is why a sustained turn feels like straight flight."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En un motor y al aire de noche, la ilusión somatográvica hace sentir…",
+        "en": "In a night go-around, the somatogravic illusion makes you feel…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que se pica",
+            "en": "That you are pitching down"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que se gira a la izquierda",
+            "en": "That you are turning left"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nada",
+            "en": "Nothing"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que se encabrita demasiado",
+            "en": "That you are pitching up too much"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El riesgo es bajar el morro cerca del suelo.",
+        "en": "The risk is lowering the nose near the ground."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Mover bruscamente la cabeza durante un giro prolongado puede provocar…",
+        "en": "Moving the head abruptly during a prolonged turn can cause…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La ilusión del agujero negro",
+            "en": "The black-hole illusion"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hipoxia",
+            "en": "Hypoxia"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La ilusión de Coriolis",
+            "en": "The Coriolis illusion"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La ilusión de la pista ancha",
+            "en": "The wide-runway illusion"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Da sensación de giro en otro eje.",
+        "en": "It gives a feeling of rotation in another axis."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Una pista en subida hace creer al piloto que está…",
+        "en": "An upsloping runway makes the pilot think they are…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Demasiado bajo, y tiende a volar alto",
+            "en": "Too low, so they tend to fly high"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Demasiado alto, y tiende a volar bajo",
+            "en": "Too high, so they tend to fly low"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Demasiado lejos",
+            "en": "Too far away"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Demasiado rápido",
+            "en": "Too fast"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Igual que una pista estrecha.",
+        "en": "Like a narrow runway."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En una aproximación nocturna sobre el mar hacia una pista iluminada, el riesgo típico es…",
+        "en": "On a night approach over the sea towards a lit runway, the typical risk is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Volar demasiado bajo",
+            "en": "Flying too low"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Volar demasiado alto",
+            "en": "Flying too high"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ir demasiado lento",
+            "en": "Flying too slowly"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Perder la radio",
+            "en": "Losing the radio"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es la aproximación en agujero negro.",
+        "en": "It is the black-hole approach."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Una pista ancha hace que el piloto…",
+        "en": "A wide runway makes the pilot…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se crea alto y vuele bajo",
+            "en": "Think they are high and fly low"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No perciba la pista",
+            "en": "Not see the runway"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aterrice largo siempre",
+            "en": "Always land long"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se crea bajo y vuele alto",
+            "en": "Think they are low and fly high"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La estrecha produce el efecto contrario.",
+        "en": "A narrow one does the opposite."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Cuál es la mejor defensa contra la desorientación espacial?",
+        "en": "What is the best defence against spatial disorientation?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Mover la cabeza para comprobar",
+            "en": "Move your head to check"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Fiarse de las sensaciones",
+            "en": "Trust your sensations"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Creer a los instrumentos",
+            "en": "Believe the instruments"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cerrar los ojos",
+            "en": "Close your eyes"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Sobre todo al indicador de actitud.",
+        "en": "Above all the attitude indicator."
+      }
+    }
+  ]
+}

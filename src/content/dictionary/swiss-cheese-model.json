@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Swiss cheese model",
+    "es": "Modelo del queso suizo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A model, proposed by James Reason, in which each defence of a system is a slice with holes (weaknesses); an accident happens when the holes in several slices line up and let a hazard through.",
+    "es": "Modelo, propuesto por James Reason, en el que cada defensa de un sistema es una loncha con agujeros (debilidades); el accidente ocurre cuando los agujeros de varias lonchas se alinean y dejan pasar un peligro."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Accidents happen when several small failures line up.",
+    "es": "Los accidentes ocurren cuando se alinean varios fallos pequeños."
+  },
+  "example": {
+    "en": "The investigation used the Swiss cheese model to show how four defences had failed.",
+    "es": "La investigación usó el modelo del queso suizo para mostrar cómo habían fallado cuatro defensas."
+  },
+  "pronunciation": {
+    "en": "SWISS CHEEZ MOD-ul",
+    "es": "mo-de-lo del que-so sui-zo"
+  },
+  "synonyms": {
+    "en": [
+      "Reason model"
+    ],
+    "es": [
+      "modelo de Reason"
+    ]
+  },
+  "related": [
+    "just-culture",
+    "shell-model"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

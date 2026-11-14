@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El gradiente mínimo del segundo segmento para un bimotor es…",
+        "en": "The minimum second-segment gradient for a twin is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2,4 %",
+            "en": "2.4 %"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1,2 %",
+            "en": "1.2 %"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "3,0 %",
+            "en": "3.0 %"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "0,8 %",
+            "en": "0.8 %"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "2,7 % para trimotores y 3,0 % para cuatrimotores.",
+        "en": "2.7 % for three-engine and 3.0 % for four-engine aircraft."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿En qué configuración se vuela el segundo segmento?",
+        "en": "In which configuration is the second segment flown?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tren abajo y flaps de aterrizaje",
+            "en": "Gear down and landing flaps"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Limpio y empuje máximo continuo",
+            "en": "Clean and maximum continuous thrust"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tren abajo y ralentí",
+            "en": "Gear down and idle"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tren arriba, flaps de despegue, V2 y empuje de despegue",
+            "en": "Gear up, take-off flaps, V2 and take-off thrust"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El tramo final es limpio con empuje máximo continuo.",
+        "en": "The final segment is clean with maximum continuous thrust."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La trayectoria neta de un bimotor es…",
+        "en": "A twin's net flight path is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La bruta más un 0,8 %",
+            "en": "The gross path plus 0.8 %"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La que vuela con todos los motores",
+            "en": "The all-engine path"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La bruta con el gradiente reducido en 0,8 puntos",
+            "en": "The gross path with its gradient reduced by 0.8 points"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La del piloto automático",
+            "en": "The autopilot path"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es un margen de seguridad.",
+        "en": "It is a safety margin."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "La trayectoria neta de despegue debe pasar sobre los obstáculos con al menos…",
+        "en": "The net take-off flight path must clear obstacles by at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2.000 ft",
+            "en": "2,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "35 ft",
+            "en": "35 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1.000 ft",
+            "en": "1,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5 ft",
+            "en": "5 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "2.000 ft es el margen en ruta tras fallo de motor.",
+        "en": "2,000 ft is the en-route margin after an engine failure."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un gradiente del 3 % a 120 kt de velocidad respecto al suelo da aproximadamente…",
+        "en": "A 3 % gradient at 120 kt groundspeed gives approximately…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "360 ft/min",
+            "en": "360 ft/min"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "36 ft/min",
+            "en": "36 ft/min"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "3.600 ft/min",
+            "en": "3,600 ft/min"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "120 ft/min",
+            "en": "120 ft/min"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "3 × 120 = 360.",
+        "en": "3 × 120 = 360."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un índice de coste 0…",
+        "en": "A cost index of 0…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Da la velocidad máxima",
+            "en": "Gives maximum speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Apaga el FMS",
+            "en": "Switches the FMS off"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Significa combustible gratis",
+            "en": "Means free fuel"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Da la velocidad de máximo alcance",
+            "en": "Gives maximum range speed"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Valores altos priorizan el tiempo.",
+        "en": "High values favour time."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Por qué se hacen ascensos escalonados en vuelos largos?",
+        "en": "Why are step climbs flown on long flights?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para evitar el jet stream siempre",
+            "en": "To always avoid the jet stream"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque lo exige el reglamento",
+            "en": "Because the rules require it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque la altitud óptima sube a medida que el avión pesa menos",
+            "en": "Because the optimum altitude rises as the aircraft gets lighter"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para calentar los motores",
+            "en": "To warm the engines"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Al quemar combustible, conviene volar más alto.",
+        "en": "As fuel burns off, flying higher pays."
+      }
+    }
+  ]
+}

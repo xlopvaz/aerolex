@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Spatial disorientation",
+    "es": "Desorientación espacial"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The inability of a pilot to correctly perceive the aircraft's attitude, motion or position relative to the Earth, usually because the inner ear or vision gives false cues when there is no clear outside horizon.",
+    "es": "Incapacidad del piloto para percibir correctamente la actitud, el movimiento o la posición del avión respecto a la Tierra, normalmente porque el oído interno o la vista dan señales falsas cuando no hay un horizonte exterior claro."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When your body tells you the aircraft is doing something it isn't.",
+    "es": "Cuando tu cuerpo te dice que el avión hace algo que no está haciendo."
+  },
+  "example": {
+    "en": "In cloud, trust the instruments to avoid spatial disorientation.",
+    "es": "Dentro de nubes, fíate de los instrumentos para evitar la desorientación espacial."
+  },
+  "pronunciation": {
+    "en": "SPAY-shul dis-or-ee-en-TAY-shun",
+    "es": "de-so-rien-ta-ción es-pa-cial"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "somatogravic-illusion",
+    "attitude-indicator",
+    "imc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

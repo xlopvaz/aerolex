@@ -1,0 +1,60 @@
+---
+lesson: climb-and-cruise-performance
+course: flight-performance
+lang: es
+title: "Ascenso y crucero"
+summary: "Los segmentos de ascenso tras un fallo de motor con sus gradientes mínimos, la diferencia entre trayectoria bruta y neta, y cómo se elige la velocidad y la altitud de crucero."
+objectives:
+  - "Enumerar los segmentos de ascenso y sus gradientes mínimos"
+  - "Distinguir la trayectoria bruta de la neta"
+  - "Explicar el índice de coste, la altitud óptima y el descenso tras fallo de motor"
+minutes: 14
+terms: [cost-index, fms, drift-down]
+quiz: flight-performance-02
+sources: [cfr-14-part-25, eu-965-2012, faa-phak, faa-afh]
+review:
+  status: draft
+---
+
+## La trayectoria de despegue con un motor parado
+
+La trayectoria de despegue empieza a **35 ft** al final de la distancia de despegue y se divide en segmentos. Las normas de certificación fijan un **gradiente mínimo** con el motor crítico parado:
+
+| Segmento | Configuración | Bimotor | Trimotor | Cuatrimotor |
+|---|---|---|---|---|
+| **1.º** | Tren abajo, flaps de despegue, V2 | Positivo | 0,3 % | 0,5 % |
+| **2.º** | Tren arriba, flaps de despegue, V2, empuje de despegue | **2,4 %** | 2,7 % | 3,0 % |
+| **3.º** | Aceleración y retracción de flaps | — | — | — |
+| **Final** | Limpio, empuje máximo continuo | 1,2 % | 1,5 % | 1,7 % |
+
+El **segundo segmento** suele ser el más exigente y a menudo limita la masa al despegue en días calurosos o aeródromos altos.
+
+## Bruta y neta
+
+- La **trayectoria bruta** es la que el avión puede volar de verdad en las condiciones del cálculo.
+- La **trayectoria neta** es la bruta **reducida** con un margen: en un bimotor, el gradiente se reduce en **0,8 puntos**.
+
+Las normas de operación exigen que la trayectoria **neta** pase al menos **35 ft** por encima de los obstáculos de la zona de salida. Si no lo hace, hay que reducir la masa o usar un procedimiento de salida especial con fallo de motor.
+
+### Gradiente y velocidad vertical
+
+El gradiente es altura ganada por distancia recorrida; la velocidad vertical depende además de la velocidad respecto al suelo. Una aproximación útil:
+
+> velocidad vertical (ft/min) ≈ gradiente (%) × velocidad respecto al suelo (kt)
+
+Un 2,4 % a 150 kt son unos **360 ft/min**: poco, y por eso el segundo segmento es crítico.
+
+## El crucero
+
+- El **alcance específico** es la distancia recorrida por unidad de combustible (NM por kg). La velocidad de **máximo alcance** es la que lo hace mayor.
+- La velocidad de **largo alcance** es algo más rápida: sacrifica alrededor del 1 % de alcance específico a cambio de bastante velocidad.
+- El <Term id="cost-index">índice de coste</Term> que se introduce en el <Term id="fms" /> equilibra el coste del tiempo con el del combustible: **0** da el máximo alcance; valores altos, más velocidad.
+- La **altitud óptima** sube a medida que se quema combustible y el avión pesa menos. Por eso en vuelos largos se hacen **ascensos escalonados**.
+
+## Fallo de motor en crucero
+
+Con un motor parado, el avión no puede mantener el nivel de crucero. Se hace un <Term id="drift-down">descenso tras fallo de motor</Term> a una velocidad que frene la pérdida de altura, hasta el **techo con un motor**. Las normas de la UE exigen que la trayectoria neta en esa situación pase con un margen de **2.000 ft** sobre el terreno próximo a la ruta, o que haya un procedimiento para desviarse a tiempo.
+
+<Callout type="caution" label="Montañas y fallo de motor">
+En rutas sobre montañas, el techo con un motor puede quedar por debajo del terreno. Las compañías planifican puntos de escape: dónde girar y a qué aeródromo ir si falla un motor en cada tramo.
+</Callout>

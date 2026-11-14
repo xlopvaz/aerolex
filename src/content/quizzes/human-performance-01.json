@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Por qué aparece la hipoxia en altitud?",
+        "en": "Why does hypoxia occur at altitude?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque el aire tiene menos del 21 % de oxígeno",
+            "en": "Because the air has less than 21 % oxygen"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque baja la presión parcial del oxígeno",
+            "en": "Because the partial pressure of oxygen drops"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Por el frío",
+            "en": "Because of the cold"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por el ruido de los motores",
+            "en": "Because of engine noise"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El porcentaje es el mismo; la presión, no.",
+        "en": "The percentage is the same; the pressure is not."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El tiempo de consciencia útil orientativo a 35.000 ft es…",
+        "en": "The guide time of useful consciousness at 35,000 ft is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "30–60 segundos",
+            "en": "30–60 seconds"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3–5 minutos",
+            "en": "3–5 minutes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "20–30 minutos",
+            "en": "20–30 minutes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5 segundos exactos",
+            "en": "Exactly 5 seconds"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Y menos aún tras una descompresión rápida.",
+        "en": "And less still after a rapid decompression."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué es lo más peligroso de la hipoxia?",
+        "en": "What is most dangerous about hypoxia?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que siempre causa dolor de oídos",
+            "en": "It always causes ear pain"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que solo afecta de noche",
+            "en": "It only affects you at night"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que dura semanas",
+            "en": "It lasts for weeks"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que no duele y la persona no suele darse cuenta",
+            "en": "It does not hurt and the person usually does not notice"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Produce euforia y falsa confianza.",
+        "en": "It brings euphoria and false confidence."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En altitud, con síntomas que pueden ser de hipoxia o de hiperventilación, primero…",
+        "en": "At altitude, with symptoms that may be hypoxia or hyperventilation, first…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se respira en una bolsa",
+            "en": "Breathe into a bag"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se ignora",
+            "en": "Ignore it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se trata como hipoxia y se usa oxígeno",
+            "en": "Treat it as hypoxia and use oxygen"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se sube más",
+            "en": "Climb higher"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La hipoxia es la más peligrosa de las dos.",
+        "en": "Hypoxia is the more dangerous of the two."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Según la FAA, tras una inmersión sin paradas de descompresión, para volar hasta 8.000 ft se espera al menos…",
+        "en": "According to the FAA, after a dive with no decompression stops, before flying up to 8,000 ft wait at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "12 horas",
+            "en": "12 hours"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "48 horas",
+            "en": "48 hours"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hace falta esperar",
+            "en": "No wait is needed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "24 horas tras inmersiones con paradas o para volar más alto.",
+        "en": "24 hours after dives with stops or to fly higher."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué significa la «F» de IMSAFE?",
+        "en": "What does the \"F\" in IMSAFE stand for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Fatiga",
+            "en": "Fatigue"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Combustible",
+            "en": "Fuel"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Plan de vuelo",
+            "en": "Flight plan"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Miedo",
+            "en": "Fear"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion.",
+        "en": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Volar con un resfriado fuerte puede…",
+        "en": "Flying with a heavy cold can…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Mejorar la visión nocturna",
+            "en": "Improve night vision"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Evitar la hipoxia",
+            "en": "Prevent hypoxia"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No tiene efecto",
+            "en": "Have no effect"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Causar dolor intenso de oídos o senos en el descenso",
+            "en": "Cause severe ear or sinus pain on descent"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El aire no puede volver a entrar en el oído medio.",
+        "en": "Air cannot get back into the middle ear."
+      }
+    }
+  ]
+}

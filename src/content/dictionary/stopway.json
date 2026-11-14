@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Stopway",
+    "es": "Zona de parada"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A defined rectangular area on the ground beyond the end of the take-off run available, prepared as a suitable area in which an aeroplane can be stopped in the case of an abandoned take-off.",
+    "es": "Área rectangular definida en tierra a continuación del final del recorrido de despegue disponible, preparada como zona adecuada para detener un avión en caso de despegue interrumpido."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Extra paved area past the runway end for stopping after an aborted take-off.",
+    "es": "Zona pavimentada extra pasado el final de la pista para parar tras abortar un despegue."
+  },
+  "example": {
+    "en": "The stopway is not used for normal take-offs or landings.",
+    "es": "La zona de parada no se usa para despegues ni aterrizajes normales."
+  },
+  "pronunciation": {
+    "en": "STOP-way",
+    "es": "zo-na de pa-ra-da"
+  },
+  "synonyms": {
+    "en": [
+      "SWY"
+    ],
+    "es": [
+      "SWY"
+    ]
+  },
+  "related": [
+    "asda",
+    "v1"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

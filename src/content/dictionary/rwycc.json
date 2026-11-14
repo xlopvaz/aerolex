@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RWYCC",
+    "es": "RWYCC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Runway condition code",
+    "es": "Código de estado de la pista"
+  },
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A number from 6 (dry) to 0 (extremely slippery) that the aerodrome assigns to each third of a runway under the ICAO Global Reporting Format, used by crews to assess take-off and landing performance.",
+    "es": "Número de 6 (seca) a 0 (extremadamente resbaladiza) que el aeródromo asigna a cada tercio de pista según el formato mundial de notificación de la OACI y que la tripulación usa para evaluar las actuaciones de despegue y aterrizaje."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A 0–6 score for how slippery each part of the runway is.",
+    "es": "Una nota de 0 a 6 sobre lo resbaladiza que está cada parte de la pista."
+  },
+  "example": {
+    "en": "RWYCC 5/5/3: the last third of the runway was more slippery.",
+    "es": "RWYCC 5/5/3: el último tercio de la pista estaba más resbaladizo."
+  },
+  "pronunciation": {
+    "en": "ar-dub-ul-yoo-wai-see-see",
+    "es": "e-rre-uve-doble-i-ce-ce"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "runway",
+    "landing",
+    "anti-skid"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-grf",
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

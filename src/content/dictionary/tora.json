@@ -1,0 +1,54 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TORA",
+    "es": "TORA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Take-off run available",
+    "es": "Recorrido de despegue disponible"
+  },
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The length of runway declared available and suitable for the ground run of an aeroplane taking off.",
+    "es": "Longitud de pista que se declara disponible y apta para el recorrido en tierra de un avión que despega."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much runway you have to roll on for take-off.",
+    "es": "Cuánta pista tienes para rodar en el despegue."
+  },
+  "example": {
+    "en": "TORA 3,500 m, with a 200 m clearway beyond it.",
+    "es": "TORA de 3.500 m, con una zona libre de obstáculos de 200 m a continuación."
+  },
+  "pronunciation": {
+    "en": "TOR-uh",
+    "es": "to-ra"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "toda",
+    "asda",
+    "lda",
+    "runway"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

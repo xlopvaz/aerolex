@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Para despachar un reactor, la distancia de aterrizaje en seco debe caber en…",
+        "en": "To dispatch a jet, the dry landing distance must fit within…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El 70 % de la LDA",
+            "en": "70 % of the LDA"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El 100 % de la LDA",
+            "en": "100 % of the LDA"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El 50 % de la TORA",
+            "en": "50 % of the TORA"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 60 % de la LDA",
+            "en": "60 % of the LDA"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El 70 % es para los turbohélices.",
+        "en": "70 % is for turboprops."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Distancia certificada en seco 1.200 m. ¿LDA mínima para un reactor con pista mojada prevista?",
+        "en": "Certified dry distance 1,200 m. Minimum LDA for a jet with a wet runway expected?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2.000 m",
+            "en": "2,000 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1.380 m",
+            "en": "1,380 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2.300 m",
+            "en": "2,300 m"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1.714 m",
+            "en": "1,714 m"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "1.200 / 0,6 = 2.000; × 1,15 = 2.300.",
+        "en": "1,200 / 0.6 = 2,000; × 1.15 = 2,300."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "VREF no es menor que…",
+        "en": "VREF is not less than…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1,13 veces la velocidad de pérdida",
+            "en": "1.13 times the stall speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1,23 veces la velocidad de pérdida de referencia en configuración de aterrizaje",
+            "en": "1.23 times the reference stall speed in landing configuration"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "V1",
+            "en": "V1"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La velocidad máxima con flaps",
+            "en": "The maximum flap speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "1,13 VSR es el mínimo de V2.",
+        "en": "1.13 VSR is the V2 minimum."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuál de estos factores ACORTA la distancia de aterrizaje?",
+        "en": "Which of these factors SHORTENS the landing distance?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El viento de cara",
+            "en": "A headwind"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La pista cuesta abajo",
+            "en": "A downhill runway"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una altitud de densidad alta",
+            "en": "High density altitude"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Llegar rápido al umbral",
+            "en": "Arriving fast at the threshold"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Reduce la velocidad respecto al suelo en la toma.",
+        "en": "It reduces groundspeed at touchdown."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Con neumáticos a 144 psi, el aquaplaning dinámico puede empezar a unos…",
+        "en": "With tyres at 144 psi, dynamic aquaplaning can begin at about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "144 kt",
+            "en": "144 kt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "72 kt",
+            "en": "72 kt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1.296 kt",
+            "en": "1,296 kt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "108 kt",
+            "en": "108 kt"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "√144 = 12; 9 × 12 = 108.",
+        "en": "√144 = 12; 9 × 12 = 108."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un RWYCC de 6 significa…",
+        "en": "An RWYCC of 6 means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hielo",
+            "en": "Ice"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Seis milímetros de agua",
+            "en": "Six millimetres of water"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Pista seca",
+            "en": "Dry runway"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Frenada nula",
+            "en": "Nil braking"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "0 es extremadamente resbaladiza.",
+        "en": "0 is extremely slippery."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Se notifica RWYCC 5/4/2. ¿Qué código se usa para las actuaciones?",
+        "en": "RWYCC 5/4/2 is reported. Which code is used for performance?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "5",
+            "en": "5"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2",
+            "en": "2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "4",
+            "en": "4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La media, 3,7",
+            "en": "The average, 3.7"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Siempre el más bajo.",
+        "en": "Always the lowest."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "La ASDA es…",
+        "en": "ASDA is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La TORA más la zona de parada",
+            "en": "TORA plus the stopway"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La TORA más la zona libre de obstáculos",
+            "en": "TORA plus the clearway"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La distancia de aterrizaje disponible",
+            "en": "The landing distance available"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 115 % de la TORA",
+            "en": "115 % of TORA"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La TODA es la TORA más la zona libre de obstáculos.",
+        "en": "TODA is TORA plus the clearway."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "V1 es…",
+        "en": "V1 is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La velocidad de rotación",
+            "en": "The rotation speed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La velocidad de seguridad a 35 ft",
+            "en": "The safety speed at 35 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La velocidad de pérdida",
+            "en": "The stall speed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La velocidad de decisión en el despegue",
+            "en": "The take-off decision speed"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Antes de V1, interrumpir; después, continuar.",
+        "en": "Before V1, reject; after, continue."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "El gradiente neto de un bimotor con un 3,2 % bruto es…",
+        "en": "The net gradient of a twin with a 3.2 % gross gradient is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "4,0 %",
+            "en": "4.0 %"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3,2 %",
+            "en": "3.2 %"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2,4 %",
+            "en": "2.4 %"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1,6 %",
+            "en": "1.6 %"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "3,2 − 0,8 = 2,4.",
+        "en": "3.2 − 0.8 = 2.4."
+      }
+    }
+  ]
+}
