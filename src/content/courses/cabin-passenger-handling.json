@@ -1,0 +1,44 @@
+{
+  "path": "cabin-crew-training",
+  "order": 8,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de TCP · Módulo 8: Atención al pasajero",
+    "en": "Cabin Crew Academy · Module 8: Passenger Handling"
+  },
+  "description": {
+    "es": "El pasajero de principio a fin: embarque, equipaje y asientos de salida, bebés e información de seguridad, personas con movilidad reducida y otros pasajeros con necesidades especiales, y los derechos de los pasajeros ante retrasos y cancelaciones en la UE. Con diálogos en español e inglés.",
+    "en": "The passenger from start to finish: boarding, baggage and exit seating, infants and the safety briefing, persons with reduced mobility and other passengers with special needs, and passenger rights in delays and cancellations in the EU. With dialogues in English and Spanish."
+  },
+  "objectives": {
+    "en": [
+      "Organise boarding and baggage stowage safely",
+      "Allocate exit seats and look after infants and PRMs",
+      "Explain passenger rights without promising what is not yours to give"
+    ],
+    "es": [
+      "Organizar el embarque y la estiba del equipaje con seguridad",
+      "Asignar los asientos de salida y atender a bebés y PRM",
+      "Explicar los derechos de los pasajeros sin prometer lo que no corresponde"
+    ]
+  },
+  "lessons": [
+    "boarding-and-seating",
+    "special-passengers",
+    "passenger-rights"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "eu-965-2012",
+    "eu-1107-2006",
+    "iata-ahm",
+    "eu-261-2004",
+    "cjeu-sturgeon-2009"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

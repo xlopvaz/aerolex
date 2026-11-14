@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué compensación fija el Reglamento 261/2004 para un vuelo de 1.200 km?",
+        "en": "What compensation does Regulation 261/2004 set for a 1,200 km flight?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "400 €",
+            "en": "€400"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "600 €",
+            "en": "€600"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ninguna",
+            "en": "None"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "250 €",
+            "en": "€250"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Hasta 1.500 km: 250 €.",
+        "en": "Up to 1,500 km: €250."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Y para un vuelo de 5.000 km?",
+        "en": "And for a 5,000 km flight?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "250 €",
+            "en": "€250"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "400 €",
+            "en": "€400"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "600 €",
+            "en": "€600"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1.000 €",
+            "en": "€1,000"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Más de 3.500 km: 600 €.",
+        "en": "Over 3,500 km: €600."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Antes de denegar el embarque contra la voluntad de un pasajero, la aerolínea debe…",
+        "en": "Before denying boarding against a passenger's will, the airline must…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Llamar a la policía",
+            "en": "Call the police"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Pedir voluntarios",
+            "en": "Ask for volunteers"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Esperar 24 horas",
+            "en": "Wait 24 hours"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cobrar un suplemento",
+            "en": "Charge a supplement"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Los voluntarios reciben lo que se acuerde con ellos.",
+        "en": "Volunteers receive whatever is agreed with them."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Según la sentencia Sturgeon (2009), hay compensación por retraso cuando se llega al destino con…",
+        "en": "Under the Sturgeon ruling (2009), compensation for delay is due when arriving…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3 horas o más de retraso",
+            "en": "3 hours or more late"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 minutos de retraso",
+            "en": "30 minutes late"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1 hora de retraso",
+            "en": "1 hour late"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Salvo circunstancias extraordinarias.",
+        "en": "Unless there were extraordinary circumstances."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué NO incluye el derecho de asistencia?",
+        "en": "What is NOT included in the right to care?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Comida y bebida",
+            "en": "Food and drink"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Dos llamadas o mensajes",
+            "en": "Two calls or messages"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hotel si hay que pasar la noche",
+            "en": "A hotel if an overnight stay is needed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una compensación en dinero",
+            "en": "Cash compensation"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La compensación es un derecho distinto.",
+        "en": "Compensation is a separate right."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un pasajero pregunta al TCP cuánto le van a pagar por el retraso. Lo correcto es…",
+        "en": "A passenger asks the crew member how much they will be paid for the delay. The right answer is to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Prometerle 600 €",
+            "en": "Promise them €600"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Decirle que no tiene derechos",
+            "en": "Tell them they have no rights"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No prometer cifras y remitir a los canales de la aerolínea",
+            "en": "Not promise amounts and refer them to the airline's channels"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ignorarle",
+            "en": "Ignore them"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Informar con datos reales y ofrecer la asistencia de a bordo.",
+        "en": "Inform with real information and offer on-board care."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Quién NO debería sentarse en una fila de salida de emergencia?",
+        "en": "Who should NOT sit in an emergency exit row?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un adulto sano que acepta ayudar",
+            "en": "A healthy adult who agrees to help"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un pasajero que viaja con un bebé",
+            "en": "A passenger travelling with an infant"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un pasajero que entiende las instrucciones",
+            "en": "A passenger who understands the instructions"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un tripulante fuera de servicio",
+            "en": "An off-duty crew member"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Podría retrasar la evacuación.",
+        "en": "They could slow the evacuation."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "Según el Reglamento 1107/2006, la asistencia a las PRM en el aeropuerto es…",
+        "en": "Under Regulation 1107/2006, airport assistance for PRMs is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Gratuita",
+            "en": "Free of charge"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De pago",
+            "en": "Paid"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo para vuelos largos",
+            "en": "Only for long flights"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Opcional para el aeropuerto",
+            "en": "Optional for the airport"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La presta la entidad gestora del aeropuerto.",
+        "en": "It is provided by the airport managing body."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Durante el repostaje con pasajeros a bordo, la luz de no fumar…",
+        "en": "During refuelling with passengers on board, the no smoking sign…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Debe estar apagada",
+            "en": "Must be off"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Da igual",
+            "en": "Does not matter"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo en la cabina delantera",
+            "en": "Only in the forward cabin"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Debe estar encendida",
+            "en": "Must be on"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Y los cinturones desabrochados.",
+        "en": "And seat belts unfastened."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "Un menor no acompañado se entrega al llegar…",
+        "en": "An unaccompanied minor is handed over on arrival…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A cualquier adulto que lo pida",
+            "en": "To any adult who asks"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A otro pasajero",
+            "en": "To another passenger"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A un adulto identificado, con documentación firmada",
+            "en": "To an identified adult, with signed paperwork"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "A nadie: sale solo",
+            "en": "To nobody: they leave alone"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La entrega formal se hace en la salida y en la llegada.",
+        "en": "Formal handovers happen at departure and arrival."
+      }
+    }
+  ]
+}

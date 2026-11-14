@@ -1,0 +1,50 @@
+{
+  "path": "pilot-training",
+  "order": 8,
+  "level": "intermediate",
+  "title": {
+    "es": "Academia de pilotos · Módulo 8: Meteorología",
+    "en": "Pilot Academy · Module 8: Meteorology"
+  },
+  "description": {
+    "es": "La meteorología que necesita un piloto profesional, más allá de leer METAR y TAF: la atmósfera y la estabilidad, la presión y el viento, las masas de aire, los frentes y las nieblas, las tormentas y la cizalladura, y el engelamiento y la turbulencia. Con cálculos y preguntas tipo ATPL.",
+    "en": "The meteorology a professional pilot needs beyond reading METARs and TAFs: the atmosphere and stability, pressure and wind, air masses, fronts and fog, thunderstorms and wind shear, and icing and turbulence. With calculations and ATPL-style questions."
+  },
+  "objectives": {
+    "en": [
+      "Judge air stability and estimate cloud base",
+      "Explain the wind from pressure, Coriolis and friction",
+      "Recognise frontal weather and types of fog",
+      "Avoid thunderstorms and handle a microburst",
+      "Classify icing and turbulence"
+    ],
+    "es": [
+      "Valorar la estabilidad del aire y estimar la base de las nubes",
+      "Explicar el viento a partir de la presión, Coriolis y el rozamiento",
+      "Reconocer el tiempo asociado a frentes y los tipos de niebla",
+      "Evitar tormentas y actuar ante una microrráfaga",
+      "Clasificar el engelamiento y la turbulencia"
+    ]
+  },
+  "lessons": [
+    "atmosphere-stability-and-clouds",
+    "pressure-and-wind",
+    "air-masses-fronts-and-fog",
+    "thunderstorms-and-wind-shear",
+    "icing-and-turbulence"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-doc-7488",
+    "faa-awh",
+    "wmo-306",
+    "faa-ac-00-24",
+    "faa-aim",
+    "faa-turbulence"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

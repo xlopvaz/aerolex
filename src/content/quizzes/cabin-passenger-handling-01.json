@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Dónde NO puede ir el equipaje de mano en el despegue?",
+        "en": "Where may cabin baggage NOT go for take-off?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En el compartimento superior cerrado",
+            "en": "In a closed overhead bin"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A los pies en una fila de salida de emergencia",
+            "en": "At the feet in an emergency exit row"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Bajo el asiento de delante en una fila normal",
+            "en": "Under the seat in front in a normal row"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En la bodega",
+            "en": "In the hold"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "No puede bloquear pasillos, salidas ni equipo de emergencia.",
+        "en": "It must not block aisles, exits or emergency equipment."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Quién puede sentarse junto a una salida de emergencia?",
+        "en": "Who may sit next to an emergency exit?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un adulto capaz que acepta ayudar",
+            "en": "A capable adult who agrees to help"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una persona con movilidad reducida",
+            "en": "A person with reduced mobility"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un adulto con un bebé",
+            "en": "An adult with an infant"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un pasajero con un animal",
+            "en": "A passenger with an animal"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los demás podrían retrasar la evacuación.",
+        "en": "The others could slow the evacuation."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En la UE, un bebé en brazos va sujeto con…",
+        "en": "In the EU, a lap infant is held with…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El cinturón del adulto alrededor de los dos",
+            "en": "The adult's belt around both"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nada",
+            "en": "Nothing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El chaleco salvavidas",
+            "en": "The life jacket"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un cinturón suplementario unido al del adulto",
+            "en": "A supplementary loop belt attached to the adult's belt"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "O en un sistema de retención infantil en su propio asiento.",
+        "en": "Or in a child restraint system in their own seat."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué limita el número de bebés por fila?",
+        "en": "What limits the number of infants per row?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El número de ventanillas",
+            "en": "The number of windows"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El peso del avión",
+            "en": "The aircraft's weight"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El número de máscaras de oxígeno",
+            "en": "The number of oxygen masks"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La duración del vuelo",
+            "en": "The flight duration"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Cada bebé necesita una máscara disponible.",
+        "en": "Each infant needs a mask available."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Durante el repostaje con pasajeros a bordo, los cinturones deben ir…",
+        "en": "During refuelling with passengers on board, seat belts must be…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Abrochados",
+            "en": "Fastened"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Desabrochados",
+            "en": "Unfastened"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Da igual",
+            "en": "Either"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Abrochados solo en las filas de salida",
+            "en": "Fastened only in exit rows"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Para poder evacuar de inmediato.",
+        "en": "So that an immediate evacuation is possible."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué se comprueba al terminar el embarque?",
+        "en": "What is checked at the end of boarding?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que el número de pasajeros coincide con la documentación",
+            "en": "That the passenger count matches the documents"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que todos hayan pedido comida",
+            "en": "That everyone has ordered food"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que las ventanillas estén abiertas",
+            "en": "That the window blinds are open"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El equipaje de la bodega",
+            "en": "The hold baggage"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También se observa a los pasajeros durante el embarque.",
+        "en": "Passengers are also observed during boarding."
+      }
+    }
+  ]
+}

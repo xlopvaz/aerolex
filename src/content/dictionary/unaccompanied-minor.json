@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Unaccompanied minor",
+    "es": "Menor no acompañado"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "cabin-crew"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A child travelling without a parent or adult companion and placed in the care of the airline under its own conditions, typically with a handover at departure and arrival.",
+    "es": "Niño que viaja sin sus padres ni un adulto acompañante y queda bajo el cuidado de la aerolínea según sus propias condiciones, normalmente con una entrega en la salida y en la llegada."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A child flying alone and looked after by the crew.",
+    "es": "Un niño que vuela solo y al que cuida la tripulación."
+  },
+  "example": {
+    "en": "The unaccompanied minor was handed over to her grandmother after ID checks.",
+    "es": "La menor no acompañada fue entregada a su abuela tras comprobar la identidad."
+  },
+  "pronunciation": {
+    "en": "un-uh-KUM-puh-need MY-ner",
+    "es": "me-nor no a-com-pa-ña-do"
+  },
+  "synonyms": {
+    "en": [
+      "UM",
+      "UMNR"
+    ],
+    "es": [
+      "UM",
+      "UMNR"
+    ]
+  },
+  "related": [
+    "boarding",
+    "prm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "iata-ahm"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

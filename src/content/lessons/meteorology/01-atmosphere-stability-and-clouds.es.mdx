@@ -1,0 +1,70 @@
+---
+lesson: atmosphere-stability-and-clouds
+course: meteorology
+lang: es
+title: "La atmósfera, la estabilidad y las nubes"
+summary: "La atmósfera estándar, los gradientes térmicos, cómo se decide si el aire es estable o inestable, la humedad y el punto de rocío, y cómo estimar la base de las nubes."
+objectives:
+  - "Recordar los valores de la atmósfera estándar"
+  - "Comparar los gradientes térmicos para valorar la estabilidad"
+  - "Estimar la base de las nubes cumuliformes a partir de la temperatura y el punto de rocío"
+minutes: 13
+terms: [isa, tropopause, lapse-rate, temperature-inversion, dew-point, cumulonimbus]
+quiz: meteorology-01
+sources: [icao-doc-7488, faa-awh]
+review:
+  status: draft
+---
+
+## La atmósfera estándar
+
+La <Term id="isa" /> (atmósfera tipo internacional) es un modelo de referencia que se usa para calibrar instrumentos y calcular actuaciones:
+
+| Parámetro | Valor ISA |
+|---|---|
+| Temperatura al nivel del mar | **15 °C** |
+| Presión al nivel del mar | **1013,25 hPa** (29,92 inHg) |
+| Disminución de temperatura en la troposfera | Unos **2 °C por cada 1.000 ft** (6,5 °C por km) |
+| <Term id="tropopause">Tropopausa</Term> | **11 km (36.090 ft)**, con **−56,5 °C** |
+
+La atmósfera real casi nunca coincide con la ISA: la diferencia se expresa como «ISA + 10» o «ISA − 5».
+
+## Tres gradientes distintos
+
+Conviene no confundirlos:
+
+- El **gradiente ambiental**: cómo baja de verdad la temperatura con la altura en un lugar y momento concretos. Se mide con radiosondeos.
+- El **gradiente adiabático seco**: cómo se enfría una burbuja de aire **no saturado** que sube. Unos **3 °C por cada 1.000 ft**.
+- El **gradiente adiabático saturado**: cómo se enfría una burbuja **saturada** que sube. Es **menor** (en promedio, la mitad del seco), porque al condensarse el vapor libera calor.
+
+## Estable o inestable
+
+La <Term id="lapse-rate">comparación de gradientes</Term> dice si una burbuja de aire que sube seguirá subiendo o volverá a bajar:
+
+- Si el aire de alrededor se enfría con la altura **más deprisa** que la burbuja, esta queda más caliente y ligera y **sigue subiendo**: el aire es **inestable**.
+- Si se enfría **más despacio**, la burbuja queda más fría y pesada y **vuelve a bajar**: el aire es **estable**.
+
+Una <Term id="temperature-inversion">inversión</Term> (temperatura que sube con la altura) es la situación más estable posible.
+
+| Aire estable | Aire inestable |
+|---|---|
+| Nubes **estratiformes** (en capas) | Nubes **cumuliformes** (de desarrollo vertical) |
+| Precipitación **continua** | **Chubascos** |
+| Visibilidad **mala** (calima, niebla) | Visibilidad **buena** fuera de los chubascos |
+| Aire **en calma** | **Turbulencia** |
+
+## Humedad y punto de rocío
+
+El <Term id="dew-point">punto de rocío</Term> es la temperatura a la que el aire se saturaría si se enfriara sin cambiar su contenido de vapor. Cuanto más cerca están la temperatura y el punto de rocío (la **diferencia psicrométrica**), más cerca está el aire de la saturación, y más probables son las nubes bajas y la niebla.
+
+## Estimar la base de las nubes
+
+Una burbuja que sube por convección se enfría a unos 3 °C por cada 1.000 ft y su punto de rocío baja algo más de medio grado: la diferencia entre ambos se reduce unos **2,5 °C por cada 1.000 ft**. De ahí la regla del Manual de meteorología de la FAA:
+
+> base de nubes cumuliformes (ft sobre el suelo) ≈ (temperatura − punto de rocío) / 2,5 × 1.000
+
+Ejemplo: temperatura 22 °C y punto de rocío 12 °C → 10 / 2,5 × 1.000 = **4.000 ft**.
+
+## Las nubes
+
+Las nubes se agrupan por su altura (bajas, medias y altas) y por su forma (estratos, cúmulos, cirros). Para un piloto, las dos más importantes son el **cúmulo congesto** (TCU), una nube convectiva de gran desarrollo vertical, y el <Term id="cumulonimbus" /> (CB), la nube de tormenta. Son las únicas que se notifican expresamente en los METAR.

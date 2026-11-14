@@ -1,0 +1,55 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Thunderstorm",
+    "es": "Tormenta"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A storm produced by a cumulonimbus cloud, with lightning and thunder; it needs moisture, an unstable atmosphere and a lifting mechanism, and can bring severe turbulence, hail, icing, heavy rain and wind shear.",
+    "es": "Tormenta producida por un cumulonimbo, con rayos y truenos; necesita humedad, una atmósfera inestable y un mecanismo de ascenso, y puede traer turbulencia fuerte, granizo, engelamiento, lluvia intensa y cizalladura del viento."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A storm cloud with lightning, thunder and violent air inside.",
+    "es": "Una nube de tormenta con rayos, truenos y aire violento dentro."
+  },
+  "example": {
+    "en": "We deviated 20 NM around the thunderstorm.",
+    "es": "Nos desviamos 20 NM para rodear la tormenta."
+  },
+  "pronunciation": {
+    "en": "THUN-der-storm",
+    "es": "tor-men-ta"
+  },
+  "synonyms": {
+    "en": [
+      "TS",
+      "CB"
+    ],
+    "es": [
+      "TS"
+    ]
+  },
+  "related": [
+    "cumulonimbus",
+    "microburst",
+    "wind-shear"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh",
+    "faa-ac-00-24"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

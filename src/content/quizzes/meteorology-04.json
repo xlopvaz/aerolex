@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuáles son los tres ingredientes de una tormenta?",
+        "en": "What are the three ingredients of a thunderstorm?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Frío, viento y nubes altas",
+            "en": "Cold, wind and high cloud"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alta presión, calma y sol",
+            "en": "High pressure, calm and sun"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Humedad, aire inestable y un mecanismo de ascenso",
+            "en": "Moisture, unstable air and a lifting mechanism"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Niebla, inversión y lluvia",
+            "en": "Fog, inversion and rain"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El ascenso puede venir del calor del suelo, una montaña, un frente o la convergencia.",
+        "en": "Lifting may come from surface heating, a mountain, a front or convergence."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La fase más peligrosa de una tormenta es…",
+        "en": "The most dangerous stage of a thunderstorm is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El cúmulo",
+            "en": "The cumulus stage"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La madurez",
+            "en": "The mature stage"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La disipación",
+            "en": "The dissipating stage"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Todas por igual",
+            "en": "All equally"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Coexisten corrientes ascendentes y descendentes y la precipitación llega al suelo.",
+        "en": "Updrafts and downdrafts coexist and precipitation reaches the ground."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "La recomendación de la FAA para tormentas fuertes o ecos intensos es evitarlas por al menos…",
+        "en": "The FAA recommendation for severe storms or intense echoes is to avoid them by at least…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "20 millas",
+            "en": "20 miles"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "2 millas",
+            "en": "2 miles"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 millas siempre",
+            "en": "5 miles always"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "100 millas",
+            "en": "100 miles"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Especialmente bajo el yunque de un gran cumulonimbo.",
+        "en": "Especially under the anvil of a large cumulonimbus."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Según el AIM, la corriente descendente de una microrráfaga puede alcanzar…",
+        "en": "According to the AIM, a microburst downdraft can reach…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "600 ft/min",
+            "en": "600 ft/min"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "60.000 ft/min",
+            "en": "60,000 ft/min"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "100 ft/min",
+            "en": "100 ft/min"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "6.000 ft/min",
+            "en": "6,000 ft/min"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Y vientos horizontales de 45 kt cerca del suelo.",
+        "en": "And horizontal winds of 45 kt near the ground."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Al entrar en una microrráfaga en la aproximación, la velocidad indicada…",
+        "en": "Entering a microburst on approach, indicated airspeed…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cae de golpe",
+            "en": "Drops sharply"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No cambia",
+            "en": "Does not change"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aumenta por el viento de cara",
+            "en": "Increases because of the headwind"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se vuelve cero",
+            "en": "Goes to zero"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El peligro llega después, con la descendente y el viento de cola.",
+        "en": "The danger comes later, with the downdraft and tailwind."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Ante un aviso de cizalladura en la aproximación, la maniobra de escape incluye…",
+        "en": "With a wind shear warning on approach, the escape manoeuvre includes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Reducir potencia y bajar el morro",
+            "en": "Reducing power and lowering the nose"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Potencia máxima y morro arriba hasta el límite de la protección contra la pérdida",
+            "en": "Maximum thrust and nose up to the limit of stall protection"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Sacar más flaps",
+            "en": "Extending more flap"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Seguir la senda a toda costa",
+            "en": "Following the glide path at all costs"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Sin cambiar la configuración hasta estar fuera de peligro.",
+        "en": "Without changing configuration until clear of danger."
+      }
+    }
+  ]
+}

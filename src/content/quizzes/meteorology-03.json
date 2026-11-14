@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Una masa de aire marítima polar es…",
+        "en": "A maritime polar air mass is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cálida y seca",
+            "en": "Warm and dry"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cálida y húmeda",
+            "en": "Warm and moist"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Fría y seca",
+            "en": "Cold and dry"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Fría y húmeda",
+            "en": "Cold and moist"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Marítima = húmeda; polar = fría.",
+        "en": "Maritime = moist; polar = cold."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué frente suele traer chubascos fuertes en una franja estrecha y un cambio brusco de viento?",
+        "en": "Which front usually brings heavy showers in a narrow band and a sharp wind shift?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El cálido",
+            "en": "A warm front"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ninguno",
+            "en": "Neither"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El frío",
+            "en": "A cold front"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Una alta presión",
+            "en": "A high"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Su pendiente pronunciada levanta el aire cálido con fuerza.",
+        "en": "Its steep slope lifts the warm air forcefully."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Los cirros que espesan y bajan poco a poco anuncian…",
+        "en": "Cirrus thickening and lowering gradually herald…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un frente frío inmediato",
+            "en": "An immediate cold front"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un frente cálido",
+            "en": "A warm front"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una niebla de radiación",
+            "en": "Radiation fog"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Buen tiempo duradero",
+            "en": "Lasting fair weather"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Su nubosidad llega cientos de kilómetros por delante.",
+        "en": "Its cloud arrives hundreds of kilometres ahead."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En un METAR, la niebla (FG) se notifica con visibilidad…",
+        "en": "In a METAR, fog (FG) is reported with visibility…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Menor de 1.000 m",
+            "en": "Below 1,000 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Menor de 5.000 m",
+            "en": "Below 5,000 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Menor de 100 m",
+            "en": "Below 100 m"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Menor de 10 km",
+            "en": "Below 10 km"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Entre 1.000 y 5.000 m es neblina (BR).",
+        "en": "Between 1,000 and 5,000 m it is mist (BR)."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La niebla de radiación se forma típicamente con…",
+        "en": "Radiation fog typically forms with…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Viento fuerte y nubes bajas",
+            "en": "Strong wind and low cloud"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Días soleados de verano",
+            "en": "Sunny summer days"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aire muy seco",
+            "en": "Very dry air"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Noches despejadas, viento flojo y aire húmedo",
+            "en": "Clear nights, light wind and moist air"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Se disipa al calentar el sol.",
+        "en": "It clears as the sun warms."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué niebla puede formarse con viento y durar varios días en una costa?",
+        "en": "Which fog can form with wind and last several days on a coast?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La de radiación",
+            "en": "Radiation fog"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La de vapor",
+            "en": "Steam fog"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La de advección",
+            "en": "Advection fog"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguna",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Aire húmedo y templado sobre una superficie fría.",
+        "en": "Moist, mild air over a cold surface."
+      }
+    }
+  ]
+}

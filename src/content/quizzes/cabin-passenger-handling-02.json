@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según el Reglamento 1107/2006, una aerolínea puede negar el embarque a una PRM…",
+        "en": "Under Regulation 1107/2006, an airline may refuse boarding to a PRM…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo por razones de seguridad justificadas y establecidas por la ley",
+            "en": "Only for justified safety reasons established by law"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Si el vuelo está lleno",
+            "en": "If the flight is full"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Siempre que quiera",
+            "en": "Whenever it wishes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Si no paga un suplemento",
+            "en": "If they do not pay a supplement"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La asistencia es gratuita.",
+        "en": "Assistance is free of charge."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Quién presta la asistencia a las PRM en el aeropuerto en la UE?",
+        "en": "Who provides assistance to PRMs at the airport in the EU?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La aerolínea siempre",
+            "en": "Always the airline"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La policía",
+            "en": "The police"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El propio pasajero",
+            "en": "The passenger themselves"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La entidad gestora del aeropuerto",
+            "en": "The airport managing body"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Desde la llegada a la terminal hasta el asiento.",
+        "en": "From arriving at the terminal to the seat."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Con cuánta antelación se debe notificar la necesidad de asistencia?",
+        "en": "How far in advance must the need for assistance be notified?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Al menos 2 semanas",
+            "en": "At least 2 weeks"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10 minutos antes del embarque",
+            "en": "10 minutes before boarding"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al menos 48 horas",
+            "en": "At least 48 hours"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hace falta notificarla",
+            "en": "It need not be notified"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Así se garantiza la asistencia.",
+        "en": "That guarantees the assistance."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Al hablar con un pasajero en silla de ruedas que viaja con un acompañante, el TCP…",
+        "en": "Speaking to a wheelchair passenger travelling with a companion, the crew member…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Habla solo con el acompañante",
+            "en": "Speaks only to the companion"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Habla directamente con el pasajero",
+            "en": "Speaks directly to the passenger"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Habla más alto",
+            "en": "Speaks louder"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No le habla",
+            "en": "Does not speak to them"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Y pregunta antes de ayudar.",
+        "en": "And asks before helping."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un menor no acompañado debe sentarse…",
+        "en": "An unaccompanied minor should be seated…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Donde la tripulación pueda atenderlo y no junto a una salida",
+            "en": "Where the crew can look after them and not by an exit"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "En una fila de salida",
+            "en": "In an exit row"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En la última fila sin supervisión",
+            "en": "In the last row unsupervised"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Donde quiera",
+            "en": "Wherever they like"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Y se entrega formalmente a un adulto identificado al llegar.",
+        "en": "And is formally handed over to an identified adult on arrival."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un pasajero parece claramente enfermo al embarcar. ¿Qué hace el TCP?",
+        "en": "A passenger looks clearly ill at boarding. What does the crew member do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Le niega el embarque por su cuenta",
+            "en": "Refuses boarding on their own"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No dice nada",
+            "en": "Says nothing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Le da un medicamento",
+            "en": "Gives them medicine"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lo comunica; el comandante decide sobre su transporte",
+            "en": "Reports it; the commander decides on carrying them"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Algunos pasajeros necesitan autorización médica previa.",
+        "en": "Some passengers need prior medical clearance."
+      }
+    }
+  ]
+}

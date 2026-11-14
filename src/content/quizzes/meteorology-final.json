@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El engelamiento estructural necesita…",
+        "en": "Structural icing needs…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo temperaturas muy bajas, sin humedad",
+            "en": "Only very low temperatures, without moisture"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Humedad visible y la superficie del avión a 0 °C o menos",
+            "en": "Visible moisture and the aircraft surface at 0 °C or below"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Sol intenso",
+            "en": "Strong sun"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Viento fuerte",
+            "en": "Strong wind"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El agua subfundida se congela al chocar con el avión.",
+        "en": "Supercooled water freezes when it hits the aircraft."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué tipo de hielo forman las gotas grandes que se extienden antes de congelarse?",
+        "en": "What type of ice do large drops that spread before freezing form?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hielo claro",
+            "en": "Clear ice"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hielo granulado",
+            "en": "Rime ice"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Escarcha",
+            "en": "Frost"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nieve",
+            "en": "Snow"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es transparente, duro y pesado: el más peligroso.",
+        "en": "It is transparent, hard and heavy: the most dangerous."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Según el AIM, un engelamiento en el que los sistemas no logran controlar el hielo es…",
+        "en": "According to the AIM, icing that the systems cannot control is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ligero",
+            "en": "Light"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Traza",
+            "en": "Trace"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Moderado",
+            "en": "Moderate"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Fuerte",
+            "en": "Severe"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Hay que salir de esas condiciones de inmediato.",
+        "en": "You must leave those conditions immediately."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Las nubes lenticulares indican…",
+        "en": "Lenticular clouds indicate…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aire inestable en superficie",
+            "en": "Unstable air at the surface"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Niebla de radiación",
+            "en": "Radiation fog"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Ondas de montaña",
+            "en": "Mountain waves"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un frente cálido inmediato",
+            "en": "An immediate warm front"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Bajo sus crestas puede haber rotores.",
+        "en": "There may be rotors under their crests."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La turbulencia en aire claro…",
+        "en": "Clear-air turbulence…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Siempre va con cumulonimbos",
+            "en": "Always comes with cumulonimbus"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No se ve ni la detecta el radar meteorológico",
+            "en": "Cannot be seen and is not detected by weather radar"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo ocurre cerca del suelo",
+            "en": "Only occurs near the ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se ve como una nube oscura",
+            "en": "Looks like a dark cloud"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Suele estar asociada a la corriente en chorro.",
+        "en": "It is usually linked to the jet stream."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Con turbulencia, ¿qué hace la tripulación de vuelo?",
+        "en": "In turbulence, what does the flight crew do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ajusta la velocidad de penetración y mantiene la actitud sin perseguir la altitud",
+            "en": "Sets penetration speed and holds attitude without chasing altitude"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Acelera a la máxima velocidad",
+            "en": "Accelerates to maximum speed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Persigue la altitud exacta con brusquedad",
+            "en": "Chases exact altitude abruptly"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Apaga la señal de cinturones",
+            "en": "Switches off the seat belt sign"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Y enciende la señal de cinturones y avisa a la cabina.",
+        "en": "And switches on the seat belt sign and alerts the cabin."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Temperatura 18 °C y punto de rocío 8 °C. ¿Base aproximada de los cúmulos?",
+        "en": "Temperature 18 °C and dew point 8 °C. Approximate cumulus base?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "8.000 ft",
+            "en": "8,000 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1.000 ft",
+            "en": "1,000 ft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "18.000 ft",
+            "en": "18,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "4.000 ft",
+            "en": "4,000 ft"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "(18 − 8) / 2,5 × 1.000 = 4.000 ft.",
+        "en": "(18 − 8) / 2.5 × 1,000 = 4,000 ft."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En el hemisferio norte, de espaldas al viento, la baja presión está…",
+        "en": "In the northern hemisphere, with your back to the wind, low pressure is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A la derecha",
+            "en": "On your right"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Detrás",
+            "en": "Behind"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A la izquierda",
+            "en": "On your left"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Delante",
+            "en": "In front"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Ley de Buys Ballot.",
+        "en": "Buys Ballot's law."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "La lluvia engelante suele aparecer…",
+        "en": "Freezing rain usually occurs…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Detrás de un frente frío en verano",
+            "en": "Behind a cold front in summer"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Delante de un frente cálido en invierno, con capa cálida en altura",
+            "en": "Ahead of a warm front in winter, with a warm layer aloft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "En un anticiclón de verano",
+            "en": "In a summer high"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo por encima de FL300",
+            "en": "Only above FL300"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La lluvia de la capa cálida cae en el aire bajo cero de debajo.",
+        "en": "Rain from the warm layer falls into the sub-zero air below."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "Al salir de una microrráfaga en la aproximación, el avión encuentra…",
+        "en": "Leaving a microburst on approach, the aircraft meets…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Viento de cola y caída de la velocidad indicada",
+            "en": "A tailwind and a drop in indicated airspeed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más viento de cara",
+            "en": "More headwind"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una corriente ascendente",
+            "en": "An updraft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Aire en calma",
+            "en": "Calm air"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es la fase más peligrosa, cerca del suelo.",
+        "en": "It is the most dangerous phase, close to the ground."
+      }
+    }
+  ]
+}

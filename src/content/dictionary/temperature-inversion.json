@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Temperature inversion",
+    "es": "Inversión térmica"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A layer of the atmosphere in which temperature increases with height instead of decreasing; it is very stable, traps haze and pollution, and can cause wind shear and, with rain falling through it, freezing rain.",
+    "es": "Capa de la atmósfera en la que la temperatura aumenta con la altura en lugar de disminuir; es muy estable, atrapa la calima y la contaminación, y puede causar cizalladura del viento y, si la lluvia la atraviesa, lluvia engelante."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A layer where it gets warmer as you go up.",
+    "es": "Una capa donde hace más calor cuanto más subes."
+  },
+  "example": {
+    "en": "A low inversion kept the fog in the valley all morning.",
+    "es": "Una inversión baja mantuvo la niebla en el valle toda la mañana."
+  },
+  "pronunciation": {
+    "en": "TEM-pruh-chur in-VUR-zhun",
+    "es": "in-ver-sión tér-mi-ca"
+  },
+  "synonyms": {
+    "en": [
+      "inversion"
+    ],
+    "es": [
+      "inversión"
+    ]
+  },
+  "related": [
+    "fog",
+    "lapse-rate",
+    "freezing-rain"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

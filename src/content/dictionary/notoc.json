@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "NOTOC",
+    "es": "NOTOC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Notification to captain",
+    "es": "Notificación al comandante"
+  },
+  "categories": [
+    "ground-handling",
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The written information given to the pilot-in-command on dangerous goods and other special loads carried as cargo: what they are, how much and where they are loaded.",
+    "es": "Información escrita que se entrega al comandante sobre las mercancías peligrosas y otras cargas especiales transportadas como carga: qué son, en qué cantidad y dónde van estibadas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The paper that tells the captain what dangerous cargo is on board.",
+    "es": "El papel que dice al comandante qué carga peligrosa lleva el avión."
+  },
+  "example": {
+    "en": "The NOTOC showed dry ice in the aft hold.",
+    "es": "La NOTOC indicaba hielo seco en la bodega trasera."
+  },
+  "pronunciation": {
+    "en": "NOH-tok",
+    "es": "no-toc"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "dangerous-goods",
+    "load-sheet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9284",
+    "icao-annex-18"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

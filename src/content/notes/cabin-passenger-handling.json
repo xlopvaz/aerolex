@@ -1,0 +1,105 @@
+{
+  "course": "cabin-passenger-handling",
+  "lessons": [
+    {
+      "lesson": "boarding-and-seating",
+      "key": {
+        "es": "Embarcar observando; equipaje estibado sin bloquear salidas; junto a las salidas solo quien puede y quiere ayudar (no PRM, niños, custodiados ni animales); bebés con cinturón suplementario; información de seguridad; repostaje con pasajeros: comunicación, salidas listas, cinturones desabrochados.",
+        "en": "Board while observing; baggage stowed without blocking exits; by the exits only people able and willing to help (not PRMs, children, people in custody or animals); infants on a loop belt; safety briefing; refuelling with passengers: communication, exits ready, belts unfastened."
+      },
+      "points": [
+        {
+          "es": "Embarque: bienvenida, observar, ayudar a estibar, contar pasajeros.",
+          "en": "Boarding: welcome, observe, help stow, count passengers."
+        },
+        {
+          "es": "Equipaje: bajo el asiento o arriba, compartimentos cerrados, nada en las filas de salida.",
+          "en": "Baggage: under the seat or above, bins closed, nothing in exit rows."
+        },
+        {
+          "es": "Filas de salida: no PRM, niños ni bebés, custodiados, animales ni quien no pueda actuar; información adicional.",
+          "en": "Exit rows: no PRMs, children or infants, people in custody, animals or anyone unable to act; extra briefing."
+        },
+        {
+          "es": "Bebés: en brazos con cinturón suplementario (UE) o en su sistema de retención; un bebé por adulto; límite por máscaras.",
+          "en": "Infants: on the lap with a loop belt (EU) or in a restraint; one per adult; limit by masks."
+        },
+        {
+          "es": "Repostaje con pasajeros: comunicación tierra-tripulación, evacuación lista, no fumar, cinturones desabrochados.",
+          "en": "Refuelling with passengers: ground-crew communication, evacuation ready, no smoking, belts unfastened."
+        }
+      ]
+    },
+    {
+      "lesson": "special-passengers",
+      "key": {
+        "es": "PRM (Reg. 1107/2006): sin rechazo salvo seguridad legal, asistencia gratuita del aeropuerto, aviso con 48 h; hablar con la persona y preguntar antes de ayudar. Menores no acompañados: entrega formal, TCP a cargo, lejos de salidas. Enfermos: autorización médica; decide el comandante.",
+        "en": "PRMs (Reg. 1107/2006): no refusal except legal safety reasons, free airport assistance, 48 h notice; speak to the person and ask before helping. Unaccompanied minors: formal handover, crew member in charge, away from exits. Ill passengers: medical clearance; the commander decides."
+      },
+      "points": [
+        {
+          "es": "Reg. 1107/2006: no se puede rechazar a una PRM salvo por seguridad establecida por la ley.",
+          "en": "Reg. 1107/2006: a PRM may not be refused except for safety reasons established by law."
+        },
+        {
+          "es": "Asistencia gratuita, a cargo del aeropuerto; notificar con al menos 48 h.",
+          "en": "Free assistance, provided by the airport; notify at least 48 h ahead."
+        },
+        {
+          "es": "Comunicación: hablar a la persona, preguntar antes de ayudar, presentarse a una persona ciega, información de seguridad individual.",
+          "en": "Communication: speak to the person, ask before helping, introduce yourself to a blind person, individual safety briefing."
+        },
+        {
+          "es": "Menores no acompañados: entrega firmada en salida y llegada, TCP responsable, lejos de las salidas.",
+          "en": "Unaccompanied minors: signed handover at departure and arrival, crew member responsible, away from exits."
+        },
+        {
+          "es": "Enfermos: autorización médica previa si hace falta; ante la duda, informar al comandante.",
+          "en": "Ill passengers: prior medical clearance if needed; if in doubt, inform the commander."
+        },
+        {
+          "es": "Bajo custodia: comandante informado, lejos de salidas, sin alcohol ni cubiertos de metal.",
+          "en": "In custody: commander informed, away from exits, no alcohol or metal cutlery."
+        }
+      ]
+    },
+    {
+      "lesson": "passenger-rights",
+      "key": {
+        "es": "Reg. 261/2004: denegación, cancelación y gran retraso; compensación 250/400/600 € según distancia, asistencia y reembolso; voluntarios primero; sin compensación por circunstancias extraordinarias; Sturgeon: compensación con ≥ 3 h de retraso. La tripulación informa, atiende y no promete.",
+        "en": "Reg. 261/2004: denied boarding, cancellation and long delay; compensation €250/400/600 by distance, care and refund; volunteers first; no compensation for extraordinary circumstances; Sturgeon: compensation at ≥ 3 h delay. Crew inform, care and do not promise."
+      },
+      "points": [
+        {
+          "es": "Ámbito: salidas desde la UE y llegadas a la UE en aerolínea de la UE.",
+          "en": "Scope: departures from the EU and arrivals in the EU on an EU airline."
+        },
+        {
+          "es": "Compensación: ≤ 1.500 km 250 €; UE > 1.500 km y 1.500–3.500 km 400 €; > 3.500 km 600 €.",
+          "en": "Compensation: ≤ 1,500 km €250; EU > 1,500 km and 1,500–3,500 km €400; > 3,500 km €600."
+        },
+        {
+          "es": "Asistencia: comida, bebida, 2 comunicaciones, hotel si hace falta. Reembolso con ≥ 5 h si no se viaja.",
+          "en": "Care: food, drink, 2 communications, hotel if needed. Refund at ≥ 5 h if not travelling."
+        },
+        {
+          "es": "Denegación: primero voluntarios; no lo es por seguridad o documentación inadecuada.",
+          "en": "Denied boarding: volunteers first; not denied boarding for safety or inadequate documents."
+        },
+        {
+          "es": "Cancelación: sin compensación con aviso suficiente (p. ej., ≥ 2 semanas) o circunstancias extraordinarias.",
+          "en": "Cancellation: no compensation with enough notice (e.g. ≥ 2 weeks) or extraordinary circumstances."
+        },
+        {
+          "es": "Sturgeon (TJUE 2009): ≥ 3 h de retraso en la llegada = compensación. Tripulación: informar, atender, no prometer.",
+          "en": "Sturgeon (CJEU 2009): ≥ 3 h arrival delay = compensation. Crew: inform, care, do not promise."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

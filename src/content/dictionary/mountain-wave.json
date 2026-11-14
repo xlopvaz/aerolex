@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Mountain wave",
+    "es": "Onda de montaña"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A train of waves in a stable airflow downwind of a mountain range when strong wind blows across it; it can produce strong up- and downdrafts, lenticular clouds and severe rotor turbulence below the wave crests.",
+    "es": "Tren de ondas en una corriente estable a sotavento de una cordillera cuando la cruza un viento fuerte; puede producir fuertes corrientes ascendentes y descendentes, nubes lenticulares y turbulencia fuerte de rotor bajo las crestas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Waves in the air behind mountains, like ripples behind a rock in a river.",
+    "es": "Olas en el aire detrás de las montañas, como las ondas tras una piedra en un río."
+  },
+  "example": {
+    "en": "Lenticular clouds over the Pyrenees warned of mountain wave.",
+    "es": "Las nubes lenticulares sobre los Pirineos avisaban de onda de montaña."
+  },
+  "pronunciation": {
+    "en": "MOWN-tun wayv",
+    "es": "on-da de mon-ta-ña"
+  },
+  "synonyms": {
+    "en": [
+      "lee wave"
+    ],
+    "es": [
+      "onda de sotavento"
+    ]
+  },
+  "related": [
+    "turbulence",
+    "wind-shear"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

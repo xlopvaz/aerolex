@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Clear-air turbulence",
+    "es": "Turbulencia en aire claro"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Turbulence at high level away from visible cloud, usually linked to strong vertical wind shear near the jet stream; it cannot be seen and is not shown by weather radar.",
+    "es": "Turbulencia en niveles altos lejos de nubes visibles, normalmente asociada a una fuerte cizalladura vertical del viento cerca de la corriente en chorro; no se ve y el radar meteorológico no la detecta."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Bumps in a clear blue sky, usually near the jet stream.",
+    "es": "Baches con el cielo despejado, normalmente cerca de la corriente en chorro."
+  },
+  "example": {
+    "en": "Moderate CAT was reported at FL370 over the Atlantic.",
+    "es": "Se notificó CAT moderada a FL370 sobre el Atlántico."
+  },
+  "pronunciation": {
+    "en": "kleer air TUR-byoo-lunss",
+    "es": "tur-bu-len-cia en ai-re cla-ro"
+  },
+  "synonyms": {
+    "en": [
+      "CAT"
+    ],
+    "es": [
+      "CAT"
+    ]
+  },
+  "related": [
+    "jet-stream",
+    "turbulence",
+    "weather-radar"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh",
+    "faa-turbulence"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

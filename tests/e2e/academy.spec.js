@@ -4,7 +4,7 @@ test.describe('academy', () => {
   test('academy lists the METAR course and only paths with content', async ({ page }) => {
     await page.goto('es/academia/');
     await expect(page.locator('.path')).toHaveCount(4);
-    await page.locator('.course-card', { hasText: 'METAR' }).click();
+    await page.locator('a.course-card[href$="/metar-speci/"]').click();
     await expect(page).toHaveURL(/\/es\/academia\/metar-speci\/$/);
     await expect(page.locator('.lesson-list li')).toHaveCount(9);
   });
@@ -59,7 +59,7 @@ test.describe('academy', () => {
 test.describe('TAF academy', () => {
   test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
     await page.goto('en/academy/');
-    await expect(page.locator('.course-card')).toHaveCount(16);
+    await expect(page.locator('.course-card')).toHaveCount(19);
     await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
     await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
@@ -106,10 +106,10 @@ test.describe('Aviation Fundamentals', () => {
 });
 
 test.describe('Pilot Academy', () => {
-  test('lists modules 1–7 in order and opens an ATPL-style quiz', async ({ page }) => {
+  test('lists modules 1–8 in order and opens an ATPL-style quiz', async ({ page }) => {
     await page.goto('es/academia/');
     const path = page.locator('.path', { hasText: 'Formación de pilotos' });
-    await expect(path.locator('.course-card')).toHaveCount(7);
+    await expect(path.locator('.course-card')).toHaveCount(8);
     await expect(path.locator('.course-card').first()).toContainText('Módulo 1');
     await path.locator('.course-card', { hasText: 'Módulo 2' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/aerodynamics\/$/);
@@ -143,13 +143,14 @@ test.describe('Pilot Academy', () => {
 });
 
 test.describe('Cabin Crew Academy', () => {
-  test('lists modules 1–6 in order, shows the operator-manual notice and links terms', async ({ page }) => {
+  test('lists modules 1–8 in order, shows the operator-manual notice and links terms', async ({ page }) => {
     await page.goto('en/academy/');
     const path = page.locator('.path', { hasText: 'Cabin Crew Training' });
-    await expect(path.locator('.course-card')).toHaveCount(6);
+    await expect(path.locator('.course-card')).toHaveCount(8);
     await expect(path.locator('.course-card').nth(0)).toContainText('Module 1');
     await expect(path.locator('.course-card').nth(2)).toContainText('Module 3');
     await expect(path.locator('.course-card').nth(5)).toContainText('Module 6');
+    await expect(path.locator('.course-card').nth(7)).toContainText('Module 8');
     await page.goto('es/academia/cabin-crew-aircraft/doors-and-exits/');
     await expect(page.locator('.callout').first()).toContainText('El manual del operador prevalece');
     await page.locator('.prose a.term', { hasText: 'rampa de evacuación' }).first().click();

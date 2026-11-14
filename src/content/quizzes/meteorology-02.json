@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Isobaras muy juntas en un mapa indican…",
+        "en": "Isobars very close together on a chart indicate…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Viento fuerte",
+            "en": "Strong wind"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Viento en calma",
+            "en": "Calm wind"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Alta presión",
+            "en": "High pressure"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Niebla",
+            "en": "Fog"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Mayor diferencia de presión en menos distancia.",
+        "en": "A bigger pressure difference over a shorter distance."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En el hemisferio norte, el viento gira alrededor de una baja en sentido…",
+        "en": "In the northern hemisphere, wind circulates around a low…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Horario",
+            "en": "Clockwise"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hacia fuera",
+            "en": "Outwards"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Depende del día",
+            "en": "Depending on the day"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Antihorario",
+            "en": "Anticlockwise"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Alrededor de una alta, en sentido horario.",
+        "en": "Around a high, clockwise."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En el hemisferio norte, de espaldas al viento, la baja presión está…",
+        "en": "In the northern hemisphere, with your back to the wind, low pressure is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A la derecha",
+            "en": "On your right"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Delante",
+            "en": "In front"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A la izquierda",
+            "en": "On your left"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Detrás",
+            "en": "Behind"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es la ley de Buys Ballot.",
+        "en": "That is Buys Ballot's law."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Al subir desde el suelo en el hemisferio norte, el viento suele…",
+        "en": "Climbing from the ground in the northern hemisphere, the wind usually…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Disminuir y girar a la izquierda",
+            "en": "Decrease and back"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Aumentar y girar a la derecha",
+            "en": "Increase and veer"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No cambiar",
+            "en": "Stay the same"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Desaparecer",
+            "en": "Die away"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Arriba hay menos rozamiento.",
+        "en": "There is less friction aloft."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "De día, en la costa, la brisa sopla…",
+        "en": "By day on the coast, the breeze blows…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Del mar hacia tierra",
+            "en": "From sea to land"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De tierra hacia el mar",
+            "en": "From land to sea"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Paralela a la costa siempre",
+            "en": "Always parallel to the coast"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Hacia arriba",
+            "en": "Upwards"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La tierra se calienta más que el mar.",
+        "en": "The land warms more than the sea."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La corriente en chorro es más intensa…",
+        "en": "The jet stream is stronger…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "En verano",
+            "en": "In summer"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De noche solamente",
+            "en": "Only at night"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cerca del suelo",
+            "en": "Near the ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "En invierno",
+            "en": "In winter"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El contraste térmico entre el polo y el ecuador es mayor.",
+        "en": "The temperature contrast between pole and equator is greater."
+      }
+    }
+  ]
+}

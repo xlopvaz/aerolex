@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Cold front",
+    "es": "Frente frío"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The leading edge of an advancing colder air mass that wedges under warmer air; its steep slope can lift the warm air rapidly and produce cumulonimbus, showers, squalls and a sharp wind shift.",
+    "es": "Borde delantero de una masa de aire más frío que avanza y se mete por debajo del aire cálido; su fuerte pendiente puede elevar deprisa el aire cálido y producir cumulonimbos, chubascos, turbonadas y un cambio brusco del viento."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The line where cold air pushes in, often with storms.",
+    "es": "La línea por donde entra el aire frío, a menudo con tormentas."
+  },
+  "example": {
+    "en": "After the cold front passed, the wind veered and visibility improved.",
+    "es": "Tras el paso del frente frío, el viento roló y la visibilidad mejoró."
+  },
+  "pronunciation": {
+    "en": "kohld frunt",
+    "es": "fren-te frí-o"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "warm-front",
+    "thunderstorm",
+    "cumulonimbus"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

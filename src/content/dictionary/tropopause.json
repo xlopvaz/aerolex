@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Tropopause",
+    "es": "Tropopausa"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "meteorology"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The boundary between the troposphere and the stratosphere, where temperature stops falling with height; it is higher over the equator than over the poles and in the ISA lies at 11 km (36,090 ft).",
+    "es": "Límite entre la troposfera y la estratosfera, donde la temperatura deja de bajar con la altura; es más alta sobre el ecuador que sobre los polos y en la ISA está a 11 km (36.090 ft)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The \"lid\" of the weather layer of the atmosphere.",
+    "es": "La «tapa» de la capa del tiempo en la atmósfera."
+  },
+  "example": {
+    "en": "The cumulonimbus top spread out as an anvil at the tropopause.",
+    "es": "La cima del cumulonimbo se extendió en forma de yunque en la tropopausa."
+  },
+  "pronunciation": {
+    "en": "TROH-poh-pawz",
+    "es": "tro-po-pau-sa"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "isa",
+    "jet-stream",
+    "lapse-rate"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-7488",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

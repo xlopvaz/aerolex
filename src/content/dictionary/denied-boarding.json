@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Denied boarding",
+    "es": "Denegación de embarque"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-law",
+    "cabin-crew"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A refusal to carry a passenger who has a confirmed reservation and presented themselves for boarding on time, for example because of overbooking; in the EU it gives rights to compensation and assistance under Regulation 261/2004, unless there are reasonable grounds such as safety or inadequate travel documents.",
+    "es": "Negativa a transportar a un pasajero con reserva confirmada que se ha presentado a tiempo al embarque, por ejemplo por exceso de reservas; en la UE da derecho a compensación y asistencia según el Reglamento 261/2004, salvo que haya motivos razonables como la seguridad o la documentación inadecuada."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Not being allowed to fly despite having a ticket, often because of overbooking.",
+    "es": "Que no te dejen volar aunque tengas billete, a menudo por exceso de reservas."
+  },
+  "example": {
+    "en": "The airline asked for volunteers before applying denied boarding.",
+    "es": "La aerolínea pidió voluntarios antes de denegar el embarque."
+  },
+  "pronunciation": {
+    "en": "dih-NYDE BOR-ding",
+    "es": "de-ne-ga-ción de em-bar-que"
+  },
+  "synonyms": {
+    "en": [
+      "bumping"
+    ],
+    "es": [
+      "overbooking"
+    ]
+  },
+  "related": [
+    "boarding",
+    "unruly-passenger"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-261-2004"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
