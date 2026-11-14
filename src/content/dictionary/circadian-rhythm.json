@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Circadian rhythm",
+    "es": "Ritmo circadiano"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The body's internal cycle of about 24 hours that regulates sleep, alertness and body temperature; alertness is usually lowest in the early hours of the morning.",
+    "es": "Ciclo interno del cuerpo de unas 24 horas que regula el sueño, la atención y la temperatura corporal; la atención suele ser mínima en las primeras horas de la madrugada."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Your body clock.",
+    "es": "Tu reloj biológico."
+  },
+  "example": {
+    "en": "Crossing six time zones upset her circadian rhythm for days.",
+    "es": "Cruzar seis husos horarios le alteró el ritmo circadiano durante días."
+  },
+  "pronunciation": {
+    "en": "sur-KAY-dee-un RITH-um",
+    "es": "rit-mo cir-ca-dia-no"
+  },
+  "synonyms": {
+    "en": [
+      "body clock"
+    ],
+    "es": [
+      "reloj biológico"
+    ]
+  },
+  "related": [
+    "fatigue"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

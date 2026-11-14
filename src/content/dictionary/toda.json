@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TODA",
+    "es": "TODA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Take-off distance available",
+    "es": "Distancia de despegue disponible"
+  },
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The take-off run available plus the length of any clearway provided.",
+    "es": "Recorrido de despegue disponible más la longitud de la zona libre de obstáculos, si la hay."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The runway plus the clear area beyond it where you can climb to 35 ft.",
+    "es": "La pista más la zona despejada que hay detrás, donde puedes subir hasta 35 ft."
+  },
+  "example": {
+    "en": "With a 300 m clearway, the TODA was 300 m longer than the TORA.",
+    "es": "Con una zona libre de obstáculos de 300 m, la TODA era 300 m mayor que la TORA."
+  },
+  "pronunciation": {
+    "en": "TOH-duh",
+    "es": "to-da"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tora",
+    "clearway",
+    "asda"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

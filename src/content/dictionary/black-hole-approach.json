@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Black-hole approach",
+    "es": "Aproximación en «agujero negro»"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A night approach over water or unlit terrain towards a lit runway with no other visual references, which tends to make pilots feel higher than they are and fly too low an approach.",
+    "es": "Aproximación nocturna sobre agua o terreno sin luces hacia una pista iluminada sin otras referencias visuales, que tiende a hacer creer al piloto que está más alto de lo que está y a volar una aproximación demasiado baja."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A dark approach where the runway seems to float in a black void.",
+    "es": "Una aproximación a oscuras en la que la pista parece flotar en un vacío negro."
+  },
+  "example": {
+    "en": "On the black-hole approach the PAPI showed four red lights.",
+    "es": "En la aproximación en «agujero negro», el PAPI mostraba cuatro luces rojas."
+  },
+  "pronunciation": {
+    "en": "BLAK-hohl uh-PROHCH",
+    "es": "a-gu-je-ro ne-gro"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "papi",
+    "glide-path",
+    "spatial-disorientation"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

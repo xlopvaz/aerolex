@@ -1,0 +1,79 @@
+---
+lesson: landing-performance
+course: flight-performance
+lang: es
+title: "Actuaciones de aterrizaje y pistas contaminadas"
+summary: "La regla del 60 % para despachar un vuelo, el factor de pista mojada, la velocidad de referencia, el aquaplaning y el formato mundial de notificación del estado de la pista con su código de 6 a 0."
+objectives:
+  - "Aplicar la regla del 60 % y el factor de pista mojada"
+  - "Explicar los factores que alargan el aterrizaje y el aquaplaning"
+  - "Interpretar un código de estado de la pista"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 14
+terms: [lda, autobrake, thrust-reverser, anti-skid, rwycc]
+quiz: flight-performance-final
+sources: [eu-965-2012, cfr-14-part-25, faa-phak, easa-grf]
+review:
+  status: draft
+---
+
+## La regla del 60 %
+
+Para **despachar** un vuelo, las normas de la UE exigen que el avión, con la masa prevista al aterrizar, pueda pararse desde **50 ft sobre el umbral**:
+
+- en los **reactores**, dentro del **60 %** de la <Term id="lda" />;
+- en los **turbohélices**, dentro del **70 %**.
+
+Dicho al revés: la LDA debe ser al menos **1,67 veces** la distancia de aterrizaje certificada en un reactor. Si se prevé la pista **mojada**, la LDA debe ser además al menos el **115 %** de esa distancia requerida, es decir, unas **1,92 veces** la distancia certificada.
+
+El margen es grande porque la distancia certificada se obtiene en pruebas con pilotos de ensayo, pista seca y frenada máxima, algo que no siempre se reproduce en la línea.
+
+### Ejemplo
+
+Distancia de aterrizaje certificada de 1.500 m en seco:
+
+- Seca: 1.500 / 0,6 = **2.500 m** de LDA necesarios.
+- Mojada: 2.500 × 1,15 = **2.875 m**.
+
+## La velocidad de referencia
+
+La velocidad de referencia en la aproximación final (VREF) no es menor que **1,23 veces la velocidad de pérdida** de referencia en configuración de aterrizaje. Cada nudo de más alarga la toma; volar rápido o tocar tarde es una causa clásica de **salidas de pista**.
+
+## Qué alarga el aterrizaje
+
+- **Masa** alta.
+- Viento de **cola**.
+- **Altitud de densidad** alta: la velocidad verdadera es mayor para la misma indicada.
+- Pista **cuesta abajo**.
+- Pista **mojada o contaminada**.
+- Llegar **alto o rápido** al umbral.
+
+Lo acortan los frenos automáticos (<Term id="autobrake" />), los <Term id="thrust-reverser">inversores</Term> y el <Term id="anti-skid">antideslizamiento</Term>, aunque la distancia de despacho en seco no cuenta con los inversores.
+
+## Aquaplaning
+
+Con agua en la pista, los neumáticos pueden perder el contacto con el suelo. Según la FAA, el aquaplaning dinámico puede empezar a partir de unos
+
+> 9 × √(presión del neumático en psi) nudos
+
+Un neumático a 200 psi: 9 × 14,1 ≈ **127 kt**. Una vez iniciado, puede mantenerse a velocidades menores.
+
+## El estado de la pista
+
+Desde noviembre de 2021 se aplica el **formato mundial de notificación** de la OACI. El aeródromo evalúa cada **tercio** de la pista y le asigna un <Term id="rwycc" />:
+
+| Código | Superficie típica |
+|---|---|
+| **6** | Seca |
+| **5** | Húmeda o con escarcha; mojada hasta 3 mm |
+| **4** | Nieve compactada muy fría |
+| **3** | Mojada y resbaladiza, nieve seca o mojada |
+| **2** | Más de 3 mm de agua o nieve fundente |
+| **1** | Hielo |
+| **0** | Hielo mojado o agua sobre nieve compactada: extremadamente resbaladiza |
+
+Se notifica, por ejemplo, **5/5/3**, del umbral al final. Para las actuaciones se usa el **código más bajo**.
+
+<Callout type="caution" label="Calcular otra vez antes de aterrizar">
+Las condiciones cambian durante el vuelo. Antes de la aproximación, la tripulación vuelve a calcular la distancia de aterrizaje con el viento, el estado de la pista y la configuración reales, aunque el despacho fuera correcto.
+</Callout>

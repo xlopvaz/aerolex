@@ -1,0 +1,44 @@
+{
+  "path": "pilot-training",
+  "order": 11,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 11: Actuaciones del avión",
+    "en": "Pilot Academy · Module 11: Aircraft Performance"
+  },
+  "description": {
+    "es": "Las actuaciones de un avión de transporte: distancias declaradas y velocidades de despegue, segmentos de ascenso con un motor parado y obstáculos, crucero con índice de coste y descenso tras fallo de motor, y aterrizaje con la regla del 60 %, aquaplaning y el código de estado de la pista. Con cálculos tipo ATPL.",
+    "en": "Transport aircraft performance: declared distances and take-off speeds, engine-out climb segments and obstacles, cruise with cost index and drift-down, and landing with the 60 % rule, aquaplaning and the runway condition code. With ATPL-style calculations."
+  },
+  "objectives": {
+    "en": [
+      "Work out whether a runway allows the planned take-off and landing",
+      "Explain the climb segments and obstacle margins",
+      "Interpret runway condition and its effect on performance"
+    ],
+    "es": [
+      "Calcular si una pista permite el despegue y el aterrizaje previstos",
+      "Explicar los segmentos de ascenso y los márgenes sobre los obstáculos",
+      "Interpretar el estado de la pista y su efecto en las actuaciones"
+    ]
+  },
+  "lessons": [
+    "take-off-performance",
+    "climb-and-cruise-performance",
+    "landing-performance"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "eu-965-2012",
+    "cfr-14-part-25",
+    "icao-annex-14",
+    "faa-phak",
+    "faa-afh",
+    "easa-grf"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

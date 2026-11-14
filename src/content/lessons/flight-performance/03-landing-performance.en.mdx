@@ -1,0 +1,79 @@
+---
+lesson: landing-performance
+course: flight-performance
+lang: en
+title: "Landing performance and contaminated runways"
+summary: "The 60 % rule for dispatching a flight, the wet-runway factor, the reference speed, aquaplaning and the global reporting format for runway condition with its 6-to-0 code."
+objectives:
+  - "Apply the 60 % rule and the wet-runway factor"
+  - "Explain the factors that lengthen the landing and aquaplaning"
+  - "Interpret a runway condition code"
+  - "Check what you have learned in the final assessment"
+minutes: 14
+terms: [lda, autobrake, thrust-reverser, anti-skid, rwycc]
+quiz: flight-performance-final
+sources: [eu-965-2012, cfr-14-part-25, faa-phak, easa-grf]
+review:
+  status: draft
+---
+
+## The 60 % rule
+
+To **dispatch** a flight, EU rules require the aircraft, at its planned landing mass, to be able to stop from **50 ft above the threshold**:
+
+- for **jets**, within **60 %** of the <Term id="lda" />;
+- for **turboprops**, within **70 %**.
+
+Put the other way round: the LDA must be at least **1.67 times** the certified landing distance of a jet. If the runway is expected to be **wet**, the LDA must also be at least **115 %** of that required distance, i.e. about **1.92 times** the certified distance.
+
+The margin is large because the certified distance comes from tests with test pilots, a dry runway and maximum braking, which line flying does not always reproduce.
+
+### Example
+
+Certified dry landing distance of 1,500 m:
+
+- Dry: 1,500 / 0.6 = **2,500 m** of LDA required.
+- Wet: 2,500 × 1.15 = **2,875 m**.
+
+## The reference speed
+
+The reference speed on final approach (VREF) is not less than **1.23 times the reference stall speed** in the landing configuration. Every extra knot lengthens the landing; flying fast or touching down late is a classic cause of **runway excursions**.
+
+## What lengthens the landing
+
+- High **mass**.
+- A **tailwind**.
+- High **density altitude**: true airspeed is higher for the same indicated airspeed.
+- A **downhill** runway.
+- A **wet or contaminated** runway.
+- Arriving **high or fast** at the threshold.
+
+<Term id="autobrake" />, <Term id="thrust-reverser" />s and <Term id="anti-skid" /> shorten it, although the dry dispatch distance does not count on reversers.
+
+## Aquaplaning
+
+With water on the runway, the tyres can lose contact with the surface. According to the FAA, dynamic aquaplaning can begin at about
+
+> 9 × √(tyre pressure in psi) knots
+
+A tyre at 200 psi: 9 × 14.1 ≈ **127 kt**. Once started, it can persist at lower speeds.
+
+## Runway condition
+
+Since November 2021 the ICAO **Global Reporting Format** has applied. The aerodrome assesses each **third** of the runway and assigns it an <Term id="rwycc" />:
+
+| Code | Typical surface |
+|---|---|
+| **6** | Dry |
+| **5** | Damp or frost; wet up to 3 mm |
+| **4** | Very cold compacted snow |
+| **3** | Wet and slippery, dry or wet snow |
+| **2** | More than 3 mm of water or slush |
+| **1** | Ice |
+| **0** | Wet ice or water on compacted snow: extremely slippery |
+
+It is reported, for example, as **5/5/3**, from threshold to end. For performance, the **lowest code** is used.
+
+<Callout type="caution" label="Calculate again before landing">
+Conditions change during the flight. Before the approach, the crew recalculates the landing distance with the actual wind, runway condition and configuration, even if the dispatch calculation was correct.
+</Callout>

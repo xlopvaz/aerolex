@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Decompression sickness",
+    "es": "Enfermedad descompresiva"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A condition caused by nitrogen dissolved in the body forming bubbles when ambient pressure falls, producing joint pain, skin, breathing or neurological symptoms; the risk increases when flying soon after scuba diving.",
+    "es": "Trastorno causado por el nitrógeno disuelto en el cuerpo, que forma burbujas al bajar la presión ambiente y produce dolor articular y síntomas cutáneos, respiratorios o neurológicos; el riesgo aumenta al volar poco después de bucear."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "\"The bends\": gas bubbles in the body when pressure drops.",
+    "es": "«Las burbujas»: gas que sale en el cuerpo al bajar la presión."
+  },
+  "example": {
+    "en": "After two dives that day, he waited 24 hours before flying to avoid decompression sickness.",
+    "es": "Tras dos inmersiones ese día, esperó 24 horas antes de volar para evitar la enfermedad descompresiva."
+  },
+  "pronunciation": {
+    "en": "dee-kum-PRESH-un SIK-nus",
+    "es": "en-fer-me-dad des-com-pre-si-va"
+  },
+  "synonyms": {
+    "en": [
+      "DCS",
+      "the bends"
+    ],
+    "es": [
+      "ED"
+    ]
+  },
+  "related": [
+    "decompression",
+    "hypoxia"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-aim",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

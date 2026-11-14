@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La TODA es…",
+        "en": "TODA is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La TORA más la zona de parada",
+            "en": "TORA plus the stopway"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La TORA más la zona libre de obstáculos",
+            "en": "TORA plus the clearway"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La distancia de aterrizaje disponible",
+            "en": "The landing distance available"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La mitad de la TORA",
+            "en": "Half the TORA"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La ASDA es la TORA más la zona de parada.",
+        "en": "ASDA is TORA plus the stopway."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Si un motor falla y se reconoce antes de V1…",
+        "en": "If an engine fails and is recognised before V1…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se interrumpe el despegue",
+            "en": "The take-off is rejected"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se continúa el despegue",
+            "en": "The take-off is continued"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se rota inmediatamente",
+            "en": "The aircraft rotates immediately"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se reduce a ralentí y se espera a VR",
+            "en": "Thrust goes to idle and you wait for VR"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A partir de V1 se continúa.",
+        "en": "From V1 onwards it is continued."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuál es el orden correcto?",
+        "en": "What is the correct order?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "V1 ≤ VMCG ≤ V2 ≤ VR",
+            "en": "V1 ≤ VMCG ≤ V2 ≤ VR"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "VR ≤ V1 ≤ V2",
+            "en": "VR ≤ V1 ≤ V2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "V2 ≤ VR ≤ V1",
+            "en": "V2 ≤ VR ≤ V1"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "VMCG ≤ V1 ≤ VR ≤ V2",
+            "en": "VMCG ≤ V1 ≤ VR ≤ V2"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "V1 no puede ser menor que VMCG ni mayor que VR.",
+        "en": "V1 may not be below VMCG nor above VR."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En pista seca, la distancia de despegue de un avión de transporte es la mayor de…",
+        "en": "On a dry runway, a transport aircraft's take-off distance is the greater of…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La TORA y la TODA",
+            "en": "TORA and TODA"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La distancia a 50 ft y la de parada",
+            "en": "The distance to 50 ft and the stopping distance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La distancia a 35 ft con fallo de motor y el 115 % de la distancia a 35 ft con todos los motores",
+            "en": "The distance to 35 ft with an engine failure and 115 % of the distance to 35 ft with all engines"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 60 % de la pista",
+            "en": "60 % of the runway"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La altura de referencia es 35 ft.",
+        "en": "The screen height is 35 ft."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En la UE, ¿cuánto viento de cara notificado se tiene en cuenta en el cálculo del despegue?",
+        "en": "In the EU, how much of the reported headwind is counted in the take-off calculation?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El 100 %",
+            "en": "100 %"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Como máximo el 50 %",
+            "en": "No more than 50 %"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El 150 %",
+            "en": "150 %"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nada",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Del viento de cola se cuenta al menos el 150 %.",
+        "en": "At least 150 % of the tailwind is counted."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un día caluroso en un aeródromo elevado…",
+        "en": "A hot day at a high aerodrome…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Aumenta la distancia de despegue",
+            "en": "Increases the take-off distance"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La reduce",
+            "en": "Reduces it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No la cambia",
+            "en": "Does not change it"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo afecta al aterrizaje",
+            "en": "Only affects landing"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "La altitud de densidad es mayor: menos empuje y sustentación.",
+        "en": "Density altitude is higher: less thrust and lift."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Para qué se usa una temperatura supuesta?",
+        "en": "What is an assumed temperature used for?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para corregir el altímetro",
+            "en": "To correct the altimeter"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para calcular el combustible",
+            "en": "To calculate the fuel"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para el antihielo",
+            "en": "For anti-icing"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para despegar con menos empuje cuando la pista y la masa lo permiten",
+            "en": "To take off with less thrust when runway and mass allow"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Reduce el desgaste de los motores.",
+        "en": "It reduces engine wear."
+      }
+    }
+  ]
+}

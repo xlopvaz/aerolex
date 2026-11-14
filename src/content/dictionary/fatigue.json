@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Fatigue",
+    "es": "Fatiga"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A physiological state of reduced mental or physical performance caused by lack of sleep, long periods awake, the time of day or workload, which can impair alertness and the ability to fly safely.",
+    "es": "Estado fisiológico de menor rendimiento mental o físico causado por falta de sueño, muchas horas despierto, la hora del día o la carga de trabajo, que puede reducir la atención y la capacidad de volar con seguridad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Being too tired to perform well.",
+    "es": "Estar demasiado cansado para rendir bien."
+  },
+  "example": {
+    "en": "The crew reported fatigue after the third night duty in a row.",
+    "es": "La tripulación notificó fatiga tras la tercera actividad nocturna seguida."
+  },
+  "pronunciation": {
+    "en": "fuh-TEEG",
+    "es": "fa-ti-ga"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "circadian-rhythm",
+    "imsafe"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

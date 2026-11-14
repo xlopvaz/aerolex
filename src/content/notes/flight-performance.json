@@ -1,0 +1,109 @@
+{
+  "course": "flight-performance",
+  "lessons": [
+    {
+      "lesson": "take-off-performance",
+      "key": {
+        "es": "TORA (pista), TODA (+ zona libre de obstáculos), ASDA (+ zona de parada), LDA. VMCG ≤ V1 ≤ VR ≤ V2; V1 = decisión; V2 = seguridad a 35 ft. Distancia de despegue en seco: mayor de fallo a 35 ft y 115 % con todos los motores. Limitan: masa, altitud de densidad, viento (50 % cara, 150 % cola), pendiente, pista, flaps, ascenso, obstáculos, neumáticos, frenos.",
+        "en": "TORA (runway), TODA (+ clearway), ASDA (+ stopway), LDA. VMCG ≤ V1 ≤ VR ≤ V2; V1 = decision; V2 = safety at 35 ft. Dry take-off distance: greater of failure to 35 ft and 115 % all engines. Limits: mass, density altitude, wind (50 % head, 150 % tail), slope, runway, flaps, climb, obstacles, tyres, brakes."
+      },
+      "points": [
+        {
+          "es": "TORA = pista apta para rodar; TODA = TORA + zona libre de obstáculos; ASDA = TORA + zona de parada; LDA = para aterrizar.",
+          "en": "TORA = runway for the ground run; TODA = TORA + clearway; ASDA = TORA + stopway; LDA = for landing."
+        },
+        {
+          "es": "V1: decisión (antes, interrumpir; después, continuar). VR: rotación. V2: seguridad a 35 ft con un motor parado (≥ 1,13 VSR y ≥ 1,10 VMCA).",
+          "en": "V1: decision (before, reject; after, continue). VR: rotation. V2: safety speed at 35 ft with an engine out (≥ 1.13 VSR and ≥ 1.10 VMCA)."
+        },
+        {
+          "es": "Orden: VMCG ≤ V1 ≤ VR ≤ V2.",
+          "en": "Order: VMCG ≤ V1 ≤ VR ≤ V2."
+        },
+        {
+          "es": "Distancia de despegue (seca) = mayor de: fallo de motor hasta 35 ft, o 115 % con todos los motores hasta 35 ft.",
+          "en": "Take-off distance (dry) = greater of: engine failure to 35 ft, or 115 % all engines to 35 ft."
+        },
+        {
+          "es": "Viento en la UE: 50 % del de cara, al menos 150 % del de cola. Calor y altura alargan la distancia (≈ 120 ft de altitud de densidad por °C sobre ISA).",
+          "en": "Wind in the EU: 50 % of headwind, at least 150 % of tailwind. Heat and elevation lengthen the distance (≈ 120 ft density altitude per °C above ISA)."
+        },
+        {
+          "es": "Masa al despegue máxima = la menor de: pista, ascenso, obstáculos, neumáticos, frenos. Si sobra, empuje reducido (temperatura supuesta).",
+          "en": "Maximum take-off mass = lowest of: field, climb, obstacles, tyres, brakes. With margin, reduced thrust (assumed temperature)."
+        }
+      ]
+    },
+    {
+      "lesson": "climb-and-cruise-performance",
+      "key": {
+        "es": "Segmentos con un motor parado (bimotor): 1.º positivo, 2.º 2,4 % (tren arriba, V2), final 1,2 %. Neta = bruta − 0,8 % (bimotor); debe librar obstáculos por 35 ft. VS ≈ gradiente × GS. Crucero: alcance específico, máximo y largo alcance, índice de coste, altitud óptima y ascensos escalonados. Fallo en crucero: descenso hasta el techo con un motor, 2.000 ft sobre el terreno.",
+        "en": "Engine-out segments (twin): 1st positive, 2nd 2.4 % (gear up, V2), final 1.2 %. Net = gross − 0.8 % (twin); must clear obstacles by 35 ft. VS ≈ gradient × GS. Cruise: specific range, maximum and long-range cruise, cost index, optimum altitude and step climbs. Failure in cruise: drift-down to the one-engine ceiling, 2,000 ft above terrain."
+      },
+      "points": [
+        {
+          "es": "Segmentos (bi/tri/cuatrimotor): 1.º positivo/0,3/0,5 %; 2.º 2,4/2,7/3,0 %; final 1,2/1,5/1,7 %.",
+          "en": "Segments (twin/three/four): 1st positive/0.3/0.5 %; 2nd 2.4/2.7/3.0 %; final 1.2/1.5/1.7 %."
+        },
+        {
+          "es": "El 2.º segmento (tren arriba, flaps de despegue, V2) suele limitar la masa.",
+          "en": "The 2nd segment (gear up, take-off flaps, V2) usually limits the mass."
+        },
+        {
+          "es": "Neta = bruta − 0,8 % en bimotores; la neta libra obstáculos por 35 ft.",
+          "en": "Net = gross − 0.8 % for twins; the net path clears obstacles by 35 ft."
+        },
+        {
+          "es": "Velocidad vertical (ft/min) ≈ gradiente (%) × velocidad respecto al suelo (kt).",
+          "en": "Vertical speed (ft/min) ≈ gradient (%) × groundspeed (kt)."
+        },
+        {
+          "es": "Índice de coste 0 = máximo alcance; la altitud óptima sube al bajar la masa → ascensos escalonados.",
+          "en": "Cost index 0 = maximum range; optimum altitude rises as mass drops → step climbs."
+        },
+        {
+          "es": "Fallo en crucero: descenso hasta el techo con un motor; trayectoria neta 2.000 ft sobre el terreno o procedimiento de escape.",
+          "en": "Failure in cruise: drift-down to the one-engine ceiling; net path 2,000 ft above terrain or an escape procedure."
+        }
+      ]
+    },
+    {
+      "lesson": "landing-performance",
+      "key": {
+        "es": "Despacho: parada desde 50 ft en el 60 % de la LDA (reactores) o el 70 % (turbohélices); pista mojada, +15 % (≈ 1,92 veces la distancia certificada). VREF ≥ 1,23 VSR0. Alargan: masa, viento de cola, altitud de densidad, pendiente abajo, contaminación, llegar alto o rápido. Aquaplaning ≈ 9 × √psi. RWYCC 6 (seca) a 0 por tercios; se usa el más bajo.",
+        "en": "Dispatch: stop from 50 ft within 60 % of LDA (jets) or 70 % (turboprops); wet runway +15 % (≈ 1.92 × certified distance). VREF ≥ 1.23 VSR0. Lengthen: mass, tailwind, density altitude, downslope, contamination, arriving high or fast. Aquaplaning ≈ 9 × √psi. RWYCC 6 (dry) to 0 by thirds; the lowest is used."
+      },
+      "points": [
+        {
+          "es": "Despacho: parada desde 50 ft dentro del 60 % de la LDA (reactores) o del 70 % (turbohélices): LDA ≥ 1,67 × distancia certificada.",
+          "en": "Dispatch: stop from 50 ft within 60 % of LDA (jets) or 70 % (turboprops): LDA ≥ 1.67 × certified distance."
+        },
+        {
+          "es": "Pista mojada prevista: LDA ≥ 115 % de la requerida en seco (≈ 1,92 × la certificada).",
+          "en": "Wet runway expected: LDA ≥ 115 % of the dry required distance (≈ 1.92 × certified)."
+        },
+        {
+          "es": "VREF ≥ 1,23 × velocidad de pérdida de referencia en configuración de aterrizaje.",
+          "en": "VREF ≥ 1.23 × reference stall speed in landing configuration."
+        },
+        {
+          "es": "Alargan: masa, viento de cola, altitud de densidad, pendiente abajo, pista mojada o contaminada, llegar alto o rápido.",
+          "en": "Lengthen: mass, tailwind, density altitude, downslope, wet or contaminated runway, arriving high or fast."
+        },
+        {
+          "es": "Aquaplaning dinámico desde ≈ 9 × √(presión en psi) kt.",
+          "en": "Dynamic aquaplaning from ≈ 9 × √(pressure in psi) kt."
+        },
+        {
+          "es": "RWYCC de 6 (seca) a 0 (extremadamente resbaladiza) por tercios, p. ej. 5/5/3; se usa el más bajo. Recalcular antes de la aproximación.",
+          "en": "RWYCC from 6 (dry) to 0 (extremely slippery) by thirds, e.g. 5/5/3; the lowest is used. Recalculate before the approach."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

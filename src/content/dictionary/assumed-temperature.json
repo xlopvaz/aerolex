@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Assumed temperature",
+    "es": "Temperatura supuesta"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A temperature higher than the actual one entered for take-off so that the engines deliver less thrust than the maximum, when the runway and mass allow it; it reduces engine wear.",
+    "es": "Temperatura mayor que la real que se introduce para el despegue de modo que los motores den menos empuje que el máximo, cuando la pista y la masa lo permiten; reduce el desgaste de los motores."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Telling the engines it is hotter than it is, so they take off with less thrust.",
+    "es": "Decirles a los motores que hace más calor del que hace para despegar con menos empuje."
+  },
+  "example": {
+    "en": "With a long runway they used an assumed temperature of 52 °C.",
+    "es": "Con una pista larga usaron una temperatura supuesta de 52 °C."
+  },
+  "pronunciation": {
+    "en": "uh-SOOMD TEM-pruh-chur",
+    "es": "tem-pe-ra-tu-ra su-pues-ta"
+  },
+  "synonyms": {
+    "en": [
+      "FLEX",
+      "reduced take-off thrust"
+    ],
+    "es": [
+      "FLEX",
+      "empuje reducido"
+    ]
+  },
+  "related": [
+    "thrust",
+    "take-off",
+    "toga"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

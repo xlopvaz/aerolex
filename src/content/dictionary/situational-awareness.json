@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Situational awareness",
+    "es": "Conciencia situacional"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The accurate perception and understanding of what is happening around the aircraft and in the flight, and the ability to anticipate how the situation will develop.",
+    "es": "Percepción y comprensión correctas de lo que ocurre alrededor del avión y en el vuelo, y capacidad de anticipar cómo evolucionará la situación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Knowing what is going on now and what will happen next.",
+    "es": "Saber qué está pasando ahora y qué va a pasar después."
+  },
+  "example": {
+    "en": "Briefing the taxi route improved the crew's situational awareness on the ground.",
+    "es": "Repasar la ruta de rodaje mejoró la conciencia situacional de la tripulación en tierra."
+  },
+  "pronunciation": {
+    "en": "sich-oo-AY-shun-ul uh-WAIR-nus",
+    "es": "con-cien-cia si-tua-cio-nal"
+  },
+  "synonyms": {
+    "en": [
+      "SA"
+    ],
+    "es": [
+      "SA"
+    ]
+  },
+  "related": [
+    "crm",
+    "fatigue"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak",
+    "icao-doc-9683"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

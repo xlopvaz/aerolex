@@ -1,0 +1,50 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SHELL",
+    "es": "SHELL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Software, Hardware, Environment, Liveware",
+    "es": "Software, hardware, entorno y factor humano"
+  },
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A human-factors model that places the person (Liveware) at the centre and studies its interfaces with procedures (Software), equipment (Hardware), the environment and other people.",
+    "es": "Modelo de factores humanos que sitúa a la persona (Liveware) en el centro y estudia sus relaciones con los procedimientos (Software), el equipo (Hardware), el entorno y las demás personas."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A way to look at how a person fits with rules, machines, surroundings and other people.",
+    "es": "Una forma de ver cómo encaja una persona con las normas, las máquinas, el entorno y los demás."
+  },
+  "example": {
+    "en": "A confusing switch layout is a Liveware–Hardware problem in the SHELL model.",
+    "es": "Una disposición confusa de interruptores es un problema persona–equipo en el modelo SHELL."
+  },
+  "pronunciation": {
+    "en": "SHEL",
+    "es": "shel"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "swiss-cheese-model",
+    "crm"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

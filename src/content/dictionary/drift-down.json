@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Drift-down",
+    "es": "Descenso tras fallo de motor"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The gradual descent of an aeroplane after an engine failure in cruise, at a speed chosen to slow the descent, until it reaches the altitude it can maintain on the remaining engines.",
+    "es": "Descenso gradual de un avión tras un fallo de motor en crucero, a una velocidad elegida para frenar el descenso, hasta la altitud que puede mantener con los motores restantes."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The slow descent after losing an engine at cruise altitude.",
+    "es": "El descenso lento tras perder un motor a altitud de crucero."
+  },
+  "example": {
+    "en": "The drift-down ended at FL230, the one-engine ceiling.",
+    "es": "El descenso tras el fallo terminó en FL230, el techo con un motor."
+  },
+  "pronunciation": {
+    "en": "DRIFT-down",
+    "es": "drift-daun"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "cruise",
+    "thrust"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-965-2012",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

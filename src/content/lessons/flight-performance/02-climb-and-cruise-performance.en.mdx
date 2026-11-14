@@ -1,0 +1,60 @@
+---
+lesson: climb-and-cruise-performance
+course: flight-performance
+lang: en
+title: "Climb and cruise performance"
+summary: "The climb segments after an engine failure with their minimum gradients, the difference between gross and net flight paths, and how cruise speed and altitude are chosen."
+objectives:
+  - "List the climb segments and their minimum gradients"
+  - "Distinguish the gross from the net flight path"
+  - "Explain cost index, optimum altitude and drift-down"
+minutes: 14
+terms: [cost-index, fms, drift-down]
+quiz: flight-performance-02
+sources: [cfr-14-part-25, eu-965-2012, faa-phak, faa-afh]
+review:
+  status: draft
+---
+
+## The take-off flight path with an engine out
+
+The take-off flight path starts at **35 ft** at the end of the take-off distance and is divided into segments. The certification rules set a **minimum gradient** with the critical engine inoperative:
+
+| Segment | Configuration | Twin | Three-engine | Four-engine |
+|---|---|---|---|---|
+| **1st** | Gear down, take-off flaps, V2 | Positive | 0.3 % | 0.5 % |
+| **2nd** | Gear up, take-off flaps, V2, take-off thrust | **2.4 %** | 2.7 % | 3.0 % |
+| **3rd** | Acceleration and flap retraction | — | — | — |
+| **Final** | Clean, maximum continuous thrust | 1.2 % | 1.5 % | 1.7 % |
+
+The **second segment** is usually the most demanding and often limits the take-off mass on hot days or at high aerodromes.
+
+## Gross and net
+
+- The **gross flight path** is what the aircraft can actually fly in the calculated conditions.
+- The **net flight path** is the gross one **reduced** by a margin: for a twin, the gradient is reduced by **0.8 points**.
+
+The operating rules require the **net** flight path to clear the obstacles in the departure area by at least **35 ft**. If it does not, the mass must be reduced or a special engine-failure departure procedure used.
+
+### Gradient and vertical speed
+
+The gradient is height gained over distance flown; vertical speed also depends on groundspeed. A useful approximation:
+
+> vertical speed (ft/min) ≈ gradient (%) × groundspeed (kt)
+
+2.4 % at 150 kt is about **360 ft/min**: not much, which is why the second segment is critical.
+
+## Cruise
+
+- **Specific range** is the distance flown per unit of fuel (NM per kg). The **maximum range** speed is the one that makes it greatest.
+- **Long-range cruise** speed is somewhat faster: it gives up about 1 % of specific range for a good deal of speed.
+- The <Term id="cost-index" /> entered in the <Term id="fms" /> balances time cost against fuel cost: **0** gives maximum range; high values, more speed.
+- The **optimum altitude** rises as fuel burns off and the aircraft gets lighter. That is why long flights use **step climbs**.
+
+## Engine failure in cruise
+
+With one engine out, the aircraft cannot hold its cruise level. It makes a <Term id="drift-down" /> at a speed that slows the loss of height, down to the **one-engine ceiling**. EU rules require the net flight path in that situation to clear the terrain near the route by **2,000 ft**, or a procedure to divert in time.
+
+<Callout type="caution" label="Mountains and engine failure">
+On routes over mountains, the one-engine ceiling can be below the terrain. Airlines plan escape routes: where to turn and which aerodrome to go to if an engine fails on each leg.
+</Callout>

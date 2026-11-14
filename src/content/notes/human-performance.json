@@ -1,0 +1,109 @@
+{
+  "course": "human-performance",
+  "lessons": [
+    {
+      "lesson": "the-body-in-flight",
+      "key": {
+        "es": "Hipoxia: baja la presión parcial del oxígeno; no duele. TUC orientativo: 25.000 ft 3–5 min; 35.000 ft 30–60 s; 40.000 ft 15–20 s (la mitad tras descompresión rápida). Hiperventilación: parecida; en altitud, tratar como hipoxia. Oídos y senos: problema en el descenso. Buceo: 12 h (sin paradas, hasta 8.000 ft) o 24 h. IMSAFE; alcohol (FAA): 8 h y menos del 0,04 %.",
+        "en": "Hypoxia: partial pressure of oxygen drops; it does not hurt. TUC guide: 25,000 ft 3–5 min; 35,000 ft 30–60 s; 40,000 ft 15–20 s (half after rapid decompression). Hyperventilation: similar; at altitude, treat as hypoxia. Ears and sinuses: trouble on descent. Diving: 12 h (no stops, up to 8,000 ft) or 24 h. IMSAFE; alcohol (FAA): 8 h and below 0.04 %."
+      },
+      "points": [
+        {
+          "es": "Hipoxia: baja la presión parcial del O₂, no el porcentaje; síntomas sutiles (euforia, visión de túnel, cianosis).",
+          "en": "Hypoxia: the partial pressure of O₂ drops, not the percentage; subtle symptoms (euphoria, tunnel vision, cyanosis)."
+        },
+        {
+          "es": "Tiempo de consciencia útil: 18.000 ft 20–30 min; 25.000 ft 3–5 min; 30.000 ft 1–2 min; 35.000 ft 30–60 s; 40.000 ft 15–20 s.",
+          "en": "Time of useful consciousness: 18,000 ft 20–30 min; 25,000 ft 3–5 min; 30,000 ft 1–2 min; 35,000 ft 30–60 s; 40,000 ft 15–20 s."
+        },
+        {
+          "es": "Hiperventilación: exceso de respiración, bajo CO₂, mareo y hormigueo. En altitud, primero oxígeno.",
+          "en": "Hyperventilation: over-breathing, low CO₂, dizziness and tingling. At altitude, oxygen first."
+        },
+        {
+          "es": "Gases atrapados: oídos y senos sufren en el descenso; no volar resfriado.",
+          "en": "Trapped gases: ears and sinuses suffer on descent; don't fly with a cold."
+        },
+        {
+          "es": "Buceo (FAA): 12 h sin paradas y hasta 8.000 ft; 24 h con paradas o por encima de 8.000 ft.",
+          "en": "Diving (FAA): 12 h with no stops and up to 8,000 ft; 24 h with stops or above 8,000 ft."
+        },
+        {
+          "es": "IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Emotion. Alcohol (FAA): 8 h y por debajo del 0,04 %.",
+          "en": "IMSAFE: Illness, Medication, Stress, Alcohol, Fatigue, Emotion. Alcohol (FAA): 8 h and below 0.04 %."
+        }
+      ]
+    },
+    {
+      "lesson": "senses-and-illusions",
+      "key": {
+        "es": "Oído interno: canales semicirculares (giros, se adaptan en ~20 s) y otolitos (aceleraciones, no distinguen inclinar de acelerar) → desorientación espacial; creer a los instrumentos. Ilusiones: inclinación falsa, Coriolis, espiral, somatográvica (acelerar = encabritar → picar), inversión, ascensor. Visuales: pista en subida, estrecha, agujero negro o lluvia → volar bajo.",
+        "en": "Inner ear: semicircular canals (rotation, adapt in ~20 s) and otoliths (acceleration, cannot tell tilt from acceleration) → spatial disorientation; believe the instruments. Illusions: leans, Coriolis, graveyard spiral, somatogravic (accelerate = pitch up → push down), inversion, elevator. Visual: upslope, narrow runway, black hole or rain → fly low."
+      },
+      "points": [
+        {
+          "es": "Canales semicirculares: giros; dejan de notarlos tras unos 20 s. Otolitos: aceleraciones lineales y gravedad.",
+          "en": "Semicircular canals: rotation; stop sensing it after about 20 s. Otoliths: linear acceleration and gravity."
+        },
+        {
+          "es": "Desorientación espacial: sin horizonte visible, las sensaciones engañan. Defensa: instrumentos.",
+          "en": "Spatial disorientation: without a visible horizon, sensations deceive. Defence: instruments."
+        },
+        {
+          "es": "Somatográvica: acelerar se siente como encabritar → riesgo de picar en motor y al aire o despegue nocturno.",
+          "en": "Somatogravic: accelerating feels like pitching up → risk of pushing down in a go-around or night take-off."
+        },
+        {
+          "es": "Otras: inclinación falsa, Coriolis (mover la cabeza en un giro), espiral mortal, inversión, ascensor.",
+          "en": "Others: the leans, Coriolis (moving the head in a turn), graveyard spiral, inversion, elevator."
+        },
+        {
+          "es": "Visuales que hacen volar bajo: pista en subida, pista estrecha, agujero negro, lluvia. En bajada o ancha: alto.",
+          "en": "Visual illusions that make you fly low: upslope, narrow runway, black hole, rain. Downslope or wide: high."
+        },
+        {
+          "es": "Defensa en la aproximación: senda electrónica o PAPI, 300 ft por NM en 3°, conocer la pista de antemano.",
+          "en": "Defence on approach: electronic path or PAPI, 300 ft per NM on 3°, know the runway in advance."
+        }
+      ]
+    },
+    {
+      "lesson": "human-error-stress-and-decisions",
+      "key": {
+        "es": "Error normal: detectarlo y contenerlo. SHELL: persona en el centro con Software, Hardware, Entorno y otras personas. Queso suizo (Reason): defensas con agujeros, condiciones latentes y fallos activos. Estrés: poco ayuda, mucho hunde. Conciencia situacional: percibir, comprender, anticipar. Fatiga y ritmo circadiano (mínimo de 2 a 6). Cinco actitudes peligrosas. FORDEC y DECIDE: volar primero, opciones, revisar.",
+        "en": "Error is normal: detect and contain it. SHELL: the person at the centre with Software, Hardware, Environment and other people. Swiss cheese (Reason): defences with holes, latent conditions and active failures. Stress: a little helps, a lot wrecks. Situational awareness: perceive, understand, anticipate. Fatigue and circadian rhythm (low 2 to 6). Five hazardous attitudes. FORDEC and DECIDE: fly first, options, review."
+      },
+      "points": [
+        {
+          "es": "El error es normal; la seguridad consiste en detectarlo y contenerlo.",
+          "en": "Error is normal; safety is about detecting and containing it."
+        },
+        {
+          "es": "SHELL: persona en el centro; relaciones con Software, Hardware, Entorno (Environment) y otras personas (Liveware).",
+          "en": "SHELL: the person at the centre; interfaces with Software, Hardware, Environment and other people (Liveware)."
+        },
+        {
+          "es": "Queso suizo: defensas con agujeros que se alinean; condiciones latentes y fallos activos; buscar causas en el sistema.",
+          "en": "Swiss cheese: defences with holes that line up; latent conditions and active failures; look for causes in the system."
+        },
+        {
+          "es": "Estrés y carga de trabajo: los extremos son peligrosos. Conciencia situacional: percibir, comprender, anticipar.",
+          "en": "Stress and workload: the extremes are dangerous. Situational awareness: perceive, understand, anticipate."
+        },
+        {
+          "es": "Fatiga: sueño, horas despierto, carga, ritmo circadiano (mínimo hacia las 2–6 h). Limitaciones de tiempo de vuelo y responsabilidad personal.",
+          "en": "Fatigue: sleep, hours awake, workload, circadian rhythm (low around 2–6 h). Flight time limitations and personal responsibility."
+        },
+        {
+          "es": "Actitudes peligrosas: antiautoridad, impulsividad, invulnerabilidad, machismo, resignación. Decidir con FORDEC o DECIDE.",
+          "en": "Hazardous attitudes: anti-authority, impulsivity, invulnerability, macho, resignation. Decide with FORDEC or DECIDE."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

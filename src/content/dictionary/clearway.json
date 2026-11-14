@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Clearway",
+    "es": "Zona libre de obstáculos"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A defined area beyond the end of the take-off run available, on the ground or water and under the control of the aerodrome, selected as suitable for an aeroplane to make part of its initial climb to a specified height.",
+    "es": "Área definida a continuación del final del recorrido de despegue disponible, en tierra o agua y bajo control del aeródromo, elegida como apta para que el avión haga parte de su ascenso inicial hasta una altura especificada."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A clear area past the runway end that counts for take-off distance.",
+    "es": "Una zona despejada pasado el final de la pista que cuenta para la distancia de despegue."
+  },
+  "example": {
+    "en": "The clearway allowed a higher take-off mass on the short runway.",
+    "es": "La zona libre de obstáculos permitió más masa al despegue en la pista corta."
+  },
+  "pronunciation": {
+    "en": "KLEER-way",
+    "es": "zo-na li-bre de obs-tá-cu-los"
+  },
+  "synonyms": {
+    "en": [
+      "CWY"
+    ],
+    "es": [
+      "CWY"
+    ]
+  },
+  "related": [
+    "toda",
+    "tora"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

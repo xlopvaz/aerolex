@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "ASDA",
+    "es": "ASDA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Accelerate-stop distance available",
+    "es": "Distancia disponible de aceleración-parada"
+  },
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The take-off run available plus the length of any stopway provided.",
+    "es": "Recorrido de despegue disponible más la longitud de la zona de parada, si la hay."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The runway plus any extra paved area where you could stop after an aborted take-off.",
+    "es": "La pista más la zona pavimentada extra donde podrías parar tras abortar un despegue."
+  },
+  "example": {
+    "en": "The stopway added 60 m to the ASDA.",
+    "es": "La zona de parada añadía 60 m a la ASDA."
+  },
+  "pronunciation": {
+    "en": "AZ-duh",
+    "es": "as-da"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tora",
+    "stopway",
+    "v1"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

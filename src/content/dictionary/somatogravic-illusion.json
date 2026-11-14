@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Somatogravic illusion",
+    "es": "Ilusión somatográvica"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A false sensation of pitching up caused by strong forward acceleration, or of pitching down caused by deceleration; it is especially dangerous during a go-around or take-off at night or in poor visibility.",
+    "es": "Falsa sensación de encabritar provocada por una aceleración fuerte hacia delante, o de picar provocada por una deceleración; es especialmente peligrosa en un motor y al aire o en un despegue de noche o con mala visibilidad."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Accelerating feels like climbing, which can make you push the nose down.",
+    "es": "Acelerar se siente como subir, y eso puede hacerte bajar el morro."
+  },
+  "example": {
+    "en": "After the go-around the crew cross-checked the attitude indicator to counter the somatogravic illusion.",
+    "es": "Tras el motor y al aire, la tripulación comprobó el indicador de actitud para contrarrestar la ilusión somatográvica."
+  },
+  "pronunciation": {
+    "en": "soh-muh-toh-GRAV-ik ih-LOO-zhun",
+    "es": "i-lu-sión so-ma-to-grá-vi-ca"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "spatial-disorientation",
+    "go-around"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

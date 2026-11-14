@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "IMSAFE",
+    "es": "IMSAFE"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Illness, Medication, Stress, Alcohol, Fatigue, Emotion",
+    "es": "Enfermedad, medicación, estrés, alcohol, fatiga, emoción"
+  },
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A personal checklist recommended by the FAA for pilots to assess their own fitness to fly before each flight.",
+    "es": "Lista de comprobación personal recomendada por la FAA para que el piloto evalúe su propia aptitud para volar antes de cada vuelo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A quick self-check: am I fit to fly today?",
+    "es": "Una autocomprobación rápida: ¿estoy en condiciones de volar hoy?"
+  },
+  "example": {
+    "en": "A heavy cold failed the \"I\" of IMSAFE, so she cancelled the flight.",
+    "es": "Un fuerte resfriado no pasaba la «I» de IMSAFE, así que canceló el vuelo."
+  },
+  "pronunciation": {
+    "en": "IM-sayf",
+    "es": "im-seif"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "fatigue",
+    "hypoxia"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-aim",
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

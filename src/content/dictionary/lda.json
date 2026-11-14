@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "LDA",
+    "es": "LDA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Landing distance available",
+    "es": "Distancia de aterrizaje disponible"
+  },
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The length of runway declared available and suitable for the ground run of an aeroplane landing.",
+    "es": "Longitud de pista que se declara disponible y apta para el recorrido en tierra de un avión que aterriza."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How much runway you have for landing.",
+    "es": "Cuánta pista tienes para aterrizar."
+  },
+  "example": {
+    "en": "A displaced threshold makes the LDA shorter than the TORA.",
+    "es": "Un umbral desplazado hace que la LDA sea menor que la TORA."
+  },
+  "pronunciation": {
+    "en": "el-dee-AY",
+    "es": "e-le-de-a"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tora",
+    "threshold",
+    "landing"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-14",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

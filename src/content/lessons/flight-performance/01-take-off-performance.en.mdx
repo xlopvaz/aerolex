@@ -1,0 +1,73 @@
+---
+lesson: take-off-performance
+course: flight-performance
+lang: en
+title: "Take-off performance"
+summary: "The declared runway distances, the V1, VR and V2 speeds, how the take-off distance of a transport aircraft is calculated and which factors limit the take-off mass."
+objectives:
+  - "Distinguish TORA, TODA, ASDA and LDA"
+  - "Explain the meaning and order of V1, VR and V2"
+  - "List the factors that limit the take-off mass"
+minutes: 15
+terms: [tora, toda, clearway, asda, stopway, lda, v1, vr, v2, density-altitude, assumed-temperature]
+quiz: flight-performance-01
+sources: [eu-965-2012, cfr-14-part-25, icao-annex-14, faa-phak]
+review:
+  status: draft
+---
+
+## The declared distances
+
+Each runway publishes four distances:
+
+| Distance | What it is |
+|---|---|
+| <Term id="tora" /> | Take-off run available: the runway suitable for the ground run |
+| <Term id="toda" /> | TORA + <Term id="clearway" /> |
+| <Term id="asda" /> | TORA + <Term id="stopway" /> |
+| <Term id="lda" /> | Landing distance available (may be shorter if the threshold is displaced) |
+
+So a runway can be short for stopping but long enough for take-off if there is a clearway beyond it, or the other way round.
+
+## The take-off speeds
+
+- **VMCG**: the minimum speed at which, if an engine fails on the ground, directional control can be kept with the aerodynamic controls alone.
+- <Term id="v1" />: the **decision speed**. If the failure is recognised before V1, the take-off is **rejected**; from V1 onwards it is **continued**. V1 may not be less than VMCG.
+- <Term id="vr" />: the **rotation** speed. V1 may not be greater than VR.
+- <Term id="v2" />: the **take-off safety speed**, reached at 35 ft with an engine failed. Under the certification rules, for most transport aircraft it is not less than **1.13 times the reference stall speed** nor **1.10 times the air minimum control speed**.
+
+The order is always: **VMCG ≤ V1 ≤ VR ≤ V2**.
+
+## The take-off distance
+
+For a transport aircraft on a dry runway, the take-off distance is the **greater** of:
+
+1. the distance to **35 ft** with an **engine failure** recognised at V1; and
+2. **115 %** of the distance to 35 ft with **all engines** operating.
+
+The **accelerate-stop distance** is what is needed to accelerate to V1 and brake to a stop. The take-off is possible if:
+
+- take-off run ≤ TORA;
+- take-off distance ≤ TODA;
+- accelerate-stop distance ≤ ASDA.
+
+When the engine-failure take-off distance and the accelerate-stop distance are equal, the field is said to be **balanced**.
+
+## What limits the take-off mass
+
+| Factor | Effect |
+|---|---|
+| **Mass** | More mass, more distance and poorer climb |
+| <Term id="density-altitude" /> | Heat and elevation reduce thrust and lift: more distance |
+| **Wind** | A headwind shortens the distance; a tailwind lengthens it. In the EU only **50 %** of the reported headwind is counted and at least **150 %** of the tailwind |
+| **Slope** | Uphill, more take-off distance |
+| **Runway condition** | Water, snow or ice lengthen the acceleration and especially the braking |
+| **Flaps** | More flap shortens the run but worsens the climb |
+
+The **climb gradient** and **obstacles** (Lesson 2), **tyre speed** and **brake energy** also limit the mass. The maximum take-off mass is the lowest of them all.
+
+When the actual mass is below the allowed one, the take-off can be made with **reduced thrust**, for example with an <Term id="assumed-temperature" />: the calculation pretends it is hotter and the engines wear less.
+
+<Callout type="info" label="Density altitude in numbers">
+A rule of thumb: each degree above ISA temperature adds about 120 ft of density altitude. At 2,000 ft with 30 °C (ISA +19), the aircraft performs as if at about 4,300 ft.
+</Callout>
