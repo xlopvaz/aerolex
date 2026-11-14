@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El localizador da guía…",
+        "en": "The localizer gives…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vertical",
+            "en": "Vertical guidance"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "De distancia",
+            "en": "Distance information"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "De velocidad",
+            "en": "Speed information"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lateral",
+            "en": "Lateral guidance"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La guía vertical la da la senda de planeo.",
+        "en": "Vertical guidance comes from the glide slope."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La desviación máxima del indicador del localizador corresponde aproximadamente a…",
+        "en": "Full-scale localizer deflection corresponds approximately to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "10° a cada lado",
+            "en": "10° each side"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "0,7° a cada lado",
+            "en": "0.7° each side"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2,5° a cada lado",
+            "en": "2.5° each side"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5 NM a cada lado",
+            "en": "5 NM each side"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El haz suele tener unos 5° en total y 700 ft en el umbral.",
+        "en": "The beam is usually about 5° in total and 700 ft at the threshold."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Por qué la senda de planeo se intercepta desde abajo?",
+        "en": "Why is the glide slope intercepted from below?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para ahorrar combustible",
+            "en": "To save fuel"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para no capturar una falsa senda a un ángulo mayor",
+            "en": "To avoid capturing a false path at a higher angle"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque la senda solo existe por debajo",
+            "en": "Because the path only exists below"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por el ruido",
+            "en": "Because of noise"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La más baja de las falsas sendas está a unos 9°–12°.",
+        "en": "The lowest false path is at about 9°–12°."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Una aproximación CAT I tiene una altura de decisión no menor de…",
+        "en": "A CAT I approach has a decision height not lower than…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "60 m (200 ft)",
+            "en": "60 m (200 ft)"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "30 m (100 ft)",
+            "en": "30 m (100 ft)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "75 m (250 ft)",
+            "en": "75 m (250 ft)"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "15 m (50 ft)",
+            "en": "15 m (50 ft)"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Con visibilidad ≥ 800 m o RVR ≥ 550 m.",
+        "en": "With visibility ≥ 800 m or RVR ≥ 550 m."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La RVR mínima de una operación CAT II es…",
+        "en": "The minimum RVR for a CAT II operation is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "550 m",
+            "en": "550 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "175 m",
+            "en": "175 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "50 m",
+            "en": "50 m"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "300 m",
+            "en": "300 m"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Con DH de menos de 60 m y no menos de 30 m.",
+        "en": "With a DH below 60 m but not below 30 m."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Una aproximación con DH de 250 ft es de…",
+        "en": "An approach with a DH of 250 ft is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tipo B, CAT I",
+            "en": "Type B, CAT I"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tipo B, CAT II",
+            "en": "Type B, CAT II"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Tipo A",
+            "en": "Type A"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tipo B, CAT III",
+            "en": "Type B, CAT III"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Tipo A: 75 m (250 ft) o más.",
+        "en": "Type A: 75 m (250 ft) or more."
+      }
+    }
+  ]
+}

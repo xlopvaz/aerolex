@@ -1,0 +1,58 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SBAS",
+    "es": "SBAS"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Satellite-based augmentation system",
+    "es": "Sistema de aumentación basado en satélites"
+  },
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A system of ground stations and geostationary satellites that broadcasts corrections and integrity information for GNSS signals over a wide area, allowing approaches with vertical guidance such as LPV; examples are EGNOS in Europe and WAAS in the USA.",
+    "es": "Sistema de estaciones en tierra y satélites geoestacionarios que difunde correcciones e información de integridad de las señales GNSS en una zona amplia, lo que permite aproximaciones con guiado vertical como las LPV; por ejemplo, EGNOS en Europa y WAAS en EE. UU."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Satellites that make GPS accurate enough for approaches.",
+    "es": "Satélites que hacen el GPS lo bastante preciso para aproximaciones."
+  },
+  "example": {
+    "en": "The LPV approach uses EGNOS, Europe's SBAS.",
+    "es": "La aproximación LPV usa EGNOS, el SBAS europeo."
+  },
+  "pronunciation": {
+    "en": "ESS-bass",
+    "es": "es-bas"
+  },
+  "synonyms": {
+    "en": [
+      "EGNOS",
+      "WAAS"
+    ],
+    "es": [
+      "EGNOS",
+      "WAAS"
+    ]
+  },
+  "related": [
+    "gnss",
+    "raim",
+    "rnp"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-aim",
+    "icao-doc-9613"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

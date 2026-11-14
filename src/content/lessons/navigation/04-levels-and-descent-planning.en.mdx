@@ -1,0 +1,55 @@
+---
+lesson: levels-and-descent-planning
+course: navigation
+lang: en
+title: "Cruising levels and descent planning"
+summary: "The semicircular cruising level rules, RVSM, and how to work out when to start the descent and at what rate."
+objectives:
+  - "Choose an IFR or VFR cruising level by track"
+  - "Calculate the top of descent"
+  - "Calculate the rate of descent for a 3° path"
+  - "Check what you have learned in the final assessment"
+minutes: 12
+terms: [flight-level, rvsm]
+quiz: navigation-final
+sources: [eu-923-2012, icao-annex-2, faa-aim]
+review:
+  status: draft
+---
+
+## Semicircular levels
+
+To separate traffic flying in opposite directions, the rules of the air assign <Term id="flight-level">cruising levels</Term> by **magnetic track**:
+
+| Magnetic track | IFR | VFR |
+|---|---|---|
+| **000° to 179°** | **Odd** thousands: FL 70, 90, 110… | Odd **+ 500 ft**: FL 75, 95, 115… |
+| **180° to 359°** | **Even** thousands: FL 80, 100, 120… | Even **+ 500 ft**: FL 85, 105, 125… |
+
+So an eastbound and a westbound IFR flight are separated vertically, and VFR flights sit halfway between IFR levels. Some States apply other tables in certain areas, published in their AIP.
+
+## RVSM
+
+Between **FL290 and FL410**, in **reduced vertical separation minimum** airspace (<Term id="rvsm" />), the separation between levels is **1,000 ft** instead of 2,000. The table still applies: FL 290, 310, 330… eastbound and FL 300, 320, 340… westbound. To fly in RVSM, the aircraft and operator need a specific approval, with more accurate altimeters and autopilot.
+
+## When to start down?
+
+A **3°** descent path loses about **318 ft per nautical mile**. The usual rule of thumb rounds the sum:
+
+> descent distance (NM) ≈ height to lose (in thousands of feet) × 3
+
+which is equivalent to a path slightly steeper than 3°, leaving a small margin.
+
+Example: from **FL350** to **3,000 ft**, you need to lose about 32,000 ft → 32 × 3 ≈ **96 NM** before the point where you want to be at 3,000 ft. In practice a margin is added to slow down and for any tailwind.
+
+## At what rate?
+
+To hold a 3° path:
+
+> rate of descent (ft/min) ≈ groundspeed (kt) × 5
+
+Example: on an ILS approach at **140 kt** groundspeed → about **700 ft/min**. With a headwind, groundspeed is lower and less vertical speed is needed; with a tailwind, more.
+
+<Callout type="tip" label="Why they work">
+3° is a gradient of just over 5 %: about 318 ft per nautical mile. At 60 kt you cover 1 NM a minute, so at any groundspeed the rate of descent is about 5 times that speed.
+</Callout>

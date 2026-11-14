@@ -1,0 +1,59 @@
+---
+lesson: earth-and-charts
+course: navigation
+lang: es
+title: "La Tierra y las cartas"
+summary: "Latitud y longitud, la milla náutica, círculo máximo y loxodrómica, las proyecciones Mercator y Lambert, la escala de una carta y la hora UTC."
+objectives:
+  - "Situar un punto por latitud y longitud y relacionar la milla náutica con el minuto de latitud"
+  - "Distinguir círculo máximo y loxodrómica"
+  - "Comparar las proyecciones Mercator y cónica conforme de Lambert"
+minutes: 12
+terms: [great-circle, rhumb-line]
+quiz: navigation-01
+sources: [faa-phak, icao-annex-2]
+review:
+  status: draft
+---
+
+## Latitud y longitud
+
+Cualquier punto de la Tierra se sitúa con dos ángulos:
+
+- **Latitud**: la distancia angular al norte o al sur del **ecuador**, de 0° a 90° N o S. Las líneas de igual latitud son los **paralelos**.
+- **Longitud**: la distancia angular al este o al oeste del **meridiano de Greenwich**, de 0° a 180° E o W. Las líneas de igual longitud son los **meridianos**.
+
+Cada grado se divide en 60 minutos. Por ejemplo, el aeropuerto de Madrid-Barajas está aproximadamente en 40° 28′ N, 3° 34′ W.
+
+## La milla náutica
+
+La **milla náutica** (NM) equivale a **1.852 m** y corresponde, aproximadamente, a **un minuto de arco de latitud**. Por eso:
+
+- **1° de latitud ≈ 60 NM** en cualquier parte del mundo;
+- en cambio, un grado de **longitud** mide 60 NM solo en el ecuador y se va acortando hacia los polos (a 60° de latitud, la mitad).
+
+Esta relación hace muy cómodo medir distancias en una carta: basta con usar la escala de latitudes del borde.
+
+## Círculo máximo y loxodrómica
+
+- El <Term id="great-circle">círculo máximo</Term> es la intersección de la Tierra con un plano que pasa por su centro. El arco de círculo máximo entre dos puntos es el **camino más corto** entre ellos, pero su rumbo **cambia** continuamente (salvo sobre el ecuador o un meridiano).
+- La <Term id="rhumb-line">loxodrómica</Term> corta todos los meridianos con el **mismo ángulo**: se vuela con un rumbo constante, pero es **más larga**.
+
+En distancias cortas la diferencia es despreciable. En vuelos transoceánicos es grande, y por eso las rutas de largo radio siguen círculos máximos que, en un mapa corriente, parecen curvas hacia el polo.
+
+## Las proyecciones
+
+Ninguna carta plana representa la Tierra sin deformarla. En aviación se usan sobre todo dos proyecciones **conformes**, que conservan los ángulos:
+
+| Proyección | Característica principal | Uso típico |
+|---|---|---|
+| **Mercator** | La loxodrómica es una **recta**; la escala crece mucho hacia los polos | Cartas de navegación marítima, algunas de zonas ecuatoriales |
+| **Cónica conforme de Lambert** | El círculo máximo es **casi una recta** y la escala es casi constante en la zona representada | La mayoría de las cartas aeronáuticas, como las seccionales de la FAA |
+
+## La escala
+
+La **escala** relaciona una distancia en la carta con la real. Las cartas seccionales de la FAA, por ejemplo, son de **1:500.000**: 1 cm en la carta son 5 km sobre el terreno. Cuanto mayor es el denominador, más superficie cubre la carta y menos detalle muestra.
+
+## La hora
+
+La Tierra gira 360° en 24 horas, es decir, **15° por hora**. En aviación se usa siempre la hora **UTC** (tiempo universal coordinado), la misma en todo el mundo, para planes de vuelo, informes meteorológicos y comunicaciones.

@@ -1,0 +1,55 @@
+---
+lesson: radar-and-surveillance
+course: radio-navigation
+lang: en
+title: "Radar and surveillance"
+summary: "Primary and secondary radar, transponder modes A, C and S, the special codes and automatic dependent surveillance (ADS-B)."
+objectives:
+  - "Distinguish primary radar, secondary radar and ADS-B"
+  - "Explain transponder modes A, C and S"
+  - "Remember the emergency transponder codes"
+  - "Check what you have learned in the final assessment"
+minutes: 12
+terms: [transponder, squawk, unlawful-interference, ads-b, tcas, weather-radar]
+quiz: radio-navigation-final
+sources: [faa-aim, icao-doc-4444, icao-annex-10]
+review:
+  status: draft
+---
+
+## Primary radar
+
+**Primary radar** sends out pulses and receives the **echo** that bounces back off objects. It needs no cooperation from the aircraft: it sees anything that reflects the signal, including birds, rain or vehicles. But it does not know **who** each echo is or what **altitude** it is flying at.
+
+## Secondary radar
+
+**Secondary surveillance radar** (SSR) **interrogates** the aircraft and the on-board <Term id="transponder" /> **replies** with data:
+
+| Mode | What it replies |
+|---|---|
+| **A** | A **4-digit** code from 0 to 7 (4,096 combinations) assigned by ATC |
+| **C** | Also **pressure altitude** |
+| **S** | Also a **unique 24-bit address** for the aircraft, allowing selective interrogation, and other data |
+
+The code is assigned by ATC with the instruction <Term id="squawk" />, for example "squawk 4521".
+
+## The special codes
+
+Under ICAO procedures, three codes have a reserved meaning:
+
+| Code | Meaning |
+|---|---|
+| **7500** | <Term id="unlawful-interference" /> |
+| **7600** | Radio **communication** failure |
+| **7700** | **Emergency** |
+
+When they are selected, the controller gets an immediate alert on the screen.
+
+## ADS-B
+
+With **automatic dependent surveillance–broadcast** (<Term id="ads-b" />), the aircraft **broadcasts by itself** its position (normally calculated with GNSS), altitude, speed and identity, several times a second. Ground stations and other equipped aircraft receive it. It is very accurate but **depends on GNSS**: with jamming or spoofing, ADS-B information can be degraded or false.
+
+## On board: TCAS and weather radar
+
+- <Term id="tcas" /> uses the same principle as SSR: it interrogates nearby aircraft's transponders to detect conflicts (you saw this in Module 5).
+- On-board <Term id="weather-radar" /> is a primary radar: it detects **precipitation** ahead of the aircraft, not clouds or clear-air turbulence.

@@ -1,0 +1,79 @@
+---
+lesson: the-wind-triangle
+course: navigation
+lang: es
+title: "Rumbos, derrotas y el triángulo de velocidades"
+summary: "La diferencia entre rumbo y derrota, cómo se calcula la corrección de deriva y la velocidad respecto al suelo, y la cadena de verdadero a brújula."
+objectives:
+  - "Distinguir rumbo, derrota, deriva y ángulo de corrección"
+  - "Calcular las componentes de viento de cara y cruzado"
+  - "Estimar la corrección de deriva y la velocidad respecto al suelo"
+minutes: 14
+terms: [track, heading, wind-correction-angle, ground-speed]
+quiz: navigation-02
+sources: [faa-phak, faa-aim]
+review:
+  status: draft
+---
+
+## Rumbo y derrota no son lo mismo
+
+- La <Term id="track">derrota</Term> es la trayectoria del avión **sobre el suelo**.
+- El <Term id="heading">rumbo</Term> es hacia dónde **apunta el morro**.
+
+Sin viento coinciden. Con viento cruzado, el avión se desplaza de lado: la **deriva** es el ángulo entre el rumbo y la derrota. Para seguir la derrota deseada, el piloto apunta el morro un poco hacia el viento: es el <Term id="wind-correction-angle">ángulo de corrección de deriva</Term>.
+
+## El triángulo de velocidades
+
+Tres vectores forman un triángulo:
+
+1. El del **avión respecto al aire**: rumbo y TAS.
+2. El del **viento**: dirección **desde la que sopla** y velocidad.
+3. El **resultante**, respecto al suelo: derrota y <Term id="ground-speed">velocidad respecto al suelo</Term>.
+
+Antiguamente se resolvía dibujándolo o con un computador de vuelo de tipo E6B. Hoy lo calcula el FMS, pero entenderlo permite comprobar que el resultado tiene sentido.
+
+<Callout type="info" label="¿Verdadero o magnético?">
+Los vientos de los pronósticos se dan respecto al norte **verdadero**. Los que da la torre o el ATIS para despegar y aterrizar, respecto al norte **magnético**, como las pistas.
+</Callout>
+
+## Componentes del viento
+
+Si el ángulo entre el viento y la derrota es α:
+
+- **componente de cara (o de cola)** = viento × cos α;
+- **componente cruzada** = viento × sen α.
+
+Valores que conviene recordar:
+
+| α | sen α | cos α |
+|---|---|---|
+| 30° | 0,5 | ≈ 0,9 |
+| 45° | ≈ 0,7 | ≈ 0,7 |
+| 60° | ≈ 0,9 | 0,5 |
+| 90° | 1 | 0 |
+
+Ejemplo: viento de 20 kt a 60° de la derrota → unos **18 kt de cruzado** y **10 kt de cara**.
+
+## Cálculo mental de la deriva
+
+Una aproximación útil: la **deriva máxima** (con viento totalmente cruzado) es
+
+> deriva máxima (°) ≈ viento (kt) × 60 / TAS (kt)
+
+y para otros ángulos se multiplica por sen α.
+
+Ejemplo completo: derrota verdadera **090°**, TAS **120 kt**, viento **360/20** (del norte):
+
+1. El viento es totalmente cruzado, de la izquierda: α = 90°.
+2. Deriva máxima ≈ 20 × 60 / 120 = **10°**.
+3. Hay que corregir 10° hacia el viento: rumbo verdadero **080°**.
+4. Sin componente de cara, la velocidad respecto al suelo es casi la TAS: unos **118 kt**.
+
+## De verdadero a brújula
+
+La cadena completa para obtener el rumbo que se lee en la brújula es:
+
+**derrota verdadera → (corrección de deriva) → rumbo verdadero → (variación) → rumbo magnético → (desvío) → rumbo de brújula**
+
+Recuerda del módulo de instrumentos: la variación **este se resta** y la **oeste se suma**.

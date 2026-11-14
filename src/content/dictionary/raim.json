@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RAIM",
+    "es": "RAIM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Receiver autonomous integrity monitoring",
+    "es": "Monitorización autónoma de la integridad en el receptor"
+  },
+  "categories": [
+    "navigation",
+    "aircraft-systems"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "A function of a GNSS receiver that uses redundant satellite measurements to detect a faulty satellite signal; it needs at least five satellites to detect a fault and six to exclude it.",
+    "es": "Función de un receptor GNSS que usa medidas redundantes de los satélites para detectar una señal de satélite defectuosa; necesita al menos cinco satélites para detectar un fallo y seis para excluirlo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The receiver's self-check that the satellite signals can be trusted.",
+    "es": "La autocomprobación del receptor para saber si puede fiarse de los satélites."
+  },
+  "example": {
+    "en": "The approach was not flown because RAIM was predicted to be unavailable.",
+    "es": "No se hizo la aproximación porque se preveía que no habría RAIM."
+  },
+  "pronunciation": {
+    "en": "RAYM",
+    "es": "raim (en inglés)"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "gnss",
+    "rnp",
+    "sbas"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

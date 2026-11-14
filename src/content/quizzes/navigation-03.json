@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuánto se tarda en recorrer 90 NM a 135 kt de velocidad respecto al suelo?",
+        "en": "How long does it take to cover 90 NM at a groundspeed of 135 kt?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "30 minutos",
+            "en": "30 minutes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "67 minutos",
+            "en": "67 minutes"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "40 minutos",
+            "en": "40 minutes"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "90 / 135 = 0,67 h = 40 min.",
+        "en": "90 / 135 = 0.67 h = 40 min."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Un avión consume 36 l/h. ¿Cuánto gasta en 50 minutos?",
+        "en": "An aircraft burns 36 l/h. How much does it use in 50 minutes?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "36 litros",
+            "en": "36 litres"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "18 litros",
+            "en": "18 litres"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "30 litros",
+            "en": "30 litres"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "50 litros",
+            "en": "50 litres"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "36 × 50 / 60 = 30 l.",
+        "en": "36 × 50 / 60 = 30 l."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Tras 40 NM estás 2 NM a la izquierda de la derrota. ¿Error de derrota?",
+        "en": "After 40 NM you are 2 NM left of track. Track error?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "2°",
+            "en": "2°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3°",
+            "en": "3°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6°",
+            "en": "6°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "20°",
+            "en": "20°"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "2 × 60 / 40 = 3°.",
+        "en": "2 × 60 / 40 = 3°."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Siguiendo el caso anterior, faltan 60 NM. ¿Corrección para ir directo al destino?",
+        "en": "Continuing the previous case, 60 NM to go. Correction to go straight to the destination?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "5° a la derecha",
+            "en": "5° right"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3° a la derecha",
+            "en": "3° right"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2° a la izquierda",
+            "en": "2° left"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "5° a la izquierda",
+            "en": "5° left"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Error 3° + cierre 2 × 60 / 60 = 2° → 5°, hacia la derecha porque estás a la izquierda.",
+        "en": "Error 3° + closing 2 × 60 / 60 = 2° → 5°, to the right because you are left of track."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Llegas a un punto de control 3 minutos más tarde de lo previsto. Significa que…",
+        "en": "You reach a checkpoint 3 minutes later than planned. It means that…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La TAS es mayor",
+            "en": "TAS is higher"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hay viento de cola mayor del previsto",
+            "en": "There is more tailwind than forecast"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El reloj está mal",
+            "en": "The clock is wrong"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La velocidad respecto al suelo es menor de la prevista",
+            "en": "Groundspeed is lower than planned"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El viento real no es el pronosticado: hay que corregir las estimas.",
+        "en": "The real wind is not the forecast one: correct the estimates."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Si te pierdes, ¿qué NO es recomendable?",
+        "en": "If you get lost, what is NOT advisable?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Subir si es seguro",
+            "en": "Climbing if safe"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Pedir ayuda al control",
+            "en": "Asking ATC for help"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Esperar a tener poco combustible para pedir ayuda",
+            "en": "Waiting until fuel is low to ask for help"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Mantener un rumbo fijo",
+            "en": "Holding a steady heading"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Cuanto antes se pide ayuda, más opciones hay.",
+        "en": "The sooner you ask for help, the more options there are."
+      }
+    }
+  ]
+}

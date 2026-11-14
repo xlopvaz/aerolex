@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "GNSS spoofing",
+    "es": "Suplantación de GNSS"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Deliberate broadcasting of counterfeit satellite navigation signals so that receivers compute a false position, speed or time; unlike jamming, which blocks the signal, it can mislead several aircraft systems at once.",
+    "es": "Emisión deliberada de señales de navegación por satélite falsas para que los receptores calculen una posición, una velocidad o una hora falsas; a diferencia de la interferencia (jamming), que bloquea la señal, puede engañar a la vez a varios sistemas del avión."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Fake satellite signals that make the aircraft think it is somewhere else.",
+    "es": "Señales de satélite falsas que hacen creer al avión que está en otro sitio."
+  },
+  "example": {
+    "en": "After the spoofing event the TAWS gave a false pull-up warning in cruise.",
+    "es": "Tras la suplantación, el TAWS dio un falso aviso de «pull up» en crucero."
+  },
+  "pronunciation": {
+    "en": "GEE-nass SPOO-fing",
+    "es": "su-plan-ta-ción de ge-ne-ese-ese"
+  },
+  "synonyms": {
+    "en": [
+      "spoofing"
+    ],
+    "es": [
+      "spoofing"
+    ]
+  },
+  "related": [
+    "gnss",
+    "raim",
+    "egpws"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-gnss-interference"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El radial 180 de un VOR es…",
+        "en": "The 180 radial of a VOR is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La línea de posiciones al sur magnético de la estación",
+            "en": "The line of positions magnetic south of the station"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El rumbo para llegar a la estación desde el sur",
+            "en": "The heading to reach the station from the south"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una marcación verdadera hacia la estación",
+            "en": "A true bearing to the station"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La línea al norte de la estación",
+            "en": "The line north of the station"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los radiales son marcaciones magnéticas desde la estación.",
+        "en": "Radials are magnetic bearings from the station."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "OBS en 045, indicación TO y barra centrada. Estás en el radial…",
+        "en": "OBS on 045, TO indication and bar centred. You are on the…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "045",
+            "en": "045 radial"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "135",
+            "en": "135 radial"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "315",
+            "en": "315 radial"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "225",
+            "en": "225 radial"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Con TO estás en el radial recíproco y vuelas hacia la estación.",
+        "en": "With TO you are on the reciprocal radial flying towards the station."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En un CDI de VOR, cada punto de desviación equivale aproximadamente a…",
+        "en": "On a VOR CDI, each dot of deflection is approximately…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1 NM",
+            "en": "1 NM"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "10°",
+            "en": "10°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "2°",
+            "en": "2°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "0,5°",
+            "en": "0.5°"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Desviación máxima de unos 10°.",
+        "en": "Full-scale deflection is about 10°."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "La sensibilidad inversa aparece cuando…",
+        "en": "Reverse sensing occurs when…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se vuela muy alto",
+            "en": "You fly very high"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se vuela en sentido contrario al curso seleccionado",
+            "en": "You fly in the opposite direction to the selected course"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El VOR está en mantenimiento",
+            "en": "The VOR is under maintenance"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se usa un HSI",
+            "en": "You use an HSI"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Se evita seleccionando un curso parecido al rumbo.",
+        "en": "It is avoided by selecting a course close to the heading."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Según el AIM, la tolerancia de una comprobación VOR en vuelo es…",
+        "en": "According to the AIM, the tolerance for an airborne VOR check is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "± 6°",
+            "en": "± 6°"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "± 4°",
+            "en": "± 4°"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "± 1°",
+            "en": "± 1°"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "± 10°",
+            "en": "± 10°"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "± 4° con VOT o punto de control en tierra.",
+        "en": "± 4° with a VOT or ground checkpoint."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un avión a 12.000 ft justo encima de un DME marca aproximadamente…",
+        "en": "An aircraft at 12,000 ft directly over a DME reads about…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "0 NM",
+            "en": "0 NM"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "12 NM",
+            "en": "12 NM"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6 NM",
+            "en": "6 NM"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2 NM",
+            "en": "2 NM"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El DME mide distancia oblicua: unos 6.000 ft por NM.",
+        "en": "DME measures slant range: about 6,000 ft per NM."
+      }
+    }
+  ]
+}

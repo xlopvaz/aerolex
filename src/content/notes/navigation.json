@@ -1,0 +1,134 @@
+{
+  "course": "navigation",
+  "lessons": [
+    {
+      "lesson": "earth-and-charts",
+      "key": {
+        "es": "Latitud (0–90° N/S) y longitud (0–180° E/W); 1 minuto de latitud ≈ 1 NM = 1.852 m; círculo máximo más corto, loxodrómica de rumbo constante; Mercator (loxodrómica recta) y Lambert (círculo máximo casi recto); UTC.",
+        "en": "Latitude (0–90° N/S) and longitude (0–180° E/W); 1 minute of latitude ≈ 1 NM = 1,852 m; great circle shortest, rhumb line constant track; Mercator (rhumb line straight) and Lambert (great circle almost straight); UTC."
+      },
+      "points": [
+        {
+          "es": "1 NM = 1.852 m ≈ 1′ de latitud; 1° de latitud ≈ 60 NM; el grado de longitud se acorta hacia los polos.",
+          "en": "1 NM = 1,852 m ≈ 1′ of latitude; 1° of latitude ≈ 60 NM; a degree of longitude shrinks towards the poles."
+        },
+        {
+          "es": "Círculo máximo: más corto, rumbo variable. Loxodrómica: rumbo constante, más larga.",
+          "en": "Great circle: shortest, changing track. Rhumb line: constant track, longer."
+        },
+        {
+          "es": "Mercator: loxodrómica recta, escala crece hacia los polos. Lambert cónica conforme: círculo máximo casi recto, escala casi constante.",
+          "en": "Mercator: rhumb line straight, scale grows towards the poles. Lambert conformal conic: great circle almost straight, scale nearly constant."
+        },
+        {
+          "es": "Escala 1:500.000 → 1 cm = 5 km.",
+          "en": "Scale 1:500,000 → 1 cm = 5 km."
+        },
+        {
+          "es": "15° por hora; en aviación siempre UTC.",
+          "en": "15° per hour; aviation always uses UTC."
+        }
+      ]
+    },
+    {
+      "lesson": "the-wind-triangle",
+      "key": {
+        "es": "Rumbo = morro, derrota = suelo; deriva y corrección hacia el viento; cara = V cos α, cruzado = V sen α; deriva máxima ≈ V × 60 / TAS; verdadero → magnético → brújula.",
+        "en": "Heading = nose, track = ground; drift and correction into the wind; head = W cos α, cross = W sin α; maximum drift ≈ W × 60 / TAS; true → magnetic → compass."
+      },
+      "points": [
+        {
+          "es": "Derrota: sobre el suelo. Rumbo: morro. Deriva: ángulo entre ambos. Corrección: hacia el viento.",
+          "en": "Track: over the ground. Heading: nose. Drift: angle between them. Correction: into the wind."
+        },
+        {
+          "es": "Triángulo: aire (rumbo, TAS) + viento (desde, velocidad) = suelo (derrota, GS).",
+          "en": "Triangle: air (heading, TAS) + wind (from, speed) = ground (track, GS)."
+        },
+        {
+          "es": "Vientos de pronóstico: norte verdadero. Torre y ATIS: magnético.",
+          "en": "Forecast winds: true north. Tower and ATIS: magnetic."
+        },
+        {
+          "es": "Cara = V × cos α; cruzado = V × sen α (sen 30 = 0,5; sen 45 ≈ 0,7; sen 60 ≈ 0,9).",
+          "en": "Head = W × cos α; cross = W × sin α (sin 30 = 0.5; sin 45 ≈ 0.7; sin 60 ≈ 0.9)."
+        },
+        {
+          "es": "Deriva máxima ≈ V × 60 / TAS; deriva ≈ máxima × sen α.",
+          "en": "Maximum drift ≈ W × 60 / TAS; drift ≈ maximum × sin α."
+        },
+        {
+          "es": "Cadena: derrota V → rumbo V → rumbo M (variación) → rumbo de brújula (desvío).",
+          "en": "Chain: true track → true heading → magnetic heading (variation) → compass heading (deviation)."
+        }
+      ]
+    },
+    {
+      "lesson": "dead-reckoning",
+      "key": {
+        "es": "Distancia = velocidad × tiempo; la hoja de navegación compara tiempos previstos y reales; 1 en 60: error ≈ desplazamiento × 60 / recorrido, cierre ≈ desplazamiento × 60 / restante, corrección total = suma.",
+        "en": "Distance = speed × time; the nav log compares planned and actual times; 1 in 60: error ≈ off × 60 / flown, closing ≈ off × 60 / to go, total correction = sum."
+      },
+      "points": [
+        {
+          "es": "Navegación observada (referencias) + estima (cálculo) = posición confirmada.",
+          "en": "Pilotage (references) + dead reckoning (calculation) = confirmed position."
+        },
+        {
+          "es": "D = V × T; combustible = consumo × tiempo. 120 kt = 2 NM/min.",
+          "en": "D = S × T; fuel = burn × time. 120 kt = 2 NM/min."
+        },
+        {
+          "es": "Hoja de navegación: comparar hora real y prevista en cada punto y corregir las estimas.",
+          "en": "Nav log: compare actual and planned time at each point and correct the estimates."
+        },
+        {
+          "es": "1 en 60: 1° durante 60 NM ≈ 1 NM. Error = desv. × 60 / recorrido; cierre = desv. × 60 / restante; al destino = suma.",
+          "en": "1 in 60: 1° over 60 NM ≈ 1 NM. Error = off × 60 / flown; closing = off × 60 / to go; to destination = sum."
+        },
+        {
+          "es": "Volver a la derrota en la misma distancia: corregir el doble del error.",
+          "en": "Regain track in the same distance: correct by double the error."
+        },
+        {
+          "es": "Perdido: calma, rumbo fijo, subir si es seguro, radioayudas, GNSS y control; vigilar el combustible.",
+          "en": "Lost: calm, steady heading, climb if safe, navaids, GNSS and ATC; watch the fuel."
+        }
+      ]
+    },
+    {
+      "lesson": "levels-and-descent-planning",
+      "key": {
+        "es": "Niveles: 000–179° IFR impares y VFR impares + 500; 180–359° IFR pares y VFR pares + 500; RVSM FL290–410 cada 1.000 ft. Descenso: distancia ≈ miles de pies × 3; velocidad vertical ≈ GS × 5.",
+        "en": "Levels: 000–179° IFR odd and VFR odd + 500; 180–359° IFR even and VFR even + 500; RVSM FL290–410 every 1,000 ft. Descent: distance ≈ thousands of feet × 3; rate ≈ GS × 5."
+      },
+      "points": [
+        {
+          "es": "Derrota magnética 000–179°: IFR impares, VFR impares + 500. 180–359°: IFR pares, VFR pares + 500.",
+          "en": "Magnetic track 000–179°: IFR odd, VFR odd + 500. 180–359°: IFR even, VFR even + 500."
+        },
+        {
+          "es": "RVSM FL290–410: 1.000 ft entre niveles, con aprobación específica.",
+          "en": "RVSM FL290–410: 1,000 ft between levels, with specific approval."
+        },
+        {
+          "es": "3° ≈ 318 ft/NM. Regla práctica: distancia de descenso ≈ miles de pies × 3.",
+          "en": "3° ≈ 318 ft/NM. Rule of thumb: descent distance ≈ thousands of feet × 3."
+        },
+        {
+          "es": "Velocidad vertical en 3° ≈ GS × 5 (140 kt → 700 ft/min).",
+          "en": "Rate of descent on 3° ≈ GS × 5 (140 kt → 700 ft/min)."
+        },
+        {
+          "es": "Viento de cola: más distancia y más velocidad vertical; de cara, menos.",
+          "en": "Tailwind: more distance and higher rate; headwind, less."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

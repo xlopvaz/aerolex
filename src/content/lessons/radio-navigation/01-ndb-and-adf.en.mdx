@@ -1,0 +1,65 @@
+---
+lesson: ndb-and-adf
+course: radio-navigation
+lang: en
+title: "NDB and ADF"
+summary: "How the non-directional beacon works, how to read the ADF and RMI, relative and magnetic bearings, and the errors that affect this signal."
+objectives:
+  - "Work out the magnetic bearing to the station from heading and relative bearing"
+  - "Distinguish QDM and QDR"
+  - "Recognise ADF errors"
+minutes: 12
+terms: [ndb, adf]
+quiz: radio-navigation-01
+sources: [faa-aim, faa-ifh, faa-phak, icao-doc-8400]
+review:
+  status: draft
+---
+
+## The simplest radio aid
+
+An <Term id="ndb" /> transmits in all directions on **long and medium wave** (in the USA, normally between 190 and 535 kHz). In the aircraft, the <Term id="adf" /> has a needle that **points to the station**. There are no radials and no TO/FROM indication: only the direction to the beacon.
+
+Like any radio aid, it is **identified** by listening to its Morse code before use.
+
+## Relative bearing
+
+**Relative bearing** (RB) is the angle between the aircraft's **nose** and the station, measured clockwise. A fixed-card ADF shows it directly: if the needle reads 090, the station is to the aircraft's right, 90° from the nose.
+
+To know where the station is relative to magnetic north:
+
+> magnetic bearing to the station (QDM) = magnetic heading + relative bearing
+
+(subtracting 360 if the result is over 360).
+
+Example: magnetic heading **300°**, relative bearing **090°** → 300 + 90 = 390 − 360 = **030°**. To fly to the station with no wind you would steer 030°.
+
+## QDM and QDR
+
+These are ICAO Q codes still in use:
+
+- **QDM**: the magnetic heading to steer (with no wind) to reach **the** station.
+- **QDR**: the aircraft's magnetic bearing **from** the station.
+
+They always differ by **180°**: if the QDM is 030°, the QDR is 210°.
+
+## The RMI
+
+The **radio magnetic indicator** (RMI) combines a card that turns with the aircraft's heading and one or two needles for the ADF or VOR. That way the needle's **head** reads the **QDM** directly and its **tail** the **QDR**, with no calculation.
+
+## ADF errors
+
+Long and medium waves have limitations the pilot needs to know:
+
+| Error | What happens |
+|---|---|
+| **Thunderstorms** | The needle may point to lightning instead of the station |
+| **Night effect** | At night, waves reflected off the ionosphere interfere with the direct wave and the needle swings |
+| **Coastal refraction** | The wave changes direction as it crosses the coastline |
+| **Mountain effect** | Mountains reflect the signal and deflect the indication |
+
+Also, not all equipment gives a reliable failure warning: if you cannot hear the identifier, the indication is not reliable.
+
+<Callout type="tip" label="Following a needle is not following a track">
+If you always fly with the needle on the nose (*homing*), with a crosswind you reach the station along a curve. To follow a straight track you apply a wind correction and keep the needle offset to the opposite side.
+</Callout>

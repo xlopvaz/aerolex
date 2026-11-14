@@ -1,0 +1,62 @@
+---
+lesson: gnss-and-pbn
+course: radio-navigation
+lang: es
+title: "GNSS y navegación basada en la performance"
+summary: "Cómo calcula la posición un receptor GNSS, qué es el RAIM y el SBAS, la diferencia entre RNAV y RNP, las especificaciones de navegación y la amenaza de la interferencia y la suplantación."
+objectives:
+  - "Explicar cuántos satélites hacen falta para posición, detección y exclusión de fallos"
+  - "Distinguir RNAV y RNP e interpretar una especificación de navegación"
+  - "Reconocer los síntomas de interferencia y suplantación de GNSS"
+minutes: 14
+terms: [gnss, raim, sbas, rnav, pbn, rnp, gnss-spoofing]
+quiz: radio-navigation-04
+sources: [faa-aim, icao-doc-9613, easa-gnss-interference]
+review:
+  status: draft
+---
+
+## Cómo funciona el GNSS
+
+Un receptor <Term id="gnss" /> mide el tiempo que tardan en llegar las señales de varios satélites y calcula su distancia a cada uno. Según el AIM de la FAA:
+
+- la constelación GPS tiene **24 satélites** como base, dispuestos para que siempre haya al menos **5 visibles** desde cualquier punto;
+- para calcular una posición en tres dimensiones hacen falta **4 satélites** (tres para la posición y uno más para corregir el reloj del receptor).
+
+Además del GPS estadounidense existen otros sistemas, como Galileo (europeo), GLONASS (ruso) y BeiDou (chino).
+
+## La integridad: RAIM y SBAS
+
+Para navegar no basta con una posición: hay que saber si se puede **confiar** en ella.
+
+- El <Term id="raim" /> del receptor usa satélites de más para comprobar que todos dicen lo mismo. Necesita al menos **5 satélites** para **detectar** un fallo y **6** (o 5 con ayuda barométrica) para **excluir** al satélite defectuoso y seguir navegando.
+- Los <Term id="sbas" /> (EGNOS en Europa, WAAS en EE. UU.) difunden desde satélites geoestacionarios **correcciones e información de integridad** para una zona amplia. Permiten aproximaciones con guiado vertical como las **LPV**, con mínimos parecidos a los de un ILS CAT I.
+
+## RNAV y RNP
+
+La <Term id="rnav">navegación de área</Term> permite volar cualquier trayectoria entre puntos definidos por coordenadas, sin depender de volar de radioayuda en radioayuda. El concepto de navegación basada en la performance (<Term id="pbn" />) de la OACI define **qué precisión** debe tener esa navegación en cada fase:
+
+- Una especificación **RNAV** exige una precisión, por ejemplo **RNAV 5**: mantenerse dentro de **5 NM** de la derrota durante al menos el **95 %** del tiempo de vuelo.
+- Una especificación <Term id="rnp" /> exige además que el avión **vigile su propia precisión y avise** a la tripulación si deja de cumplirla.
+
+| Especificación | Uso típico |
+|---|---|
+| RNAV 10 / RNP 4 | Rutas oceánicas y remotas |
+| RNAV 5 | Rutas continentales |
+| RNAV 1 / RNP 1 | Salidas (SID) y llegadas (STAR) |
+| RNP APCH | Aproximaciones RNP: LNAV, LNAV/VNAV, LPV |
+| RNP AR APCH | Aproximaciones con autorización especial, en entornos difíciles |
+
+## Interferencia y suplantación
+
+Desde 2022 han aumentado mucho los casos de **interferencia** (*jamming*: la señal se bloquea) y <Term id="gnss-spoofing">suplantación</Term> (*spoofing*: se emiten señales falsas), sobre todo cerca de zonas de conflicto. La EASA ha publicado y actualizado un boletín de seguridad sobre el tema, cuya cuarta revisión es de julio de 2026. Advierte que la **suplantación es más peligrosa** que la interferencia, porque es más difícil de detectar y puede engañar a varios sistemas a la vez.
+
+Síntomas que señala la EASA:
+
+- **discrepancias** entre las posiciones de los distintos sistemas de navegación;
+- diferencias **anormales** entre la velocidad respecto al suelo y la TAS;
+- **saltos de hora**;
+- avisos **falsos** del TAWS;
+- desviaciones en la posición híbrida inercial y GNSS.
+
+La respuesta pasa por **detectar** el problema, **avisar** al control, apoyarse en la **navegación inercial y en las radioayudas convencionales** (VOR, DME, ILS) y conocer los procedimientos del operador.

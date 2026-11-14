@@ -1,0 +1,53 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Dead reckoning",
+    "es": "Navegación a estima"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation",
+    "general-aviation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "Navigation by working out position from a known starting point using heading, airspeed, wind, time and distance, without external position fixes.",
+    "es": "Navegación que calcula la posición a partir de un punto conocido mediante el rumbo, la velocidad, el viento, el tiempo y la distancia, sin referencias externas de posición."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Working out where you are from speed, direction and time.",
+    "es": "Calcular dónde estás a partir de la velocidad, la dirección y el tiempo."
+  },
+  "example": {
+    "en": "By dead reckoning we should be over the lake in eight minutes.",
+    "es": "Por estima, deberíamos estar sobre el lago en ocho minutos."
+  },
+  "pronunciation": {
+    "en": "ded REK-un-ing",
+    "es": "na-ve-ga-ción a es-ti-ma"
+  },
+  "synonyms": {
+    "en": [
+      "DR"
+    ],
+    "es": [
+      "estima"
+    ]
+  },
+  "related": [
+    "ground-speed",
+    "heading",
+    "track"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

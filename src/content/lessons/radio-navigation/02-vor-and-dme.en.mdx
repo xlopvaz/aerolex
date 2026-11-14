@@ -1,0 +1,64 @@
+---
+lesson: vor-and-dme
+course: radio-navigation
+lang: en
+title: "VOR and DME"
+summary: "VOR radials, reading the CDI with TO/FROM and reverse sensing, accuracy checks, and DME with its slant-range error."
+objectives:
+  - "Interpret the CDI and the TO/FROM indication"
+  - "Avoid reverse sensing"
+  - "Explain DME slant-range error"
+minutes: 13
+terms: [vor, radial, dme]
+quiz: radio-navigation-02
+sources: [faa-aim, faa-phak, faa-ifh]
+review:
+  status: draft
+---
+
+## Radials
+
+A <Term id="vor" /> transmits on **VHF**, between **108.0 and 117.95 MHz**, a signal that lets the receiver work out which **radial** it is on. A <Term id="radial" /> is a **magnetic** bearing **from** the station: the 090 radial is the line of positions magnetic east of the VOR.
+
+Being VHF, the signal travels in a **straight line**: range increases with altitude and mountains block it.
+
+## The CDI and the TO/FROM indication
+
+A course is selected with the OBS. The indicator shows:
+
+- the CDI **bar**: how far off the course you are. Full-scale deflection is about **10°**, each dot about **2°**;
+- the **TO/FROM** indicator: whether the selected course takes you **towards** the station or **away** from it.
+
+With the OBS on 090 and a **FROM** indication, you are on the 090 radial. With 090 and **TO**, you are on the 270 radial, flying towards the station.
+
+## Reverse sensing
+
+The bar shows the correct way to correct only if the aircraft's **heading** is close to the **selected course**. If you fly the opposite way (for example, course 090 selected and heading 270), the bar seems to show the opposite of what you should do: this is **reverse sensing**. The answer is always to select a course close to the heading being flown.
+
+An HSI, which turns the card with the heading, avoids this problem.
+
+## Over the station
+
+Right above the VOR there is a **cone of confusion**: the bar swings and TO changes to FROM. It is the sign that you have passed over the station.
+
+## Checking the receiver
+
+According to the FAA AIM, the VOR receiver is checked with these tolerances:
+
+| Check | Tolerance |
+|---|---|
+| Test station (VOT) or ground checkpoint | **± 4°** |
+| Airborne checkpoint | **± 6°** |
+| Two receivers tuned to the same VOR | **4°** maximum difference |
+
+When a VOR is under maintenance its Morse **identification is removed**: a station with no identifier must not be used.
+
+## DME
+
+<Term id="dme" /> measures **distance** to the ground equipment by timing how long an interrogation from the aircraft takes to get a reply. It works on **UHF** and is usually paired with a VOR or an ILS.
+
+It measures **slant range** (a straight line to the antenna), not distance over the ground. Over the station, an aircraft at **6,000 ft** reads about **1 NM** even though it is directly overhead. The AIM says the error is small if the aircraft is at least **1 NM from the station for every 1,000 ft** of height above it.
+
+<Callout type="info" label="Orientation example">
+OBS on 330, bar deflected left, TO indication, heading 330. The course to the station is to your left: correct to the left. You are east of the 150 radial, which is the one that leads to the station on a heading of 330.
+</Callout>

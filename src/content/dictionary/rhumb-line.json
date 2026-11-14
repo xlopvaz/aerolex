@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Rhumb line",
+    "es": "Loxodrómica"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "navigation"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A line on the Earth's surface that crosses every meridian at the same angle; it is a straight line on a Mercator chart but is longer than the great circle between the same two points.",
+    "es": "Línea sobre la superficie terrestre que corta todos los meridianos con el mismo ángulo; es recta en una carta Mercator, pero más larga que el círculo máximo entre los mismos dos puntos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A route that keeps the same compass direction all the way.",
+    "es": "Una ruta que mantiene la misma dirección todo el tiempo."
+  },
+  "example": {
+    "en": "On a Mercator chart the rhumb line between two cities is a straight line.",
+    "es": "En una carta Mercator, la loxodrómica entre dos ciudades es una recta."
+  },
+  "pronunciation": {
+    "en": "RUM line",
+    "es": "lo-xo-dró-mi-ca"
+  },
+  "synonyms": {
+    "en": [
+      "loxodrome"
+    ],
+    "es": [
+      "línea de rumbo constante"
+    ]
+  },
+  "related": [
+    "great-circle",
+    "track"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-phak"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -59,7 +59,7 @@ test.describe('academy', () => {
 test.describe('TAF academy', () => {
   test('is listed in the meteorology path and its lessons work in both languages', async ({ page }) => {
     await page.goto('en/academy/');
-    await expect(page.locator('.course-card')).toHaveCount(14);
+    await expect(page.locator('.course-card')).toHaveCount(16);
     await page.locator('.course-card', { hasText: 'TAF Academy' }).click();
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
     await page.locator('.lesson-list a', { hasText: 'Change groups' }).click();
@@ -106,10 +106,10 @@ test.describe('Aviation Fundamentals', () => {
 });
 
 test.describe('Pilot Academy', () => {
-  test('lists modules 1–5 in order and opens an ATPL-style quiz', async ({ page }) => {
+  test('lists modules 1–7 in order and opens an ATPL-style quiz', async ({ page }) => {
     await page.goto('es/academia/');
     const path = page.locator('.path', { hasText: 'Formación de pilotos' });
-    await expect(path.locator('.course-card')).toHaveCount(5);
+    await expect(path.locator('.course-card')).toHaveCount(7);
     await expect(path.locator('.course-card').first()).toContainText('Módulo 1');
     await path.locator('.course-card', { hasText: 'Módulo 2' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/aerodynamics\/$/);
@@ -126,6 +126,7 @@ test.describe('Pilot Academy', () => {
     const path = page.locator('.path', { hasText: 'Pilot Training' });
     await expect(path.locator('.course-card').nth(2)).toContainText('Module 3');
     await expect(path.locator('.course-card').nth(4)).toContainText('Module 5');
+    await expect(path.locator('.course-card').nth(6)).toContainText('Module 7');
     await path.locator('.course-card', { hasText: 'Module 4' }).click();
     await expect(page).toHaveURL(/\/en\/academy\/aircraft-systems\/$/);
     await expect(page.locator('.lesson-list li')).toHaveCount(6);
