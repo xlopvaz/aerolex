@@ -1,0 +1,101 @@
+{
+  "course": "flight-planning",
+  "lessons": [
+    {
+      "lesson": "mass-and-balance",
+      "key": {
+        "es": "Masas: básica en vacío → DOM → ZFM (+ carga de pago) → TOM (+ combustible) → LM (− trayecto); máximos MZFM (encastre del ala), MTOM y MLM; TOM permitida = la menor. CG = Σmomentos / Σmasas; adelantado: estable, pérdida más alta, más consumo; atrasado: inestable, riesgo de pérdida de control.",
+        "en": "Masses: basic empty → DOM → ZFM (+ traffic load) → TOM (+ fuel) → LM (− trip); maximums MZFM (wing root), MTOM and MLM; allowed TOM = the lowest. CG = Σmoments / Σmasses; forward: stable, higher stall speed, more fuel; aft: unstable, loss-of-control risk."
+      },
+      "points": [
+        {
+          "es": "DOM = masa básica + tripulación + catering. ZFM = DOM + carga de pago. TOM = ZFM + combustible. LM = TOM − trayecto.",
+          "en": "DOM = basic mass + crew + catering. ZFM = DOM + traffic load. TOM = ZFM + fuel. LM = TOM − trip fuel."
+        },
+        {
+          "es": "MZFM protege el encastre del ala (sin alivio del combustible).",
+          "en": "MZFM protects the wing root (no relief from fuel)."
+        },
+        {
+          "es": "TOM permitida = menor de MTOM, MZFM + combustible al despegue, MLM + combustible del trayecto (y límites de actuaciones).",
+          "en": "Allowed TOM = lowest of MTOM, MZFM + take-off fuel, MLM + trip fuel (and performance limits)."
+        },
+        {
+          "es": "Momento = masa × brazo; CG = Σ momentos / Σ masas; en transporte, en % de la MAC.",
+          "en": "Moment = mass × arm; CG = Σ moments / Σ masses; in transport aircraft, as % MAC."
+        },
+        {
+          "es": "CG adelantado: más estable, mandos pesados, pérdida más alta, más consumo. CG atrasado: menos estable, mandos ligeros, riesgo de pérdida de control.",
+          "en": "Forward CG: more stable, heavy controls, higher stall speed, more fuel. Aft CG: less stable, light controls, loss-of-control risk."
+        }
+      ]
+    },
+    {
+      "lesson": "fuel-planning",
+      "key": {
+        "es": "Combustible: rodaje + trayecto + contingencias (5 %, mínimo 5 min a 1.500 ft) + alternativo + reserva final (30 min a 1.500 ft en turbinas) + adicional + extra. MINIMUM FUEL: sin margen para cambios (no es emergencia). MAYDAY FUEL: aterrizaría por debajo de la reserva final.",
+        "en": "Fuel: taxi + trip + contingency (5 %, minimum 5 min at 1,500 ft) + alternate + final reserve (30 min at 1,500 ft for turbines) + additional + extra. MINIMUM FUEL: no margin for changes (not an emergency). MAYDAY FUEL: would land below final reserve."
+      },
+      "points": [
+        {
+          "es": "Partidas: rodaje, trayecto, contingencias, alternativo, reserva final, adicional, extra.",
+          "en": "Components: taxi, trip, contingency, alternate, final reserve, additional, extra."
+        },
+        {
+          "es": "Contingencias: 5 % del trayecto, mínimo 5 min de espera a 1.500 ft sobre el destino.",
+          "en": "Contingency: 5 % of trip, minimum 5 min holding at 1,500 ft above destination."
+        },
+        {
+          "es": "Reserva final (turbina): 30 min de espera a 1.500 ft; no se planifica gastarla.",
+          "en": "Final reserve (turbine): 30 min holding at 1,500 ft; not planned to be used."
+        },
+        {
+          "es": "Combustible mínimo en rampa = todas las partidas + rodaje.",
+          "en": "Minimum ramp fuel = all components + taxi."
+        },
+        {
+          "es": "En vuelo: comparar real y previsto, replanificar si baja.",
+          "en": "In flight: compare actual and planned, re-plan if it drops."
+        },
+        {
+          "es": "MINIMUM FUEL (sin margen, no emergencia) y MAYDAY FUEL (por debajo de la reserva final, emergencia).",
+          "en": "MINIMUM FUEL (no margin, not an emergency) and MAYDAY FUEL (below final reserve, emergency)."
+        }
+      ]
+    },
+    {
+      "lesson": "flight-plan-and-briefing",
+      "key": {
+        "es": "Plan de vuelo OACI: 7 identificación, 8 reglas y tipo, 9 aeronave y estela, 10 equipo, 13 salida y EOBT, 15 velocidad, nivel y ruta (N0450F350), 16 destino y alternativos, 18 otra información, 19 autonomía y personas. Presentarlo ≥ 60 min antes. Preparación: plan operacional, meteorología, NOTAM, MEL, masa y centrado.",
+        "en": "ICAO flight plan: 7 identification, 8 rules and type, 9 aircraft and wake, 10 equipment, 13 departure and EOBT, 15 speed, level and route (N0450F350), 16 destination and alternates, 18 other information, 19 endurance and persons. File ≥ 60 min ahead. Briefing: operational plan, weather, NOTAMs, MEL, mass and balance."
+      },
+      "points": [
+        {
+          "es": "Casillas: 7 identificación, 8 reglas (I/V/Y/Z) y tipo (S/N/G/M/X), 9 tipo y estela (L/M/H/J), 10 equipo.",
+          "en": "Items: 7 identification, 8 rules (I/V/Y/Z) and type (S/N/G/M/X), 9 type and wake (L/M/H/J), 10 equipment."
+        },
+        {
+          "es": "13 salida y EOBT; 15 velocidad, nivel y ruta (N0450F350 = 450 kt TAS a FL350); 16 destino, EET y alternativos.",
+          "en": "13 departure and EOBT; 15 speed, level and route (N0450F350 = 450 kt TAS at FL350); 16 destination, EET and alternates."
+        },
+        {
+          "es": "18 otra información (PBN, REG); 19 autonomía, personas a bordo, equipo de emergencia.",
+          "en": "18 other information (PBN, REG); 19 endurance, persons on board, emergency equipment."
+        },
+        {
+          "es": "SERA: presentar al menos 60 min antes si recibe control; en Europa, procesamiento centralizado y franjas de despegue.",
+          "en": "SERA: file at least 60 min ahead if receiving ATC; in Europe, central processing and take-off slots."
+        },
+        {
+          "es": "Preparación: plan operacional, METAR/TAF/SIGMET/mapas, NOTAM, MEL, masa y centrado → alternativos y combustible.",
+          "en": "Briefing: operational plan, METAR/TAF/SIGMET/charts, NOTAMs, MEL, mass and balance → alternates and fuel."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

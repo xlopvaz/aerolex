@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Trip fuel",
+    "es": "Combustible del trayecto"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The fuel needed to fly from take-off at the departure aerodrome to landing at the destination, including climb, cruise, descent and approach.",
+    "es": "Combustible necesario para volar desde el despegue en el aeródromo de salida hasta el aterrizaje en el de destino, incluidos el ascenso, el crucero, el descenso y la aproximación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The fuel to fly from A to B.",
+    "es": "El combustible para ir de A a B."
+  },
+  "example": {
+    "en": "Trip fuel was 6,800 kg for the flight to Tenerife.",
+    "es": "El combustible del trayecto era de 6.800 kg para el vuelo a Tenerife."
+  },
+  "pronunciation": {
+    "en": "TRIP FYOO-ul",
+    "es": "com-bus-ti-ble del tra-yec-to"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "contingency-fuel",
+    "final-reserve-fuel",
+    "alternate-aerodrome"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-ear-air-ops",
+    "icao-annex-6"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

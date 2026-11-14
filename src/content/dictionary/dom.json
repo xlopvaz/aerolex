@@ -1,0 +1,56 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "DOM",
+    "es": "DOM"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Dry operating mass",
+    "es": "Masa operativa en seco"
+  },
+  "categories": [
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The total mass of the aircraft ready for a specific type of operation, including crew, catering and removable equipment, but excluding usable fuel and the traffic load.",
+    "es": "Masa total de la aeronave preparada para un tipo concreto de operación, incluidos la tripulación, el catering y el equipo desmontable, pero sin el combustible utilizable ni la carga de pago."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The aircraft's weight with crew and catering but no fuel or payload.",
+    "es": "El peso del avión con tripulación y catering, sin combustible ni carga de pago."
+  },
+  "example": {
+    "en": "DOM 42,300 kg plus a traffic load of 14,000 kg gives a zero fuel mass of 56,300 kg.",
+    "es": "Una DOM de 42.300 kg más 14.000 kg de carga de pago da una masa sin combustible de 56.300 kg."
+  },
+  "pronunciation": {
+    "en": "dee-oh-EM",
+    "es": "de-o-e-me"
+  },
+  "synonyms": {
+    "en": [
+      "DOW (dry operating weight)"
+    ],
+    "es": [
+      "DOW"
+    ]
+  },
+  "related": [
+    "zfw",
+    "mtow",
+    "load-sheet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "faa-wbh",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

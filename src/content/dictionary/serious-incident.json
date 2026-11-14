@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Serious incident",
+    "es": "Incidente grave"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An incident involving circumstances indicating that there was a high probability of an accident; it must be investigated by the State's safety investigation authority like an accident.",
+    "es": "Incidente en el que concurren circunstancias que indican que hubo una alta probabilidad de que se produjera un accidente; la autoridad de investigación de seguridad del Estado debe investigarlo igual que un accidente."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A near-accident that must be investigated.",
+    "es": "Un casi accidente que hay que investigar."
+  },
+  "example": {
+    "en": "The runway incursion was classified as a serious incident.",
+    "es": "La incursión en pista se clasificó como incidente grave."
+  },
+  "pronunciation": {
+    "en": "SEER-ee-us IN-sih-dunt",
+    "es": "in-ci-den-te gra-ve"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "just-culture",
+    "runway-incursion"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-13",
+    "eu-996-2010"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

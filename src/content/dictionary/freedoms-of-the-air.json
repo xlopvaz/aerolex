@@ -1,0 +1,52 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Freedoms of the air",
+    "es": "Libertades del aire"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The set of commercial aviation rights a State may grant to another State's airlines, from flying over its territory (first freedom) and landing for non-traffic purposes (second) to carrying passengers between two points within it (cabotage).",
+    "es": "Conjunto de derechos de aviación comercial que un Estado puede conceder a las aerolíneas de otro, desde sobrevolar su territorio (primera libertad) y aterrizar sin fines comerciales (segunda) hasta transportar pasajeros entre dos puntos de su interior (cabotaje)."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The rights that let airlines fly over, stop in or serve other countries.",
+    "es": "Los derechos que permiten a las aerolíneas sobrevolar, hacer escala o operar en otros países."
+  },
+  "example": {
+    "en": "A flight from Madrid to Bogotá by a Spanish airline uses the third and fourth freedoms.",
+    "es": "Un vuelo de Madrid a Bogotá de una aerolínea española usa la tercera y la cuarta libertades."
+  },
+  "pronunciation": {
+    "en": "FREE-dumz uv thee air",
+    "es": "li-ber-ta-des del ai-re"
+  },
+  "synonyms": {
+    "en": [
+      "traffic rights"
+    ],
+    "es": [
+      "derechos de tráfico"
+    ]
+  },
+  "related": [
+    "chicago-convention",
+    "icao"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9626",
+    "icao-doc-7300"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

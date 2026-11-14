@@ -1,0 +1,62 @@
+---
+lesson: fuel-planning
+course: flight-planning
+lang: en
+title: "Fuel planning"
+summary: "The fuel components of a transport flight under European rules, how a fuel load is calculated and what “MINIMUM FUEL” and “MAYDAY FUEL” mean."
+objectives:
+  - "List the fuel components of a flight"
+  - "Calculate a fuel load"
+  - "Know when to declare minimum fuel and a fuel emergency"
+minutes: 13
+terms: [trip-fuel, contingency-fuel, alternate-aerodrome, final-reserve-fuel, minimum-fuel]
+quiz: flight-planning-02
+sources: [easa-ear-air-ops, icao-annex-6, icao-doc-4444]
+review:
+  status: draft
+---
+
+## The components
+
+EU operating rules require the fuel for a commercial air transport flight to include at least:
+
+| Component | For |
+|---|---|
+| **Taxi** | Start-up, taxiing and APU use before take-off |
+| <Term id="trip-fuel" /> | From take-off to landing at the destination |
+| <Term id="contingency-fuel" /> | The unexpected: wind, routing or level different from plan. Normally **5 % of trip fuel**, with a minimum of **5 minutes' holding at 1,500 ft** above the destination |
+| **Alternate** | From destination to the <Term id="alternate-aerodrome" />: go-around, climb, cruise, descent and approach |
+| <Term id="final-reserve-fuel" /> | For turbine aircraft, **30 minutes' holding at 1,500 ft** above the aerodrome, in standard conditions |
+| **Additional** | When the above is not enough for specific cases, such as an engine or pressurisation failure at the most critical point of a route over water |
+| **Extra** | Whatever the operator or commander decides above the minimum: forecast storms, usual holding |
+
+The **final reserve** is the last line of defence: it is not planned to be used.
+
+## An example
+
+A flight with these figures:
+
+| Component | kg |
+|---|---|
+| Taxi | 200 |
+| Trip | 6,000 |
+| Contingency (5 % of trip) | 300 |
+| Alternate | 1,400 |
+| Final reserve (30 min) | 1,100 |
+| **Minimum take-off fuel** | **8,800** (excluding taxi) |
+| **Minimum ramp fuel** | **9,000** |
+
+If the commander adds 500 kg of extra for forecast storms, they will load **9,500 kg**.
+
+## Monitoring fuel in flight
+
+During the flight, actual fuel is compared with the planned figures at points along the route. If the predicted landing fuel drops, the crew re-plans: a more direct route, a closer alternate or a diversion.
+
+There are two calls to ATC, standardised by ICAO:
+
+- <Term id="minimum-fuel">"MINIMUM FUEL"</Term>: the aircraft has committed to land at a specific aerodrome and **any change** to its clearance could make it land with **less than final reserve**. It is **not** an emergency, but it tells ATC it cannot accept more delay.
+- **"MAYDAY, MAYDAY, MAYDAY, FUEL"**: calculated fuel on landing at the nearest suitable aerodrome is **less than final reserve**. It is an **emergency**.
+
+<Callout type="caution" label="Don't wait until the last minute">
+Both calls exist so that ATC can help in time. Declaring too late reduces the options.
+</Callout>

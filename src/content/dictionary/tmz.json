@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "TMZ",
+    "es": "TMZ"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Transponder mandatory zone",
+    "es": "Zona de transpondedor obligatorio"
+  },
+  "categories": [
+    "air-traffic-control",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Airspace in which carrying and operating a pressure-altitude reporting transponder is mandatory.",
+    "es": "Espacio aéreo en el que es obligatorio llevar y usar un transpondedor que notifique la altitud de presión."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "An area where your transponder must be on.",
+    "es": "Una zona en la que el transpondedor debe ir encendido."
+  },
+  "example": {
+    "en": "The glider pilot avoided the TMZ because she had no transponder.",
+    "es": "La piloto de planeador evitó la TMZ porque no llevaba transpondedor."
+  },
+  "pronunciation": {
+    "en": "tee-em-ZED",
+    "es": "te-e-me-ce-ta"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "rmz",
+    "transponder",
+    "airspace-class"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

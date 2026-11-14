@@ -211,7 +211,7 @@ test.describe('academy notes', () => {
     await page.goto('es/academia/');
     await page.locator('.academy__notes').click();
     await expect(page).toHaveURL(/\/es\/academia\/apuntes\/$/);
-    await expect(page.locator('.nidx__card')).toHaveCount(19);
+    await expect(page.locator('.nidx__card')).toHaveCount(21);
     await page.locator('.nidx__card', { hasText: 'Academia TAF' }).click();
     await expect(page).toHaveURL(/\/es\/academia\/apuntes\/taf\/$/);
     await expect(page.locator('.cn__lesson')).toHaveCount(6);
@@ -284,7 +284,7 @@ test.describe('sources', () => {
     await expect(page.locator('h1')).toHaveText('Sources and bibliography');
     const all = await page.locator('[data-bib-item]').count();
     expect(all).toBeGreaterThan(100);
-    await page.locator('[data-bib-q]').fill('icao annex 3');
+    await page.locator('[data-bib-q]').fill('annex 3 meteorological');
     await expect(page.locator('[data-bib-item]:visible')).toHaveCount(1);
     const item = page.locator('#src-icao-annex-3');
     await item.locator('summary').click();

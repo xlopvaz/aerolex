@@ -1,0 +1,75 @@
+---
+lesson: mass-and-balance
+course: flight-planning
+lang: en
+title: "Mass and balance"
+summary: "The masses of a transport aircraft and their limits, how the centre of gravity is calculated with moments, and what happens if it is too far forward or aft."
+objectives:
+  - "Distinguish DOM, ZFM, take-off and landing mass and their maximums"
+  - "Calculate the centre of gravity with moments"
+  - "Explain the effects of a forward or aft centre of gravity"
+minutes: 14
+terms: [dom, zfw, mzfw, mtow, mlw, centre-of-gravity, mac, load-sheet]
+quiz: flight-planning-01
+sources: [faa-wbh, easa-ear-air-ops]
+review:
+  status: draft
+---
+
+## The chain of masses
+
+Every flight is planned with a series of masses that add up:
+
+| Mass | What it includes |
+|---|---|
+| **Basic empty mass** | The aircraft with fixed equipment, non-consumable fluids and unusable fuel |
+| <Term id="dom" /> (dry operating mass) | The above plus crew, catering and operational equipment |
+| <Term id="zfw">ZFM</Term> (zero fuel mass) | DOM + **traffic load** (passengers, baggage, cargo) |
+| **Take-off mass** (TOM) | ZFM + take-off fuel |
+| **Landing mass** (LM) | TOM − trip fuel |
+
+Each has its **structural maximum**:
+
+- <Term id="mzfw">MZFM</Term>: protects the **wing root**. Fuel in the wings relieves the bending caused by lift; load in the fuselage does not. Above the MZFM, any extra mass can only be fuel.
+- <Term id="mtow">MTOM</Term>: the maximum at take-off.
+- <Term id="mlw">MLM</Term>: the maximum at landing, for the gear and structure at touchdown.
+
+The allowed take-off mass on a flight is the **lowest** of three: MTOM, MZFM + fuel, and MLM + trip fuel. Often performance limits it further (runway, temperature, obstacles: Module 11).
+
+## The centre of gravity
+
+The <Term id="centre-of-gravity" /> (CG) is the point at which all the mass can be considered concentrated. It is calculated with **moments**:
+
+> moment = mass × arm
+
+where the **arm** is the distance from a reference point (the *datum*). Then:
+
+> CG = total moment / total mass
+
+### Example
+
+| Item | Mass (kg) | Arm (m) | Moment (kg·m) |
+|---|---|---|---|
+| Empty aircraft | 900 | 2.0 | 1,800 |
+| Front pilot and passenger | 160 | 1.8 | 288 |
+| Baggage | 40 | 3.2 | 128 |
+| **Total** | **1,100** | | **2,216** |
+
+CG = 2,216 / 1,100 ≈ **2.01 m** from the datum. It is compared with the limits in the flight manual.
+
+On transport aircraft the CG is expressed as a **percentage of the** <Term id="mac" /> (mean aerodynamic chord) and calculated on the <Term id="load-sheet" />.
+
+## Forward or aft
+
+| Forward CG | Aft CG |
+|---|---|
+| More **stable** | Less stable |
+| **Heavier** controls; the elevator may lack authority to rotate and flare | **Lighter** controls; risk of over-controlling and **loss of control** |
+| **Higher** stall speed (the tail pushes down more and the wing must lift more) | Lower stall speed, but harder recovery |
+| More drag and **higher fuel burn** | Slightly lower fuel burn |
+
+Outside the limits, in either direction, the aircraft is **not certified** to fly.
+
+<Callout type="caution" label="A classic error">
+Loading baggage in the wrong hold or seating passengers very unevenly can push the CG out of limits. That is why the loadsheet is based on the actual distribution and last-minute changes are passed to the commander.
+</Callout>

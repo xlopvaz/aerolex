@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué norma de la UE fija los requisitos esenciales y las competencias de la EASA?",
+        "en": "Which EU rule sets the essential requirements and EASA's powers?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Reglamento base (UE) 2018/1139",
+            "en": "The Basic Regulation (EU) 2018/1139"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Reglamento 923/2012",
+            "en": "Regulation 923/2012"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Los AMC",
+            "en": "The AMC"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Convenio de Chicago",
+            "en": "The Chicago Convention"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los reglamentos de ejecución lo desarrollan.",
+        "en": "Implementing regulations develop it."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Quien sigue un AMC…",
+        "en": "Anyone who follows an AMC…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Incumple la norma",
+            "en": "Breaches the rule"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Necesita aprobación especial",
+            "en": "Needs special approval"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Queda exento de inspecciones",
+            "en": "Is exempt from inspections"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se presume que cumple la norma",
+            "en": "Is presumed to comply with the rule"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Los medios alternativos sí necesitan aprobación.",
+        "en": "Alternative means do need approval."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Las licencias de piloto se regulan en…",
+        "en": "Pilot licences are governed by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El Reglamento 965/2012, Part-CAT",
+            "en": "Regulation 965/2012, Part-CAT"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El Reglamento 261/2004",
+            "en": "Regulation 261/2004"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El Reglamento (UE) 1178/2011, Part-FCL",
+            "en": "Regulation (EU) 1178/2011, Part-FCL"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El Reglamento 923/2012",
+            "en": "Regulation 923/2012"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Part-MED, en el mismo reglamento, regula los certificados médicos.",
+        "en": "Part-MED, in the same regulation, covers medical certificates."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Edad mínima para obtener una ATPL de avión:",
+        "en": "Minimum age for an aeroplane ATPL:"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "18 años",
+            "en": "18"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "21 años",
+            "en": "21"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "17 años",
+            "en": "17"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "25 años",
+            "en": "25"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "CPL 18, PPL y LAPL 17.",
+        "en": "CPL 18, PPL and LAPL 17."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un piloto de 62 años en transporte aéreo comercial…",
+        "en": "A 62-year-old pilot in commercial air transport…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo puede volar en tripulación de varios pilotos con el otro menor de 60",
+            "en": "May only fly in a multi-pilot crew with the other pilot under 60"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ya no puede volar",
+            "en": "May no longer fly"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No tiene ninguna limitación",
+            "en": "Has no limitation"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo puede volar aviones de un solo piloto",
+            "en": "May only fly single-pilot aircraft"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "A partir de 65 años no puede actuar como piloto en CAT.",
+        "en": "From 65 they may not act as a pilot in CAT."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué certificado médico exige una CPL?",
+        "en": "Which medical certificate does a CPL require?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Clase 2",
+            "en": "Class 2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ninguno",
+            "en": "None"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Clase 3",
+            "en": "Class 3"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Clase 1",
+            "en": "Class 1"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La clase 1 es válida 12 meses, menos en algunos casos.",
+        "en": "Class 1 is valid for 12 months, less in some cases."
+      }
+    }
+  ]
+}

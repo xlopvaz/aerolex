@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Chicago Convention",
+    "es": "Convenio de Chicago"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The Convention on International Civil Aviation signed in Chicago in 1944; it recognises each State's complete sovereignty over its airspace, created ICAO and is the basis of the international standards set out in the Annexes.",
+    "es": "Convenio sobre Aviación Civil Internacional firmado en Chicago en 1944; reconoce la soberanía plena de cada Estado sobre su espacio aéreo, creó la OACI y es la base de las normas internacionales recogidas en los Anexos."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The 1944 treaty that set up the world's rules for civil aviation.",
+    "es": "El tratado de 1944 que fijó las reglas mundiales de la aviación civil."
+  },
+  "example": {
+    "en": "Article 29 of the Chicago Convention lists the documents an aircraft must carry.",
+    "es": "El artículo 29 del Convenio de Chicago enumera los documentos que debe llevar una aeronave."
+  },
+  "pronunciation": {
+    "en": "shi-KAH-goh kun-VEN-shun",
+    "es": "con-ve-nio de chi-ca-go"
+  },
+  "synonyms": {
+    "en": [
+      "Convention on International Civil Aviation"
+    ],
+    "es": [
+      "Convenio sobre Aviación Civil Internacional"
+    ]
+  },
+  "related": [
+    "icao",
+    "freedoms-of-the-air"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-7300"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

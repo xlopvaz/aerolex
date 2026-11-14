@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Right of way",
+    "es": "Derecho de paso"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "aviation-law",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The rules that decide which aircraft must give way when two are in danger of collision: for example, when converging at the same level the aircraft with the other on its right gives way, and an aircraft being overtaken has the right of way.",
+    "es": "Normas que deciden qué aeronave debe ceder el paso cuando dos corren riesgo de colisión: por ejemplo, al converger a la misma altura cede la que tiene a la otra a su derecha, y la aeronave alcanzada tiene derecho de paso."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Who must give way to whom in the air.",
+    "es": "Quién debe ceder el paso a quién en el aire."
+  },
+  "example": {
+    "en": "The glider had the right of way over the powered aircraft.",
+    "es": "El planeador tenía derecho de paso sobre el avión con motor."
+  },
+  "pronunciation": {
+    "en": "RYTE uv way",
+    "es": "de-re-cho de pa-so"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vmc",
+    "sera"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-923-2012",
+    "icao-annex-2"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

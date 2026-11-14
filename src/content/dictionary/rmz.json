@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RMZ",
+    "es": "RMZ"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Radio mandatory zone",
+    "es": "Zona de radio obligatoria"
+  },
+  "categories": [
+    "air-traffic-control",
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Airspace in which carrying and operating suitable radio equipment is mandatory, and pilots must establish two-way communication or listen out on the published frequency before entering.",
+    "es": "Espacio aéreo en el que es obligatorio llevar y usar un equipo de radio adecuado, y los pilotos deben establecer comunicación bilateral o mantener escucha en la frecuencia publicada antes de entrar."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "An area where you must be on the radio.",
+    "es": "Una zona en la que hay que estar en la radio."
+  },
+  "example": {
+    "en": "The aerodrome has an RMZ around it.",
+    "es": "El aeródromo tiene una RMZ a su alrededor."
+  },
+  "pronunciation": {
+    "en": "ar-em-ZED",
+    "es": "e-rre-e-me-ce-ta"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "tmz",
+    "ctr",
+    "airspace-class"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

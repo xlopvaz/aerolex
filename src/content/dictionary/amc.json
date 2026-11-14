@@ -1,0 +1,55 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "AMC",
+    "es": "AMC"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Acceptable means of compliance",
+    "es": "Medios aceptables de cumplimiento"
+  },
+  "categories": [
+    "aviation-law"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Non-binding standards adopted by EASA that show one way of meeting an EU implementing rule; a regulated organisation using them is presumed to comply, while alternative means need to be approved.",
+    "es": "Normas no vinculantes adoptadas por la EASA que muestran una forma de cumplir una norma de ejecución de la UE; quien las aplica se presume que cumple, y los medios alternativos necesitan aprobación."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "EASA's recommended ways of meeting a rule.",
+    "es": "Las formas que recomienda la EASA para cumplir una norma."
+  },
+  "example": {
+    "en": "The operator followed the AMC for its passenger briefing.",
+    "es": "El operador siguió los AMC para su información a los pasajeros."
+  },
+  "pronunciation": {
+    "en": "ay-em-SEE",
+    "es": "a-e-me-ce"
+  },
+  "synonyms": {
+    "en": [
+      "AMC/GM"
+    ],
+    "es": [
+      "AMC/GM"
+    ]
+  },
+  "related": [
+    "easa",
+    "sera"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-2018-1139",
+    "easa-ear-air-ops"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Airspace class",
+    "es": "Clase de espacio aéreo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "One of the seven ICAO categories, A to G, that define which flights are allowed in a portion of airspace, which ones are separated by ATC and which services and requirements apply.",
+    "es": "Una de las siete categorías de la OACI, de la A a la G, que definen qué vuelos se permiten en una porción de espacio aéreo, cuáles separa el control y qué servicios y requisitos se aplican."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The letter that tells you the rules of a piece of sky.",
+    "es": "La letra que dice las reglas de un trozo de cielo."
+  },
+  "example": {
+    "en": "Class D airspace requires a clearance but VFR flights are not separated from each other.",
+    "es": "El espacio aéreo de clase D exige autorización, pero los VFR no se separan entre sí."
+  },
+  "pronunciation": {
+    "en": "AIR-spays klass",
+    "es": "cla-se de es-pa-cio a-é-re-o"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "ctr",
+    "tma",
+    "vmc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-annex-11",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

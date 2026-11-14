@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La ZFM es…",
+        "en": "The ZFM is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La masa al despegue menos el combustible del trayecto",
+            "en": "Take-off mass minus trip fuel"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La DOM más la carga de pago",
+            "en": "DOM plus traffic load"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La masa básica en vacío",
+            "en": "The basic empty mass"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La DOM más el combustible",
+            "en": "DOM plus fuel"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "TOM − combustible del trayecto es la masa al aterrizaje.",
+        "en": "TOM − trip fuel is the landing mass."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Por qué existe una masa máxima sin combustible?",
+        "en": "Why is there a maximum zero fuel mass?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para proteger el encastre del ala, que no recibe el alivio del combustible",
+            "en": "To protect the wing root, which gets no relief from fuel"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para ahorrar combustible",
+            "en": "To save fuel"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Por el ruido",
+            "en": "Because of noise"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para proteger los neumáticos",
+            "en": "To protect the tyres"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El combustible en las alas contrarresta la flexión; la carga del fuselaje no.",
+        "en": "Fuel in the wings counters bending; load in the fuselage does not."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "MTOM 70.000 kg; MZFM 58.000 kg; MLM 64.000 kg; combustible al despegue 9.000 kg, de trayecto 6.000 kg. ¿Masa al despegue máxima permitida?",
+        "en": "MTOM 70,000 kg; MZFM 58,000 kg; MLM 64,000 kg; take-off fuel 9,000 kg, trip fuel 6,000 kg. Maximum allowed take-off mass?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "70.000 kg",
+            "en": "70,000 kg"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "70.000 kg menos 9.000",
+            "en": "70,000 minus 9,000"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "64.000 kg",
+            "en": "64,000 kg"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "67.000 kg",
+            "en": "67,000 kg"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Mínimo de 70.000; 58.000 + 9.000 = 67.000; 64.000 + 6.000 = 70.000.",
+        "en": "Lowest of 70,000; 58,000 + 9,000 = 67,000; 64,000 + 6,000 = 70,000."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Masa total 1.000 kg, momento total 2.300 kg·m. ¿Dónde está el CG?",
+        "en": "Total mass 1,000 kg, total moment 2,300 kg·m. Where is the CG?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "A 0,43 m",
+            "en": "0.43 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "A 23 m",
+            "en": "23 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "A 2,3 m del datum",
+            "en": "2.3 m from the datum"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "A 1.000 m",
+            "en": "1,000 m"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "CG = momento total / masa total.",
+        "en": "CG = total moment / total mass."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Un CG adelantado produce…",
+        "en": "A forward CG produces…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Menos estabilidad y mandos más ligeros",
+            "en": "Less stability and lighter controls"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más estabilidad y mayor velocidad de pérdida",
+            "en": "More stability and a higher stall speed"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Menos consumo",
+            "en": "Lower fuel burn"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Menor velocidad de pérdida",
+            "en": "A lower stall speed"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La cola empuja más hacia abajo y el ala debe sustentar más.",
+        "en": "The tail pushes down more and the wing must lift more."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Cuál es el principal riesgo de un CG demasiado atrasado?",
+        "en": "What is the main risk of a CG too far aft?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "La pérdida de control por falta de estabilidad",
+            "en": "Loss of control through lack of stability"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un consumo excesivo",
+            "en": "Excessive fuel burn"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Mandos demasiado pesados",
+            "en": "Controls too heavy"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No poder rotar en el despegue",
+            "en": "Being unable to rotate on take-off"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Los mandos se vuelven ligeros y el avión menos estable.",
+        "en": "Controls become light and the aircraft less stable."
+      }
+    }
+  ]
+}

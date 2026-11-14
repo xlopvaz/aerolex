@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "SERA",
+    "es": "SERA"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Standardised European Rules of the Air",
+    "es": "Reglas del aire europeas normalizadas"
+  },
+  "categories": [
+    "aviation-law",
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The common rules of the air and operational provisions for air navigation services in the EU, laid down in Implementing Regulation (EU) No 923/2012 and based on ICAO Annex 2 and related documents.",
+    "es": "Reglas del aire comunes y disposiciones operativas de los servicios de navegación aérea en la UE, establecidas en el Reglamento de Ejecución (UE) n.º 923/2012 y basadas en el Anexo 2 de la OACI y documentos relacionados."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The EU's common rulebook for how aircraft fly.",
+    "es": "El reglamento común de la UE sobre cómo vuelan las aeronaves."
+  },
+  "example": {
+    "en": "VMC minima in Spain follow SERA.5001.",
+    "es": "Los mínimos VMC en España siguen SERA.5001."
+  },
+  "pronunciation": {
+    "en": "SEER-uh",
+    "es": "se-ra"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vmc",
+    "flight-level",
+    "easa"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

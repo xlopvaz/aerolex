@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Según el Anexo 13, el objetivo de una investigación de accidente es…",
+        "en": "According to Annex 13, the aim of an accident investigation is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Determinar culpables",
+            "en": "To find who is to blame"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Prevenir futuros accidentes",
+            "en": "To prevent future accidents"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Fijar indemnizaciones",
+            "en": "To set compensation"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Sancionar a la aerolínea",
+            "en": "To penalise the airline"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es independiente de las investigaciones judiciales.",
+        "en": "It is independent of judicial investigations."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Una casi colisión que exigió una maniobra de evasión es…",
+        "en": "A near collision requiring an avoidance manoeuvre is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un incidente grave",
+            "en": "A serious incident"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Un accidente",
+            "en": "An accident"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nada que notificar",
+            "en": "Nothing to report"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un incidente menor sin investigación",
+            "en": "A minor incident not investigated"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Hubo una alta probabilidad de accidente.",
+        "en": "There was a high probability of an accident."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En la UE, el plazo para la notificación obligatoria de un suceso es de…",
+        "en": "In the EU, the deadline for mandatory occurrence reporting is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "7 días",
+            "en": "7 days"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "24 horas",
+            "en": "24 hours"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "1 mes",
+            "en": "1 month"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "72 horas",
+            "en": "72 hours"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Desde que se conoce el suceso (Reglamento 376/2014).",
+        "en": "From becoming aware of it (Regulation 376/2014)."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Qué NO protege la cultura justa?",
+        "en": "What does just culture NOT protect?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Los errores acordes con la experiencia y formación",
+            "en": "Errors in line with experience and training"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La confidencialidad de quien notifica",
+            "en": "The reporter's confidentiality"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La negligencia grave",
+            "en": "Gross negligence"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La notificación voluntaria",
+            "en": "Voluntary reporting"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Tampoco las infracciones deliberadas ni los actos destructivos.",
+        "en": "Nor wilful violations or destructive acts."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué reglamento de la UE regula la investigación de accidentes?",
+        "en": "Which EU regulation governs accident investigation?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El 376/2014",
+            "en": "376/2014"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El 996/2010",
+            "en": "996/2010"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El 261/2004",
+            "en": "261/2004"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 923/2012",
+            "en": "923/2012"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "El 376/2014 regula la notificación de sucesos.",
+        "en": "376/2014 governs occurrence reporting."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un suceso en el que la aeronave desaparece se clasifica como…",
+        "en": "An occurrence in which the aircraft goes missing is classified as…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Accidente",
+            "en": "An accident"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Incidente",
+            "en": "An incident"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Incidente grave",
+            "en": "A serious incident"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Suceso voluntario",
+            "en": "A voluntary occurrence"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También las lesiones mortales o graves y los daños importantes.",
+        "en": "So are fatal or serious injuries and substantial damage."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Dos aviones convergen a la misma altura; el A tiene al B a su derecha. ¿Quién cede?",
+        "en": "Two aircraft converge at the same level; A has B on its right. Who gives way?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "B",
+            "en": "B"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ninguno",
+            "en": "Neither"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El más lento",
+            "en": "The slower one"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "A",
+            "en": "A"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cede quien tiene al otro a su derecha.",
+        "en": "The one with the other on its right gives way."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En clase G, el servicio que se presta es…",
+        "en": "In class G, the service provided is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Control con separación",
+            "en": "Control with separation"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Asesoramiento obligatorio",
+            "en": "Mandatory advisory"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Información de vuelo",
+            "en": "Flight information"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ninguno",
+            "en": "None"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "No hay separación.",
+        "en": "There is no separation."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Un vuelo de una aerolínea española de Madrid a Bogotá usa la…",
+        "en": "A Spanish airline flight from Madrid to Bogotá uses the…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1.ª libertad",
+            "en": "1st freedom"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3.ª libertad",
+            "en": "3rd freedom"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5.ª libertad",
+            "en": "5th freedom"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2.ª libertad",
+            "en": "2nd freedom"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Llevar pasajeros de su país a otro.",
+        "en": "Carrying passengers from its own country to another."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "En vuelo, una luz verde fija de la torre significa…",
+        "en": "In flight, a steady green light from the tower means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Autorizado a aterrizar",
+            "en": "Cleared to land"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Regrese para aterrizar",
+            "en": "Return for landing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Autorizado a rodar",
+            "en": "Cleared to taxi"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No aterrice",
+            "en": "Do not land"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "En tierra significaría autorizado a despegar.",
+        "en": "On the ground it would mean cleared for take-off."
+      }
+    }
+  ]
+}

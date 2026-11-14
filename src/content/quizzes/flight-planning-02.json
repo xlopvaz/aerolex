@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "La reserva final de un avión de turbina equivale a…",
+        "en": "Final reserve fuel for a turbine aircraft is equivalent to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "30 minutos de espera a 1.500 ft",
+            "en": "30 minutes' holding at 1,500 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "45 minutos de crucero",
+            "en": "45 minutes' cruise"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5 minutos de espera",
+            "en": "5 minutes' holding"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 10 % del trayecto",
+            "en": "10 % of trip fuel"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "En condiciones estándar, sobre el aeródromo.",
+        "en": "In standard conditions, above the aerodrome."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "El combustible para contingencias suele ser…",
+        "en": "Contingency fuel is usually…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El 50 % del trayecto",
+            "en": "50 % of trip fuel"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Siempre 30 minutos",
+            "en": "Always 30 minutes"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cero si el tiempo es bueno",
+            "en": "Zero if the weather is good"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El 5 % del trayecto, con un mínimo de 5 min de espera a 1.500 ft",
+            "en": "5 % of trip fuel, with a minimum of 5 min holding at 1,500 ft"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cubre desviaciones del plan.",
+        "en": "It covers deviations from plan."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Trayecto 4.000 kg, contingencias 200, alternativo 1.000, reserva final 900, rodaje 150. ¿Combustible mínimo en rampa?",
+        "en": "Trip 4,000 kg, contingency 200, alternate 1,000, final reserve 900, taxi 150. Minimum ramp fuel?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "6.100 kg",
+            "en": "6,100 kg"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "5.000 kg",
+            "en": "5,000 kg"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "6.250 kg",
+            "en": "6,250 kg"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "4.150 kg",
+            "en": "4,150 kg"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "4.000 + 200 + 1.000 + 900 + 150 = 6.250.",
+        "en": "4,000 + 200 + 1,000 + 900 + 150 = 6,250."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "«MINIMUM FUEL» significa…",
+        "en": "\"MINIMUM FUEL\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que es una emergencia",
+            "en": "That it is an emergency"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que cualquier cambio de autorización podría hacer aterrizar con menos de la reserva final",
+            "en": "That any change of clearance could result in landing below final reserve"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que el avión ya no tiene combustible",
+            "en": "That the aircraft has no fuel left"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que hay que repostar en vuelo",
+            "en": "That it needs in-flight refuelling"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "No es una emergencia.",
+        "en": "It is not an emergency."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Se declara «MAYDAY FUEL» cuando…",
+        "en": "\"MAYDAY FUEL\" is declared when…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El combustible al aterrizar en el aeródromo adecuado más cercano será menor que la reserva final",
+            "en": "Fuel on landing at the nearest suitable aerodrome will be less than final reserve"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se usa el combustible extra",
+            "en": "Extra fuel is used"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se entra en espera",
+            "en": "Holding begins"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Hay viento de cara",
+            "en": "There is a headwind"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es una emergencia.",
+        "en": "It is an emergency."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El combustible adicional cubre, por ejemplo…",
+        "en": "Additional fuel covers, for example…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El catering",
+            "en": "The catering"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El rodaje",
+            "en": "Taxiing"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El viento previsto",
+            "en": "The forecast wind"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un fallo de motor o de presurización en el punto más crítico de una ruta sobre el agua",
+            "en": "An engine or pressurisation failure at the most critical point of a route over water"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cuando las demás partidas no bastan.",
+        "en": "When the other components are not enough."
+      }
+    }
+  ]
+}
