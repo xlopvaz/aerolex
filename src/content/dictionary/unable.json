@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Unable",
+    "es": "No puedo cumplir"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Standard radiotelephony word meaning \"I cannot comply with your request, instruction or clearance\", normally followed by the reason.",
+    "es": "Palabra normalizada de radiotelefonía que significa «no puedo cumplir su petición, instrucción o autorización», seguida normalmente del motivo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "\"I can't do that.\"",
+    "es": "«No puedo hacerlo.»"
+  },
+  "example": {
+    "en": "\"Unable FL390 due weight.\"",
+    "es": "«Unable FL390 por el peso.»"
+  },
+  "pronunciation": {
+    "en": "un-AY-bul",
+    "es": "an-ei-bol"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "wilco",
+    "negative"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

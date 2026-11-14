@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuándo se usa lenguaje claro?",
+        "en": "When is plain language used?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Siempre, en lugar de la fraseología",
+            "en": "Always, instead of phraseology"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo en tierra",
+            "en": "Only on the ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cuando la fraseología normalizada no cubre la situación",
+            "en": "When standard phraseology does not cover the situation"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Con frases cortas, sencillas y una idea por frase.",
+        "en": "With short, simple sentences and one idea each."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "En CPDLC, «UNABLE» significa…",
+        "en": "In CPDLC, \"UNABLE\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Lo cumpliré",
+            "en": "Will comply"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Espere",
+            "en": "Wait"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No puedo cumplir",
+            "en": "Cannot comply"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Recibido",
+            "en": "Received"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "WILCO es «lo cumpliré».",
+        "en": "WILCO is \"will comply\"."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "El CPDLC…",
+        "en": "CPDLC…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sustituye por completo a la voz",
+            "en": "Fully replaces voice"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Complementa a la voz; ante la duda se pasa a la voz",
+            "en": "Complements voice; when in doubt, switch to voice"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo se usa en tierra",
+            "en": "Is only used on the ground"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Es solo para emergencias",
+            "en": "Is only for emergencies"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Se usa sobre todo en ruta y en zonas oceánicas.",
+        "en": "It is used mainly en route and in oceanic areas."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "¿Cuál es el nivel mínimo de competencia lingüística para usar la radio en operaciones internacionales?",
+        "en": "What is the minimum language proficiency level to use the radio in international operations?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Nivel 4 (operacional)",
+            "en": "Level 4 (Operational)"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nivel 3",
+            "en": "Level 3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nivel 5",
+            "en": "Level 5"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nivel 6",
+            "en": "Level 6"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Del 1 al 3 están por debajo del mínimo.",
+        "en": "Levels 1 to 3 are below the minimum."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En la UE, un nivel 4 se reevalúa cada…",
+        "en": "In the EU, a Level 4 is re-evaluated every…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "3 años",
+            "en": "3 years"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "6 años",
+            "en": "6 years"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nunca",
+            "en": "Never"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "4 años",
+            "en": "4 years"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "La OACI recomienda 3 años; la UE fija 4.",
+        "en": "ICAO recommends 3 years; the EU sets 4."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Un candidato obtiene 5 en todo salvo pronunciación, con un 4. Su nivel es…",
+        "en": "A candidate scores 5 in everything except pronunciation, with a 4. Their level is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "5",
+            "en": "5"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "4,8",
+            "en": "4.8"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "4",
+            "en": "4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "6",
+            "en": "6"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "La nota final es la más baja de las seis.",
+        "en": "The overall rating is the lowest of the six."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "«Cleared to land» se da…",
+        "en": "\"Cleared to land\" is given…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Siempre al establecerse en el ILS",
+            "en": "Always when established on the ILS"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Cuando la pista está disponible para esa aeronave",
+            "en": "When the runway is available for that aircraft"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al pedir el rodaje",
+            "en": "When requesting taxi"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Antes del despegue",
+            "en": "Before take-off"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Si no, «continue approach».",
+        "en": "Otherwise, \"continue approach\"."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "«Line up and wait» y después «cleared for take-off». ¿Cuándo puede empezar la carrera?",
+        "en": "\"Line up and wait\" and then \"cleared for take-off\". When may the roll start?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Tras «cleared for take-off» y su colación",
+            "en": "After \"cleared for take-off\" and its readback"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Tras «line up and wait»",
+            "en": "After \"line up and wait\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al recibir la autorización de ruta",
+            "en": "On receiving the route clearance"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cuando el avión de delante despegue",
+            "en": "When the aircraft ahead takes off"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Line up and wait no es una autorización de despegue.",
+        "en": "Line up and wait is not a take-off clearance."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "Tras un RA del TCAS, al terminar el conflicto se dice…",
+        "en": "After a TCAS RA, when the conflict is over you say…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«RA finished»",
+            "en": "\"RA finished\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Back on track»",
+            "en": "\"Back on track\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Roger TCAS»",
+            "en": "\"Roger TCAS\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Clear of conflict, returning to…»",
+            "en": "\"Clear of conflict, returning to…\""
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Y se indica a qué autorización se vuelve.",
+        "en": "And state which clearance you are returning to."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "Los seis aspectos que se evalúan en la competencia lingüística incluyen…",
+        "en": "The six areas assessed in language proficiency include…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Gramática, ortografía y redacción",
+            "en": "Grammar, spelling and writing"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo vocabulario técnico",
+            "en": "Only technical vocabulary"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Pronunciación, estructura, vocabulario, fluidez, comprensión e interacción",
+            "en": "Pronunciation, structure, vocabulary, fluency, comprehension and interactions"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Velocidad de lectura",
+            "en": "Reading speed"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es una evaluación oral.",
+        "en": "It is an oral assessment."
+      }
+    }
+  ]
+}

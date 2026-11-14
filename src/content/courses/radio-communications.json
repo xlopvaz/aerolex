@@ -1,0 +1,44 @@
+{
+  "path": "pilot-training",
+  "order": 13,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 13: Comunicaciones",
+    "en": "Pilot Academy · Module 13: Communications"
+  },
+  "description": {
+    "es": "La radiotelefonía aeronáutica: la VHF y su alcance, la separación de 8,33 kHz, los indicativos, cómo se dicen los números y las palabras normalizadas; qué se colaciona y las autorizaciones condicionales; y los mensajes MAYDAY y PAN PAN, los códigos de emergencia y el procedimiento de fallo de radio actualizado en Europa en 2025.",
+    "en": "Aeronautical radiotelephony: VHF and its range, 8.33 kHz spacing, call signs, how numbers are spoken and the standard words; what is read back and conditional clearances; and MAYDAY and PAN PAN messages, the emergency codes and the radio failure procedure updated in Europe in 2025."
+  },
+  "objectives": {
+    "en": [
+      "Communicate on the radio with standard technique and words",
+      "Read back clearances and instructions correctly",
+      "Handle an emergency or a communication failure on the radio"
+    ],
+    "es": [
+      "Comunicarse por radio con técnica y palabras normalizadas",
+      "Colacionar correctamente autorizaciones e instrucciones",
+      "Gestionar por radio una emergencia o un fallo de comunicaciones"
+    ]
+  },
+  "lessons": [
+    "radio-principles-and-technique",
+    "readback-and-clearances",
+    "emergencies-and-radio-failure"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-annex-10",
+    "icao-doc-9432",
+    "eu-1079-2012",
+    "eu-923-2012",
+    "icao-doc-4444",
+    "eu-2024-404"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

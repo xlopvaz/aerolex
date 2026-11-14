@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "«Stop climb at flight level 200» significa…",
+        "en": "\"Stop climb at flight level 200\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Detener el ascenso en FL200",
+            "en": "Stop the climb at FL200"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ascender hasta FL200 sin prisa",
+            "en": "Climb to FL200 without hurry"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Descender a FL200",
+            "en": "Descend to FL200"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Subir por encima de FL200",
+            "en": "Climb above FL200"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es una restricción a una autorización de ascenso.",
+        "en": "It restricts a climb clearance."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "«Continue approach» significa…",
+        "en": "\"Continue approach\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Autorizado a aterrizar",
+            "en": "Cleared to land"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Hacer motor y al aire",
+            "en": "Go around"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Entrar en espera",
+            "en": "Enter a hold"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Seguir la aproximación, pero aún sin autorización para aterrizar",
+            "en": "Continue the approach, but not yet cleared to land"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Se espera el «cleared to land».",
+        "en": "Wait for \"cleared to land\"."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Tras un motor y al aire ordenado por el control, el piloto responde…",
+        "en": "After an ATC-ordered go-around, the pilot replies…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«Roger»",
+            "en": "\"Roger\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Missed approach»",
+            "en": "\"Missed approach\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Going around»",
+            "en": "\"Going around\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Wilco»",
+            "en": "\"Wilco\""
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Es la misma frase si lo decide el piloto.",
+        "en": "The same phrase if the pilot decides."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Recibes un aviso de resolución del TCAS que contradice al control. Lo correcto es…",
+        "en": "You get a TCAS resolution advisory that contradicts ATC. The right action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Seguir al control",
+            "en": "Follow ATC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Seguir el RA y comunicar «TCAS RA»",
+            "en": "Follow the RA and report \"TCAS RA\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Pedir permiso antes",
+            "en": "Ask permission first"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ignorar ambos",
+            "en": "Ignore both"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Al terminar: «clear of conflict, returning to…».",
+        "en": "When over: \"clear of conflict, returning to…\"."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "En una espera, el control indica…",
+        "en": "For a hold, ATC gives…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El punto, el rumbo de acercamiento, el sentido de los virajes y la hora de nueva autorización",
+            "en": "The fix, inbound track, direction of turns and expected further clearance time"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo el nivel",
+            "en": "Only the level"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo la velocidad",
+            "en": "Only the speed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El combustible necesario",
+            "en": "The fuel required"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "«Expect further clearance at…».",
+        "en": "\"Expect further clearance at…\"."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Una instrucción de velocidad…",
+        "en": "A speed instruction…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Vale solo un minuto",
+            "en": "Lasts only one minute"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Termina al cambiar de frecuencia siempre",
+            "en": "Always ends on changing frequency"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Es opcional",
+            "en": "Is optional"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se mantiene hasta que el control la cancele o la cambie",
+            "en": "Stays in force until ATC cancels or changes it"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "«No speed restriction» la cancela.",
+        "en": "\"No speed restriction\" cancels it."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "«Resume own navigation» significa…",
+        "en": "\"Resume own navigation\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que el radar ha fallado",
+            "en": "The radar has failed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que vuelva al aeródromo de salida",
+            "en": "Return to the departure aerodrome"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que terminan los vectores y el piloto navega por su cuenta",
+            "en": "Vectoring ends and the pilot navigates on their own"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que cambie de nivel",
+            "en": "Change level"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Normalmente con la posición o un punto al que dirigirse.",
+        "en": "Usually with a position or a point to head for."
+      }
+    }
+  ]
+}

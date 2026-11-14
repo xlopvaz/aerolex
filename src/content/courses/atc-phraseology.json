@@ -1,0 +1,43 @@
+{
+  "path": "pilot-training",
+  "order": 14,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 14: Fraseología ATC",
+    "en": "Pilot Academy · Module 14: ATC Phraseology"
+  },
+  "description": {
+    "es": "La fraseología normalizada de principio a fin del vuelo: ATIS, autorización de salida, rodaje y despegue; niveles, rumbos, velocidades, esperas, aproximación, aterrizaje, motor y al aire y avisos del TCAS; y el lenguaje claro, el CPDLC y los requisitos de competencia lingüística de la OACI y la UE.",
+    "en": "Standard phraseology from start to end of the flight: ATIS, departure clearance, taxi and take-off; levels, headings, speeds, holding, approach, landing, go-around and TCAS reports; and plain language, CPDLC and the ICAO and EU language proficiency requirements."
+  },
+  "objectives": {
+    "en": [
+      "Use standard phraseology in every phase of flight",
+      "Avoid the ambiguities that lead to incidents",
+      "Know the language proficiency requirements"
+    ],
+    "es": [
+      "Usar la fraseología normalizada en cada fase del vuelo",
+      "Evitar las ambigüedades que llevan a incidentes",
+      "Conocer los requisitos de competencia lingüística"
+    ]
+  },
+  "lessons": [
+    "ground-and-departure",
+    "en-route-and-approach",
+    "plain-language-and-proficiency"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "icao-doc-4444",
+    "icao-doc-9432",
+    "eu-923-2012",
+    "icao-annex-1",
+    "eu-1178-2011"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

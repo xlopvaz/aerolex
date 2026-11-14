@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál de estos elementos se colaciona SIEMPRE?",
+        "en": "Which of these items is ALWAYS read back?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El código SSR",
+            "en": "The SSR code"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El viento en superficie",
+            "en": "The surface wind"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La información de tráfico",
+            "en": "Traffic information"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La temperatura",
+            "en": "The temperature"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También niveles, rumbos, velocidades, QNH, frecuencias y pistas.",
+        "en": "Also levels, headings, speeds, QNH, frequencies and runways."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Con qué termina una colación?",
+        "en": "What does a readback end with?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Con «roger»",
+            "en": "\"Roger\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Con «over»",
+            "en": "\"Over\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Con la hora",
+            "en": "The time"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Con el indicativo de la aeronave",
+            "en": "The aircraft call sign"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Así el control sabe quién colaciona.",
+        "en": "So ATC knows who is reading back."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "En una autorización condicional, la condición…",
+        "en": "In a conditional clearance, the condition…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se da solo al final",
+            "en": "Is given only at the end"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No se colaciona",
+            "en": "Is not read back"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se da antes de la autorización y se repite al final",
+            "en": "Is given before the clearance and repeated at the end"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La decide el piloto",
+            "en": "Is decided by the pilot"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Ejemplo: «behind landing A320, line up and wait…, behind».",
+        "en": "Example: \"behind landing A320, line up and wait…, behind\"."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "«Line up and wait» significa…",
+        "en": "\"Line up and wait\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Despegar inmediatamente",
+            "en": "Take off immediately"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alinearse en la pista y esperar sin despegar",
+            "en": "Line up on the runway and wait without taking off"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Esperar fuera de la pista",
+            "en": "Wait off the runway"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Rodar hasta el final",
+            "en": "Taxi to the end"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "No es una autorización de despegue.",
+        "en": "It is not a take-off clearance."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Por qué no se dice «climb to two thousand»?",
+        "en": "Why is \"climb to two thousand\" not said?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque «to» puede confundirse con «two»",
+            "en": "Because \"to\" can be confused with \"two\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque es demasiado largo",
+            "en": "Because it is too long"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque está prohibido subir a 2.000 ft",
+            "en": "Because climbing to 2,000 ft is forbidden"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Porque falta el indicativo",
+            "en": "Because the call sign is missing"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Se dice «climb altitude two thousand feet».",
+        "en": "The phrase is \"climb altitude two thousand feet\"."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "La hearback es…",
+        "en": "Hearback is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que el piloto repita dos veces",
+            "en": "The pilot repeating twice"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una grabación",
+            "en": "A recording"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un tipo de radio",
+            "en": "A type of radio"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que el control escuche la colación y corrija los errores",
+            "en": "ATC listening to the readback and correcting errors"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cierra el circuito de la comunicación.",
+        "en": "It closes the communication loop."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Oyes una instrucción con un indicativo muy parecido al tuyo. Lo correcto es…",
+        "en": "You hear an instruction with a call sign very similar to yours. The right action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cumplirla por si acaso",
+            "en": "Comply just in case"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Ignorarla",
+            "en": "Ignore it"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Preguntar al control antes de cumplirla",
+            "en": "Ask ATC before complying"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Contestar «roger»",
+            "en": "Answer \"roger\""
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Nunca se acepta una instrucción que puede ser para otro.",
+        "en": "Never accept an instruction that may be for someone else."
+      }
+    }
+  ]
+}

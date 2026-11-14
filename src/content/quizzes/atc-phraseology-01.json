@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "Al llamar, ¿cómo se indica que se ha escuchado el ATIS?",
+        "en": "When calling, how do you indicate you have the ATIS?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Diciendo «ATIS received»",
+            "en": "By saying \"ATIS received\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Diciendo «information» y su letra",
+            "en": "By saying \"information\" and its letter"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No hace falta decirlo",
+            "en": "There is no need to say it"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Repitiendo el QNH",
+            "en": "By repeating the QNH"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Por ejemplo, «information Bravo».",
+        "en": "For example, \"information Bravo\"."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Una autorización de ruta…",
+        "en": "A route clearance…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No autoriza a despegar ni a entrar en pista",
+            "en": "Does not authorise take-off or entering a runway"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Autoriza el despegue",
+            "en": "Authorises take-off"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Autoriza a entrar en pista",
+            "en": "Authorises entering the runway"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hace falta colacionarla",
+            "en": "Does not need reading back"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Para eso hacen falta instrucciones específicas.",
+        "en": "Specific instructions are needed for that."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cuándo se usa la palabra «take-off»?",
+        "en": "When is the word \"take-off\" used?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Siempre que se habla de la salida",
+            "en": "Whenever departure is mentioned"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Al pedir el rodaje",
+            "en": "When requesting taxi"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al pedir la puesta en marcha",
+            "en": "When requesting start-up"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo al autorizar o cancelar el despegue",
+            "en": "Only when clearing or cancelling take-off"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "En los demás casos se dice «departure».",
+        "en": "Otherwise the word is \"departure\"."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Durante la carrera de despegue, el control dice «stop immediately». El piloto responde…",
+        "en": "During the take-off roll, ATC says \"stop immediately\". The pilot answers…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«Roger»",
+            "en": "\"Roger\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Holding»",
+            "en": "\"Holding\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Stopping»",
+            "en": "\"Stopping\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Wilco, take-off cancelled»",
+            "en": "\"Wilco, take-off cancelled\""
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "«Holding» se usa si aún no ha empezado a rodar.",
+        "en": "\"Holding\" is used if not yet rolling."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "«Hold short of runway 32 right»…",
+        "en": "\"Hold short of runway 32 right\"…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se acusa con «roger»",
+            "en": "Is acknowledged with \"roger\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se colaciona siempre",
+            "en": "Is always read back"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No se colaciona",
+            "en": "Is not read back"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Autoriza a cruzar",
+            "en": "Authorises crossing"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Todas las instrucciones relativas a pistas se colacionan.",
+        "en": "All runway-related instructions are read back."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué frase sustituye a «ready for take-off»?",
+        "en": "Which phrase replaces \"ready for take-off\"?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«Ready for departure»",
+            "en": "\"Ready for departure\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Ready to go»",
+            "en": "\"Ready to go\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Request take-off»",
+            "en": "\"Request take-off\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Rolling»",
+            "en": "\"Rolling\""
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "O simplemente «ready».",
+        "en": "Or simply \"ready\"."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "No estás seguro de la ruta de rodaje. Lo correcto es…",
+        "en": "You are unsure of the taxi route. The right action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Seguir al avión de delante",
+            "en": "Follow the aircraft ahead"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Elegir la ruta más corta",
+            "en": "Take the shortest route"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cruzar la pista rápido",
+            "en": "Cross the runway quickly"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Parar y preguntar, o pedir «progressive taxi»",
+            "en": "Stop and ask, or request \"progressive taxi\""
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Muchas incursiones en pista empiezan así.",
+        "en": "Many runway incursions start this way."
+      }
+    }
+  ]
+}

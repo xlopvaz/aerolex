@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Line up and wait",
+    "es": "Alinéese y espere"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An ATC instruction to enter the runway and line up on it, ready for departure, without starting the take-off until cleared.",
+    "es": "Instrucción del control para entrar en la pista y alinearse en ella, preparado para salir, sin iniciar el despegue hasta recibir la autorización."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Go onto the runway and stop there, ready to take off.",
+    "es": "Entra en la pista y espera allí, listo para despegar."
+  },
+  "example": {
+    "en": "\"Line up and wait runway 27\" is not a take-off clearance.",
+    "es": "«Alinéese y espere pista 27» no es una autorización de despegue."
+  },
+  "pronunciation": {
+    "en": "LINE-up and WAIT",
+    "es": "a-li-né-e-se y es-pe-re"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "take-off",
+    "holding-point",
+    "runway-incursion"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

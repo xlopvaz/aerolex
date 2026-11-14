@@ -1,0 +1,78 @@
+---
+lesson: radio-principles-and-technique
+course: radio-communications
+lang: es
+title: "La radio y la técnica de transmisión"
+summary: "La banda VHF aeronáutica y su alcance, la separación de 8,33 kHz, los indicativos, cómo se transmiten números, niveles y frecuencias, y las palabras normalizadas de la radiotelefonía."
+objectives:
+  - "Calcular el alcance aproximado de la VHF"
+  - "Transmitir números, niveles, rumbos y frecuencias de forma normalizada"
+  - "Usar las palabras normalizadas de la radiotelefonía"
+minutes: 13
+terms: [vhf, channel-spacing, phonetic-alphabet, affirm, negative, roger, wilco, say-again, standby, unable]
+quiz: radio-communications-01
+sources: [icao-annex-10, icao-doc-9432, eu-1079-2012]
+review:
+  status: draft
+---
+
+## La VHF aeronáutica
+
+Las comunicaciones de voz entre pilotos y control usan la <Term id="vhf" /> entre **118,000 y 136,975 MHz**. La frecuencia internacional de emergencia es **121,5 MHz**.
+
+La VHF viaja **en línea recta**: no sigue la curvatura de la Tierra ni atraviesa montañas. Su alcance aproximado es:
+
+> alcance (NM) ≈ 1,23 × √(altura en ft)
+
+A 10.000 ft, unos **123 NM**; en tierra, a unos pocos pies, apenas unas millas. Si ambas estaciones están en altura, se suman los alcances de cada una.
+
+En Europa los canales están separados <Term id="channel-spacing">8,33 kHz</Term> en lugar de 25 kHz, lo que triplica las frecuencias disponibles. Por eso hay frecuencias como **132,005**: en radiotelefonía se dicen las seis cifras.
+
+## Los indicativos
+
+- Aviones de compañía: designador telefónico + número de vuelo, por ejemplo **IBERIA TRES CUATRO CINCO SEIS**. No se abrevian.
+- Matrículas: se deletrean con el <Term id="phonetic-alphabet">alfabeto fonético</Term> (**ECHO CHARLIE ALFA BRAVO CHARLIE**). Una vez establecido el contacto, y solo si el control lo hace primero, se pueden abreviar a la primera letra y las dos últimas: **ECHO BRAVO CHARLIE**.
+
+## Cómo se dicen los números
+
+Se transmiten **cifra a cifra**, salvo los millares y las centenas redondas:
+
+| Dato | Se dice |
+|---|---|
+| Nivel FL100 | «flight level **one zero zero**» |
+| Altitud 2.500 ft | «**two thousand five hundred** feet» |
+| Rumbo 080 | «heading **zero eight zero**» |
+| QNH 1013 | «QNH **one zero one three**» |
+| Frecuencia 118,7 | «**one one eight decimal seven**» |
+| Código 7421 | «squawk **seven four two one**» |
+| Viento 270/15 | «wind **two seven zero** degrees **one five** knots» |
+
+En inglés OACI algunas cifras se pronuncian de forma especial para que no se confundan: **TREE** (3), **FOW-er** (4), **FIFE** (5), **NIN-er** (9) y **TOU-SAND** (mil).
+
+## Las palabras normalizadas
+
+| Palabra | Significado |
+|---|---|
+| <Term id="affirm" /> | Sí |
+| <Term id="negative" /> | No, o permiso denegado, o eso no es correcto |
+| <Term id="roger" /> | He recibido todo su último mensaje |
+| <Term id="wilco" /> | Entendido y lo cumpliré |
+| <Term id="say-again" /> | Repita |
+| <Term id="standby" /> | Espere, le llamaré (no es una aprobación) |
+| <Term id="unable" /> | No puedo cumplir |
+| **CORRECTION** | Me he equivocado; lo correcto es… |
+| **BREAK** | Separa partes de un mensaje |
+| **READ BACK** | Repítame este mensaje tal como lo ha recibido |
+
+**ROGER** nunca responde a una pregunta que requiere sí o no, ni sustituye a una colación obligatoria.
+
+## La técnica
+
+1. **Escuchar** antes de transmitir para no pisar a nadie.
+2. **Pensar** el mensaje antes de pulsar.
+3. Pulsar, esperar medio segundo y hablar a ritmo **constante**, sin muletillas.
+4. **Soltar** el pulsador al terminar: un micrófono bloqueado deja a todos sin frecuencia.
+
+<Callout type="tip" label="Menos es más">
+Un buen mensaje es corto y en orden: a quién, quién, dónde, qué. «Madrid Approach, Iberia 3456, FL120 descending FL80, information Bravo.»
+</Callout>
