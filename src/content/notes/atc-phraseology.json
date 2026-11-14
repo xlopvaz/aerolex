@@ -1,0 +1,105 @@
+{
+  "course": "atc-phraseology",
+  "lessons": [
+    {
+      "lesson": "ground-and-departure",
+      "key": {
+        "es": "Secuencia: ATIS («information Bravo») → autorización de salida (destino, SID, nivel, código) → puesta en marcha y remolque → rodaje con hold short colacionado → line up and wait → cleared for take-off. «Take-off» solo al autorizar o cancelar; si no, «departure». Parar: «cancel take-off» → «holding»; «stop immediately» → «stopping».",
+        "en": "Sequence: ATIS (\"information Bravo\") → departure clearance (destination, SID, level, code) → start-up and pushback → taxi with hold short read back → line up and wait → cleared for take-off. \"Take-off\" only when clearing or cancelling; otherwise \"departure\". Stopping: \"cancel take-off\" → \"holding\"; \"stop immediately\" → \"stopping\"."
+      },
+      "points": [
+        {
+          "es": "Escuchar el ATIS y decir su letra al llamar («information Bravo»).",
+          "en": "Listen to the ATIS and quote its letter when calling (\"information Bravo\")."
+        },
+        {
+          "es": "Autorización de salida: destino, SID, nivel inicial, código SSR; se colaciona; no autoriza a entrar en pista ni a despegar.",
+          "en": "Departure clearance: destination, SID, initial level, SSR code; read back; does not authorise entering the runway or take-off."
+        },
+        {
+          "es": "Rodaje: ruta y hold short colacionados; ante la duda, parar y preguntar.",
+          "en": "Taxi: route and hold short read back; when in doubt, stop and ask."
+        },
+        {
+          "es": "«Take-off» solo en «cleared for take-off» y «cancel take-off»; en lo demás, «departure».",
+          "en": "\"Take-off\" only in \"cleared for take-off\" and \"cancel take-off\"; otherwise \"departure\"."
+        },
+        {
+          "es": "Parar: «hold position, cancel take-off» → «holding»; «stop immediately» → «stopping».",
+          "en": "Stopping: \"hold position, cancel take-off\" → \"holding\"; \"stop immediately\" → \"stopping\"."
+        }
+      ]
+    },
+    {
+      "lesson": "en-route-and-approach",
+      "key": {
+        "es": "Niveles: climb/descend flight level o altitude (con QNH), maintain, stop climb at, report reaching, expedite. Rumbos: turn left/right heading; proceed direct; resume own navigation. Velocidades: se mantienen hasta cancelarlas. Espera: punto, rumbo de acercamiento, virajes y hora. Continue approach no es cleared to land. Go around → going around. TCAS RA: seguirlo, «TCAS RA», «clear of conflict, returning to…».",
+        "en": "Levels: climb/descend flight level or altitude (with QNH), maintain, stop climb at, report reaching, expedite. Headings: turn left/right heading; proceed direct; resume own navigation. Speeds: kept until cancelled. Hold: fix, inbound track, turns and time. Continue approach is not cleared to land. Go around → going around. TCAS RA: follow it, \"TCAS RA\", \"clear of conflict, returning to…\"."
+      },
+      "points": [
+        {
+          "es": "Niveles: climb/descend flight level…, altitude… QNH…; maintain; stop climb at; report reaching; expedite.",
+          "en": "Levels: climb/descend flight level…, altitude… QNH…; maintain; stop climb at; report reaching; expedite."
+        },
+        {
+          "es": "Rumbos y rutas: turn left/right heading, continue present heading, proceed direct, resume own navigation.",
+          "en": "Headings and routes: turn left/right heading, continue present heading, proceed direct, resume own navigation."
+        },
+        {
+          "es": "Velocidades: reduce speed to…, maintain… or greater; vigentes hasta «no speed restriction».",
+          "en": "Speeds: reduce speed to…, maintain… or greater; in force until \"no speed restriction\"."
+        },
+        {
+          "es": "Espera: punto, rumbo de acercamiento, sentido de virajes, expect further clearance at…",
+          "en": "Hold: fix, inbound track, direction of turns, expect further clearance at…"
+        },
+        {
+          "es": "«Continue approach» ≠ «cleared to land». Go around → «going around».",
+          "en": "\"Continue approach\" ≠ \"cleared to land\". Go around → \"going around\"."
+        },
+        {
+          "es": "TCAS RA: seguirlo aunque contradiga al control; «TCAS RA»; al terminar, «clear of conflict, returning to…».",
+          "en": "TCAS RA: follow it even against ATC; \"TCAS RA\"; when over, \"clear of conflict, returning to…\"."
+        }
+      ]
+    },
+    {
+      "lesson": "plain-language-and-proficiency",
+      "key": {
+        "es": "Lenguaje claro: frases cortas, sencillas, una idea, números normalizados, comprobar que se entiende; emergencias inequívocas. CPDLC complementa a la voz; respuestas WILCO, UNABLE, STANDBY, ROGER, AFFIRM, NEGATIVE. Competencia lingüística: escala OACI de 6 niveles, mínimo 4; nota = la más baja de seis aspectos. Validez UE: nivel 4 cada 4 años, nivel 5 cada 6, nivel 6 sin reevaluación.",
+        "en": "Plain language: short, simple sentences, one idea, standard numbers, check understanding; unambiguous emergencies. CPDLC complements voice; responses WILCO, UNABLE, STANDBY, ROGER, AFFIRM, NEGATIVE. Language proficiency: ICAO 6-level scale, minimum 4; rating = lowest of six areas. EU validity: Level 4 every 4 years, Level 5 every 6, Level 6 no re-evaluation."
+      },
+      "points": [
+        {
+          "es": "Lenguaje claro: corto, sencillo, una idea por frase, sin jerga; comprobar la comprensión.",
+          "en": "Plain language: short, simple, one idea per sentence, no slang; check understanding."
+        },
+        {
+          "es": "Emergencias: siempre MAYDAY o PAN PAN, nunca rodeos.",
+          "en": "Emergencies: always MAYDAY or PAN PAN, never vague wording."
+        },
+        {
+          "es": "CPDLC: mensajes de texto normalizados; respuestas WILCO, UNABLE, STANDBY, ROGER, AFFIRM, NEGATIVE; complementa a la voz.",
+          "en": "CPDLC: standard text messages; responses WILCO, UNABLE, STANDBY, ROGER, AFFIRM, NEGATIVE; complements voice."
+        },
+        {
+          "es": "Escala OACI: 1 preelemental, 2 elemental, 3 preoperacional, 4 operacional (mínimo), 5 avanzado, 6 experto.",
+          "en": "ICAO scale: 1 pre-elementary, 2 elementary, 3 pre-operational, 4 operational (minimum), 5 extended, 6 expert."
+        },
+        {
+          "es": "Seis aspectos: pronunciación, estructura, vocabulario, fluidez, comprensión, interacción; el nivel es el más bajo.",
+          "en": "Six areas: pronunciation, structure, vocabulary, fluency, comprehension, interactions; the level is the lowest."
+        },
+        {
+          "es": "Validez UE (FCL.055): nivel 4 cada 4 años, nivel 5 cada 6, nivel 6 sin reevaluación (OACI recomienda 3 y 6).",
+          "en": "EU validity (FCL.055): Level 4 every 4 years, Level 5 every 6, Level 6 none (ICAO recommends 3 and 6)."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

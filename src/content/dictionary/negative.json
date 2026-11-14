@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Negative",
+    "es": "Negativo"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Standard radiotelephony word meaning \"no\", \"permission not granted\" or \"that is not correct\".",
+    "es": "Palabra normalizada de radiotelefonía que significa «no», «permiso denegado» o «eso no es correcto»."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "\"No.\"",
+    "es": "«No.»"
+  },
+  "example": {
+    "en": "\"Negative, descend flight level eight zero.\"",
+    "es": "«Negative, descienda a nivel de vuelo ocho cero.»"
+  },
+  "pronunciation": {
+    "en": "NEG-uh-tiv",
+    "es": "ne-ga-ti-vo"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "affirm",
+    "unable"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9432",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

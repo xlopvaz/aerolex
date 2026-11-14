@@ -1,0 +1,54 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Language proficiency",
+    "es": "Competencia lingüística"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control",
+    "aviation-law"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The ability to use the language of radiotelephony communications, assessed on the six-level ICAO scale; pilots and controllers need at least Level 4 (Operational) to use the radio in international operations.",
+    "es": "Capacidad de usar el idioma de las comunicaciones radiotelefónicas, evaluada con la escala de seis niveles de la OACI; pilotos y controladores necesitan al menos el nivel 4 (operacional) para usar la radio en operaciones internacionales."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "How well you can use aviation English (or the local language) on the radio.",
+    "es": "Lo bien que manejas el inglés aeronáutico (o el idioma local) en la radio."
+  },
+  "example": {
+    "en": "Her licence carried a Level 6 English language proficiency endorsement.",
+    "es": "Su licencia llevaba una anotación de competencia lingüística en inglés de nivel 6."
+  },
+  "pronunciation": {
+    "en": "LANG-gwij pruh-FISH-un-see",
+    "es": "com-pe-ten-cia lin-güís-ti-ca"
+  },
+  "synonyms": {
+    "en": [
+      "ELP",
+      "ICAO English level"
+    ],
+    "es": [
+      "nivel de inglés OACI"
+    ]
+  },
+  "related": [
+    "licence",
+    "phonetic-alphabet"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-1178-2011",
+    "icao-annex-1"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

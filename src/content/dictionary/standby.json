@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Standby",
+    "es": "Espere"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Standard radiotelephony word meaning \"wait and I will call you\"; it is neither an approval nor a denial.",
+    "es": "Palabra normalizada de radiotelefonía que significa «espere, le llamaré»; no es ni una aprobación ni una negativa."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "\"Wait, I'll get back to you.\"",
+    "es": "«Espera, ahora te digo.»"
+  },
+  "example": {
+    "en": "\"Standby\" from the controller means the request is not yet approved.",
+    "es": "«Standby» del controlador significa que la petición aún no está aprobada."
+  },
+  "pronunciation": {
+    "en": "STAND-by",
+    "es": "es-pe-re"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "say-again",
+    "unable"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9432",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

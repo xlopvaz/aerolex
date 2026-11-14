@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Say again",
+    "es": "Repita"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Standard radiotelephony phrase meaning \"repeat all, or the following part, of your last transmission\".",
+    "es": "Expresión normalizada de radiotelefonía que significa «repita todo su último mensaje, o la parte indicada»."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "\"Please repeat.\"",
+    "es": "«Repítalo, por favor.»"
+  },
+  "example": {
+    "en": "\"Say again the QNH.\"",
+    "es": "«Repita el QNH.»"
+  },
+  "pronunciation": {
+    "en": "SAY uh-GEN",
+    "es": "re-pi-ta"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "readback",
+    "roger"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9432",
+    "icao-annex-10"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

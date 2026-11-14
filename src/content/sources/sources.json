@@ -185,5 +185,7 @@
   "eu-376-2014": {"title": "Regulation (EU) No 376/2014 — reporting, analysis and follow-up of occurrences in civil aviation", "publisher": "European Union", "kind": "regulation", "url": "https://eur-lex.europa.eu/eli/reg/2014/376/oj", "licence": "eu-reuse"},
   "faa-wbh": {"title": "Aircraft Weight and Balance Handbook (FAA-H-8083-1B)", "publisher": "FAA", "kind": "handbook", "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/weight_balance_handbook", "licence": "public-domain-us"},
   "easa-grf": {"title": "Runway Contamination and GRF", "publisher": "EASA Community", "kind": "web", "url": "https://www.easa.europa.eu/community/topics/runway-contamination-and-grf", "licence": "copyright"},
-  "icao-doc-9683": {"title": "Doc 9683 — Human Factors Training Manual", "publisher": "ICAO", "kind": "standard", "url": "https://store.icao.int/", "licence": "copyright"}
+  "icao-doc-9683": {"title": "Doc 9683 — Human Factors Training Manual", "publisher": "ICAO", "kind": "standard", "url": "https://store.icao.int/", "licence": "copyright"},
+  "eu-2024-404": {"title": "Commission Implementing Regulation (EU) 2024/404 — amending SERA (radio communication failure and other procedures)", "publisher": "European Union", "kind": "regulation", "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/404/oj", "licence": "eu-reuse"},
+  "eu-1079-2012": {"title": "Commission Implementing Regulation (EU) No 1079/2012 — voice channel spacing (8.33 kHz) in the single European sky", "publisher": "European Union", "kind": "regulation", "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/1079/oj", "licence": "eu-reuse"}
 }

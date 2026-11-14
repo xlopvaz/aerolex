@@ -1,0 +1,49 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Conditional clearance",
+    "es": "Autorización condicional"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A clearance that applies only once a stated condition is met, such as another aircraft landing or passing; the condition is given first and the pilot reads it back in full.",
+    "es": "Autorización que solo es válida cuando se cumple una condición indicada, como que otra aeronave aterrice o pase; la condición se dice primero y el piloto la colaciona completa."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "\"After that plane lands, you can line up.\"",
+    "es": "«Cuando aterrice ese avión, puedes alinearte.»"
+  },
+  "example": {
+    "en": "\"Behind the landing A320, line up and wait runway 36L, behind.\"",
+    "es": "«Detrás del A320 que aterriza, alinéese y espere pista 36L, detrás.»"
+  },
+  "pronunciation": {
+    "en": "kun-DISH-un-ul KLEER-uns",
+    "es": "au-to-ri-za-ción con-di-cio-nal"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "clearance",
+    "readback",
+    "line-up-and-wait"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-4444",
+    "eu-923-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

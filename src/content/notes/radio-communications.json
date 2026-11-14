@@ -1,0 +1,105 @@
+{
+  "course": "radio-communications",
+  "lessons": [
+    {
+      "lesson": "radio-principles-and-technique",
+      "key": {
+        "es": "VHF 118,000–136,975 MHz; emergencia 121,5. Alcance ≈ 1,23 × √altura (ft). 8,33 kHz en Europa (seis cifras). Indicativos de compañía sin abreviar; matrículas abreviadas solo si el control lo hace primero. Números cifra a cifra salvo millares y centenas; TREE, FOW-er, FIFE, NIN-er. Palabras: AFFIRM, NEGATIVE, ROGER, WILCO, SAY AGAIN, STANDBY, UNABLE, CORRECTION.",
+        "en": "VHF 118.000–136.975 MHz; emergency 121.5. Range ≈ 1.23 × √height (ft). 8.33 kHz in Europe (six digits). Airline call signs not abbreviated; registrations shortened only if ATC does first. Numbers digit by digit except thousands and hundreds; TREE, FOW-er, FIFE, NIN-er. Words: AFFIRM, NEGATIVE, ROGER, WILCO, SAY AGAIN, STANDBY, UNABLE, CORRECTION."
+      },
+      "points": [
+        {
+          "es": "Banda VHF 118,000–136,975 MHz; emergencia 121,5 MHz; separación de 8,33 kHz en Europa.",
+          "en": "VHF band 118.000–136.975 MHz; emergency 121.5 MHz; 8.33 kHz spacing in Europe."
+        },
+        {
+          "es": "Alcance VHF (NM) ≈ 1,23 × √(altura en ft): línea de vista.",
+          "en": "VHF range (NM) ≈ 1.23 × √(height in ft): line of sight."
+        },
+        {
+          "es": "Indicativos: compañía + número de vuelo (sin abreviar); matrícula abreviada a primera letra + dos últimas solo si el control empieza.",
+          "en": "Call signs: airline + flight number (not abbreviated); registration shortened to first letter + last two only if ATC starts."
+        },
+        {
+          "es": "Números cifra a cifra (salvo millares y centenas redondas); pronunciación OACI TREE, FOW-er, FIFE, NIN-er, TOU-SAND.",
+          "en": "Numbers digit by digit (except whole thousands and hundreds); ICAO pronunciation TREE, FOW-er, FIFE, NIN-er, TOU-SAND."
+        },
+        {
+          "es": "ROGER = recibido; WILCO = cumpliré; STANDBY = espere (no aprueba); UNABLE = no puedo; ROGER no sustituye a una colación.",
+          "en": "ROGER = received; WILCO = will comply; STANDBY = wait (not an approval); UNABLE = cannot; ROGER does not replace a readback."
+        },
+        {
+          "es": "Técnica: escuchar, pensar, pulsar, hablar constante, soltar.",
+          "en": "Technique: listen, think, press, speak evenly, release."
+        }
+      ]
+    },
+    {
+      "lesson": "readback-and-clearances",
+      "key": {
+        "es": "Se colacionan siempre: autorizaciones de ruta; entrar, aterrizar, despegar, mantenerse fuera, cruzar, rodar o retroceder en pista; pista en uso, QNH, códigos SSR, frecuencias, nivel, rumbo y velocidad; niveles de transición. Termina con el indicativo; el control hace hearback. Condicional: indicativo – condición – autorización – condición. Evitar «to», cuidar FL100/FL110 y preguntar ante la duda.",
+        "en": "Always read back: route clearances; enter, land, take off, hold short, cross, taxi or backtrack on a runway; runway in use, QNH, SSR codes, frequencies, level, heading and speed; transition levels. End with the call sign; ATC does the hearback. Conditional: call sign – condition – clearance – condition. Avoid \"to\", take care with FL100/FL110 and ask when in doubt."
+      },
+      "points": [
+        {
+          "es": "Colación obligatoria: autorizaciones de ruta y todo lo relativo a pistas (entrar, aterrizar, despegar, mantenerse fuera, cruzar, rodar, retroceder).",
+          "en": "Mandatory readback: route clearances and everything about runways (enter, land, take off, hold short, cross, taxi, backtrack)."
+        },
+        {
+          "es": "También: pista en uso, reglaje de altímetro, código SSR, nueva frecuencia, nivel, rumbo, velocidad y nivel de transición.",
+          "en": "Also: runway in use, altimeter setting, SSR code, new frequency, level, heading, speed and transition level."
+        },
+        {
+          "es": "La colación termina con el indicativo; el control escucha y corrige (hearback).",
+          "en": "The readback ends with the call sign; ATC listens and corrects (hearback)."
+        },
+        {
+          "es": "Condicional: indicativo – condición – autorización – condición repetida; ver la aeronave antes de actuar.",
+          "en": "Conditional: call sign – condition – clearance – condition repeated; see the aircraft before acting."
+        },
+        {
+          "es": "Trampas: «to/two», FL100 frente a FL110, rumbo frente a nivel, indicativos parecidos. Ante la duda, preguntar.",
+          "en": "Traps: \"to/two\", FL100 versus FL110, heading versus level, similar call signs. When in doubt, ask."
+        }
+      ]
+    },
+    {
+      "lesson": "emergencies-and-radio-failure",
+      "key": {
+        "es": "MAYDAY ×3 (peligro grave e inminente) y PAN PAN ×3 (urgencia); en la frecuencia en uso o en 121,5. Contenido: estación, indicativo, naturaleza, intenciones, posición, nivel, rumbo, otros datos. Códigos 7700, 7600, 7500. Fallo de radio: VMC → aterrizar en el más cercano; IMC → 7600, último nivel y velocidad 20 min (SERA desde 2025), luego plan de vuelo, aterrizar en 30 min. Código 7601 donde se aplique.",
+        "en": "MAYDAY ×3 (grave and imminent danger) and PAN PAN ×3 (urgency); on the frequency in use or 121.5. Content: station, call sign, nature, intentions, position, level, heading, other data. Codes 7700, 7600, 7500. Radio failure: VMC → land at nearest; IMC → 7600, last level and speed 20 min (SERA since 2025), then flight plan, land within 30 min. Code 7601 where applied."
+      },
+      "points": [
+        {
+          "es": "MAYDAY: peligro grave e inminente; PAN PAN: urgencia sin ayuda inmediata. Tres veces cada uno.",
+          "en": "MAYDAY: grave and imminent danger; PAN PAN: urgency without immediate assistance. Three times each."
+        },
+        {
+          "es": "Mensaje: estación, indicativo, naturaleza, intenciones, posición, nivel, rumbo, personas a bordo y combustible.",
+          "en": "Message: station, call sign, nature, intentions, position, level, heading, persons on board and fuel."
+        },
+        {
+          "es": "Silencio: «STOP TRANSMITTING, MAYDAY»; fin: «DISTRESS TRAFFIC ENDED».",
+          "en": "Silence: \"STOP TRANSMITTING, MAYDAY\"; end: \"DISTRESS TRAFFIC ENDED\"."
+        },
+        {
+          "es": "Transpondedor: 7700 emergencia, 7600 fallo de radio, 7500 interferencia ilícita.",
+          "en": "Transponder: 7700 emergency, 7600 radio failure, 7500 unlawful interference."
+        },
+        {
+          "es": "Fallo de radio en VMC: seguir VMC y aterrizar en el aeródromo adecuado más cercano; informar de la llegada.",
+          "en": "Radio failure in VMC: stay VMC and land at the nearest suitable aerodrome; report arrival."
+        },
+        {
+          "es": "En IMC (SERA desde mayo de 2025): 7600, último nivel y velocidad 20 min, luego plan de vuelo; aterrizar en 30 min tras la hora prevista. 7601 donde se aplique; ver el AIP.",
+          "en": "In IMC (SERA since May 2025): 7600, last level and speed 20 min, then flight plan; land within 30 min of expected time. 7601 where applied; check the AIP."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

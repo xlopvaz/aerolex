@@ -1,0 +1,57 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "RCF",
+    "es": "RCF"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Radio communication failure",
+    "es": "Fallo de radiocomunicaciones"
+  },
+  "categories": [
+    "air-traffic-control",
+    "flight-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Loss of two-way radio communication between an aircraft and ATC; the crew selects transponder code 7600 (or 7601 where applicable in Europe) and follows the published procedure.",
+    "es": "Pérdida de la comunicación por radio en ambos sentidos entre una aeronave y el control; la tripulación selecciona el código 7600 en el transpondedor (o 7601 donde se aplique en Europa) y sigue el procedimiento publicado."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When you can no longer talk to ATC by radio.",
+    "es": "Cuando ya no puedes hablar con el control por radio."
+  },
+  "example": {
+    "en": "After the RCF the crew squawked 7600 and continued as filed.",
+    "es": "Tras el fallo de radio, la tripulación puso 7600 y continuó según el plan de vuelo."
+  },
+  "pronunciation": {
+    "en": "ar-see-EF",
+    "es": "e-rre-ce-e-fe"
+  },
+  "synonyms": {
+    "en": [
+      "lost comms"
+    ],
+    "es": [
+      "fallo de radio"
+    ]
+  },
+  "related": [
+    "transponder",
+    "squawk",
+    "vmc"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-923-2012",
+    "eu-2024-404"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

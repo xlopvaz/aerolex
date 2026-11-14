@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuándo se usa MAYDAY y no PAN PAN?",
+        "en": "When is MAYDAY used rather than PAN PAN?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Ante cualquier retraso",
+            "en": "For any delay"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para pedir el parte meteorológico",
+            "en": "To request the weather"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Cuando un pasajero se marea",
+            "en": "When a passenger feels sick"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ante un peligro grave e inminente que exige ayuda inmediata",
+            "en": "For grave and imminent danger requiring immediate assistance"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "PAN PAN es urgencia sin necesidad de ayuda inmediata.",
+        "en": "PAN PAN is urgency without immediate assistance needed."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Qué código de transpondedor indica interferencia ilícita?",
+        "en": "Which transponder code indicates unlawful interference?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "7600",
+            "en": "7600"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "7700",
+            "en": "7700"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "7500",
+            "en": "7500"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "2000",
+            "en": "2000"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "7600 es fallo de radio y 7700, emergencia.",
+        "en": "7600 is radio failure and 7700, emergency."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Qué debe incluir un mensaje MAYDAY, entre otras cosas?",
+        "en": "What must a MAYDAY message include, among other things?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El número de licencia del piloto",
+            "en": "The pilot's licence number"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La naturaleza de la emergencia y las intenciones del comandante",
+            "en": "The nature of the emergency and the commander's intentions"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El menú de a bordo",
+            "en": "The on-board menu"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "La hora de salida prevista",
+            "en": "The planned departure time"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Y la posición, el nivel y el rumbo.",
+        "en": "And position, level and heading."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Con fallo de radio en VMC, lo correcto es…",
+        "en": "With radio failure in VMC, the right action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Seguir en VMC, aterrizar en el aeródromo adecuado más cercano y comunicar la llegada",
+            "en": "Stay in VMC, land at the nearest suitable aerodrome and report arrival"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Subir a FL350",
+            "en": "Climb to FL350"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Volver siempre al aeródromo de salida",
+            "en": "Always return to the departure aerodrome"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Seguir sin cambios hasta el destino",
+            "en": "Continue unchanged to destination"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "En IMC se aplica el procedimiento IFR.",
+        "en": "In IMC the IFR procedure applies."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "Según las reglas europeas desde 2025, un vuelo IFR sin radio en IMC mantiene el último nivel y velocidad asignados durante…",
+        "en": "Under European rules since 2025, an IFR flight without radio in IMC keeps its last assigned level and speed for…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "7 minutos",
+            "en": "7 minutes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1 hora",
+            "en": "1 hour"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Hasta el destino",
+            "en": "Until destination"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "20 minutos",
+            "en": "20 minutes"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Antes eran 7 minutos en espacio radar.",
+        "en": "Previously 7 minutes in radar airspace."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué frase usa la estación que impone silencio durante un MAYDAY?",
+        "en": "What phrase does the station imposing silence during a MAYDAY use?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«Radio silence please»",
+            "en": "\"Radio silence please\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Roger MAYDAY»",
+            "en": "\"Roger MAYDAY\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Stop transmitting, MAYDAY»",
+            "en": "\"Stop transmitting, MAYDAY\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Standby all stations»",
+            "en": "\"Standby all stations\""
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Al terminar: «Distress traffic ended».",
+        "en": "When over: \"Distress traffic ended\"."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "Si no hay respuesta a un MAYDAY en la frecuencia en uso, se repite en…",
+        "en": "If a MAYDAY gets no answer on the frequency in use, it is repeated on…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "118,0 MHz",
+            "en": "118.0 MHz"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "121,5 MHz",
+            "en": "121.5 MHz"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "La frecuencia del ATIS",
+            "en": "The ATIS frequency"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cualquier frecuencia de compañía",
+            "en": "Any company frequency"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Es la frecuencia internacional de emergencia.",
+        "en": "It is the international emergency frequency."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "Alcance VHF desde 10.000 ft…",
+        "en": "VHF range from 10,000 ft…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Unos 123 NM",
+            "en": "About 123 NM"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Unos 12 NM",
+            "en": "About 12 NM"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Unos 1.230 NM",
+            "en": "About 1,230 NM"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Ilimitado",
+            "en": "Unlimited"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "1,23 × √10.000 = 1,23 × 100.",
+        "en": "1.23 × √10,000 = 1.23 × 100."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "¿Qué NO hace falta colacionar siempre?",
+        "en": "What does NOT always need reading back?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El QNH",
+            "en": "The QNH"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "La autorización de despegue",
+            "en": "The take-off clearance"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "El nivel asignado",
+            "en": "The assigned level"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El viento en superficie de un parte",
+            "en": "The surface wind in a report"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Los reglajes, las pistas y los niveles sí.",
+        "en": "Settings, runways and levels do."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "El código 7601, donde se aplica, indica…",
+        "en": "Code 7601, where applied, indicates…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Emergencia médica",
+            "en": "Medical emergency"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Interferencia ilícita",
+            "en": "Unlawful interference"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Fallo de radio en IFR con intención de aterrizar en VMC en el aeródromo adecuado más cercano",
+            "en": "IFR radio failure intending to land in VMC at the nearest suitable aerodrome"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Vuelo militar",
+            "en": "Military flight"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "No todos los Estados lo aplican aún.",
+        "en": "Not all States apply it yet."
+      }
+    }
+  ]
+}

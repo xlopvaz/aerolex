@@ -1,0 +1,68 @@
+---
+lesson: emergencies-and-radio-failure
+course: radio-communications
+lang: es
+title: "Emergencias y fallo de radio"
+summary: "Cómo se declaran el peligro y la urgencia por radio, qué contiene un mensaje MAYDAY, los códigos de transpondedor de emergencia y el procedimiento de fallo de radiocomunicaciones según las reglas europeas actualizadas en 2025."
+objectives:
+  - "Transmitir un mensaje de peligro o de urgencia completo"
+  - "Conocer los códigos de transpondedor de emergencia"
+  - "Aplicar el procedimiento de fallo de radio"
+  - "Comprobar lo aprendido en la evaluación final"
+minutes: 13
+terms: [mayday, pan-pan, rcf]
+quiz: radio-communications-final
+sources: [icao-annex-10, icao-doc-4444, eu-923-2012, eu-2024-404]
+review:
+  status: draft
+---
+
+## Peligro y urgencia
+
+| Nivel | Palabra | Cuándo |
+|---|---|---|
+| **Peligro** | <Term id="mayday" /> ×3 | Peligro grave e inminente que exige ayuda inmediata |
+| **Urgencia** | <Term id="pan-pan" /> ×3 | Situación que afecta a la seguridad de la aeronave o de alguien a bordo, sin necesidad de ayuda inmediata |
+
+El mensaje se envía en la frecuencia en uso; si no hay respuesta, en **121,5 MHz**. Contiene, en la medida de lo posible:
+
+1. **MAYDAY, MAYDAY, MAYDAY** (o PAN PAN ×3);
+2. la estación a la que se llama;
+3. el **indicativo**;
+4. la **naturaleza** de la emergencia;
+5. las **intenciones** del comandante;
+6. la **posición, el nivel y el rumbo**;
+7. cualquier otra información útil (personas a bordo, combustible).
+
+> «MAYDAY, MAYDAY, MAYDAY, Barcelona Control, Iberia 3456, engine fire, descending to FL100, diverting to Valencia, position 30 miles south of REUS, heading 200, 180 persons on board.»
+
+La estación que recibe el MAYDAY controla el tráfico de peligro y puede imponer silencio: «**STOP TRANSMITTING, MAYDAY**». Cuando termina: «**DISTRESS TRAFFIC ENDED**». Una emergencia se puede **cancelar** si la situación se resuelve.
+
+## Los códigos de emergencia del transpondedor
+
+| Código | Significado |
+|---|---|
+| **7700** | Emergencia |
+| **7600** | Fallo de radiocomunicaciones |
+| **7500** | Interferencia ilícita |
+
+Una regla de memoria en inglés: *seventy-five, taken alive*; *seventy-six, radio fix*; *seventy-seven, going to heaven*. Si el control ya ha asignado un código, normalmente se mantiene.
+
+## Fallo de radiocomunicaciones
+
+Ante un <Term id="rcf">fallo de radio</Term>, primero se comprueba lo evidente: volumen, frecuencia, cascos, otra radio. Si persiste:
+
+**En VMC**, se continúa en condiciones visuales, se **aterriza en el aeródromo adecuado más cercano** y se comunica la llegada al control por el medio más rápido.
+
+**En IMC**, o si no se puede seguir en VMC, el vuelo IFR:
+
+- selecciona **7600**;
+- mantiene el último nivel y velocidad asignados, o la altitud mínima de vuelo si es mayor, durante un tiempo fijado: en las reglas europeas, desde mayo de 2025, **20 minutos** (antes eran 7 en espacio con vigilancia radar);
+- después ajusta nivel y velocidad al **plan de vuelo** y sigue la ruta hasta la radioayuda del destino;
+- inicia el descenso y la aproximación lo más cerca posible de la hora prevista, y aterriza si puede en los **30 minutos** siguientes.
+
+La misma reforma creó el código **7601** para el vuelo IFR que, sin radio y en VMC, decide aterrizar en el aeródromo adecuado más cercano. No todos los Estados lo aplican todavía: hay que comprobar el AIP y los NOTAM.
+
+<Callout type="regional-diff" label="Cada Estado puede tener diferencias">
+Los procedimientos de fallo de radio se publican en el AIP de cada país, que puede tener diferencias con la OACI y con las reglas europeas. Lo que manda en vuelo es lo que dice el AIP vigente.
+</Callout>

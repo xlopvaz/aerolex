@@ -1,0 +1,46 @@
+{
+  "type": "term",
+  "term": {
+    "en": "8.33 kHz channel spacing",
+    "es": "Separación entre canales de 8,33 kHz"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "air-traffic-control"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "The division of the aeronautical VHF voice band into channels 8.33 kHz apart instead of 25 kHz, tripling the number of available frequencies; it is mandatory for aircraft radios in European airspace.",
+    "es": "División de la banda VHF aeronáutica de voz en canales separados 8,33 kHz en lugar de 25 kHz, lo que triplica el número de frecuencias disponibles; es obligatoria para las radios de a bordo en el espacio aéreo europeo."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "A finer division of radio frequencies so there are more of them.",
+    "es": "Una división más fina de las frecuencias de radio para que haya más."
+  },
+  "example": {
+    "en": "The controller assigned 132.005, an 8.33 kHz channel.",
+    "es": "El controlador asignó 132,005, un canal de 8,33 kHz."
+  },
+  "pronunciation": {
+    "en": "AYT-point-thrree-thrree KIL-oh-hurts",
+    "es": "o-cho co-ma trein-ta y tres ki-lo-her-cios"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "vhf"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-1079-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

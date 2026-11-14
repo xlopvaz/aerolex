@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Cuál es la frecuencia internacional de emergencia en VHF?",
+        "en": "What is the international VHF emergency frequency?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "118,0 MHz",
+            "en": "118.0 MHz"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "121,5 MHz",
+            "en": "121.5 MHz"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "136,975 MHz",
+            "en": "136.975 MHz"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "243,0 MHz",
+            "en": "243.0 MHz"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "243,0 MHz es la de emergencia militar en UHF.",
+        "en": "243.0 MHz is the military UHF emergency frequency."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Alcance aproximado de la VHF desde 2.500 ft…",
+        "en": "Approximate VHF range from 2,500 ft…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Unos 61 NM",
+            "en": "About 61 NM"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Unos 2.500 NM",
+            "en": "About 2,500 NM"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Unos 6 NM",
+            "en": "About 6 NM"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Unos 250 NM",
+            "en": "About 250 NM"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "1,23 × √2.500 = 1,23 × 50 ≈ 61 NM.",
+        "en": "1.23 × √2,500 = 1.23 × 50 ≈ 61 NM."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Cómo se transmite el rumbo 080?",
+        "en": "How is heading 080 transmitted?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "«Heading eighty»",
+            "en": "\"Heading eighty\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "«Heading eight zero»",
+            "en": "\"Heading eight zero\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "«Heading zero eighty»",
+            "en": "\"Heading zero eighty\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "«Heading zero eight zero»",
+            "en": "\"Heading zero eight zero\""
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Cifra a cifra, con las tres cifras.",
+        "en": "Digit by digit, with all three digits."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "«WILCO» significa…",
+        "en": "\"WILCO\" means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sí",
+            "en": "Yes"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Repita",
+            "en": "Repeat"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Entendido y lo cumpliré",
+            "en": "Understood and will comply"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Espere",
+            "en": "Wait"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "WILCO = will comply.",
+        "en": "WILCO = will comply."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "El control responde «STANDBY» a una petición. Eso significa…",
+        "en": "ATC answers \"STANDBY\" to a request. That means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que está aprobada",
+            "en": "It is approved"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Que espere: aún no está aprobada ni denegada",
+            "en": "Wait: it is neither approved nor denied yet"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que está denegada",
+            "en": "It is denied"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Que cambie de frecuencia",
+            "en": "Change frequency"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Hay que esperar a que el control vuelva a llamar.",
+        "en": "Wait for ATC to call back."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Se puede abreviar el indicativo «IBERIA 3456»?",
+        "en": "Can the call sign \"IBERIA 3456\" be abbreviated?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "No: los indicativos de compañía no se abrevian",
+            "en": "No: airline call signs are not abbreviated"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sí, a «IBERIA 56»",
+            "en": "Yes, to \"IBERIA 56\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Sí, a «3456»",
+            "en": "Yes, to \"3456\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Sí, si el piloto lo decide",
+            "en": "Yes, if the pilot decides"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Las matrículas sí, si el control lo hace primero.",
+        "en": "Registrations can be, if ATC does it first."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Por qué existen los canales de 8,33 kHz?",
+        "en": "Why do 8.33 kHz channels exist?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Para tener más alcance",
+            "en": "To get more range"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Para las emergencias",
+            "en": "For emergencies"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Para los satélites",
+            "en": "For satellites"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Para tener unas tres veces más frecuencias en la misma banda",
+            "en": "To have about three times as many frequencies in the same band"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "25 / 8,33 ≈ 3.",
+        "en": "25 / 8.33 ≈ 3."
+      }
+    }
+  ]
+}
