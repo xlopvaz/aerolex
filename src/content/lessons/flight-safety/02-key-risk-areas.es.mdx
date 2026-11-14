@@ -1,0 +1,65 @@
+---
+lesson: key-risk-areas
+course: flight-safety
+lang: es
+title: "Las grandes áreas de riesgo"
+summary: "Las categorías de accidente que más preocupan en la aviación comercial y sus defensas: el impacto contra el terreno sin pérdida de control y el EGPWS, las salidas e incursiones en pista con la aproximación estabilizada, y la colisión en el aire con el TCAS."
+objectives:
+  - "Explicar qué son el CFIT, la LOC-I y las salidas de pista"
+  - "Aplicar los criterios de aproximación estabilizada"
+  - "Reconocer los modos del EGPWS y la respuesta a un PULL UP"
+minutes: 14
+terms: [loc-i, cfit, runway-excursion, runway-incursion, egpws, stabilised-approach, tcas]
+quiz: flight-safety-02
+sources: [skybrary-stabilised-approach, icao-doc-9859, faa-aim, icao-annex-6]
+review:
+  status: draft
+---
+
+## Las categorías de accidente
+
+| Categoría | Qué es | Defensa principal |
+|---|---|---|
+| <Term id="loc-i" /> | Pérdida de control en vuelo | Prevención y recuperación de actitudes anormales (lección 3) |
+| <Term id="cfit" /> | Impacto contra el terreno con un avión controlable | Conciencia de la altura, cartas, EGPWS |
+| <Term id="runway-excursion">Salida de pista</Term> | Salirse por el lateral o el final | Aproximación estabilizada, cálculo de actuaciones |
+| <Term id="runway-incursion">Incursión en pista</Term> | Presencia indebida en una pista activa | Fraseología, colación, luces de parada |
+| **Colisión en el aire** | Dos aeronaves en el mismo punto | Control, vigilancia, TCAS |
+
+## El CFIT y el EGPWS
+
+El CFIT ocurre casi siempre por perder la **conciencia de la posición o la altura**: un QNH mal puesto, un descenso antes de tiempo, una carta mal leída. El <Term id="egpws" /> avisa con varios modos:
+
+| Modo | Avisa de… | Aviso típico |
+|---|---|---|
+| **1** | Régimen de descenso excesivo | «SINK RATE», «PULL UP» |
+| **2** | Acercamiento excesivo al terreno | «TERRAIN TERRAIN», «PULL UP» |
+| **3** | Pérdida de altura tras el despegue | «DON'T SINK» |
+| **4** | Poca altura sin configuración de aterrizaje | «TOO LOW GEAR», «TOO LOW FLAPS», «TOO LOW TERRAIN» |
+| **5** | Por debajo de la senda de planeo | «GLIDESLOPE» |
+| **6** | Alturas y alabeo excesivo | «BANK ANGLE», cantos de altura |
+
+La versión mejorada añade la **vista hacia delante** con una base de datos del terreno: avisa antes, con «TERRAIN AHEAD».
+
+Ante un **PULL UP**, la respuesta es **inmediata** y sin discutir: empuje máximo, nivelar las alas, subir el morro hasta el límite que indique el procedimiento y recoger los aerofrenos; se mantiene hasta que desaparezca el aviso.
+
+## La aproximación estabilizada
+
+Muchas salidas de pista empiezan con una aproximación **inestable**. La Flight Safety Foundation recomienda que el avión esté estabilizado a **1.000 ft** sobre el aeródromo en IMC y **500 ft** en VMC. Está <Term id="stabilised-approach">estabilizado</Term> si:
+
+- va en la **senda correcta** y solo necesita pequeños cambios de rumbo y cabeceo;
+- la velocidad no supera **VREF + 20 kt** ni baja de **VREF**;
+- está en **configuración de aterrizaje**;
+- el régimen de descenso no supera **1.000 ft/min**;
+- el **empuje** es el adecuado;
+- se han hecho los **briefings y las listas**.
+
+Si la aproximación deja de estar estabilizada por debajo de esa altura: **motor y al aire**, sin excepciones. Muchos operadores usan una sola altura para todas las condiciones, lo que facilita seguirlo con el FDM.
+
+## La colisión en el aire y el TCAS
+
+El <Term id="tcas" /> da primero un **aviso de tráfico (TA)** y, si el riesgo aumenta, un **aviso de resolución (RA)** con una orden vertical. Un RA se sigue **siempre y enseguida**, aunque contradiga al control, y se comunica (módulo 14). Los dos aviones coordinan sus RA para que maniobren en sentidos opuestos: si uno no lo sigue, la protección desaparece.
+
+<Callout type="caution" label="La presión por aterrizar">
+La causa más repetida de seguir una aproximación inestable es la presión por llegar: horario, cansancio, «casi está». El motor y al aire es una maniobra normal, no un fracaso.
+</Callout>

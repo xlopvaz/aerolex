@@ -1,0 +1,48 @@
+{
+  "path": "pilot-training",
+  "order": 15,
+  "level": "advanced",
+  "title": {
+    "es": "Academia de pilotos · Módulo 15: Procedimientos operacionales",
+    "en": "Pilot Academy · Module 15: Operational Procedures"
+  },
+  "description": {
+    "es": "Cómo trabaja un operador de transporte aéreo: AOC, manual de operaciones, documentos a bordo y MEL con sus plazos; operaciones con baja visibilidad según la reforma europea, RVSM, ETOPS e invierno con fluidos y tiempos de protección; y la lógica de los procedimientos de emergencia: descenso de emergencia, cizalladura, humo y fuego, aves y aterrizaje con sobrepeso.",
+    "en": "How an air transport operator works: AOC, operations manual, documents on board and MEL with its intervals; low-visibility operations under the European reform, RVSM, ETOPS and winter with fluids and holdover times; and the logic of emergency procedures: emergency descent, wind shear, smoke and fire, birds and overweight landing."
+  },
+  "objectives": {
+    "en": [
+      "Know an operator's documentation and the MEL",
+      "Explain the requirements of special operations",
+      "Describe the logic of emergency procedures"
+    ],
+    "es": [
+      "Conocer la organización documental de un operador y la MEL",
+      "Explicar los requisitos de las operaciones especiales",
+      "Describir la lógica de los procedimientos de emergencia"
+    ]
+  },
+  "lessons": [
+    "operator-manuals-and-mel",
+    "special-operations",
+    "abnormal-and-emergency-procedures"
+  ],
+  "finalQuiz": null,
+  "sources": [
+    "eu-965-2012",
+    "easa-cs-mmel",
+    "icao-annex-6",
+    "eu-2021-2237",
+    "icao-doc-4444",
+    "faa-ac-120-60",
+    "faa-afh",
+    "eu-923-2012",
+    "eu-2024-404",
+    "faa-awh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "LOC-I",
+    "es": "LOC-I"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Loss of control in flight",
+    "es": "Pérdida de control en vuelo"
+  },
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An accident category in which the crew loses control of the aircraft in flight, often after an unrecovered stall or upset; it is one of the leading causes of fatal accidents in commercial aviation.",
+    "es": "Categoría de accidente en la que la tripulación pierde el control de la aeronave en vuelo, a menudo tras una pérdida o una actitud anormal no recuperadas; es una de las principales causas de accidentes mortales en la aviación comercial."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the pilots can no longer control the aircraft.",
+    "es": "Cuando los pilotos ya no pueden controlar el avión."
+  },
+  "example": {
+    "en": "UPRT training aims to reduce LOC-I accidents.",
+    "es": "La formación UPRT busca reducir los accidentes por LOC-I."
+  },
+  "pronunciation": {
+    "en": "el-oh-see-EYE",
+    "es": "e-le-o-ce-i"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "upset",
+    "stall",
+    "cfit"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9859",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "MMEL",
+    "es": "MMEL"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Master minimum equipment list",
+    "es": "Lista maestra de equipo mínimo"
+  },
+  "categories": [
+    "flight-operations",
+    "maintenance"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "The list, approved for an aircraft type, of equipment that may be temporarily inoperative at the start of a flight; each operator's MEL is based on it and may not be less restrictive.",
+    "es": "Lista aprobada para un tipo de aeronave con el equipo que puede estar temporalmente inoperativo al inicio de un vuelo; la MEL de cada operador se basa en ella y no puede ser menos restrictiva."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "The manufacturer-level list of what can be broken and still fly.",
+    "es": "La lista, a nivel de fabricante, de lo que puede estar averiado y aun así volar."
+  },
+  "example": {
+    "en": "The operator's MEL was more restrictive than the MMEL for that valve.",
+    "es": "La MEL del operador era más restrictiva que la MMEL para esa válvula."
+  },
+  "pronunciation": {
+    "en": "em-em-ee-EL",
+    "es": "e-me-e-me-e-e-le"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "mel",
+    "cdl"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "easa-cs-mmel",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

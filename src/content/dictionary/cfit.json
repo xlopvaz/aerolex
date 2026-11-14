@@ -1,0 +1,52 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "CFIT",
+    "es": "CFIT"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Controlled flight into terrain",
+    "es": "Impacto contra el terreno sin pérdida de control"
+  },
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "An accident in which an airworthy aircraft under the crew's control is flown unintentionally into terrain, water or an obstacle, usually from a loss of position or height awareness.",
+    "es": "Accidente en el que una aeronave en buen estado y bajo control de la tripulación vuela sin querer contra el terreno, el agua o un obstáculo, normalmente por pérdida de la conciencia de la posición o la altura."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Flying a perfectly good plane into the ground by mistake.",
+    "es": "Estrellar por error contra el suelo un avión que funcionaba bien."
+  },
+  "example": {
+    "en": "TAWS was introduced to prevent CFIT.",
+    "es": "El TAWS se introdujo para evitar los CFIT."
+  },
+  "pronunciation": {
+    "en": "SEE-fit",
+    "es": "ce-fit"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "egpws",
+    "msa",
+    "loc-i"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9859",
+    "faa-aim"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Undesired aircraft state",
+    "es": "Estado no deseado de la aeronave"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "In threat and error management, a position, speed, attitude or configuration of the aircraft resulting from a threat or error that clearly reduces safety margins, such as being fast and high on final.",
+    "es": "En la gestión de amenazas y errores, posición, velocidad, actitud o configuración de la aeronave, resultado de una amenaza o un error, que reduce claramente los márgenes de seguridad, como ir alto y rápido en final."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "When the aircraft ends up somewhere it shouldn't be.",
+    "es": "Cuando el avión acaba donde no debería estar."
+  },
+  "example": {
+    "en": "Being 30 kt fast at 1,000 ft was an undesired aircraft state.",
+    "es": "Ir 30 kt rápido a 1.000 ft era un estado no deseado de la aeronave."
+  },
+  "pronunciation": {
+    "en": "un-dih-ZYRD AIR-kraft STAYT",
+    "es": "es-ta-do no de-se-a-do"
+  },
+  "synonyms": {
+    "en": [
+      "UAS"
+    ],
+    "es": [
+      "UAS"
+    ]
+  },
+  "related": [
+    "tem",
+    "stabilised-approach"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "icao-doc-9683"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

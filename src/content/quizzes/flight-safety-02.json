@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "El CFIT es…",
+        "en": "CFIT is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un impacto contra el terreno con un avión que se podía controlar",
+            "en": "Hitting terrain with an aircraft that could be controlled"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una pérdida de control en vuelo",
+            "en": "A loss of control in flight"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Una colisión en tierra",
+            "en": "A ground collision"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Un fallo de motor",
+            "en": "An engine failure"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Suele deberse a perder la conciencia de la posición o la altura.",
+        "en": "It usually stems from losing position or height awareness."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "«TOO LOW GEAR» corresponde al modo…",
+        "en": "\"TOO LOW GEAR\" belongs to mode…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "1",
+            "en": "1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "5",
+            "en": "5"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "4",
+            "en": "4"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Modo 4: poca altura sin configuración de aterrizaje.",
+        "en": "Mode 4: low height without landing configuration."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Ante un «PULL UP», lo correcto es…",
+        "en": "With a \"PULL UP\", the right action is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Comprobar primero la posición en el mapa",
+            "en": "First check position on the map"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Preguntar al control",
+            "en": "Ask ATC"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Reaccionar de inmediato: empuje máximo, alas niveladas, subir el morro",
+            "en": "React immediately: maximum thrust, wings level, pitch up"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Esperar a ver el terreno",
+            "en": "Wait to see the terrain"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Se mantiene hasta que desaparezca el aviso.",
+        "en": "Hold it until the warning stops."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Según la FSF, una aproximación en IMC debe estar estabilizada a…",
+        "en": "According to the FSF, an IMC approach must be stabilised by…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "500 ft",
+            "en": "500 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "1.000 ft sobre el aeródromo",
+            "en": "1,000 ft above the aerodrome"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "200 ft",
+            "en": "200 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "3.000 ft",
+            "en": "3,000 ft"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "En VMC, 500 ft.",
+        "en": "In VMC, 500 ft."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Qué velocidad está dentro de los criterios de aproximación estabilizada?",
+        "en": "Which speed meets stabilised approach criteria?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Entre VREF y VREF + 20 kt",
+            "en": "Between VREF and VREF + 20 kt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "VREF + 40 kt",
+            "en": "VREF + 40 kt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "VREF − 10 kt",
+            "en": "VREF − 10 kt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Cualquiera si el viento es fuerte",
+            "en": "Any if the wind is strong"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Y un régimen de descenso de hasta 1.000 ft/min.",
+        "en": "And a descent rate up to 1,000 ft/min."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "Si la aproximación se desestabiliza por debajo de la altura fijada…",
+        "en": "If the approach becomes unstabilised below the set height…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se corrige y se aterriza",
+            "en": "Correct and land"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se pide permiso al control para seguir",
+            "en": "Ask ATC for permission to continue"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se aterriza largo",
+            "en": "Land long"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Motor y al aire",
+            "en": "Go around"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Sin excepciones.",
+        "en": "No exceptions."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Por qué hay que seguir siempre un RA del TCAS?",
+        "en": "Why must a TCAS RA always be followed?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Porque lo ordena la compañía",
+            "en": "Because the company says so"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Porque el control no ve el tráfico",
+            "en": "Because ATC cannot see the traffic"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Porque está coordinado con el del otro avión",
+            "en": "Because it is coordinated with the other aircraft's RA"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "No hay que seguirlo siempre",
+            "en": "It need not always be followed"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Si uno no lo sigue, la protección desaparece.",
+        "en": "If one does not follow it, the protection is lost."
+      }
+    }
+  ]
+}

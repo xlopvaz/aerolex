@@ -1,0 +1,101 @@
+{
+  "course": "flight-safety",
+  "lessons": [
+    {
+      "lesson": "safety-management",
+      "key": {
+        "es": "SMS (Anexo 19): política y objetivos, gestión del riesgo, garantía, promoción. Peligro = lo que puede causar daño; riesgo = probabilidad × gravedad. Matriz OACI: probabilidad 1–5, gravedad A–E; intolerable, tolerable, aceptable. Detección reactiva, proactiva y predictiva; cultura justa. FDM obligatorio en la UE por encima de 27.000 kg, no punitivo.",
+        "en": "SMS (Annex 19): policy and objectives, risk management, assurance, promotion. Hazard = what may cause harm; risk = probability × severity. ICAO matrix: probability 1–5, severity A–E; intolerable, tolerable, acceptable. Reactive, proactive and predictive identification; just culture. FDM mandatory in the EU above 27,000 kg, non-punitive."
+      },
+      "points": [
+        {
+          "es": "SMS: política y objetivos; gestión del riesgo; garantía de la seguridad; promoción de la seguridad.",
+          "en": "SMS: policy and objectives; risk management; safety assurance; safety promotion."
+        },
+        {
+          "es": "Peligro: condición que puede causar daño. Riesgo: probabilidad y gravedad de las consecuencias.",
+          "en": "Hazard: condition that may cause harm. Risk: probability and severity of the consequences."
+        },
+        {
+          "es": "Matriz OACI: 5 frecuente … 1 sumamente improbable; A catastrófica … E insignificante; zonas intolerable, tolerable, aceptable.",
+          "en": "ICAO matrix: 5 frequent … 1 extremely improbable; A catastrophic … E negligible; intolerable, tolerable, acceptable zones."
+        },
+        {
+          "es": "Identificación reactiva (sucesos), proactiva (notificaciones, auditorías) y predictiva (tendencias de datos).",
+          "en": "Reactive (events), proactive (reports, audits) and predictive (data trends) identification."
+        },
+        {
+          "es": "FDM: obligatorio en la UE para aviones de más de 27.000 kg; datos de todos los vuelos; no punitivo.",
+          "en": "FDM: mandatory in the EU for aeroplanes above 27,000 kg; data from all flights; non-punitive."
+        }
+      ]
+    },
+    {
+      "lesson": "key-risk-areas",
+      "key": {
+        "es": "Categorías: LOC-I, CFIT, salida de pista, incursión, colisión en el aire. EGPWS: 1 descenso, 2 acercamiento al terreno, 3 pérdida de altura tras despegue, 4 poca altura sin configuración, 5 senda, 6 alturas y alabeo; más vista hacia delante. PULL UP: inmediato. Aproximación estabilizada (FSF): 1.000 ft IMC, 500 ft VMC; senda, VREF a VREF+20, configuración, ≤ 1.000 ft/min, empuje, listas; si no, motor y al aire. TCAS: TA y RA; seguir el RA.",
+        "en": "Categories: LOC-I, CFIT, runway excursion, incursion, mid-air. EGPWS: 1 descent, 2 terrain closure, 3 height loss after take-off, 4 low without configuration, 5 glide slope, 6 callouts and bank; plus look-ahead. PULL UP: immediate. Stabilised approach (FSF): 1,000 ft IMC, 500 ft VMC; path, VREF to VREF+20, configuration, ≤ 1,000 ft/min, thrust, checklists; otherwise go around. TCAS: TA and RA; follow the RA."
+      },
+      "points": [
+        {
+          "es": "Grandes riesgos: LOC-I, CFIT, salida de pista, incursión en pista, colisión en el aire.",
+          "en": "Key risks: LOC-I, CFIT, runway excursion, runway incursion, mid-air collision."
+        },
+        {
+          "es": "EGPWS: modo 1 SINK RATE, 2 TERRAIN, 3 DON'T SINK, 4 TOO LOW GEAR/FLAPS/TERRAIN, 5 GLIDESLOPE, 6 BANK ANGLE; versión mejorada con TERRAIN AHEAD.",
+          "en": "EGPWS: mode 1 SINK RATE, 2 TERRAIN, 3 DON'T SINK, 4 TOO LOW GEAR/FLAPS/TERRAIN, 5 GLIDESLOPE, 6 BANK ANGLE; enhanced version with TERRAIN AHEAD."
+        },
+        {
+          "es": "PULL UP: empuje máximo, alas niveladas, morro arriba al límite del procedimiento, aerofrenos recogidos.",
+          "en": "PULL UP: maximum thrust, wings level, nose up to procedure limit, speed brakes retracted."
+        },
+        {
+          "es": "Estabilizado a 1.000 ft (IMC) / 500 ft (VMC): senda, VREF a VREF + 20, configuración, ≤ 1.000 ft/min, empuje, listas.",
+          "en": "Stabilised by 1,000 ft (IMC) / 500 ft (VMC): path, VREF to VREF + 20, configuration, ≤ 1,000 ft/min, thrust, checklists."
+        },
+        {
+          "es": "Inestable por debajo de la puerta → motor y al aire. TCAS RA: seguirlo siempre; está coordinado.",
+          "en": "Unstable below the gate → go around. TCAS RA: always follow it; it is coordinated."
+        }
+      ]
+    },
+    {
+      "lesson": "upset-prevention-and-recovery",
+      "key": {
+        "es": "Actitud anormal: más de 25° arriba, 10° abajo, 45° de alabeo o velocidad inadecuada. Causas: entorno, sistemas, tripulación; LOC-I, gran causa de accidentes mortales. Sobresalto: reconocer, confirmar, recuperar. Pérdida: piloto automático fuera, bajar el morro hasta quitar avisos, nivelar alas, empuje, volver a la trayectoria. Morro alto: empujar y alabear si hace falta. Morro bajo: recuperar la pérdida, nivelar alas, luego tirar. Prevención: energía, automatización, indicaciones.",
+        "en": "Upset: more than 25° up, 10° down, 45° bank or inappropriate speed. Causes: environment, systems, crew; LOC-I, a leading cause of fatal accidents. Startle: recognise, confirm, recover. Stall: autopilot off, nose down until warnings stop, wings level, thrust, back to path. Nose high: push and bank if needed. Nose low: recover stall, level wings, then pull. Prevention: energy, automation, indications."
+      },
+      "points": [
+        {
+          "es": "Actitud anormal: cabeceo de más de 25° arriba o 10° abajo, alabeo de más de 45°, o velocidad inadecuada.",
+          "en": "Upset: pitch more than 25° up or 10° down, bank more than 45°, or inappropriate speed."
+        },
+        {
+          "es": "Causas: entorno (turbulencia, estela, hielo), sistemas, tripulación (distracción, automatización, energía).",
+          "en": "Causes: environment (turbulence, wake, ice), systems, crew (distraction, automation, energy)."
+        },
+        {
+          "es": "Sobresalto: reconocer, confirmar, recuperar.",
+          "en": "Startle: recognise, confirm, recover."
+        },
+        {
+          "es": "Pérdida: AP/AT fuera → bajar morro hasta quitar avisos → alas niveladas → empuje → trayectoria.",
+          "en": "Stall: AP/AT off → nose down until warnings stop → wings level → thrust → flight path."
+        },
+        {
+          "es": "Morro alto: empujar, alabear si hace falta, empuje, nivelar. Morro bajo: recuperar pérdida, alas niveladas, tirar, reducir energía.",
+          "en": "Nose high: push, bank if needed, thrust, level off. Nose low: recover stall, wings level, pull, reduce energy."
+        },
+        {
+          "es": "Prevención: gestión de la energía, vigilar modos, evitar turbulencia y estela, comprobar indicaciones.",
+          "en": "Prevention: energy management, monitor modes, avoid turbulence and wake, cross-check indications."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

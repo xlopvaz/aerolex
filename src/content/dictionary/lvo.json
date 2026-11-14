@@ -1,0 +1,53 @@
+{
+  "type": "abbreviation",
+  "term": {
+    "en": "LVO",
+    "es": "LVO"
+  },
+  "abbreviation": null,
+  "expansion": {
+    "en": "Low-visibility operations",
+    "es": "Operaciones con baja visibilidad"
+  },
+  "categories": [
+    "flight-operations",
+    "airport-operations"
+  ],
+  "keepOriginal": true,
+  "definition": {
+    "en": "Approach or take-off operations on a runway with a runway visual range below 550 m or a decision height below 200 ft; they require specific aircraft equipment, crew training and, for the lowest minima, operator approval.",
+    "es": "Operaciones de aproximación o despegue en una pista con alcance visual en pista inferior a 550 m o con altura de decisión inferior a 200 ft; exigen equipo específico, formación de la tripulación y, para los mínimos más bajos, aprobación del operador."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Flying in and out when the runway visibility is very poor.",
+    "es": "Despegar y aterrizar cuando la visibilidad en pista es muy mala."
+  },
+  "example": {
+    "en": "LVO were in force with an RVR of 250 m.",
+    "es": "Había operaciones con baja visibilidad con un RVR de 250 m."
+  },
+  "pronunciation": {
+    "en": "el-vee-OH",
+    "es": "e-le-uve-o"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "lvp",
+    "rvr",
+    "da-dh"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-2021-2237",
+    "eu-965-2012"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

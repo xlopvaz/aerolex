@@ -1,0 +1,48 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Stabilised approach",
+    "es": "Aproximación estabilizada"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "safety",
+    "flight-operations"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "An approach in which, from a set height (often 1,000 ft in IMC and 500 ft in VMC), the aircraft is on the correct path, in landing configuration, at the target speed and descent rate with appropriate thrust; if these criteria are not met the crew goes around.",
+    "es": "Aproximación en la que, desde una altura fijada (a menudo 1.000 ft en IMC y 500 ft en VMC), el avión va en la senda correcta, en configuración de aterrizaje, a la velocidad y el régimen de descenso previstos y con el empuje adecuado; si no se cumplen los criterios, se hace motor y al aire."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Being fully set up and steady well before landing.",
+    "es": "Ir completamente preparado y estable mucho antes de aterrizar."
+  },
+  "example": {
+    "en": "At 1,000 ft the approach was not stabilised, so they went around.",
+    "es": "A 1.000 ft la aproximación no estaba estabilizada, así que hicieron motor y al aire."
+  },
+  "pronunciation": {
+    "en": "STAY-buh-lyzd uh-PROHCH",
+    "es": "a-pro-xi-ma-ción es-ta-bi-li-za-da"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "go-around",
+    "runway-excursion"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "skybrary-stabilised-approach"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "En la UE, las operaciones con baja visibilidad son las que tienen…",
+        "en": "In the EU, low-visibility operations are those with…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "RVR inferior a 550 m o altura de decisión inferior a 200 ft",
+            "en": "RVR below 550 m or decision height below 200 ft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Visibilidad inferior a 5 km",
+            "en": "Visibility below 5 km"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Techo inferior a 1.000 ft",
+            "en": "Ceiling below 1,000 ft"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Solo niebla",
+            "en": "Fog only"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Incluye despegues y aproximaciones.",
+        "en": "It includes take-offs and approaches."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "Una aproximación con DH de 150 ft y RVR de 400 m es…",
+        "en": "An approach with a DH of 150 ft and RVR of 400 m is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "CAT I",
+            "en": "CAT I"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "CAT III",
+            "en": "CAT III"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No precisión",
+            "en": "Non-precision"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "CAT II",
+            "en": "CAT II"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "CAT II: DH de 100 a menos de 200 ft y RVR ≥ 300 m.",
+        "en": "CAT II: DH 100 to below 200 ft and RVR ≥ 300 m."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "¿Por debajo de qué RVR necesita el operador aprobación específica para despegar?",
+        "en": "Below what RVR does the operator need specific approval to take off?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "550 m",
+            "en": "550 m"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "800 m",
+            "en": "800 m"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "400 m",
+            "en": "400 m"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "1.500 m",
+            "en": "1,500 m"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Por debajo de 550 m ya es despegue con baja visibilidad.",
+        "en": "Below 550 m it is already a low-visibility take-off."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "El espacio RVSM va de…",
+        "en": "RVSM airspace extends from…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "FL100 a FL250",
+            "en": "FL100 to FL250"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "FL290 a FL410",
+            "en": "FL290 to FL410"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "FL245 a FL660",
+            "en": "FL245 to FL660"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "FL410 a FL600",
+            "en": "FL410 to FL600"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Con 1.000 ft de separación vertical.",
+        "en": "With 1,000 ft vertical separation."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "¿Cuál NO es un requisito de RVSM?",
+        "en": "Which is NOT an RVSM requirement?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un radar meteorológico doble",
+            "en": "A dual weather radar"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Dos sistemas independientes de altitud",
+            "en": "Two independent altitude systems"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Alerta de altitud",
+            "en": "Altitude alerting"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Piloto automático con mantenimiento de altitud",
+            "en": "Autopilot with altitude hold"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "También un transpondedor con altitud.",
+        "en": "Also an altitude-reporting transponder."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "El tiempo de protección de un fluido antihielo empieza…",
+        "en": "The holdover time of an anti-icing fluid starts…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Al terminar el rodaje",
+            "en": "At the end of taxi"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Al despegar",
+            "en": "At take-off"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Al cerrar las puertas",
+            "en": "When the doors close"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Al comenzar la última aplicación",
+            "en": "At the beginning of the final application"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Depende del fluido, la temperatura y la precipitación.",
+        "en": "It depends on fluid, temperature and precipitation."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "El concepto de avión limpio significa…",
+        "en": "The clean aircraft concept means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Lavar el avión cada día",
+            "en": "Washing the aircraft daily"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No llevar carga sucia",
+            "en": "Not carrying dirty cargo"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No despegar con hielo, escarcha o nieve adheridos a superficies críticas",
+            "en": "No take-off with ice, frost or snow adhering to critical surfaces"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Limpiar la cabina antes de embarcar",
+            "en": "Cleaning the cabin before boarding"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Un poco de escarcha rugosa reduce mucho la sustentación.",
+        "en": "A little rough frost cuts lift significantly."
+      }
+    }
+  ]
+}

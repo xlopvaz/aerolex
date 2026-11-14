@@ -1,0 +1,434 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué hace el PM?",
+        "en": "What does the PM do?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Controla siempre los mandos",
+            "en": "Always flies the aircraft"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo habla con la cabina",
+            "en": "Only talks to the cabin"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nada en crucero",
+            "en": "Nothing in cruise"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Vigila la trayectoria y los sistemas, y se encarga de radio y listas",
+            "en": "Monitors the flight path and systems, and handles radio and checklists"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El PF controla la trayectoria.",
+        "en": "The PF controls the flight path."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "¿Depende del rango quién es PF?",
+        "en": "Does rank decide who is PF?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Sí, siempre el comandante",
+            "en": "Yes, always the captain"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Sí, siempre el copiloto",
+            "en": "Yes, always the first officer"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "No: se alternan, pero el comandante sigue siendo responsable",
+            "en": "No: they alternate, but the captain remains responsible"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lo decide el control",
+            "en": "ATC decides"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El comandante puede tomar los mandos.",
+        "en": "The captain can take control."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Si la automatización hace algo inesperado y no se entiende por qué…",
+        "en": "If the automation does something unexpected and you don't understand why…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se espera a que se corrija",
+            "en": "Wait for it to correct itself"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Se baja de nivel: modos más simples o vuelo manual",
+            "en": "Step down a level: simpler modes or manual flight"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Se reinicia el FMS en aproximación",
+            "en": "Reset the FMS on approach"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se ignora",
+            "en": "Ignore it"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Primero, controlar la trayectoria.",
+        "en": "Controlling the flight path comes first."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "Los cambios de modo del FMA…",
+        "en": "FMA mode changes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Se cantan y se confirman",
+            "en": "Are called out and confirmed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No hace falta mirarlos",
+            "en": "Need not be looked at"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo los ve el comandante",
+            "en": "Are seen only by the captain"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Se anotan al final del vuelo",
+            "en": "Are noted at the end of the flight"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "El PF anuncia y el PM confirma.",
+        "en": "The PF announces and the PM confirms."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "La cabina estéril se aplica en la práctica…",
+        "en": "The sterile flight deck applies in practice…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Solo en crucero",
+            "en": "Only in cruise"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo en tierra",
+            "en": "Only on the ground"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Por encima de FL290",
+            "en": "Above FL290"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Por debajo de 10.000 ft, salvo en crucero",
+            "en": "Below 10,000 ft, except in cruise"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "En rodaje, despegue, ascenso y aproximación.",
+        "en": "In taxi, take-off, climb and approach."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Qué competencia de la OACI es «SAW»?",
+        "en": "Which ICAO competency is \"SAW\"?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Gestión de la carga de trabajo",
+            "en": "Workload management"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Comunicación",
+            "en": "Communication"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Conciencia situacional y gestión de la información",
+            "en": "Situation awareness and management of information"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Control manual",
+            "en": "Manual control"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "WLM es la carga de trabajo.",
+        "en": "WLM is workload."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "¿Cuántas competencias define la OACI para los pilotos?",
+        "en": "How many competencies does ICAO define for pilots?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Cinco",
+            "en": "Five"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nueve",
+            "en": "Nine"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Doce",
+            "en": "Twelve"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Tres",
+            "en": "Three"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "La novena, aplicación de conocimientos, se añadió en 2020.",
+        "en": "The ninth, application of knowledge, was added in 2020."
+      }
+    },
+    {
+      "id": "q8",
+      "prompt": {
+        "es": "En la cadena de TEM, ¿qué sigue a un error no gestionado?",
+        "en": "In the TEM chain, what follows an unmanaged error?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Un estado no deseado de la aeronave",
+            "en": "An undesired aircraft state"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Una amenaza",
+            "en": "A threat"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Un briefing",
+            "en": "A briefing"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nada",
+            "en": "Nothing"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Amenaza → error → estado no deseado → suceso.",
+        "en": "Threat → error → undesired state → event."
+      }
+    },
+    {
+      "id": "q9",
+      "prompt": {
+        "es": "«Tenemos que hacer motor y al aire ahora» en PACE es…",
+        "en": "\"We need to go around now\" in PACE is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Probe",
+            "en": "Probe"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alert",
+            "en": "Alert"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Emergency",
+            "en": "Emergency"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Challenge (desafiar)",
+            "en": "Challenge"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "El siguiente escalón es Emergency.",
+        "en": "The next step is Emergency."
+      }
+    },
+    {
+      "id": "q10",
+      "prompt": {
+        "es": "El CRM se creó como respuesta a…",
+        "en": "CRM was created in response to…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Fallos de motor frecuentes",
+            "en": "Frequent engine failures"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Nuevas normas de ruido",
+            "en": "New noise rules"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Accidentes en los que falló el trabajo de la tripulación",
+            "en": "Accidents in which crew teamwork failed"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "El precio del combustible",
+            "en": "The price of fuel"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Tenerife 1977 y Portland 1978, entre otros.",
+        "en": "Tenerife 1977 and Portland 1978, among others."
+      }
+    }
+  ]
+}

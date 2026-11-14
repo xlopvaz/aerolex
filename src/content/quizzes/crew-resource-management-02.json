@@ -1,0 +1,305 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": {
+        "es": "¿Qué debe incluir un buen briefing?",
+        "en": "What should a good briefing include?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Las amenazas del día y cómo se gestionarán",
+            "en": "The day's threats and how they will be managed"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Toda la carta leída en voz alta",
+            "en": "The whole chart read aloud"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Solo la frecuencia de torre",
+            "en": "Only the tower frequency"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Nada, si los pilotos tienen experiencia",
+            "en": "Nothing, if the pilots are experienced"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Y termina con una invitación a preguntar.",
+        "en": "And ends with an invitation to ask."
+      }
+    },
+    {
+      "id": "q2",
+      "prompt": {
+        "es": "La comunicación en bucle cerrado consiste en…",
+        "en": "Closed-loop communication means…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Hablar solo por la radio",
+            "en": "Speaking only on the radio"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "No interrumpir nunca",
+            "en": "Never interrupting"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Usar solo el CPDLC",
+            "en": "Using only CPDLC"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Confirmar cada mensaje importante",
+            "en": "Confirming every important message"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Emisor y receptor saben que se ha entendido.",
+        "en": "Sender and receiver know it was understood."
+      }
+    },
+    {
+      "id": "q3",
+      "prompt": {
+        "es": "Un gradiente de autoridad muy pronunciado provoca…",
+        "en": "A very steep authority gradient causes…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Que nadie decida",
+            "en": "Nobody deciding"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Más seguridad siempre",
+            "en": "Always more safety"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Que los demás no se atrevan a hablar",
+            "en": "Others not daring to speak up"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Más combustible",
+            "en": "More fuel"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "Uno muy plano debilita el liderazgo.",
+        "en": "A very flat one weakens leadership."
+      }
+    },
+    {
+      "id": "q4",
+      "prompt": {
+        "es": "En PACE, la «A» es…",
+        "en": "In PACE, the \"A\" is…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Actuar",
+            "en": "Act"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alertar",
+            "en": "Alert"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Aceptar",
+            "en": "Accept"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Abortar",
+            "en": "Abort"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "es": "Probe, Alert, Challenge, Emergency.",
+        "en": "Probe, Alert, Challenge, Emergency."
+      }
+    },
+    {
+      "id": "q5",
+      "prompt": {
+        "es": "«¿Has visto que vamos 20 nudos rápidos?» corresponde al nivel…",
+        "en": "\"Have you noticed we're 20 knots fast?\" is the level…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Probe (sondear)",
+            "en": "Probe"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Alert",
+            "en": "Alert"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Challenge",
+            "en": "Challenge"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Emergency",
+            "en": "Emergency"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "es": "Es el primer escalón.",
+        "en": "It is the first step."
+      }
+    },
+    {
+      "id": "q6",
+      "prompt": {
+        "es": "¿Quién marca el tono del gradiente de autoridad?",
+        "en": "Who sets the tone of the authority gradient?"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "El control",
+            "en": "ATC"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "El pasajero más antiguo",
+            "en": "The most senior passenger"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Nadie",
+            "en": "Nobody"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Principalmente el comandante, desde el primer momento",
+            "en": "Mainly the captain, from the start"
+          }
+        }
+      ],
+      "answer": "d",
+      "explanation": {
+        "es": "Por ejemplo, invitando a hablar.",
+        "en": "For example, by inviting the crew to speak."
+      }
+    },
+    {
+      "id": "q7",
+      "prompt": {
+        "es": "El briefing con la tripulación de cabina…",
+        "en": "The briefing with the cabin crew…"
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "es": "Es opcional",
+            "en": "Is optional"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "es": "Solo se hace tras un incidente",
+            "en": "Is only done after an incident"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "es": "Es igual de importante e incluye turbulencia prevista y señales de emergencia",
+            "en": "Is just as important and includes expected turbulence and emergency signals"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "es": "Lo hace el control",
+            "en": "Is done by ATC"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "es": "El CRM incluye a toda la tripulación.",
+        "en": "CRM includes the whole crew."
+      }
+    }
+  ]
+}

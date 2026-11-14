@@ -1,0 +1,50 @@
+{
+  "type": "term",
+  "term": {
+    "en": "Emergency descent",
+    "es": "Descenso de emergencia"
+  },
+  "abbreviation": null,
+  "expansion": null,
+  "categories": [
+    "flight-operations",
+    "safety"
+  ],
+  "keepOriginal": false,
+  "definition": {
+    "en": "A rapid descent to a safe altitude, normally after a loss of cabin pressure, flown with oxygen masks on, idle thrust and speed brakes, while warning ATC and the cabin.",
+    "es": "Descenso rápido hasta una altitud segura, normalmente tras una pérdida de presión en cabina, con máscaras de oxígeno, empuje en ralentí y aerofrenos, avisando al control y a la cabina."
+  },
+  "definitionBasis": "technical",
+  "simple": {
+    "en": "Getting down fast to where people can breathe.",
+    "es": "Bajar rápido hasta donde se pueda respirar."
+  },
+  "example": {
+    "en": "After the decompression the crew made an emergency descent to FL100.",
+    "es": "Tras la descompresión, la tripulación hizo un descenso de emergencia a FL100."
+  },
+  "pronunciation": {
+    "en": "ih-MUR-jun-see dee-SENT",
+    "es": "des-cen-so de e-mer-gen-cia"
+  },
+  "synonyms": {
+    "en": [],
+    "es": []
+  },
+  "related": [
+    "decompression",
+    "oxygen-mask",
+    "spoilers"
+  ],
+  "regionalNote": null,
+  "sources": [
+    "eu-923-2012",
+    "faa-afh"
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}

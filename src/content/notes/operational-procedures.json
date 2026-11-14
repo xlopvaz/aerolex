@@ -1,0 +1,101 @@
+{
+  "course": "operational-procedures",
+  "lessons": [
+    {
+      "lesson": "operator-manuals-and-mel",
+      "key": {
+        "es": "AOC con especificaciones. Manual de operaciones: A general, B tipo, C rutas y aeródromos, D formación. El comandante decide lo no previsto. Documentos a bordo: matrícula y aeronavegabilidad (originales), ruido, copia del AOC, radio, seguro, diario, plan operacional, NOTAM y meteorología, masa y centrado. MMEL (tipo) → MEL (operador, no menos restrictiva); (M) y (O); CDL. Plazos: A según MEL, B 3 días, C 10, D 120.",
+        "en": "AOC with specifications. Operations manual: A general, B type, C routes and aerodromes, D training. The commander decides what is not covered. Documents on board: registration and airworthiness (originals), noise, AOC copy, radio, insurance, journey log, operational flight plan, NOTAM and weather, mass and balance. MMEL (type) → MEL (operator, not less restrictive); (M) and (O); CDL. Intervals: A per MEL, B 3 days, C 10, D 120."
+      },
+      "points": [
+        {
+          "es": "AOC: autoriza el transporte aéreo comercial; especificaciones con aviones, zonas y operaciones especiales.",
+          "en": "AOC: authorises commercial air transport; specifications with aircraft, areas and special operations."
+        },
+        {
+          "es": "Manual de operaciones: A general, B tipo de avión, C rutas y aeródromos, D formación.",
+          "en": "Operations manual: A general, B aircraft type, C routes and aerodromes, D training."
+        },
+        {
+          "es": "Documentos: matrícula y aeronavegabilidad originales, ruido, copia del AOC, radio, seguro, diario, plan operacional, NOTAM, meteorología, masa y centrado.",
+          "en": "Documents: original registration and airworthiness, noise, AOC copy, radio, insurance, journey log, operational flight plan, NOTAMs, weather, mass and balance."
+        },
+        {
+          "es": "MMEL por tipo → MEL del operador (nunca menos restrictiva); (M) mantenimiento, (O) tripulación; CDL para piezas exteriores.",
+          "en": "MMEL per type → operator MEL (never less restrictive); (M) maintenance, (O) crew; CDL for external parts."
+        },
+        {
+          "es": "Plazos: A según la MEL; B 3 días; C 10; D 120; sin contar el día de descubrimiento; B, C y D ampliables una vez.",
+          "en": "Intervals: A per MEL; B 3 days; C 10; D 120; excluding the day of discovery; B, C and D extendable once."
+        }
+      ]
+    },
+    {
+      "lesson": "special-operations",
+      "key": {
+        "es": "LVO (UE): RVR menor de 550 m o DH menor de 200 ft. CAT I DH ≥ 200 ft, RVR ≥ 550 m; CAT II DH 100–200 ft, RVR ≥ 300 m; CAT III DH menor de 100 ft o sin DH, RVR menor de 300 m (sin subdivisiones en la UE, mínimo 75 m). Despegue con RVR menor de 400 m: aprobación. RVSM FL290–FL410, 1.000 ft, cuatro requisitos. ETOPS: más de 60 min. Invierno: avión limpio; fluidos I, II, III, IV; tiempo de protección desde la última aplicación.",
+        "en": "LVO (EU): RVR below 550 m or DH below 200 ft. CAT I DH ≥ 200 ft, RVR ≥ 550 m; CAT II DH 100–200 ft, RVR ≥ 300 m; CAT III DH below 100 ft or no DH, RVR below 300 m (no subdivisions in the EU, minimum 75 m). Take-off with RVR below 400 m: approval. RVSM FL290–FL410, 1,000 ft, four requirements. ETOPS: beyond 60 min. Winter: clean aircraft; fluids I, II, III, IV; holdover from the final application."
+      },
+      "points": [
+        {
+          "es": "LVO: RVR inferior a 550 m o DH inferior a 200 ft (reforma de la UE aplicable desde 2022).",
+          "en": "LVO: RVR below 550 m or DH below 200 ft (EU reform applicable from 2022)."
+        },
+        {
+          "es": "CAT I: DH ≥ 200 ft, RVR ≥ 550 m. CAT II: DH 100–199 ft, RVR ≥ 300 m. CAT III: DH menor de 100 ft o sin DH, RVR menor de 300 m; en la UE sin IIIA/IIIB, RVR mínimo 75 m.",
+          "en": "CAT I: DH ≥ 200 ft, RVR ≥ 550 m. CAT II: DH 100–199 ft, RVR ≥ 300 m. CAT III: DH below 100 ft or no DH, RVR below 300 m; in the EU no IIIA/IIIB, minimum RVR 75 m."
+        },
+        {
+          "es": "Despegue con baja visibilidad: RVR menor de 550 m; aprobación específica por debajo de 400 m.",
+          "en": "Low-visibility take-off: RVR below 550 m; specific approval below 400 m."
+        },
+        {
+          "es": "RVSM FL290–FL410 con 1.000 ft: dos altímetros independientes, alerta de altitud, piloto automático con ALT, transpondedor.",
+          "en": "RVSM FL290–FL410 with 1,000 ft: two independent altimeters, altitude alert, autopilot with ALT hold, transponder."
+        },
+        {
+          "es": "ETOPS: bimotores más allá de 60 min con un motor del aeródromo adecuado; tiempo máximo de desvío aprobado.",
+          "en": "ETOPS: twins beyond 60 min one-engine time from an adequate aerodrome; approved maximum diversion time."
+        },
+        {
+          "es": "Invierno: avión limpio; fluido I (caliente, poca protección), II y IV (espesados, más tiempo); tiempo de protección desde el inicio de la última aplicación.",
+          "en": "Winter: clean aircraft; Type I fluid (hot, short protection), II and IV (thickened, longer); holdover from start of final application."
+        }
+      ]
+    },
+    {
+      "lesson": "abnormal-and-emergency-procedures",
+      "key": {
+        "es": "Volar, navegar, comunicar; acciones de memoria y lista. Despresurización: máscaras, descenso (ralentí, aerofrenos), MAYDAY y 7700, nivelar a 10.000 ft o MSA. Cizalladura: evitarla; si salta, empuje máximo, actitud del fabricante, sin cambiar configuración. Humo o fuego: oxígeno, aislar, aterrizar lo antes posible. Aves: notificar. Sobrepeso: quemar, lanzar combustible o aterrizar con inspección.",
+        "en": "Aviate, navigate, communicate; memory items and checklist. Depressurisation: masks, descent (idle, speed brakes), MAYDAY and 7700, level at 10,000 ft or MSA. Wind shear: avoid it; if it triggers, maximum thrust, manufacturer attitude, no configuration change. Smoke or fire: oxygen, isolate, land as soon as possible. Birds: report. Overweight: burn, jettison or land with inspection."
+      },
+      "points": [
+        {
+          "es": "Ante un fallo: volar, navegar, comunicar; luego acciones de memoria, lista y decisión.",
+          "en": "In a failure: aviate, navigate, communicate; then memory items, checklist and decision."
+        },
+        {
+          "es": "Descenso de emergencia: máscaras y comunicación, ralentí y aerofrenos, MAYDAY y 7700, aviso a cabina, nivelar a 10.000 ft o MSA.",
+          "en": "Emergency descent: masks and communication, idle and speed brakes, MAYDAY and 7700, cabin warning, level at 10,000 ft or MSA."
+        },
+        {
+          "es": "Cizalladura: evitar tormentas; si hay aviso, empuje máximo, cabeceo según el fabricante, no tocar flaps ni tren.",
+          "en": "Wind shear: avoid thunderstorms; on a warning, maximum thrust, pitch per manufacturer, don't touch flaps or gear."
+        },
+        {
+          "es": "Humo o fuego: máscaras y gafas, aislar la fuente, aterrizar lo antes posible si no se controla.",
+          "en": "Smoke or fire: masks and goggles, isolate the source, land as soon as possible if not controlled."
+        },
+        {
+          "es": "Sobrepeso tras el despegue: quemar combustible, lanzarlo si hay sistema o aterrizar con sobrepeso e inspección.",
+          "en": "Overweight after take-off: burn fuel, jettison it if fitted, or land overweight with an inspection."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "date": null
+  }
+}
