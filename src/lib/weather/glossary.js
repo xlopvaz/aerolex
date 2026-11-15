@@ -7,7 +7,7 @@ import { parseWeather } from '../metar/weather.js';
 
 export const GROUPS = [
   'report', 'modifier', 'wind', 'visibility', 'intensity', 'descriptor', 'precipitation',
-  'obscuration', 'other', 'cloud', 'pressure', 'general', 'change',
+  'obscuration', 'other', 'cloud', 'temperature', 'pressure', 'general', 'change',
 ];
 
 /** @param {{ id: string, group: string }[]} entries @returns {{ group: string, items: any[] }[]} */
@@ -82,14 +82,26 @@ export function explainGroup(input, index) {
     return { token, ids, heightFt: m[2] === '///' ? null : Number(m[2]) * 100 };
   }
   if ((m = /^VV(\d{3}|\/{3})$/.exec(token))) return { token, ids: ['vv'], heightFt: m[1] === '///' ? null : Number(m[1]) * 100 };
-  if (/^R\d{2}[LCR]?\/[PM]?\d{4}(V[PM]?\d{4})?(FT)?[UDN]?$/.test(token)) return { token, ids: ['rvr'] };
+  if ((m = /^R\d{2}[LCR]?\/([PM]?)\d{4}(V[PM]?\d{4})?(FT)?([UDN]?)$/.exec(token))) {
+    const ids = ['rvr'];
+    if (m[1] || /V[PM]/.test(m[2] ?? '')) ids.push('rvr-pm');
+    if (m[4]) ids.push('rvr-tend');
+    return { token, ids };
+  }
   if (/^Q\d{4}$/.test(token)) return { token, ids: ['q'] };
   if (/^A\d{4}$/.test(token)) return { token, ids: ['a'] };
   if (/^T[XN]M?\d{2}\/\d{4}Z$/.test(token)) return { token, ids: ['tx-tn'] };
   if (/^FM\d{6}$/.test(token)) return { token, ids: ['fm'] };
   if ((m = /^(\d{3}|VRB)\d{2,3}(G\d{2,3})?(KT|MPS)$/.exec(token))) {
-    return { token, ids: m[1] === 'VRB' ? ['vrb', 'kt'] : ['kt'] };
+    const ids = m[1] === 'VRB' ? ['vrb'] : [];
+    if (m[2]) ids.push('g');
+    ids.push(m[3] === 'MPS' ? 'mps' : 'kt');
+    return { token, ids };
   }
+  if (/^\d{6}Z$/.test(token)) return { token, ids: ['z'] };
+  if (/^\d{3}V\d{3}$/.test(token)) return { token, ids: ['dir-var'] };
+  if (/^\d{4}(N|NE|E|SE|S|SW|W|NW)$/.test(token)) return { token, ids: ['vis-min-dir'] };
+  if (/^(M?\d{2}|\/\/)\/(M?\d{2}|\/\/)$/.test(token) && token.includes('M')) return { token, ids: ['temp-m'] };
   if (/^\d{4}NDV$/.test(token)) return { token, ids: ['ndv'] };
   if ((m = /^RE(.+)$/.exec(token))) {
     const parts = weatherParts(m[1], index);

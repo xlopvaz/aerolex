@@ -1267,6 +1267,7 @@
       "obscuration": "Fenómenos que reducen la visibilidad",
       "other": "Otros fenómenos",
       "cloud": "Nubes",
+      "temperature": "Temperatura",
       "pressure": "Presión",
       "general": "Grupos generales",
       "change": "Tendencias y cambios previstos"
@@ -1488,6 +1489,14 @@
     "backToCourse": "Ir al curso",
     "draft": "Apuntes en borrador: resumen de las lecciones, que citan sus fuentes. Pendientes de revisión; ante cualquier duda, manda la lección y, para operar, la documentación oficial.",
     "sourcesTitle": "Fuentes de las lecciones",
-    "courseLink": "Apuntes del curso"
+    "courseLink": "Apuntes del curso",
+    "anatomyTitle": "Anatomía de un METAR",
+    "anatomyLead": "Un METAR completo con cada grupo en su sitio. Debajo, qué dice cada grupo y las siglas que pueden aparecer en él.",
+    "anatomyCodes": "Siglas que pueden aparecer",
+    "anatomyCode": "Sigla",
+    "anatomyMeaning": "Significado",
+    "anatomyExample": "Ejemplo",
+    "anatomyGlossary": "Todos los códigos, con buscador, en el glosario meteorológico",
+    "anatomyNoCodes": "Sin siglas propias: se escribe tal cual."
   }
 }

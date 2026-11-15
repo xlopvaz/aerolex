@@ -176,3 +176,19 @@ test.describe('Cabin Crew Academy · advanced modules', () => {
     await expect(quiz.locator('.quiz__q')).toHaveCount(10);
   });
 });
+
+test('METAR notes: annotated example with every group and its codes', async ({ page }) => {
+  await page.goto('es/academia/apuntes/metar-speci/');
+  const anatomy = page.locator('#n-anatomy');
+  await expect(anatomy.getByRole('heading', { level: 2, name: 'Anatomía de un METAR' })).toBeVisible();
+  await expect(anatomy.locator('.ma__tok')).toHaveCount(12);
+  await expect(anatomy.locator('.ma__part')).toHaveCount(12);
+  // Clicking a group in the report jumps to its card, whose table lists the possible codes.
+  await anatomy.locator('.ma__tok', { hasText: 'R32L/1100U' }).click();
+  await expect(page).toHaveURL(/#ma-6$/);
+  const rvr = page.locator('#ma-6');
+  await expect(rvr.getByRole('rowheader', { name: 'U / D / N' })).toBeVisible();
+  await expect(page.locator('#ma-7').getByRole('rowheader', { name: 'TS', exact: true })).toBeVisible();
+  // Each code links to its weather glossary entry.
+  await expect(rvr.getByRole('link', { name: 'P / M' })).toHaveAttribute('href', /glosario-meteorologico\/#code-rvr-pm$|#code-rvr-pm$/);
+});

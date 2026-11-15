@@ -1,0 +1,139 @@
+---
+/**
+ * Annotated METAR for the course notes: the whole report on one line with every group colour-coded
+ * and numbered, then one card per group with what it says and the codes that can appear in it.
+ * The codes and their meanings come from the weather glossary (src/content/weather/codes.json), so
+ * both pages always agree; each code links to its glossary entry.
+ */
+import { getCollection } from 'astro:content';
+import Badge from '../ui/Badge.astro';
+import Icon from '../ui/Icon.astro';
+import { href, t } from '../../i18n/index.js';
+import { GROUPS } from '../../lib/weather/glossary.js';
+
+interface Part { tokens: string; label: Record<string, string>; explain: Record<string, string>; codes: string[] }
+interface Props {
+  lang: 'es' | 'en';
+  anatomy: { example: string; caption: Record<string, string>; parts: Part[] };
+}
+const { lang, anatomy } = Astro.props;
+const tr = (k: string) => t(lang, k);
+const codes = new Map((await getCollection('weatherCodes')).map((c) => [c.id, c.data]));
+const glossary = href('weatherGlossary', lang);
+const tones = ['primary', 'cyan', 'magenta', 'green', 'amber', 'red'];
+
+/** The part's codes grouped by glossary group, in glossary order. */
+const grouped = (ids: string[]) => {
+  const entries = ids.map((id) => ({ id, ...codes.get(id)! }));
+  return GROUPS.map((g) => ({ group: g, items: entries.filter((e) => e.group === g) })).filter((g) => g.items.length);
+};
+---
+<section class="ma" id="n-anatomy" aria-labelledby="ma-title">
+  <h2 id="ma-title">{tr('notes.anatomyTitle')}</h2>
+  <p class="ma__lead">{tr('notes.anatomyLead')}</p>
+
+  <figure class="ma__figure">
+    <div class="ma__head">
+      <Badge tone="amber" icon="book-open">{tr('academy.didacticExample')}</Badge>
+      <figcaption>{anatomy.caption[lang]}</figcaption>
+    </div>
+    <p class="ma__code mono" aria-label={anatomy.example}>
+      {anatomy.parts.map((p, i) => (
+        <a class:list={['ma__tok', `ma--${tones[i % tones.length]}`]} href={`#ma-${i + 1}`}>
+          <span class="ma__tok-n" aria-hidden="true">{i + 1}</span>{p.tokens}
+        </a>
+      ))}
+    </p>
+  </figure>
+
+  <ol class="ma__parts">
+    {anatomy.parts.map((p, i) => (
+      <li class:list={['ma__part', `ma--${tones[i % tones.length]}`]} id={`ma-${i + 1}`}>
+        <div class="ma__part-head">
+          <span class="ma__n" aria-hidden="true">{i + 1}</span>
+          <h3>{p.label[lang]}</h3>
+          <code class="ma__part-code">{p.tokens}</code>
+        </div>
+        <p class="ma__explain">{p.explain[lang]}</p>
+        {p.codes.length > 0 ? (
+          <div class="ma__table-wrap" tabindex="0" role="region" aria-label={`${tr('notes.anatomyCodes')}: ${p.label[lang]}`}>
+            <table class="ma__table">
+              <caption>{tr('notes.anatomyCodes')}</caption>
+              <thead>
+                <tr><th scope="col">{tr('notes.anatomyCode')}</th><th scope="col">{tr('notes.anatomyMeaning')}</th><th scope="col">{tr('notes.anatomyExample')}</th></tr>
+              </thead>
+              {grouped(p.codes).map((g, _, all) => (
+                <tbody>
+                  {all.length > 1 && <tr class="ma__group"><th scope="colgroup" colspan="3">{tr(`weatherGlossary.groups.${g.group}`)}</th></tr>}
+                  {g.items.map((c) => (
+                    <tr>
+                      <th scope="row"><a class="mono" href={`${glossary}#code-${c.id}`}>{c.code}</a></th>
+                      <td>{c.meaning[lang]}</td>
+                      <td>{c.example ? <code>{c.example}</code> : '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              ))}
+            </table>
+          </div>
+        ) : (
+          <p class="ma__none">{tr('notes.anatomyNoCodes')}</p>
+        )}
+      </li>
+    ))}
+  </ol>
+
+  <p class="ma__more"><a href={glossary}>{tr('notes.anatomyGlossary')} <Icon name="arrow-right" size={14} /></a></p>
+</section>
+
+<style>
+  .ma { min-width: 0; scroll-margin-top: calc(var(--header-h) + var(--space-4)); }
+  .ma h2 { font-size: var(--text-2xl); margin: 0 0 var(--space-2); }
+  .ma__lead { color: var(--text-muted); margin: 0 0 var(--space-4); }
+  .ma--primary { --c: var(--primary); } .ma--cyan { --c: var(--cyan); } .ma--magenta { --c: var(--magenta); }
+  .ma--green { --c: var(--green); } .ma--amber { --c: var(--amber); } .ma--red { --c: var(--red); }
+
+  .ma__figure { margin: 0 0 var(--space-5); padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .ma__head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); margin-bottom: var(--space-3); }
+  .ma__head figcaption { color: var(--text-muted); font-size: var(--text-sm); }
+  .ma__code { display: flex; flex-wrap: wrap; gap: 1.1rem 0.55rem; margin: 0; padding: var(--space-5) var(--space-4) var(--space-4); border-radius: var(--radius-md); background: var(--surface-2); font-size: var(--text-lg); font-weight: 600; line-height: 1.6; }
+  .ma__tok { position: relative; padding: 0 0.3rem 0.1rem; border-bottom: 3px solid var(--c); color: var(--text); text-decoration: none; border-radius: 3px 3px 0 0; }
+  .ma__tok:hover { background: color-mix(in srgb, var(--c) 14%, transparent); }
+  .ma__tok:focus-visible { outline: 2px solid var(--c); outline-offset: 2px; }
+  .ma__tok-n { position: absolute; top: -1.05rem; left: 0.15rem; font-size: 0.68rem; color: var(--c); font-weight: 700; }
+
+  .ma__parts { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
+  .ma__part { margin: 0; padding: var(--space-4) var(--space-5); border: 1px solid var(--border); border-left: 4px solid var(--c); border-radius: var(--radius-lg); background: var(--surface); scroll-margin-top: calc(var(--header-h) + var(--space-4)); break-inside: avoid; }
+  .ma__part-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); }
+  .ma__part-head h3 { margin: 0; font-size: var(--text-lg); }
+  .ma__n { display: inline-grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--c); color: var(--bg); font-size: 0.8rem; font-weight: 700; flex: none; }
+  .ma__part-code { margin-left: auto; font-weight: 700; color: var(--c); font-size: var(--text-base); }
+  .ma__explain { margin: var(--space-2) 0 var(--space-3); }
+  .ma__none { margin: 0; color: var(--text-muted); font-size: var(--text-sm); }
+
+  .ma__table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-md); }
+  .ma__table-wrap:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+  .ma__table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .ma__table caption { text-align: left; padding: var(--space-2) var(--space-3); font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .ma__table th, .ma__table td { padding: var(--space-2) var(--space-3); text-align: left; vertical-align: top; border-top: 1px solid var(--border); }
+  .ma__table thead th { border-top: 0; font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+  .ma__table tbody th[scope='row'] { white-space: nowrap; }
+  .ma__table tbody th a { font-weight: 700; color: var(--c); }
+  .ma__table td code { white-space: nowrap; font-size: 0.85em; }
+  .ma__group th { background: var(--surface-2); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+  .ma__more { margin: var(--space-4) 0 0; font-size: var(--text-sm); }
+  .ma__more a { display: inline-flex; align-items: center; gap: 0.25rem; }
+
+  @media (max-width: 560px) {
+    .ma__figure, .ma__part { padding: var(--space-3) var(--space-4); }
+    .ma__code { font-size: var(--text-base); }
+    .ma__part-code { margin-left: 0; flex-basis: 100%; }
+    /* Narrow screens: code and meaning only; the examples are in the glossary. */
+    .ma__table th:nth-child(3), .ma__table td:nth-child(3) { display: none; }
+    .ma__group th { white-space: normal; }
+  }
+  @media print {
+    .ma__figure, .ma__part { border-color: #999; background: none; }
+    .ma__table-wrap { overflow: visible; }
+  }
+</style>

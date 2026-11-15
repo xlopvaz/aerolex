@@ -29,6 +29,26 @@ describe('course notes', () => {
     });
   }
 
+  it('annotated examples: tokens rebuild the report, texts are bilingual, codes exist and are not repeated', () => {
+    const codes = JSON.parse(fs.readFileSync('src/content/weather/codes.json', 'utf8'));
+    const withAnatomy = notes.filter((n) => n.anatomy);
+    expect(withAnatomy.map((n) => n.course)).toContain('metar-speci');
+    for (const { course, anatomy } of withAnatomy) {
+      expect(anatomy.parts.map((p) => p.tokens).join(' '), course).toBe(anatomy.example);
+      text(anatomy.caption, `${course} anatomy caption`);
+      const seen = new Set();
+      for (const p of anatomy.parts) {
+        for (const l of ['es', 'en']) expect(p.label[l]?.trim(), `${course} ${p.tokens} label ${l}`).toBeTruthy();
+        text(p.explain, `${course} ${p.tokens} explanation`);
+        for (const id of p.codes) {
+          expect(codes, `${course} ${p.tokens}: unknown weather code ${id}`).toHaveProperty(id);
+          expect(seen.has(id), `${course}: code ${id} listed twice`).toBe(false);
+          seen.add(id);
+        }
+      }
+    }
+  });
+
   it('note pages cannot collide with course pages', () => {
     for (const lang of ['es', 'en']) {
       const notesSegment = ROUTES.academyNotes.slug[lang].split('/').pop();

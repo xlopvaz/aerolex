@@ -1355,5 +1355,245 @@
       "reviewedBy": null,
       "date": null
     }
+  },
+  "z": {
+    "code": "Z",
+    "group": "general",
+    "meaning": {
+      "es": "Hora UTC (tiempo universal coordinado, «Zulú»). En METAR, SPECI y TAF todas las horas van en UTC.",
+      "en": "UTC time (Coordinated Universal Time, \"Zulu\"). All times in METAR, SPECI and TAF are UTC."
+    },
+    "example": "151030Z",
+    "terms": [
+      "utc"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "g": {
+    "code": "G",
+    "group": "wind",
+    "meaning": {
+      "es": "Ráfaga: velocidad máxima del viento; se indica cuando supera la media en 10 kt o más.",
+      "en": "Gust: maximum wind speed; reported when it exceeds the mean by 10 kt or more."
+    },
+    "example": "24015G28KT",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "mps": {
+    "code": "MPS",
+    "group": "wind",
+    "meaning": {
+      "es": "Metros por segundo: unidad de la velocidad del viento que usan algunos países en lugar de los nudos.",
+      "en": "Metres per second: wind speed unit used by some countries instead of knots."
+    },
+    "example": "12008MPS",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "calm": {
+    "code": "00000KT",
+    "group": "wind",
+    "meaning": {
+      "es": "Calma: viento de menos de 1 kt.",
+      "en": "Calm: wind of less than 1 kt."
+    },
+    "example": "00000KT",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "dir-var": {
+    "code": "dddVddd",
+    "group": "wind",
+    "meaning": {
+      "es": "Variación de la dirección: los dos extremos entre los que ha variado el viento en los últimos 10 minutos, cuando la variación es de 60° o más y menos de 180° y la velocidad media es de 3 kt o más.",
+      "en": "Variation in direction: the two extremes between which the wind varied in the last 10 minutes, when the variation is 60° or more and less than 180° and the mean speed is 3 kt or more."
+    },
+    "example": "24015KT 200V280",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "vis-10km": {
+    "code": "9999",
+    "group": "visibility",
+    "meaning": {
+      "es": "Visibilidad de 10 km o más.",
+      "en": "Visibility of 10 km or more."
+    },
+    "example": "24008KT 9999 FEW040",
+    "terms": [
+      "visibility"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "vis-min-dir": {
+    "code": "1200NE",
+    "group": "visibility",
+    "meaning": {
+      "es": "Visibilidad mínima con su dirección (N, NE, E, SE, S, SW, W o NW): se añade cuando es inferior a 1500 m, o inferior al 50 % de la predominante y a 5000 m.",
+      "en": "Minimum visibility with its direction (N, NE, E, SE, S, SW, W or NW): added when it is below 1500 m, or below 50 % of the prevailing visibility and below 5000 m."
+    },
+    "example": "4000 1200NE",
+    "terms": [
+      "visibility"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "rvr-pm": {
+    "code": "P / M",
+    "group": "visibility",
+    "meaning": {
+      "es": "En el RVR: P, valor por encima del máximo que puede medir el sistema; M, por debajo del mínimo.",
+      "en": "In the RVR: P, value above the maximum the system can measure; M, below the minimum."
+    },
+    "example": "R32L/P2000",
+    "terms": [
+      "rvr"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "rvr-tend": {
+    "code": "U / D / N",
+    "group": "visibility",
+    "meaning": {
+      "es": "Tendencia del RVR en los últimos 10 minutos: U, aumenta; D, disminuye; N, sin cambio apreciable.",
+      "en": "RVR tendency over the last 10 minutes: U, increasing; D, decreasing; N, no distinct change."
+    },
+    "example": "R32L/1100U",
+    "terms": [
+      "rvr"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "temp-m": {
+    "code": "M",
+    "group": "temperature",
+    "meaning": {
+      "es": "Menos: la temperatura o el punto de rocío que sigue es bajo cero.",
+      "en": "Minus: the temperature or dew point that follows is below zero."
+    },
+    "example": "M02/M05",
+    "terms": [
+      "dew-point"
+    ],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "missing": {
+    "code": "//",
+    "group": "general",
+    "meaning": {
+      "es": "Dato no disponible: el sensor no ha podido medir ese elemento; es frecuente en los informes AUTO.",
+      "en": "Data not available: the sensor could not measure that element; common in AUTO reports."
+    },
+    "example": "AUTO //////",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
+  },
+  "tl-at": {
+    "code": "TL / AT",
+    "group": "change",
+    "meaning": {
+      "es": "En la tendencia del METAR: TL, hasta la hora indicada (hhmm); AT, a la hora indicada. FM indica desde.",
+      "en": "In the METAR trend: TL, until the time given (hhmm); AT, at the time given. FM means from."
+    },
+    "example": "BECMG TL1130 9999",
+    "terms": [],
+    "sources": [
+      "icao-annex-3",
+      "wmo-306"
+    ],
+    "review": {
+      "status": "draft",
+      "reviewedBy": null,
+      "date": null
+    }
   }
 }

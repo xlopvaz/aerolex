@@ -263,6 +263,245 @@
       ]
     }
   ],
+  "anatomy": {
+    "example": "METAR LEMD 151030Z 24015G28KT 200V280 4000 1200NE R32L/1100U +TSRA BR FEW008 BKN020CB 18/16 Q1006 RERA WS R32L TEMPO 2000 +TSRA",
+    "caption": {
+      "es": "METAR inventado de Madrid-Barajas con todos los grupos. Si un grupo no tiene nada que notificar, simplemente no aparece.",
+      "en": "Invented METAR for Madrid-Barajas with every group. If a group has nothing to report, it is simply left out."
+    },
+    "parts": [
+      {
+        "tokens": "METAR",
+        "label": {
+          "es": "Tipo de informe",
+          "en": "Report type"
+        },
+        "explain": {
+          "es": "METAR es el informe ordinario; SPECI, el especial que se emite entre dos METAR cuando el tiempo cambia mucho. Si el informe corrige otro anterior, detrás va COR.",
+          "en": "METAR is the routine report; SPECI is the special one issued between two METARs when the weather changes significantly. If the report corrects an earlier one, COR follows."
+        },
+        "codes": [
+          "metar",
+          "speci",
+          "cor"
+        ]
+      },
+      {
+        "tokens": "LEMD",
+        "label": {
+          "es": "Aeródromo",
+          "en": "Aerodrome"
+        },
+        "explain": {
+          "es": "Indicador de lugar OACI de cuatro letras: LEMD es Madrid-Barajas.",
+          "en": "Four-letter ICAO location indicator: LEMD is Madrid-Barajas."
+        },
+        "codes": []
+      },
+      {
+        "tokens": "151030Z",
+        "label": {
+          "es": "Día y hora",
+          "en": "Day and time"
+        },
+        "explain": {
+          "es": "Día del mes (15) y hora de la observación (10:30) en UTC. Justo después puede ir AUTO si la observación es automática, o NIL si falta el informe.",
+          "en": "Day of the month (15) and observation time (10:30) in UTC. Right after it may come AUTO if the observation is automatic, or NIL if the report is missing."
+        },
+        "codes": [
+          "z",
+          "auto",
+          "nil"
+        ]
+      },
+      {
+        "tokens": "24015G28KT 200V280",
+        "label": {
+          "es": "Viento",
+          "en": "Wind"
+        },
+        "explain": {
+          "es": "Viene de 240° (dirección verdadera) a 15 kt de media con ráfagas de 28 kt; en los últimos 10 minutos ha variado entre 200° y 280°.",
+          "en": "From 240° (true) at a mean of 15 kt gusting 28 kt; over the last 10 minutes it has varied between 200° and 280°."
+        },
+        "codes": [
+          "kt",
+          "mps",
+          "g",
+          "vrb",
+          "calm",
+          "dir-var"
+        ]
+      },
+      {
+        "tokens": "4000 1200NE",
+        "label": {
+          "es": "Visibilidad",
+          "en": "Visibility"
+        },
+        "explain": {
+          "es": "Visibilidad predominante de 4000 m; la mínima es de 1200 m hacia el nordeste.",
+          "en": "Prevailing visibility 4000 m; the minimum is 1200 m to the north-east."
+        },
+        "codes": [
+          "vis-10km",
+          "vis-min-dir",
+          "ndv",
+          "cavok"
+        ]
+      },
+      {
+        "tokens": "R32L/1100U",
+        "label": {
+          "es": "Alcance visual en pista (RVR)",
+          "en": "Runway visual range (RVR)"
+        },
+        "explain": {
+          "es": "Pista 32 izquierda: el piloto vería las luces a 1100 m, y va aumentando. Se da cuando la visibilidad o el RVR bajan de 1500 m.",
+          "en": "Runway 32 left: the pilot would see the lights at 1100 m, and it is increasing. Given when visibility or RVR is below 1500 m."
+        },
+        "codes": [
+          "rvr",
+          "rvr-pm",
+          "rvr-tend"
+        ]
+      },
+      {
+        "tokens": "+TSRA BR",
+        "label": {
+          "es": "Tiempo presente",
+          "en": "Present weather"
+        },
+        "explain": {
+          "es": "Tormenta con lluvia fuerte, y neblina. Cada grupo se escribe en este orden: intensidad o proximidad, descriptor y fenómeno.",
+          "en": "Thunderstorm with heavy rain, and mist. Each group is written in this order: intensity or proximity, descriptor and phenomenon."
+        },
+        "codes": [
+          "light",
+          "moderate",
+          "heavy",
+          "vc",
+          "mi",
+          "bc",
+          "pr",
+          "dr",
+          "bl",
+          "sh",
+          "ts",
+          "fz",
+          "dz",
+          "ra",
+          "sn",
+          "sg",
+          "pl",
+          "gr",
+          "gs",
+          "up",
+          "ic",
+          "br",
+          "fg",
+          "fu",
+          "va",
+          "du",
+          "sa",
+          "hz",
+          "py",
+          "po",
+          "sq",
+          "fc",
+          "ss",
+          "ds"
+        ]
+      },
+      {
+        "tokens": "FEW008 BKN020CB",
+        "label": {
+          "es": "Nubes",
+          "en": "Cloud"
+        },
+        "explain": {
+          "es": "Cantidad y altura de la base en cientos de pies: pocas nubes a 800 ft y nubosidad abundante a 2000 ft con cumulonimbos.",
+          "en": "Amount and base height in hundreds of feet: few clouds at 800 ft and broken cloud at 2000 ft with cumulonimbus."
+        },
+        "codes": [
+          "few",
+          "sct",
+          "bkn",
+          "ovc",
+          "nsc",
+          "ncd",
+          "skc",
+          "clr",
+          "vv",
+          "cb",
+          "tcu"
+        ]
+      },
+      {
+        "tokens": "18/16",
+        "label": {
+          "es": "Temperatura y punto de rocío",
+          "en": "Temperature and dew point"
+        },
+        "explain": {
+          "es": "Temperatura de 18 °C y punto de rocío de 16 °C. Cuanto más cerca están, más húmedo es el aire.",
+          "en": "Temperature 18 °C and dew point 16 °C. The closer they are, the more humid the air."
+        },
+        "codes": [
+          "temp-m",
+          "missing"
+        ]
+      },
+      {
+        "tokens": "Q1006",
+        "label": {
+          "es": "Presión (QNH)",
+          "en": "Pressure (QNH)"
+        },
+        "explain": {
+          "es": "QNH de 1006 hPa: con él, el altímetro marca la elevación del aeródromo en tierra.",
+          "en": "QNH 1006 hPa: set on the altimeter, it shows aerodrome elevation on the ground."
+        },
+        "codes": [
+          "q",
+          "a"
+        ]
+      },
+      {
+        "tokens": "RERA WS R32L",
+        "label": {
+          "es": "Información suplementaria",
+          "en": "Supplementary information"
+        },
+        "explain": {
+          "es": "Ha llovido desde el informe anterior (tiempo reciente) y hay cizalladura del viento en la pista 32 izquierda.",
+          "en": "It has rained since the previous report (recent weather) and there is wind shear on runway 32 left."
+        },
+        "codes": [
+          "re",
+          "ws"
+        ]
+      },
+      {
+        "tokens": "TEMPO 2000 +TSRA",
+        "label": {
+          "es": "Tendencia (2 horas)",
+          "en": "Trend (2 hours)"
+        },
+        "explain": {
+          "es": "Pronóstico para las dos horas siguientes: temporalmente, visibilidad de 2000 m con tormenta y lluvia fuerte.",
+          "en": "Forecast for the next two hours: temporarily, visibility 2000 m with thunderstorm and heavy rain."
+        },
+        "codes": [
+          "nosig",
+          "becmg",
+          "tempo",
+          "tl-at",
+          "nsw"
+        ]
+      }
+    ]
+  },
   "review": {
     "status": "draft",
     "reviewedBy": null,

@@ -188,7 +188,7 @@ const weatherCodes = defineCollection({
   loader: file('./src/content/weather/codes.json'),
   schema: z.object({
     code: text,
-    group: z.enum(['report', 'modifier', 'wind', 'visibility', 'intensity', 'descriptor', 'precipitation', 'obscuration', 'other', 'cloud', 'pressure', 'general', 'change']),
+    group: z.enum(['report', 'modifier', 'wind', 'visibility', 'intensity', 'descriptor', 'precipitation', 'obscuration', 'other', 'cloud', 'temperature', 'pressure', 'general', 'change']),
     meaning: bilingual,
     example: z.string().nullable(),
     terms: z.array(text),
@@ -228,6 +228,13 @@ const notes = defineCollection({
   schema: z.object({
     course: text,
     lessons: z.array(z.object({ lesson: text, key: bilingual, points: z.array(bilingual).min(3).max(7) })).min(1),
+    // Optional annotated example (METAR course): a full didactic report split into its groups, each
+    // with its explanation and the weather-glossary codes that can appear in it.
+    anatomy: z.object({
+      example: z.string(),
+      caption: bilingual,
+      parts: z.array(z.object({ tokens: z.string(), label: bilingual, explain: bilingual, codes: z.array(text) })).min(2),
+    }).optional(),
     review,
   }),
 });
