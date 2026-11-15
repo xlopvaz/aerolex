@@ -1267,6 +1267,7 @@
       "obscuration": "Obscuration",
       "other": "Other phenomena",
       "cloud": "Clouds",
+      "temperature": "Temperature",
       "pressure": "Pressure",
       "general": "General groups",
       "change": "Trends and forecast changes"
@@ -1488,6 +1489,14 @@
     "backToCourse": "Go to the course",
     "draft": "Draft notes: a summary of the lessons, which cite their sources. Awaiting review; if in doubt, the lesson prevails and, for real operations, the official documentation.",
     "sourcesTitle": "Sources of the lessons",
-    "courseLink": "Course notes"
+    "courseLink": "Course notes",
+    "anatomyTitle": "Anatomy of a METAR",
+    "anatomyLead": "A full METAR with every group in place. Below, what each group says and the codes that can appear in it.",
+    "anatomyCodes": "Codes that can appear",
+    "anatomyCode": "Code",
+    "anatomyMeaning": "Meaning",
+    "anatomyExample": "Example",
+    "anatomyGlossary": "All the codes, with search, in the weather glossary",
+    "anatomyNoCodes": "No codes of its own: written as is."
   }
 }

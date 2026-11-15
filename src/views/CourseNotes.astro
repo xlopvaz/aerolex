@@ -1,7 +1,8 @@
 ---
 /**
  * Notes for one course: for each lesson, its key idea and main points, with the lesson's terms
- * (linked to the dictionary) and a link to the full lesson. No quizzes. Print-friendly: the
+ * (linked to the dictionary) and a link to the full lesson, plus an annotated example report when
+ * the notes include one (METAR). No quizzes. Print-friendly: the
  * print stylesheet hides the site chrome so the notes can be printed or saved as PDF.
  */
 import { getCollection, getEntry } from 'astro:content';
@@ -11,6 +12,7 @@ import Badge from '../components/ui/Badge.astro';
 import Button from '../components/ui/Button.astro';
 import Callout from '../components/ui/Callout.astro';
 import Icon from '../components/ui/Icon.astro';
+import MetarAnatomy from '../components/academy/MetarAnatomy.astro';
 import { childAlternates, childHref, href, useT } from '../i18n/index.js';
 
 interface Props { lang: 'es' | 'en'; routeKey: any; courseId: string }
@@ -50,11 +52,13 @@ const title = tr('notes.courseTitle', { course: course.title[lang] });
     <nav class="cn__toc" aria-labelledby="cn-toc">
       <h2 id="cn-toc" class="cn__toc-title">{tr('notes.toc')}</h2>
       <ol>
+        {notes.anatomy && <li><a href="#n-anatomy">{tr('notes.anatomyTitle')}</a></li>}
         {lessons.map((l) => <li><a href={`#n-${l.lesson}`}>{l.title}</a></li>)}
       </ol>
     </nav>
 
     <div class="cn__main">
+      {notes.anatomy && <MetarAnatomy lang={lang} anatomy={notes.anatomy} />}
       {lessons.map((l) => (
         <section class="cn__lesson" id={`n-${l.lesson}`} aria-labelledby={`nh-${l.lesson}`}>
           <h2 id={`nh-${l.lesson}`}><span class="cn__num mono">{String(l.n).padStart(2, '0')}</span> {l.title}</h2>
@@ -93,7 +97,7 @@ const title = tr('notes.courseTitle', { course: course.title[lang] });
   .cn__toc { position: sticky; top: calc(var(--header-h) + var(--space-4)); }
   .cn__toc-title { font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 0 0 var(--space-2); }
   .cn__toc ol { margin: 0; padding-left: 1.2rem; display: grid; gap: var(--space-1); font-size: var(--text-sm); }
-  .cn__main { max-width: 760px; display: grid; gap: var(--space-5); }
+  .cn__main { max-width: 760px; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
   .cn__lesson { padding: var(--space-5) var(--space-6); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); scroll-margin-top: calc(var(--header-h) + var(--space-4)); break-inside: avoid; }
   .cn__lesson h2 { font-size: var(--text-xl); margin: 0 0 var(--space-3); display: flex; gap: var(--space-2); align-items: baseline; }
   .cn__num { color: var(--cyan); font-size: var(--text-base); }
