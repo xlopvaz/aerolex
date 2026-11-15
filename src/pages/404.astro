@@ -6,6 +6,7 @@ import '../styles/tokens.css';
 import '../styles/base.css';
 import Logo from '../components/Logo.astro';
 import { href, t, withBase } from '../i18n/index.js';
+import AppMeta from '../components/AppMeta.astro';
 ---
 <!doctype html>
 <html lang="en" data-theme="dark">
@@ -14,7 +15,7 @@ import { href, t, withBase } from '../i18n/index.js';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>404 · AeroLex</title>
-    <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+    <AppMeta />
   </head>
   <body>
     <main class="nf">

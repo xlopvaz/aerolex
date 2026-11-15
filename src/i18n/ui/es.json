@@ -15,7 +15,10 @@
     "breadcrumbs": "Migas de pan",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
-    "home": "Inicio de AeroLex"
+    "home": "Inicio de AeroLex",
+    "historyNav": "Historial de navegación",
+    "back": "Atrás",
+    "forward": "Adelante"
   },
   "nav": {
     "home": "Inicio",

@@ -1,6 +1,7 @@
 ---
-/** Site header: logo, main navigation (registered pages only), language and theme controls. */
+/** Site header: back/forward buttons (home-screen app only), logo, main navigation (registered pages only), language and theme controls. */
 import Logo from './Logo.astro';
+import HistoryNav from './HistoryNav.astro';
 import LangSwitch from './LangSwitch.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import { navRoutes } from '../i18n/routes.js';
@@ -16,6 +17,7 @@ const items = navRoutes('main');
 ---
 <header class="site-header">
   <div class="container site-header__inner">
+    <HistoryNav lang={lang} />
     <a class="site-header__brand" href={href('home', lang)} aria-label={t(lang, 'a11y.home')}>
       <Logo size={30} />
     </a>
@@ -76,5 +78,11 @@ const items = navRoutes('main');
 
   @media (max-width: 860px) {
     .site-nav { display: none; }
+  }
+  /* Home-screen app on a phone: room for the back/forward buttons. The app name is already
+     under the home-screen icon, so the wordmark gives way to the mark alone. */
+  @media (max-width: 480px) {
+    :global(html[data-display-mode='standalone']) .site-header__inner { gap: var(--space-3); }
+    :global(html[data-display-mode='standalone']) .site-header__brand :global(.logo__word) { display: none; }
   }
 </style>

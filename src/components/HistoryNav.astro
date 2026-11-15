@@ -1,0 +1,76 @@
+---
+/**
+ * Back / forward buttons for the home-screen app. When the site is opened from the home screen
+ * (iOS / iPadOS standalone mode) the browser has no toolbar, so there is no other way to go back.
+ * Hidden in a normal browser tab. Each button is disabled when there is nowhere to go; where the
+ * browser cannot tell whether a forward page exists, the forward button is not shown at all.
+ */
+import Icon from './ui/Icon.astro';
+import { t } from '../i18n/index.js';
+
+interface Props {
+  lang: string;
+}
+const { lang } = Astro.props;
+---
+<nav class="history-nav" aria-label={t(lang, 'a11y.historyNav')} data-history-nav>
+  <button type="button" class="history-nav__btn" data-history="back" aria-label={t(lang, 'a11y.back')} title={t(lang, 'a11y.back')}>
+    <Icon name="chevron-left" size={22} strokeWidth={2.25} />
+  </button>
+  <button type="button" class="history-nav__btn" data-history="forward" aria-label={t(lang, 'a11y.forward')} title={t(lang, 'a11y.forward')}>
+    <Icon name="chevron-right" size={22} strokeWidth={2.25} />
+  </button>
+</nav>
+
+<script>
+  const nav = document.querySelector<HTMLElement>('[data-history-nav]');
+  const back = nav?.querySelector<HTMLButtonElement>('[data-history="back"]');
+  const forward = nav?.querySelector<HTMLButtonElement>('[data-history="forward"]');
+  // Navigation API (Safari 26.2+, Chrome, Firefox 147+) knows whether there is a page each way.
+  const api = (window as any).navigation as { canGoBack?: boolean; canGoForward?: boolean; addEventListener?: Function } | undefined;
+  const knowsHistory = !!api && typeof api.canGoBack === 'boolean';
+
+  function update() {
+    if (!back || !forward) return;
+    if (knowsHistory) {
+      back.disabled = !api!.canGoBack;
+      forward.disabled = !api!.canGoForward;
+      forward.hidden = false;
+    } else {
+      back.disabled = history.length <= 1;
+      forward.hidden = true;
+    }
+  }
+
+  back?.addEventListener('click', () => history.back());
+  forward?.addEventListener('click', () => history.forward());
+  update();
+  // Pages restored from the back/forward cache keep their old state: refresh it.
+  window.addEventListener('pageshow', update);
+  api?.addEventListener?.('currententrychange', update);
+</script>
+
+<style>
+  .history-nav { display: none; }
+  :global(html[data-display-mode='standalone']) .history-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  .history-nav__btn {
+    display: inline-grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-elevated);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .history-nav__btn[hidden] { display: none; }
+  .history-nav__btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); }
+  .history-nav__btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+  .history-nav__btn:disabled { opacity: 0.4; cursor: default; }
+</style>

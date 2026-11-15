@@ -8,6 +8,7 @@ import '../styles/base.css';
 import Logo from '../components/Logo.astro';
 import { href, t, withBase } from '../i18n/index.js';
 import { STORAGE_KEY } from '../lib/core/schema.js';
+import AppMeta from '../components/AppMeta.astro';
 
 const targets = { es: href('home', 'es'), en: href('home', 'en') };
 const site = Astro.site ?? new URL('https://xlopvaz.github.io');
@@ -19,7 +20,7 @@ const site = Astro.site ?? new URL('https://xlopvaz.github.io');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AeroLex · Learn the language of the sky</title>
     <meta name="description" content={t('en', 'meta.defaultDescription')} />
-    <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+    <AppMeta />
     <link rel="alternate" hreflang="es" href={new URL(targets.es, site).href} />
     <link rel="alternate" hreflang="en" href={new URL(targets.en, site).href} />
     <link rel="alternate" hreflang="x-default" href={new URL(withBase(''), site).href} />
