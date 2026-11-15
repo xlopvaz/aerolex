@@ -15,7 +15,10 @@
     "breadcrumbs": "Breadcrumbs",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "home": "AeroLex home"
+    "home": "AeroLex home",
+    "historyNav": "Browsing history",
+    "back": "Back",
+    "forward": "Forward"
   },
   "nav": {
     "home": "Home",

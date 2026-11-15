@@ -18,6 +18,7 @@ import { LOCALES, LOCALE_META } from '../i18n/config.js';
 import { alternates, href, t, withBase } from '../i18n/index.js';
 import { STORAGE_KEY } from '../lib/core/schema.js';
 import { jsonLdString } from '../lib/seo/structured-data.js';
+import AppMeta from '../components/AppMeta.astro';
 
 interface Props {
   lang: string;
@@ -66,7 +67,7 @@ const image = imageProp ?? { src: withBase(`og/aerolex-${lang}.png`), alt: t(lan
     {jsonLd.map((d) => <script type="application/ld+json" set:html={jsonLdString(d)} />)}
     <meta name="theme-color" content="#0A1628" />
 
-    <link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+    <AppMeta />
 
     <!-- Apply the saved theme before first paint (no flash). -->
     <script is:inline define:vars={{ key: STORAGE_KEY }}>

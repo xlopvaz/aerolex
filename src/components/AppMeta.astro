@@ -1,0 +1,22 @@
+---
+/**
+ * Head tags for the home-screen app: icon, manifest and app title, plus a tiny script that marks
+ * <html data-display-mode="standalone"> before first paint when the site was opened from the home
+ * screen, so app-only controls (HistoryNav) appear without a layout jump.
+ */
+import { withBase } from '../i18n/index.js';
+---
+<link rel="icon" href={withBase('favicon.svg')} type="image/svg+xml" />
+<link rel="apple-touch-icon" href={withBase('icons/apple-touch-icon.png')} />
+<link rel="manifest" href={withBase('manifest.webmanifest')} />
+<meta name="apple-mobile-web-app-title" content="AeroLex" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<script is:inline>
+  (function () {
+    try {
+      var standalone = window.navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
+      if (standalone) document.documentElement.dataset.displayMode = 'standalone';
+    } catch (e) {}
+  })();
+</script>
